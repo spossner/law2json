@@ -472,8 +472,8 @@ class LawTransformer {
     
     contentArray.forEach(content => {
       // Replace law-paragraph elements with ones that have unique IDs
-      let processedHtml = content.replace(
-        /<p class="law-paragraph">(\([0-9]+\))?([^<]*(?:<[^>]*>[^<]*)*?)<\/p>/g,
+      const processedHtml = content.replace(
+        /<p class="law-paragraph">(\([0-9]+\))?([^<]*(?:<[^>]*>[^<]*<\/[^>]*>)*[^<]*?)<\/p>/gs,
         (match, numberPart, textPart) => {
           paragraphIndex++;
           const paragraphId = `${elementId}_p${paragraphIndex}`;
@@ -503,6 +503,7 @@ class LawTransformer {
       subParagraphs: subParagraphs
     };
   }
+
 
   /**
    * Escape HTML characters

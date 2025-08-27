@@ -328,22 +328,17 @@
         }
 
         .law-list-arabic {
-            counter-reset: law-counter;
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
 
         .law-list-arabic .law-list-term {
-            counter-increment: law-counter;
             margin-bottom: 12px;
             position: relative;
-            padding-left: 24px;
-        }
-
-        .law-list-arabic .law-list-term:before {
-            content: counter(law-counter) ".";
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-            color: #374151;
+            padding-left: 0;
+            display: list-item;
+            list-style: none;
         }
 
         .law-list-definition {
