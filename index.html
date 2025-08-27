@@ -507,8 +507,7 @@
         let lawData = null;
         let selectedElement = null;
         let selectedSubParagraph = null;
-        let expandedChapters = new Set();
-        let expandedSections = new Set();
+        let expandedNodes = new Set(); // Generic expanded state for all node types
         
         // Load the transformed law data
         fetch('/BNatSchG.json')
@@ -591,7 +590,7 @@
                 // Hierarchical view - chapters with expandable sections and paragraphs
                 const chapters = structure.filter(el => el.type === 'chapter');
                 listEl.innerHTML = chapters.map(chapter => {
-                    return renderChapterWithChildren(chapter);
+                    return renderNodeWithChildren(chapter);
                 }).join('');
             }
             
@@ -599,34 +598,23 @@
             addClickListeners();
         }
         
-        function renderChapterWithChildren(chapter) {
-            const isChapterExpanded = expandedChapters.has(chapter.id);
-            const children = getChildElements(chapter.id);
+        function renderNodeWithChildren(node, isIndented = false, extraIndentLevel = 0) {
+            const isExpanded = expandedNodes.has(node.id);
+            const children = getChildElements(node.id);
             
-            let html = createStructureItemHTML(chapter, false);
+            let html = createStructureItemHTML(node, isIndented, extraIndentLevel);
             
-            if (isChapterExpanded) {
+            if (isExpanded) {
                 children.forEach(child => {
-                    if (child.type === 'section') {
-                        html += renderSectionWithChildren(child);
+                    if (child.type === 'chapter' || child.type === 'section') {
+                        // Nested nodes (sections within chapters, or future nested structures)
+                        const childIndentLevel = node.type === 'chapter' ? 0 : (node.type === 'section' ? 1 : extraIndentLevel);
+                        html += renderNodeWithChildren(child, true, childIndentLevel);
                     } else {
-                        html += createStructureItemHTML(child, true);
+                        // Leaf nodes (paragraphs, annexes)
+                        const leafIndentLevel = node.type === 'section' ? 2 : 1;
+                        html += createStructureItemHTML(child, true, leafIndentLevel);
                     }
-                });
-            }
-            
-            return html;
-        }
-        
-        function renderSectionWithChildren(section) {
-            const isSectionExpanded = expandedSections.has(section.id);
-            const children = getChildElements(section.id);
-            
-            let html = createStructureItemHTML(section, true);
-            
-            if (isSectionExpanded) {
-                children.forEach(child => {
-                    html += createStructureItemHTML(child, true, 2); // Extra indentation for section children
                 });
             }
             
@@ -651,11 +639,8 @@
             let isExpanded = false;
             let expandIcon = '';
             
-            if (element.type === 'chapter') {
-                isExpanded = expandedChapters.has(element.id);
-                expandIcon = hasChildren ? `<span class="expand-icon ${isExpanded ? 'expanded' : ''}">▶</span>` : '<span class="expand-icon"></span>';
-            } else if (element.type === 'section') {
-                isExpanded = expandedSections.has(element.id);
+            if (element.type === 'chapter' || element.type === 'section') {
+                isExpanded = expandedNodes.has(element.id);
                 expandIcon = hasChildren ? `<span class="expand-icon ${isExpanded ? 'expanded' : ''}">▶</span>` : '<span class="expand-icon"></span>';
             } else {
                 expandIcon = '<span class="expand-icon"></span>';
@@ -691,11 +676,8 @@
                     const type = item.dataset.type;
                     const element = lawData.law.structure.find(el => el.id === elementId);
                     
-                    if (type === 'chapter') {
-                        toggleChapter(elementId);
-                        renderStructure();
-                    } else if (type === 'section') {
-                        toggleSection(elementId);
+                    if (type === 'chapter' || type === 'section') {
+                        toggleNode(elementId);
                         renderStructure();
                     } else if (element.hasContent) {
                         selectElement(element);
@@ -704,19 +686,11 @@
             });
         }
         
-        function toggleChapter(chapterId) {
-            if (expandedChapters.has(chapterId)) {
-                expandedChapters.delete(chapterId);
+        function toggleNode(nodeId) {
+            if (expandedNodes.has(nodeId)) {
+                expandedNodes.delete(nodeId);
             } else {
-                expandedChapters.add(chapterId);
-            }
-        }
-        
-        function toggleSection(sectionId) {
-            if (expandedSections.has(sectionId)) {
-                expandedSections.delete(sectionId);
-            } else {
-                expandedSections.add(sectionId);
+                expandedNodes.add(nodeId);
             }
         }
         
