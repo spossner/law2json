@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -279,6 +279,46 @@
         .law-paragraph {
             margin-bottom: 16px;
             text-align: justify;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .law-paragraph:hover {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            box-shadow: 0 1px 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .law-paragraph.selected {
+            background-color: #eff6ff;
+            border: 2px solid #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .paragraph-number-badge {
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .law-paragraph:hover .paragraph-number-badge,
+        .law-paragraph.selected .paragraph-number-badge {
+            opacity: 1;
         }
 
         .law-list {
@@ -471,6 +511,7 @@
     <script>
         let lawData = null;
         let selectedElement = null;
+        let selectedSubParagraph = null;
         let expandedChapters = new Set();
         let expandedSections = new Set();
         
@@ -721,9 +762,24 @@
                 ${element.hasContent && element.content ? `
                     <div class="legal-content">
                         <h3>Legal Text</h3>
-                        <div class="legal-text-content">
+                        <div class="legal-text-content" id="legal-text-container">
                             ${element.content.join('\n')}
                         </div>
+                        ${element.subParagraphs && element.subParagraphs.length > 0 ? `
+                            <div style="margin-top: 16px; padding: 12px; background-color: #f8fafc; border-radius: 6px;">
+                                <div style="font-size: 13px; color: #6b7280; margin-bottom: 8px;">
+                                    <strong>Navigation:</strong> Click on individual paragraphs above to select them, or use the overview below:
+                                </div>
+                                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                    ${element.subParagraphs.map(subPara => `
+                                        <button class="sub-paragraph-nav" data-paragraph-id="${subPara.id}" 
+                                                style="padding: 4px 8px; background: white; border: 1px solid #d1d5db; border-radius: 4px; cursor: pointer; font-size: 12px;">
+                                            (${subPara.number})
+                                        </button>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
                     </div>
                 ` : element.hasContent ? `
                     <div class="legal-content">
@@ -743,6 +799,11 @@
                     </div>
                 ` : ''}
             `;
+            
+            // Add event listeners for paragraph selection after content is rendered
+            setTimeout(() => {
+                setupParagraphSelection();
+            }, 100);
         }
         
         function selectElementById(elementId) {
@@ -762,6 +823,67 @@
                     renderStructure(e.target.value);
                 }, 300); // Debounce search
             });
+        }
+        
+        function setupParagraphSelection() {
+            // Add click listeners to law-paragraph elements
+            const paragraphs = document.querySelectorAll('.law-paragraph[data-paragraph-id]');
+            paragraphs.forEach(paragraph => {
+                // Add paragraph number badge
+                const paragraphId = paragraph.dataset.paragraphId;
+                const match = paragraphId.match(/_p(\d+)$/);
+                if (match) {
+                    const badge = document.createElement('div');
+                    badge.className = 'paragraph-number-badge';
+                    badge.textContent = match[1];
+                    paragraph.appendChild(badge);
+                }
+                
+                // Add click listener
+                paragraph.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectSubParagraph(paragraphId);
+                });
+            });
+            
+            // Add click listeners to navigation buttons
+            const navButtons = document.querySelectorAll('.sub-paragraph-nav');
+            navButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const paragraphId = button.dataset.paragraphId;
+                    selectSubParagraph(paragraphId);
+                });
+            });
+        }
+        
+        function selectSubParagraph(paragraphId) {
+            // Clear previous selection
+            document.querySelectorAll('.law-paragraph.selected').forEach(p => {
+                p.classList.remove('selected');
+            });
+            document.querySelectorAll('.sub-paragraph-nav').forEach(btn => {
+                btn.style.background = 'white';
+                btn.style.borderColor = '#d1d5db';
+                btn.style.color = 'inherit';
+            });
+            
+            // Select new paragraph
+            const paragraph = document.getElementById(paragraphId);
+            const navButton = document.querySelector(`[data-paragraph-id="${paragraphId}"]`);
+            
+            if (paragraph) {
+                paragraph.classList.add('selected');
+                paragraph.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                selectedSubParagraph = paragraphId;
+                
+                // Update navigation button
+                if (navButton && navButton.classList.contains('sub-paragraph-nav')) {
+                    navButton.style.background = '#3b82f6';
+                    navButton.style.borderColor = '#3b82f6';
+                    navButton.style.color = 'white';
+                }
+            }
         }
     </script>
 </body>

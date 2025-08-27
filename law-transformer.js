@@ -216,7 +216,10 @@ class LawTransformer {
           
           // Extract formatted legal content
           if (element.hasContent && textdaten) {
-            element.content = this.extractFormattedContent(textdaten);
+            const rawContent = this.extractFormattedContent(textdaten);
+            const processedContent = this.processContentWithParagraphIds(rawContent, element.id);
+            element.content = processedContent.content;
+            element.subParagraphs = processedContent.subParagraphs;
           }
           
           // Extract footnotes if present
@@ -457,6 +460,48 @@ class LawTransformer {
     }
     
     return html;
+  }
+
+  /**
+   * Process content and add unique IDs to each law-paragraph
+   */
+  processContentWithParagraphIds(contentArray, elementId) {
+    const processedContent = [];
+    const subParagraphs = [];
+    let paragraphIndex = 0;
+    
+    contentArray.forEach(content => {
+      // Replace law-paragraph elements with ones that have unique IDs
+      let processedHtml = content.replace(
+        /<p class="law-paragraph">(\([0-9]+\))?([^<]*(?:<[^>]*>[^<]*)*?)<\/p>/g,
+        (match, numberPart, textPart) => {
+          paragraphIndex++;
+          const paragraphId = `${elementId}_p${paragraphIndex}`;
+          const fullText = (numberPart || '') + textPart;
+          
+          // Extract the paragraph number if it exists
+          const numberMatch = numberPart ? numberPart.match(/\(([0-9]+)\)/) : null;
+          const paragraphNumber = numberMatch ? numberMatch[1] : paragraphIndex.toString();
+          
+          // Create sub-paragraph entity
+          subParagraphs.push({
+            id: paragraphId,
+            number: paragraphNumber,
+            text: fullText.trim(),
+            parentId: elementId
+          });
+          
+          return `<p class="law-paragraph" id="${paragraphId}" data-paragraph-id="${paragraphId}">${fullText}</p>`;
+        }
+      );
+      
+      processedContent.push(processedHtml);
+    });
+    
+    return {
+      content: processedContent,
+      subParagraphs: subParagraphs
+    };
   }
 
   /**
