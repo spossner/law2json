@@ -322,18 +322,18 @@ class LawTransformer {
     
     switch (tagName) {
       case 'P':
-        return `<p class="law-paragraph">${content}</p>\n`;
+        return `<div class="law-paragraph">${content}</div>\n`;
         
       case 'DL':
         const type = element.getAttribute('Type') || 'arabic';
         const className = `law-list law-list-${type}`;
-        return `<ol class="${className}">${content}</ol>\n`;
+        return `<ol class="${className}">${content}</ol>`;
         
       case 'DT':
         return `<li class="law-list-term">${content}`;
         
       case 'DD':
-        return `<div class="law-list-definition">${content}</div></li>\n`;
+        return `<div class="law-list-definition">${content}</div></li>`;
         
       case 'LA':
         return content; // Just return the content, it's wrapped by DD
