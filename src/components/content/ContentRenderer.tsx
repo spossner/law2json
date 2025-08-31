@@ -14,7 +14,7 @@ interface Props {
   parentPath: string; // Hierarchical path like "K4_A1_P20_S2"
   contentIndex: number; // Index within the content array
   onContentSelect?: (contentId: string) => void;
-  selectedContentId?: string;
+  selectedContentId?: string | null;
 }
 
 export function ContentRenderer({ 

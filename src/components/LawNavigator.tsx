@@ -24,6 +24,32 @@ export function LawNavigator({ className }: Props) {
     console.log('Selected content ID:', contentId);
   };
 
+  // Helper function to find element by ID in the unfiltered structure
+  const findElementById = (elements: StructuralElement[], id: string): StructuralElement | null => {
+    for (const element of elements) {
+      if (element.id === id) {
+        return element;
+      }
+      
+      const structuralChildren = element.children.filter(child => 
+        'type' in child && 
+        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+      ) as StructuralElement[];
+      
+      if (structuralChildren.length > 0) {
+        const found = findElementById(structuralChildren, id);
+        if (found) return found;
+      }
+    }
+    return null;
+  };
+
+  // Handle element selection - always use the original unfiltered element
+  const handleElementSelect = (filteredElement: StructuralElement) => {
+    const originalElement = findElementById(lawData!.law.structure, filteredElement.id);
+    setSelectedElement(originalElement);
+  };
+
   // Generate hierarchical path for content elements
   const generatePath = (
     chapter?: string,
@@ -175,7 +201,7 @@ export function LawNavigator({ className }: Props) {
       
       // Include element if it matches or has matching children
       if (matchesSearch || filteredChildren.length > 0) {
-        // Keep all children if current element matches, otherwise only keep filtered structural children + content
+        // For navigation: keep all children if current element matches, otherwise only filtered children + content
         const contentChildren = element.children.filter(child => 
           !('type' in child) || 
           !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
@@ -349,7 +375,7 @@ export function LawNavigator({ className }: Props) {
               <StructuralElementRenderer
                 key={element.id}
                 element={element}
-                onSelect={setSelectedElement}
+                onSelect={handleElementSelect}
                 isSelected={selectedElement?.id === element.id}
               />
             ))}
@@ -385,7 +411,7 @@ export function LawNavigator({ className }: Props) {
                               className="font-semibold text-lg text-blue-800 mb-2"
                               dangerouslySetInnerHTML={{
                                 __html: searchTerm ? 
-                                  `${highlightText(structChild.number, searchTerm)} ${highlightText(structChild.title, searchTerm)}` :
+                                  `${highlightText(structChild.number ?? '', searchTerm)} ${highlightText(structChild.title, searchTerm)}` :
                                   `${structChild.number} ${structChild.title}`
                               }}
                             />
