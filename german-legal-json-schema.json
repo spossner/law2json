@@ -1,0 +1,277 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gesetze-im-internet.de/schemas/german-legal-document.json",
+  "title": "German Legal Document Schema",
+  "description": "JSON Schema for German legal documents transformed from GiI XML format",
+  "type": "object",
+  "required": ["law"],
+  "properties": {
+    "law": {
+      "type": "object",
+      "required": ["title", "abbreviation", "structure"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Full title of the legal document",
+          "examples": ["Bundesnaturschutzgesetz (BNatSchG)", "Strafgesetzbuch"]
+        },
+        "abbreviation": {
+          "type": "string",
+          "description": "Official abbreviation of the legal document",
+          "examples": ["BNatSchG", "StGB", "BGB"]
+        },
+        "structure": {
+          "type": "array",
+          "description": "Hierarchical structure of the legal document",
+          "items": {
+            "$ref": "#/$defs/structuralElement"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "structuralElement": {
+      "type": "object",
+      "required": ["type", "id"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["chapter", "section", "paragraph", "subparagraph"],
+          "description": "Type of structural element"
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the element",
+          "examples": ["chapter_1", "section_1_1", "paragraph_1", "para_1_1"]
+        },
+        "number": {
+          "type": "string",
+          "description": "Display number/identifier",
+          "examples": ["1", "§ 1", "(1)", "a)"]
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the structural element"
+        },
+        "children": {
+          "type": "array",
+          "description": "Child elements - either structural elements or content elements",
+          "items": {
+            "oneOf": [
+              {"$ref": "#/$defs/structuralElement"},
+              {"$ref": "#/$defs/contentElement"}
+            ]
+          }
+        }
+      }
+    },
+    "contentElement": {
+      "type": "object",
+      "required": ["type"],
+      "discriminator": {
+        "propertyName": "type"
+      },
+      "oneOf": [
+        {"$ref": "#/$defs/textElement"},
+        {"$ref": "#/$defs/orderedListElement"},
+        {"$ref": "#/$defs/listItemElement"},
+        {"$ref": "#/$defs/imageElement"},
+        {"$ref": "#/$defs/tableElement"},
+        {"$ref": "#/$defs/lineBreakElement"},
+        {"$ref": "#/$defs/formattedTextElement"},
+        {"$ref": "#/$defs/preformattedElement"},
+        {"$ref": "#/$defs/commentElement"}
+      ]
+    },
+    "textElement": {
+      "type": "object",
+      "required": ["type", "text"],
+      "properties": {
+        "type": {
+          "const": "text"
+        },
+        "text": {
+          "type": "string",
+          "description": "Plain text content"
+        }
+      }
+    },
+    "orderedListElement": {
+      "type": "object",
+      "required": ["type", "listType", "children"],
+      "properties": {
+        "type": {
+          "const": "ordered_list"
+        },
+        "listType": {
+          "type": "string",
+          "enum": ["arabic", "alpha", "Alpha", "roman", "Roman", "Dash", "Bullet", "Symbol", "None"],
+          "description": "Type of list numbering"
+        },
+        "symbol": {
+          "type": "string",
+          "description": "Custom symbol for Symbol type lists",
+          "examples": ["▪", "★", "→"]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/listItemElement"
+          }
+        }
+      }
+    },
+    "listItemElement": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "const": "list_item"
+        },
+        "text": {
+          "type": "string",
+          "description": "Simple text content for the list item"
+        },
+        "children": {
+          "type": "array",
+          "description": "Complex content with mixed text, formatting, etc.",
+          "items": {
+            "$ref": "#/$defs/contentElement"
+          }
+        }
+      },
+      "oneOf": [
+        {"required": ["text"]},
+        {"required": ["children"]}
+      ]
+    },
+    "imageElement": {
+      "type": "object",
+      "required": ["type", "src"],
+      "properties": {
+        "type": {
+          "const": "image"
+        },
+        "src": {
+          "type": "string",
+          "description": "Image file name or path"
+        },
+        "width": {
+          "type": "integer",
+          "description": "Image width in pixels"
+        },
+        "height": {
+          "type": "integer", 
+          "description": "Image height in pixels"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Alternative text for accessibility"
+        },
+        "align": {
+          "type": "string",
+          "enum": ["left", "center", "right"],
+          "description": "Image alignment"
+        }
+      }
+    },
+    "tableElement": {
+      "type": "object",
+      "required": ["type", "columns", "rows"],
+      "properties": {
+        "type": {
+          "const": "table"
+        },
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of columns"
+        },
+        "headers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Column headers"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {"type": "string"},
+                {"$ref": "#/$defs/contentElement"}
+              ]
+            }
+          },
+          "description": "Table rows with cell content"
+        },
+        "frame": {
+          "type": "string",
+          "enum": ["none", "all", "top", "bottom", "topbot", "sides"],
+          "description": "Table border style"
+        }
+      }
+    },
+    "lineBreakElement": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "const": "line_break"
+        }
+      }
+    },
+    "formattedTextElement": {
+      "type": "object",
+      "required": ["type", "style", "text"],
+      "properties": {
+        "type": {
+          "const": "formatted_text"
+        },
+        "style": {
+          "type": "string",
+          "enum": ["bold", "italic", "underline", "subscript", "superscript", "spacing"],
+          "description": "Text formatting style"
+        },
+        "text": {
+          "type": "string",
+          "description": "Formatted text content"
+        }
+      }
+    },
+    "preformattedElement": {
+      "type": "object",
+      "required": ["type", "text"],
+      "properties": {
+        "type": {
+          "const": "preformatted"
+        },
+        "text": {
+          "type": "string",
+          "description": "Preformatted text content with preserved spacing"
+        }
+      }
+    },
+    "commentElement": {
+      "type": "object",
+      "required": ["type", "commentType", "text"],
+      "properties": {
+        "type": {
+          "const": "comment"
+        },
+        "commentType": {
+          "type": "string",
+          "enum": ["Stand", "Stand-Hinweis", "Hinweis", "Fundstelle", "Verarbeitung"],
+          "description": "Type of comment/metadata"
+        },
+        "text": {
+          "type": "string",
+          "description": "Comment content"
+        }
+      }
+    }
+  }
+}
