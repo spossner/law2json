@@ -72,6 +72,11 @@ export function StructuralElementRenderer({
   };
 
   const renderExpandIcon = () => {
+    // Only show expand arrows for chapters and sections, not paragraphs
+    if (element.type !== 'chapter' && element.type !== 'section') {
+      return <span className="w-4" />;
+    }
+    
     if (!hasStructuralChildren) return <span className="w-4" />;
     
     return (
