@@ -13,6 +13,7 @@
     "test": "npm run transform-bnatschg"
   },
   "dependencies": {
+    "ajv": "^8.17.1",
     "xmldom": "^0.6.0"
   },
   "devDependencies": {
