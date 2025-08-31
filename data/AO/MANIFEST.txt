@@ -1,0 +1,4 @@
+name: Abgabenordnung (AO)
+slug: ao_1977
+source: https://www.gesetze-im-internet.de/ao_1977/xml.zip
+downloaded_at: 2025-08-31T09:05:56+02:00

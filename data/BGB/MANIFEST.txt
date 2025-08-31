@@ -1,0 +1,4 @@
+name: Bürgerliches Gesetzbuch (BGB)
+slug: bgb
+source: https://www.gesetze-im-internet.de/bgb/xml.zip
+downloaded_at: 2025-08-31T09:05:55+02:00

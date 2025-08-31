@@ -1,0 +1,4 @@
+name: Zivilprozessordnung (ZPO)
+slug: zpo
+source: https://www.gesetze-im-internet.de/zpo/xml.zip
+downloaded_at: 2025-08-31T09:05:55+02:00

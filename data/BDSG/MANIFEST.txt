@@ -1,0 +1,4 @@
+name: Bundesdatenschutzgesetz (BDSG)
+slug: bdsg_2018
+source: https://www.gesetze-im-internet.de/bdsg_2018/xml.zip
+downloaded_at: 2025-08-31T09:05:56+02:00

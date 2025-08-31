@@ -1,0 +1,4 @@
+name: Verwaltungsgerichtsordnung (VwGO)
+slug: vwgo
+source: https://www.gesetze-im-internet.de/vwgo/xml.zip
+downloaded_at: 2025-08-31T09:05:56+02:00

@@ -1,0 +1,4 @@
+name: Strafgesetzbuch (StGB)
+slug: stgb
+source: https://www.gesetze-im-internet.de/stgb/xml.zip
+downloaded_at: 2025-08-31T09:05:55+02:00
