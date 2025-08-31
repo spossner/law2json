@@ -19,7 +19,7 @@ export function LawNavigator({ className }: Props) {
   useEffect(() => {
     const loadLawData = async () => {
       try {
-        const response = await fetch('/BNatSchG-hierarchical.json');
+        const response = await fetch('law/BNatSchG.json');
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }

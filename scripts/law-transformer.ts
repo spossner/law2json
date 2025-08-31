@@ -207,7 +207,7 @@ export class HierarchicalLawTransformer {
           currentChapter = {
             type: 'chapter',
             id: this.generateId(),
-            number: text,
+            number: this.normalizeNumber(text),
             title: title,
             children: []
           };
@@ -222,7 +222,7 @@ export class HierarchicalLawTransformer {
           currentSection = {
             type: 'section',
             id: this.generateId(),
-            number: text,
+            number: this.normalizeNumber(text),
             title: title,
             children: []
           };
@@ -268,7 +268,7 @@ export class HierarchicalLawTransformer {
           const paragraph: StructuralElement = {
             type: 'paragraph',
             id: this.generateId(),
-            number: number,
+            number: this.normalizeNumber(number),
             title: title,
             children: []
           };
@@ -299,7 +299,7 @@ export class HierarchicalLawTransformer {
       const paragraph: StructuralElement = {
         type: 'paragraph',
         id: this.generateId(),
-        number: enbez,
+        number: this.normalizeNumber(enbez),
         title: title,
         children: []
       };
@@ -575,7 +575,18 @@ export class HierarchicalLawTransformer {
 
   private getNodeText(node: Node): string {
     if (!node) return '';
-    return (node as any).textContent || (node as any).innerText || '';
+    const text = (node as any).textContent || (node as any).innerText || '';
+    // Clean NBSP characters (0x00a0) and normalize spacing
+    return text.replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  private normalizeNumber(text: string): string {
+    if (!text) return text;
+    // Clean NBSP characters (0x00a0) and normalize spacing for numbers
+    return text
+      .replace(/\u00a0/g, ' ')  // Replace NBSP with regular space
+      .replace(/\s+/g, ' ')     // Normalize multiple spaces to single space
+      .trim();
   }
 }
 
