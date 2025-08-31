@@ -9,33 +9,39 @@ export type CommentType = 'Stand' | 'Stand-Hinweis' | 'Hinweis' | 'Fundstelle' |
 export interface TextElement {
   type: 'text';
   text: string;
+  id?: string;
 }
 
 export interface FormattedTextElement {
   type: 'formatted_text';
   style: FormattingStyle;
   text: string;
+  id?: string;
 }
 
 export interface LineBreakElement {
   type: 'line_break';
+  id?: string;
 }
 
 export interface PreformattedElement {
   type: 'preformatted';
   text: string;
+  id?: string;
 }
 
 export interface CommentElement {
   type: 'comment';
   commentType: CommentType;
   text: string;
+  id?: string;
 }
 
 export interface ListItemElement {
   type: 'list_item';
   text?: string;
   children?: ContentElement[];
+  id?: string;
 }
 
 export interface OrderedListElement {
@@ -43,6 +49,7 @@ export interface OrderedListElement {
   listType: ListType;
   symbol?: string;
   children: ListItemElement[];
+  id?: string;
 }
 
 export interface ImageElement {
@@ -52,6 +59,7 @@ export interface ImageElement {
   height?: number;
   alt?: string;
   align?: 'left' | 'center' | 'right';
+  id?: string;
 }
 
 export interface TableElement {
@@ -60,6 +68,7 @@ export interface TableElement {
   headers?: string[];
   rows: (string | ContentElement)[][];
   frame?: 'none' | 'all' | 'top' | 'bottom' | 'topbot' | 'sides';
+  id?: string;
 }
 
 export type ContentElement = 

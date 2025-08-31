@@ -26,8 +26,8 @@ export function ContentRenderer({
   onContentSelect, 
   selectedContentId 
 }: Props) {
-  // Generate hierarchical content ID
-  const contentId = `${parentPath}_${element.type}_${contentIndex}`;
+  // Use hierarchical ID from JSON or fallback to calculated ID
+  const contentId = element.id || `${parentPath}_${element.type}_${contentIndex}`;
   const isSelected = selectedContentId === contentId;
   
   const handleClick = () => {

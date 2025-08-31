@@ -433,19 +433,31 @@ export class HierarchicalLawTransformer {
 
     const consolidated = this.consolidateTextElements(contentElements);
     
-    // Add hierarchical IDs to content elements
+    // Add hierarchical IDs to content elements using sequential indexing starting from 1
     return consolidated.map((element, index) => {
       const contentElement = { ...element } as any;
-      if (!contentElement.id) {
-        contentElement.id = this.generateHierarchicalId(
-          chapterNum, 
-          sectionNum, 
-          paragraphNum, 
-          subparagraphNum, 
-          element.type, 
-          index
-        );
+      
+      // Generate ID for the content element based on its position (1-indexed)
+      contentElement.id = this.generateHierarchicalId(
+        chapterNum, 
+        sectionNum, 
+        paragraphNum, 
+        subparagraphNum, 
+        element.type, 
+        index + 1
+      );
+      
+      // If this is an ordered list, assign IDs to its list items using the list ID as prefix (1-indexed)
+      if (element.type === 'ordered_list') {
+        const orderedList = contentElement as OrderedListElement;
+        if (orderedList.children) {
+          orderedList.children = orderedList.children.map((listItem, listIndex) => ({
+            ...listItem,
+            id: `${contentElement.id}_LI${listIndex + 1}`
+          }));
+        }
       }
+      
       return contentElement;
     });
   }
@@ -464,12 +476,12 @@ export class HierarchicalLawTransformer {
     }
   }
 
-  private processContentElement(element: Element): ContentElement[] | null {
+  private processContentElement(element: Element, chapterNum?: string, sectionNum?: string, paragraphNum?: string, subparagraphNum?: string): ContentElement[] | null {
     const tagName = element.tagName;
 
     switch (tagName) {
       case 'DL':
-        return [this.processDefinitionList(element)];
+        return [this.processDefinitionList(element, chapterNum, sectionNum, paragraphNum, subparagraphNum)];
 
       case 'IMG':
         return [this.processImage(element)];
@@ -516,6 +528,8 @@ export class HierarchicalLawTransformer {
     const type = dlElement.getAttribute('Type') || 'arabic';
     const listType = this.mapListType(type);
     
+    // Don't generate ID here - it will be assigned by processElementContent based on position
+    
     const listItems: ListItemElement[] = [];
     const dtElements = dlElement.getElementsByTagName('DT');
     const ddElements = dlElement.getElementsByTagName('DD');
@@ -531,10 +545,10 @@ export class HierarchicalLawTransformer {
         this.getNodeText(ddElement);
 
       if (itemText.trim()) {
+        // Don't generate ID for list items here - they will be assigned later
         const listItem: ListItemElement = {
           type: 'list_item',
-          text: itemText.trim(),
-          id: this.generateHierarchicalId(chapterNum, sectionNum, paragraphNum, subparagraphNum, 'list_item', i)
+          text: itemText.trim()
         };
         listItems.push(listItem);
       }
@@ -543,8 +557,8 @@ export class HierarchicalLawTransformer {
     const result: OrderedListElement = {
       type: 'ordered_list',
       listType: listType,
-      children: listItems,
-      id: this.generateHierarchicalId(chapterNum, sectionNum, paragraphNum, subparagraphNum, 'ordered_list', 0)
+      children: listItems
+      // ID will be assigned by processElementContent based on position
     };
 
     // Add symbol for Symbol type lists

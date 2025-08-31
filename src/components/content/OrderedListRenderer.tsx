@@ -49,7 +49,7 @@ export function OrderedListRenderer({ element, className, searchTerm, parentPath
     )}>
       {element.children.map((item, index) => {
         const displayText = searchTerm ? highlightText(item.text || 'List item content', searchTerm) : (item.text || 'List item content');
-        const itemId = `${parentPath}_item_${index}`;
+        const itemId = item.id || `${parentPath}_item_${index}`;
         const isSelected = selectedContentId === itemId;
         
         return (
