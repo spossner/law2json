@@ -14,6 +14,20 @@ export function LawNavigator({ className }: Props) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [deepSearch, setDeepSearch] = useState(false);
+
+  // Search within content elements recursively
+  const searchInContent = (children: any[], searchTerm: string): boolean => {
+    return children.some(child => {
+      if (child.text && child.text.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return true;
+      }
+      if (child.children) {
+        return searchInContent(child.children, searchTerm);
+      }
+      return false;
+    });
+  };
 
   // Load law data
   useEffect(() => {
@@ -48,14 +62,92 @@ export function LawNavigator({ className }: Props) {
     return count;
   };
 
-  // Filter structure based on search
+  // Count all matching elements recursively
+  const countMatches = (elements: StructuralElement[], searchTerm: string): number => {
+    if (!searchTerm) return 0;
+    
+    let count = 0;
+    
+    elements.forEach(element => {
+      // Check if current element matches in title/number
+      const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                              element.number?.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      // Check if content matches (when deep search is enabled)
+      const contentChildren = element.children.filter(child => 
+        !('type' in child) || 
+        !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+      );
+      
+      const matchesContent = deepSearch && contentChildren.length > 0 && 
+                            searchInContent(contentChildren, searchTerm);
+      
+      if (matchesStructure || matchesContent) {
+        count++;
+      }
+      
+      // Recursively count matches in structural children
+      const structuralChildren = element.children.filter(child => 
+        'type' in child && 
+        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+      ) as StructuralElement[];
+      
+      if (structuralChildren.length > 0) {
+        count += countMatches(structuralChildren, searchTerm);
+      }
+    });
+    
+    return count;
+  };
+
+  // Filter structure based on search (recursive)
   const filterStructure = (elements: StructuralElement[], searchTerm: string): StructuralElement[] => {
     if (!searchTerm) return elements;
     
-    return elements.filter(element => 
-      element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      element.number?.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const filtered: StructuralElement[] = [];
+    
+    elements.forEach(element => {
+      // Check if current element matches in title/number
+      const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                              element.number?.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      // Check if content matches (when deep search is enabled)
+      const contentChildren = element.children.filter(child => 
+        !('type' in child) || 
+        !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+      );
+      
+      const matchesContent = deepSearch && contentChildren.length > 0 && 
+                            searchInContent(contentChildren, searchTerm);
+      
+      const matchesSearch = matchesStructure || matchesContent;
+      
+      // Get structural children for recursive search
+      const structuralChildren = element.children.filter(child => 
+        'type' in child && 
+        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+      ) as StructuralElement[];
+      
+      // Recursively filter children
+      const filteredChildren = structuralChildren.length > 0 ? 
+        filterStructure(structuralChildren, searchTerm) : [];
+      
+      // Include element if it matches or has matching children
+      if (matchesSearch || filteredChildren.length > 0) {
+        // Keep all children if current element matches, otherwise only keep filtered structural children + content
+        const contentChildren = element.children.filter(child => 
+          !('type' in child) || 
+          !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
+        );
+        
+        filtered.push({
+          ...element,
+          children: matchesSearch ? element.children : [...contentChildren, ...filteredChildren]
+        });
+      }
+    });
+    
+    return filtered;
   };
 
   if (loading) {
@@ -99,6 +191,7 @@ export function LawNavigator({ className }: Props) {
   };
 
   const filteredStructure = filterStructure(lawData.law.structure, searchTerm);
+  const matchCount = countMatches(lawData.law.structure, searchTerm);
 
   return (
     <div className={cn('min-h-screen bg-gray-50', className)}>
@@ -147,19 +240,69 @@ export function LawNavigator({ className }: Props) {
         {/* Sidebar */}
         <div className="w-96 bg-white border-r border-gray-200 min-h-screen">
           <div className="p-4 border-b border-gray-200">
-            <input
-              type="text"
-              placeholder="Search paragraphs and sections..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            />
+            <div className="relative">
+              {/* Search icon (left side) */}
+              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              
+              <input
+                type="text"
+                placeholder={deepSearch ? "Deep search in titles and content..." : "Search paragraphs and sections..."}
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className={cn(
+                  "w-full pl-10 pr-20 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500",
+                  searchTerm ? "pr-20" : "pr-16"
+                )}
+              />
+              
+              <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-1">
+                {/* Clear button (when search has content) */}
+                {searchTerm && (
+                  <button
+                    onClick={() => setSearchTerm('')}
+                    className="p-1 rounded text-gray-400 hover:text-gray-600 hover:bg-gray-100"
+                    title="Clear search"
+                  >
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
+                
+                {/* Deep search toggle */}
+                <button
+                  onClick={() => setDeepSearch(!deepSearch)}
+                  className={cn(
+                    "p-1 rounded transition-colors",
+                    deepSearch 
+                      ? "text-blue-600 hover:text-blue-700 hover:bg-blue-50" 
+                      : "text-gray-400 hover:text-gray-600 hover:bg-gray-50"
+                  )}
+                  title={deepSearch ? "Deep search enabled - searches titles and content" : "Surface search - searches titles only"}
+                >
+                  {/* Layers/depth icon for deep search toggle */}
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={deepSearch ? 2.5 : 2}
+                      d="M19 11H5m14-7H5m14 14H5"
+                      opacity={deepSearch ? 1 : 0.6}
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
           
           <div className="overflow-y-auto max-h-[calc(100vh-200px)]">
             {searchTerm && (
               <div className="p-4 text-sm text-gray-600 border-b border-gray-200">
-                {filteredStructure.length} results found
+                {matchCount} results found
               </div>
             )}
             
