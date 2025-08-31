@@ -200,40 +200,38 @@ export function LawNavigator({ className }: Props) {
       {/* Header */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">German Law Navigator</h1>
-              <p className="text-gray-600">Interactive visualization of German legal documents</p>
-            </div>
-            <div className="flex gap-6 text-sm">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">{stats.chapters}</div>
-                <div className="text-gray-500">Chapters</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">{stats.sections}</div>
-                <div className="text-gray-500">Sections</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">{stats.paragraphs}</div>
-                <div className="text-gray-500">Paragraphs</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-orange-600">{stats.subparagraphs}</div>
-                <div className="text-gray-500">Subparagraphs</div>
-              </div>
-            </div>
-          </div>
+          <h1 className="text-2xl font-bold text-gray-900">German Law Navigator</h1>
+          <p className="text-gray-600">Interactive visualization of German legal documents</p>
         </div>
       </div>
 
       {/* Law Info */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-6 py-6">
-          <h2 className="text-xl font-bold mb-2">{lawData.law.title}</h2>
-          <p className="opacity-90">
-            {lawData.law.abbreviation} • Interactive legal document structure
-          </p>
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-xl font-bold mb-2">{lawData.law.title}</h2>
+              <p className="opacity-90">{lawData.law.abbreviation}</p>
+            </div>
+            <div className="flex gap-6 text-sm">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">{stats.chapters}</div>
+                <div className="text-white/70">Chapters</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">{stats.sections}</div>
+                <div className="text-white/70">Sections</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">{stats.paragraphs}</div>
+                <div className="text-white/70">Paragraphs</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">{stats.subparagraphs}</div>
+                <div className="text-white/70">Subparagraphs</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
