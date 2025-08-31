@@ -1,28 +1,112 @@
 /**
- * German Law XML to Hierarchical JSON Transformer
+ * German Law XML to Hierarchical JSON Transformer (TypeScript)
  * 
  * Transforms GiI XML format into hierarchical JSON structure 
  * according to german-legal-json-schema.json
  */
 
-const fs = require('fs');
-const { DOMParser } = require('xmldom');
+import * as fs from 'fs';
+import { DOMParser } from 'xmldom';
 
-class HierarchicalLawTransformer {
-  constructor() {
-    this.currentId = 0;
-  }
+// Types for the hierarchical JSON structure
+export type ListType = 'arabic' | 'alpha' | 'Alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None';
+export type FormattingStyle = 'bold' | 'italic' | 'underline' | 'subscript' | 'superscript' | 'spacing';
+export type CommentType = 'Stand' | 'Stand-Hinweis' | 'Hinweis' | 'Fundstelle' | 'Verarbeitung';
 
-  generateId() {
+export interface TextElement {
+  type: 'text';
+  text: string;
+}
+
+export interface FormattedTextElement {
+  type: 'formatted_text';
+  style: FormattingStyle;
+  text: string;
+}
+
+export interface LineBreakElement {
+  type: 'line_break';
+}
+
+export interface PreformattedElement {
+  type: 'preformatted';
+  text: string;
+}
+
+export interface CommentElement {
+  type: 'comment';
+  commentType: CommentType;
+  text: string;
+}
+
+export interface ListItemElement {
+  type: 'list_item';
+  text?: string;
+  children?: ContentElement[];
+}
+
+export interface OrderedListElement {
+  type: 'ordered_list';
+  listType: ListType;
+  symbol?: string;
+  children: ListItemElement[];
+}
+
+export interface ImageElement {
+  type: 'image';
+  src: string;
+  width?: number;
+  height?: number;
+  alt?: string;
+  align?: 'left' | 'center' | 'right';
+}
+
+export interface TableElement {
+  type: 'table';
+  columns: number;
+  headers?: string[];
+  rows: (string | ContentElement)[][];
+  frame?: 'none' | 'all' | 'top' | 'bottom' | 'topbot' | 'sides';
+}
+
+export type ContentElement = 
+  | TextElement 
+  | FormattedTextElement
+  | LineBreakElement
+  | PreformattedElement
+  | CommentElement
+  | ListItemElement
+  | OrderedListElement
+  | ImageElement
+  | TableElement;
+
+export interface StructuralElement {
+  type: 'chapter' | 'section' | 'paragraph' | 'subparagraph';
+  id: string;
+  number?: string;
+  title?: string;
+  children: (StructuralElement | ContentElement)[];
+}
+
+export interface LawDocument {
+  law: {
+    title: string;
+    abbreviation: string;
+    structure: StructuralElement[];
+  };
+}
+
+export class HierarchicalLawTransformer {
+  private currentId: number = 0;
+
+  private generateId(): string {
     return `element_${++this.currentId}`;
   }
 
   /**
    * Transform a GiI XML document into hierarchical JSON structure
-   * @param {string} xmlContent - The XML content to transform
-   * @returns {Object} Transformed law structure matching JSON schema
    */
-  transform(xmlContent) {
+  transform(xmlContent: string): LawDocument {
     const parser = new DOMParser();
     const doc = parser.parseFromString(xmlContent, 'text/xml');
     
@@ -45,7 +129,7 @@ class HierarchicalLawTransformer {
     };
   }
 
-  extractLawMetadata(norm) {
+  private extractLawMetadata(norm: Element): { title: string; abbreviation: string } {
     const metadaten = norm.getElementsByTagName('metadaten')[0];
     if (!metadaten) return { title: '', abbreviation: '' };
 
@@ -59,7 +143,7 @@ class HierarchicalLawTransformer {
     };
   }
 
-  buildHierarchicalStructure(norms) {
+  private buildHierarchicalStructure(norms: Element[]): StructuralElement[] {
     // Find TOC and paragraph norms
     const tocNorm = norms.find(norm => {
       const enbez = this.getElementText(norm, 'enbez');
@@ -72,7 +156,7 @@ class HierarchicalLawTransformer {
     });
 
     // Create paragraph content map
-    const paragraphMap = new Map();
+    const paragraphMap = new Map<string, Element>();
     paragraphNorms.forEach(norm => {
       const enbez = this.getElementText(norm, 'enbez');
       if (enbez) {
@@ -80,7 +164,7 @@ class HierarchicalLawTransformer {
       }
     });
 
-    let structure = [];
+    let structure: StructuralElement[] = [];
 
     if (tocNorm) {
       structure = this.extractHierarchyFromTOC(tocNorm, paragraphMap);
@@ -92,21 +176,21 @@ class HierarchicalLawTransformer {
     return structure;
   }
 
-  extractHierarchyFromTOC(tocNorm, paragraphMap) {
+  private extractHierarchyFromTOC(tocNorm: Element, paragraphMap: Map<string, Element>): StructuralElement[] {
     const textdaten = tocNorm.getElementsByTagName('textdaten')[0];
     if (!textdaten) return [];
 
     const toc = textdaten.getElementsByTagName('TOC')[0];
     if (!toc) return [];
 
-    const structure = [];
-    let currentChapter = null;
-    let currentSection = null;
+    const structure: StructuralElement[] = [];
+    let currentChapter: StructuralElement | null = null;
+    let currentSection: StructuralElement | null = null;
 
     // Process TOC elements in order
     const tocChildren = Array.from(toc.childNodes).filter(node => 
-      node.nodeType === 1 && (node.tagName === 'Ident' || node.tagName === 'Title' || node.tagName === 'table')
-    );
+      node.nodeType === 1 && (node.nodeName === 'Ident' || node.nodeName === 'Title' || node.nodeName === 'table')
+    ) as Element[];
 
     for (let i = 0; i < tocChildren.length; i++) {
       const element = tocChildren[i];
@@ -167,8 +251,8 @@ class HierarchicalLawTransformer {
     return structure;
   }
 
-  extractParagraphsFromTable(table, paragraphMap) {
-    const paragraphs = [];
+  private extractParagraphsFromTable(table: Element, paragraphMap: Map<string, Element>): StructuralElement[] {
+    const paragraphs: StructuralElement[] = [];
     const rows = table.getElementsByTagName('row');
     
     Array.from(rows).forEach(row => {
@@ -181,7 +265,7 @@ class HierarchicalLawTransformer {
         const title = this.getNodeText(titleEntry).trim();
         
         if (number && title && (number.startsWith('§') || number.startsWith('Anlage'))) {
-          const paragraph = {
+          const paragraph: StructuralElement = {
             type: 'paragraph',
             id: this.generateId(),
             number: number,
@@ -206,13 +290,13 @@ class HierarchicalLawTransformer {
     return paragraphs;
   }
 
-  createFlatStructure(paragraphNorms) {
+  private createFlatStructure(paragraphNorms: Element[]): StructuralElement[] {
     return paragraphNorms.map(norm => {
       const enbez = this.getElementText(norm, 'enbez');
       const metadaten = norm.getElementsByTagName('metadaten')[0];
       const title = metadaten ? this.getElementText(metadaten, 'titel') : '';
 
-      const paragraph = {
+      const paragraph: StructuralElement = {
         type: 'paragraph',
         id: this.generateId(),
         number: enbez,
@@ -227,7 +311,7 @@ class HierarchicalLawTransformer {
     });
   }
 
-  extractSubParagraphs(norm, paragraphId) {
+  private extractSubParagraphs(norm: Element, paragraphId: string): StructuralElement[] {
     const textdaten = norm.getElementsByTagName('textdaten')[0];
     if (!textdaten) return [];
 
@@ -235,7 +319,7 @@ class HierarchicalLawTransformer {
     const contentElements = textElement ? textElement.getElementsByTagName('Content') : 
                            textdaten.getElementsByTagName('Content');
 
-    const subParagraphs = [];
+    const subParagraphs: StructuralElement[] = [];
     let subParagraphIndex = 0;
 
     for (let i = 0; i < contentElements.length; i++) {
@@ -251,7 +335,7 @@ class HierarchicalLawTransformer {
         const numberMatch = textContent.match(/^\((\d+[a-z]?)\)/);
         const subParagraphNumber = numberMatch ? numberMatch[1] : subParagraphIndex.toString();
 
-        const subParagraph = {
+        const subParagraph: StructuralElement = {
           type: 'subparagraph',
           id: `${paragraphId}_${subParagraphIndex}`,
           number: `(${subParagraphNumber})`,
@@ -265,8 +349,8 @@ class HierarchicalLawTransformer {
     return subParagraphs;
   }
 
-  processElementContent(element) {
-    const contentElements = [];
+  private processElementContent(element: Element): ContentElement[] {
+    const contentElements: ContentElement[] = [];
     
     for (let i = 0; i < element.childNodes.length; i++) {
       const node = element.childNodes[i];
@@ -279,12 +363,12 @@ class HierarchicalLawTransformer {
     return this.consolidateTextElements(contentElements);
   }
 
-  processContentNode(node) {
+  private processContentNode(node: Node): ContentElement[] | null {
     if (!node) return null;
 
     switch (node.nodeType) {
       case 1: // Element node
-        return this.processContentElement(node);
+        return this.processContentElement(node as Element);
       case 3: // Text node
         const text = (node.nodeValue || '').trim();
         return text ? [{ type: 'text', text: text }] : null;
@@ -293,7 +377,7 @@ class HierarchicalLawTransformer {
     }
   }
 
-  processContentElement(element) {
+  private processContentElement(element: Element): ContentElement[] | null {
     const tagName = element.tagName;
 
     switch (tagName) {
@@ -332,7 +416,7 @@ class HierarchicalLawTransformer {
 
       case 'kommentar':
         const commentType = element.getAttribute('typ') || 'Hinweis';
-        return [{ type: 'comment', commentType: commentType, text: this.getNodeText(element) }];
+        return [{ type: 'comment', commentType: commentType as CommentType, text: this.getNodeText(element) }];
 
       default:
         // For other elements, process children and return as text
@@ -341,11 +425,11 @@ class HierarchicalLawTransformer {
     }
   }
 
-  processDefinitionList(dlElement) {
+  private processDefinitionList(dlElement: Element): OrderedListElement {
     const type = dlElement.getAttribute('Type') || 'arabic';
     const listType = this.mapListType(type);
     
-    const listItems = [];
+    const listItems: ListItemElement[] = [];
     const dtElements = dlElement.getElementsByTagName('DT');
     const ddElements = dlElement.getElementsByTagName('DD');
 
@@ -360,7 +444,7 @@ class HierarchicalLawTransformer {
         this.getNodeText(ddElement);
 
       if (itemText.trim()) {
-        const listItem = {
+        const listItem: ListItemElement = {
           type: 'list_item',
           text: itemText.trim()
         };
@@ -368,7 +452,7 @@ class HierarchicalLawTransformer {
       }
     }
 
-    const result = {
+    const result: OrderedListElement = {
       type: 'ordered_list',
       listType: listType,
       children: listItems
@@ -382,32 +466,38 @@ class HierarchicalLawTransformer {
     return result;
   }
 
-  processImage(imgElement) {
+  private processImage(imgElement: Element): ImageElement {
     return {
       type: 'image',
       src: imgElement.getAttribute('SRC') || '',
-      width: parseInt(imgElement.getAttribute('Width')) || null,
-      height: parseInt(imgElement.getAttribute('Height')) || null,
+      width: parseInt(imgElement.getAttribute('Width') || '0') || undefined,
+      height: parseInt(imgElement.getAttribute('Height') || '0') || undefined,
       alt: imgElement.getAttribute('alt') || '',
-      align: imgElement.getAttribute('Align') || null
+      align: (imgElement.getAttribute('Align') as 'left' | 'center' | 'right') || undefined
     };
   }
 
-  processTable(tableElement) {
+  private processTable(tableElement: Element): TableElement {
     // Simplified table processing - could be enhanced
     const tgroups = tableElement.getElementsByTagName('tgroup');
-    if (tgroups.length === 0) return null;
+    if (tgroups.length === 0) {
+      return {
+        type: 'table',
+        columns: 1,
+        rows: []
+      };
+    }
 
     const tgroup = tgroups[0];
-    const cols = parseInt(tgroup.getAttribute('cols')) || 1;
+    const cols = parseInt(tgroup.getAttribute('cols') || '1');
     
-    const rows = [];
+    const rows: (string | ContentElement)[][] = [];
     const rowElements = tgroup.getElementsByTagName('row');
     
     for (let i = 0; i < rowElements.length; i++) {
       const rowElement = rowElements[i];
       const entries = rowElement.getElementsByTagName('entry');
-      const rowData = [];
+      const rowData: string[] = [];
       
       for (let j = 0; j < entries.length; j++) {
         rowData.push(this.getNodeText(entries[j]).trim());
@@ -422,12 +512,12 @@ class HierarchicalLawTransformer {
       type: 'table',
       columns: cols,
       rows: rows,
-      frame: tableElement.getAttribute('frame') || 'none'
+      frame: (tableElement.getAttribute('frame') as any) || 'none'
     };
   }
 
-  mapListType(xmlType) {
-    const typeMap = {
+  private mapListType(xmlType: string): ListType {
+    const typeMap: Record<string, ListType> = {
       'arabic': 'arabic',
       'alpha': 'alpha', 
       'Alpha': 'Alpha',
@@ -442,11 +532,11 @@ class HierarchicalLawTransformer {
     return typeMap[xmlType] || 'arabic';
   }
 
-  consolidateTextElements(elements) {
+  private consolidateTextElements(elements: ContentElement[]): ContentElement[] {
     if (!elements || elements.length === 0) return [];
 
-    const consolidated = [];
-    let currentTextParts = [];
+    const consolidated: ContentElement[] = [];
+    let currentTextParts: string[] = [];
 
     elements.forEach(element => {
       if (element.type === 'text') {
@@ -474,28 +564,23 @@ class HierarchicalLawTransformer {
     }
 
     return consolidated.filter(el => 
-      el.type !== 'text' || (el.text && el.text.trim())
+      el.type !== 'text' || (el.type === 'text' && el.text && el.text.trim())
     );
   }
 
-  getElementText(parent, tagName) {
+  private getElementText(parent: Element, tagName: string): string {
     const element = parent.getElementsByTagName(tagName)[0];
     return element ? this.getNodeText(element) : '';
   }
 
-  getNodeText(node) {
+  private getNodeText(node: Node): string {
     if (!node) return '';
-    return node.textContent || node.innerText || '';
+    return (node as any).textContent || (node as any).innerText || '';
   }
 }
 
-// Export for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = HierarchicalLawTransformer;
-}
-
-// Example usage function
-function transformLawFile(inputPath, outputPath) {
+// CLI usage
+async function transformLawFile(inputPath: string, outputPath: string): Promise<void> {
   try {
     const xmlContent = fs.readFileSync(inputPath, 'utf-8');
     const transformer = new HierarchicalLawTransformer();
@@ -505,11 +590,13 @@ function transformLawFile(inputPath, outputPath) {
     console.log(`Hierarchical law document saved to: ${outputPath}`);
     
     // Print summary
-    const countElements = (elements, type) => {
+    const countElements = (elements: StructuralElement[], type: string): number => {
       let count = 0;
       elements.forEach(el => {
         if (el.type === type) count++;
-        if (el.children) count += countElements(el.children, type);
+        if (el.children) {
+          count += countElements(el.children as StructuralElement[], type);
+        }
       });
       return count;
     };
@@ -524,18 +611,18 @@ function transformLawFile(inputPath, outputPath) {
     console.log('Document structure:', stats);
     
   } catch (error) {
-    console.error('Error transforming law file:', error.message);
-    console.error(error.stack);
+    console.error('Error transforming law file:', error);
+    process.exit(1);
   }
 }
 
-// CLI usage
-if (require.main === module) {
+// CLI entry point
+if (process.argv[1]?.endsWith('law-transformer-hierarchical.ts')) {
   const args = process.argv.slice(2);
   if (args.length >= 2) {
     transformLawFile(args[0], args[1]);
   } else {
-    console.log('Usage: node law-transformer-hierarchical.js <input.xml> <output.json>');
-    console.log('Example: node law-transformer-hierarchical.js data/BNatSchG/BJNR254210009.xml output/BNatSchG-hierarchical.json');
+    console.log('Usage: tsx law-transformer-hierarchical.ts <input.xml> <output.json>');
+    console.log('Example: tsx law-transformer-hierarchical.ts data/BNatSchG/BJNR254210009.xml public/law/BNatSchG-hierarchical.json');
   }
 }
