@@ -7,9 +7,12 @@ interface Props {
   element: OrderedListElement;
   className?: string;
   searchTerm?: string;
+  parentPath?: string;
+  onContentSelect?: (contentId: string) => void;
+  selectedContentId?: string;
 }
 
-export function OrderedListRenderer({ element, className, searchTerm }: Props) {
+export function OrderedListRenderer({ element, className, searchTerm, parentPath, onContentSelect, selectedContentId }: Props) {
   const getListStyle = (listType: OrderedListElement['listType']) => {
     switch (listType) {
       case 'arabic':
@@ -46,9 +49,19 @@ export function OrderedListRenderer({ element, className, searchTerm }: Props) {
     )}>
       {element.children.map((item, index) => {
         const displayText = searchTerm ? highlightText(item.text || 'List item content', searchTerm) : (item.text || 'List item content');
+        const itemId = `${parentPath}_item_${index}`;
+        const isSelected = selectedContentId === itemId;
         
         return (
-          <li key={index} className="text-gray-900 leading-relaxed">
+          <li 
+            key={index} 
+            className={cn(
+              "text-gray-900 leading-relaxed cursor-pointer rounded transition-colors p-1",
+              "hover:bg-blue-50 hover:ring-1 hover:ring-blue-200",
+              isSelected && "bg-blue-100 ring-1 ring-blue-300"
+            )}
+            onClick={() => onContentSelect?.(itemId)}
+          >
             {element.listType === 'Symbol' && element.symbol && (
               <span className="mr-2">{element.symbol}</span>
             )}

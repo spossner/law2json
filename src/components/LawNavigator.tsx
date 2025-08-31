@@ -12,10 +12,49 @@ interface Props {
 export function LawNavigator({ className }: Props) {
   const [lawData, setLawData] = useState<LawDocument | null>(null);
   const [selectedElement, setSelectedElement] = useState<StructuralElement | null>(null);
+  const [selectedContentId, setSelectedContentId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [deepSearch, setDeepSearch] = useState(false);
+
+  // Handle fine-grained content selection
+  const handleContentSelect = (contentId: string) => {
+    setSelectedContentId(contentId);
+    console.log('Selected content ID:', contentId);
+  };
+
+  // Generate hierarchical path for content elements
+  const generatePath = (
+    chapter?: string,
+    section?: string, 
+    paragraph?: string,
+    subparagraph?: string
+  ): string => {
+    const parts: string[] = [];
+    
+    if (chapter) {
+      const chapterNum = chapter.match(/\d+/)?.[0];
+      if (chapterNum) parts.push(`K${chapterNum}`);
+    }
+    
+    if (section) {
+      const sectionNum = section.match(/\d+/)?.[0];
+      if (sectionNum) parts.push(`A${sectionNum}`);
+    }
+    
+    if (paragraph) {
+      const paragraphNum = paragraph.replace(/[§\s\u00a0]/g, '');
+      if (paragraphNum) parts.push(`P${paragraphNum}`);
+    }
+    
+    if (subparagraph) {
+      const subNum = subparagraph.match(/\d+/)?.[0];
+      if (subNum) parts.push(`S${subNum}`);
+    }
+    
+    return parts.join('_') || 'unknown';
+  };
 
   // Search within content elements recursively
   const searchInContent = (children: any[], searchTerm: string): boolean => {
@@ -353,11 +392,30 @@ export function LawNavigator({ className }: Props) {
                           )}
                           {structChild.children.length > 0 && (
                             <div className="space-y-3">
-                              {structChild.children.map((grandchild, gIndex) => (
-                                <div key={gIndex}>
-                                  <ContentRenderer element={grandchild as ContentElement} searchTerm={searchTerm} />
-                                </div>
-                              ))}
+                              {structChild.children.map((grandchild, gIndex) => {
+                                // Generate hierarchical path based on context
+                                // We need to determine the hierarchy context from selectedElement and structChild
+                                const parentPath = generatePath(
+                                  selectedElement?.type === 'chapter' ? selectedElement.number : undefined,
+                                  selectedElement?.type === 'section' ? selectedElement.number : 
+                                    (structChild.type === 'section' ? structChild.number : undefined),
+                                  structChild.type === 'paragraph' ? structChild.number : undefined,
+                                  structChild.type === 'subparagraph' ? structChild.number : undefined
+                                );
+                                
+                                return (
+                                  <div key={gIndex}>
+                                    <ContentRenderer 
+                                      element={grandchild as ContentElement} 
+                                      searchTerm={searchTerm}
+                                      parentPath={parentPath}
+                                      contentIndex={gIndex}
+                                      onContentSelect={handleContentSelect}
+                                      selectedContentId={selectedContentId}
+                                    />
+                                  </div>
+                                );
+                              })}
                             </div>
                           )}
                         </div>

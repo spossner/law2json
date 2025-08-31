@@ -16,33 +16,39 @@ export type CommentType = 'Stand' | 'Stand-Hinweis' | 'Hinweis' | 'Fundstelle' |
 export interface TextElement {
   type: 'text';
   text: string;
+  id?: string;
 }
 
 export interface FormattedTextElement {
   type: 'formatted_text';
   style: FormattingStyle;
   text: string;
+  id?: string;
 }
 
 export interface LineBreakElement {
   type: 'line_break';
+  id?: string;
 }
 
 export interface PreformattedElement {
   type: 'preformatted';
   text: string;
+  id?: string;
 }
 
 export interface CommentElement {
   type: 'comment';
   commentType: CommentType;
   text: string;
+  id?: string;
 }
 
 export interface ListItemElement {
   type: 'list_item';
   text?: string;
   children?: ContentElement[];
+  id?: string;
 }
 
 export interface OrderedListElement {
@@ -50,6 +56,7 @@ export interface OrderedListElement {
   listType: ListType;
   symbol?: string;
   children: ListItemElement[];
+  id?: string;
 }
 
 export interface ImageElement {
@@ -59,6 +66,7 @@ export interface ImageElement {
   height?: number;
   alt?: string;
   align?: 'left' | 'center' | 'right';
+  id?: string;
 }
 
 export interface TableElement {
@@ -67,6 +75,7 @@ export interface TableElement {
   headers?: string[];
   rows: (string | ContentElement)[][];
   frame?: 'none' | 'all' | 'top' | 'bottom' | 'topbot' | 'sides';
+  id?: string;
 }
 
 export type ContentElement = 
@@ -101,6 +110,62 @@ export class HierarchicalLawTransformer {
 
   private generateId(): string {
     return `element_${++this.currentId}`;
+  }
+
+  // Generate hierarchical ID based on legal structure
+  private generateHierarchicalId(
+    chapter?: string, 
+    section?: string, 
+    paragraph?: string, 
+    subparagraph?: string,
+    contentType?: string,
+    contentIndex?: number
+  ): string {
+    const parts: string[] = [];
+    
+    if (chapter) {
+      // Clean chapter number (e.g. "Kapitel 4" -> "K4")
+      const chapterNum = chapter.match(/\d+/)?.[0] || chapter.replace(/\D/g, '');
+      if (chapterNum) parts.push(`K${chapterNum}`);
+    }
+    
+    if (section) {
+      // Clean section number (e.g. "Abschnitt 1" -> "A1")
+      const sectionNum = section.match(/\d+/)?.[0] || section.replace(/\D/g, '');
+      if (sectionNum) parts.push(`A${sectionNum}`);
+    }
+    
+    if (paragraph) {
+      // Clean paragraph number (e.g. "§  20" -> "P20")
+      const paragraphNum = paragraph.replace(/[§\s\u00a0]/g, '');
+      if (paragraphNum) parts.push(`P${paragraphNum}`);
+    }
+    
+    if (subparagraph) {
+      // Clean subparagraph number (e.g. "(2)" -> "S2")
+      const subNum = subparagraph.match(/\d+/)?.[0];
+      if (subNum) parts.push(`S${subNum}`);
+    }
+    
+    if (contentType && contentIndex !== undefined) {
+      // Map content types to slimmer prefixes
+      const contentTypePrefixes: Record<string, string> = {
+        'text': 'TXT',
+        'formatted_text': 'FMT',
+        'line_break': 'BR',
+        'preformatted': 'PRE',
+        'comment': 'CMT',
+        'list_item': 'LI',
+        'ordered_list': 'OL',
+        'image': 'IMG',
+        'table': 'TBL'
+      };
+      
+      const prefix = contentTypePrefixes[contentType] || contentType.toUpperCase();
+      parts.push(`${prefix}${contentIndex}`);
+    }
+    
+    return parts.join('_') || `element_${++this.currentId}`;
   }
 
   /**
@@ -186,6 +251,10 @@ export class HierarchicalLawTransformer {
     const structure: StructuralElement[] = [];
     let currentChapter: StructuralElement | null = null;
     let currentSection: StructuralElement | null = null;
+    
+    // Context for hierarchical ID generation
+    let currentChapterNum = '';
+    let currentSectionNum = '';
 
     // Process TOC elements in order
     const tocChildren = Array.from(toc.childNodes).filter(node => 
@@ -204,9 +273,10 @@ export class HierarchicalLawTransformer {
           const nextElement = tocChildren[i + 1];
           const title = nextElement && nextElement.tagName === 'Title' ? this.getNodeText(nextElement) : '';
           
+          currentChapterNum = text;
           currentChapter = {
             type: 'chapter',
-            id: this.generateId(),
+            id: this.generateHierarchicalId(currentChapterNum),
             number: this.normalizeNumber(text),
             title: title,
             children: []
@@ -219,9 +289,10 @@ export class HierarchicalLawTransformer {
           const nextElement = tocChildren[i + 1];
           const title = nextElement && nextElement.tagName === 'Title' ? this.getNodeText(nextElement) : '';
           
+          currentSectionNum = text;
           currentSection = {
             type: 'section',
-            id: this.generateId(),
+            id: this.generateHierarchicalId(currentChapterNum, currentSectionNum),
             number: this.normalizeNumber(text),
             title: title,
             children: []
@@ -235,7 +306,7 @@ export class HierarchicalLawTransformer {
         }
       } else if (element.tagName === 'table') {
         // Extract paragraphs from table and add to hierarchy
-        const paragraphs = this.extractParagraphsFromTable(element, paragraphMap);
+        const paragraphs = this.extractParagraphsFromTable(element, paragraphMap, currentChapterNum, currentSectionNum);
         paragraphs.forEach(paragraph => {
           if (currentSection) {
             currentSection.children.push(paragraph);
@@ -251,7 +322,7 @@ export class HierarchicalLawTransformer {
     return structure;
   }
 
-  private extractParagraphsFromTable(table: Element, paragraphMap: Map<string, Element>): StructuralElement[] {
+  private extractParagraphsFromTable(table: Element, paragraphMap: Map<string, Element>, currentChapterNum?: string, currentSectionNum?: string): StructuralElement[] {
     const paragraphs: StructuralElement[] = [];
     const rows = table.getElementsByTagName('row');
     
@@ -267,7 +338,7 @@ export class HierarchicalLawTransformer {
         if (number && title && (number.startsWith('§') || number.startsWith('Anlage'))) {
           const paragraph: StructuralElement = {
             type: 'paragraph',
-            id: this.generateId(),
+            id: this.generateHierarchicalId(currentChapterNum, currentSectionNum, number),
             number: this.normalizeNumber(number),
             title: title,
             children: []
@@ -278,7 +349,7 @@ export class HierarchicalLawTransformer {
           const normalizedNumber = number.replace(/\s+/g, ' ').trim();
           const norm = paragraphMap.get(normalizedNumber);
           if (norm) {
-            const subParagraphs = this.extractSubParagraphs(norm, paragraph.id);
+            const subParagraphs = this.extractSubParagraphs(norm, currentChapterNum, currentSectionNum, number);
             paragraph.children = subParagraphs;
           }
 
@@ -298,20 +369,20 @@ export class HierarchicalLawTransformer {
 
       const paragraph: StructuralElement = {
         type: 'paragraph',
-        id: this.generateId(),
+        id: this.generateHierarchicalId(undefined, undefined, enbez),
         number: this.normalizeNumber(enbez),
         title: title,
         children: []
       };
 
-      const subParagraphs = this.extractSubParagraphs(norm, paragraph.id);
+      const subParagraphs = this.extractSubParagraphs(norm, undefined, undefined, enbez);
       paragraph.children = subParagraphs;
 
       return paragraph;
     });
   }
 
-  private extractSubParagraphs(norm: Element, paragraphId: string): StructuralElement[] {
+  private extractSubParagraphs(norm: Element, chapterNum?: string, sectionNum?: string, paragraphNum?: string): StructuralElement[] {
     const textdaten = norm.getElementsByTagName('textdaten')[0];
     if (!textdaten) return [];
 
@@ -337,9 +408,9 @@ export class HierarchicalLawTransformer {
 
         const subParagraph: StructuralElement = {
           type: 'subparagraph',
-          id: `${paragraphId}_${subParagraphIndex}`,
+          id: this.generateHierarchicalId(chapterNum, sectionNum, paragraphNum, `(${subParagraphNumber})`),
           number: `(${subParagraphNumber})`,
-          children: this.processElementContent(pElement)
+          children: this.processElementContent(pElement, chapterNum, sectionNum, paragraphNum, `(${subParagraphNumber})`)
         };
 
         subParagraphs.push(subParagraph);
@@ -349,26 +420,42 @@ export class HierarchicalLawTransformer {
     return subParagraphs;
   }
 
-  private processElementContent(element: Element): ContentElement[] {
+  private processElementContent(element: Element, chapterNum?: string, sectionNum?: string, paragraphNum?: string, subparagraphNum?: string): ContentElement[] {
     const contentElements: ContentElement[] = [];
     
     for (let i = 0; i < element.childNodes.length; i++) {
       const node = element.childNodes[i];
-      const processed = this.processContentNode(node);
+      const processed = this.processContentNode(node, chapterNum, sectionNum, paragraphNum, subparagraphNum);
       if (processed) {
         contentElements.push(...processed);
       }
     }
 
-    return this.consolidateTextElements(contentElements);
+    const consolidated = this.consolidateTextElements(contentElements);
+    
+    // Add hierarchical IDs to content elements
+    return consolidated.map((element, index) => {
+      const contentElement = { ...element } as any;
+      if (!contentElement.id) {
+        contentElement.id = this.generateHierarchicalId(
+          chapterNum, 
+          sectionNum, 
+          paragraphNum, 
+          subparagraphNum, 
+          element.type, 
+          index
+        );
+      }
+      return contentElement;
+    });
   }
 
-  private processContentNode(node: Node): ContentElement[] | null {
+  private processContentNode(node: Node, chapterNum?: string, sectionNum?: string, paragraphNum?: string, subparagraphNum?: string): ContentElement[] | null {
     if (!node) return null;
 
     switch (node.nodeType) {
       case 1: // Element node
-        return this.processContentElement(node as Element);
+        return this.processContentElement(node as Element, chapterNum, sectionNum, paragraphNum, subparagraphNum);
       case 3: // Text node
         const text = (node.nodeValue || '').trim();
         return text ? [{ type: 'text', text: text }] : null;
@@ -425,7 +512,7 @@ export class HierarchicalLawTransformer {
     }
   }
 
-  private processDefinitionList(dlElement: Element): OrderedListElement {
+  private processDefinitionList(dlElement: Element, chapterNum?: string, sectionNum?: string, paragraphNum?: string, subparagraphNum?: string): OrderedListElement {
     const type = dlElement.getAttribute('Type') || 'arabic';
     const listType = this.mapListType(type);
     
@@ -446,7 +533,8 @@ export class HierarchicalLawTransformer {
       if (itemText.trim()) {
         const listItem: ListItemElement = {
           type: 'list_item',
-          text: itemText.trim()
+          text: itemText.trim(),
+          id: this.generateHierarchicalId(chapterNum, sectionNum, paragraphNum, subparagraphNum, 'list_item', i)
         };
         listItems.push(listItem);
       }
@@ -455,7 +543,8 @@ export class HierarchicalLawTransformer {
     const result: OrderedListElement = {
       type: 'ordered_list',
       listType: listType,
-      children: listItems
+      children: listItems,
+      id: this.generateHierarchicalId(chapterNum, sectionNum, paragraphNum, subparagraphNum, 'ordered_list', 0)
     };
 
     // Add symbol for Symbol type lists
@@ -628,7 +717,7 @@ async function transformLawFile(inputPath: string, outputPath: string): Promise<
 }
 
 // CLI entry point
-if (process.argv[1]?.endsWith('law-transformer-hierarchical.ts')) {
+if (process.argv[1]?.endsWith('law-transformer.ts')) {
   const args = process.argv.slice(2);
   if (args.length >= 2) {
     transformLawFile(args[0], args[1]);
