@@ -193,14 +193,16 @@ export function LawNavigator({ className }: Props) {
 
               <div className="prose prose-lg max-w-none">
                 <div className="space-y-6">
-                  {selectedElement.children.map((child, index) => {
+                  {selectedElement.children.map((child) => {
                     if ('type' in child && ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)) {
                       const structChild = child as StructuralElement;
                       return (
                         <div key={structChild.id} className="border-l-4 border-blue-200 pl-4">
-                          <h4 className="font-semibold text-lg text-blue-800 mb-2">
-                            {structChild.number} {structChild.title}
-                          </h4>
+                          {structChild.title && (
+                            <h4 className="font-semibold text-lg text-blue-800 mb-2">
+                              {structChild.number} {structChild.title}
+                            </h4>
+                          )}
                           {structChild.children.length > 0 && (
                             <div className="space-y-3">
                               {structChild.children.map((grandchild, gIndex) => (
