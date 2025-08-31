@@ -3,6 +3,7 @@ import type { LawDocument, StructuralElement, ContentElement } from '../types';
 import { StructuralElementRenderer } from './structural/StructuralElementRenderer';
 import { ContentRenderer } from './content';
 import { cn } from '../lib/utils';
+import { highlightText } from '../lib/highlightText';
 
 interface Props {
   className?: string;
@@ -28,6 +29,7 @@ export function LawNavigator({ className }: Props) {
       return false;
     });
   };
+
 
   // Load law data
   useEffect(() => {
@@ -342,15 +344,20 @@ export function LawNavigator({ className }: Props) {
                       return (
                         <div key={structChild.id} className="border-l-4 border-blue-200 pl-4">
                           {structChild.title && (
-                            <h4 className="font-semibold text-lg text-blue-800 mb-2">
-                              {structChild.number} {structChild.title}
-                            </h4>
+                            <h4 
+                              className="font-semibold text-lg text-blue-800 mb-2"
+                              dangerouslySetInnerHTML={{
+                                __html: searchTerm ? 
+                                  `${highlightText(structChild.number, searchTerm)} ${highlightText(structChild.title, searchTerm)}` :
+                                  `${structChild.number} ${structChild.title}`
+                              }}
+                            />
                           )}
                           {structChild.children.length > 0 && (
                             <div className="space-y-3">
                               {structChild.children.map((grandchild, gIndex) => (
                                 <div key={gIndex}>
-                                  <ContentRenderer element={grandchild as ContentElement} />
+                                  <ContentRenderer element={grandchild as ContentElement} searchTerm={searchTerm} />
                                 </div>
                               ))}
                             </div>

@@ -5,31 +5,35 @@ import { FormattedTextRenderer } from './FormattedTextRenderer';
 import { OrderedListRenderer } from './OrderedListRenderer';
 import { ImageRenderer } from './ImageRenderer';
 import { cn } from '../../lib/utils';
+import { highlightText } from '../../lib/highlightText';
 
 interface Props {
   element: ContentElement;
   className?: string;
+  searchTerm?: string;
 }
 
-export function ContentRenderer({ element, className }: Props) {
+export function ContentRenderer({ element, className, searchTerm }: Props) {
   switch (element.type) {
     case 'text':
-      return <TextRenderer element={element} />;
+      return <TextRenderer element={element} searchTerm={searchTerm} />;
       
     case 'formatted_text':
-      return <FormattedTextRenderer element={element} className={className} />;
+      return <FormattedTextRenderer element={element} className={className} searchTerm={searchTerm} />;
       
     case 'line_break':
       return <br />;
       
     case 'preformatted':
+      const preformattedText = searchTerm ? highlightText(element.text, searchTerm) : element.text;
       return (
-        <pre className={cn(
-          'bg-gray-50 border border-gray-200 rounded p-3 text-sm font-mono whitespace-pre-wrap overflow-x-auto my-2',
-          className
-        )}>
-          {element.text}
-        </pre>
+        <pre 
+          className={cn(
+            'bg-gray-50 border border-gray-200 rounded p-3 text-sm font-mono whitespace-pre-wrap overflow-x-auto my-2',
+            className
+          )}
+          dangerouslySetInnerHTML={{ __html: preformattedText }}
+        />
       );
       
     case 'comment':
@@ -50,12 +54,17 @@ export function ContentRenderer({ element, className }: Props) {
           <strong className="text-xs uppercase tracking-wide opacity-75">
             {element.commentType}:
           </strong>
-          <div className="mt-1">{element.text}</div>
+          <div 
+            className="mt-1"
+            dangerouslySetInnerHTML={{ 
+              __html: searchTerm ? highlightText(element.text, searchTerm) : element.text 
+            }}
+          />
         </div>
       );
       
     case 'ordered_list':
-      return <OrderedListRenderer element={element} className={className} />;
+      return <OrderedListRenderer element={element} className={className} searchTerm={searchTerm} />;
       
     case 'image':
       return <ImageRenderer element={element} className={className} />;

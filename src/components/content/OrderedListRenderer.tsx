@@ -1,13 +1,15 @@
 import React from 'react';
 import type { OrderedListElement } from '../../types';
 import { cn } from '../../lib/utils';
+import { highlightText } from '../../lib/highlightText';
 
 interface Props {
   element: OrderedListElement;
   className?: string;
+  searchTerm?: string;
 }
 
-export function OrderedListRenderer({ element, className }: Props) {
+export function OrderedListRenderer({ element, className, searchTerm }: Props) {
   const getListStyle = (listType: OrderedListElement['listType']) => {
     switch (listType) {
       case 'arabic':
@@ -42,14 +44,18 @@ export function OrderedListRenderer({ element, className }: Props) {
       element.listType === 'Symbol' && 'ml-0',
       className
     )}>
-      {element.children.map((item, index) => (
-        <li key={index} className="text-gray-900 leading-relaxed">
-          {element.listType === 'Symbol' && element.symbol && (
-            <span className="mr-2">{element.symbol}</span>
-          )}
-          {item.text || 'List item content'}
-        </li>
-      ))}
+      {element.children.map((item, index) => {
+        const displayText = searchTerm ? highlightText(item.text || 'List item content', searchTerm) : (item.text || 'List item content');
+        
+        return (
+          <li key={index} className="text-gray-900 leading-relaxed">
+            {element.listType === 'Symbol' && element.symbol && (
+              <span className="mr-2">{element.symbol}</span>
+            )}
+            <span dangerouslySetInnerHTML={{ __html: displayText }} />
+          </li>
+        );
+      })}
     </ol>
   );
 }
