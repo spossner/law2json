@@ -10571,21 +10571,209 @@
               "type": "p",
               "children": [
                 {
+                  "type": "table",
+                  "rows": [
+                    [
+                      "**Abschnitt 1**",
+                      ""
+                    ],
+                    [
+                      "**Bereiche zur Prüfung bei kollisionsgefährdeten Brutvogelarten**",
+                      ""
+                    ]
+                  ]
+                },
+                {
                   "type": "md",
-                  "md": "**Abschnitt 1****Bereiche zur Prüfung bei kollisionsgefährdeten Brutvogelarten**<br /><br />BrutvogelartenNahbereich*Zentraler<br /> Prüfbereich*Erweiterter<br /> Prüfbereich*Seeadler<br />*Haliaeetus albicilla*5002 0005 000Fischadler<br />*Pandion haliaetus*5001 0003 000Schreiadler<br />*Clanga pomarina*1 5003 0005 000Steinadler<br />*Aquila chrysaetos*1 0003 0005 000Wiesenweihe<sup>1</sup><br />*Circus pygargus*4005002 500Kornweihe<br />*Circus cyaneus*4005002 500Rohrweihe<sup>1</sup><br />*Circus aeruginosus*4005002 500Rotmilan<br />*Milvus milvus*5001 2003 500Schwarzmilan<br />*Milvus migrans*5001 0002 500Wanderfalke<br />*Falco peregrinus*5001 0002 500Baumfalke<br />*Falco subbuteo*3504502 000Wespenbussard<br />*Pernis apivorus*5001 0002 000Weißstorch<br />*Ciconia ciconia*5001 0002 000Sumpfohreule<br />*Asio flammeus*5001 0002 500Uhu<sup>1</sup><br />*Bubo bubo*5001 0002 500* Abstände in Metern, gemessen vom Mastfußmittelpunkt<sup>1</sup>  Rohrweihe, Wiesenweihe und Uhu sind nur dann kollisionsgefährdet, wenn die Höhe der Rotorunterkante in Küstennähe (bis 100 Kilometer) weniger als 30 m, im weiteren Flachland weniger als 50 m oder in hügeligem Gelände weniger als 80 m beträgt. Dies gilt, mit Ausnahme der Rohrweihe, nicht für den Nahbereich.<br /><br />"
+                  "md": "<br /><br />"
+                },
+                {
+                  "type": "table",
+                  "headers": [
+                    "Brutvogelarten",
+                    "Nahbereich*",
+                    "Zentraler<br /> Prüfbereich*",
+                    "Erweiterter<br /> Prüfbereich*"
+                  ],
+                  "rows": [
+                    [
+                      "Seeadler<br />*Haliaeetus albicilla*",
+                      "500",
+                      "2 000",
+                      "5 000"
+                    ],
+                    [
+                      "Fischadler<br />*Pandion haliaetus*",
+                      "500",
+                      "1 000",
+                      "3 000"
+                    ],
+                    [
+                      "Schreiadler<br />*Clanga pomarina*",
+                      "1 500",
+                      "3 000",
+                      "5 000"
+                    ],
+                    [
+                      "Steinadler<br />*Aquila chrysaetos*",
+                      "1 000",
+                      "3 000",
+                      "5 000"
+                    ],
+                    [
+                      "Wiesenweihe<sup>1</sup><br />*Circus pygargus*",
+                      "400",
+                      "500",
+                      "2 500"
+                    ],
+                    [
+                      "Kornweihe<br />*Circus cyaneus*",
+                      "400",
+                      "500",
+                      "2 500"
+                    ],
+                    [
+                      "Rohrweihe<sup>1</sup><br />*Circus aeruginosus*",
+                      "400",
+                      "500",
+                      "2 500"
+                    ],
+                    [
+                      "Rotmilan<br />*Milvus milvus*",
+                      "500",
+                      "1 200",
+                      "3 500"
+                    ],
+                    [
+                      "Schwarzmilan<br />*Milvus migrans*",
+                      "500",
+                      "1 000",
+                      "2 500"
+                    ],
+                    [
+                      "Wanderfalke<br />*Falco peregrinus*",
+                      "500",
+                      "1 000",
+                      "2 500"
+                    ],
+                    [
+                      "Baumfalke<br />*Falco subbuteo*",
+                      "350",
+                      "450",
+                      "2 000"
+                    ],
+                    [
+                      "Wespenbussard<br />*Pernis apivorus*",
+                      "500",
+                      "1 000",
+                      "2 000"
+                    ],
+                    [
+                      "Weißstorch<br />*Ciconia ciconia*",
+                      "500",
+                      "1 000",
+                      "2 000"
+                    ],
+                    [
+                      "Sumpfohreule<br />*Asio flammeus*",
+                      "500",
+                      "1 000",
+                      "2 500"
+                    ],
+                    [
+                      "Uhu<sup>1</sup><br />*Bubo bubo*",
+                      "500",
+                      "1 000",
+                      "2 500"
+                    ],
+                    [
+                      "* Abstände in Metern, gemessen vom Mastfußmittelpunkt"
+                    ],
+                    [
+                      "<sup>1</sup>  Rohrweihe, Wiesenweihe und Uhu sind nur dann kollisionsgefährdet, wenn die Höhe der Rotorunterkante in Küstennähe (bis 100 Kilometer) weniger als 30 m, im weiteren Flachland weniger als 50 m oder in hügeligem Gelände weniger als 80 m beträgt. Dies gilt, mit Ausnahme der Rohrweihe, nicht für den Nahbereich."
+                    ]
+                  ]
+                },
+                {
+                  "type": "md",
+                  "md": "<br /><br />"
                 }
               ]
             },
             {
               "type": "table",
-              "rows": []
+              "rows": [
+                [
+                  "**Abschnitt 2**"
+                ],
+                [
+                  "**Schutzmaßnahmen**"
+                ]
+              ]
             },
             {
               "type": "p",
               "children": [
                 {
                   "type": "md",
-                  "md": "Zur Vermeidung der Tötung oder Verletzung von Exemplaren europäischer Vogelarten nach Abschnitt 1 durch Windenergieanlagen sind insbesondere nachfolgend aufgeführte Schutzmaßnahmen fachlich anerkannt: <br /><br />SchutzmaßnahmeBeschreibung/WirksamkeitKleinräumige Standortwahl<br /> (Micro-Siting)**Beschreibung:** Im Einzelfall kann durch die Verlagerung von Windenergieanlagen die Konfliktintensität verringert werden, beispielsweise durch ein Herausrücken der Windenergieanlagen aus besonders kritischen Bereichen einer Vogelart oder durch das Freihalten von Flugrouten zu essentiellen Nahrungshabitaten.**Wirksamkeit:** Vermeidung bzw. Verminderung des Eintritts von Verbotstatbeständen oder des Umfangs von Schutzmaßnahmen. Für alle Arten der Tabelle in Abschnitt 1 wirksam.Antikollisionssystem**Beschreibung:** Auf Basis automatisierter kamera- und/oder radarbasierter Detektion der Zielart muss das System in der Lage sein, bei Annäherung der Zielart rechtzeitig bei Unterschreitung einer vorab artspezifisch festgelegten Entfernung zur Windenergieanlage per Signal die Rotordrehgeschwindigkeit bis zum „Trudelbetrieb“ zu verringern.**Wirksamkeit:** Nach dem derzeitigen Stand der Wissenschaft und Technik kommt die Maßnahme in Deutschland derzeit nur für den Rotmilan in Frage, für den ein nachweislich wirksames, kamerabasiertes System zur Verfügung steht. Grundsätzlich erscheint es möglich, die Anwendung von Antikollisionssystemen zukünftig auch für weitere kollisionsgefährdete Großvögel, wie Seeadler, Fischadler, Schreiadler, Schwarzmilan und Weißstorch, einzusetzen. Antikollisionssysteme, deren Wirksamkeit noch nicht belegt ist, können im Einzelfall im Testbetrieb angeordnet werden, wenn begleitende Maßnahmen zur Erfolgskontrolle angeordnet werden.Abschaltung bei landwirtschaftlichen Bewirtschaftungsereignissen**Beschreibung:** Vorübergehende Abschaltung im Falle der Grünlandmahd und Ernte von Feldfrüchten sowie des Pflügens zwischen 1. April und 31. August auf Flächen, die in weniger als 250 Metern Entfernung vom Mastfußmittelpunkt einer Windenergieanlage gelegen sind. Bei Windparks sind in Bezug auf die Ausgestaltung der Maßnahme gegebenenfalls die diesbezüglichen Besonderheiten zu berücksichtigen. Die Abschaltmaßnahmen erfolgen von Beginn des Bewirtschaftungsereignisses bis mindestens 24 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang. Bei für den Artenschutz besonders konfliktträchtigen Standorten mit drei Brutvorkommen oder, bei besonders gefährdeten Vogelarten, mit zwei Brutvorkommen ist für mindestens 48 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang abzuschalten. Die Maßnahme ist unter Berücksichtigung von artspezifischen Verhaltensmustern anzuordnen, insbesondere des von der Windgeschwindigkeit abhängigen Flugverhaltens beim Rotmilan.**Wirksamkeit:** Die Abschaltung bei Bewirtschaftungsereignissen trägt regelmäßig zur Senkung des Kollisionsrisikos bei und bringt eine übergreifende Vorteilswirkung mit sich. Durch die Abschaltung der Windenergieanlage während und kurz nach dem Bewirtschaftungsereignis wird eine wirksame Reduktion des temporär deutlich erhöhten Kollisionsrisikos erreicht. Die Maßnahme ist insbesondere für Rotmilan und Schwarzmilan, Rohrweihe, Schreiadler sowie den Weißstorch wirksam.Anlage von attraktiven<br /> Ausweichnahrungshabitaten**Beschreibung:** Die Anlage von attraktiven Ausweichnahrungshabitaten wie zum Beispiel Feuchtland oder Nahrungsgewässern oder die Umstellung auf langfristig extensiv bewirtschaftete Ablenkflächen ist artspezifisch in ausreichend großem Umfang vorzunehmen. Über die Eignung und die Ausgestaltung der Fläche durch artspezifische Maßnahmen muss im Einzelfall entschieden werden. Eine vertragliche Sicherung zu Nutzungsbeschränkungen und/oder Bearbeitungsauflagen ist nachzuweisen. Die Umsetzung der Maßnahmen ist für die gesamte Betriebsdauer der Windenergieanlage durch vertragliche Vereinbarungen zwischen dem Vorhabenträger und den Flächenbewirtschaftern und -eigentümern sicherzustellen. Die Möglichkeit und Umsetzbarkeit solcher vertraglichen Regelungen ist der Genehmigungsbehörde vorab darzulegen.**Wirksamkeit:** Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Weißstorch, Baumfalke, Fischadler, Schreiadler, Weihen, Uhu, Sumpfohreule und Wespenbussard wirksam. Die Wirksamkeit der Schutzmaßnahme ergibt sich aus dem dauerhaften Weglocken der kollisionsgefährdeten Arten bzw. der Verlagerung der Flugaktivität aus dem Vorhabenbereich heraus. Eine Wirksamkeit ist, je nach Konstellation und Art auch nur ergänzend zu weiteren Maßnahmen anzunehmen.Senkung der Attraktivität von<br /> Habitaten im Mastfußbereich**Beschreibung:** Die Minimierung und unattraktive Gestaltung des Mastfußbereiches (entspricht der vom Rotor überstrichenen Fläche zuzüglich eines Puffers von 50 Metern) sowie der Kranstellfläche kann dazu dienen, die Anlockwirkung von Flächen im direkten Umfeld der Windenergieanlage für kollisionsgefährdete Arten zu verringern. Hierfür ist die Schutzmaßnahme regelmäßig durchzuführen. Auf Kurzrasenvegetation, Brachen sowie auf zu mähendes Grünland ist in jedem Fall zu verzichten. Je nach Standort, der umgebenden Flächennutzung sowie dem betroffenen Artenspektrum kann es geboten sein, die Schutzmaßnahme einzelfallspezifisch anzupassen.**Wirksamkeit:** Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Schreiadler, Weißstorch und Wespenbussard wirksam. Die Maßnahme ist als alleinige Schutzmaßnahme nicht ausreichend.Phänologiebedingte Abschaltung**Beschreibung:** Die phänologiebedingte Abschaltung von Windenergieanlagen umfasst bestimmte, abgrenzbare Entwicklungs-/Lebenszyklen mit erhöhter Nutzungsintensität des Brutplatzes (z. B. Balzzeit oder Zeit flügger Jungvögel). Sie beträgt in der Regel bis zu 4 oder bis zu 6 Wochen innerhalb des Zeitraums vom 1. März bis zum 31. August von Sonnenaufgang bis Sonnenuntergang. Die Zeiträume können bei bestimmten Witterungsbedingungen wie Starkregen oder hohen Windgeschwindigkeiten artspezifisch im Einzelfall beschränkt werden, sofern hinreichend belegt ist, dass auf Grund bestimmter artspezifischer Verhaltensmuster während dieser Zeiten keine regelmäßigen Flüge stattfinden, die zu einer signifikanten Erhöhung des Tötungs- und Verletzungsrisikos führen.**Wirksamkeit:** Die Maßnahme ist grundsätzlich für alle Arten wirksam. Da sie mit erheblichen Energieverlusten verbunden ist, soll sie aber nur angeordnet werden, wenn keine andere Maßnahme zur Verfügung steht."
+                  "md": "Zur Vermeidung der Tötung oder Verletzung von Exemplaren europäischer Vogelarten nach Abschnitt 1 durch Windenergieanlagen sind insbesondere nachfolgend aufgeführte Schutzmaßnahmen fachlich anerkannt: <br /><br />"
+                },
+                {
+                  "type": "table",
+                  "rows": [
+                    [
+                      "Schutzmaßnahme",
+                      "Beschreibung/Wirksamkeit"
+                    ],
+                    [
+                      "Kleinräumige Standortwahl<br /> (Micro-Siting)",
+                      "**Beschreibung:** Im Einzelfall kann durch die Verlagerung von Windenergieanlagen die Konfliktintensität verringert werden, beispielsweise durch ein Herausrücken der Windenergieanlagen aus besonders kritischen Bereichen einer Vogelart oder durch das Freihalten von Flugrouten zu essentiellen Nahrungshabitaten."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Vermeidung bzw. Verminderung des Eintritts von Verbotstatbeständen oder des Umfangs von Schutzmaßnahmen. Für alle Arten der Tabelle in Abschnitt 1 wirksam."
+                    ],
+                    [
+                      "Antikollisionssystem",
+                      "**Beschreibung:** Auf Basis automatisierter kamera- und/oder radarbasierter Detektion der Zielart muss das System in der Lage sein, bei Annäherung der Zielart rechtzeitig bei Unterschreitung einer vorab artspezifisch festgelegten Entfernung zur Windenergieanlage per Signal die Rotordrehgeschwindigkeit bis zum „Trudelbetrieb“ zu verringern."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Nach dem derzeitigen Stand der Wissenschaft und Technik kommt die Maßnahme in Deutschland derzeit nur für den Rotmilan in Frage, für den ein nachweislich wirksames, kamerabasiertes System zur Verfügung steht. Grundsätzlich erscheint es möglich, die Anwendung von Antikollisionssystemen zukünftig auch für weitere kollisionsgefährdete Großvögel, wie Seeadler, Fischadler, Schreiadler, Schwarzmilan und Weißstorch, einzusetzen. Antikollisionssysteme, deren Wirksamkeit noch nicht belegt ist, können im Einzelfall im Testbetrieb angeordnet werden, wenn begleitende Maßnahmen zur Erfolgskontrolle angeordnet werden."
+                    ],
+                    [
+                      "Abschaltung bei landwirtschaftlichen Bewirtschaftungsereignissen",
+                      "**Beschreibung:** Vorübergehende Abschaltung im Falle der Grünlandmahd und Ernte von Feldfrüchten sowie des Pflügens zwischen 1. April und 31. August auf Flächen, die in weniger als 250 Metern Entfernung vom Mastfußmittelpunkt einer Windenergieanlage gelegen sind. Bei Windparks sind in Bezug auf die Ausgestaltung der Maßnahme gegebenenfalls die diesbezüglichen Besonderheiten zu berücksichtigen. Die Abschaltmaßnahmen erfolgen von Beginn des Bewirtschaftungsereignisses bis mindestens 24 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang. Bei für den Artenschutz besonders konfliktträchtigen Standorten mit drei Brutvorkommen oder, bei besonders gefährdeten Vogelarten, mit zwei Brutvorkommen ist für mindestens 48 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang abzuschalten. Die Maßnahme ist unter Berücksichtigung von artspezifischen Verhaltensmustern anzuordnen, insbesondere des von der Windgeschwindigkeit abhängigen Flugverhaltens beim Rotmilan."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Die Abschaltung bei Bewirtschaftungsereignissen trägt regelmäßig zur Senkung des Kollisionsrisikos bei und bringt eine übergreifende Vorteilswirkung mit sich. Durch die Abschaltung der Windenergieanlage während und kurz nach dem Bewirtschaftungsereignis wird eine wirksame Reduktion des temporär deutlich erhöhten Kollisionsrisikos erreicht. Die Maßnahme ist insbesondere für Rotmilan und Schwarzmilan, Rohrweihe, Schreiadler sowie den Weißstorch wirksam."
+                    ],
+                    [
+                      "Anlage von attraktiven<br /> Ausweichnahrungshabitaten",
+                      "**Beschreibung:** Die Anlage von attraktiven Ausweichnahrungshabitaten wie zum Beispiel Feuchtland oder Nahrungsgewässern oder die Umstellung auf langfristig extensiv bewirtschaftete Ablenkflächen ist artspezifisch in ausreichend großem Umfang vorzunehmen. Über die Eignung und die Ausgestaltung der Fläche durch artspezifische Maßnahmen muss im Einzelfall entschieden werden. Eine vertragliche Sicherung zu Nutzungsbeschränkungen und/oder Bearbeitungsauflagen ist nachzuweisen. Die Umsetzung der Maßnahmen ist für die gesamte Betriebsdauer der Windenergieanlage durch vertragliche Vereinbarungen zwischen dem Vorhabenträger und den Flächenbewirtschaftern und -eigentümern sicherzustellen. Die Möglichkeit und Umsetzbarkeit solcher vertraglichen Regelungen ist der Genehmigungsbehörde vorab darzulegen."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Weißstorch, Baumfalke, Fischadler, Schreiadler, Weihen, Uhu, Sumpfohreule und Wespenbussard wirksam. Die Wirksamkeit der Schutzmaßnahme ergibt sich aus dem dauerhaften Weglocken der kollisionsgefährdeten Arten bzw. der Verlagerung der Flugaktivität aus dem Vorhabenbereich heraus. Eine Wirksamkeit ist, je nach Konstellation und Art auch nur ergänzend zu weiteren Maßnahmen anzunehmen."
+                    ],
+                    [
+                      "Senkung der Attraktivität von<br /> Habitaten im Mastfußbereich",
+                      "**Beschreibung:** Die Minimierung und unattraktive Gestaltung des Mastfußbereiches (entspricht der vom Rotor überstrichenen Fläche zuzüglich eines Puffers von 50 Metern) sowie der Kranstellfläche kann dazu dienen, die Anlockwirkung von Flächen im direkten Umfeld der Windenergieanlage für kollisionsgefährdete Arten zu verringern. Hierfür ist die Schutzmaßnahme regelmäßig durchzuführen. Auf Kurzrasenvegetation, Brachen sowie auf zu mähendes Grünland ist in jedem Fall zu verzichten. Je nach Standort, der umgebenden Flächennutzung sowie dem betroffenen Artenspektrum kann es geboten sein, die Schutzmaßnahme einzelfallspezifisch anzupassen."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Schreiadler, Weißstorch und Wespenbussard wirksam. Die Maßnahme ist als alleinige Schutzmaßnahme nicht ausreichend."
+                    ],
+                    [
+                      "Phänologiebedingte Abschaltung",
+                      "**Beschreibung:** Die phänologiebedingte Abschaltung von Windenergieanlagen umfasst bestimmte, abgrenzbare Entwicklungs-/Lebenszyklen mit erhöhter Nutzungsintensität des Brutplatzes (z. B. Balzzeit oder Zeit flügger Jungvögel). Sie beträgt in der Regel bis zu 4 oder bis zu 6 Wochen innerhalb des Zeitraums vom 1. März bis zum 31. August von Sonnenaufgang bis Sonnenuntergang. Die Zeiträume können bei bestimmten Witterungsbedingungen wie Starkregen oder hohen Windgeschwindigkeiten artspezifisch im Einzelfall beschränkt werden, sofern hinreichend belegt ist, dass auf Grund bestimmter artspezifischer Verhaltensmuster während dieser Zeiten keine regelmäßigen Flüge stattfinden, die zu einer signifikanten Erhöhung des Tötungs- und Verletzungsrisikos führen."
+                    ],
+                    [
+                      "",
+                      "**Wirksamkeit:** Die Maßnahme ist grundsätzlich für alle Arten wirksam. Da sie mit erheblichen Energieverlusten verbunden ist, soll sie aber nur angeordnet werden, wenn keine andere Maßnahme zur Verfügung steht."
+                    ]
+                  ]
                 }
               ]
             }
@@ -10609,7 +10797,12 @@
             },
             {
               "type": "table",
-              "rows": []
+              "rows": [
+                [
+                  "Zumutbarkeit und Höhe der Zahlung in Artenhilfsprogramme",
+                  ""
+                ]
+              ]
             },
             {
               "type": "p",

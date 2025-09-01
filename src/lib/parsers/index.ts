@@ -16,6 +16,7 @@ export function createParserRegistry(): ParserRegistry {
   
   // Resolve circular dependencies by providing cross-references
   paragraphParser.setNestedListParser((node, idPrefix) => listParser.parse(node, idPrefix));
+  paragraphParser.setNestedTableParser((node, idPrefix) => tableParser.parse(node, idPrefix));
   listParser.setNestedParagraphParser((node, idPrefix) => paragraphParser.parse(node, idPrefix));
   
   // Register all parsers

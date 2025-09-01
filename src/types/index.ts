@@ -24,7 +24,8 @@ export interface ListNode {
 
 export interface TableNode {
   type: 'table';
-  rows: string[][]; // rows of Markdown cells
+  headers?: string[]; // optional header row
+  rows: string[][]; // body rows of Markdown cells
 }
 
 export interface Footnote {
@@ -37,7 +38,7 @@ export interface ParagraphNode {
   type: 'p';
   label?: string; // e.g., "(1)", "(2)" for numbered paragraphs
   id?: string; // hierarchical like "4.1" (Article 4, Abs. 1)
-  children: Array<TextRun | ListNode>;
+  children: Array<TextRun | ListNode | TableNode>;
 }
 
 export interface ElementNode {

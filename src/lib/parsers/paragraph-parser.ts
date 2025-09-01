@@ -1,4 +1,4 @@
-import type { ParagraphNode, TextRun, ListNode } from '../../types/index.ts';
+import type { ParagraphNode, TextRun, ListNode, TableNode } from '../../types/index.ts';
 import type { Parser } from './types.ts';
 import type { PONode } from '../converter-utils.ts';
 import { 
@@ -17,7 +17,7 @@ export class ParagraphParser implements Parser<ParagraphNode> {
 
   parse(p: PONode, idPrefix: string = ''): ParagraphNode | null {
     const kids = childrenOf(p);
-    const outChildren: Array<TextRun | ListNode> = [];
+    const outChildren: Array<TextRun | ListNode | TableNode> = [];
     let textBuf = '';
 
     const flushText = () => {
@@ -54,6 +54,11 @@ export class ParagraphParser implements Parser<ParagraphNode> {
         // This creates a circular dependency issue that we'll address
         const listResult = this.parseNestedList?.(k, paragraphId);
         if (listResult) outChildren.push(listResult);
+      } else if (t === 'table') {
+        flushText();
+        // Handle table elements within paragraphs
+        const tableResult = this.parseNestedTable?.(k, paragraphId);
+        if (tableResult) outChildren.push(tableResult);
       } else {
         textBuf += renderInlineToMd([k]);
       }
@@ -77,8 +82,13 @@ export class ParagraphParser implements Parser<ParagraphNode> {
 
   // Temporary solution for nested list parsing - will be resolved with dependency injection
   private parseNestedList?: (node: PONode, idPrefix: string) => ListNode | null;
+  private parseNestedTable?: (node: PONode, idPrefix: string) => TableNode | null;
 
   setNestedListParser(parser: (node: PONode, idPrefix: string) => ListNode | null): void {
     this.parseNestedList = parser;
+  }
+
+  setNestedTableParser(parser: (node: PONode, idPrefix: string) => TableNode | null): void {
+    this.parseNestedTable = parser;
   }
 }

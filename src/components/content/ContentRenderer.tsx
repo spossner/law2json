@@ -139,6 +139,24 @@ export function ContentRenderer({
           onClick={handleClick}
         >
           <table className="min-w-full border-collapse border border-gray-300">
+            {tableElement.headers && (
+              <thead className="bg-gray-50">
+                <tr>
+                  {tableElement.headers.map((header, headerIndex) => (
+                    <th 
+                      key={headerIndex} 
+                      className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900"
+                    >
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: searchTerm ? highlightText(header, searchTerm) : header,
+                        }}
+                      />
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+            )}
             <tbody>
               {tableElement.rows.map((row, rowIndex) => (
                 <tr key={rowIndex} className="hover:bg-gray-50">
