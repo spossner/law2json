@@ -8,8 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "transform": "tsx scripts/law-transformer.ts",
-    "transform:bnatschg": "tsx scripts/law-transformer.ts data/BNatSchG/BJNR254210009.xml public/law/BNatSchG.json"
+    "transform": "tsx scripts/convert-gii.ts",
+    "transform:bnatschg": "tsx scripts/convert-gii.ts data/BNatSchG/BJNR254210009.xml > public/law/BNatSchG.json"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
