@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { LawDocument, StructuralElement, ContentElement } from '../types';
+import type { LawDocument, SelectableElement, ContentElement } from '../types';
 import { StructuralElementRenderer } from './structural/StructuralElementRenderer';
 import { ContentRenderer } from './content';
 import { cn } from '../lib/utils';
@@ -11,7 +11,7 @@ interface Props {
 
 export function LawNavigator({ className }: Props) {
   const [lawData, setLawData] = useState<LawDocument | null>(null);
-  const [selectedElement, setSelectedElement] = useState<StructuralElement | null>(null);
+  const [selectedElement, setSelectedElement] = useState<SelectableElement | null>(null);
   const [selectedContentId, setSelectedContentId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -24,29 +24,38 @@ export function LawNavigator({ className }: Props) {
     console.log('Selected content ID:', contentId);
   };
 
-  // Helper function to find element by ID in the unfiltered structure
-  const findElementById = (elements: StructuralElement[], id: string): StructuralElement | null => {
+  // Helper function to find element by ID in the new structure
+  const findElementById = (elements: SelectableElement[], id: string): SelectableElement | null => {
     for (const element of elements) {
       if (element.id === id) {
         return element;
       }
       
-      const structuralChildren = element.children.filter(child => 
-        'type' in child && 
-        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-      ) as StructuralElement[];
-      
-      if (structuralChildren.length > 0) {
-        const found = findElementById(structuralChildren, id);
-        if (found) return found;
+      // Check children if they exist and are navigable
+      if ('children' in element && element.children) {
+        const navigableChildren = element.children.filter(child => 
+          'id' in child && child.id !== undefined
+        ) as SelectableElement[];
+        
+        if (navigableChildren.length > 0) {
+          const found = findElementById(navigableChildren, id);
+          if (found) return found;
+        }
       }
     }
     return null;
   };
 
   // Handle element selection - always use the original unfiltered element
-  const handleElementSelect = (filteredElement: StructuralElement) => {
-    const originalElement = findElementById(lawData!.law.structure, filteredElement.id);
+  const handleElementSelect = (filteredElement: SelectableElement) => {
+    if (!lawData) return;
+    
+    // Get all navigable children from the document
+    const allElements = lawData.children.filter(child => 
+      'id' in child && child.id !== undefined
+    ) as SelectableElement[];
+    
+    const originalElement = findElementById(allElements, filteredElement.id!);
     setSelectedElement(originalElement);
   };
 
@@ -118,49 +127,53 @@ export function LawNavigator({ className }: Props) {
   }, []);
 
   // Count elements for stats
-  const countElements = (elements: StructuralElement[], type: string): number => {
+  const countElements = (elements: SelectableElement[], type: string): number => {
     let count = 0;
     elements.forEach(el => {
       if (el.type === type) count++;
-      if (el.children) {
-        count += countElements(el.children as StructuralElement[], type);
+      if ('children' in el && el.children) {
+        const selectableChildren = el.children.filter(child => 
+          'type' in child && 'id' in child
+        ) as SelectableElement[];
+        count += countElements(selectableChildren, type);
       }
     });
     return count;
   };
 
   // Count all matching elements recursively
-  const countMatches = (elements: StructuralElement[], searchTerm: string): number => {
+  const countMatches = (elements: SelectableElement[], searchTerm: string): number => {
     if (!searchTerm) return 0;
     
     let count = 0;
     
     elements.forEach(element => {
-      // Check if current element matches in title/number
+      // Check if current element matches in title/label
       const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                              element.number?.toLowerCase().includes(searchTerm.toLowerCase());
+                              element.label?.toLowerCase().includes(searchTerm.toLowerCase());
       
       // Check if content matches (when deep search is enabled)
-      const contentChildren = element.children.filter(child => 
-        !('type' in child) || 
-        !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-      );
-      
-      const matchesContent = deepSearch && contentChildren.length > 0 && 
-                            searchInContent(contentChildren, searchTerm);
+      let matchesContent = false;
+      if (deepSearch && 'children' in element && element.children) {
+        const contentChildren = element.children.filter(child => 
+          !('id' in child) // content elements don't have IDs for selection
+        );
+        matchesContent = contentChildren.length > 0 && searchInContent(contentChildren, searchTerm);
+      }
       
       if (matchesStructure || matchesContent) {
         count++;
       }
       
-      // Recursively count matches in structural children
-      const structuralChildren = element.children.filter(child => 
-        'type' in child && 
-        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-      ) as StructuralElement[];
-      
-      if (structuralChildren.length > 0) {
-        count += countMatches(structuralChildren, searchTerm);
+      // Recursively count matches in navigable children
+      if ('children' in element && element.children) {
+        const navigableChildren = element.children.filter(child => 
+          'id' in child && child.id !== undefined
+        ) as SelectableElement[];
+        
+        if (navigableChildren.length > 0) {
+          count += countMatches(navigableChildren, searchTerm);
+        }
       }
     });
     
@@ -168,49 +181,54 @@ export function LawNavigator({ className }: Props) {
   };
 
   // Filter structure based on search (recursive)
-  const filterStructure = (elements: StructuralElement[], searchTerm: string): StructuralElement[] => {
+  const filterStructure = (elements: SelectableElement[], searchTerm: string): SelectableElement[] => {
     if (!searchTerm) return elements;
     
-    const filtered: StructuralElement[] = [];
+    const filtered: SelectableElement[] = [];
     
     elements.forEach(element => {
-      // Check if current element matches in title/number
+      // Check if current element matches in title/label
       const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                              element.number?.toLowerCase().includes(searchTerm.toLowerCase());
+                              element.label?.toLowerCase().includes(searchTerm.toLowerCase());
       
       // Check if content matches (when deep search is enabled)
-      const contentChildren = element.children.filter(child => 
-        !('type' in child) || 
-        !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-      );
+      let matchesContent = false;
+      let contentChildren: any[] = [];
       
-      const matchesContent = deepSearch && contentChildren.length > 0 && 
-                            searchInContent(contentChildren, searchTerm);
+      if (deepSearch && 'children' in element && element.children) {
+        contentChildren = element.children.filter(child => 
+          !('id' in child) // content elements don't have IDs for selection
+        );
+        matchesContent = contentChildren.length > 0 && searchInContent(contentChildren, searchTerm);
+      }
       
       const matchesSearch = matchesStructure || matchesContent;
       
-      // Get structural children for recursive search
-      const structuralChildren = element.children.filter(child => 
-        'type' in child && 
-        ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-      ) as StructuralElement[];
+      // Get navigable children for recursive search
+      let navigableChildren: SelectableElement[] = [];
+      let filteredChildren: SelectableElement[] = [];
       
-      // Recursively filter children
-      const filteredChildren = structuralChildren.length > 0 ? 
-        filterStructure(structuralChildren, searchTerm) : [];
+      if ('children' in element && element.children) {
+        navigableChildren = element.children.filter(child => 
+          'id' in child && child.id !== undefined
+        ) as SelectableElement[];
+        
+        // Recursively filter children
+        filteredChildren = navigableChildren.length > 0 ? 
+          filterStructure(navigableChildren, searchTerm) : [];
+      }
       
       // Include element if it matches or has matching children
       if (matchesSearch || filteredChildren.length > 0) {
         // For navigation: keep all children if current element matches, otherwise only filtered children + content
-        const contentChildren = element.children.filter(child => 
-          !('type' in child) || 
-          !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-        );
+        const allChildren = matchesSearch ? 
+          (element as any).children : 
+          [...contentChildren, ...filteredChildren];
         
         filtered.push({
           ...element,
-          children: matchesSearch ? element.children : [...contentChildren, ...filteredChildren]
-        });
+          children: allChildren
+        } as SelectableElement);
       }
     });
     
@@ -250,15 +268,20 @@ export function LawNavigator({ className }: Props) {
     return null;
   }
 
+  // Get all navigable elements from the document
+  const allElements = lawData.children.filter(child => 
+    'id' in child && child.id !== undefined
+  ) as SelectableElement[];
+  
   const stats = {
-    chapters: countElements(lawData.law.structure, 'chapter'),
-    sections: countElements(lawData.law.structure, 'section'),
-    paragraphs: countElements(lawData.law.structure, 'paragraph'),
-    subparagraphs: countElements(lawData.law.structure, 'subparagraph')
+    outlines: countElements(allElements, 'outline'),
+    articles: countElements(allElements, 'article'), 
+    sections: countElements(allElements, 'section'),
+    paragraphs: countElements(allElements, 'p')
   };
 
-  const filteredStructure = filterStructure(lawData.law.structure, searchTerm);
-  const matchCount = countMatches(lawData.law.structure, searchTerm);
+  const filteredStructure = filterStructure(allElements, searchTerm);
+  const matchCount = countMatches(allElements, searchTerm);
 
   return (
     <div className={cn('min-h-screen bg-gray-50', className)}>
@@ -275,13 +298,17 @@ export function LawNavigator({ className }: Props) {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-xl font-bold mb-2">{lawData.law.title}</h2>
-              <p className="opacity-90">{lawData.law.abbreviation}</p>
+              <h2 className="text-xl font-bold mb-2">{lawData.title || 'German Legal Document'}</h2>
+              <p className="opacity-90">{lawData.jurabk || 'BNatSchG'}</p>
             </div>
             <div className="flex gap-6 text-sm">
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{stats.chapters}</div>
-                <div className="text-white/70">Chapters</div>
+                <div className="text-2xl font-bold text-white">{stats.outlines}</div>
+                <div className="text-white/70">Outlines</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-white">{stats.articles}</div>
+                <div className="text-white/70">Articles</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">{stats.sections}</div>
@@ -290,10 +317,6 @@ export function LawNavigator({ className }: Props) {
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">{stats.paragraphs}</div>
                 <div className="text-white/70">Paragraphs</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">{stats.subparagraphs}</div>
-                <div className="text-white/70">Subparagraphs</div>
               </div>
             </div>
           </div>
@@ -377,6 +400,7 @@ export function LawNavigator({ className }: Props) {
                 element={element}
                 onSelect={handleElementSelect}
                 isSelected={selectedElement?.id === element.id}
+                selectedElementId={selectedElement?.id}
               />
             ))}
           </div>
@@ -387,7 +411,7 @@ export function LawNavigator({ className }: Props) {
           {selectedElement ? (
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                {selectedElement.number} {selectedElement.title}
+                {selectedElement.label} {selectedElement.title}
               </h1>
               
               <div className="bg-gray-50 rounded-lg p-4 mb-6">
@@ -395,7 +419,7 @@ export function LawNavigator({ className }: Props) {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div><strong>Type:</strong> {selectedElement.type}</div>
                   <div><strong>ID:</strong> {selectedElement.id}</div>
-                  <div><strong>Children:</strong> {selectedElement.children.length}</div>
+                  <div><strong>Children:</strong> {'children' in selectedElement ? selectedElement.children.length : 0}</div>
                 </div>
               </div>
 
@@ -407,7 +431,7 @@ export function LawNavigator({ className }: Props) {
                       return (
                         <div key={structChild.id} className="border-l-4 border-blue-200 pl-4">
                           {structChild.title && (
-                            <h4 
+                            <h4
                               className="font-semibold text-lg text-blue-800 mb-2"
                               dangerouslySetInnerHTML={{
                                 __html: searchTerm ? 

@@ -1,48 +1,53 @@
 import React, { useState } from 'react';
-import type { StructuralElement, ContentElement } from '../../types';
+import type { SelectableElement, ContentElement } from '../../types';
 import { ContentRenderer } from '../content';
 import { cn } from '../../lib/utils';
 
 interface Props {
-  element: StructuralElement;
+  element: SelectableElement;
   level?: number;
-  onSelect?: (element: StructuralElement) => void;
+  onSelect?: (element: SelectableElement) => void;
   isSelected?: boolean;
+  selectedElementId?: string; // Pass selected element ID for nested comparison
 }
 
 export function StructuralElementRenderer({ 
   element, 
   level = 0, 
   onSelect, 
-  isSelected = false 
+  isSelected = false,
+  selectedElementId
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false); // Start collapsed
 
   const handleToggle = () => {
-    if (element.type === 'chapter' || element.type === 'section') {
+    // Container elements that should expand/collapse
+    if (element.type === 'outline') {
       setIsExpanded(!isExpanded);
-    } else if (element.type === 'paragraph' || element.type === 'subparagraph') {
+    }
+    // Selectable leaf elements that should be selected
+    else if (element.type === 'article' || element.type === 'section' || element.type === 'p') {
       onSelect?.(element);
     }
   };
 
-  const hasStructuralChildren = element.children.some(
-    child => 'type' in child && ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-  );
+  // Check if element has navigable children (with IDs)
+  const hasNavigableChildren = 'children' in element && element.children && 
+    element.children.some(child => 'id' in child && child.id !== undefined);
 
-  const structuralChildren = element.children.filter(
-    child => 'type' in child && ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-  ) as StructuralElement[];
+  const navigableChildren = ('children' in element && element.children) ? 
+    element.children.filter(child => 'id' in child && child.id !== undefined) as SelectableElement[] : 
+    [];
 
-  const contentChildren = element.children.filter(
-    child => 'type' in child && !['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)
-  ) as ContentElement[];
+  const contentChildren = ('children' in element && element.children) ? 
+    element.children.filter(child => !('id' in child)) as ContentElement[] : 
+    [];
 
   const getElementStyles = () => {
     const baseStyles = 'cursor-pointer transition-colors duration-150 border-l-4 border-transparent hover:border-blue-300 hover:bg-blue-50';
     
     switch (element.type) {
-      case 'chapter':
+      case 'outline':
         return cn(
           baseStyles,
           'text-lg font-bold py-3 px-4 bg-gray-50 border-b border-gray-200',
@@ -54,13 +59,13 @@ export function StructuralElementRenderer({
           'text-base font-semibold py-2 px-6 bg-gray-25',
           isSelected && 'bg-blue-100 border-l-blue-500'
         );
-      case 'paragraph':
+      case 'article':
         return cn(
           baseStyles,
-          'text-sm py-2 px-8',
+          'text-sm py-2 px-8 font-medium',
           isSelected && 'bg-blue-100 border-l-blue-500'
         );
-      case 'subparagraph':
+      case 'p':
         return cn(
           baseStyles,
           'text-sm py-1 px-10 text-gray-700',
@@ -72,12 +77,12 @@ export function StructuralElementRenderer({
   };
 
   const renderExpandIcon = () => {
-    // Only show expand arrows for chapters and sections, not paragraphs
-    if (element.type !== 'chapter' && element.type !== 'section') {
+    // Only show expand arrows for outline containers, not leaf elements
+    if (element.type !== 'outline') {
       return <span className="w-4" />;
     }
     
-    if (!hasStructuralChildren) return <span className="w-4" />;
+    if (!hasNavigableChildren) return <span className="w-4" />;
     
     return (
       <span className={cn(
@@ -98,7 +103,7 @@ export function StructuralElementRenderer({
         <div className="flex items-center gap-2">
           {renderExpandIcon()}
           <span className="font-mono text-blue-600 min-w-fit">
-            {element.number}
+            {element.label}
           </span>
           <span className="flex-1 truncate">
             {element.title}
@@ -106,16 +111,17 @@ export function StructuralElementRenderer({
         </div>
       </div>
       
-      {/* Structural children (nested structure) */}
-      {isExpanded && hasStructuralChildren && (
+      {/* Navigable children (nested structure) */}
+      {isExpanded && hasNavigableChildren && (
         <div className="ml-0">
-          {structuralChildren.map((child) => (
+          {navigableChildren.map((child) => (
             <StructuralElementRenderer
               key={child.id}
               element={child}
               level={level + 1}
               onSelect={onSelect}
-              isSelected={isSelected}
+              isSelected={selectedElementId === child.id}
+              selectedElementId={selectedElementId}
             />
           ))}
         </div>
