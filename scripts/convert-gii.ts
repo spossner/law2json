@@ -18,14 +18,13 @@ export interface OutlineNode {
   id: string;        // gliederungskennzahl
   label: string;     // gliederungsbez
   title?: string;    // gliederungstitel
-  level: number;     // computed from id
-  children: Node[];
+  children: Node[];  // nested outlines/articles/sections
 }
 
 export interface ArticleNode {
   type: "article";
   id: string;        // pure number (e.g., "14")
-  label: "§" | "Art.";
+  label: string;     // display label (e.g., "§ 14", "Art. 5")
   title?: string;
   doknr?: string;
   footnotes?: Footnote[];
@@ -33,16 +32,16 @@ export interface ArticleNode {
 }
 
 export interface SectionNode {
-  type: "section";  // e.g., Inhaltsübersicht, Vorbemerkung, etc.
-  title?: string;   // usually the enbez
+  type: "section";  // e.g., Inhaltsübersicht, Vorbemerkung, …
+  title?: string;   // usually from enbez
   doknr?: string;
-  children: Node[]; // paragraphs, lists, tables (like an article, but no §/Art.)
+  children: Node[]; // paragraphs, lists, tables
 }
 
 export interface ParagraphNode {
   type: "p";
   label?: "Abs.";
-  id?: string;       // "1", "2", ...
+  id?: string;       // hierarchical like "4.1" (Article 4, Abs. 1)
   children: Array<TextRun | ListNode>;
 }
 
@@ -67,7 +66,8 @@ export interface ListNode {
 
 export interface ListItemNode {
   type: "li";
-  marker?: string;           // ordered only
+  label?: string;            // display label like "1.", "2.", etc.
+  id?: string;               // hierarchical like "4.1.2"
   children: Array<TextRun | ParagraphNode | ListNode>;
 }
 
@@ -100,6 +100,9 @@ const parser = new XMLParser({
   attributeNamePrefix: "",
   processEntities: true,
   trimValues: false,
+  parseAttributeValue: false,
+  parseTagValue: false,
+  parseTrueNumberOnly: false,
 });
 
 /* ===================== Helpers (namespace/case/text robust) ===================== */
@@ -170,18 +173,9 @@ function textDeep(n: PONode): string {
 
 function levelFromCode(code: string): number {
   const s = String(code).trim();
-  const digits = s.replace(/\D/g, ""); // be safe
+  const digits = s.replace(/\D/g, "");
   if (!digits) return 1;
-  // Common GII scheme: 2-digit root for the top (e.g., "10"), then 3-digit chunks
-  // Examples: "10" (L=1), "10010" (L=2), "10010010" (L=3)
-  if (/^\d{2}(?:\d{3})*$/.test(digits)) {
-    const len = digits.length;
-    if (len <= 2) return 1;
-    return 1 + Math.floor((len - 2) / 3);
-  }
-  // Fallback heuristic
-  if (digits.length <= 2) return 1;
-  return 1 + Math.ceil((digits.length - 2) / 3);
+  return Math.ceil(digits.length / 3);
 }
 
 /* ===================== Inline → Markdown ===================== */
@@ -208,7 +202,7 @@ function renderInlineToMd(nodes: PONode[]): string {
       case "sub": out += "<sub>" + renderChildren(kids) + "</sub>"; break;
       case "small": out += "<small>" + renderChildren(kids) + "</small>"; break;
       case "br": out += "<br />"; break;
-      case "noindex": out += renderChildren(kids); break; // marker like "(1)"
+      case "noindex": out += renderChildren(kids); break;
       case "fnr": {
         const at = attrsOf(n);
         const id = at.ID ?? at.Id ?? at.id ?? renderChildren(kids);
@@ -216,7 +210,7 @@ function renderInlineToMd(nodes: PONode[]): string {
         break;
       }
       default:
-        out += renderChildren(kids); // unknown inline → flatten text
+        out += renderChildren(kids);
     }
   };
 
@@ -226,29 +220,21 @@ function renderInlineToMd(nodes: PONode[]): string {
 
 /* ===================== Lists ===================== */
 
-type MarkerClass = { kind: ListKind; style: ListStyle; marker?: string; symbol?: string };
+type MarkerClass = { kind: ListKind; style: ListStyle; label?: string; symbol?: string };
 
 function classifyMarker(raw: string): MarkerClass {
   const m = raw.trim();
-
-  // Ordered (arabic)
-  if (/^\(?\d+\)?[.)]?$/.test(m)) return { kind: "ordered", style: "arabic", marker: m };
-  // Ordered (alpha)
-  if (/^[a-z]\)$/.test(m)) return { kind: "ordered", style: "alpha-lower", marker: m };
-  if (/^[A-Z]\)$/.test(m)) return { kind: "ordered", style: "alpha-upper", marker: m };
-  // Ordered (roman)
-  if (/^[ivxlcdm]+\)$/.test(m)) return { kind: "ordered", style: "roman-lower", marker: m };
-  if (/^[IVXLCDM]+\)$/.test(m)) return { kind: "ordered", style: "roman-upper", marker: m };
-
-  // Unordered common
+  if (/^\(?\d+\)?[.)]?$/.test(m)) return { kind: "ordered", style: "arabic", label: m };
+  if (/^[a-z]\)$/.test(m)) return { kind: "ordered", style: "alpha-lower", label: m };
+  if (/^[A-Z]\)$/.test(m)) return { kind: "ordered", style: "alpha-upper", label: m };
+  if (/^[ivxlcdm]+\)$/.test(m)) return { kind: "ordered", style: "roman-lower", label: m };
+  if (/^[IVXLCDM]+\)$/.test(m)) return { kind: "ordered", style: "roman-upper", label: m };
   if (m === "•") return { kind: "unordered", style: "bullet" };
   if (m === "-" || m === "–" || m === "—") return { kind: "unordered", style: "dash" };
-
-  // Fallback unordered custom
   return { kind: "unordered", style: "custom", symbol: m };
 }
 
-function parseList(dl: PONode): ListNode {
+function parseList(dl: PONode, idPrefix: string = ""): ListNode {
   const kids = childrenOf(dl);
   const items: ListItemNode[] = [];
   let pendingMarker: string | undefined;
@@ -260,7 +246,19 @@ function parseList(dl: PONode): ListNode {
   const flush = () => {
     if (pendingMarker == null && buf.length === 0) return;
     const li: ListItemNode = { type: "li", children: buf };
-    if (listKind === "ordered" && pendingMarker) li.marker = pendingMarker;
+    
+    // Always use the exact DT content as the label
+    if (pendingMarker) li.label = pendingMarker;
+    
+    // Generate hierarchical ID for list item
+    if (idPrefix && pendingMarker) {
+      // Extract number from marker (e.g., "1." -> "1", "(2)" -> "2")
+      const markerNum = pendingMarker.match(/\d+/)?.[0];
+      if (markerNum) {
+        (li as any).id = `${idPrefix}.${markerNum}`;
+      }
+    }
+    
     items.push(li);
     pendingMarker = undefined;
     buf = [];
@@ -290,10 +288,15 @@ function parseList(dl: PONode): ListNode {
           if (isTextNode(part)) textBuf += textOf(part);
         } else if (pt === "dl") {
           flushText();
-          buf.push(parseList(part));
+          // Generate nested list ID prefix
+          const nestedPrefix = idPrefix && pendingMarker ? 
+            `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || "1"}` : idPrefix;
+          buf.push(parseList(part, nestedPrefix));
         } else if (pt === "p") {
           flushText();
-          buf.push(parseParagraph(part));
+          const nestedPrefix = idPrefix && pendingMarker ? 
+            `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || "1"}` : idPrefix;
+          buf.push(parseParagraph(part, nestedPrefix));
         } else {
           textBuf += renderInlineToMd([part]);
         }
@@ -303,9 +306,9 @@ function parseList(dl: PONode): ListNode {
   }
   flush();
 
-  if (listKind === "unordered") for (const it of items) delete it.marker;
+  if (listKind === "unordered") for (const it of items) delete it.label;
 
-  const out: ListNode = {
+  return {
     type: "list",
     kind: listKind,
     style: listStyle,
@@ -314,12 +317,11 @@ function parseList(dl: PONode): ListNode {
       : {}),
     children: items,
   };
-  return out;
 }
 
 /* ===================== Paragraphs ===================== */
 
-function parseParagraph(p: PONode): ParagraphNode {
+function parseParagraph(p: PONode, idPrefix: string = ""): ParagraphNode {
   const kids = childrenOf(p);
   const outChildren: Array<TextRun | ListNode> = [];
   let textBuf = "";
@@ -330,25 +332,42 @@ function parseParagraph(p: PONode): ParagraphNode {
     textBuf = "";
   };
 
+  // Extract paragraph number first to build proper ID context
+  let paragraphId = idPrefix;
+  let paragraphNumber: string | undefined;
+  
+  // Check if first text starts with paragraph number
+  for (const k of kids) {
+    if (isTextNode(k)) {
+      const text = textOf(k).trim();
+      const m = text.match(/^\s*\((\d+)\)\s*/);
+      if (m) {
+        paragraphNumber = m[1];
+        paragraphId = idPrefix ? `${idPrefix}.${paragraphNumber}` : paragraphNumber;
+        break;
+      }
+    }
+  }
+
   for (const k of kids) {
     const t = lname(k);
     if (!t) {
       if (isTextNode(k)) textBuf += textOf(k);
     } else if (t === "dl") {
       flushText();
-      outChildren.push(parseList(k));
+      // Use the full paragraph ID as context for lists
+      outChildren.push(parseList(k, paragraphId));
     } else {
       textBuf += renderInlineToMd([k]);
     }
   }
   flushText();
 
-  // Leading "(n)" → Abs. n
-  if (outChildren.length && outChildren[0].type === "md") {
+  if (outChildren.length && outChildren[0].type === "md" && paragraphNumber) {
     const m = outChildren[0].md.match(/^\s*\((\d+)\)\s*/);
     if (m) {
       outChildren[0].md = outChildren[0].md.slice(m[0].length);
-      return { type: "p", label: "Abs.", id: m[1], children: outChildren };
+      return { type: "p", label: `(${paragraphNumber})`, id: paragraphId, children: outChildren };
     }
   }
   return { type: "p", children: outChildren };
@@ -370,18 +389,12 @@ function parseTable(tbl: PONode): TableNode {
 
 /* ===================== Articles / Sections / Footnotes ===================== */
 
-function parseArticleEnbez(raw: string): { label: "§" | "Art."; id: string } | null {
+function parseArticleEnbez(raw: string): { label: string; id: string } | null {
   const s = raw.trim();
-
-  // Accept plain § N or §§ ranges (we keep the first number as id if needed).
   let m = s.match(/^§+\s*([\d]+[a-zA-Z]?)$/);
-  if (m) return { label: "§", id: m[1] };
-
-  // Artikel / Art.
+  if (m) return { label: `§ ${m[1]}`, id: m[1] };
   m = s.match(/^Art(?:\.|ikel)?\s*([\d]+[a-zA-Z]?)$/i);
-  if (m) return { label: "Art.", id: m[1] };
-
-  // Not an article heading we recognize.
+  if (m) return { label: `Art. ${m[1]}`, id: m[1] };
   return null;
 }
 
@@ -408,7 +421,7 @@ function parseArticle(norm: PONode): ArticleNode | null {
 
   const enbez = textDeep(enbezN);
   const parsed = parseArticleEnbez(enbez);
-  if (!parsed) return null; // <- only accept § / Art.
+  if (!parsed) return null; // only accept § / Art.
 
   const titleN = firstChild(meta, "titel");
   const title = titleN ? textDeep(titleN) : undefined;
@@ -429,8 +442,8 @@ function parseArticle(norm: PONode): ArticleNode | null {
     for (const child of childrenOf(content)) {
       const t = lname(child);
       if (!t) continue;
-      if (t === "p") article.children.push(parseParagraph(child));
-      else if (t === "dl") article.children.push(parseList(child));
+      if (t === "p") article.children.push(parseParagraph(child, parsed.id));
+      else if (t === "dl") article.children.push(parseList(child, parsed.id));
       else if (t === "table") article.children.push(parseTable(child));
     }
   }
@@ -441,7 +454,6 @@ function parseArticle(norm: PONode): ArticleNode | null {
   return article;
 }
 
-/** For non-§/Art. blocks like "Inhaltsübersicht" (TOC), "Vorbemerkung", etc. */
 function parseSection(norm: PONode): SectionNode | null {
   const meta = firstChild(norm, "metadaten");
   if (!meta) return null;
@@ -450,8 +462,7 @@ function parseSection(norm: PONode): SectionNode | null {
   if (!enbezN) return null;
 
   const enbez = textDeep(enbezN).trim();
-  // Skip if it's actually an article
-  if (parseArticleEnbez(enbez)) return null;
+  if (parseArticleEnbez(enbez)) return null; // already handled as article
 
   const doknr = attrsOf(norm).doknr;
 
@@ -477,7 +488,9 @@ function parseSection(norm: PONode): SectionNode | null {
 
 /* ===================== Outline nodes ===================== */
 
-function parseOutline(norm: PONode): OutlineNode | null {
+type OutlineParse = { node: OutlineNode; level: number };
+
+function parseOutline(norm: PONode): OutlineParse | null {
   const meta = firstChild(norm, "metadaten");
   if (!meta) return null;
   const gl = firstChild(meta, "gliederungseinheit");
@@ -493,14 +506,53 @@ function parseOutline(norm: PONode): OutlineNode | null {
 
   if (!id || !label) return null;
 
-  return {
+  const level = levelFromCode(id);
+  const node: OutlineNode = {
     type: "outline",
     id,
     label,
     ...(title ? { title } : {}),
-    level: levelFromCode(id),
     children: [],
   };
+  return { node, level };
+}
+
+/* ===================== Document metadata extraction ===================== */
+
+function extractLawMetadata(norm: PONode, doc: DocumentNode): void {
+  const meta = firstChild(norm, "metadaten");
+  if (!meta) return;
+
+  // Extract abbreviation (jurabk)
+  if (!doc.jurabk) {
+    const j = firstChild(meta, "jurabk");
+    if (j) {
+      const jurabk = textDeep(j).trim();
+      // Clean up format like "BNatSchG 2009" -> "BNatSchG"
+      doc.jurabk = jurabk.replace(/\s+\d{4}$/, "");
+    }
+  }
+
+  // Extract title - try multiple sources
+  if (!doc.title) {
+    // Try long title first (langue)
+    const lange = firstChild(meta, "langue");
+    if (lange) {
+      doc.title = textDeep(lange).trim();
+    } else {
+      // Try short title (kurzue)
+      const kurz = firstChild(meta, "kurzue");
+      if (kurz) {
+        doc.title = textDeep(kurz).trim();
+      } else {
+        // Fallback to artikel title
+        const titel = firstChild(meta, "titel");
+        if (titel) {
+          doc.title = textDeep(titel).trim();
+        }
+      }
+    }
+  }
 }
 
 /* ===================== Main conversion ===================== */
@@ -521,6 +573,12 @@ function convert(xml: string): DocumentNode {
 
   const doc: DocumentNode = { type: "document", children: [] };
   const stack: OutlineNode[] = [];
+  
+  // Extract law metadata early from the first applicable norm
+  for (const norm of norms) {
+    extractLawMetadata(norm, doc);
+    if (doc.jurabk && doc.title) break; // Stop once we have both
+  }
 
   const pushInto = (node: OutlineNode | ArticleNode | SectionNode) => {
     if (stack.length) stack[stack.length - 1].children.push(node as any);
@@ -528,38 +586,34 @@ function convert(xml: string): DocumentNode {
   };
 
   for (const norm of norms) {
-    const outline = parseOutline(norm);
-    if (outline) {
-      // place by level (now computed correctly for 2 + 3n digits)
-      while (stack.length >= outline.level) stack.pop();
-      if (stack.length) stack[stack.length - 1].children.push(outline);
-      else doc.children.push(outline);
-      stack.push(outline);
+    const parsedOutline = parseOutline(norm);
+    if (parsedOutline) {
+      const { node, level } = parsedOutline;
+      while (stack.length >= level) stack.pop();
+      if (stack.length) stack[stack.length - 1].children.push(node);
+      else doc.children.push(node);
+      stack.push(node);
 
-      // set doc.jurabk/title once (best-effort)
-      if (!doc.jurabk || !doc.title) {
-        const meta = firstChild(norm, "metadaten");
-        if (meta) {
-          if (!doc.jurabk) {
-            const j = firstChild(meta, "jurabk");
-            if (j) doc.jurabk = textDeep(j);
-          }
-          if (!doc.title) {
-            const t = firstChild(meta, "titel");
-            if (t) doc.title = textDeep(t);
-          }
-        }
-      }
+      // set doc.jurabk/title once (best-effort)  
+      extractLawMetadata(norm, doc);
       continue;
     }
 
     const article = parseArticle(norm);
-    if (article) { pushInto(article); continue; }
+    if (article) { 
+      extractLawMetadata(norm, doc);
+      pushInto(article); 
+      continue; 
+    }
 
     const section = parseSection(norm);
-    if (section) { pushInto(section); continue; }
+    if (section) { 
+      extractLawMetadata(norm, doc);
+      pushInto(section); 
+      continue; 
+    }
 
-    // ignore other norm variants (registers, change notes, etc.)
+    // ignore other norm variants
   }
 
   return doc;
@@ -567,7 +621,7 @@ function convert(xml: string): DocumentNode {
 
 /* ===================== CLI ===================== */
 
-if (process.argv[1].endsWith("convert-gii.ts")) {
+if (process.argv[1] && process.argv[1].endsWith("convert-gii.ts")) {
   const file = process.argv[2];
   if (!file) {
     console.error("Usage: ts-node convert-gii.ts <input.xml> > out.json");
