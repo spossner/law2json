@@ -16,6 +16,22 @@ export function LawNavigator({ className }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [deepSearch, setDeepSearch] = useState(false);
+  const [selectedLaw, setSelectedLaw] = useState<string>('BNatSchG');
+  
+  // Static list of available laws - no need to pre-fetch
+  const availableLaws = [
+    { id: 'BNatSchG', title: 'Bundesnaturschutzgesetz', jurabk: 'BNatSchG' },
+    { id: 'BGB', title: 'Bürgerliches Gesetzbuch', jurabk: 'BGB' },
+    { id: 'StGB', title: 'Strafgesetzbuch', jurabk: 'StGB' },
+    { id: 'HGB', title: 'Handelsgesetzbuch', jurabk: 'HGB' },
+    { id: 'StPO', title: 'Strafprozessordnung', jurabk: 'StPO' },
+    { id: 'ZPO', title: 'Zivilprozessordnung', jurabk: 'ZPO' },
+    { id: 'VwGO', title: 'Verwaltungsgerichtsordnung', jurabk: 'VwGO' },
+    { id: 'VwVfG', title: 'Verwaltungsverfahrensgesetz', jurabk: 'VwVfG' },
+    { id: 'AO', title: 'Abgabenordnung', jurabk: 'AO' },
+    { id: 'BDSG', title: 'Bundesdatenschutzgesetz', jurabk: 'BDSG' },
+    { id: 'Grundgesetz', title: 'Grundgesetz für die Bundesrepublik Deutschland', jurabk: 'GG' },
+  ];
 
   // Handle fine-grained content selection
   const handleContentSelect = (contentId: string) => {
@@ -60,6 +76,14 @@ export function LawNavigator({ className }: Props) {
     }
   };
 
+  // Handle law selection change
+  const handleLawChange = (lawId: string) => {
+    setSelectedLaw(lawId);
+    setSelectedElement(null);
+    setSelectedContentId(null);
+    setSearchTerm('');
+  };
+
   // Search within content elements recursively
   const searchInContent = (children: any[], searchTerm: string): boolean => {
     return children.some(child => {
@@ -77,12 +101,14 @@ export function LawNavigator({ className }: Props) {
     });
   };
 
-  // Load law data
+  // Load law data only when selectedLaw changes - no caching, refetch each time
   useEffect(() => {
+    if (!selectedLaw) return;
+
     const loadLawData = async () => {
       try {
-        // const response = await fetch('law/BNatSchG.json');
-        const response = await fetch('law/BGB.json');
+        setLoading(true);
+        const response = await fetch(`law/${selectedLaw}.json`);
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -97,7 +123,7 @@ export function LawNavigator({ className }: Props) {
     };
 
     loadLawData();
-  }, []);
+  }, [selectedLaw]);
 
   // Count elements for stats
   const countElements = (elements: SelectableElement[], type: string): number => {
@@ -216,8 +242,8 @@ export function LawNavigator({ className }: Props) {
   if (loading) {
     return (
       <div className={cn('flex items-center justify-center min-h-screen', className)}>
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4"></div>
+        <div className="flex flex-col items-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-8"></div>
           <h3 className="text-lg font-semibold text-gray-700">Loading...</h3>
           <p className="text-gray-500">Please wait while the law structure is loaded.</p>
         </div>
@@ -265,15 +291,36 @@ export function LawNavigator({ className }: Props) {
     <div className={cn('min-h-screen bg-gray-50', className)}>
       {/* Header */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">German Law Navigator</h1>
-          <p className="text-gray-600">Interactive visualization of German legal documents</p>
+        <div className="mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">German Law Navigator</h1>
+              <p className="text-gray-600">Interactive visualization of German legal documents</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <label htmlFor="law-select" className="text-sm font-medium text-gray-700">
+                Select Law:
+              </label>
+              <select
+                id="law-select"
+                value={selectedLaw}
+                onChange={(e) => handleLawChange(e.target.value)}
+                className="border border-gray-300 rounded-md px-3 py-2 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                {availableLaws.map((law) => (
+                  <option key={law.id} value={law.id}>
+                    {law.jurabk} - {law.title}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Law Info */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-6">
+        <div className="mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl font-bold mb-2">{lawData.title || 'German Legal Document'}</h2>
@@ -302,7 +349,7 @@ export function LawNavigator({ className }: Props) {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto flex">
+      <div className="mx-auto flex">
         {/* Sidebar */}
         <div className="w-96 bg-white border-r border-gray-200 min-h-screen">
           <div className="p-4 border-b border-gray-200">
