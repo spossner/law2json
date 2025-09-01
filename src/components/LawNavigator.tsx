@@ -278,9 +278,8 @@ export function LawNavigator({ className }: Props) {
   ) as SelectableElement[];
 
   const stats = {
-    outlines: countElements(allElements, 'outline'),
-    articles: countElements(allElements, 'article'),
-    sections: countElements(allElements, 'section'),
+    structures: countElements(allElements, 'structure'),
+    elements: countElements(allElements, 'element'),
     paragraphs: countElements(allElements, 'p'),
   };
 
@@ -328,16 +327,12 @@ export function LawNavigator({ className }: Props) {
             </div>
             <div className="flex gap-6 text-sm">
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{stats.outlines}</div>
-                <div className="text-white/70">Outlines</div>
+                <div className="text-2xl font-bold text-white">{stats.structures}</div>
+                <div className="text-white/70">Structures</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{stats.articles}</div>
-                <div className="text-white/70">Articles</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">{stats.sections}</div>
-                <div className="text-white/70">Sections</div>
+                <div className="text-2xl font-bold text-white">{stats.elements}</div>
+                <div className="text-white/70">Elements</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">{stats.paragraphs}</div>

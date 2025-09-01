@@ -93,7 +93,7 @@ export function StructuralElementRenderer({
         <div className="flex items-center gap-2">
           {renderExpandIcon()}
           <span className="font-mono text-blue-600 min-w-fit">{(element as any).label}</span>
-          <span className="flex-1 truncate">{(element as any).title}</span>
+          <span className="flex-1 truncate ml-1">{(element as any).title}</span>
         </div>
       </div>
 
