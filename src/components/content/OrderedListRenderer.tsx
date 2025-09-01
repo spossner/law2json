@@ -12,7 +12,14 @@ interface Props {
   selectedContentId?: string;
 }
 
-export function OrderedListRenderer({ element, className, searchTerm, parentPath, onContentSelect, selectedContentId }: Props) {
+export function OrderedListRenderer({
+  element,
+  className,
+  searchTerm,
+  parentPath,
+  onContentSelect,
+  selectedContentId,
+}: Props) {
   const getListStyle = (listType: OrderedListElement['listType']) => {
     switch (listType) {
       case 'arabic':
@@ -41,24 +48,28 @@ export function OrderedListRenderer({ element, className, searchTerm, parentPath
   const listStyle = getListStyle(element.listType);
 
   return (
-    <ol className={cn(
-      'ml-6 space-y-2',
-      listStyle,
-      element.listType === 'Symbol' && 'ml-0',
-      className
-    )}>
+    <ol
+      className={cn(
+        'ml-6 space-y-2',
+        listStyle,
+        element.listType === 'Symbol' && 'ml-0',
+        className
+      )}
+    >
       {element.children.map((item, index) => {
-        const displayText = searchTerm ? highlightText(item.text || 'List item content', searchTerm) : (item.text || 'List item content');
+        const displayText = searchTerm
+          ? highlightText(item.text || 'List item content', searchTerm)
+          : item.text || 'List item content';
         const itemId = item.id || `${parentPath}_item_${index}`;
         const isSelected = selectedContentId === itemId;
-        
+
         return (
-          <li 
-            key={index} 
+          <li
+            key={index}
             className={cn(
-              "text-gray-900 leading-relaxed cursor-pointer rounded transition-colors p-1",
-              "hover:bg-blue-50 hover:ring-1 hover:ring-blue-200",
-              isSelected && "bg-blue-100 ring-1 ring-blue-300"
+              'text-gray-900 leading-relaxed cursor-pointer rounded transition-colors p-1',
+              'hover:bg-blue-50 hover:ring-1 hover:ring-blue-200',
+              isSelected && 'bg-blue-100 ring-1 ring-blue-300'
             )}
             onClick={() => onContentSelect?.(itemId)}
           >

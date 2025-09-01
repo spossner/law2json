@@ -1,157 +1,142 @@
-import React from 'react';
-import type { ContentElement } from '../../types';
-import { TextRenderer } from './TextRenderer';
-import { FormattedTextRenderer } from './FormattedTextRenderer';
-import { OrderedListRenderer } from './OrderedListRenderer';
-import { ImageRenderer } from './ImageRenderer';
+import type { TextRun, ListNode, TableNode, ParagraphNode, SelectableElement } from '../../types';
 import { cn } from '../../lib/utils';
 import { highlightText } from '../../lib/highlightText';
+import { Children } from 'react';
 
 interface Props {
-  element: ContentElement;
+  element: any; // Can be TextRun, ListNode, TableNode, ParagraphNode, or SelectableElement
   className?: string;
   searchTerm?: string;
   parentPath: string; // Hierarchical path like "K4_A1_P20_S2"
   contentIndex: number; // Index within the content array
+  simpleId: boolean; // Whether to use simple IDs or appending contextIndex if not explicit ID was set
   onContentSelect?: (contentId: string) => void;
   selectedContentId?: string | null;
 }
 
-export function ContentRenderer({ 
-  element, 
-  className, 
-  searchTerm, 
-  parentPath, 
-  contentIndex, 
-  onContentSelect, 
-  selectedContentId 
+export function ContentRenderer({
+  element,
+  className,
+  searchTerm,
+  parentPath,
+  contentIndex,
+  simpleId,
+  onContentSelect,
+  selectedContentId,
 }: Props) {
   // Use hierarchical ID from JSON or fallback to calculated ID
-  const contentId = element.id || `${parentPath}_${element.type}_${contentIndex}`;
-  const isSelected = selectedContentId === contentId;
   
-  const handleClick = () => {
+  const contentId = (element as any).id || (simpleId ? parentPath : `${parentPath}-${contentIndex}`);
+  const isSelected = selectedContentId === contentId;
+  // console.log("rendering", element, element.id, parentPath, element.type,contentIndex," --> ",contentId, isSelected);
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
     onContentSelect?.(contentId);
   };
 
-  const baseStyles = "cursor-pointer rounded transition-colors";
-  const hoverStyles = "hover:bg-blue-50 hover:ring-1 hover:ring-blue-200";
-  const selectedStyles = isSelected ? "bg-blue-100 ring-1 ring-blue-300" : "";
+  const baseStyles = 'cursor-pointer rounded transition-colors';
+  const hoverStyles = 'hover:bg-blue-50 hover:ring-1 hover:ring-blue-200';
+  const selectedStyles = isSelected ? 'bg-blue-100 ring-1 ring-blue-300' : '';
+
   switch (element.type) {
-    case 'text':
+    // Handle TextRun (markdown content)
+    case 'md':
+      const textElement = element as TextRun;
+      const highlightedText = searchTerm
+        ? highlightText(textElement.md, searchTerm)
+        : textElement.md;
       return (
-        <span 
-          className={cn(baseStyles, hoverStyles, selectedStyles, "inline-block")} 
-          onClick={handleClick}
-        >
-          <TextRenderer element={element} searchTerm={searchTerm} />
-        </span>
-      );
-      
-    case 'formatted_text':
-      return (
-        <span 
-          className={cn(baseStyles, hoverStyles, selectedStyles, "inline-block")} 
-          onClick={handleClick}
-        >
-          <FormattedTextRenderer element={element} className={className} searchTerm={searchTerm} />
-        </span>
-      );
-      
-    case 'line_break':
-      return <br />;
-      
-    case 'preformatted':
-      const preformattedText = searchTerm ? highlightText(element.text, searchTerm) : element.text;
-      return (
-        <pre 
+        <div
           className={cn(
-            'bg-gray-50 border border-gray-200 rounded p-3 text-sm font-mono whitespace-pre-wrap overflow-x-auto my-2',
-            baseStyles, hoverStyles, selectedStyles,
+            'prose prose-lg max-w-none leading-relaxed',
+            baseStyles,
+            hoverStyles,
+            selectedStyles,
             className
           )}
           onClick={handleClick}
-          dangerouslySetInnerHTML={{ __html: preformattedText }}
+          dangerouslySetInnerHTML={{ __html: highlightedText }}
         />
       );
-      
-    case 'comment':
-      const commentStyles = {
-        'Stand': 'bg-blue-50 border-blue-200 text-blue-800',
-        'Stand-Hinweis': 'bg-blue-50 border-blue-200 text-blue-800', 
-        'Hinweis': 'bg-yellow-50 border-yellow-200 text-yellow-800',
-        'Fundstelle': 'bg-green-50 border-green-200 text-green-800',
-        'Verarbeitung': 'bg-purple-50 border-purple-200 text-purple-800'
-      } as const;
-      
+
+    // Handle ListNode
+    case 'list':
+      const listElement = element as ListNode;
       return (
-        <div 
-          className={cn(
-            'border rounded p-3 text-sm my-2',
-            commentStyles[element.commentType] || commentStyles.Hinweis,
-            baseStyles, hoverStyles, selectedStyles,
-            className
+        <div className={cn('my-4', baseStyles, className)} onClick={handleClick}>
+          {listElement.kind === 'ordered' ? (
+            <ol className="list-none list-inside space-y-2">
+              {listElement.children.map((listItem, index) => (
+                <li key={index} className="text-gray-900 flex gap-2">
+                  {listItem.label && <span>{listItem.label}</span>}
+                  {listItem.children.map((child, childIndex) => (
+                    <ContentRenderer
+                      key={childIndex}
+                      element={child}
+                      searchTerm={searchTerm}
+                      parentPath={`${listItem.id}`}
+                      simpleId={true}
+                      contentIndex={childIndex}
+                      onContentSelect={onContentSelect}
+                      selectedContentId={selectedContentId}
+                    />
+                  ))}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <ul
+              className={cn(
+                'space-y-2 ml-4',
+                listElement.style === 'bullet'
+                  ? 'list-disc list-inside'
+                  : listElement.style === 'dash'
+                    ? 'list-none'
+                    : 'list-disc list-inside'
+              )}
+            >
+              {listElement.children.map((listItem, index) => (
+                <li key={index} className="text-gray-900">
+                  {listElement.style === 'dash' && '– '}
+                  {listItem.children.map((child, childIndex) => (
+                    <ContentRenderer
+                      key={childIndex}
+                      element={child}
+                      searchTerm={searchTerm}
+                      parentPath={`${contentId}_li${index}`}
+                      contentIndex={childIndex}
+                      simpleId={false}
+                      onContentSelect={onContentSelect}
+                      selectedContentId={selectedContentId}
+                    />
+                  ))}
+                </li>
+              ))}
+            </ul>
           )}
-          onClick={handleClick}
-        >
-          <strong className="text-xs uppercase tracking-wide opacity-75">
-            {element.commentType}:
-          </strong>
-          <div 
-            className="mt-1"
-            dangerouslySetInnerHTML={{ 
-              __html: searchTerm ? highlightText(element.text, searchTerm) : element.text 
-            }}
-          />
         </div>
       );
-      
-    case 'ordered_list':
-      return (
-        <OrderedListRenderer 
-          element={element} 
-          className={className} 
-          searchTerm={searchTerm}
-          parentPath={contentId} // Pass our content ID as parent for list items
-          onContentSelect={onContentSelect}
-          selectedContentId={selectedContentId}
-        />
-      );
-      
-    case 'image':
-      return (
-        <div 
-          className={cn(baseStyles, hoverStyles, selectedStyles, "inline-block")}
-          onClick={handleClick}
-        >
-          <ImageRenderer element={element} className={className} />
-        </div>
-      );
-      
+
+    // Handle TableNode
     case 'table':
+      const tableElement = element as TableNode;
       return (
-        <div 
+        <div
           className={cn('overflow-x-auto my-4', baseStyles, hoverStyles, selectedStyles, className)}
           onClick={handleClick}
         >
           <table className="min-w-full border-collapse border border-gray-300">
-            {element.headers && (
-              <thead className="bg-gray-50">
-                <tr>
-                  {element.headers.map((header, index) => (
-                    <th key={index} className="border border-gray-300 px-4 py-2 text-left font-semibold">
-                      {header}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-            )}
             <tbody>
-              {element.rows.map((row, rowIndex) => (
+              {tableElement.rows.map((row, rowIndex) => (
                 <tr key={rowIndex} className="hover:bg-gray-50">
                   {row.map((cell, cellIndex) => (
                     <td key={cellIndex} className="border border-gray-300 px-4 py-2">
-                      {typeof cell === 'string' ? cell : JSON.stringify(cell)}
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: searchTerm ? highlightText(cell, searchTerm) : cell,
+                        }}
+                      />
                     </td>
                   ))}
                 </tr>
@@ -160,19 +145,74 @@ export function ContentRenderer({
           </table>
         </div>
       );
-      
-    case 'list_item':
-      // This should normally be handled by OrderedListRenderer
+
+    // Handle ParagraphNode
+    case 'p':
+      const paragraphElement = element as ParagraphNode;
       return (
-        <li 
-          className={cn("text-gray-900", baseStyles, hoverStyles, selectedStyles)}
+        <div className={cn('my-3 flex gap-2', baseStyles, className)} onClick={handleClick}>
+          {paragraphElement.label && (
+            <span className="text-gray-900">{paragraphElement.label}</span>
+          )}
+          <div className="space-y-2">
+            {paragraphElement.children.map((child, index) => (
+              <ContentRenderer
+                key={index}
+                element={child}
+                searchTerm={searchTerm}
+                parentPath={contentId}
+                contentIndex={index}
+                simpleId={paragraphElement.children.length === 1} // If only one child, use simpleId
+                onContentSelect={onContentSelect}
+                selectedContentId={selectedContentId}
+              />
+            ))}
+          </div>
+        </div>
+      );
+
+    // Handle SelectableElement (outline, article, section) that appear as children
+    case 'outline':
+    case 'article':
+    case 'section':
+      const selectableElement = element as SelectableElement;
+      return (
+        <div
+          className={cn(
+            'my-4 border-l-4 border-blue-200 pl-4',
+            baseStyles,
+            hoverStyles,
+            selectedStyles,
+            className
+          )}
           onClick={handleClick}
         >
-          {element.text || 'List item'}
-        </li>
+          <h3 className="font-semibold text-lg text-blue-800 mb-2">
+            {(selectableElement as any).label} {(selectableElement as any).title}
+          </h3>
+          <div className="space-y-3">
+            {selectableElement.children.map((child, index) => (
+              <ContentRenderer
+                key={index}
+                element={child}
+                searchTerm={searchTerm}
+                parentPath={contentId}
+                contentIndex={index}
+                simpleId={false}
+                onContentSelect={onContentSelect}
+                selectedContentId={selectedContentId}
+              />
+            ))}
+          </div>
+        </div>
       );
-      
+
     default:
-      return <div className="text-red-500 text-sm">Unknown element type</div>;
+      return (
+        <div className="text-red-500 text-sm p-2 border border-red-200 rounded">
+          Unknown element type: {element.type}
+          <pre className="mt-2 text-xs">{JSON.stringify(element, null, 2)}</pre>
+        </div>
+      );
   }
 }

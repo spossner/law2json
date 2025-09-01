@@ -1,0 +1,25 @@
+# Build outputs
+dist/
+build/
+public/
+output/
+
+# Dependencies
+node_modules/
+
+# Git
+.git/
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Generated files
+*.generated.*
+
+# XML and JSON data files
+data/
+*.xml
+public/law/*.json

@@ -3,52 +3,60 @@
  * Matches the interfaces from convert-gii.ts
  */
 
-// Basic content and list types  
-export type ListKind = "ordered" | "unordered";
-export type ListStyle = "arabic" | "alpha-lower" | "alpha-upper" | "roman-lower" | "roman-upper" | "bullet" | "dash" | "custom";
+// Basic content and list types
+export type ListKind = 'ordered' | 'unordered';
+export type ListStyle =
+  | 'arabic'
+  | 'alpha-lower'
+  | 'alpha-upper'
+  | 'roman-lower'
+  | 'roman-upper'
+  | 'bullet'
+  | 'dash'
+  | 'custom';
 
 export interface TextRun {
-  type: "md";
-  md: string;        // Markdown (+ tiny HTML: u/small/sup/sub/br)
+  type: 'md';
+  md: string; // Markdown (+ tiny HTML: u/small/sup/sub/br)
 }
 
 export interface ListItemNode {
-  type: "li";
-  label?: string;    // display label like "1.", "2.", etc.
-  id?: string;       // hierarchical like "4.1.2"
+  type: 'li';
+  label?: string; // display label like "1.", "2.", etc.
+  id?: string; // hierarchical like "4.1.2"
   children: Array<TextRun | ParagraphNode | ListNode>;
 }
 
 export interface ListNode {
-  type: "list";
+  type: 'list';
   kind: ListKind;
   style: ListStyle;
-  symbol?: string;   // for custom style
+  symbol?: string; // for custom style
   children: ListItemNode[];
 }
 
 export interface TableNode {
-  type: "table";
-  rows: string[][];  // rows of Markdown cells
+  type: 'table';
+  rows: string[][]; // rows of Markdown cells
 }
 
 export interface Footnote {
-  id: string;        // referenced by [^id]
-  md: string;        // Markdown + tiny HTML
+  id: string; // referenced by [^id]
+  md: string; // Markdown + tiny HTML
 }
 
 // Hierarchical structure types
 export interface ParagraphNode {
-  type: "p";
-  label?: string;    // e.g., "(1)", "(2)" for numbered paragraphs
-  id?: string;       // hierarchical like "4.1" (Article 4, Abs. 1)
+  type: 'p';
+  label?: string; // e.g., "(1)", "(2)" for numbered paragraphs
+  id?: string; // hierarchical like "4.1" (Article 4, Abs. 1)
   children: Array<TextRun | ListNode>;
 }
 
 export interface ArticleNode {
-  type: "article";
-  id: string;        // pure number (e.g., "14")
-  label: string;     // display label (e.g., "§ 14", "Art. 5")
+  type: 'article';
+  id: string; // pure number (e.g., "14")
+  label: string; // display label (e.g., "§ 14", "Art. 5")
   title?: string;
   doknr?: string;
   footnotes?: Footnote[];
@@ -56,24 +64,26 @@ export interface ArticleNode {
 }
 
 export interface SectionNode {
-  type: "section";   // e.g., Inhaltsübersicht, Vorbemerkung, …
-  title?: string;    // usually from enbez
+  type: 'section'; // e.g., Inhaltsübersicht, Vorbemerkung, …
+  id?: string; // unique identifier
+  label?: string; // display label
+  title?: string; // usually from enbez
   doknr?: string;
   children: Array<ParagraphNode>;
 }
 
 export interface OutlineNode {
-  type: "outline";
-  id: string;        // gliederungskennzahl
-  label: string;     // gliederungsbez
-  title?: string;    // gliederungstitel
+  type: 'outline';
+  id: string; // gliederungskennzahl
+  label: string; // gliederungsbez
+  title?: string; // gliederungstitel
   children: Array<OutlineNode | ArticleNode | SectionNode>;
 }
 
 export interface DocumentNode {
-  type: "document";
-  jurabk?: string;   // law abbreviation
-  title?: string;    // law title
+  type: 'document';
+  jurabk?: string; // law abbreviation
+  title?: string; // law title
   children: Array<SectionNode | OutlineNode>;
 }
 

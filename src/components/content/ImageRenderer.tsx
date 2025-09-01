@@ -11,15 +11,11 @@ export function ImageRenderer({ element, className }: Props) {
   const alignClasses = {
     left: 'text-left',
     center: 'text-center',
-    right: 'text-right'
+    right: 'text-right',
   } as const;
 
   return (
-    <div className={cn(
-      'my-4',
-      element.align && alignClasses[element.align],
-      className
-    )}>
+    <div className={cn('my-4', element.align && alignClasses[element.align], className)}>
       <img
         src={element.src}
         alt={element.alt || ''}

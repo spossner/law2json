@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import type { LawDocument, SelectableElement, ContentElement } from '../types';
+import { useState, useEffect } from 'react';
+import type { LawDocument, SelectableElement } from '../types';
 import { StructuralElementRenderer } from './structural/StructuralElementRenderer';
 import { ContentRenderer } from './content';
 import { cn } from '../lib/utils';
-import { highlightText } from '../lib/highlightText';
 
 interface Props {
   className?: string;
@@ -27,16 +26,16 @@ export function LawNavigator({ className }: Props) {
   // Helper function to find element by ID in the new structure
   const findElementById = (elements: SelectableElement[], id: string): SelectableElement | null => {
     for (const element of elements) {
-      if (element.id === id) {
+      if ((element as any).id === id) {
         return element;
       }
-      
+
       // Check children if they exist and are navigable
       if ('children' in element && element.children) {
-        const navigableChildren = element.children.filter(child => 
-          'id' in child && child.id !== undefined
+        const navigableChildren = element.children.filter(
+          child => 'id' in child && (child as any).id !== undefined
         ) as SelectableElement[];
-        
+
         if (navigableChildren.length > 0) {
           const found = findElementById(navigableChildren, id);
           if (found) return found;
@@ -49,52 +48,26 @@ export function LawNavigator({ className }: Props) {
   // Handle element selection - always use the original unfiltered element
   const handleElementSelect = (filteredElement: SelectableElement) => {
     if (!lawData) return;
-    
-    // Get all navigable children from the document
-    const allElements = lawData.children.filter(child => 
-      'id' in child && child.id !== undefined
-    ) as SelectableElement[];
-    
-    const originalElement = findElementById(allElements, filteredElement.id!);
-    setSelectedElement(originalElement);
-  };
 
-  // Generate hierarchical path for content elements
-  const generatePath = (
-    chapter?: string,
-    section?: string, 
-    paragraph?: string,
-    subparagraph?: string
-  ): string => {
-    const parts: string[] = [];
-    
-    if (chapter) {
-      const chapterNum = chapter.match(/\d+/)?.[0];
-      if (chapterNum) parts.push(`K${chapterNum}`);
+    // Get all navigable children from the document
+    const allElements = lawData.children.filter(
+      child => 'id' in child && (child as any).id !== undefined
+    ) as SelectableElement[];
+
+    const originalElement = findElementById(allElements, (filteredElement as any).id!);
+    if (originalElement) {
+      setSelectedElement(originalElement);
     }
-    
-    if (section) {
-      const sectionNum = section.match(/\d+/)?.[0];
-      if (sectionNum) parts.push(`A${sectionNum}`);
-    }
-    
-    if (paragraph) {
-      const paragraphNum = paragraph.replace(/[§\s\u00a0]/g, '');
-      if (paragraphNum) parts.push(`P${paragraphNum}`);
-    }
-    
-    if (subparagraph) {
-      const subNum = subparagraph.match(/\d+/)?.[0];
-      if (subNum) parts.push(`S${subNum}`);
-    }
-    
-    return parts.join('_') || 'unknown';
   };
 
   // Search within content elements recursively
   const searchInContent = (children: any[], searchTerm: string): boolean => {
     return children.some(child => {
-      if (child.text && child.text.toLowerCase().includes(searchTerm.toLowerCase())) {
+      if (
+        child.type === 'md' &&
+        child.md &&
+        child.md.toLowerCase().includes(searchTerm.toLowerCase())
+      ) {
         return true;
       }
       if (child.children) {
@@ -104,12 +77,12 @@ export function LawNavigator({ className }: Props) {
     });
   };
 
-
   // Load law data
   useEffect(() => {
     const loadLawData = async () => {
       try {
-        const response = await fetch('law/BNatSchG.json');
+        // const response = await fetch('law/BNatSchG.json');
+        const response = await fetch('law/BGB.json');
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -132,8 +105,8 @@ export function LawNavigator({ className }: Props) {
     elements.forEach(el => {
       if (el.type === type) count++;
       if ('children' in el && el.children) {
-        const selectableChildren = el.children.filter(child => 
-          'type' in child && 'id' in child
+        const selectableChildren = el.children.filter(
+          child => 'type' in child && 'id' in child && child.id !== undefined
         ) as SelectableElement[];
         count += countElements(selectableChildren, type);
       }
@@ -144,94 +117,99 @@ export function LawNavigator({ className }: Props) {
   // Count all matching elements recursively
   const countMatches = (elements: SelectableElement[], searchTerm: string): number => {
     if (!searchTerm) return 0;
-    
+
     let count = 0;
-    
+
     elements.forEach(element => {
       // Check if current element matches in title/label
-      const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                              element.label?.toLowerCase().includes(searchTerm.toLowerCase());
-      
+      const matchesStructure =
+        (element as any).title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (element as any).label?.toLowerCase().includes(searchTerm.toLowerCase());
+
       // Check if content matches (when deep search is enabled)
       let matchesContent = false;
       if (deepSearch && 'children' in element && element.children) {
-        const contentChildren = element.children.filter(child => 
-          !('id' in child) // content elements don't have IDs for selection
+        const contentChildren = element.children.filter(
+          child => child.type === 'md' || child.type === 'list' || child.type === 'table'
         );
         matchesContent = contentChildren.length > 0 && searchInContent(contentChildren, searchTerm);
       }
-      
+
       if (matchesStructure || matchesContent) {
         count++;
       }
-      
+
       // Recursively count matches in navigable children
       if ('children' in element && element.children) {
-        const navigableChildren = element.children.filter(child => 
-          'id' in child && child.id !== undefined
+        const navigableChildren = element.children.filter(
+          child => 'id' in child && (child as any).id !== undefined
         ) as SelectableElement[];
-        
+
         if (navigableChildren.length > 0) {
           count += countMatches(navigableChildren, searchTerm);
         }
       }
     });
-    
+
     return count;
   };
 
   // Filter structure based on search (recursive)
-  const filterStructure = (elements: SelectableElement[], searchTerm: string): SelectableElement[] => {
+  const filterStructure = (
+    elements: SelectableElement[],
+    searchTerm: string
+  ): SelectableElement[] => {
     if (!searchTerm) return elements;
-    
+
     const filtered: SelectableElement[] = [];
-    
+
     elements.forEach(element => {
       // Check if current element matches in title/label
-      const matchesStructure = element.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                              element.label?.toLowerCase().includes(searchTerm.toLowerCase());
-      
+      const matchesStructure =
+        (element as any).title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (element as any).label?.toLowerCase().includes(searchTerm.toLowerCase());
+
       // Check if content matches (when deep search is enabled)
       let matchesContent = false;
       let contentChildren: any[] = [];
-      
+
       if (deepSearch && 'children' in element && element.children) {
-        contentChildren = element.children.filter(child => 
-          !('id' in child) // content elements don't have IDs for selection
+        contentChildren = element.children.filter(
+          child => child.type === 'md' || child.type === 'list' || child.type === 'table'
         );
         matchesContent = contentChildren.length > 0 && searchInContent(contentChildren, searchTerm);
       }
-      
+
       const matchesSearch = matchesStructure || matchesContent;
-      
+
       // Get navigable children for recursive search
       let navigableChildren: SelectableElement[] = [];
       let filteredChildren: SelectableElement[] = [];
-      
+
       if ('children' in element && element.children) {
-        navigableChildren = element.children.filter(child => 
-          'id' in child && child.id !== undefined
+        navigableChildren = element.children.filter(
+          child => 'id' in child && child.id !== undefined
         ) as SelectableElement[];
-        
+
         // Recursively filter children
-        filteredChildren = navigableChildren.length > 0 ? 
-          filterStructure(navigableChildren, searchTerm) : [];
+        filteredChildren =
+          navigableChildren.length > 0 ? filterStructure(navigableChildren, searchTerm) : [];
       }
-      
+
       // Include element if it matches or has matching children
       if (matchesSearch || filteredChildren.length > 0) {
         // For navigation: keep all children if current element matches, otherwise only filtered children + content
-        const allChildren = matchesSearch ? 
-          (element as any).children : 
-          [...contentChildren, ...filteredChildren];
-        
+        const allChildren = matchesSearch
+          ? (element as any).children
+          : [...contentChildren, ...filteredChildren];
+
         filtered.push({
           ...element,
-          children: allChildren
+          children: allChildren,
         } as SelectableElement);
       }
     });
-    
+
     return filtered;
   };
 
@@ -269,15 +247,15 @@ export function LawNavigator({ className }: Props) {
   }
 
   // Get all navigable elements from the document
-  const allElements = lawData.children.filter(child => 
-    'id' in child && child.id !== undefined
+  const allElements = lawData.children.filter(
+    child => 'id' in child && child.id !== undefined
   ) as SelectableElement[];
-  
+
   const stats = {
     outlines: countElements(allElements, 'outline'),
-    articles: countElements(allElements, 'article'), 
+    articles: countElements(allElements, 'article'),
     sections: countElements(allElements, 'section'),
-    paragraphs: countElements(allElements, 'p')
+    paragraphs: countElements(allElements, 'p'),
   };
 
   const filteredStructure = filterStructure(allElements, searchTerm);
@@ -332,21 +310,30 @@ export function LawNavigator({ className }: Props) {
               {/* Search icon (left side) */}
               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
                 </svg>
               </div>
-              
+
               <input
                 type="text"
-                placeholder={deepSearch ? "Deep search in titles and content..." : "Search paragraphs and sections..."}
+                placeholder={
+                  deepSearch
+                    ? 'Deep search in titles and content...'
+                    : 'Search paragraphs and sections...'
+                }
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={e => setSearchTerm(e.target.value)}
                 className={cn(
-                  "w-full pl-10 pr-20 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500",
-                  searchTerm ? "pr-20" : "pr-16"
+                  'w-full pl-10 pr-20 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500',
+                  searchTerm ? 'pr-20' : 'pr-16'
                 )}
               />
-              
+
               <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-1">
                 {/* Clear button (when search has content) */}
                 {searchTerm && (
@@ -356,27 +343,36 @@ export function LawNavigator({ className }: Props) {
                     title="Clear search"
                   >
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
                 )}
-                
+
                 {/* Deep search toggle */}
                 <button
                   onClick={() => setDeepSearch(!deepSearch)}
                   className={cn(
-                    "p-1 rounded transition-colors",
-                    deepSearch 
-                      ? "text-blue-600 hover:text-blue-700 hover:bg-blue-50" 
-                      : "text-gray-400 hover:text-gray-600 hover:bg-gray-50"
+                    'p-1 rounded transition-colors',
+                    deepSearch
+                      ? 'text-blue-600 hover:text-blue-700 hover:bg-blue-50'
+                      : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
                   )}
-                  title={deepSearch ? "Deep search enabled - searches titles and content" : "Surface search - searches titles only"}
+                  title={
+                    deepSearch
+                      ? 'Deep search enabled - searches titles and content'
+                      : 'Surface search - searches titles only'
+                  }
                 >
                   {/* Layers/depth icon for deep search toggle */}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       strokeWidth={deepSearch ? 2.5 : 2}
                       d="M19 11H5m14-7H5m14 14H5"
                       opacity={deepSearch ? 1 : 0.6}
@@ -386,21 +382,21 @@ export function LawNavigator({ className }: Props) {
               </div>
             </div>
           </div>
-          
+
           <div className="overflow-y-auto max-h-[calc(100vh-200px)]">
             {searchTerm && (
               <div className="p-4 text-sm text-gray-600 border-b border-gray-200">
                 {matchCount} results found
               </div>
             )}
-            
-            {filteredStructure.map((element) => (
+
+            {filteredStructure.map(element => (
               <StructuralElementRenderer
-                key={element.id}
+                key={(element as any).id}
                 element={element}
                 onSelect={handleElementSelect}
-                isSelected={selectedElement?.id === element.id}
-                selectedElementId={selectedElement?.id}
+                isSelected={(selectedElement as any)?.id === (element as any).id}
+                selectedElementId={(selectedElement as any)?.id}
               />
             ))}
           </div>
@@ -411,76 +407,56 @@ export function LawNavigator({ className }: Props) {
           {selectedElement ? (
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                {selectedElement.label} {selectedElement.title}
+                {(selectedElement as any).label} {(selectedElement as any).title}
               </h1>
-              
+
               <div className="bg-gray-50 rounded-lg p-4 mb-6">
                 <h3 className="font-semibold text-gray-700 mb-2">Element Information</h3>
                 <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div><strong>Type:</strong> {selectedElement.type}</div>
-                  <div><strong>ID:</strong> {selectedElement.id}</div>
-                  <div><strong>Children:</strong> {'children' in selectedElement ? selectedElement.children.length : 0}</div>
+                  <div>
+                    <strong>Type:</strong> {selectedElement.type}
+                  </div>
+                  <div>
+                    <strong>ID:</strong> {(selectedElement as any).id}
+                  </div>
+                  <div>
+                    <strong>Children:</strong>{' '}
+                    {'children' in selectedElement ? selectedElement.children.length : 0}
+                  </div>
                 </div>
               </div>
 
               <div className="prose prose-lg max-w-none">
                 <div className="space-y-6">
-                  {selectedElement.children.map((child) => {
-                    if ('type' in child && ['chapter', 'section', 'paragraph', 'subparagraph'].includes((child as StructuralElement).type)) {
-                      const structChild = child as StructuralElement;
-                      return (
-                        <div key={structChild.id} className="border-l-4 border-blue-200 pl-4">
-                          {structChild.title && (
-                            <h4
-                              className="font-semibold text-lg text-blue-800 mb-2"
-                              dangerouslySetInnerHTML={{
-                                __html: searchTerm ? 
-                                  `${highlightText(structChild.number ?? '', searchTerm)} ${highlightText(structChild.title, searchTerm)}` :
-                                  `${structChild.number} ${structChild.title}`
-                              }}
-                            />
-                          )}
-                          {structChild.children.length > 0 && (
-                            <div className="space-y-3">
-                              {structChild.children.map((grandchild, gIndex) => {
-                                // Generate hierarchical path based on context
-                                // We need to determine the hierarchy context from selectedElement and structChild
-                                const parentPath = generatePath(
-                                  selectedElement?.type === 'chapter' ? selectedElement.number : undefined,
-                                  selectedElement?.type === 'section' ? selectedElement.number : 
-                                    (structChild.type === 'section' ? structChild.number : undefined),
-                                  structChild.type === 'paragraph' ? structChild.number : undefined,
-                                  structChild.type === 'subparagraph' ? structChild.number : undefined
-                                );
-                                
-                                return (
-                                  <div key={gIndex}>
-                                    <ContentRenderer 
-                                      element={grandchild as ContentElement} 
-                                      searchTerm={searchTerm}
-                                      parentPath={parentPath}
-                                      contentIndex={gIndex}
-                                      onContentSelect={handleContentSelect}
-                                      selectedContentId={selectedContentId}
-                                    />
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          )}
-                        </div>
-                      );
-                    }
-                    return null;
-                  })}
+                  {selectedElement.children.map((child, index) => (
+                    <div className="border-l-4 border-blue-200 pl-4" key={
+                          child.type === 'md'
+                            ? `md-${index}`
+                            : (child as any).id || `content-${index}`
+                        }>
+                      <ContentRenderer
+                        element={child}
+                        searchTerm={searchTerm}
+                        parentPath={(selectedElement as any).id || 'root'}
+                        contentIndex={index}
+                        simpleId={false}
+                        onContentSelect={handleContentSelect}
+                        selectedContentId={selectedContentId}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           ) : (
             <div className="text-center py-20">
               <div className="text-6xl mb-4">⚖️</div>
-              <h2 className="text-2xl font-bold text-gray-700 mb-2">Select a paragraph to view details</h2>
-              <p className="text-gray-500">Use the navigation panel on the left to explore the law structure.</p>
+              <h2 className="text-2xl font-bold text-gray-700 mb-2">
+                Select a paragraph to view details
+              </h2>
+              <p className="text-gray-500">
+                Use the navigation panel on the left to explore the law structure.
+              </p>
             </div>
           )}
         </div>

@@ -9,11 +9,6 @@ interface Props {
 
 export function TextRenderer({ element, searchTerm }: Props) {
   const displayText = searchTerm ? highlightText(element.text, searchTerm) : element.text;
-  
-  return (
-    <span 
-      className="text-gray-900"
-      dangerouslySetInnerHTML={{ __html: displayText }}
-    />
-  );
+
+  return <span className="text-gray-900" dangerouslySetInnerHTML={{ __html: displayText }} />;
 }

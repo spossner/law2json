@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import type { SelectableElement, ContentElement } from '../../types';
-import { ContentRenderer } from '../content';
+import { useState } from 'react';
+import type { SelectableElement } from '../../types';
 import { cn } from '../../lib/utils';
 
 interface Props {
@@ -11,12 +10,12 @@ interface Props {
   selectedElementId?: string; // Pass selected element ID for nested comparison
 }
 
-export function StructuralElementRenderer({ 
-  element, 
-  level = 0, 
-  onSelect, 
+export function StructuralElementRenderer({
+  element,
+  level = 0,
+  onSelect,
   isSelected = false,
-  selectedElementId
+  selectedElementId,
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false); // Start collapsed
 
@@ -32,20 +31,24 @@ export function StructuralElementRenderer({
   };
 
   // Check if element has navigable children (with IDs)
-  const hasNavigableChildren = 'children' in element && element.children && 
-    element.children.some(child => 'id' in child && child.id !== undefined);
+  const hasNavigableChildren =
+    'children' in element &&
+    element.children &&
+    element.children.some(child => 'id' in child && (child as any).id !== undefined);
 
-  const navigableChildren = ('children' in element && element.children) ? 
-    element.children.filter(child => 'id' in child && child.id !== undefined) as SelectableElement[] : 
-    [];
+  const navigableChildren =
+    'children' in element && element.children
+      ? (element.children.filter(
+          child => 'id' in child && (child as any).id !== undefined
+        ) as SelectableElement[])
+      : [];
 
-  const contentChildren = ('children' in element && element.children) ? 
-    element.children.filter(child => !('id' in child)) as ContentElement[] : 
-    [];
+  // Remove contentChildren as it's not used
 
   const getElementStyles = () => {
-    const baseStyles = 'cursor-pointer transition-colors duration-150 border-l-4 border-transparent hover:border-blue-300 hover:bg-blue-50';
-    
+    const baseStyles =
+      'cursor-pointer transition-colors duration-150 border-l-4 border-transparent hover:border-blue-300 hover:bg-blue-50';
+
     switch (element.type) {
       case 'outline':
         return cn(
@@ -81,14 +84,16 @@ export function StructuralElementRenderer({
     if (element.type !== 'outline') {
       return <span className="w-4" />;
     }
-    
+
     if (!hasNavigableChildren) return <span className="w-4" />;
-    
+
     return (
-      <span className={cn(
-        'w-4 h-4 flex items-center justify-center text-gray-400 transition-transform duration-150',
-        isExpanded && 'rotate-90'
-      )}>
+      <span
+        className={cn(
+          'w-4 h-4 flex items-center justify-center text-gray-400 transition-transform duration-150',
+          isExpanded && 'rotate-90'
+        )}
+      >
         ▶
       </span>
     );
@@ -96,37 +101,30 @@ export function StructuralElementRenderer({
 
   return (
     <div className="w-full">
-      <div 
-        className={getElementStyles()}
-        onClick={handleToggle}
-      >
+      <div className={getElementStyles()} onClick={handleToggle}>
         <div className="flex items-center gap-2">
           {renderExpandIcon()}
-          <span className="font-mono text-blue-600 min-w-fit">
-            {element.label}
-          </span>
-          <span className="flex-1 truncate">
-            {element.title}
-          </span>
+          <span className="font-mono text-blue-600 min-w-fit">{(element as any).label}</span>
+          <span className="flex-1 truncate">{(element as any).title}</span>
         </div>
       </div>
-      
+
       {/* Navigable children (nested structure) */}
       {isExpanded && hasNavigableChildren && (
         <div className="ml-0">
-          {navigableChildren.map((child) => (
+          {navigableChildren.map(child => (
             <StructuralElementRenderer
-              key={child.id}
+              key={(child as any).id}
               element={child}
               level={level + 1}
               onSelect={onSelect}
-              isSelected={selectedElementId === child.id}
+              isSelected={selectedElementId === (child as any).id}
               selectedElementId={selectedElementId}
             />
           ))}
         </div>
       )}
-      
+
       {/* No content rendering in sidebar - content shown in main area */}
     </div>
   );
