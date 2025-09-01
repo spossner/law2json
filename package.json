@@ -8,7 +8,6 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "transform": "tsx scripts/convert-gii.ts",
     "transform-all": "tsx scripts/transform-all.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

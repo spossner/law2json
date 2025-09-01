@@ -2,7 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { convert } from './convert-gii.js';
+import { convert } from '../src/lib/converter.ts';
 
 const DATA_DIR = path.resolve('data');
 const OUTPUT_DIR = path.resolve('public', 'law');
