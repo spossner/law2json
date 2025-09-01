@@ -2351,7 +2351,57 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Zulassungen von a)Rahmenbetriebsplänen,b)Hauptbetriebsplänen,c)Sonderbetriebsplänen undd)Abschlussbetriebsplänensowie Grundabtretungsbeschlüsse, jeweils im Zusammenhang mit der aufgrund des Kohleverstromungsbeendigungsgesetzes vorgesehenen Einstellung von Braunkohletagebauen, und"
+                              "md": "Zulassungen von"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Rahmenbetriebsplänen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Hauptbetriebsplänen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Sonderbetriebsplänen und"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Abschlussbetriebsplänen"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "sowie Grundabtretungsbeschlüsse, jeweils im Zusammenhang mit der aufgrund des Kohleverstromungsbeendigungsgesetzes vorgesehenen Einstellung von Braunkohletagebauen, und"
                             }
                           ],
                           "label": "14.",

@@ -3424,7 +3424,47 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "die Zusammenarbeit des Bundes und der Ländera)in der Kriminalpolizei,b)zum Schutze der freiheitlichen demokratischen Grundordnung, des Bestandes und der Sicherheit des Bundes oder eines Landes (Verfassungsschutz) undc)zum Schutze gegen Bestrebungen im Bundesgebiet, die durch Anwendung von Gewalt oder darauf gerichtete Vorbereitungshandlungen auswärtige Belange der Bundesrepublik Deutschland gefährden,sowie die Einrichtung eines Bundeskriminalpolizeiamtes und die internationale Verbrechensbekämpfung;"
+                          "md": "die Zusammenarbeit des Bundes und der Länder"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "in der Kriminalpolizei,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zum Schutze der freiheitlichen demokratischen Grundordnung, des Bestandes und der Sicherheit des Bundes oder eines Landes (Verfassungsschutz) und"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zum Schutze gegen Bestrebungen im Bundesgebiet, die durch Anwendung von Gewalt oder darauf gerichtete Vorbereitungshandlungen auswärtige Belange der Bundesrepublik Deutschland gefährden,"
+                                }
+                              ],
+                              "label": "c)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "md",
+                          "md": "sowie die Einrichtung eines Bundeskriminalpolizeiamtes und die internationale Verbrechensbekämpfung;"
                         }
                       ],
                       "label": "10.",

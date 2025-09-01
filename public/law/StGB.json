@@ -4653,7 +4653,53 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Gefährdung des demokratischen Rechtsstaatesa)in den Fällen des § 86 Absatz 1 und 2, wenn Propagandamittel im Inland wahrnehmbar verbreitet oder der inländischen Öffentlichkeit zugänglich gemacht werden und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,b)in den Fällen des § 86a Absatz 1 Nummer 1, wenn ein Kennzeichen im Inland wahrnehmbar verbreitet oder in einer der inländischen Öffentlichkeit zugänglichen Weise oder in einem im Inland wahrnehmbar verbreiteten Inhalt (§ 11 Absatz 3) verwendet wird und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,c)in den Fällen der §§ 89, 90a Abs. 1 und des § 90b, wenn der Täter Deutscher ist und seine Lebensgrundlage im räumlichen Geltungsbereich dieses Gesetzes hat, undd)in den Fällen der §§ 90 und 90a Abs. 2;"
+                                  "md": "Gefährdung des demokratischen Rechtsstaates"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 86 Absatz 1 und 2, wenn Propagandamittel im Inland wahrnehmbar verbreitet oder der inländischen Öffentlichkeit zugänglich gemacht werden und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 86a Absatz 1 Nummer 1, wenn ein Kennzeichen im Inland wahrnehmbar verbreitet oder in einer der inländischen Öffentlichkeit zugänglichen Weise oder in einem im Inland wahrnehmbar verbreiteten Inhalt (§ 11 Absatz 3) verwendet wird und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen der §§ 89, 90a Abs. 1 und des § 90b, wenn der Täter Deutscher ist und seine Lebensgrundlage im räumlichen Geltungsbereich dieses Gesetzes hat, und"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen der §§ 90 und 90a Abs. 2;"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -4675,7 +4721,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Straftaten gegen die Landesverteidigunga)in den Fällen der §§ 109 und 109e bis 109g undb)in den Fällen der §§ 109a, 109d und 109h, wenn der Täter Deutscher ist und seine Lebensgrundlage im räumlichen Geltungsbereich dieses Gesetzes hat;"
+                                  "md": "Straftaten gegen die Landesverteidigung"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen der §§ 109 und 109e bis 109g und"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen der §§ 109a, 109d und 109h, wenn der Täter Deutscher ist und seine Lebensgrundlage im räumlichen Geltungsbereich dieses Gesetzes hat;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "5.",
@@ -4686,7 +4758,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Widerstand gegen die Staatsgewalt und Straftaten gegen die öffentliche Ordnung a)in den Fällen des § 111, wenn die Aufforderung im Inland wahrnehmbar ist und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,b)in den Fällen des § 127, wenn der Zweck der Handelsplattform darauf ausgerichtet ist, die Begehung von rechtswidrigen Taten im Inland zu ermöglichen oder zu fördern und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat, undc)in den Fällen des § 130 Absatz 2 Nummer 1, auch in Verbindung mit Absatz 6, wenn ein in Absatz 2 Nummer 1 oder Absatz 3 bezeichneter Inhalt (§ 11 Absatz 3) in einer Weise, die geeignet ist, den öffentlichen Frieden zu stören, im Inland wahrnehmbar verbreitet oder der inländischen Öffentlichkeit zugänglich gemacht wird und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat;"
+                                  "md": "Widerstand gegen die Staatsgewalt und Straftaten gegen die öffentliche Ordnung"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 111, wenn die Aufforderung im Inland wahrnehmbar ist und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 127, wenn der Zweck der Handelsplattform darauf ausgerichtet ist, die Begehung von rechtswidrigen Taten im Inland zu ermöglichen oder zu fördern und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat, und"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 130 Absatz 2 Nummer 1, auch in Verbindung mit Absatz 6, wenn ein in Absatz 2 Nummer 1 oder Absatz 3 bezeichneter Inhalt (§ 11 Absatz 3) in einer Weise, die geeignet ist, den öffentlichen Frieden zu stören, im Inland wahrnehmbar verbreitet oder der inländischen Öffentlichkeit zugänglich gemacht wird und der Täter Deutscher ist oder seine Lebensgrundlage im Inland hat;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "5a.",
@@ -4697,7 +4805,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Straftaten gegen die persönliche Freiheit a)in den Fällen der §§ 234a und 241a, wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat Deutsche ist und ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat,b)in den Fällen des § 235 Absatz 2 Nummer 2, wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat, undc)in den Fällen des § 237, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat oder wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat;"
+                                  "md": "Straftaten gegen die persönliche Freiheit"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen der §§ 234a und 241a, wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat Deutsche ist und ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 235 Absatz 2 Nummer 2, wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat, und"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 237, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat oder wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "6.",
@@ -4730,7 +4874,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Straftaten gegen das Leben a)in den Fällen des § 218 Absatz 2 Satz 2 Nummer 1 und Absatz 4 Satz 1, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat, undb)in den übrigen Fällen des § 218, wenn der Täter zur Zeit der Tat Deutscher ist und seine Lebensgrundlage im Inland hat;"
+                                  "md": "Straftaten gegen das Leben"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 218 Absatz 2 Satz 2 Nummer 1 und Absatz 4 Satz 1, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat, und"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den übrigen Fällen des § 218, wenn der Täter zur Zeit der Tat Deutscher ist und seine Lebensgrundlage im Inland hat;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "9.",
@@ -4741,7 +4911,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Straftaten gegen die körperliche Unversehrtheit a)in den Fällen des § 226 Absatz 1 Nummer 1 in Verbindung mit Absatz 2 bei Verlust der Fortpflanzungsfähigkeit, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat, undb)in den Fällen des § 226a, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat oder wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat;"
+                                  "md": "Straftaten gegen die körperliche Unversehrtheit"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 226 Absatz 1 Nummer 1 in Verbindung mit Absatz 2 bei Verlust der Fortpflanzungsfähigkeit, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat, und"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in den Fällen des § 226a, wenn der Täter zur Zeit der Tat Deutscher ist oder seine Lebensgrundlage im Inland hat oder wenn die Tat sich gegen eine Person richtet, die zur Zeit der Tat ihren Wohnsitz oder gewöhnlichen Aufenthalt im Inland hat;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "9a.",
@@ -4829,7 +5025,53 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Straftaten im Amt nach den §§ 331 bis 337, wenn a)der Täter zur Zeit der Tat Deutscher ist,b)der Täter zur Zeit der Tat Europäischer Amtsträger ist und seine Dienststelle ihren Sitz im Inland hat,c)die Tat gegenüber einem Amtsträger, einem für den öffentlichen Dienst besonders Verpflichteten oder einem Soldaten der Bundeswehr begangen wird oderd)die Tat gegenüber einem Europäischen Amtsträger oder Schiedsrichter, der zur Zeit der Tat Deutscher ist, oder einer nach § 335a gleichgestellten Person begangen wird, die zur Zeit der Tat Deutsche ist;"
+                                  "md": "Straftaten im Amt nach den §§ 331 bis 337, wenn"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Täter zur Zeit der Tat Deutscher ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Täter zur Zeit der Tat Europäischer Amtsträger ist und seine Dienststelle ihren Sitz im Inland hat,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Tat gegenüber einem Amtsträger, einem für den öffentlichen Dienst besonders Verpflichteten oder einem Soldaten der Bundeswehr begangen wird oder"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Tat gegenüber einem Europäischen Amtsträger oder Schiedsrichter, der zur Zeit der Tat Deutscher ist, oder einer nach § 335a gleichgestellten Person begangen wird, die zur Zeit der Tat Deutsche ist;"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "15.",
@@ -4840,7 +5082,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Bestechlichkeit und Bestechung von Mandatsträgern (§ 108e) und unzulässige Interessenwahrnehmung (§ 108f), wenn a)der Täter zur Zeit der Tat Mitglied einer deutschen Volksvertretung oder Deutscher ist oderb)die Tat gegenüber einem Mitglied einer deutschen Volksvertretung oder einer Person, die zur Zeit der Tat Deutsche ist, begangen wird;"
+                                  "md": "Bestechlichkeit und Bestechung von Mandatsträgern (§ 108e) und unzulässige Interessenwahrnehmung (§ 108f), wenn"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Täter zur Zeit der Tat Mitglied einer deutschen Volksvertretung oder Deutscher ist oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Tat gegenüber einem Mitglied einer deutschen Volksvertretung oder einer Person, die zur Zeit der Tat Deutsche ist, begangen wird;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "16.",
@@ -5145,7 +5413,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Angehöriger:wer zu den folgenden Personen gehört:a)Verwandte und Verschwägerte gerader Linie, der Ehegatte, der Lebenspartner, der Verlobte, Geschwister, Ehegatten oder Lebenspartner der Geschwister, Geschwister der Ehegatten oder Lebenspartner, und zwar auch dann, wenn die Ehe oder die Lebenspartnerschaft, welche die Beziehung begründet hat, nicht mehr besteht oder wenn die Verwandtschaft oder Schwägerschaft erloschen ist,b)Pflegeeltern und Pflegekinder;"
+                                  "md": "Angehöriger:wer zu den folgenden Personen gehört:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Verwandte und Verschwägerte gerader Linie, der Ehegatte, der Lebenspartner, der Verlobte, Geschwister, Ehegatten oder Lebenspartner der Geschwister, Geschwister der Ehegatten oder Lebenspartner, und zwar auch dann, wenn die Ehe oder die Lebenspartnerschaft, welche die Beziehung begründet hat, nicht mehr besteht oder wenn die Verwandtschaft oder Schwägerschaft erloschen ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Pflegeeltern und Pflegekinder;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -5156,7 +5450,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Amtsträger:wer nach deutschem Rechta)Beamter oder Richter ist,b)in einem sonstigen öffentlich-rechtlichen Amtsverhältnis steht oderc)sonst dazu bestellt ist, bei einer Behörde oder bei einer sonstigen Stelle oder in deren Auftrag Aufgaben der öffentlichen Verwaltung unbeschadet der zur Aufgabenerfüllung gewählten Organisationsform wahrzunehmen;"
+                                  "md": "Amtsträger:wer nach deutschem Recht"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Beamter oder Richter ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in einem sonstigen öffentlich-rechtlichen Amtsverhältnis steht oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "sonst dazu bestellt ist, bei einer Behörde oder bei einer sonstigen Stelle oder in deren Auftrag Aufgaben der öffentlichen Verwaltung unbeschadet der zur Aufgabenerfüllung gewählten Organisationsform wahrzunehmen;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -5167,7 +5497,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Europäischer Amtsträger:wer a)Mitglied der Europäischen Kommission, der Europäischen Zentralbank, des Rechnungshofs oder eines Gerichts der Europäischen Union ist,b)Beamter oder sonstiger Bediensteter der Europäischen Union oder einer auf der Grundlage des Rechts der Europäischen Union geschaffenen Einrichtung ist oderc)mit der Wahrnehmung von Aufgaben der Europäischen Union oder von Aufgaben einer auf der Grundlage des Rechts der Europäischen Union geschaffenen Einrichtung beauftragt ist;"
+                                  "md": "Europäischer Amtsträger:wer"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Mitglied der Europäischen Kommission, der Europäischen Zentralbank, des Rechnungshofs oder eines Gerichts der Europäischen Union ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Beamter oder sonstiger Bediensteter der Europäischen Union oder einer auf der Grundlage des Rechts der Europäischen Union geschaffenen Einrichtung ist oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "mit der Wahrnehmung von Aufgaben der Europäischen Union oder von Aufgaben einer auf der Grundlage des Rechts der Europäischen Union geschaffenen Einrichtung beauftragt ist;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2a.",
@@ -5189,7 +5555,37 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "für den öffentlichen Dienst besonders Verpflichteter:wer, ohne Amtsträger zu sein,a)bei einer Behörde oder bei einer sonstigen Stelle, die Aufgaben der öffentlichen Verwaltung wahrnimmt, oderb)bei einem Verband oder sonstigen Zusammenschluß, Betrieb oder Unternehmen, die für eine Behörde oder für eine sonstige Stelle Aufgaben der öffentlichen Verwaltung ausführen,beschäftigt oder für sie tätig und auf die gewissenhafte Erfüllung seiner Obliegenheiten auf Grund eines Gesetzes förmlich verpflichtet ist;"
+                                  "md": "für den öffentlichen Dienst besonders Verpflichteter:wer, ohne Amtsträger zu sein,"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "bei einer Behörde oder bei einer sonstigen Stelle, die Aufgaben der öffentlichen Verwaltung wahrnimmt, oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "bei einem Verband oder sonstigen Zusammenschluß, Betrieb oder Unternehmen, die für eine Behörde oder für eine sonstige Stelle Aufgaben der öffentlichen Verwaltung ausführen,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "beschäftigt oder für sie tätig und auf die gewissenhafte Erfüllung seiner Obliegenheiten auf Grund eines Gesetzes förmlich verpflichtet ist;"
                                 }
                               ],
                               "label": "4.",
@@ -8492,7 +8888,43 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "jemand zu Freiheitsstrafe von mindestens zwei Jahren wegen einer vorsätzlichen Straftat verurteilt wird, die a)sich gegen das Leben, die körperliche Unversehrtheit, die persönliche Freiheit oder die sexuelle Selbstbestimmung richtet,b)unter den Ersten, Siebenten, Zwanzigsten oder Achtundzwanzigsten Abschnitt des Besonderen Teils oder unter das Völkerstrafgesetzbuch oder das Betäubungsmittelgesetz fällt und im Höchstmaß mit Freiheitsstrafe von mindestens zehn Jahren bedroht ist oderc)den Tatbestand des § 145a erfüllt, soweit die Führungsaufsicht auf Grund einer Straftat der in den Buchstaben a oder b genannten Art eingetreten ist, oder den Tatbestand des § 323a, soweit die im Rausch begangene rechtswidrige Tat eine solche der in den Buchstaben a oder b genannten Art ist,"
+                                      "md": "jemand zu Freiheitsstrafe von mindestens zwei Jahren wegen einer vorsätzlichen Straftat verurteilt wird, die"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "sich gegen das Leben, die körperliche Unversehrtheit, die persönliche Freiheit oder die sexuelle Selbstbestimmung richtet,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "unter den Ersten, Siebenten, Zwanzigsten oder Achtundzwanzigsten Abschnitt des Besonderen Teils oder unter das Völkerstrafgesetzbuch oder das Betäubungsmittelgesetz fällt und im Höchstmaß mit Freiheitsstrafe von mindestens zehn Jahren bedroht ist oder"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "den Tatbestand des § 145a erfüllt, soweit die Führungsaufsicht auf Grund einer Straftat der in den Buchstaben a oder b genannten Art eingetreten ist, oder den Tatbestand des § 323a, soweit die im Rausch begangene rechtswidrige Tat eine solche der in den Buchstaben a oder b genannten Art ist,"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -8796,7 +9228,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "dem Untergebrachten auf der Grundlage einer umfassenden Behandlungsuntersuchung und eines regelmäßig fortzuschreibenden Vollzugsplans eine Betreuung anbieten, a)die individuell und intensiv sowie geeignet ist, seine Mitwirkungsbereitschaft zu wecken und zu fördern, insbesondere eine psychiatrische, psycho- oder sozialtherapeutische Behandlung, die auf den Untergebrachten zugeschnitten ist, soweit standardisierte Angebote nicht Erfolg versprechend sind, undb)die zum Ziel hat, seine Gefährlichkeit für die Allgemeinheit so zu mindern, dass die Vollstreckung der Maßregel möglichst bald zur Bewährung ausgesetzt oder sie für erledigt erklärt werden kann,"
+                                      "md": "dem Untergebrachten auf der Grundlage einer umfassenden Behandlungsuntersuchung und eines regelmäßig fortzuschreibenden Vollzugsplans eine Betreuung anbieten,"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die individuell und intensiv sowie geeignet ist, seine Mitwirkungsbereitschaft zu wecken und zu fördern, insbesondere eine psychiatrische, psycho- oder sozialtherapeutische Behandlung, die auf den Untergebrachten zugeschnitten ist, soweit standardisierte Angebote nicht Erfolg versprechend sind, und"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die zum Ziel hat, seine Gefährlichkeit für die Allgemeinheit so zu mindern, dass die Vollstreckung der Maßregel möglichst bald zur Bewährung ausgesetzt oder sie für erledigt erklärt werden kann,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -8807,7 +9265,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "eine Unterbringung gewährleisten, a)die den Untergebrachten so wenig wie möglich belastet, den Erfordernissen der Betreuung im Sinne von Nummer 1 entspricht und, soweit Sicherheitsbelange nicht entgegenstehen, den allgemeinen Lebensverhältnissen angepasst ist, undb)die vom Strafvollzug getrennt in besonderen Gebäuden oder Abteilungen erfolgt, sofern nicht die Behandlung im Sinne von Nummer 1 ausnahmsweise etwas anderes erfordert, und"
+                                      "md": "eine Unterbringung gewährleisten,"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die den Untergebrachten so wenig wie möglich belastet, den Erfordernissen der Betreuung im Sinne von Nummer 1 entspricht und, soweit Sicherheitsbelange nicht entgegenstehen, den allgemeinen Lebensverhältnissen angepasst ist, und"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die vom Strafvollzug getrennt in besonderen Gebäuden oder Abteilungen erfolgt, sofern nicht die Behandlung im Sinne von Nummer 1 ausnahmsweise etwas anderes erfordert, und"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -8818,7 +9302,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "zur Erreichung des in Nummer 1 Buchstabe b genannten Ziels a)vollzugsöffnende Maßnahmen gewähren und Entlassungsvorbereitungen treffen, soweit nicht zwingende Gründe entgegenstehen, insbesondere konkrete Anhaltspunkte die Gefahr begründen, der Untergebrachte werde sich dem Vollzug der Sicherungsverwahrung entziehen oder die Maßnahmen zur Begehung erheblicher Straftaten missbrauchen, sowieb)in enger Zusammenarbeit mit staatlichen oder freien Trägern eine nachsorgende Betreuung in Freiheit ermöglichen."
+                                      "md": "zur Erreichung des in Nummer 1 Buchstabe b genannten Ziels"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "vollzugsöffnende Maßnahmen gewähren und Entlassungsvorbereitungen treffen, soweit nicht zwingende Gründe entgegenstehen, insbesondere konkrete Anhaltspunkte die Gefahr begründen, der Untergebrachte werde sich dem Vollzug der Sicherungsverwahrung entziehen oder die Maßnahmen zur Begehung erheblicher Straftaten missbrauchen, sowie"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "in enger Zusammenarbeit mit staatlichen oder freien Trägern eine nachsorgende Betreuung in Freiheit ermöglichen."
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "3.",
@@ -9913,7 +10423,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "sich aus dem Verstoß gegen Weisungen nach § 68b Absatz 1 oder 2 oder auf Grund anderer bestimmter Tatsachen konkrete Anhaltspunkte dafür ergeben, dass eine Gefährdung der Allgemeinheit durch die Begehung weiterer erheblicher Straftaten zu befürchten ist, und a)gegen die verurteilte Person wegen Straftaten der in § 181b genannten Art eine Freiheitsstrafe oder Gesamtfreiheitsstrafe von mehr als zwei Jahren verhängt oder die Unterbringung in einem psychiatrischen Krankenhaus oder in einer Entziehungsanstalt angeordnet wurde oderb)die Führungsaufsicht unter den Voraussetzungen des § 68b Absatz 1 Satz 3 Nummer 1 eingetreten ist und die Freiheitsstrafe oder Gesamtfreiheitsstrafe oder die Unterbringung wegen eines oder mehrerer Verbrechen gegen das Leben, die körperliche Unversehrtheit, die persönliche Freiheit oder nach den §§ 250, 251, auch in Verbindung mit § 252 oder § 255, verhängt oder angeordnet wurde."
+                                      "md": "sich aus dem Verstoß gegen Weisungen nach § 68b Absatz 1 oder 2 oder auf Grund anderer bestimmter Tatsachen konkrete Anhaltspunkte dafür ergeben, dass eine Gefährdung der Allgemeinheit durch die Begehung weiterer erheblicher Straftaten zu befürchten ist, und"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "gegen die verurteilte Person wegen Straftaten der in § 181b genannten Art eine Freiheitsstrafe oder Gesamtfreiheitsstrafe von mehr als zwei Jahren verhängt oder die Unterbringung in einem psychiatrischen Krankenhaus oder in einer Entziehungsanstalt angeordnet wurde oder"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Führungsaufsicht unter den Voraussetzungen des § 68b Absatz 1 Satz 3 Nummer 1 eingetreten ist und die Freiheitsstrafe oder Gesamtfreiheitsstrafe oder die Unterbringung wegen eines oder mehrerer Verbrechen gegen das Leben, die körperliche Unversehrtheit, die persönliche Freiheit oder nach den §§ 250, 251, auch in Verbindung mit § 252 oder § 255, verhängt oder angeordnet wurde."
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -10828,7 +11364,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "ihm das Erlangte a)unentgeltlich oder ohne rechtlichen Grund übertragen wurde oderb)übertragen wurde und er erkannt hat oder hätte erkennen müssen, dass das Erlangte aus einer rechtswidrigen Tat herrührt, oder"
+                                  "md": "ihm das Erlangte"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "unentgeltlich oder ohne rechtlichen Grund übertragen wurde oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "übertragen wurde und er erkannt hat oder hätte erkennen müssen, dass das Erlangte aus einer rechtswidrigen Tat herrührt, oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -10839,7 +11401,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "das Erlangte auf ihn a)als Erbe übergegangen ist oderb)als Pflichtteilsberechtigter oder Vermächtnisnehmer übertragen worden ist."
+                                  "md": "das Erlangte auf ihn"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "als Erbe übergegangen ist oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "als Pflichtteilsberechtigter oder Vermächtnisnehmer übertragen worden ist."
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -11166,7 +11754,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "der nach Absatz 2 Entschädigungsberechtigte a)mindestens leichtfertig dazu beigetragen hat, dass der Gegenstand als Tatmittel verwendet worden oder Tatobjekt gewesen ist, oderb)den Gegenstand oder das Recht an dem Gegenstand in Kenntnis der Umstände, welche die Einziehung zulassen, in verwerflicher Weise erworben hat oder"
+                                  "md": "der nach Absatz 2 Entschädigungsberechtigte"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "mindestens leichtfertig dazu beigetragen hat, dass der Gegenstand als Tatmittel verwendet worden oder Tatobjekt gewesen ist, oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Gegenstand oder das Recht an dem Gegenstand in Kenntnis der Umstände, welche die Einziehung zulassen, in verwerflicher Weise erworben hat oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -11673,7 +12287,73 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus diesem Gesetz: a)Vorbereitung einer schweren staatsgefährdenden Gewalttat nach § 89a und Terrorismusfinanzierung nach § 89c Absatz 1 bis 4,b)Bildung krimineller Vereinigungen nach § 129 Absatz 1 und Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5, jeweils auch in Verbindung mit § 129b Absatz 1,c)Zuhälterei nach § 181a Absatz 1, auch in Verbindung mit Absatz 3,d)Verbreitung, Erwerb und Besitz kinderpornografischer Inhalte in den Fällen des § 184b Absatz 2,e)gewerbs- und bandenmäßige Begehung des Menschenhandels, der Zwangsprostitution und der Zwangsarbeit nach den §§ 232 bis 232b sowie bandenmäßige Ausbeutung der Arbeitskraft und Ausbeutung unter Ausnutzung einer Freiheitsberaubung nach den §§ 233 und 233a,f)Geldwäsche nach § 261 Absatz 1 und 2,"
+                                  "md": "aus diesem Gesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Vorbereitung einer schweren staatsgefährdenden Gewalttat nach § 89a und Terrorismusfinanzierung nach § 89c Absatz 1 bis 4,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Bildung krimineller Vereinigungen nach § 129 Absatz 1 und Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5, jeweils auch in Verbindung mit § 129b Absatz 1,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Zuhälterei nach § 181a Absatz 1, auch in Verbindung mit Absatz 3,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Verbreitung, Erwerb und Besitz kinderpornografischer Inhalte in den Fällen des § 184b Absatz 2,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "gewerbs- und bandenmäßige Begehung des Menschenhandels, der Zwangsprostitution und der Zwangsarbeit nach den §§ 232 bis 232b sowie bandenmäßige Ausbeutung der Arbeitskraft und Ausbeutung unter Ausnutzung einer Freiheitsberaubung nach den §§ 233 und 233a,"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Geldwäsche nach § 261 Absatz 1 und 2,"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -11684,7 +12364,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus der Abgabenordnung: a)Steuerhinterziehung unter den in § 370 Absatz 3 Nummer 5 genannten Voraussetzungen,b)gewerbsmäßiger, gewaltsamer und bandenmäßiger Schmuggel nach § 373,c)Steuerhehlerei im Fall des § 374 Absatz 2,"
+                                  "md": "aus der Abgabenordnung:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Steuerhinterziehung unter den in § 370 Absatz 3 Nummer 5 genannten Voraussetzungen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "gewerbsmäßiger, gewaltsamer und bandenmäßiger Schmuggel nach § 373,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Steuerhehlerei im Fall des § 374 Absatz 2,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -11695,7 +12411,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Asylgesetz: a)Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Absatz 3,b)gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a,"
+                                  "md": "aus dem Asylgesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Absatz 3,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -11706,7 +12448,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Aufenthaltsgesetz: a)Einschleusen von Ausländern nach § 96 Absatz 2,b)Einschleusen mit Todesfolge sowie gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                                  "md": "aus dem Aufenthaltsgesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Einschleusen von Ausländern nach § 96 Absatz 2,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Einschleusen mit Todesfolge sowie gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "4.",
@@ -11728,7 +12496,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Betäubungsmittelgesetz: a)Straftaten nach einer in § 29 Absatz 3 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach den §§ 29a, 30 Absatz 1 Nummer 1, 2 und 4 sowie den §§ 30a und 30b,"
+                                  "md": "aus dem Betäubungsmittelgesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach einer in § 29 Absatz 3 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach den §§ 29a, 30 Absatz 1 Nummer 1, 2 und 4 sowie den §§ 30a und 30b,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "6.",
@@ -11739,7 +12533,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Konsumcannabisgesetz: a)Straftaten nach einer in § 34 Absatz 3 Satz 2 Nummer 1 oder Nummer 4 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach § 34 Absatz 4,"
+                                  "md": "aus dem Konsumcannabisgesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach einer in § 34 Absatz 3 Satz 2 Nummer 1 oder Nummer 4 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 34 Absatz 4,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "6a.",
@@ -11750,7 +12570,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Medizinal-Cannabisgesetz: a)Straftaten nach einer in § 25 Absatz 4 Satz 2 Nummer 1 oder Nummer 4 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach § 25 Absatz 5,"
+                                  "md": "aus dem Medizinal-Cannabisgesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach einer in § 25 Absatz 4 Satz 2 Nummer 1 oder Nummer 4 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 25 Absatz 5,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "6b.",
@@ -11761,7 +12607,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen: a)Straftaten nach § 19 Absatz 1 bis 3 und § 20 Absatz 1 und 2 sowie § 20a Absatz 1 bis 3, jeweils auch in Verbindung mit § 21,b)Straftaten nach § 22a Absatz 1 bis 3,"
+                                  "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 19 Absatz 1 bis 3 und § 20 Absatz 1 und 2 sowie § 20a Absatz 1 bis 3, jeweils auch in Verbindung mit § 21,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 22a Absatz 1 bis 3,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "7.",
@@ -11772,7 +12644,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "aus dem Waffengesetz: a)Straftaten nach § 51 Absatz 1 bis 3,b)Straftaten nach § 52 Absatz 1 Nummer 1 und 2 Buchstabe c und d sowie Absatz 5 und 6."
+                                  "md": "aus dem Waffengesetz:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 51 Absatz 1 bis 3,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Straftaten nach § 52 Absatz 1 Nummer 1 und 2 Buchstabe c und d sowie Absatz 5 und 6."
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "8.",
@@ -12814,7 +13712,47 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "solange dem Verurteiltena)Aufschub oder Unterbrechung der Vollstreckung,b)Aussetzung zur Bewährung durch richterliche Entscheidung oder im Gnadenweg oderc)Zahlungserleichterung bei Geldstrafe oder Einziehungbewilligt ist,"
+                                  "md": "solange dem Verurteilten"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Aufschub oder Unterbrechung der Vollstreckung,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Aussetzung zur Bewährung durch richterliche Entscheidung oder im Gnadenweg oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Zahlungserleichterung bei Geldstrafe oder Einziehung"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "bewilligt ist,"
                                 }
                               ],
                               "label": "2.",
@@ -15580,7 +16518,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "ein Mitglieda)eines Gesetzgebungsorgans des Bundes oder eines Landes, b)der Bundesversammlung oder c)der Regierung oder des Verfassungsgerichts des Bundes oder eines Landes"
+                              "md": "ein Mitglied"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eines Gesetzgebungsorgans des Bundes oder eines Landes,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Bundesversammlung oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Regierung oder des Verfassungsgerichts des Bundes oder eines Landes"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -17524,7 +18498,133 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Vergehen nach a)den §§ 86, 86a, 91, 130, 147 und 148 Absatz 1 Nummer 3, den §§ 149, 152a und 176a Absatz 2, § 176b Absatz 2, § 180 Absatz 2, § 184b Absatz 1, § 184c Absatz 1, § 184l Absatz 1 und 3, den §§ 202a, 202b, 202c, 202d, 232 und 232a Absatz 1, 2, 5 und 6, nach § 232b Absatz 1, 2 und 4 in Verbindung mit § 232a Absatz 5, nach den §§ 233, 233a, 236, 259 und 260, nach § 261 Absatz 1 und 2 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen sowie nach den §§ 263, 263a, 267, 269, 275, 276, 303a und 303b,b)§ 4 Absatz 1 bis 3 des Anti-Doping-Gesetzes,c)§ 29 Absatz 1 Satz 1 Nummer 1, auch in Verbindung mit Absatz 6, sowie Absatz 2 und 3 des Betäubungsmittelgesetzes,d)§ 19 Absatz 1 bis 3 des Grundstoffüberwachungsgesetzes,e)§ 4 Absatz 1 und 2 des Neue-psychoaktive-Stoffe-Gesetzes,f)§ 95 Absatz 1 bis 3 des Arzneimittelgesetzes,g)§ 52 Absatz 1 Nummer 1 und 2 Buchstabe b und c, Absatz 2 und 3 Nummer 1 und 7 sowie Absatz 5 und 6 des Waffengesetzes,h)§ 40 Absatz 1 bis 3 des Sprengstoffgesetzes,i)§ 13 des Ausgangsstoffgesetzes,j)§ 83 Absatz 1 Nummer 4 und 5 sowie Absatz 4 des Kulturgutschutzgesetzes,k)den §§ 143, 143a und 144 des Markengesetzes sowiel)den §§ 51 und 65 des Designgesetzes."
+                              "md": "Vergehen nach"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den §§ 86, 86a, 91, 130, 147 und 148 Absatz 1 Nummer 3, den §§ 149, 152a und 176a Absatz 2, § 176b Absatz 2, § 180 Absatz 2, § 184b Absatz 1, § 184c Absatz 1, § 184l Absatz 1 und 3, den §§ 202a, 202b, 202c, 202d, 232 und 232a Absatz 1, 2, 5 und 6, nach § 232b Absatz 1, 2 und 4 in Verbindung mit § 232a Absatz 5, nach den §§ 233, 233a, 236, 259 und 260, nach § 261 Absatz 1 und 2 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen sowie nach den §§ 263, 263a, 267, 269, 275, 276, 303a und 303b,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 4 Absatz 1 bis 3 des Anti-Doping-Gesetzes,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 29 Absatz 1 Satz 1 Nummer 1, auch in Verbindung mit Absatz 6, sowie Absatz 2 und 3 des Betäubungsmittelgesetzes,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 19 Absatz 1 bis 3 des Grundstoffüberwachungsgesetzes,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 4 Absatz 1 und 2 des Neue-psychoaktive-Stoffe-Gesetzes,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 95 Absatz 1 bis 3 des Arzneimittelgesetzes,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 52 Absatz 1 Nummer 1 und 2 Buchstabe b und c, Absatz 2 und 3 Nummer 1 und 7 sowie Absatz 5 und 6 des Waffengesetzes,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 40 Absatz 1 bis 3 des Sprengstoffgesetzes,"
+                                    }
+                                  ],
+                                  "label": "h)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 13 des Ausgangsstoffgesetzes,"
+                                    }
+                                  ],
+                                  "label": "i)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 83 Absatz 1 Nummer 4 und 5 sowie Absatz 4 des Kulturgutschutzgesetzes,"
+                                    }
+                                  ],
+                                  "label": "j)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den §§ 143, 143a und 144 des Markengesetzes sowie"
+                                    }
+                                  ],
+                                  "label": "k)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den §§ 51 und 65 des Designgesetzes."
+                                    }
+                                  ],
+                                  "label": "l)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -18059,7 +19159,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einen Inhalt (§ 11 Absatz 3) verbreitet oder der Öffentlichkeit zugänglich macht oder einer Person unter achtzehn Jahren einen Inhalt (§ 11 Absatz 3) anbietet, überlässt oder zugänglich macht, der a)zum Hass gegen eine in Absatz 1 Nummer 1 bezeichnete Gruppe, gegen Teile der Bevölkerung oder gegen einen Einzelnen wegen dessen Zugehörigkeit zu einer in Absatz 1 Nummer 1 bezeichneten Gruppe oder zu einem Teil der Bevölkerung aufstachelt,b)zu Gewalt- oder Willkürmaßnahmen gegen in Buchstabe a genannte Personen oder Personenmehrheiten auffordert oderc)die Menschenwürde von in Buchstabe a genannten Personen oder Personenmehrheiten dadurch angreift, dass diese beschimpft, böswillig verächtlich gemacht oder verleumdet werden oder"
+                              "md": "einen Inhalt (§ 11 Absatz 3) verbreitet oder der Öffentlichkeit zugänglich macht oder einer Person unter achtzehn Jahren einen Inhalt (§ 11 Absatz 3) anbietet, überlässt oder zugänglich macht, der"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "zum Hass gegen eine in Absatz 1 Nummer 1 bezeichnete Gruppe, gegen Teile der Bevölkerung oder gegen einen Einzelnen wegen dessen Zugehörigkeit zu einer in Absatz 1 Nummer 1 bezeichneten Gruppe oder zu einem Teil der Bevölkerung aufstachelt,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "zu Gewalt- oder Willkürmaßnahmen gegen in Buchstabe a genannte Personen oder Personenmehrheiten auffordert oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Menschenwürde von in Buchstabe a genannten Personen oder Personenmehrheiten dadurch angreift, dass diese beschimpft, böswillig verächtlich gemacht oder verleumdet werden oder"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -18247,7 +19383,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einen Inhalt (§ 11 Absatz 3), der grausame oder sonst unmenschliche Gewalttätigkeiten gegen Menschen oder menschenähnliche Wesen in einer Art schildert, die eine Verherrlichung oder Verharmlosung solcher Gewalttätigkeiten ausdrückt oder die das Grausame oder Unmenschliche des Vorgangs in einer die Menschenwürde verletzenden Weise darstellt, a)verbreitet oder der Öffentlichkeit zugänglich macht,b)einer Person unter achtzehn Jahren anbietet, überlässt oder zugänglich macht oder"
+                              "md": "einen Inhalt (§ 11 Absatz 3), der grausame oder sonst unmenschliche Gewalttätigkeiten gegen Menschen oder menschenähnliche Wesen in einer Art schildert, die eine Verherrlichung oder Verharmlosung solcher Gewalttätigkeiten ausdrückt oder die das Grausame oder Unmenschliche des Vorgangs in einer die Menschenwürde verletzenden Weise darstellt,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "verbreitet oder der Öffentlichkeit zugänglich macht,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einer Person unter achtzehn Jahren anbietet, überlässt oder zugänglich macht oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -21392,7 +22554,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "der Täter mindestens achtzehn Jahre alt ist und a)mit dem Kind den Beischlaf vollzieht oder ähnliche sexuelle Handlungen an ihm vornimmt oder an sich von ihm vornehmen lässt, die mit einem Eindringen in den Körper verbunden sind, oderb)das Kind dazu bestimmt, den Beischlaf mit einem Dritten zu vollziehen oder ähnliche sexuelle Handlungen, die mit einem Eindringen in den Körper verbunden sind, an dem Dritten vorzunehmen oder von diesem an sich vornehmen zu lassen,"
+                              "md": "der Täter mindestens achtzehn Jahre alt ist und"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "mit dem Kind den Beischlaf vollzieht oder ähnliche sexuelle Handlungen an ihm vornimmt oder an sich von ihm vornehmen lässt, die mit einem Eindringen in den Körper verbunden sind, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das Kind dazu bestimmt, den Beischlaf mit einem Dritten zu vollziehen oder ähnliche sexuelle Handlungen, die mit einem Eindringen in den Körper verbunden sind, an dem Dritten vorzunehmen oder von diesem an sich vornehmen zu lassen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -21936,7 +23124,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "das Opfer a)bei der Tat körperlich schwer misshandelt oderb)durch die Tat in die Gefahr des Todes bringt."
+                              "md": "das Opfer"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei der Tat körperlich schwer misshandelt oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch die Tat in die Gefahr des Todes bringt."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -22711,7 +23925,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einen kinderpornographischen Inhalt verbreitet oder der Öffentlichkeit zugänglich macht; kinderpornographisch ist ein pornographischer Inhalt (§ 11 Absatz 3), wenn er zum Gegenstand hat: a)sexuelle Handlungen von, an oder vor einer Person unter vierzehn Jahren (Kind),b)die Wiedergabe eines ganz oder teilweise unbekleideten Kindes in aufreizend geschlechtsbetonter Körperhaltung oderc)die sexuell aufreizende Wiedergabe der unbekleideten Genitalien oder des unbekleideten Gesäßes eines Kindes,"
+                              "md": "einen kinderpornographischen Inhalt verbreitet oder der Öffentlichkeit zugänglich macht; kinderpornographisch ist ein pornographischer Inhalt (§ 11 Absatz 3), wenn er zum Gegenstand hat:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "sexuelle Handlungen von, an oder vor einer Person unter vierzehn Jahren (Kind),"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Wiedergabe eines ganz oder teilweise unbekleideten Kindes in aufreizend geschlechtsbetonter Körperhaltung oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die sexuell aufreizende Wiedergabe der unbekleideten Genitalien oder des unbekleideten Gesäßes eines Kindes,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -22918,7 +24168,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einen jugendpornographischen Inhalt verbreitet oder der Öffentlichkeit zugänglich macht; jugendpornographisch ist ein pornographischer Inhalt (§ 11 Absatz 3), wenn er zum Gegenstand hat: a)sexuelle Handlungen von, an oder vor einer vierzehn, aber noch nicht achtzehn Jahre alten Person,b)die Wiedergabe einer ganz oder teilweise unbekleideten vierzehn, aber noch nicht achtzehn Jahre alten Person in aufreizend geschlechtsbetonter Körperhaltung oderc)die sexuell aufreizende Wiedergabe der unbekleideten Genitalien oder des unbekleideten Gesäßes einer vierzehn, aber noch nicht achtzehn Jahre alten Person,"
+                              "md": "einen jugendpornographischen Inhalt verbreitet oder der Öffentlichkeit zugänglich macht; jugendpornographisch ist ein pornographischer Inhalt (§ 11 Absatz 3), wenn er zum Gegenstand hat:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "sexuelle Handlungen von, an oder vor einer vierzehn, aber noch nicht achtzehn Jahre alten Person,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Wiedergabe einer ganz oder teilweise unbekleideten vierzehn, aber noch nicht achtzehn Jahre alten Person in aufreizend geschlechtsbetonter Körperhaltung oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die sexuell aufreizende Wiedergabe der unbekleideten Genitalien oder des unbekleideten Gesäßes einer vierzehn, aber noch nicht achtzehn Jahre alten Person,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -26168,7 +27454,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "diese Person ausgebeutet werden soll a)bei der Ausübung der Prostitution oder bei der Vornahme sexueller Handlungen an oder vor dem Täter oder einer dritten Person oder bei der Duldung sexueller Handlungen an sich selbst durch den Täter oder eine dritte Person,b)durch eine Beschäftigung,c)bei der Ausübung der Bettelei oderd)bei der Begehung von mit Strafe bedrohten Handlungen durch diese Person,"
+                              "md": "diese Person ausgebeutet werden soll"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei der Ausübung der Prostitution oder bei der Vornahme sexueller Handlungen an oder vor dem Täter oder einer dritten Person oder bei der Duldung sexueller Handlungen an sich selbst durch den Täter oder eine dritte Person,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch eine Beschäftigung,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei der Ausübung der Bettelei oder"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei der Begehung von mit Strafe bedrohten Handlungen durch diese Person,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -27427,7 +28759,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "unter missbräuchlicher Verwendung von personenbezogenen Daten dieser Person a)Bestellungen von Waren oder Dienstleistungen für sie aufgibt oderb)Dritte veranlasst, Kontakt mit ihr aufzunehmen,"
+                              "md": "unter missbräuchlicher Verwendung von personenbezogenen Daten dieser Person"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bestellungen von Waren oder Dienstleistungen für sie aufgibt oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Dritte veranlasst, Kontakt mit ihr aufzunehmen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -28169,7 +29527,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einen Diebstahl begeht, bei dem er oder ein anderer Beteiligtera)eine Waffe oder ein anderes gefährliches Werkzeug bei sich führt,b)sonst ein Werkzeug oder Mittel bei sich führt, um den Widerstand einer anderen Person durch Gewalt oder Drohung mit Gewalt zu verhindern oder zu überwinden,"
+                              "md": "einen Diebstahl begeht, bei dem er oder ein anderer Beteiligter"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Waffe oder ein anderes gefährliches Werkzeug bei sich führt,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "sonst ein Werkzeug oder Mittel bei sich führt, um den Widerstand einer anderen Person durch Gewalt oder Drohung mit Gewalt zu verhindern oder zu überwinden,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -28562,7 +29946,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "der Täter oder ein anderer Beteiligter am Rauba)eine Waffe oder ein anderes gefährliches Werkzeug bei sich führt, b)sonst ein Werkzeug oder Mittel bei sich führt, um den Widerstand einer anderen Person durch Gewalt oder Drohung mit Gewalt zu verhindern oder zu überwinden, c)eine andere Person durch die Tat in die Gefahr einer schweren Gesundheitsschädigung bringt oder"
+                              "md": "der Täter oder ein anderer Beteiligter am Raub"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Waffe oder ein anderes gefährliches Werkzeug bei sich führt,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "sonst ein Werkzeug oder Mittel bei sich führt, um den Widerstand einer anderen Person durch Gewalt oder Drohung mit Gewalt zu verhindern oder zu überwinden,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine andere Person durch die Tat in die Gefahr einer schweren Gesundheitsschädigung bringt oder"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -28623,7 +30043,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "eine andere Persona)bei der Tat körperlich schwer mißhandelt oder b)durch die Tat in die Gefahr des Todes bringt."
+                              "md": "eine andere Person"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei der Tat körperlich schwer mißhandelt oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch die Tat in die Gefahr des Todes bringt."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -29331,7 +30777,93 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "nach einer der folgenden Vorschriften und Übereinkommen der Europäischen Union mit Strafe zu bedrohen ist: a)Artikel 2 oder Artikel 3 des Übereinkommens vom 26. Mai 1997 aufgrund von Artikel K.3 Absatz 2 Buchstabe c des Vertrags über die Europäische Union über die Bekämpfung der Bestechung, an der Beamte der Europäischen Gemeinschaften oder der Mitgliedstaaten der Europäischen Union beteiligt sind (BGBl. 2002 II S. 2727, 2729),b)Artikel 1 des Rahmenbeschlusses 2002/946/JI des Rates vom 28. November 2002 betreffend die Verstärkung des strafrechtlichen Rahmens für die Bekämpfung der Beihilfe zur unerlaubten Ein- und Durchreise und zum unerlaubten Aufenthalt (ABl. L 328 vom 5.12.2002, S. 1),c)Artikel 2 oder Artikel 3 des Rahmenbeschlusses 2003/568/JI des Rates vom 22. Juli 2003 zur Bekämpfung der Bestechung im privaten Sektor (ABl. L 192 vom 31.7.2003, S. 54),d)Artikel 2 oder Artikel 3 des Rahmenbeschlusses 2004/757/JI des Rates vom 25. Oktober 2004 zur Festlegung von Mindestvorschriften über die Tatbestandsmerkmale strafbarer Handlungen und die Strafen im Bereich des illegalen Drogenhandels (ABl. L 335 vom 11.11.2004, S. 8), der zuletzt durch die Delegierte Richtlinie (EU) 2019/369 (ABl. L 66 vom 7.3.2019, S. 3) geändert worden ist,e)Artikel 2 Buchstabe a des Rahmenbeschlusses 2008/841/JI des Rates vom 24. Oktober 2008 zur Bekämpfung der organisierten Kriminalität (ABl. L 300 vom 11.11.2008, S. 42),f)Artikel 2 oder Artikel 3 der Richtlinie 2011/36/EU des Europäischen Parlaments und des Rates vom 5. April 2011 zur Verhütung und Bekämpfung des Menschenhandels und zum Schutz seiner Opfer sowie zur Ersetzung des Rahmenbeschlusses 2002/629/JI des Rates (ABl. L 101 vom 15.4.2011, S. 1),g)den Artikeln 3 bis 8 der Richtlinie 2011/93/EU des Europäischen Parlaments und des Rates vom 13. Dezember 2011 zur Bekämpfung des sexuellen Missbrauchs und der sexuellen Ausbeutung von Kindern sowie der Kinderpornografie sowie zur Ersetzung des Rahmenbeschlusses 2004/68/JI des Rates (ABl. L 335 vom 17.12.2011, S. 1; L 18 vom 21.1.2012, S. 7) oderh)den Artikeln 4 bis 9 Absatz 1 und 2 Buchstabe b oder den Artikeln 10 bis 14 der Richtlinie (EU) 2017/541 des Europäischen Parlaments und des Rates vom 15. März 2017 zur Terrorismusbekämpfung und zur Ersetzung des Rahmenbeschlusses 2002/475/JI des Rates und zur Änderung des Beschlusses 2005/671/JI des Rates (ABl. L 88 vom 31.3.2017, S. 6)."
+                              "md": "nach einer der folgenden Vorschriften und Übereinkommen der Europäischen Union mit Strafe zu bedrohen ist:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 2 oder Artikel 3 des Übereinkommens vom 26. Mai 1997 aufgrund von Artikel K.3 Absatz 2 Buchstabe c des Vertrags über die Europäische Union über die Bekämpfung der Bestechung, an der Beamte der Europäischen Gemeinschaften oder der Mitgliedstaaten der Europäischen Union beteiligt sind (BGBl. 2002 II S. 2727, 2729),"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 1 des Rahmenbeschlusses 2002/946/JI des Rates vom 28. November 2002 betreffend die Verstärkung des strafrechtlichen Rahmens für die Bekämpfung der Beihilfe zur unerlaubten Ein- und Durchreise und zum unerlaubten Aufenthalt (ABl. L 328 vom 5.12.2002, S. 1),"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 2 oder Artikel 3 des Rahmenbeschlusses 2003/568/JI des Rates vom 22. Juli 2003 zur Bekämpfung der Bestechung im privaten Sektor (ABl. L 192 vom 31.7.2003, S. 54),"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 2 oder Artikel 3 des Rahmenbeschlusses 2004/757/JI des Rates vom 25. Oktober 2004 zur Festlegung von Mindestvorschriften über die Tatbestandsmerkmale strafbarer Handlungen und die Strafen im Bereich des illegalen Drogenhandels (ABl. L 335 vom 11.11.2004, S. 8), der zuletzt durch die Delegierte Richtlinie (EU) 2019/369 (ABl. L 66 vom 7.3.2019, S. 3) geändert worden ist,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 2 Buchstabe a des Rahmenbeschlusses 2008/841/JI des Rates vom 24. Oktober 2008 zur Bekämpfung der organisierten Kriminalität (ABl. L 300 vom 11.11.2008, S. 42),"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Artikel 2 oder Artikel 3 der Richtlinie 2011/36/EU des Europäischen Parlaments und des Rates vom 5. April 2011 zur Verhütung und Bekämpfung des Menschenhandels und zum Schutz seiner Opfer sowie zur Ersetzung des Rahmenbeschlusses 2002/629/JI des Rates (ABl. L 101 vom 15.4.2011, S. 1),"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den Artikeln 3 bis 8 der Richtlinie 2011/93/EU des Europäischen Parlaments und des Rates vom 13. Dezember 2011 zur Bekämpfung des sexuellen Missbrauchs und der sexuellen Ausbeutung von Kindern sowie der Kinderpornografie sowie zur Ersetzung des Rahmenbeschlusses 2004/68/JI des Rates (ABl. L 335 vom 17.12.2011, S. 1; L 18 vom 21.1.2012, S. 7) oder"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den Artikeln 4 bis 9 Absatz 1 und 2 Buchstabe b oder den Artikeln 10 bis 14 der Richtlinie (EU) 2017/541 des Europäischen Parlaments und des Rates vom 15. März 2017 zur Terrorismusbekämpfung und zur Ersetzung des Rahmenbeschlusses 2002/475/JI des Rates und zur Änderung des Beschlusses 2005/671/JI des Rates (ABl. L 88 vom 31.3.2017, S. 6)."
+                                    }
+                                  ],
+                                  "label": "h)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -29803,7 +31335,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "eine Leistung aus öffentlichen Mitteln nach Bundes- oder Landesrecht an Betriebe oder Unternehmen, die wenigstens zum Teila)ohne marktmäßige Gegenleistung gewährt wird undb)der Förderung der Wirtschaft dienen soll;"
+                              "md": "eine Leistung aus öffentlichen Mitteln nach Bundes- oder Landesrecht an Betriebe oder Unternehmen, die wenigstens zum Teil"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ohne marktmäßige Gegenleistung gewährt wird und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Förderung der Wirtschaft dienen soll;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -30041,7 +31599,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "über wirtschaftliche Verhältnissea)unrichtige oder unvollständige Unterlagen, namentlich Bilanzen, Gewinn- und Verlustrechnungen, Vermögensübersichten oder Gutachten vorlegt oderb)schriftlich unrichtige oder unvollständige Angaben macht,die für den Kreditnehmer vorteilhaft und für die Entscheidung über einen solchen Antrag erheblich sind, oder"
+                              "md": "über wirtschaftliche Verhältnisse"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "unrichtige oder unvollständige Unterlagen, namentlich Bilanzen, Gewinn- und Verlustrechnungen, Vermögensübersichten oder Gutachten vorlegt oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "schriftlich unrichtige oder unvollständige Angaben macht,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "die für den Kreditnehmer vorteilhaft und für die Entscheidung über einen solchen Antrag erheblich sind, oder"
                             }
                           ],
                           "label": "1.",
@@ -31535,7 +33123,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "entgegen dem Handelsrechta)Bilanzen so aufstellt, daß die Übersicht über seinen Vermögensstand erschwert wird, oder b)es unterläßt, die Bilanz seines Vermögens oder das Inventar in der vorgeschriebenen Zeit aufzustellen, oder"
+                              "md": "entgegen dem Handelsrecht"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bilanzen so aufstellt, daß die Übersicht über seinen Vermögensstand erschwert wird, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "es unterläßt, die Bilanz seines Vermögens oder das Inventar in der vorgeschriebenen Zeit aufzustellen, oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7.",
@@ -31770,7 +33384,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "entgegen dem Handelsrechta)Bilanzen so aufstellt, daß die Übersicht über seinen Vermögensstand erschwert wird, oder b)es unterläßt, die Bilanz seines Vermögens oder das Inventar in der vorgeschriebenen Zeit aufzustellen."
+                              "md": "entgegen dem Handelsrecht"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bilanzen so aufstellt, daß die Übersicht über seinen Vermögensstand erschwert wird, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "es unterläßt, die Bilanz seines Vermögens oder das Inventar in der vorgeschriebenen Zeit aufzustellen."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -34568,7 +36208,77 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "in den Fällen desa)§ 307 Abs. 2, b)§ 308 Abs. 1 und 5, c)§ 309 Abs. 6, d)§ 311 Abs. 1, e)§ 312 Abs. 1 und 6 Nr. 1, f)§ 313, auch in Verbindung mit § 308 Abs. 5, freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht."
+                              "md": "in den Fällen des"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 307 Abs. 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 308 Abs. 1 und 5,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 309 Abs. 6,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 311 Abs. 1,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 312 Abs. 1 und 6 Nr. 1,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 313, auch in Verbindung mit § 308 Abs. 5,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht."
                             }
                           ],
                           "label": "2.",
@@ -34596,7 +36306,67 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "in den Fällen desa)§ 307 Abs. 4, b)§ 308 Abs. 6, c)§ 311 Abs. 3, d)§ 312 Abs. 6 Nr. 2, e)§ 313 Abs. 2 in Verbindung mit § 308 Abs. 6 freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht, oder"
+                              "md": "in den Fällen des"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 307 Abs. 4,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 308 Abs. 6,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 311 Abs. 3,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 312 Abs. 6 Nr. 2,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 313 Abs. 2 in Verbindung mit § 308 Abs. 6"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht, oder"
                             }
                           ],
                           "label": "1.",
@@ -34731,7 +36501,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "in der Absicht handelt,a)einen Unglücksfall herbeizuführen oder b)eine andere Straftat zu ermöglichen oder zu verdecken, oder"
+                              "md": "in der Absicht handelt,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einen Unglücksfall herbeizuführen oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine andere Straftat zu ermöglichen oder zu verdecken, oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -35025,7 +36821,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "ein Fahrzeug führt, obwohl era)infolge des Genusses alkoholischer Getränke oder anderer berauschender Mittel oder b)infolge geistiger oder körperlicher Mängel nicht in der Lage ist, das Fahrzeug sicher zu führen, oder"
+                              "md": "ein Fahrzeug führt, obwohl er"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "infolge des Genusses alkoholischer Getränke oder anderer berauschender Mittel oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "infolge geistiger oder körperlicher Mängel"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "nicht in der Lage ist, das Fahrzeug sicher zu führen, oder"
                             }
                           ],
                           "label": "1.",
@@ -35036,7 +36862,83 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "grob verkehrswidrig und rücksichtslosa)die Vorfahrt nicht beachtet, b)falsch überholt oder sonst bei Überholvorgängen falsch fährt, c)an Fußgängerüberwegen falsch fährt, d)an unübersichtlichen Stellen, an Straßenkreuzungen, Straßeneinmündungen oder Bahnübergängen zu schnell fährt, e)an unübersichtlichen Stellen nicht die rechte Seite der Fahrbahn einhält, f)auf Autobahnen oder Kraftfahrstraßen wendet, rückwärts oder entgegen der Fahrtrichtung fährt oder dies versucht oder g)haltende oder liegengebliebene Fahrzeuge nicht auf ausreichende Entfernung kenntlich macht, obwohl das zur Sicherung des Verkehrs erforderlich ist,"
+                              "md": "grob verkehrswidrig und rücksichtslos"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Vorfahrt nicht beachtet,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "falsch überholt oder sonst bei Überholvorgängen falsch fährt,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "an Fußgängerüberwegen falsch fährt,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "an unübersichtlichen Stellen, an Straßenkreuzungen, Straßeneinmündungen oder Bahnübergängen zu schnell fährt,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "an unübersichtlichen Stellen nicht die rechte Seite der Fahrbahn einhält,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "auf Autobahnen oder Kraftfahrstraßen wendet, rückwärts oder entgegen der Fahrtrichtung fährt oder dies versucht oder"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "haltende oder liegengebliebene Fahrzeuge nicht auf ausreichende Entfernung kenntlich macht, obwohl das zur Sicherung des Verkehrs erforderlich ist,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -35441,7 +37343,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Gewalt anwendet oder die Entschlußfreiheit einer Person angreift oder sonstige Machenschaften vornimmt, um dadurch die Herrschaft übera)ein im zivilen Luftverkehr eingesetztes und im Flug befindliches Luftfahrzeug oder b)ein im zivilen Seeverkehr eingesetztes Schiff zu erlangen oder auf dessen Führung einzuwirken, oder"
+                              "md": "Gewalt anwendet oder die Entschlußfreiheit einer Person angreift oder sonstige Machenschaften vornimmt, um dadurch die Herrschaft über"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein im zivilen Luftverkehr eingesetztes und im Flug befindliches Luftfahrzeug oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein im zivilen Seeverkehr eingesetztes Schiff"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "zu erlangen oder auf dessen Führung einzuwirken, oder"
                             }
                           ],
                           "label": "1.",
@@ -35804,7 +37736,57 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "in den Fällen desa)§ 315 Abs. 6,b)§ 315b Abs. 5,c)§ 318 Abs. 6 Nr. 2,d)§ 319 Abs. 4freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht, oder"
+                              "md": "in den Fällen des"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 315 Abs. 6,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 315b Abs. 5,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 318 Abs. 6 Nr. 2,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 319 Abs. 4"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "freiwillig die Gefahr abwendet, bevor ein erheblicher Schaden entsteht, oder"
                             }
                           ],
                           "label": "1.",
@@ -36392,7 +38374,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "nach Art, Beschaffenheit oder Menge geeignet sind,a)nachhaltig ein Gewässer, die Luft oder den Boden zu verunreinigen oder sonst nachteilig zu verändern oderb)einen Bestand von Tieren oder Pflanzen zu gefährden,"
+                              "md": "nach Art, Beschaffenheit oder Menge geeignet sind,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nachhaltig ein Gewässer, die Luft oder den Boden zu verunreinigen oder sonst nachteilig zu verändern oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einen Bestand von Tieren oder Pflanzen zu gefährden,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -37439,7 +39447,67 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "eine verwaltungsrechtliche Pflicht:eine Pflicht, die sich ausa)einer Rechtsvorschrift,b)einer gerichtlichen Entscheidung,c)einem vollziehbaren Verwaltungsakt,d)einer vollziehbaren Auflage odere)einem öffentlich-rechtlichen Vertrag, soweit die Pflicht auch durch Verwaltungsakt hätte auferlegt werden können,ergibt und dem Schutz vor Gefahren oder schädlichen Einwirkungen auf die Umwelt, insbesondere auf Menschen, Tiere oder Pflanzen, Gewässer, die Luft oder den Boden, dient;"
+                              "md": "eine verwaltungsrechtliche Pflicht:eine Pflicht, die sich aus"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einer Rechtsvorschrift,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einer gerichtlichen Entscheidung,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einem vollziehbaren Verwaltungsakt,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einer vollziehbaren Auflage oder"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einem öffentlich-rechtlichen Vertrag, soweit die Pflicht auch durch Verwaltungsakt hätte auferlegt werden können,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "ergibt und dem Schutz vor Gefahren oder schädlichen Einwirkungen auf die Umwelt, insbesondere auf Menschen, Tiere oder Pflanzen, Gewässer, die Luft oder den Boden, dient;"
                             }
                           ],
                           "label": "4.",
@@ -37849,7 +39917,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "eine Tat nacha)§ 332 Abs. 1 Satz 1, auch in Verbindung mit Abs. 3, und b)§ 334 Abs. 1 Satz 1 und Abs. 2, jeweils auch in Verbindung mit Abs. 3, mit Freiheitsstrafe von einem Jahr bis zu zehn Jahren und"
+                              "md": "eine Tat nach"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 332 Abs. 1 Satz 1, auch in Verbindung mit Abs. 3, und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "§ 334 Abs. 1 Satz 1 und Abs. 2, jeweils auch in Verbindung mit Abs. 3,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "mit Freiheitsstrafe von einem Jahr bis zu zehn Jahren und"
                             }
                           ],
                           "label": "1.",
@@ -37962,7 +40060,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "einem sonstigen Amtsträger: a)ein Bediensteter eines ausländischen Staates und eine Person, die beauftragt ist, öffentliche Aufgaben für einen ausländischen Staat wahrzunehmen;b)ein Bediensteter einer internationalen Organisation und eine Person, die beauftragt ist, Aufgaben einer internationalen Organisation wahrzunehmen;c)ein Soldat eines ausländischen Staates und ein Soldat, der beauftragt ist, Aufgaben einer internationalen Organisation wahrzunehmen."
+                              "md": "einem sonstigen Amtsträger:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Bediensteter eines ausländischen Staates und eine Person, die beauftragt ist, öffentliche Aufgaben für einen ausländischen Staat wahrzunehmen;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Bediensteter einer internationalen Organisation und eine Person, die beauftragt ist, Aufgaben einer internationalen Organisation wahrzunehmen;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Soldat eines ausländischen Staates und ein Soldat, der beauftragt ist, Aufgaben einer internationalen Organisation wahrzunehmen."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -38716,7 +40850,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "von dem Präsidenten des Gesetzgebungsorgansa)in den Fällen des Absatzes 1, wenn dem Täter das Geheimnis während seiner Tätigkeit bei einem oder für ein Gesetzgebungsorgan des Bundes oder eines Landes bekanntgeworden ist,b)in den Fällen des Absatzes 2 Nr. 1;"
+                              "md": "von dem Präsidenten des Gesetzgebungsorgans"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in den Fällen des Absatzes 1, wenn dem Täter das Geheimnis während seiner Tätigkeit bei einem oder für ein Gesetzgebungsorgan des Bundes oder eines Landes bekanntgeworden ist,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in den Fällen des Absatzes 2 Nr. 1;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -38727,7 +40887,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "von der obersten Bundesbehördea)in den Fällen des Absatzes 1, wenn dem Täter das Geheimnis während seiner Tätigkeit sonst bei einer oder für eine Behörde oder bei einer anderen amtlichen Stelle des Bundes oder für eine solche Stelle bekanntgeworden ist,b)in den Fällen des Absatzes 2 Nr. 2, wenn der Täter von einer amtlichen Stelle des Bundes verpflichtet worden ist;"
+                              "md": "von der obersten Bundesbehörde"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in den Fällen des Absatzes 1, wenn dem Täter das Geheimnis während seiner Tätigkeit sonst bei einer oder für eine Behörde oder bei einer anderen amtlichen Stelle des Bundes oder für eine solche Stelle bekanntgeworden ist,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in den Fällen des Absatzes 2 Nr. 2, wenn der Täter von einer amtlichen Stelle des Bundes verpflichtet worden ist;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -38892,7 +41078,47 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "personenbezogene Daten eines anderen, die ihm als Amtsträger a)in einem Verwaltungsverfahren, einem Rechnungsprüfungsverfahren oder einem gerichtlichen Verfahren in Steuersachen,b)in einem Strafverfahren wegen einer Steuerstraftat oder in einem Bußgeldverfahren wegen einer Steuerordnungswidrigkeit,c)im Rahmen einer Weiterverarbeitung nach § 29c Absatz 1 Satz 1 Nummer 4, 5 oder 6 der Abgabenordnung oder aus anderem dienstlichen Anlass, insbesondere durch Mitteilung einer Finanzbehörde oder durch die gesetzlich vorgeschriebene Vorlage eines Steuerbescheids oder einer Bescheinigung über die bei der Besteuerung getroffenen Feststellungenbekannt geworden sind, oder"
+                              "md": "personenbezogene Daten eines anderen, die ihm als Amtsträger"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Verwaltungsverfahren, einem Rechnungsprüfungsverfahren oder einem gerichtlichen Verfahren in Steuersachen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Strafverfahren wegen einer Steuerstraftat oder in einem Bußgeldverfahren wegen einer Steuerordnungswidrigkeit,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "im Rahmen einer Weiterverarbeitung nach § 29c Absatz 1 Satz 1 Nummer 4, 5 oder 6 der Abgabenordnung oder aus anderem dienstlichen Anlass, insbesondere durch Mitteilung einer Finanzbehörde oder durch die gesetzlich vorgeschriebene Vorlage eines Steuerbescheids oder einer Bescheinigung über die bei der Besteuerung getroffenen Feststellungen"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "bekannt geworden sind, oder"
                             }
                           ],
                           "label": "1.",

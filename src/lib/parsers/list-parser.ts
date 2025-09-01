@@ -66,11 +66,15 @@ export class ListParser implements Parser<ListNode> {
           if (md) buf.push({ type: 'md', md });
           textBuf = '';
         };
-        for (const part of parts) {
-          const pt = lname(part);
-          if (!pt) {
-            if (isTextNode(part)) textBuf += textOf(part);
-          } else if (pt === 'dl') {
+        // Helper function to recursively process content, looking for nested lists
+        const processContentRecursively = (element: PONode) => {
+          const elementType = lname(element);
+          if (!elementType) {
+            if (isTextNode(element)) textBuf += textOf(element);
+            return;
+          }
+          
+          if (elementType === 'dl') {
             flushText();
             // Generate nested list ID prefix
             const nestedPrefix =
@@ -78,20 +82,52 @@ export class ListParser implements Parser<ListNode> {
                 ? `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || '1'}`
                 : idPrefix;
             // Recursive call for nested lists
-            const nestedList = this.parse(part, nestedPrefix);
+            const nestedList = this.parse(element, nestedPrefix);
             if (nestedList) buf.push(nestedList);
-          } else if (pt === 'p') {
+          } else if (elementType === 'p') {
             flushText();
             const nestedPrefix =
               idPrefix && pendingMarker
                 ? `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || '1'}`
                 : idPrefix;
-            // Note: We'll need to get the paragraph parser from registry
-            const paragraphResult = this.parseNestedParagraph?.(part, nestedPrefix);
+            const paragraphResult = this.parseNestedParagraph?.(element, nestedPrefix);
             if (paragraphResult) buf.push(paragraphResult);
+          } else if (elementType === 'la') {
+            // Process LA elements recursively to find nested structures
+            for (const child of childrenOf(element)) {
+              processContentRecursively(child);
+            }
           } else {
-            textBuf += renderInlineToMd([part]);
+            // For other elements, check if they contain nested DL elements first
+            let foundNestedStructures = false;
+            for (const child of childrenOf(element)) {
+              const childType = lname(child);
+              if (childType === 'dl' || childType === 'p') {
+                flushText();
+                processContentRecursively(child);
+                foundNestedStructures = true;
+              } else if (childType === 'la') {
+                // Need to look deeper into LA elements
+                for (const laChild of childrenOf(child)) {
+                  if (lname(laChild) === 'dl' || lname(laChild) === 'p') {
+                    flushText();
+                    processContentRecursively(child);
+                    foundNestedStructures = true;
+                    break;
+                  }
+                }
+              }
+            }
+            
+            // If no nested structures found, render as inline markdown
+            if (!foundNestedStructures) {
+              textBuf += renderInlineToMd([element]);
+            }
           }
+        };
+
+        for (const part of parts) {
+          processContentRecursively(part);
         }
         flushText();
       }

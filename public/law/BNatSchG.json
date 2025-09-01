@@ -1057,7 +1057,53 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "Tiere a)wild lebende, gefangene oder gezüchtete und nicht herrenlos gewordene sowie tote Tiere wild lebender Arten,b)Eier, auch im leeren Zustand, sowie Larven, Puppen und sonstige Entwicklungsformen von Tieren wild lebender Arten,c)ohne Weiteres erkennbare Teile von Tieren wild lebender Arten undd)ohne Weiteres erkennbar aus Tieren wild lebender Arten gewonnene Erzeugnisse;"
+                          "md": "Tiere"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "wild lebende, gefangene oder gezüchtete und nicht herrenlos gewordene sowie tote Tiere wild lebender Arten,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "Eier, auch im leeren Zustand, sowie Larven, Puppen und sonstige Entwicklungsformen von Tieren wild lebender Arten,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ohne Weiteres erkennbare Teile von Tieren wild lebender Arten und"
+                                }
+                              ],
+                              "label": "c)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ohne Weiteres erkennbar aus Tieren wild lebender Arten gewonnene Erzeugnisse;"
+                                }
+                              ],
+                              "label": "d)"
+                            }
+                          ]
                         }
                       ],
                       "label": "1.",
@@ -1068,7 +1114,57 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "Pflanzen a)wild lebende, durch künstliche Vermehrung gewonnene sowie tote Pflanzen wild lebender Arten,b)Samen, Früchte oder sonstige Entwicklungsformen von Pflanzen wild lebender Arten,c)ohne Weiteres erkennbare Teile von Pflanzen wild lebender Arten undd)ohne Weiteres erkennbar aus Pflanzen wild lebender Arten gewonnene Erzeugnisse;als Pflanzen im Sinne dieses Gesetzes gelten auch Flechten und Pilze;"
+                          "md": "Pflanzen"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "wild lebende, durch künstliche Vermehrung gewonnene sowie tote Pflanzen wild lebender Arten,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "Samen, Früchte oder sonstige Entwicklungsformen von Pflanzen wild lebender Arten,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ohne Weiteres erkennbare Teile von Pflanzen wild lebender Arten und"
+                                }
+                              ],
+                              "label": "c)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ohne Weiteres erkennbar aus Pflanzen wild lebender Arten gewonnene Erzeugnisse;"
+                                }
+                              ],
+                              "label": "d)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "md",
+                          "md": "als Pflanzen im Sinne dieses Gesetzes gelten auch Flechten und Pilze;"
                         }
                       ],
                       "label": "2.",
@@ -1145,7 +1241,43 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "invasive Arteine invasive gebietsfremde Art im Sinne des Artikels 3 Nummer 2 der Verordnung (EU) Nr. 1143/2014 a)die in der Unionsliste nach Artikel 4 Absatz 1 der Verordnung (EU) Nr. 1143/2014 aufgeführt ist,b)für die Dringlichkeitsmaßnahmen nach Artikel 10 Absatz 4 oder für die Durchführungsrechtsakte nach Artikel 11 Absatz 2 Satz 2 der Verordnung (EU) Nr. 1143/2014 in Kraft sind, soweit die Verordnung (EU) Nr. 1143/2014 nach den genannten Rechtsvorschriften anwendbar ist oderc)die in einer Rechtsverordnung nach § 54 Absatz 4 Satz 1 Nummer 1 oder Nummer 3 aufgeführt ist;"
+                          "md": "invasive Arteine invasive gebietsfremde Art im Sinne des Artikels 3 Nummer 2 der Verordnung (EU) Nr. 1143/2014"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "die in der Unionsliste nach Artikel 4 Absatz 1 der Verordnung (EU) Nr. 1143/2014 aufgeführt ist,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "für die Dringlichkeitsmaßnahmen nach Artikel 10 Absatz 4 oder für die Durchführungsrechtsakte nach Artikel 11 Absatz 2 Satz 2 der Verordnung (EU) Nr. 1143/2014 in Kraft sind, soweit die Verordnung (EU) Nr. 1143/2014 nach den genannten Rechtsvorschriften anwendbar ist oder"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "die in einer Rechtsverordnung nach § 54 Absatz 4 Satz 1 Nummer 1 oder Nummer 3 aufgeführt ist;"
+                                }
+                              ],
+                              "label": "c)"
+                            }
+                          ]
                         }
                       ],
                       "label": "9.",
@@ -1189,7 +1321,69 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "besonders geschützte Arten a)Tier- und Pflanzenarten, die in Anhang A oder Anhang B der Verordnung (EG) Nr. 338/97 des Rates vom 9. Dezember 1996 über den Schutz von Exemplaren wildlebender Tier- und Pflanzenarten durch Überwachung des Handels (ABl. L 61 vom 3.3.1997, S. 1, L 100 vom 17.4.1997, S. 72, L 298 vom 1.11.1997, S. 70, L 113 vom 27.4.2006, S. 26), die zuletzt durch die Verordnung (EG) Nr. 709/2010 (ABl. L 212 vom 12.8.2010, S. 1) geändert worden ist, aufgeführt sind,b)nicht unter Buchstabe a fallende aa)Tier- und Pflanzenarten, die in Anhang IV der Richtlinie 92/43/EWG aufgeführt sind,bb)europäische Vogelarten,c)Tier- und Pflanzenarten, die in einer Rechtsverordnung nach § 54 Absatz 1 aufgeführt sind;"
+                          "md": "besonders geschützte Arten"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "Tier- und Pflanzenarten, die in Anhang A oder Anhang B der Verordnung (EG) Nr. 338/97 des Rates vom 9. Dezember 1996 über den Schutz von Exemplaren wildlebender Tier- und Pflanzenarten durch Überwachung des Handels (ABl. L 61 vom 3.3.1997, S. 1, L 100 vom 17.4.1997, S. 72, L 298 vom 1.11.1997, S. 70, L 113 vom 27.4.2006, S. 26), die zuletzt durch die Verordnung (EG) Nr. 709/2010 (ABl. L 212 vom 12.8.2010, S. 1) geändert worden ist, aufgeführt sind,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "nicht unter Buchstabe a fallende"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Tier- und Pflanzenarten, die in Anhang IV der Richtlinie 92/43/EWG aufgeführt sind,"
+                                        }
+                                      ],
+                                      "label": "aa)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "europäische Vogelarten,"
+                                        }
+                                      ],
+                                      "label": "bb)"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "Tier- und Pflanzenarten, die in einer Rechtsverordnung nach § 54 Absatz 1 aufgeführt sind;"
+                                }
+                              ],
+                              "label": "c)"
+                            }
+                          ]
                         }
                       ],
                       "label": "13.",
@@ -1200,7 +1394,47 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "streng geschützte Artenbesonders geschützte Arten, die a)in Anhang A der Verordnung (EG) Nr. 338/97,b)in Anhang IV der Richtlinie 92/43/EWG,c)in einer Rechtsverordnung nach § 54 Absatz 2aufgeführt sind;"
+                          "md": "streng geschützte Artenbesonders geschützte Arten, die"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "in Anhang A der Verordnung (EG) Nr. 338/97,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "in Anhang IV der Richtlinie 92/43/EWG,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "in einer Rechtsverordnung nach § 54 Absatz 2"
+                                }
+                              ],
+                              "label": "c)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "md",
+                          "md": "aufgeführt sind;"
                         }
                       ],
                       "label": "14.",
@@ -1491,7 +1725,93 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "die Erfordernisse und Maßnahmen zur Umsetzung der konkretisierten Ziele des Naturschutzes und der Landschaftspflege, insbesondere a)zur Vermeidung, Minderung oder Beseitigung von Beeinträchtigungen von Natur und Landschaft,b)zum Schutz bestimmter Teile von Natur und Landschaft im Sinne des Kapitels 4 sowie der Biotope, Lebensgemeinschaften und Lebensstätten der Tiere und Pflanzen wild lebender Arten,c)auf Flächen, die wegen ihres Zustands, ihrer Lage oder ihrer natürlichen Entwicklungsmöglichkeit für künftige Maßnahmen des Naturschutzes und der Landschaftspflege, insbesondere zur Kompensation von Eingriffen in Natur und Landschaft sowie zum Einsatz natur- und landschaftsbezogener Fördermittel besonders geeignet sind,d)zum Aufbau und Schutz eines Biotopverbunds, der Biotopvernetzung und des Netzes „Natura 2000“,e)zum Schutz, zur Qualitätsverbesserung und zur Regeneration von Böden, Gewässern, Luft und Klima,f)zur Erhaltung und Entwicklung von Vielfalt, Eigenart und Schönheit sowie des Erholungswertes von Natur und Landschaft,g)zur Erhaltung und Entwicklung von Freiräumen im besiedelten und unbesiedelten Bereich,h)zur Sicherung und Förderung der biologischen Vielfalt im Planungsraum einschließlich ihrer Bedeutung für das Naturerlebnis."
+                          "md": "die Erfordernisse und Maßnahmen zur Umsetzung der konkretisierten Ziele des Naturschutzes und der Landschaftspflege, insbesondere"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zur Vermeidung, Minderung oder Beseitigung von Beeinträchtigungen von Natur und Landschaft,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zum Schutz bestimmter Teile von Natur und Landschaft im Sinne des Kapitels 4 sowie der Biotope, Lebensgemeinschaften und Lebensstätten der Tiere und Pflanzen wild lebender Arten,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "auf Flächen, die wegen ihres Zustands, ihrer Lage oder ihrer natürlichen Entwicklungsmöglichkeit für künftige Maßnahmen des Naturschutzes und der Landschaftspflege, insbesondere zur Kompensation von Eingriffen in Natur und Landschaft sowie zum Einsatz natur- und landschaftsbezogener Fördermittel besonders geeignet sind,"
+                                }
+                              ],
+                              "label": "c)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zum Aufbau und Schutz eines Biotopverbunds, der Biotopvernetzung und des Netzes „Natura 2000“,"
+                                }
+                              ],
+                              "label": "d)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zum Schutz, zur Qualitätsverbesserung und zur Regeneration von Böden, Gewässern, Luft und Klima,"
+                                }
+                              ],
+                              "label": "e)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zur Erhaltung und Entwicklung von Vielfalt, Eigenart und Schönheit sowie des Erholungswertes von Natur und Landschaft,"
+                                }
+                              ],
+                              "label": "f)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zur Erhaltung und Entwicklung von Freiräumen im besiedelten und unbesiedelten Bereich,"
+                                }
+                              ],
+                              "label": "g)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "zur Sicherung und Förderung der biologischen Vielfalt im Planungsraum einschließlich ihrer Bedeutung für das Naturerlebnis."
+                                }
+                              ],
+                              "label": "h)"
+                            }
+                          ]
                         }
                       ],
                       "label": "4.",
@@ -4692,7 +5012,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Maßnahmen, die im öffentlichen Interesse nicht auf andere Weise oder zu anderer Zeit durchgeführt werden können, wenn sie a)behördlich durchgeführt werden,b)behördlich zugelassen sind oderc)der Gewährleistung der Verkehrssicherheit dienen,"
+                              "md": "Maßnahmen, die im öffentlichen Interesse nicht auf andere Weise oder zu anderer Zeit durchgeführt werden können, wenn sie"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "behördlich durchgeführt werden,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "behördlich zugelassen sind oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Gewährleistung der Verkehrssicherheit dienen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -4788,7 +5144,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "der Einsatz von Tieren zum Zweck des biologischen Pflanzenschutzes a)der Arten, die in dem betreffenden Gebiet in freier Natur in den letzten 100 Jahren vorkommen oder vorkamen,b)anderer Arten, sofern der Einsatz einer pflanzenschutzrechtlichen Genehmigung bedarf, bei der die Belange des Artenschutzes berücksichtigt sind,"
+                              "md": "der Einsatz von Tieren zum Zweck des biologischen Pflanzenschutzes"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Arten, die in dem betreffenden Gebiet in freier Natur in den letzten 100 Jahren vorkommen oder vorkamen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "anderer Arten, sofern der Einsatz einer pflanzenschutzrechtlichen Genehmigung bedarf, bei der die Belange des Artenschutzes berücksichtigt sind,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -5344,7 +5726,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sich der Zoo beteiligt an a)Forschungen, die zur Erhaltung der Arten beitragen, einschließlich des Austausches von Informationen über die Arterhaltung, oderb)der Aufzucht in Gefangenschaft, der Bestandserneuerung und der Wiederansiedlung von Arten in ihren Biotopen oderc)der Ausbildung in erhaltungsspezifischen Kenntnissen und Fähigkeiten."
+                              "md": "sich der Zoo beteiligt an"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Forschungen, die zur Erhaltung der Arten beitragen, einschließlich des Austausches von Informationen über die Arterhaltung, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Aufzucht in Gefangenschaft, der Bestandserneuerung und der Wiederansiedlung von Arten in ihren Biotopen oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Ausbildung in erhaltungsspezifischen Kenntnissen und Fähigkeiten."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7.",
@@ -5725,7 +6143,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Tiere und Pflanzen der besonders geschützten Arten im Sinne des § 7 Absatz 2 Nummer 13 Buchstabe b und c a)zu verkaufen, zu kaufen, zum Verkauf oder Kauf anzubieten, zum Verkauf vorrätig zu halten oder zu befördern, zu tauschen oder entgeltlich zum Gebrauch oder zur Nutzung zu überlassen,b)zu kommerziellen Zwecken zu erwerben, zur Schau zu stellen oder auf andere Weise zu verwenden(Vermarktungsverbote)."
+                              "md": "Tiere und Pflanzen der besonders geschützten Arten im Sinne des § 7 Absatz 2 Nummer 13 Buchstabe b und c"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "zu verkaufen, zu kaufen, zum Verkauf oder Kauf anzubieten, zum Verkauf vorrätig zu halten oder zu befördern, zu tauschen oder entgeltlich zum Gebrauch oder zur Nutzung zu überlassen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "zu kommerziellen Zwecken zu erwerben, zur Schau zu stellen oder auf andere Weise zu verwenden"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "(Vermarktungsverbote)."
                             }
                           ],
                           "label": "2.",
@@ -5853,7 +6301,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Tiere und Pflanzen der besonders geschützten Arten, die rechtmäßig a)in der Gemeinschaft gezüchtet und nicht herrenlos geworden sind, durch künstliche Vermehrung gewonnen oder aus der Natur entnommen worden sind,b)aus Drittstaaten in die Gemeinschaft gelangt sind,"
+                              "md": "Tiere und Pflanzen der besonders geschützten Arten, die rechtmäßig"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in der Gemeinschaft gezüchtet und nicht herrenlos geworden sind, durch künstliche Vermehrung gewonnen oder aus der Natur entnommen worden sind,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "aus Drittstaaten in die Gemeinschaft gelangt sind,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -6356,7 +6830,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei einem Gebiet, das für die Windenergie ausgewiesen ist a)in einem Raumordnungsplan oderb)unter Berücksichtigung artenschutzrechtlicher Belange in einem Flächennutzungsplan,Standortalternativen außerhalb dieses Gebietes in der Regel nicht im Sinne des § 45 Absatz 7 Satz 2 zumutbar sind, bis gemäß § 5 des Windenergieflächenbedarfsgesetzes festgestellt wurde, dass das jeweilige Land den Flächenbeitragswert nach Anlage 1 Spalte 2 des Windenergieflächenbedarfsgesetzes oder der jeweilige regionale oder kommunale Planungsträger ein daraus abgeleitetes Teilflächenziel erreicht hat,"
+                              "md": "bei einem Gebiet, das für die Windenergie ausgewiesen ist"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Raumordnungsplan oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "unter Berücksichtigung artenschutzrechtlicher Belange in einem Flächennutzungsplan,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "Standortalternativen außerhalb dieses Gebietes in der Regel nicht im Sinne des § 45 Absatz 7 Satz 2 zumutbar sind, bis gemäß § 5 des Windenergieflächenbedarfsgesetzes festgestellt wurde, dass das jeweilige Land den Flächenbeitragswert nach Anlage 1 Spalte 2 des Windenergieflächenbedarfsgesetzes oder der jeweilige regionale oder kommunale Planungsträger ein daraus abgeleitetes Teilflächenziel erreicht hat,"
                             }
                           ],
                           "label": "2.",
@@ -6740,7 +7244,73 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "das Bundesamt für Naturschutz a)für die Erteilung von Ein- und Ausfuhrgenehmigungen und Wiederausfuhrbescheinigungen im Sinne des Artikels 4 Absatz 1 und 2 und des Artikels 5 Absatz 1 und 4 der Verordnung (EG) Nr. 338/97 sowie von sonstigen Dokumenten im Sinne des Artikels IX Absatz 1 Buchstabe a des Washingtoner Artenschutzübereinkommens sowie für den Verkehr mit dem Sekretariat, der Kommission der Europäischen Gemeinschaften und mit Behörden anderer Vertragsstaaten und Nichtvertragsstaaten im Zusammenhang mit der Bearbeitung von Genehmigungsanträgen oder bei der Verfolgung von Ein- und Ausfuhrverstößen sowie für die in Artikel 15 Absatz 4 Buchstabe a und c der Verordnung (EG) Nr. 338/97 genannten Aufgaben,b)für die Zulassung von Ausnahmen nach Artikel 8 Absatz 3 der Verordnung (EG) Nr. 338/97 im Fall der Einfuhr,c)für die Anerkennung von Betrieben, in denen im Sinne des Artikels VII Absatz 4 des Washingtoner Artenschutzübereinkommens Exemplare für Handelszwecke gezüchtet oder künstlich vermehrt werden sowie für die Meldung des in Artikel 7 Absatz 1 Nummer 4 der Verordnung (EG) Nr. 338/97 genannten Registrierungsverfahrens gegenüber dem Sekretariat (Artikel IX Absatz 2 des Washingtoner Artenschutzübereinkommens),d)die Erteilung von Bescheinigungen nach den Artikeln 30, 37 und 44a der Verordnung (EG) Nr. 865/2006 der Kommission vom 4. Mai 2006 mit Durchführungsbestimmungen zur Verordnung (EG) Nr. 338/97 des Rates über den Schutz von Exemplaren wild lebender Tier- und Pflanzenarten durch Überwachung des Handels (ABl. L 166 vom 19.6.2006, S. 1), die durch die Verordnung (EG) Nr. 100/2008 (ABl. L 31 vom 5.2.2008, S. 3) geändert worden ist, im Fall der Ein- und Ausfuhr,e)die Registrierung von Kaviarverpackungsbetrieben nach Artikel 66 der Verordnung (EG) Nr. 865/2006,f)für die Verwertung der von den Zollstellen nach § 51 eingezogenen lebenden Tieren und Pflanzen sowie für die Verwertung der von Zollbehörden nach § 51 eingezogenen toten Tiere und Pflanzen sowie Teilen davon und Erzeugnisse daraus, soweit diese von streng geschützten Arten stammen,"
+                              "md": "das Bundesamt für Naturschutz"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Erteilung von Ein- und Ausfuhrgenehmigungen und Wiederausfuhrbescheinigungen im Sinne des Artikels 4 Absatz 1 und 2 und des Artikels 5 Absatz 1 und 4 der Verordnung (EG) Nr. 338/97 sowie von sonstigen Dokumenten im Sinne des Artikels IX Absatz 1 Buchstabe a des Washingtoner Artenschutzübereinkommens sowie für den Verkehr mit dem Sekretariat, der Kommission der Europäischen Gemeinschaften und mit Behörden anderer Vertragsstaaten und Nichtvertragsstaaten im Zusammenhang mit der Bearbeitung von Genehmigungsanträgen oder bei der Verfolgung von Ein- und Ausfuhrverstößen sowie für die in Artikel 15 Absatz 4 Buchstabe a und c der Verordnung (EG) Nr. 338/97 genannten Aufgaben,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Zulassung von Ausnahmen nach Artikel 8 Absatz 3 der Verordnung (EG) Nr. 338/97 im Fall der Einfuhr,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Anerkennung von Betrieben, in denen im Sinne des Artikels VII Absatz 4 des Washingtoner Artenschutzübereinkommens Exemplare für Handelszwecke gezüchtet oder künstlich vermehrt werden sowie für die Meldung des in Artikel 7 Absatz 1 Nummer 4 der Verordnung (EG) Nr. 338/97 genannten Registrierungsverfahrens gegenüber dem Sekretariat (Artikel IX Absatz 2 des Washingtoner Artenschutzübereinkommens),"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Erteilung von Bescheinigungen nach den Artikeln 30, 37 und 44a der Verordnung (EG) Nr. 865/2006 der Kommission vom 4. Mai 2006 mit Durchführungsbestimmungen zur Verordnung (EG) Nr. 338/97 des Rates über den Schutz von Exemplaren wild lebender Tier- und Pflanzenarten durch Überwachung des Handels (ABl. L 166 vom 19.6.2006, S. 1), die durch die Verordnung (EG) Nr. 100/2008 (ABl. L 31 vom 5.2.2008, S. 3) geändert worden ist, im Fall der Ein- und Ausfuhr,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Registrierung von Kaviarverpackungsbetrieben nach Artikel 66 der Verordnung (EG) Nr. 865/2006,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Verwertung der von den Zollstellen nach § 51 eingezogenen lebenden Tieren und Pflanzen sowie für die Verwertung der von Zollbehörden nach § 51 eingezogenen toten Tiere und Pflanzen sowie Teilen davon und Erzeugnisse daraus, soweit diese von streng geschützten Arten stammen,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -6819,7 +7389,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "das Bundesamt für Naturschutz a)für den Vollzug im Bereich der deutschen ausschließlichen Wirtschaftszone und des Festlandsockels undb)für die Erteilung von Genehmigungen gemäß § 40c bei Verbringung aus dem Ausland;"
+                              "md": "das Bundesamt für Naturschutz"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für den Vollzug im Bereich der deutschen ausschließlichen Wirtschaftszone und des Festlandsockels und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Erteilung von Genehmigungen gemäß § 40c bei Verbringung aus dem Ausland;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -6830,7 +7426,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die zuständigen Dienststellen der Bundeswehr a)im Hinblick auf militärisches Gerät der Bundeswehr,b)für die Durchführung der Überwachung nach Artikel 14, der Früherkennung nach Artikel 16 Absatz 1, von Maßnahmen zur sofortigen Beseitigung nach den Artikeln 17 und 18 der Verordnung sowie der nach § 40e festgelegten Managementmaßnahmen auf den durch die Bundeswehr militärisch genutzten Flächen;"
+                              "md": "die zuständigen Dienststellen der Bundeswehr"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "im Hinblick auf militärisches Gerät der Bundeswehr,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die Durchführung der Überwachung nach Artikel 14, der Früherkennung nach Artikel 16 Absatz 1, von Maßnahmen zur sofortigen Beseitigung nach den Artikeln 17 und 18 der Verordnung sowie der nach § 40e festgelegten Managementmaßnahmen auf den durch die Bundeswehr militärisch genutzten Flächen;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -7277,7 +7899,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bestimmte, nach § 7 Absatz 2 Nummer 13 Buchstabe a oder Buchstabe b besonders geschützte a)Tier- und Pflanzenarten, die in Anhang B der Verordnung (EG) Nr. 338/97 aufgeführt sind,b)europäische Vogelarten,"
+                              "md": "bestimmte, nach § 7 Absatz 2 Nummer 13 Buchstabe a oder Buchstabe b besonders geschützte"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Tier- und Pflanzenarten, die in Anhang B der Verordnung (EG) Nr. 338/97 aufgeführt sind,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "europäische Vogelarten,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -7510,7 +8158,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "zur Konkretisierung der Anzeigepflicht nach § 41a Absatz 3 Satz 1 insbesondere zu bestimmen, a)welche Beleuchtungen der Anzeigepflicht unterliegen,b)welche Informationen in der Anzeige gegenüber der zuständigen Behörde anzugeben sind."
+                              "md": "zur Konkretisierung der Anzeigepflicht nach § 41a Absatz 3 Satz 1 insbesondere zu bestimmen,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "welche Beleuchtungen der Anzeigepflicht unterliegen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "welche Informationen in der Anzeige gegenüber der zuständigen Behörde anzugeben sind."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -7785,7 +8459,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Pflichten zur Anzeige des Besitzes von a)Tieren und Pflanzen der besonders geschützten Arten,b)Tieren und Pflanzen der durch Rechtsverordnung nach § 54 Absatz 4 bestimmten Arten."
+                              "md": "Pflichten zur Anzeige des Besitzes von"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Tieren und Pflanzen der besonders geschützten Arten,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Tieren und Pflanzen der durch Rechtsverordnung nach § 54 Absatz 4 bestimmten Arten."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -8443,7 +9143,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "Beschränkungen der Verlegung von unterseeischen Kabeln und Rohrleitungen sind nur in Übereinstimmung mit Artikel 56 Absatz 3 in Verbindung mit Artikel 79 des Seerechtsübereinkommens der Vereinten Nationen zulässig und a)im Hinblick auf Erhaltungsziele nach § 7 Absatz 1 Nummer 9 nur nach § 34 sowieb)im Hinblick auf weitere der Erfüllung bestehender völkerrechtlicher Verpflichtungen oder der Umsetzung der Richtlinie 2008/56/EG dienenden Schutzzwecke nur, wenn die Verlegung diese erheblich beeinträchtigen kann."
+                          "md": "Beschränkungen der Verlegung von unterseeischen Kabeln und Rohrleitungen sind nur in Übereinstimmung mit Artikel 56 Absatz 3 in Verbindung mit Artikel 79 des Seerechtsübereinkommens der Vereinten Nationen zulässig und"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "im Hinblick auf Erhaltungsziele nach § 7 Absatz 1 Nummer 9 nur nach § 34 sowie"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "im Hinblick auf weitere der Erfüllung bestehender völkerrechtlicher Verpflichtungen oder der Umsetzung der Richtlinie 2008/56/EG dienenden Schutzzwecke nur, wenn die Verlegung diese erheblich beeinträchtigen kann."
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "4.",
@@ -8454,7 +9180,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "Beschränkungen der Energieerzeugung aus Wasser, Strömung und Wind sowie der Aufsuchung und Gewinnung von Bodenschätzen sind zulässig a)im Hinblick auf Erhaltungsziele nach § 7 Absatz 1 Nummer 9 nur nach § 34 sowieb)im Hinblick auf weitere der Erfüllung bestehender völkerrechtlicher Verpflichtungen oder der Umsetzung der Richtlinie 2008/56/EG dienenden Schutzzwecke nur, wenn das Vorhaben diese erheblich beeinträchtigen kann."
+                          "md": "Beschränkungen der Energieerzeugung aus Wasser, Strömung und Wind sowie der Aufsuchung und Gewinnung von Bodenschätzen sind zulässig"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "im Hinblick auf Erhaltungsziele nach § 7 Absatz 1 Nummer 9 nur nach § 34 sowie"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "im Hinblick auf weitere der Erfüllung bestehender völkerrechtlicher Verpflichtungen oder der Umsetzung der Richtlinie 2008/56/EG dienenden Schutzzwecke nur, wenn das Vorhaben diese erheblich beeinträchtigen kann."
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "5.",
@@ -9412,7 +10164,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "entgegen § 44 Absatz 1 Nummer 1 a)einem wild lebenden Tier nachstellt, es fängt oder verletzt oder seine Entwicklungsformen aus der Natur entnimmt oder beschädigt oderb)ein wild lebendes Tier tötet oder seine Entwicklungsformen zerstört,"
+                          "md": "entgegen § 44 Absatz 1 Nummer 1"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "einem wild lebenden Tier nachstellt, es fängt oder verletzt oder seine Entwicklungsformen aus der Natur entnimmt oder beschädigt oder"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ein wild lebendes Tier tötet oder seine Entwicklungsformen zerstört,"
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "1.",
@@ -9445,7 +10223,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "entgegen § 44 Absatz 1 Nummer 4 a)eine wild lebende Pflanze oder ihre Entwicklungsformen aus der Natur entnimmt oder sie oder ihren Standort beschädigt oderb)eine wild lebende Pflanze oder ihre Entwicklungsformen zerstört,"
+                          "md": "entgegen § 44 Absatz 1 Nummer 4"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "eine wild lebende Pflanze oder ihre Entwicklungsformen aus der Natur entnimmt oder sie oder ihren Standort beschädigt oder"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "eine wild lebende Pflanze oder ihre Entwicklungsformen zerstört,"
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "4.",
@@ -9456,7 +10260,37 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "entgegen § 44 Absatz 2 Satz 1 Nummer 1, auch in Verbindung mit § 44 Absatz 3, a)ein Tier oder eine Pflanze einer anderen als in § 71a Absatz 1 Nummer 2 genannten besonders geschützten Art oderb)eine Ware im Sinne des Anhangs der Richtlinie 83/129/EWGin Besitz oder Gewahrsam nimmt, in Besitz oder Gewahrsam hat oder be- oder verarbeitet und erkennt oder fahrlässig nicht erkennt, dass sich die Handlung auf ein Tier oder eine Pflanze einer in Buchstabe a genannten Art oder auf eine in Buchstabe b genannte Ware bezieht,"
+                          "md": "entgegen § 44 Absatz 2 Satz 1 Nummer 1, auch in Verbindung mit § 44 Absatz 3,"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ein Tier oder eine Pflanze einer anderen als in § 71a Absatz 1 Nummer 2 genannten besonders geschützten Art oder"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "eine Ware im Sinne des Anhangs der Richtlinie 83/129/EWG"
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "md",
+                          "md": "in Besitz oder Gewahrsam nimmt, in Besitz oder Gewahrsam hat oder be- oder verarbeitet und erkennt oder fahrlässig nicht erkennt, dass sich die Handlung auf ein Tier oder eine Pflanze einer in Buchstabe a genannten Art oder auf eine in Buchstabe b genannte Ware bezieht,"
                         }
                       ],
                       "label": "5.",
@@ -9836,7 +10670,47 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "einer Rechtsverordnung nach a)(weggefallen)b)§ 54 Absatz 5,c)§ 54 Absatz 6 Satz 1, Absatz 7 oder Absatz 8oder einer vollziehbaren Anordnung auf Grund einer solchen Rechtsverordnung zuwiderhandelt, soweit die Rechtsverordnung für einen bestimmten Tatbestand auf diese Bußgeldvorschrift verweist."
+                          "md": "einer Rechtsverordnung nach"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "(weggefallen)"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "§ 54 Absatz 5,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "§ 54 Absatz 6 Satz 1, Absatz 7 oder Absatz 8"
+                                }
+                              ],
+                              "label": "c)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "md",
+                          "md": "oder einer vollziehbaren Anordnung auf Grund einer solchen Rechtsverordnung zuwiderhandelt, soweit die Rechtsverordnung für einen bestimmten Tatbestand auf diese Bußgeldvorschrift verweist."
                         }
                       ],
                       "label": "27.",
@@ -10013,7 +10887,63 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "das Bundesamt für Naturschutz in den Fällen a)des § 69 Absatz 2 Nummer 5 und 6, Absatz 3 Nummer 21, Absatz 4 Nummer 3 und Absatz 6 bei Handlungen im Zusammenhang mit der Einfuhr in die oder der Ausfuhr aus der Gemeinschaft oder dem Verbringen in die oder aus der Bundesrepublik Deutschland,b)des § 69 Absatz 3 Nummer 24 bei Verletzungen der Auskunftspflicht gegenüber dem Bundesamt,c)des § 69 Absatz 3 Nummer 25 und Absatz 4 Nummer 4 bei Maßnahmen des Bundesamtes,d)des § 69 Absatz 4 Nummer 1 und Absatz 5 Nummer 2,e)von sonstigen Ordnungswidrigkeiten nach § 69 Absatz 1 bis 6, die im Bereich der deutschen ausschließlichen Wirtschaftszone oder des Festlandsockels begangen worden sind,"
+                          "md": "das Bundesamt für Naturschutz in den Fällen"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "des § 69 Absatz 2 Nummer 5 und 6, Absatz 3 Nummer 21, Absatz 4 Nummer 3 und Absatz 6 bei Handlungen im Zusammenhang mit der Einfuhr in die oder der Ausfuhr aus der Gemeinschaft oder dem Verbringen in die oder aus der Bundesrepublik Deutschland,"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "des § 69 Absatz 3 Nummer 24 bei Verletzungen der Auskunftspflicht gegenüber dem Bundesamt,"
+                                }
+                              ],
+                              "label": "b)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "des § 69 Absatz 3 Nummer 25 und Absatz 4 Nummer 4 bei Maßnahmen des Bundesamtes,"
+                                }
+                              ],
+                              "label": "c)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "des § 69 Absatz 4 Nummer 1 und Absatz 5 Nummer 2,"
+                                }
+                              ],
+                              "label": "d)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "von sonstigen Ordnungswidrigkeiten nach § 69 Absatz 1 bis 6, die im Bereich der deutschen ausschließlichen Wirtschaftszone oder des Festlandsockels begangen worden sind,"
+                                }
+                              ],
+                              "label": "e)"
+                            }
+                          ]
                         }
                       ],
                       "label": "1.",
@@ -10240,7 +11170,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "entgegen § 44 Absatz 2 Satz 1 Nummer 1 ein Tier oder eine Pflanze in Besitz oder Gewahrsam nimmt, in Besitz oder Gewahrsam hat oder be- oder verarbeitet, das oder die a)einer streng geschützten Art angehört, die in Anhang IV der Richtlinie 92/43/EWG des Rates vom 21. Mai 1992 zur Erhaltung der natürlichen Lebensräume sowie der wildlebenden Tiere und Pflanzen (ABl. L 206 vom 22.7.1992, S. 7), die zuletzt durch die Richtlinie 2006/105/EG (ABl. L 363 vom 20.12.2006, S. 368) geändert worden ist, aufgeführt ist oderb)einer besonders geschützten Art angehört, die in Artikel 4 Absatz 2 oder Anhang I der Richtlinie 2009/147/EG aufgeführt ist, oder"
+                          "md": "entgegen § 44 Absatz 2 Satz 1 Nummer 1 ein Tier oder eine Pflanze in Besitz oder Gewahrsam nimmt, in Besitz oder Gewahrsam hat oder be- oder verarbeitet, das oder die"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "einer streng geschützten Art angehört, die in Anhang IV der Richtlinie 92/43/EWG des Rates vom 21. Mai 1992 zur Erhaltung der natürlichen Lebensräume sowie der wildlebenden Tiere und Pflanzen (ABl. L 206 vom 22.7.1992, S. 7), die zuletzt durch die Richtlinie 2006/105/EG (ABl. L 363 vom 20.12.2006, S. 368) geändert worden ist, aufgeführt ist oder"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "einer besonders geschützten Art angehört, die in Artikel 4 Absatz 2 oder Anhang I der Richtlinie 2009/147/EG aufgeführt ist, oder"
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "2.",
@@ -10834,7 +11790,343 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "Begriffsbestimmungen<br /><br />Im Sinne dieser Anlage ist –*A<sub>AHP</sub>* der prozentuale Anteil des Jahresertrages der Windenergieanlage, der mindestens im Rahmen des jährlich zu leistenden Beitrags in ein Artenhilfsprogramm zu leisten ist und der mit 2 Prozent festgelegt wird,–*A<sub>KSa</sub>* die anzunehmende Abschaltung bei Verwendung eines Antikollisionssystems je Jahr, die mit 3 Prozent festgelegt wird,–*AW* der anzulegende Wert in Euro je Megawattstunde, auf Grundlage der durchschnittlichen, mengengewichteten Zuschlagswerte der vergangenen drei Ausschreibungen von Windenergieanlagen an Land, veröffentlicht durch die Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahnen,–*B<sub>Abs</sub>* der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen im Basisschutz; der Basisschutz umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen,–*B<sub>MK</sub>* die monetären Kosten in Euro aller individuellen fachlich anerkannten Schutzmaßnahmen im Basisschutz,–*B<sub>MV</sub>* der maximal zumutbare monetäre Verlust in Euro im Basisschutz über 20 Jahre,–*B<sub>S</sub>* der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert für die Verringerung des Jahresertrages infolge von als Basisschutz erfolgenden Anordnungen von Schutzmaßnahmen, der in der artenschutzrechtlichen Ausnahme nicht überschritten werden darf, und der mit 4 Prozent für einen Regelfall-Standort oder mit 6 Prozent für einen windreichen Standort festgelegt wird,–*d* die prognostizierte Mindestnutzungsdauer einer Windenergieanlage an Land in Höhe von 20 Jahren,–*E<sub>r</sub>* der reale Energieertrag der Windenergieanlage in Megawattstunden des vergangenen Kalenderjahres,–*E<sub>rnte</sub>* die durchschnittliche Häufigkeit je Jahr eines Erntevorgangs je Flurstück, die mit 1 festgelegt wird,–*Flm<sub>a</sub>* die anzunehmende Abschaltung zum Schutz von Fledermäusen, die mit 2,5 Prozent festgelegt oder auf Grundlage eines Gutachtens oder einer Untersuchung der Fledermausaktivitäten ermittelt wird; sollte der Antragsteller ein Gutachten oder eine Untersuchung der Fledermausaktivitäten beauftragen, ist der Prozentwert der Abschaltung im Verhältnis zum Jahresertrag aus dem Gutachten oder der Untersuchung anzusetzen,–*Flst<sub>Ausn</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage, auf denen drei Brutvorkommen oder zwei Brutvorkommen bei besonders gefährdeten Vogelarten betroffen sind,–*Flst<sub>Ernte</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Feldfrüchten, auf denen Erntevorgänge erfolgen,–*Flst<sub>Mahd</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Grünland, auf denen Mahdvorgänge erfolgen,–*Flst<sub>Pflügen</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Ackerland, auf denen Pflugvorgänge erfolgen,–*h* die anzunehmende Stundenanzahl bezogen auf die Abschaltung bei einem landwirtschaftlichen Bewirtschaftungsereignis (Ernte, Mahd, Pflügen), die mit 14 festgelegt wird,–*h<sub>a</sub>* die Anzahl der Stunden eines Jahres, die mit 8 760 festgelegt wird,–*IK* die Summe der Investitionskosten in Euro aller Schutzmaßnahmen,–*K<sub>AS</sub>* der Selbstbehalt von den Investitionskosten für den Antragsteller in Höhe von 17 000 Euro je Megawatt zu installierender Leistung,–*M<sub>ahd</sub>* die durchschnittliche Häufigkeit je Jahr eines Mahdvorgangs je Flurstück, die mit 4 festgelegt wird,–*M<sub>r</sub>* der reale monetäre Ertrag der Windenergieanlage in Euro im vergangenen Kalenderjahr,–*P* die zu installierende Leistung der geplanten Windenergieanlage an Land in Megawatt, das heißt, die elektrische Wirkleistung, die eine Anlage bei bestimmungsgemäßem Betrieb ohne zeitliche Einschränkungen unbeschadet kurzfristiger geringfügiger Abweichungen technisch erbringen kann,–*P<sub>flügen</sub>* die durchschnittliche Häufigkeit je Jahr eines Pflugvorgangs je Flurstück, die mit 0,5 festgelegt wird,–*P<sub>häno</sub>* die Anzahl der Tage mit phänologischen Abschaltungen,–Regelfall-Standort ein Standort mit einem Gütefaktor ≤ 90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,–*VBH* die Anzahl der Vollbenutzungsstunden der Windenergieanlage, die aus den Ertragsgutachten zu entnehmen ist,–*VBH<sub>r</sub>* die Anzahl der realen Vollbenutzungsstunden der Windenergieanlage des vergangenen Kalenderjahres,–windreicher Standort ein Standort mit einem Gütefaktor > 90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,–*Z<sub>Abs</sub>* der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen,–*Z<sub>AHPa</sub>* die Höhe des jährlich zu leistenden Beitrags in Euro in ein Artenhilfsprogramm,–*Z<sub>Mo</sub>* die monetären Kosten in Euro der individuellen, fachlich anerkannten Schutzmaßnahmen in der Zumutbarkeit,–*Z<sub>MV</sub>* der maximal zumutbare monetäre Verlust in Euro über 20 Jahre,–*Z<sub>um</sub>* der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert, oberhalb dessen Verringerungen des Jahresertrages infolge der Anordnung von Schutzmaßnahmen als nicht mehr zumutbar gelten, und der mit 6 Prozent für einen Regelfall-Standort oder mit 8 Prozent für einen windreichen Standort festgelegt wird; die Zumutbarkeitsschwelle umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen."
+                          "md": "Begriffsbestimmungen<br /><br />Im Sinne dieser Anlage ist"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*A<sub>AHP</sub>* der prozentuale Anteil des Jahresertrages der Windenergieanlage, der mindestens im Rahmen des jährlich zu leistenden Beitrags in ein Artenhilfsprogramm zu leisten ist und der mit 2 Prozent festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*A<sub>KSa</sub>* die anzunehmende Abschaltung bei Verwendung eines Antikollisionssystems je Jahr, die mit 3 Prozent festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*AW* der anzulegende Wert in Euro je Megawattstunde, auf Grundlage der durchschnittlichen, mengengewichteten Zuschlagswerte der vergangenen drei Ausschreibungen von Windenergieanlagen an Land, veröffentlicht durch die Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahnen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*B<sub>Abs</sub>* der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen im Basisschutz; der Basisschutz umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*B<sub>MK</sub>* die monetären Kosten in Euro aller individuellen fachlich anerkannten Schutzmaßnahmen im Basisschutz,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*B<sub>MV</sub>* der maximal zumutbare monetäre Verlust in Euro im Basisschutz über 20 Jahre,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*B<sub>S</sub>* der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert für die Verringerung des Jahresertrages infolge von als Basisschutz erfolgenden Anordnungen von Schutzmaßnahmen, der in der artenschutzrechtlichen Ausnahme nicht überschritten werden darf, und der mit 4 Prozent für einen Regelfall-Standort oder mit 6 Prozent für einen windreichen Standort festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*d* die prognostizierte Mindestnutzungsdauer einer Windenergieanlage an Land in Höhe von 20 Jahren,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*E<sub>r</sub>* der reale Energieertrag der Windenergieanlage in Megawattstunden des vergangenen Kalenderjahres,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*E<sub>rnte</sub>* die durchschnittliche Häufigkeit je Jahr eines Erntevorgangs je Flurstück, die mit 1 festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Flm<sub>a</sub>* die anzunehmende Abschaltung zum Schutz von Fledermäusen, die mit 2,5 Prozent festgelegt oder auf Grundlage eines Gutachtens oder einer Untersuchung der Fledermausaktivitäten ermittelt wird; sollte der Antragsteller ein Gutachten oder eine Untersuchung der Fledermausaktivitäten beauftragen, ist der Prozentwert der Abschaltung im Verhältnis zum Jahresertrag aus dem Gutachten oder der Untersuchung anzusetzen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Flst<sub>Ausn</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage, auf denen drei Brutvorkommen oder zwei Brutvorkommen bei besonders gefährdeten Vogelarten betroffen sind,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Flst<sub>Ernte</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Feldfrüchten, auf denen Erntevorgänge erfolgen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Flst<sub>Mahd</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Grünland, auf denen Mahdvorgänge erfolgen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Flst<sub>Pflügen</sub>* die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Ackerland, auf denen Pflugvorgänge erfolgen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*h* die anzunehmende Stundenanzahl bezogen auf die Abschaltung bei einem landwirtschaftlichen Bewirtschaftungsereignis (Ernte, Mahd, Pflügen), die mit 14 festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*h<sub>a</sub>* die Anzahl der Stunden eines Jahres, die mit 8 760 festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*IK* die Summe der Investitionskosten in Euro aller Schutzmaßnahmen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*K<sub>AS</sub>* der Selbstbehalt von den Investitionskosten für den Antragsteller in Höhe von 17 000 Euro je Megawatt zu installierender Leistung,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*M<sub>ahd</sub>* die durchschnittliche Häufigkeit je Jahr eines Mahdvorgangs je Flurstück, die mit 4 festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*M<sub>r</sub>* der reale monetäre Ertrag der Windenergieanlage in Euro im vergangenen Kalenderjahr,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*P* die zu installierende Leistung der geplanten Windenergieanlage an Land in Megawatt, das heißt, die elektrische Wirkleistung, die eine Anlage bei bestimmungsgemäßem Betrieb ohne zeitliche Einschränkungen unbeschadet kurzfristiger geringfügiger Abweichungen technisch erbringen kann,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*P<sub>flügen</sub>* die durchschnittliche Häufigkeit je Jahr eines Pflugvorgangs je Flurstück, die mit 0,5 festgelegt wird,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*P<sub>häno</sub>* die Anzahl der Tage mit phänologischen Abschaltungen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "Regelfall-Standort ein Standort mit einem Gütefaktor ≤ 90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*VBH* die Anzahl der Vollbenutzungsstunden der Windenergieanlage, die aus den Ertragsgutachten zu entnehmen ist,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*VBH<sub>r</sub>* die Anzahl der realen Vollbenutzungsstunden der Windenergieanlage des vergangenen Kalenderjahres,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "windreicher Standort ein Standort mit einem Gütefaktor > 90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Z<sub>Abs</sub>* der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Z<sub>AHPa</sub>* die Höhe des jährlich zu leistenden Beitrags in Euro in ein Artenhilfsprogramm,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Z<sub>Mo</sub>* die monetären Kosten in Euro der individuellen, fachlich anerkannten Schutzmaßnahmen in der Zumutbarkeit,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Z<sub>MV</sub>* der maximal zumutbare monetäre Verlust in Euro über 20 Jahre,"
+                                }
+                              ],
+                              "label": "–"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "*Z<sub>um</sub>* der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert, oberhalb dessen Verringerungen des Jahresertrages infolge der Anordnung von Schutzmaßnahmen als nicht mehr zumutbar gelten, und der mit 6 Prozent für einen Regelfall-Standort oder mit 8 Prozent für einen windreichen Standort festgelegt wird; die Zumutbarkeitsschwelle umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen."
+                                }
+                              ],
+                              "label": "–"
+                            }
+                          ]
                         }
                       ],
                       "label": "1.",

@@ -9957,8 +9957,30 @@
                               "type": "li",
                               "children": [
                                 {
-                                  "type": "md",
-                                  "md": "a)die in § 82 Abs. 2 des Zwölften Buches Sozialgesetzbuch bezeichneten Beträge;b)bei Parteien, die ein Einkommen aus Erwerbstätigkeit erzielen, ein Betrag in Höhe von 50 vom Hundert des Regelsatzes, der für den alleinstehenden oder alleinerziehenden Leistungsberechtigten vom Bund gemäß der Regelbedarfsstufe 1 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;"
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die in § 82 Abs. 2 des Zwölften Buches Sozialgesetzbuch bezeichneten Beträge;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "bei Parteien, die ein Einkommen aus Erwerbstätigkeit erzielen, ein Betrag in Höhe von 50 vom Hundert des Regelsatzes, der für den alleinstehenden oder alleinerziehenden Leistungsberechtigten vom Bund gemäß der Regelbedarfsstufe 1 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -9968,8 +9990,30 @@
                               "type": "li",
                               "children": [
                                 {
-                                  "type": "md",
-                                  "md": "a)für die Partei und ihren Ehegatten oder ihren Lebenspartner jeweils ein Betrag in Höhe des um 10 vom Hundert erhöhten Regelsatzes, der für den alleinstehenden oder alleinerziehenden Leistungsberechtigten vom Bund gemäß der Regelbedarfsstufe 1 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;b)bei weiteren Unterhaltsleistungen auf Grund gesetzlicher Unterhaltspflicht für jede unterhaltsberechtigte Person jeweils ein Betrag in Höhe des um 10 vom Hundert erhöhten Regelsatzes, der für eine Person ihres Alters vom Bund gemäß den Regelbedarfsstufen 3 bis 6 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;"
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "für die Partei und ihren Ehegatten oder ihren Lebenspartner jeweils ein Betrag in Höhe des um 10 vom Hundert erhöhten Regelsatzes, der für den alleinstehenden oder alleinerziehenden Leistungsberechtigten vom Bund gemäß der Regelbedarfsstufe 1 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "bei weiteren Unterhaltsleistungen auf Grund gesetzlicher Unterhaltspflicht für jede unterhaltsberechtigte Person jeweils ein Betrag in Höhe des um 10 vom Hundert erhöhten Regelsatzes, der für eine Person ihres Alters vom Bund gemäß den Regelbedarfsstufen 3 bis 6 nach der Anlage zu § 28 des Zwölften Buches Sozialgesetzbuch festgesetzt oder fortgeschrieben worden ist;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -10459,7 +10503,37 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Bundes- oder Landeskassea)die rückständigen und die entstehenden Gerichtskosten und Gerichtsvollzieherkosten, b)die auf sie übergegangenen Ansprüche der beigeordneten Rechtsanwälte gegen die Partei nur nach den Bestimmungen, die das Gericht trifft, gegen die Partei geltend machen kann,"
+                                  "md": "die Bundes- oder Landeskasse"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die rückständigen und die entstehenden Gerichtskosten und Gerichtsvollzieherkosten,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die auf sie übergegangenen Ansprüche der beigeordneten Rechtsanwälte gegen die Partei"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "nur nach den Bestimmungen, die das Gericht trifft, gegen die Partei geltend machen kann,"
                                 }
                               ],
                               "label": "1.",
@@ -20073,7 +20147,123 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Zuständigkeit der Kammer nach § 72a Absatz 1 und 2 des Gerichtsverfassungsgesetzes oder nach dem Geschäftsverteilungsplan des Gerichts wegen der Zuordnung des Rechtsstreits zu den nachfolgenden Sachgebieten begründet ist:a)Streitigkeiten über Ansprüche aus Veröffentlichungen durch Druckerzeugnisse, Bild- und Tonträger jeder Art, insbesondere in Presse, Rundfunk, Film und Fernsehen;b)Streitigkeiten aus Bank- und Finanzgeschäften;c)Streitigkeiten aus Bau- und Architektenverträgen sowie aus Ingenieurverträgen, soweit sie im Zusammenhang mit Bauleistungen stehen;d)Streitigkeiten aus der Berufstätigkeit der Rechtsanwälte, Patentanwälte, Notare, Steuerberater, Steuerbevollmächtigten, Wirtschaftsprüfer und vereidigten Buchprüfer;e)Streitigkeiten über Ansprüche aus Heilbehandlungen;f)Streitigkeiten aus Handelssachen im Sinne des § 95 des Gerichtsverfassungsgesetzes;g)Streitigkeiten über Ansprüche aus Fracht-, Speditions- und Lagergeschäften;h)Streitigkeiten aus Versicherungsvertragsverhältnissen;i)Streitigkeiten aus den Bereichen des Urheber- und Verlagsrechts;j)Streitigkeiten aus den Bereichen der Kommunikations- und Informationstechnologie;k)Streitigkeiten, die dem Landgericht ohne Rücksicht auf den Streitwert zugewiesen sind."
+                                  "md": "die Zuständigkeit der Kammer nach § 72a Absatz 1 und 2 des Gerichtsverfassungsgesetzes oder nach dem Geschäftsverteilungsplan des Gerichts wegen der Zuordnung des Rechtsstreits zu den nachfolgenden Sachgebieten begründet ist:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten über Ansprüche aus Veröffentlichungen durch Druckerzeugnisse, Bild- und Tonträger jeder Art, insbesondere in Presse, Rundfunk, Film und Fernsehen;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus Bank- und Finanzgeschäften;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus Bau- und Architektenverträgen sowie aus Ingenieurverträgen, soweit sie im Zusammenhang mit Bauleistungen stehen;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus der Berufstätigkeit der Rechtsanwälte, Patentanwälte, Notare, Steuerberater, Steuerbevollmächtigten, Wirtschaftsprüfer und vereidigten Buchprüfer;"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten über Ansprüche aus Heilbehandlungen;"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus Handelssachen im Sinne des § 95 des Gerichtsverfassungsgesetzes;"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten über Ansprüche aus Fracht-, Speditions- und Lagergeschäften;"
+                                        }
+                                      ],
+                                      "label": "g)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus Versicherungsvertragsverhältnissen;"
+                                        }
+                                      ],
+                                      "label": "h)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus den Bereichen des Urheber- und Verlagsrechts;"
+                                        }
+                                      ],
+                                      "label": "i)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten aus den Bereichen der Kommunikations- und Informationstechnologie;"
+                                        }
+                                      ],
+                                      "label": "j)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Streitigkeiten, die dem Landgericht ohne Rücksicht auf den Streitwert zugewiesen sind."
+                                        }
+                                      ],
+                                      "label": "k)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -27348,7 +27538,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die Angabe der Revisionsgründe, und zwar:a)die bestimmte Bezeichnung der Umstände, aus denen sich die Rechtsverletzung ergibt;b)soweit die Revision darauf gestützt wird, dass das Gesetz in Bezug auf das Verfahren verletzt sei, die Bezeichnung der Tatsachen, die den Mangel ergeben."
+                              "md": "die Angabe der Revisionsgründe, und zwar:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die bestimmte Bezeichnung der Umstände, aus denen sich die Rechtsverletzung ergibt;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "soweit die Revision darauf gestützt wird, dass das Gesetz in Bezug auf das Verfahren verletzt sei, die Bezeichnung der Tatsachen, die den Mangel ergeben."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -28756,7 +28972,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Angabe der Rechtsbeschwerdegründe, und zwara)die bestimmte Bezeichnung der Umstände, aus denen sich die Rechtsverletzung ergibt; b)soweit die Rechtsbeschwerde darauf gestützt wird, dass das Gesetz in Bezug auf das Verfahren verletzt sei, die Bezeichnung der Tatsachen, die den Mangel ergeben."
+                                  "md": "die Angabe der Rechtsbeschwerdegründe, und zwar"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die bestimmte Bezeichnung der Umstände, aus denen sich die Rechtsverletzung ergibt;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "soweit die Rechtsbeschwerde darauf gestützt wird, dass das Gesetz in Bezug auf das Verfahren verletzt sei, die Bezeichnung der Tatsachen, die den Mangel ergeben."
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -29120,7 +29362,33 @@
                       "children": [
                         {
                           "type": "md",
-                          "md": "wenn die Parteia)ein in derselben Sache erlassenes, früher rechtskräftig gewordenes Urteil oder b)eine andere Urkunde auffindet oder zu benutzen in den Stand gesetzt wird, die eine ihr günstigere Entscheidung herbeigeführt haben würde;"
+                          "md": "wenn die Partei"
+                        },
+                        {
+                          "type": "list",
+                          "listType": "arabic",
+                          "children": [
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "ein in derselben Sache erlassenes, früher rechtskräftig gewordenes Urteil oder"
+                                }
+                              ],
+                              "label": "a)"
+                            },
+                            {
+                              "type": "li",
+                              "children": [
+                                {
+                                  "type": "md",
+                                  "md": "eine andere Urkunde auffindet oder zu benutzen in den Stand gesetzt wird, die eine ihr günstigere Entscheidung herbeigeführt haben würde;"
+                                }
+                              ],
+                              "label": "b)"
+                            }
+                          ]
                         }
                       ],
                       "label": "7.",
@@ -35430,7 +35698,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "notariellen Urkunden von a)dem die Urkunde verwahrenden Notar,b)der die Urkunde verwahrenden Notarkammer oderc)dem die Urkunde verwahrenden Amtsgericht."
+                              "md": "notariellen Urkunden von"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem die Urkunde verwahrenden Notar,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der die Urkunde verwahrenden Notarkammer oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem die Urkunde verwahrenden Amtsgericht."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -35469,7 +35773,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "notariellen Urkunden von a)dem die Urkunde verwahrenden Notar,b)der die Urkunde verwahrenden Notarkammer oderc)dem die Urkunde verwahrenden Amtsgericht."
+                              "md": "notariellen Urkunden von"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem die Urkunde verwahrenden Notar,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der die Urkunde verwahrenden Notarkammer oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem die Urkunde verwahrenden Amtsgericht."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -35508,7 +35848,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "notariellen Urkunden von dem Amtsgericht, a)in dessen Bezirk der die Urkunde verwahrende Notar seinen Amtssitz hat,b)in dessen Bezirk die die Urkunde verwahrende Notarkammer ihren Sitz hat oderc)das die Urkunde verwahrt."
+                              "md": "notariellen Urkunden von dem Amtsgericht,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in dessen Bezirk der die Urkunde verwahrende Notar seinen Amtssitz hat,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in dessen Bezirk die die Urkunde verwahrende Notarkammer ihren Sitz hat oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das die Urkunde verwahrt."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -36814,7 +37190,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Ladung zu dem Termin zur Abgabe der Vermögensauskunft an den Schuldner nicht zustellbar ist und a)die Anschrift, unter der die Zustellung ausgeführt werden sollte, mit der Anschrift übereinstimmt, die von einer der in § 755 Absatz 1 und 2 genannten Stellen innerhalb von drei Monaten vor oder nach dem Zustellungsversuch mitgeteilt wurde, oderb)die Meldebehörde nach dem Zustellungsversuch die Auskunft erteilt, dass ihr keine derzeitige Anschrift des Schuldners bekannt ist, oderc)die Meldebehörde innerhalb von drei Monaten vor Erteilung des Vollstreckungsauftrags die Auskunft erteilt hat, dass ihr keine derzeitige Anschrift des Schuldners bekannt ist;"
+                                  "md": "die Ladung zu dem Termin zur Abgabe der Vermögensauskunft an den Schuldner nicht zustellbar ist und"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Anschrift, unter der die Zustellung ausgeführt werden sollte, mit der Anschrift übereinstimmt, die von einer der in § 755 Absatz 1 und 2 genannten Stellen innerhalb von drei Monaten vor oder nach dem Zustellungsversuch mitgeteilt wurde, oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Meldebehörde nach dem Zustellungsversuch die Auskunft erteilt, dass ihr keine derzeitige Anschrift des Schuldners bekannt ist, oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Meldebehörde innerhalb von drei Monaten vor Erteilung des Vollstreckungsauftrags die Auskunft erteilt hat, dass ihr keine derzeitige Anschrift des Schuldners bekannt ist;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -37285,7 +37697,53 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Sachen, die der Schuldner oder eine Person, mit der er in einem gemeinsamen Haushalt zusammenlebt, benötigt a)für eine bescheidene Lebens- und Haushaltsführung;b)für die Ausübung einer Erwerbstätigkeit oder eine damit in Zusammenhang stehende Aus- oder Fortbildung;c)aus gesundheitlichen Gründen;d)zur Ausübung von Religion oder Weltanschauung oder als Gegenstand religiöser oder weltanschaulicher Verehrung, wenn ihr Wert 500 Euro nicht übersteigt;"
+                                      "md": "Sachen, die der Schuldner oder eine Person, mit der er in einem gemeinsamen Haushalt zusammenlebt, benötigt"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "für eine bescheidene Lebens- und Haushaltsführung;"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "für die Ausübung einer Erwerbstätigkeit oder eine damit in Zusammenhang stehende Aus- oder Fortbildung;"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "aus gesundheitlichen Gründen;"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "zur Ausübung von Religion oder Weltanschauung oder als Gegenstand religiöser oder weltanschaulicher Verehrung, wenn ihr Wert 500 Euro nicht übersteigt;"
+                                            }
+                                          ],
+                                          "label": "d)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -37307,7 +37765,37 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Bargeld a)für den Schuldner, der eine natürliche Person ist, in Höhe von einem Fünftel,b)für jede weitere Person, mit der der Schuldner in einem gemeinsamen Haushalt zusammenlebt, in Höhe von einem Zehnteldes täglichen Freibetrages nach § 850c Absatz 1 Nummer 3 in Verbindung mit Absatz 4 Nummer 1 für jeden Kalendertag ab dem Zeitpunkt der Pfändung bis zu dem Ende des Monats, in dem die Pfändung bewirkt wird; der Gerichtsvollzieher kann im Einzelfall nach pflichtgemäßem Ermessen einen abweichenden Betrag festsetzen;"
+                                      "md": "Bargeld"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "für den Schuldner, der eine natürliche Person ist, in Höhe von einem Fünftel,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "für jede weitere Person, mit der der Schuldner in einem gemeinsamen Haushalt zusammenlebt, in Höhe von einem Zehntel"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "md",
+                                      "md": "des täglichen Freibetrages nach § 850c Absatz 1 Nummer 3 in Verbindung mit Absatz 4 Nummer 1 für jeden Kalendertag ab dem Zeitpunkt der Pfändung bis zu dem Ende des Monats, in dem die Pfändung bewirkt wird; der Gerichtsvollzieher kann im Einzelfall nach pflichtgemäßem Ermessen einen abweichenden Betrag festsetzen;"
                                     }
                                   ],
                                   "label": "3.",
@@ -37362,7 +37850,37 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Tiere, die der Schuldner oder eine Person, mit der er in einem gemeinsamen Haushalt zusammenlebt, a)nicht zu Erwerbszwecken hält oderb)für die Ausübung einer Erwerbstätigkeit benötigt,sowie das für diese Tiere erforderliche Futter und die erforderliche Streu."
+                                      "md": "Tiere, die der Schuldner oder eine Person, mit der er in einem gemeinsamen Haushalt zusammenlebt,"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "nicht zu Erwerbszwecken hält oder"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "für die Ausübung einer Erwerbstätigkeit benötigt,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "md",
+                                      "md": "sowie das für diese Tiere erforderliche Futter und die erforderliche Streu."
                                     }
                                   ],
                                   "label": "8.",
@@ -39969,7 +40487,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Nicht mitzurechnen sind die nach § 850a der Pfändung entzogenen Bezüge, ferner Beträge, die unmittelbar auf Grund steuerrechtlicher oder sozialrechtlicher Vorschriften zur Erfüllung gesetzlicher Verpflichtungen des Schuldners abzuführen sind. Diesen Beträgen stehen gleich die auf den Auszahlungszeitraum entfallenden Beträge, die der Schuldnera)nach den Vorschriften der Sozialversicherungsgesetze zur Weiterversicherung entrichtet oder b)an eine Ersatzkasse oder an ein Unternehmen der privaten Krankenversicherung leistet, soweit sie den Rahmen des Üblichen nicht übersteigen."
+                                      "md": "Nicht mitzurechnen sind die nach § 850a der Pfändung entzogenen Bezüge, ferner Beträge, die unmittelbar auf Grund steuerrechtlicher oder sozialrechtlicher Vorschriften zur Erfüllung gesetzlicher Verpflichtungen des Schuldners abzuführen sind. Diesen Beträgen stehen gleich die auf den Auszahlungszeitraum entfallenden Beträge, die der Schuldner"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "nach den Vorschriften der Sozialversicherungsgesetze zur Weiterversicherung entrichtet oder"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "an eine Ersatzkasse oder an ein Unternehmen der privaten Krankenversicherung leistet, soweit sie den Rahmen des Üblichen nicht übersteigen."
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -40519,7 +41063,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "jährlich nicht mehr betragen als a)6 000 Euro bei einem Schuldner vom 18. bis zum vollendeten 27. Lebensjahr undb)7 000 Euro bei einem Schuldner vom 28. bis zum vollendeten 67. Lebensjahr und"
+                                      "md": "jährlich nicht mehr betragen als"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "6 000 Euro bei einem Schuldner vom 18. bis zum vollendeten 27. Lebensjahr und"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "7 000 Euro bei einem Schuldner vom 28. bis zum vollendeten 67. Lebensjahr und"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -43285,7 +43855,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die pfändungsfreien Beträge nach § 850c Absatz 2 in Verbindung mit Absatz 4, wenn der Schuldner a)einer Person oder mehreren Personen auf Grund gesetzlicher Verpflichtung Unterhalt gewährt;b)Geldleistungen nach dem Zweiten oder Zwölften Buch Sozialgesetzbuch für Personen entgegennimmt, die mit ihm in einer Bedarfsgemeinschaft im Sinne des § 7 Absatz 3 des Zweiten Buches Sozialgesetzbuch oder in einer Gemeinschaft nach den §§ 19, 20, 27, 39 Satz 1 oder § 43 des Zwölften Buches Sozialgesetzbuch leben und denen er nicht auf Grund gesetzlicher Vorschriften zum Unterhalt verpflichtet ist;c)Geldleistungen nach dem Asylbewerberleistungsgesetz für Personen entgegennimmt, mit denen er in einem gemeinsamen Haushalt zusammenlebt und denen er nicht auf Grund gesetzlicher Vorschriften zum Unterhalt verpflichtet ist;"
+                              "md": "die pfändungsfreien Beträge nach § 850c Absatz 2 in Verbindung mit Absatz 4, wenn der Schuldner"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "einer Person oder mehreren Personen auf Grund gesetzlicher Verpflichtung Unterhalt gewährt;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Geldleistungen nach dem Zweiten oder Zwölften Buch Sozialgesetzbuch für Personen entgegennimmt, die mit ihm in einer Bedarfsgemeinschaft im Sinne des § 7 Absatz 3 des Zweiten Buches Sozialgesetzbuch oder in einer Gemeinschaft nach den §§ 19, 20, 27, 39 Satz 1 oder § 43 des Zwölften Buches Sozialgesetzbuch leben und denen er nicht auf Grund gesetzlicher Vorschriften zum Unterhalt verpflichtet ist;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Geldleistungen nach dem Asylbewerberleistungsgesetz für Personen entgegennimmt, mit denen er in einem gemeinsamen Haushalt zusammenlebt und denen er nicht auf Grund gesetzlicher Vorschriften zum Unterhalt verpflichtet ist;"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -46815,7 +47421,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "der Klägera)es versäumt, seine Klage nach § 1046 Abs. 1 einzureichen und kein Fall des § 1048 Abs. 4 vorliegt, oder b)seine Klage zurücknimmt, es sei denn, dass der Beklagte dem widerspricht und das Schiedsgericht ein berechtigtes Interesse des Beklagten an der endgültigen Beilegung der Streitigkeit anerkennt; oder"
+                              "md": "der Kläger"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "es versäumt, seine Klage nach § 1046 Abs. 1 einzureichen und kein Fall des § 1048 Abs. 4 vorliegt, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "seine Klage zurücknimmt, es sei denn, dass der Beklagte dem widerspricht und das Schiedsgericht ein berechtigtes Interesse des Beklagten an der endgültigen Beilegung der Streitigkeit anerkennt; oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -47038,7 +47670,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "wenn der Antragsteller begründet geltend macht, dassa)eine der Parteien, die eine Schiedsvereinbarung nach den §§ 1029, 1031 geschlossen haben, nach dem Recht, das für sie persönlich maßgebend ist, hierzu nicht fähig war, oder dass die Schiedsvereinbarung nach dem Recht, dem die Parteien sie unterstellt haben oder, falls die Parteien hierüber nichts bestimmt haben, nach deutschem Recht ungültig ist oder b)er von der Bestellung eines Schiedsrichters oder von dem schiedsrichterlichen Verfahren nicht gehörig in Kenntnis gesetzt worden ist oder dass er aus einem anderen Grund seine Angriffs- oder Verteidigungsmittel nicht hat geltend machen können oder c)der Schiedsspruch eine Streitigkeit betrifft, die in der Schiedsabrede nicht erwähnt ist oder nicht unter die Bestimmungen der Schiedsklausel fällt, oder dass er Entscheidungen enthält, welche die Grenzen der Schiedsvereinbarung überschreiten; kann jedoch der Teil des Schiedsspruchs, der sich auf Streitpunkte bezieht, die dem schiedsrichterlichen Verfahren unterworfen waren, von dem Teil, der Streitpunkte betrifft, die ihm nicht unterworfen waren, getrennt werden, so kann nur der letztgenannte Teil des Schiedsspruchs aufgehoben werden; oder d)die Bildung des Schiedsgerichts oder das schiedsrichterliche Verfahren einer Bestimmung dieses Buches oder einer zulässigen Vereinbarung der Parteien nicht entsprochen hat und anzunehmen ist, dass sich dies auf den Schiedsspruch ausgewirkt hat; oder"
+                              "md": "wenn der Antragsteller begründet geltend macht, dass"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine der Parteien, die eine Schiedsvereinbarung nach den §§ 1029, 1031 geschlossen haben, nach dem Recht, das für sie persönlich maßgebend ist, hierzu nicht fähig war, oder dass die Schiedsvereinbarung nach dem Recht, dem die Parteien sie unterstellt haben oder, falls die Parteien hierüber nichts bestimmt haben, nach deutschem Recht ungültig ist oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "er von der Bestellung eines Schiedsrichters oder von dem schiedsrichterlichen Verfahren nicht gehörig in Kenntnis gesetzt worden ist oder dass er aus einem anderen Grund seine Angriffs- oder Verteidigungsmittel nicht hat geltend machen können oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Schiedsspruch eine Streitigkeit betrifft, die in der Schiedsabrede nicht erwähnt ist oder nicht unter die Bestimmungen der Schiedsklausel fällt, oder dass er Entscheidungen enthält, welche die Grenzen der Schiedsvereinbarung überschreiten; kann jedoch der Teil des Schiedsspruchs, der sich auf Streitpunkte bezieht, die dem schiedsrichterlichen Verfahren unterworfen waren, von dem Teil, der Streitpunkte betrifft, die ihm nicht unterworfen waren, getrennt werden, so kann nur der letztgenannte Teil des Schiedsspruchs aufgehoben werden; oder"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Bildung des Schiedsgerichts oder das schiedsrichterliche Verfahren einer Bestimmung dieses Buches oder einer zulässigen Vereinbarung der Parteien nicht entsprochen hat und anzunehmen ist, dass sich dies auf den Schiedsspruch ausgewirkt hat; oder"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -47049,7 +47727,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "wenn das Gericht feststellt, dassa)der Gegenstand des Streites nach deutschem Recht nicht schiedsfähig ist oder b)die Anerkennung oder Vollstreckung des Schiedsspruchs zu einem Ergebnis führt, das der öffentlichen Ordnung (ordre public) widerspricht."
+                              "md": "wenn das Gericht feststellt, dass"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Gegenstand des Streites nach deutschem Recht nicht schiedsfähig ist oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anerkennung oder Vollstreckung des Schiedsspruchs zu einem Ergebnis führt, das der öffentlichen Ordnung (ordre public) widerspricht."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",

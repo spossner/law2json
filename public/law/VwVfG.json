@@ -875,7 +875,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "in anderen Angelegenheiten, diea)eine natürliche Person betreffen, die Behörde, in deren Bezirk die natürliche Person ihren gewöhnlichen Aufenthalt hat oder zuletzt hatte, b)eine juristische Person oder eine Vereinigung betreffen, die Behörde, in deren Bezirk die juristische Person oder die Vereinigung ihren Sitz hat oder zuletzt hatte;"
+                              "md": "in anderen Angelegenheiten, die"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine natürliche Person betreffen, die Behörde, in deren Bezirk die natürliche Person ihren gewöhnlichen Aufenthalt hat oder zuletzt hatte,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine juristische Person oder eine Vereinigung betreffen, die Behörde, in deren Bezirk die juristische Person oder die Vereinigung ihren Sitz hat oder zuletzt hatte;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -989,7 +1015,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "durch Übermittlung einer von dem Erklärenden elektronisch signierten Erklärung an die Behörde a)aus einem besonderen elektronischen Anwaltspostfach nach den §§ 31a und 31b der Bundesrechtsanwaltsordnung oder aus einem entsprechenden, auf gesetzlicher Grundlage errichteten elektronischen Postfach;b)aus einem elektronischen Postfach einer Behörde oder einer juristischen Person des öffentlichen Rechts, das nach Durchführung eines Identifizierungsverfahrens nach den Regelungen der auf Grund des § 130a Absatz 2 Satz 2 der Zivilprozessordnung erlassenen Rechtsverordnung eingerichtet wurde;c)aus einem elektronischen Postfach einer natürlichen oder juristischen Person oder einer sonstigen Vereinigung, das nach Durchführung eines Identifizierungsverfahrens nach den Regelungen der auf Grund des § 130a Absatz 2 Satz 2 der Zivilprozessordnung erlassenen Rechtsverordnung eingerichtet wurde;d)mit der Versandart nach § 5 Absatz 5 des De-Mail-Gesetzes;"
+                              "md": "durch Übermittlung einer von dem Erklärenden elektronisch signierten Erklärung an die Behörde"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "aus einem besonderen elektronischen Anwaltspostfach nach den §§ 31a und 31b der Bundesrechtsanwaltsordnung oder aus einem entsprechenden, auf gesetzlicher Grundlage errichteten elektronischen Postfach;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "aus einem elektronischen Postfach einer Behörde oder einer juristischen Person des öffentlichen Rechts, das nach Durchführung eines Identifizierungsverfahrens nach den Regelungen der auf Grund des § 130a Absatz 2 Satz 2 der Zivilprozessordnung erlassenen Rechtsverordnung eingerichtet wurde;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "aus einem elektronischen Postfach einer natürlichen oder juristischen Person oder einer sonstigen Vereinigung, das nach Durchführung eines Identifizierungsverfahrens nach den Regelungen der auf Grund des § 130a Absatz 2 Satz 2 der Zivilprozessordnung erlassenen Rechtsverordnung eingerichtet wurde;"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "mit der Versandart nach § 5 Absatz 5 des De-Mail-Gesetzes;"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -1000,7 +1072,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei elektronischen Verwaltungsakten oder sonstigen elektronischen Dokumenten der Behörde, a)indem diese mit dem qualifizierten elektronischen Siegel der Behörde versehen werden;b)durch Versendung einer De-Mail-Nachricht nach § 5 Absatz 5 des De-Mail-Gesetzes, bei der die Bestätigung des akkreditierten Diensteanbieters die erlassende Behörde als Nutzer des De-Mail-Kontos erkennen lässt."
+                              "md": "bei elektronischen Verwaltungsakten oder sonstigen elektronischen Dokumenten der Behörde,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "indem diese mit dem qualifizierten elektronischen Siegel der Behörde versehen werden;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch Versendung einer De-Mail-Nachricht nach § 5 Absatz 5 des De-Mail-Gesetzes, bei der die Bestätigung des akkreditierten Diensteanbieters die erlassende Behörde als Nutzer des De-Mail-Kontos erkennen lässt."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -3641,7 +3739,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "elektronischen Dokumenten,a)die zur Abbildung eines Schriftstücks hergestellt wurden,b)die ein anderes technisches Format als das Ausgangsdokument, das verbunden ist mit einer qualifizierten elektronischen Signatur oder einem qualifizierten elektronischen Siegel einer Behörde, erhalten haben."
+                              "md": "elektronischen Dokumenten,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die zur Abbildung eines Schriftstücks hergestellt wurden,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die ein anderes technisches Format als das Ausgangsdokument, das verbunden ist mit einer qualifizierten elektronischen Signatur oder einem qualifizierten elektronischen Siegel einer Behörde, erhalten haben."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -3669,7 +3793,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "des Ausdrucks eines elektronischen Dokuments, das mit einer qualifizierten elektronischen Signatur oder einem qualifizierten elektronischen Siegel einer Behörde verbunden ist, die Feststellungen enthalten, a)wen die Signaturprüfung als Inhaber der Signatur ausweist oder welche Behörde die Signaturprüfung als Inhaber des Siegels ausweist,b)welchen Zeitpunkt die Signaturprüfung für die Anbringung der Signatur oder des Siegels ausweist undc)welche Zertifikate mit welchen Daten dieser Signatur oder diesem Siegel zu Grunde lagen;"
+                              "md": "des Ausdrucks eines elektronischen Dokuments, das mit einer qualifizierten elektronischen Signatur oder einem qualifizierten elektronischen Siegel einer Behörde verbunden ist, die Feststellungen enthalten,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "wen die Signaturprüfung als Inhaber der Signatur ausweist oder welche Behörde die Signaturprüfung als Inhaber des Siegels ausweist,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "welchen Zeitpunkt die Signaturprüfung für die Anbringung der Signatur oder des Siegels ausweist und"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "welche Zertifikate mit welchen Daten dieser Signatur oder diesem Siegel zu Grunde lagen;"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -6444,7 +6604,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "dassa)die Personen, die Einwendungen erhoben haben, oder die Vereinigungen, die Stellungnahmen abgegeben haben, von dem Erörterungstermin durch öffentliche Bekanntmachung benachrichtigt werden können,b)die Zustellung der Entscheidung über die Einwendungen durch öffentliche Bekanntmachung ersetzt werden kann,wenn mehr als 50 Benachrichtigungen oder Zustellungen vorzunehmen sind."
+                              "md": "dass"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Personen, die Einwendungen erhoben haben, oder die Vereinigungen, die Stellungnahmen abgegeben haben, von dem Erörterungstermin durch öffentliche Bekanntmachung benachrichtigt werden können,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Zustellung der Entscheidung über die Einwendungen durch öffentliche Bekanntmachung ersetzt werden kann,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "wenn mehr als 50 Benachrichtigungen oder Zustellungen vorzunehmen sind."
                             }
                           ],
                           "label": "4.",

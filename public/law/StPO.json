@@ -5873,7 +5873,233 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Strafgesetzbuch: a)Straftaten des Friedensverrats, des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 80a bis 82, 84 bis 86, 87 bis 89a, 89c Absatz 1 bis 4, 94 bis 100a,b)Bestechlichkeit und Bestechung von Mandatsträgern nach § 108e,c)Straftaten gegen die Landesverteidigung nach den §§ 109d bis 109h,d)Straftaten gegen die öffentliche Ordnung nach § 127 Absatz 3 und 4 sowie den §§ 129 bis 130,e)Geld- und Wertzeichenfälschung nach den §§ 146 und 151, jeweils auch in Verbindung mit § 152, sowie nach § 152a Abs. 3 und § 152b Abs. 1 bis 4,f)Straftaten gegen die sexuelle Selbstbestimmung in den Fällen der §§ 176, 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,g)Verbreitung, Erwerb und Besitz kinder- und jugendpornographischer Inhalte nach § 184b, § 184c Absatz 2,h)Mord und Totschlag nach den §§ 211 und 212,i)Straftaten gegen die persönliche Freiheit nach den §§ 232, 232a Absatz 1 bis 5, den §§ 232b, 233 Absatz 2, den §§ 233a, 234 bis 234b, 239a und 239b,j)Bandendiebstahl nach § 244 Abs. 1 Nr. 2, Wohnungseinbruchdiebstahl nach § 244 Absatz 4 und schwerer Bandendiebstahl nach § 244a,k)Straftaten des Raubes und der Erpressung nach den §§ 249 bis 255,l)gewerbsmäßige Hehlerei, Bandenhehlerei und gewerbsmäßige Bandenhehlerei nach den §§ 260 und 260a,m)Geldwäsche nach § 261, wenn die Vortat eine der in den Nummern 1 bis 11 genannten schweren Straftaten ist,n)Betrug und Computerbetrug unter den in § 263 Abs. 3 Satz 2 genannten Voraussetzungen und im Falle des § 263 Abs. 5, jeweils auch in Verbindung mit § 263a Abs. 2,o)Subventionsbetrug unter den in § 264 Abs. 2 Satz 2 genannten Voraussetzungen und im Falle des § 264 Abs. 3 in Verbindung mit § 263 Abs. 5,p)Sportwettbetrug und Manipulation von berufssportlichen Wettbewerben unter den in § 265e Satz 2 genannten Voraussetzungen,q)Vorenthalten und Veruntreuen von Arbeitsentgelt unter den in § 266a Absatz 4 Satz 2 Nummer 4 genannten Voraussetzungen,r)Straftaten der Urkundenfälschung unter den in § 267 Abs. 3 Satz 2 genannten Voraussetzungen und im Fall des § 267 Abs. 4, jeweils auch in Verbindung mit § 268 Abs. 5 oder § 269 Abs. 3, sowie nach § 275 Abs. 2 und § 276 Abs. 2,s)Bankrott unter den in § 283a Satz 2 genannten Voraussetzungen,t)Straftaten gegen den Wettbewerb nach § 298 und, unter den in § 300 Satz 2 genannten Voraussetzungen, nach § 299,u)gemeingefährliche Straftaten in den Fällen der §§ 306 bis 306c, 307 Abs. 1 bis 3, des § 308 Abs. 1 bis 3, des § 309 Abs. 1 bis 4, des § 310 Abs. 1, der §§ 313, 314, 315 Abs. 3, des § 315b Abs. 3 sowie der §§ 316a und 316c,v)Bestechlichkeit und Bestechung nach den §§ 332 und 334,"
+                              "md": "aus dem Strafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten des Friedensverrats, des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 80a bis 82, 84 bis 86, 87 bis 89a, 89c Absatz 1 bis 4, 94 bis 100a,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bestechlichkeit und Bestechung von Mandatsträgern nach § 108e,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die Landesverteidigung nach den §§ 109d bis 109h,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die öffentliche Ordnung nach § 127 Absatz 3 und 4 sowie den §§ 129 bis 130,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Geld- und Wertzeichenfälschung nach den §§ 146 und 151, jeweils auch in Verbindung mit § 152, sowie nach § 152a Abs. 3 und § 152b Abs. 1 bis 4,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die sexuelle Selbstbestimmung in den Fällen der §§ 176, 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbreitung, Erwerb und Besitz kinder- und jugendpornographischer Inhalte nach § 184b, § 184c Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Mord und Totschlag nach den §§ 211 und 212,"
+                                    }
+                                  ],
+                                  "label": "h)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die persönliche Freiheit nach den §§ 232, 232a Absatz 1 bis 5, den §§ 232b, 233 Absatz 2, den §§ 233a, 234 bis 234b, 239a und 239b,"
+                                    }
+                                  ],
+                                  "label": "i)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bandendiebstahl nach § 244 Abs. 1 Nr. 2, Wohnungseinbruchdiebstahl nach § 244 Absatz 4 und schwerer Bandendiebstahl nach § 244a,"
+                                    }
+                                  ],
+                                  "label": "j)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten des Raubes und der Erpressung nach den §§ 249 bis 255,"
+                                    }
+                                  ],
+                                  "label": "k)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gewerbsmäßige Hehlerei, Bandenhehlerei und gewerbsmäßige Bandenhehlerei nach den §§ 260 und 260a,"
+                                    }
+                                  ],
+                                  "label": "l)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Geldwäsche nach § 261, wenn die Vortat eine der in den Nummern 1 bis 11 genannten schweren Straftaten ist,"
+                                    }
+                                  ],
+                                  "label": "m)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Betrug und Computerbetrug unter den in § 263 Abs. 3 Satz 2 genannten Voraussetzungen und im Falle des § 263 Abs. 5, jeweils auch in Verbindung mit § 263a Abs. 2,"
+                                    }
+                                  ],
+                                  "label": "n)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Subventionsbetrug unter den in § 264 Abs. 2 Satz 2 genannten Voraussetzungen und im Falle des § 264 Abs. 3 in Verbindung mit § 263 Abs. 5,"
+                                    }
+                                  ],
+                                  "label": "o)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Sportwettbetrug und Manipulation von berufssportlichen Wettbewerben unter den in § 265e Satz 2 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "p)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Vorenthalten und Veruntreuen von Arbeitsentgelt unter den in § 266a Absatz 4 Satz 2 Nummer 4 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "q)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten der Urkundenfälschung unter den in § 267 Abs. 3 Satz 2 genannten Voraussetzungen und im Fall des § 267 Abs. 4, jeweils auch in Verbindung mit § 268 Abs. 5 oder § 269 Abs. 3, sowie nach § 275 Abs. 2 und § 276 Abs. 2,"
+                                    }
+                                  ],
+                                  "label": "r)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bankrott unter den in § 283a Satz 2 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "s)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen den Wettbewerb nach § 298 und, unter den in § 300 Satz 2 genannten Voraussetzungen, nach § 299,"
+                                    }
+                                  ],
+                                  "label": "t)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gemeingefährliche Straftaten in den Fällen der §§ 306 bis 306c, 307 Abs. 1 bis 3, des § 308 Abs. 1 bis 3, des § 309 Abs. 1 bis 4, des § 310 Abs. 1, der §§ 313, 314, 315 Abs. 3, des § 315b Abs. 3 sowie der §§ 316a und 316c,"
+                                    }
+                                  ],
+                                  "label": "u)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bestechlichkeit und Bestechung nach den §§ 332 und 334,"
+                                    }
+                                  ],
+                                  "label": "v)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -5884,7 +6110,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus der Abgabenordnung: a)Steuerhinterziehung unter den in § 370 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzungen, sofern der Täter als Mitglied einer Bande, die sich zur fortgesetzten Begehung von Taten nach § 370 Absatz 1 verbunden hat, handelt, oder unter den in § 370 Absatz 3 Satz 2 Nummer 5 genannten Voraussetzungen,b)gewerbsmäßiger, gewaltsamer und bandenmäßiger Schmuggel nach § 373,c)Steuerhehlerei im Falle des § 374 Abs. 2,"
+                              "md": "aus der Abgabenordnung:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Steuerhinterziehung unter den in § 370 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzungen, sofern der Täter als Mitglied einer Bande, die sich zur fortgesetzten Begehung von Taten nach § 370 Absatz 1 verbunden hat, handelt, oder unter den in § 370 Absatz 3 Satz 2 Nummer 5 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gewerbsmäßiger, gewaltsamer und bandenmäßiger Schmuggel nach § 373,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Steuerhehlerei im Falle des § 374 Abs. 2,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -5906,7 +6168,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Asylgesetz: a)Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Abs. 3,b)gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a,"
+                              "md": "aus dem Asylgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Abs. 3,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -5917,7 +6205,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Aufenthaltsgesetz: a)Einschleusen von Ausländern und Personen, auf die das Freizügigkeitsgesetz/EU Anwendung findet, nach § 96 Absatz 1, 2 und 4,b)Einschleusen mit Todesfolge und gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                              "md": "aus dem Aufenthaltsgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen von Ausländern und Personen, auf die das Freizügigkeitsgesetz/EU Anwendung findet, nach § 96 Absatz 1, 2 und 4,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen mit Todesfolge und gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -5950,7 +6264,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Betäubungsmittelgesetz: a)Straftaten nach einer in § 29 Abs. 3 Satz 2 Nr. 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach den §§ 29a, 30 Abs. 1 Nr. 1, 2 und 4 sowie den §§ 30a und 30b,"
+                              "md": "aus dem Betäubungsmittelgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach einer in § 29 Abs. 3 Satz 2 Nr. 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach den §§ 29a, 30 Abs. 1 Nr. 1, 2 und 4 sowie den §§ 30a und 30b,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7.",
@@ -5961,7 +6301,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Konsumcannabisgesetz: a)Straftaten nach einer in § 34 Absatz 3 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach § 34 Absatz 4,"
+                              "md": "aus dem Konsumcannabisgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach einer in § 34 Absatz 3 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 34 Absatz 4,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7a.",
@@ -5972,7 +6338,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Medizinal-Cannabisgesetz: a)Straftaten nach einer in § 25 Absatz 4 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,b)Straftaten nach § 25 Absatz 5,"
+                              "md": "aus dem Medizinal-Cannabisgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach einer in § 25 Absatz 4 Satz 2 Nummer 1 in Bezug genommenen Vorschrift unter den dort genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 25 Absatz 5,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7b.",
@@ -5994,7 +6386,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen: a)Straftaten nach § 19 Abs. 1 bis 3 und § 20 Abs. 1 und 2 sowie § 20a Abs. 1 bis 3, jeweils auch in Verbindung mit § 21,b)Straftaten nach § 22a Abs. 1 bis 3,"
+                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 19 Abs. 1 bis 3 und § 20 Abs. 1 und 2 sowie § 20a Abs. 1 bis 3, jeweils auch in Verbindung mit § 21,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 22a Abs. 1 bis 3,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "9.",
@@ -6016,7 +6434,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Völkerstrafgesetzbuch: a)Völkermord nach § 6,b)Verbrechen gegen die Menschlichkeit nach § 7,c)Kriegsverbrechen nach den §§ 8 bis 12,d)Verbrechen der Aggression nach § 13,"
+                              "md": "aus dem Völkerstrafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Völkermord nach § 6,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen gegen die Menschlichkeit nach § 7,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Kriegsverbrechen nach den §§ 8 bis 12,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen der Aggression nach § 13,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "10.",
@@ -6027,7 +6491,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Waffengesetz: a)Straftaten nach § 51 Abs. 1 bis 3,b)Straftaten nach § 52 Abs. 1 Nr. 1 und 2 Buchstabe c und d sowie Abs. 5 und 6."
+                              "md": "aus dem Waffengesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 51 Abs. 1 bis 3,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 52 Abs. 1 Nr. 1 und 2 Buchstabe c und d sowie Abs. 5 und 6."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "11.",
@@ -6077,7 +6567,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "ausschließlich überwacht und aufgezeichnet werden können: a)die laufende Telekommunikation (Absatz 1 Satz 2), oderb)Inhalte und Umstände der Kommunikation, die ab dem Zeitpunkt der Anordnung nach § 100e Absatz 1 auch während des laufenden Übertragungsvorgangs im öffentlichen Telekommunikationsnetz hätten überwacht und aufgezeichnet werden können (Absatz 1 Satz 3),"
+                              "md": "ausschließlich überwacht und aufgezeichnet werden können:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die laufende Telekommunikation (Absatz 1 Satz 2), oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Inhalte und Umstände der Kommunikation, die ab dem Zeitpunkt der Anordnung nach § 100e Absatz 1 auch während des laufenden Übertragungsvorgangs im öffentlichen Telekommunikationsnetz hätten überwacht und aufgezeichnet werden können (Absatz 1 Satz 3),"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -6260,7 +6776,163 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Strafgesetzbuch: a)Straftaten des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 81, 82, 89a, 89c Absatz 1 bis 4, nach den §§ 94, 95 Absatz 3 und § 96 Absatz 1, jeweils auch in Verbindung mit § 97b, sowie nach den §§ 97a, 98 Absatz 1 Satz 2, § 99 Absatz 2 und den §§ 100, 100a Absatz 4,b)Betreiben krimineller Handelsplattformen im Internet in den Fällen des § 127 Absatz 3 und 4, sofern der Zweck der Handelsplattform im Internet darauf ausgerichtet ist, in den Buchstaben a und c bis o sowie in den Nummern 2 bis 10 genannte besonders schwere Straftaten zu ermöglichen oder zu fördern,c)Bildung krimineller Vereinigungen nach § 129 Absatz 1 in Verbindung mit Absatz 5 Satz 3 und Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5 Satz 1 erste Alternative, jeweils auch in Verbindung mit § 129b Absatz 1,d)Geld- und Wertzeichenfälschung nach den §§ 146 und 151, jeweils auch in Verbindung mit § 152, sowie nach § 152a Absatz 3 und § 152b Absatz 1 bis 4,e)Straftaten gegen die sexuelle Selbstbestimmung in den Fällen des § 176 Absatz 1 und der §§ 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,f)Verbreitung, Erwerb und Besitz kinderpornografischer Inhalte in den Fällen des § 184b Absatz 1 Satz 1 und Absatz 2,g)Mord und Totschlag nach den §§ 211, 212,h)Straftaten gegen die persönliche Freiheit in den Fällen des § 232 Absatz 2 und 3, des § 232a Absatz 1, 3, 4 und 5 zweiter Halbsatz, des § 232b Absatz 1 und 3 sowie Absatz 4, dieser in Verbindung mit § 232a Absatz 4 und 5 zweiter Halbsatz, des § 233 Absatz 2, des § 233a Absatz 1, 3 und 4 zweiter Halbsatz, der §§ 234 und 234a Absatz 1 und 2 sowie der §§ 239a und 239b,i)Bandendiebstahl nach § 244 Absatz 1 Nummer 2 und schwerer Bandendiebstahl nach § 244a,j)schwerer Raub und Raub mit Todesfolge nach § 250 Absatz 1 oder Absatz 2, § 251,k)räuberische Erpressung nach § 255 und besonders schwerer Fall einer Erpressung nach § 253 unter den in § 253 Absatz 4 Satz 2 genannten Voraussetzungen,l)gewerbsmäßige Hehlerei, Bandenhehlerei und gewerbsmäßige Bandenhehlerei nach den §§ 260, 260a,m)besonders schwerer Fall der Geldwäsche nach § 261 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen, wenn die Vortat eine der in den Nummern 1 bis 7 genannten besonders schweren Straftaten ist,n)Computerbetrug in den Fällen des § 263a Absatz 2 in Verbindung mit § 263 Absatz 5,o)besonders schwerer Fall der Bestechlichkeit und Bestechung nach § 335 Absatz 1 unter den in § 335 Absatz 2 Nummer 1 bis 3 genannten Voraussetzungen,"
+                              "md": "aus dem Strafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 81, 82, 89a, 89c Absatz 1 bis 4, nach den §§ 94, 95 Absatz 3 und § 96 Absatz 1, jeweils auch in Verbindung mit § 97b, sowie nach den §§ 97a, 98 Absatz 1 Satz 2, § 99 Absatz 2 und den §§ 100, 100a Absatz 4,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Betreiben krimineller Handelsplattformen im Internet in den Fällen des § 127 Absatz 3 und 4, sofern der Zweck der Handelsplattform im Internet darauf ausgerichtet ist, in den Buchstaben a und c bis o sowie in den Nummern 2 bis 10 genannte besonders schwere Straftaten zu ermöglichen oder zu fördern,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bildung krimineller Vereinigungen nach § 129 Absatz 1 in Verbindung mit Absatz 5 Satz 3 und Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5 Satz 1 erste Alternative, jeweils auch in Verbindung mit § 129b Absatz 1,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Geld- und Wertzeichenfälschung nach den §§ 146 und 151, jeweils auch in Verbindung mit § 152, sowie nach § 152a Absatz 3 und § 152b Absatz 1 bis 4,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die sexuelle Selbstbestimmung in den Fällen des § 176 Absatz 1 und der §§ 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbreitung, Erwerb und Besitz kinderpornografischer Inhalte in den Fällen des § 184b Absatz 1 Satz 1 und Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Mord und Totschlag nach den §§ 211, 212,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die persönliche Freiheit in den Fällen des § 232 Absatz 2 und 3, des § 232a Absatz 1, 3, 4 und 5 zweiter Halbsatz, des § 232b Absatz 1 und 3 sowie Absatz 4, dieser in Verbindung mit § 232a Absatz 4 und 5 zweiter Halbsatz, des § 233 Absatz 2, des § 233a Absatz 1, 3 und 4 zweiter Halbsatz, der §§ 234 und 234a Absatz 1 und 2 sowie der §§ 239a und 239b,"
+                                    }
+                                  ],
+                                  "label": "h)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bandendiebstahl nach § 244 Absatz 1 Nummer 2 und schwerer Bandendiebstahl nach § 244a,"
+                                    }
+                                  ],
+                                  "label": "i)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "schwerer Raub und Raub mit Todesfolge nach § 250 Absatz 1 oder Absatz 2, § 251,"
+                                    }
+                                  ],
+                                  "label": "j)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "räuberische Erpressung nach § 255 und besonders schwerer Fall einer Erpressung nach § 253 unter den in § 253 Absatz 4 Satz 2 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "k)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gewerbsmäßige Hehlerei, Bandenhehlerei und gewerbsmäßige Bandenhehlerei nach den §§ 260, 260a,"
+                                    }
+                                  ],
+                                  "label": "l)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall der Geldwäsche nach § 261 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen, wenn die Vortat eine der in den Nummern 1 bis 7 genannten besonders schweren Straftaten ist,"
+                                    }
+                                  ],
+                                  "label": "m)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Computerbetrug in den Fällen des § 263a Absatz 2 in Verbindung mit § 263 Absatz 5,"
+                                    }
+                                  ],
+                                  "label": "n)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall der Bestechlichkeit und Bestechung nach § 335 Absatz 1 unter den in § 335 Absatz 2 Nummer 1 bis 3 genannten Voraussetzungen,"
+                                    }
+                                  ],
+                                  "label": "o)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -6271,7 +6943,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Asylgesetz: a)Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Absatz 3,b)gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a Absatz 1,"
+                              "md": "aus dem Asylgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verleitung zur missbräuchlichen Asylantragstellung nach § 84 Absatz 3,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gewerbs- und bandenmäßige Verleitung zur missbräuchlichen Asylantragstellung nach § 84a Absatz 1,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -6282,7 +6980,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Aufenthaltsgesetz: a)Einschleusen von Ausländern nach § 96 Absatz 2,b)Einschleusen mit Todesfolge oder gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                              "md": "aus dem Aufenthaltsgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen von Ausländern nach § 96 Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen mit Todesfolge oder gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -6293,7 +7017,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Außenwirtschaftsgesetz: a)Straftaten nach § 17 Absatz 1, 2 und 3, jeweils auch in Verbindung mit Absatz 6 oder 7,b)Straftaten nach § 18 Absatz 7 und 8, jeweils auch in Verbindung mit Absatz 10,"
+                              "md": "aus dem Außenwirtschaftsgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 17 Absatz 1, 2 und 3, jeweils auch in Verbindung mit Absatz 6 oder 7,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten nach § 18 Absatz 7 und 8, jeweils auch in Verbindung mit Absatz 10,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -6304,7 +7054,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Betäubungsmittelgesetz: a)besonders schwerer Fall einer Straftat nach § 29 Absatz 1 Satz 1 Nummer 1, 5, 6, 10, 11 oder 13, Absatz 3 unter der in § 29 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzung,b)eine Straftat nach den §§ 29a, 30 Absatz 1 Nummer 1, 2, 4, § 30a,"
+                              "md": "aus dem Betäubungsmittelgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 29 Absatz 1 Satz 1 Nummer 1, 5, 6, 10, 11 oder 13, Absatz 3 unter der in § 29 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzung,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Straftat nach den §§ 29a, 30 Absatz 1 Nummer 1, 2, 4, § 30a,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -6337,7 +7113,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen: a)eine Straftat nach § 19 Absatz 2 oder § 20 Absatz 1, jeweils auch in Verbindung mit § 21,b)besonders schwerer Fall einer Straftat nach § 22a Absatz 1 in Verbindung mit Absatz 2,"
+                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Straftat nach § 19 Absatz 2 oder § 20 Absatz 1, jeweils auch in Verbindung mit § 21,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 22a Absatz 1 in Verbindung mit Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "6.",
@@ -6370,7 +7172,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Völkerstrafgesetzbuch: a)Völkermord nach § 6,b)Verbrechen gegen die Menschlichkeit nach § 7,c)Kriegsverbrechen nach den §§ 8 bis 12,d)Verbrechen der Aggression nach § 13,"
+                              "md": "aus dem Völkerstrafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Völkermord nach § 6,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen gegen die Menschlichkeit nach § 7,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Kriegsverbrechen nach den §§ 8 bis 12,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen der Aggression nach § 13,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "9.",
@@ -6381,7 +7229,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Waffengesetz: a)besonders schwerer Fall einer Straftat nach § 51 Absatz 1 in Verbindung mit Absatz 2,b)besonders schwerer Fall einer Straftat nach § 52 Absatz 1 Nummer 1 in Verbindung mit Absatz 5."
+                              "md": "aus dem Waffengesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 51 Absatz 1 in Verbindung mit Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 52 Absatz 1 Nummer 1 in Verbindung mit Absatz 5."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "10.",
@@ -6990,7 +7864,103 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Strafgesetzbuch: a)Straftaten des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 81, 82, 89a, nach den §§ 94, 95 Absatz 3 und § 96 Absatz 1, jeweils auch in Verbindung mit § 97b, sowie nach den §§ 97a, 98 Absatz 1 Satz 2, § 99 Absatz 2 und den §§ 100, 100a Absatz 4,b)besonders schwerer Fall des Landfriedensbruchs nach § 125a sowie Betreiben krimineller Handelsplattformen im Internet in den Fällen des § 127 Absatz 3 und 4,c)Bildung krimineller Vereinigungen nach § 129 Absatz 1 in Verbindung mit Absatz 5 Satz 3 sowie Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5 Satz 1 erste Alternative, jeweils auch in Verbindung mit § 129b Absatz 1,d)Straftaten gegen die sexuelle Selbstbestimmung in den Fällen der §§ 176, 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,e)Verbreitung, Erwerb und Besitz kinder- und jugendpornographischer Inhalte in den Fällen des § 184b Absatz 1 Satz 1, Absatz 2 und 3 sowie des § 184c Absatz 2,f)Mord und Totschlag nach den §§ 211 und 212,g)Straftaten gegen die persönliche Freiheit in den Fällen der §§ 234, 234a Absatz 1, 2, §§ 239a, 239b und Zwangsprostitution und Zwangsarbeit nach § 232a Absatz 3, 4 oder 5 zweiter Halbsatz, § 232b Absatz 3 oder 4 in Verbindung mit § 232a Absatz 4 oder 5 zweiter Halbsatz und Ausbeutung unter Ausnutzung einer Freiheitsberaubung nach § 233a Absatz 3 oder 4 zweiter Halbsatz,h)Einbruchdiebstahl in eine dauerhaft genutzte Privatwohnung nach § 244 Absatz 4, schwerer Bandendiebstahl nach § 244a Absatz 1, schwerer Raub nach § 250 Absatz 1 oder Absatz 2, Raub mit Todesfolge nach § 251, räuberische Erpressung nach § 255 und besonders schwerer Fall einer Erpressung nach § 253 unter den in § 253 Absatz 4 Satz 2 genannten Voraussetzungen, gewerbsmäßige Bandenhehlerei nach § 260a Absatz 1, besonders schwerer Fall der Geldwäsche nach § 261 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen, wenn die Vortat eine der in den Nummern 1 bis 8 genannten besonders schweren Straftaten ist,i)gemeingefährliche Straftaten in den Fällen der §§ 306 bis 306c, 307 Absatz 1 bis 3, des § 308 Absatz 1 bis 3, des § 309 Absatz 1 bis 4, des § 310 Absatz 1, der §§ 313, 314, 315 Absatz 3, des § 315b Absatz 3 sowie der §§ 316a und 316c,"
+                              "md": "aus dem Strafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten des Hochverrats und der Gefährdung des demokratischen Rechtsstaates sowie des Landesverrats und der Gefährdung der äußeren Sicherheit nach den §§ 81, 82, 89a, nach den §§ 94, 95 Absatz 3 und § 96 Absatz 1, jeweils auch in Verbindung mit § 97b, sowie nach den §§ 97a, 98 Absatz 1 Satz 2, § 99 Absatz 2 und den §§ 100, 100a Absatz 4,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall des Landfriedensbruchs nach § 125a sowie Betreiben krimineller Handelsplattformen im Internet in den Fällen des § 127 Absatz 3 und 4,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bildung krimineller Vereinigungen nach § 129 Absatz 1 in Verbindung mit Absatz 5 Satz 3 sowie Bildung terroristischer Vereinigungen nach § 129a Absatz 1, 2, 4, 5 Satz 1 erste Alternative, jeweils auch in Verbindung mit § 129b Absatz 1,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die sexuelle Selbstbestimmung in den Fällen der §§ 176, 176c, 176d und, unter den in § 177 Absatz 6 Satz 2 Nummer 2 genannten Voraussetzungen, des § 177,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbreitung, Erwerb und Besitz kinder- und jugendpornographischer Inhalte in den Fällen des § 184b Absatz 1 Satz 1, Absatz 2 und 3 sowie des § 184c Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Mord und Totschlag nach den §§ 211 und 212,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die persönliche Freiheit in den Fällen der §§ 234, 234a Absatz 1, 2, §§ 239a, 239b und Zwangsprostitution und Zwangsarbeit nach § 232a Absatz 3, 4 oder 5 zweiter Halbsatz, § 232b Absatz 3 oder 4 in Verbindung mit § 232a Absatz 4 oder 5 zweiter Halbsatz und Ausbeutung unter Ausnutzung einer Freiheitsberaubung nach § 233a Absatz 3 oder 4 zweiter Halbsatz,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einbruchdiebstahl in eine dauerhaft genutzte Privatwohnung nach § 244 Absatz 4, schwerer Bandendiebstahl nach § 244a Absatz 1, schwerer Raub nach § 250 Absatz 1 oder Absatz 2, Raub mit Todesfolge nach § 251, räuberische Erpressung nach § 255 und besonders schwerer Fall einer Erpressung nach § 253 unter den in § 253 Absatz 4 Satz 2 genannten Voraussetzungen, gewerbsmäßige Bandenhehlerei nach § 260a Absatz 1, besonders schwerer Fall der Geldwäsche nach § 261 unter den in § 261 Absatz 5 Satz 2 genannten Voraussetzungen, wenn die Vortat eine der in den Nummern 1 bis 8 genannten besonders schweren Straftaten ist,"
+                                    }
+                                  ],
+                                  "label": "h)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gemeingefährliche Straftaten in den Fällen der §§ 306 bis 306c, 307 Absatz 1 bis 3, des § 308 Absatz 1 bis 3, des § 309 Absatz 1 bis 4, des § 310 Absatz 1, der §§ 313, 314, 315 Absatz 3, des § 315b Absatz 3 sowie der §§ 316a und 316c,"
+                                    }
+                                  ],
+                                  "label": "i)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -7001,7 +7971,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Aufenthaltsgesetz: a)Einschleusen von Ausländern nach § 96 Absatz 2,b)Einschleusen mit Todesfolge oder gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                              "md": "aus dem Aufenthaltsgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen von Ausländern nach § 96 Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einschleusen mit Todesfolge oder gewerbs- und bandenmäßiges Einschleusen nach § 97,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -7023,7 +8019,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Betäubungsmittelgesetz: a)besonders schwerer Fall einer Straftat nach § 29 Absatz 1 Satz 1 Nummer 1, 5, 6, 10, 11 oder 13, Absatz 3 unter der in § 29 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzung,b)eine Straftat nach den §§ 29a, 30 Absatz 1 Nummer 1, 2, 4, § 30a,"
+                              "md": "aus dem Betäubungsmittelgesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 29 Absatz 1 Satz 1 Nummer 1, 5, 6, 10, 11 oder 13, Absatz 3 unter der in § 29 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzung,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Straftat nach den §§ 29a, 30 Absatz 1 Nummer 1, 2, 4, § 30a,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -7045,7 +8067,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen: a)eine Straftat nach § 19 Absatz 2 oder § 20 Absatz 1, jeweils auch in Verbindung mit § 21,b)besonders schwerer Fall einer Straftat nach § 22a Absatz 1 in Verbindung mit Absatz 2,"
+                              "md": "aus dem Gesetz über die Kontrolle von Kriegswaffen:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Straftat nach § 19 Absatz 2 oder § 20 Absatz 1, jeweils auch in Verbindung mit § 21,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 22a Absatz 1 in Verbindung mit Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "6.",
@@ -7056,7 +8104,53 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Völkerstrafgesetzbuch: a)Völkermord nach § 6,b)Verbrechen gegen die Menschlichkeit nach § 7,c)Kriegsverbrechen nach den §§ 8 bis 12,d)Verbrechen der Aggression nach § 13,"
+                              "md": "aus dem Völkerstrafgesetzbuch:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Völkermord nach § 6,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen gegen die Menschlichkeit nach § 7,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Kriegsverbrechen nach den §§ 8 bis 12,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbrechen der Aggression nach § 13,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
                             }
                           ],
                           "label": "7.",
@@ -7067,7 +8161,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Waffengesetz: a)besonders schwerer Fall einer Straftat nach § 51 Absatz 1 in Verbindung mit Absatz 2,b)besonders schwerer Fall einer Straftat nach § 52 Absatz 1 Nummer 1 in Verbindung mit Absatz 5."
+                              "md": "aus dem Waffengesetz:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 51 Absatz 1 in Verbindung mit Absatz 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "besonders schwerer Fall einer Straftat nach § 52 Absatz 1 Nummer 1 in Verbindung mit Absatz 5."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "8.",
@@ -7474,7 +8594,133 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "aus dem Strafgesetzbuch a)Verwenden von Kennzeichen verfassungswidriger Organisationen nach § 86a,b)Anleitung zur Begehung einer schweren staatsgefährdenden Gewalttat nach § 91,c)Öffentliche Aufforderung zu Straftaten nach § 111,d)Straftaten gegen die öffentliche Ordnung nach den §§ 126, 131 und 140,e)Beschimpfung von Bekenntnissen, Religionsgesellschaften und Weltanschauungsvereinigungen nach § 166,f)Verbreitung, Erwerb und Besitz kinderpornographischer Inhalte nach § 184b,g)Beleidigung, üble Nachrede und Verleumdung nach den §§ 185 bis 187 und Verunglimpfung des Andenkens Verstorbener nach § 189,h)Verletzungen des persönlichen Lebens- und Geheimbereichs nach den §§ 201a, 202a und 202c,i)Nachstellung nach § 238,j)Bedrohung nach § 241,k)Vorbereitung eines Computerbetruges nach § 263a Absatz 3,l)Datenveränderung und Computersabotage nach den §§ 303a und 303b Absatz 1,"
+                              "md": "aus dem Strafgesetzbuch"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verwenden von Kennzeichen verfassungswidriger Organisationen nach § 86a,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Anleitung zur Begehung einer schweren staatsgefährdenden Gewalttat nach § 91,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Öffentliche Aufforderung zu Straftaten nach § 111,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Straftaten gegen die öffentliche Ordnung nach den §§ 126, 131 und 140,"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Beschimpfung von Bekenntnissen, Religionsgesellschaften und Weltanschauungsvereinigungen nach § 166,"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verbreitung, Erwerb und Besitz kinderpornographischer Inhalte nach § 184b,"
+                                    }
+                                  ],
+                                  "label": "f)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Beleidigung, üble Nachrede und Verleumdung nach den §§ 185 bis 187 und Verunglimpfung des Andenkens Verstorbener nach § 189,"
+                                    }
+                                  ],
+                                  "label": "g)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Verletzungen des persönlichen Lebens- und Geheimbereichs nach den §§ 201a, 202a und 202c,"
+                                    }
+                                  ],
+                                  "label": "h)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Nachstellung nach § 238,"
+                                    }
+                                  ],
+                                  "label": "i)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bedrohung nach § 241,"
+                                    }
+                                  ],
+                                  "label": "j)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Vorbereitung eines Computerbetruges nach § 263a Absatz 3,"
+                                    }
+                                  ],
+                                  "label": "k)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Datenveränderung und Computersabotage nach den §§ 303a und 303b Absatz 1,"
+                                    }
+                                  ],
+                                  "label": "l)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -7647,7 +8893,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "des § 100c a)der Beschuldigte, gegen den sich die Maßnahme richtete,b)sonstige überwachte Personen,c)Personen, die die überwachte Wohnung zur Zeit der Durchführung der Maßnahme innehatten oder bewohnten,"
+                              "md": "des § 100c"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Beschuldigte, gegen den sich die Maßnahme richtete,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "sonstige überwachte Personen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Personen, die die überwachte Wohnung zur Zeit der Durchführung der Maßnahme innehatten oder bewohnten,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -7691,7 +8973,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "des § 110a a)die Zielperson,b)die erheblich mitbetroffenen Personen,c)die Personen, deren nicht allgemein zugängliche Wohnung der Verdeckte Ermittler betreten hat,"
+                              "md": "des § 110a"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Zielperson,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die erheblich mitbetroffenen Personen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Personen, deren nicht allgemein zugängliche Wohnung der Verdeckte Ermittler betreten hat,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "9.",
@@ -8051,7 +9369,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die Anzahl der Verfahren, in denen ein Eingriff in ein von dem Betroffenen genutztes informationstechnisches System nach § 100a Absatz 1 Satz 2 und 3 a)im richterlichen Beschluss angeordnet wurde undb)tatsächlich durchgeführt wurde."
+                              "md": "die Anzahl der Verfahren, in denen ein Eingriff in ein von dem Betroffenen genutztes informationstechnisches System nach § 100a Absatz 1 Satz 2 und 3"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "im richterlichen Beschluss angeordnet wurde und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "tatsächlich durchgeführt wurde."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -8289,7 +9633,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "unterschieden nach Maßnahmen nach § 100g Absatz 1, 2 und 3 a)die Anzahl der Verfahren, in denen diese Maßnahmen durchgeführt wurden;b)die Anzahl der Erstanordnungen, mit denen diese Maßnahmen angeordnet wurden;c)die Anzahl der Verlängerungsanordnungen, mit denen diese Maßnahmen angeordnet wurden;"
+                              "md": "unterschieden nach Maßnahmen nach § 100g Absatz 1, 2 und 3"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Verfahren, in denen diese Maßnahmen durchgeführt wurden;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Erstanordnungen, mit denen diese Maßnahmen angeordnet wurden;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Verlängerungsanordnungen, mit denen diese Maßnahmen angeordnet wurden;"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -8300,7 +9680,63 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "untergliedert nach der Anzahl der zurückliegenden Wochen, für die die Erhebung von Verkehrsdaten angeordnet wurde, jeweils bemessen ab dem Zeitpunkt der Anordnung a)die Anzahl der Anordnungen nach § 100g Absatz 1;b)die Anzahl der Anordnungen nach § 100g Absatz 2;c)die Anzahl der Anordnungen nach § 100g Absatz 3;d)die Anzahl der Anordnungen, die teilweise ergebnislos geblieben sind, weil die abgefragten Daten teilweise nicht verfügbar waren;e)die Anzahl der Anordnungen, die ergebnislos geblieben sind, weil keine Daten verfügbar waren."
+                              "md": "untergliedert nach der Anzahl der zurückliegenden Wochen, für die die Erhebung von Verkehrsdaten angeordnet wurde, jeweils bemessen ab dem Zeitpunkt der Anordnung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen nach § 100g Absatz 1;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen nach § 100g Absatz 2;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen nach § 100g Absatz 3;"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen, die teilweise ergebnislos geblieben sind, weil die abgefragten Daten teilweise nicht verfügbar waren;"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen, die ergebnislos geblieben sind, weil keine Daten verfügbar waren."
+                                    }
+                                  ],
+                                  "label": "e)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -8350,7 +9786,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "untergliedert nach der Anzahl der zurückliegenden Wochen, für die die Erhebung von Nutzungsdaten angeordnet wurde, jeweils bemessen ab dem Zeitpunkt der Anordnung a)die Anzahl der Anordnungen, die teilweise ergebnislos geblieben sind, weil die abgefragten Daten teilweise nicht verfügbar waren;b)die Anzahl der Anordnungen, die ergebnislos geblieben sind, weil keine Daten verfügbar waren."
+                              "md": "untergliedert nach der Anzahl der zurückliegenden Wochen, für die die Erhebung von Nutzungsdaten angeordnet wurde, jeweils bemessen ab dem Zeitpunkt der Anordnung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen, die teilweise ergebnislos geblieben sind, weil die abgefragten Daten teilweise nicht verfügbar waren;"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Anzahl der Anordnungen, die ergebnislos geblieben sind, weil keine Daten verfügbar waren."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -9823,7 +11285,47 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "das Verhalten des Beschuldigten den dringenden Verdacht begründet, er werdea)Beweismittel vernichten, verändern, beiseite schaffen, unterdrücken oder fälschen oderb)auf Mitbeschuldigte, Zeugen oder Sachverständige in unlauterer Weise einwirken oderc)andere zu solchem Verhalten veranlassen,und wenn deshalb die Gefahr droht, daß die Ermittlung der Wahrheit erschwert werde (Verdunkelungsgefahr)."
+                              "md": "das Verhalten des Beschuldigten den dringenden Verdacht begründet, er werde"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Beweismittel vernichten, verändern, beiseite schaffen, unterdrücken oder fälschen oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "auf Mitbeschuldigte, Zeugen oder Sachverständige in unlauterer Weise einwirken oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "andere zu solchem Verhalten veranlassen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "und wenn deshalb die Gefahr droht, daß die Ermittlung der Wahrheit erschwert werde (Verdunkelungsgefahr)."
                             }
                           ],
                           "label": "3.",
@@ -10213,7 +11715,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei Aufrechterhaltung der Untersuchungshaft nach Vorführung vor den zuständigen Richter a)eine Beschwerde gegen den Haftbefehl einlegen oder eine Haftprüfung (§ 117 Absatz 1 und 2) und eine mündliche Verhandlung (§ 118 Absatz 1 und 2) beantragen kann,b)bei Unstatthaftigkeit der Beschwerde eine gerichtliche Entscheidung nach § 119 Absatz 5 beantragen kann undc)gegen behördliche Entscheidungen und Maßnahmen im Untersuchungshaftvollzug eine gerichtliche Entscheidung nach § 119a Absatz 1 beantragen kann."
+                              "md": "bei Aufrechterhaltung der Untersuchungshaft nach Vorführung vor den zuständigen Richter"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Beschwerde gegen den Haftbefehl einlegen oder eine Haftprüfung (§ 117 Absatz 1 und 2) und eine mündliche Verhandlung (§ 118 Absatz 1 und 2) beantragen kann,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei Unstatthaftigkeit der Beschwerde eine gerichtliche Entscheidung nach § 119 Absatz 5 beantragen kann und"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "gegen behördliche Entscheidungen und Maßnahmen im Untersuchungshaftvollzug eine gerichtliche Entscheidung nach § 119a Absatz 1 beantragen kann."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "8.",
@@ -11213,7 +12751,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "soweit das Gericht nichts anderes anordnet, a)den Beiräten bei den Justizvollzugsanstalten undb)der konsularischen Vertretung seines Heimatstaates."
+                              "md": "soweit das Gericht nichts anderes anordnet,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "den Beiräten bei den Justizvollzugsanstalten und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der konsularischen Vertretung seines Heimatstaates."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "19.",
@@ -17148,7 +18712,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die Jugendgerichte für die Entscheidung, ob Sachena)nach § 33 Abs. 1, § 103 Abs. 2 Satz 1 und § 107 des Jugendgerichtsgesetzes oderb)als Jugendschutzsachen (§ 26 Abs. 1 Satz 1, § 74b Satz 1 des Gerichtsverfassungsgesetzes)vor die Jugendgerichte gehören, gegenüber den für allgemeine Strafsachen zuständigen Gerichten gleicher Ordnung"
+                              "md": "die Jugendgerichte für die Entscheidung, ob Sachen"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nach § 33 Abs. 1, § 103 Abs. 2 Satz 1 und § 107 des Jugendgerichtsgesetzes oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "als Jugendschutzsachen (§ 26 Abs. 1 Satz 1, § 74b Satz 1 des Gerichtsverfassungsgesetzes)"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "vor die Jugendgerichte gehören, gegenüber den für allgemeine Strafsachen zuständigen Gerichten gleicher Ordnung"
                             }
                           ],
                           "label": "2.",
@@ -19270,7 +20864,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die ein Zeugnis oder ein Gutachten enthaltenden Erklärungena)öffentlicher Behörden,b)der Sachverständigen, die für die Erstellung von Gutachten der betreffenden Art allgemein vereidigt sind, sowiec)der Ärzte eines gerichtsärztlichen Dienstes mit Ausschluss von Leumundszeugnissen,"
+                              "md": "die ein Zeugnis oder ein Gutachten enthaltenden Erklärungen"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "öffentlicher Behörden,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Sachverständigen, die für die Erstellung von Gutachten der betreffenden Art allgemein vereidigt sind, sowie"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Ärzte eines gerichtsärztlichen Dienstes mit Ausschluss von Leumundszeugnissen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -22385,7 +24015,69 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "wenn das erkennende Gericht nicht vorschriftsmäßig besetzt war; war nach § 222a die Mitteilung der Besetzung vorgeschrieben, so kann die Revision auf die vorschriftswidrige Besetzung nur gestützt werden, wenn a)das Gericht in einer Besetzung entschieden hat, deren Vorschriftswidrigkeit nach § 222b Absatz 2 Satz 2 oder Absatz 3 Satz 4 festgestellt worden ist, oderb)das Rechtsmittelgericht nicht nach § 222b Absatz 3 entschieden hat und aa)die Vorschriften über die Mitteilung verletzt worden sind,bb)der rechtzeitig und in der vorgeschriebenen Form geltend gemachte Einwand der vorschriftswidrigen Besetzung übergangen oder zurückgewiesen worden ist odercc)die Besetzung nach § 222b Absatz 1 Satz 1 nicht mindestens eine Woche geprüft werden konnte, obwohl ein Antrag nach § 222a Absatz 2 gestellt wurde;"
+                              "md": "wenn das erkennende Gericht nicht vorschriftsmäßig besetzt war; war nach § 222a die Mitteilung der Besetzung vorgeschrieben, so kann die Revision auf die vorschriftswidrige Besetzung nur gestützt werden, wenn"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das Gericht in einer Besetzung entschieden hat, deren Vorschriftswidrigkeit nach § 222b Absatz 2 Satz 2 oder Absatz 3 Satz 4 festgestellt worden ist, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das Rechtsmittelgericht nicht nach § 222b Absatz 3 entschieden hat und"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Vorschriften über die Mitteilung verletzt worden sind,"
+                                            }
+                                          ],
+                                          "label": "aa)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der rechtzeitig und in der vorgeschriebenen Form geltend gemachte Einwand der vorschriftswidrigen Besetzung übergangen oder zurückgewiesen worden ist oder"
+                                            }
+                                          ],
+                                          "label": "bb)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Besetzung nach § 222b Absatz 1 Satz 1 nicht mindestens eine Woche geprüft werden konnte, obwohl ein Antrag nach § 222a Absatz 2 gestellt wurde;"
+                                            }
+                                          ],
+                                          "label": "cc)"
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -26364,7 +28056,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sie können sich unter den Voraussetzungen der §§ 395 und 396 oder des § 80 Absatz 3 des Jugendgerichtsgesetzes der erhobenen öffentlichen Klage mit der Nebenklage anschließen und dabei a)nach § 397a beantragen, dass ihnen ein anwaltlicher Beistand bestellt oder für dessen Hinzuziehung Prozesskostenhilfe bewilligt wird,b)nach Maßgabe des § 397 Absatz 3 und der §§ 185 und 187 des Gerichtsverfassungsgesetzes einen Anspruch auf Dolmetschung und Übersetzung im Strafverfahren geltend machen;"
+                              "md": "sie können sich unter den Voraussetzungen der §§ 395 und 396 oder des § 80 Absatz 3 des Jugendgerichtsgesetzes der erhobenen öffentlichen Klage mit der Nebenklage anschließen und dabei"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nach § 397a beantragen, dass ihnen ein anwaltlicher Beistand bestellt oder für dessen Hinzuziehung Prozesskostenhilfe bewilligt wird,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nach Maßgabe des § 397 Absatz 3 und der §§ 185 und 187 des Gerichtsverfassungsgesetzes einen Anspruch auf Dolmetschung und Übersetzung im Strafverfahren geltend machen;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -26498,7 +28216,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sie können Unterstützung und Hilfe durch Opferhilfeeinrichtungen erhalten, etwa a)in Form einer Beratung,b)durch Bereitstellung oder Vermittlung einer Unterkunft in einer Schutzeinrichtung oderc)durch Vermittlung von therapeutischen Angeboten wie medizinischer oder psychologischer Hilfe oder weiteren verfügbaren Unterstützungsangeboten im psychosozialen Bereich."
+                              "md": "sie können Unterstützung und Hilfe durch Opferhilfeeinrichtungen erhalten, etwa"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in Form einer Beratung,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch Bereitstellung oder Vermittlung einer Unterkunft in einer Schutzeinrichtung oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "durch Vermittlung von therapeutischen Angeboten wie medizinischer oder psychologischer Hilfe oder weiteren verfügbaren Unterstützungsangeboten im psychosozialen Bereich."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -28935,7 +30689,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "der Verurteilte die Aussetzung beantragt hat, zur Zeit der Antragstellunga)bei zeitiger Freiheitsstrafe noch nicht die Hälfte oder weniger als zwei Monate,b)bei lebenslanger Freiheitsstrafe weniger als dreizehn Jahreder Strafe verbüßt hat und das Gericht den Antrag wegen verfrühter Antragstellung ablehnt oder"
+                              "md": "der Verurteilte die Aussetzung beantragt hat, zur Zeit der Antragstellung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei zeitiger Freiheitsstrafe noch nicht die Hälfte oder weniger als zwei Monate,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "bei lebenslanger Freiheitsstrafe weniger als dreizehn Jahre"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "der Strafe verbüßt hat und das Gericht den Antrag wegen verfrühter Antragstellung ablehnt oder"
                             }
                           ],
                           "label": "2.",
@@ -32284,7 +34068,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die Kennzeichnung der personenbezogenen Daten durch die Bezeichnung a)des Verfahrens, in dem die Daten erhoben wurden,b)der Maßnahme, wegen der die Daten erhoben wurden, sowie der Rechtsgrundlage der Erhebung undc)der Straftat, zu deren Aufklärung die Daten erhoben wurden,"
+                              "md": "die Kennzeichnung der personenbezogenen Daten durch die Bezeichnung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "des Verfahrens, in dem die Daten erhoben wurden,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Maßnahme, wegen der die Daten erhoben wurden, sowie der Rechtsgrundlage der Erhebung und"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Straftat, zu deren Aufklärung die Daten erhoben wurden,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",

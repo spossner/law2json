@@ -56,7 +56,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "öffentliche Stellen der Länder, soweit der Datenschutz nicht durch Landesgesetz geregelt ist und soweit sie a)Bundesrecht ausführen oderb)als Organe der Rechtspflege tätig werden und es sich nicht um Verwaltungsangelegenheiten handelt."
+                              "md": "öffentliche Stellen der Länder, soweit der Datenschutz nicht durch Landesgesetz geregelt ist und soweit sie"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Bundesrecht ausführen oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "als Organe der Rechtspflege tätig werden und es sich nicht um Verwaltungsangelegenheiten handelt."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -1747,7 +1773,53 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "durch öffentliche und nichtöffentliche Stellen, wenn sie a)erforderlich ist, um die aus dem Recht der sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte auszuüben und den diesbezüglichen Pflichten nachzukommen,b)zum Zweck der Gesundheitsvorsorge, für die Beurteilung der Arbeitsfähigkeit des Beschäftigten, für die medizinische Diagnostik, die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- und Sozialbereich oder aufgrund eines Vertrags der betroffenen Person mit einem Angehörigen eines Gesundheitsberufs erforderlich ist und diese Daten von ärztlichem Personal oder durch sonstige Personen, die einer entsprechenden Geheimhaltungspflicht unterliegen, oder unter deren Verantwortung verarbeitet werden,c)aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit, wie des Schutzes vor schwerwiegenden grenzüberschreitenden Gesundheitsgefahren oder zur Gewährleistung hoher Qualitäts- und Sicherheitsstandards bei der Gesundheitsversorgung und bei Arzneimitteln und Medizinprodukten erforderlich ist; ergänzend zu den in Absatz 2 genannten Maßnahmen sind insbesondere die berufsrechtlichen und strafrechtlichen Vorgaben zur Wahrung des Berufsgeheimnisses einzuhalten, oderd)aus Gründen eines erheblichen öffentlichen Interesses zwingend erforderlich ist,"
+                                  "md": "durch öffentliche und nichtöffentliche Stellen, wenn sie"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "erforderlich ist, um die aus dem Recht der sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte auszuüben und den diesbezüglichen Pflichten nachzukommen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "zum Zweck der Gesundheitsvorsorge, für die Beurteilung der Arbeitsfähigkeit des Beschäftigten, für die medizinische Diagnostik, die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- und Sozialbereich oder aufgrund eines Vertrags der betroffenen Person mit einem Angehörigen eines Gesundheitsberufs erforderlich ist und diese Daten von ärztlichem Personal oder durch sonstige Personen, die einer entsprechenden Geheimhaltungspflicht unterliegen, oder unter deren Verantwortung verarbeitet werden,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit, wie des Schutzes vor schwerwiegenden grenzüberschreitenden Gesundheitsgefahren oder zur Gewährleistung hoher Qualitäts- und Sicherheitsstandards bei der Gesundheitsversorgung und bei Arzneimitteln und Medizinprodukten erforderlich ist; ergänzend zu den in Absatz 2 genannten Maßnahmen sind insbesondere die berufsrechtlichen und strafrechtlichen Vorgaben zur Wahrung des Berufsgeheimnisses einzuhalten, oder"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "aus Gründen eines erheblichen öffentlichen Interesses zwingend erforderlich ist,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -1758,7 +1830,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "durch öffentliche Stellen, wenn sie a)zur Abwehr einer erheblichen Gefahr für die öffentliche Sicherheit erforderlich ist,b)zur Abwehr erheblicher Nachteile für das Gemeinwohl oder zur Wahrung erheblicher Belange des Gemeinwohls zwingend erforderlich ist oderc)aus zwingenden Gründen der Verteidigung oder der Erfüllung über- oder zwischenstaatlicher Verpflichtungen einer öffentlichen Stelle des Bundes auf dem Gebiet der Krisenbewältigung oder Konfliktverhinderung oder für humanitäre Maßnahmen erforderlich ist"
+                                  "md": "durch öffentliche Stellen, wenn sie"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "zur Abwehr einer erheblichen Gefahr für die öffentliche Sicherheit erforderlich ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "zur Abwehr erheblicher Nachteile für das Gemeinwohl oder zur Wahrung erheblicher Belange des Gemeinwohls zwingend erforderlich ist oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "aus zwingenden Gründen der Verteidigung oder der Erfüllung über- oder zwischenstaatlicher Verpflichtungen einer öffentlichen Stelle des Bundes auf dem Gebiet der Krisenbewältigung oder Konfliktverhinderung oder für humanitäre Maßnahmen erforderlich ist"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -2651,7 +2759,53 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "bei denen a)der Schuldner nach Eintritt der Fälligkeit der Forderung mindestens zweimal schriftlich gemahnt worden ist,b)die erste Mahnung mindestens vier Wochen zurückliegt,c)der Schuldner zuvor, jedoch frühestens bei der ersten Mahnung, über eine mögliche Berücksichtigung durch eine Auskunftei unterrichtet worden ist undd)der Schuldner die Forderung nicht bestritten hat oder"
+                                  "md": "bei denen"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Schuldner nach Eintritt der Fälligkeit der Forderung mindestens zweimal schriftlich gemahnt worden ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die erste Mahnung mindestens vier Wochen zurückliegt,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Schuldner zuvor, jedoch frühestens bei der ersten Mahnung, über eine mögliche Berücksichtigung durch eine Auskunftei unterrichtet worden ist und"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Schuldner die Forderung nicht bestritten hat oder"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "4.",
@@ -2825,7 +2979,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "im Fall einer öffentlichen Stelle a)die ordnungsgemäße Erfüllung der in der Zuständigkeit des Verantwortlichen liegenden Aufgaben im Sinne des Artikels 23 Absatz 1 Buchstabe a bis e der Verordnung (EU) 2016/679 gefährden würde oderb)die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde"
+                              "md": "im Fall einer öffentlichen Stelle"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die ordnungsgemäße Erfüllung der in der Zuständigkeit des Verantwortlichen liegenden Aufgaben im Sinne des Artikels 23 Absatz 1 Buchstabe a bis e der Verordnung (EU) 2016/679 gefährden würde oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -2846,7 +3026,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "im Fall einer nichtöffentlichen Stelle a)die Geltendmachung, Ausübung oder Verteidigung zivilrechtlicher Ansprüche beeinträchtigen würde oder die Verarbeitung Daten aus zivilrechtlichen Verträgen beinhaltet und der Verhütung von Schäden durch Straftaten dient, sofern nicht das berechtigte Interesse der betroffenen Person an der Informationserteilung überwiegt, oderb)die zuständige öffentliche Stelle gegenüber dem Verantwortlichen festgestellt hat, dass das Bekanntwerden der Daten die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde; im Fall der Datenverarbeitung für Zwecke der Strafverfolgung bedarf es keiner Feststellung nach dem ersten Halbsatz."
+                              "md": "im Fall einer nichtöffentlichen Stelle"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Geltendmachung, Ausübung oder Verteidigung zivilrechtlicher Ansprüche beeinträchtigen würde oder die Verarbeitung Daten aus zivilrechtlichen Verträgen beinhaltet und der Verhütung von Schäden durch Straftaten dient, sofern nicht das berechtigte Interesse der betroffenen Person an der Informationserteilung überwiegt, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die zuständige öffentliche Stelle gegenüber dem Verantwortlichen festgestellt hat, dass das Bekanntwerden der Daten die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde; im Fall der Datenverarbeitung für Zwecke der Strafverfolgung bedarf es keiner Feststellung nach dem ersten Halbsatz."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -2925,7 +3131,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die Daten a)nur deshalb gespeichert sind, weil sie aufgrund gesetzlicher oder satzungsmäßiger Aufbewahrungsvorschriften nicht gelöscht werden dürfen, oderb)ausschließlich Zwecken der Datensicherung oder der Datenschutzkontrolle dienenund die Auskunftserteilung einen unverhältnismäßigen Aufwand erfordern würde sowie eine Verarbeitung zu anderen Zwecken durch geeignete technische und organisatorische Maßnahmen ausgeschlossen ist."
+                              "md": "die Daten"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nur deshalb gespeichert sind, weil sie aufgrund gesetzlicher oder satzungsmäßiger Aufbewahrungsvorschriften nicht gelöscht werden dürfen, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ausschließlich Zwecken der Datensicherung oder der Datenschutzkontrolle dienen"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "und die Auskunftserteilung einen unverhältnismäßigen Aufwand erfordern würde sowie eine Verarbeitung zu anderen Zwecken durch geeignete technische und organisatorische Maßnahmen ausgeschlossen ist."
                             }
                           ],
                           "label": "2.",
@@ -3788,7 +4024,63 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "„besondere Kategorien personenbezogener Daten“ a)Daten, aus denen die rassische oder ethnische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder die Gewerkschaftszugehörigkeit hervorgehen,b)genetische Daten,c)biometrische Daten zur eindeutigen Identifizierung einer natürlichen Person,d)Gesundheitsdaten unde)Daten zum Sexualleben oder zur sexuellen Orientierung;"
+                              "md": "„besondere Kategorien personenbezogener Daten“"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Daten, aus denen die rassische oder ethnische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder die Gewerkschaftszugehörigkeit hervorgehen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "genetische Daten,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "biometrische Daten zur eindeutigen Identifizierung einer natürlichen Person,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Gesundheitsdaten und"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Daten zum Sexualleben oder zur sexuellen Orientierung;"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                }
+                              ]
                             }
                           ],
                           "label": "14.",

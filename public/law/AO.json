@@ -1004,7 +1004,47 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Bauausführungen oder Montagen, auch örtlich fortschreitende oder schwimmende, wenn a)die einzelne Bauausführung oder Montage oderb)eine von mehreren zeitlich nebeneinander bestehenden Bauausführungen oder Montagen oderc)mehrere ohne Unterbrechung aufeinander folgende Bauausführungen oder Montagenlänger als sechs Monate dauern."
+                              "md": "Bauausführungen oder Montagen, auch örtlich fortschreitende oder schwimmende, wenn"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die einzelne Bauausführung oder Montage oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine von mehreren zeitlich nebeneinander bestehenden Bauausführungen oder Montagen oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "mehrere ohne Unterbrechung aufeinander folgende Bauausführungen oder Montagen"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "länger als sechs Monate dauern."
                             }
                           ],
                           "label": "8.",
@@ -1539,7 +1579,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei einer Beteiligung mehrerer Personen an Einkünften, die keine Einkünfte aus Land- und Forstwirtschaft, aus Gewerbebetrieb oder aus selbständiger Arbeit sind und die nach § 180 Absatz 1 Satz 1 Nummer 2 Buchstabe a gesondert festgestellt werden, a)das Finanzamt, von dessen Bezirk die Verwaltung dieser Einkünfte ausgeht, oderb)das Finanzamt, in dessen Bezirk sich der wertvollste Teil des Vermögens, aus dem die gemeinsamen Einkünfte fließen, befindet, wenn die Verwaltung dieser Einkünfte im Geltungsbereich dieses Gesetzes nicht feststellbar ist.Dies gilt entsprechend bei einer gesonderten Feststellung nach § 180 Absatz 1 Satz 1 Nummer 3 oder § 180 Absatz 2,"
+                              "md": "bei einer Beteiligung mehrerer Personen an Einkünften, die keine Einkünfte aus Land- und Forstwirtschaft, aus Gewerbebetrieb oder aus selbständiger Arbeit sind und die nach § 180 Absatz 1 Satz 1 Nummer 2 Buchstabe a gesondert festgestellt werden,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das Finanzamt, von dessen Bezirk die Verwaltung dieser Einkünfte ausgeht, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "das Finanzamt, in dessen Bezirk sich der wertvollste Teil des Vermögens, aus dem die gemeinsamen Einkünfte fließen, befindet, wenn die Verwaltung dieser Einkünfte im Geltungsbereich dieses Gesetzes nicht feststellbar ist."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "Dies gilt entsprechend bei einer gesonderten Feststellung nach § 180 Absatz 1 Satz 1 Nummer 3 oder § 180 Absatz 2,"
                             }
                           ],
                           "label": "4.",
@@ -2187,7 +2257,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sie für die Entwicklung, Überprüfung oder Änderung automatisierter Verfahren der Finanzbehörden erforderlich ist, weil a)unveränderte Daten benötigt werden oderb)eine Anonymisierung oder Pseudonymisierung der Daten nicht oder nur mit unverhältnismäßigem Aufwand möglich ist.Die Nutzung personenbezogener Daten ist dabei insbesondere erforderlich, wenn personenbezogene Daten aus mehreren verschiedenen Dateisystemen eindeutig miteinander verknüpft werden sollen und die Schaffung geeigneter Testfälle nicht oder nur mit unverhältnismäßigem Aufwand möglich ist,"
+                              "md": "sie für die Entwicklung, Überprüfung oder Änderung automatisierter Verfahren der Finanzbehörden erforderlich ist, weil"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "unveränderte Daten benötigt werden oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Anonymisierung oder Pseudonymisierung der Daten nicht oder nur mit unverhältnismäßigem Aufwand möglich ist."
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "Die Nutzung personenbezogener Daten ist dabei insbesondere erforderlich, wenn personenbezogene Daten aus mehreren verschiedenen Dateisystemen eindeutig miteinander verknüpft werden sollen und die Schaffung geeigneter Testfälle nicht oder nur mit unverhältnismäßigem Aufwand möglich ist,"
                             }
                           ],
                           "label": "4.",
@@ -2198,7 +2298,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sie für die Gesetzesfolgenabschätzung erforderlich ist, weil a)unveränderte Daten benötigt werden oderb)eine Anonymisierung oder Pseudonymisierung der Daten nicht oder nur mit unverhältnismäßigem Aufwand möglich ist,oder"
+                              "md": "sie für die Gesetzesfolgenabschätzung erforderlich ist, weil"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "unveränderte Daten benötigt werden oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "eine Anonymisierung oder Pseudonymisierung der Daten nicht oder nur mit unverhältnismäßigem Aufwand möglich ist,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "oder"
                             }
                           ],
                           "label": "5.",
@@ -2272,7 +2402,47 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "personenbezogene Daten eines anderen, die ihm a)in einem Verwaltungsverfahren, einem Rechnungsprüfungsverfahren oder einem gerichtlichen Verfahren in Steuersachen,b)in einem Strafverfahren wegen einer Steuerstraftat oder einem Bußgeldverfahren wegen einer Steuerordnungswidrigkeit,c)im Rahmen einer Weiterverarbeitung nach § 29c Absatz 1 Satz 1 Nummer 4, 5 oder 6 oder aus anderem dienstlichen Anlass, insbesondere durch Mitteilung einer Finanzbehörde oder durch die gesetzlich vorgeschriebene Vorlage eines Steuerbescheids oder einer Bescheinigung über die bei der Besteuerung getroffenen Feststellungen,bekannt geworden sind, oder"
+                              "md": "personenbezogene Daten eines anderen, die ihm"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Verwaltungsverfahren, einem Rechnungsprüfungsverfahren oder einem gerichtlichen Verfahren in Steuersachen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Strafverfahren wegen einer Steuerstraftat oder einem Bußgeldverfahren wegen einer Steuerordnungswidrigkeit,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "im Rahmen einer Weiterverarbeitung nach § 29c Absatz 1 Satz 1 Nummer 4, 5 oder 6 oder aus anderem dienstlichen Anlass, insbesondere durch Mitteilung einer Finanzbehörde oder durch die gesetzlich vorgeschriebene Vorlage eines Steuerbescheids oder einer Bescheinigung über die bei der Besteuerung getroffenen Feststellungen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "bekannt geworden sind, oder"
                             }
                           ],
                           "label": "1.",
@@ -2492,7 +2662,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "sie der Durchführung eines Strafverfahrens wegen einer Tat dient, die keine Steuerstraftat ist, und die Kenntnisse a)in einem Verfahren wegen einer Steuerstraftat oder Steuerordnungswidrigkeit erlangt worden sind; dies gilt jedoch nicht für solche Tatsachen, die der Steuerpflichtige in Unkenntnis der Einleitung des Strafverfahrens oder des Bußgeldverfahrens offenbart hat oder die bereits vor Einleitung des Strafverfahrens oder des Bußgeldverfahrens im Besteuerungsverfahren bekannt geworden sind, oderb)ohne Bestehen einer steuerlichen Verpflichtung oder unter Verzicht auf ein Auskunftsverweigerungsrecht erlangt worden sind,"
+                              "md": "sie der Durchführung eines Strafverfahrens wegen einer Tat dient, die keine Steuerstraftat ist, und die Kenntnisse"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in einem Verfahren wegen einer Steuerstraftat oder Steuerordnungswidrigkeit erlangt worden sind; dies gilt jedoch nicht für solche Tatsachen, die der Steuerpflichtige in Unkenntnis der Einleitung des Strafverfahrens oder des Bußgeldverfahrens offenbart hat oder die bereits vor Einleitung des Strafverfahrens oder des Bußgeldverfahrens im Besteuerungsverfahren bekannt geworden sind, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ohne Bestehen einer steuerlichen Verpflichtung oder unter Verzicht auf ein Auskunftsverweigerungsrecht erlangt worden sind,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "4.",
@@ -2503,7 +2699,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "für sie ein zwingendes öffentliches Interesse besteht; ein zwingendes öffentliches Interesse ist namentlich gegeben, wenn a)die Offenbarung erforderlich ist zur Abwehr erheblicher Nachteile für das Gemeinwohl oder einer Gefahr für die öffentliche Sicherheit, die Verteidigung oder die nationale Sicherheit oder zur Verhütung oder Verfolgung von Verbrechen und vorsätzlichen schweren Vergehen gegen Leib und Leben oder gegen den Staat und seine Einrichtungen,b)Wirtschaftsstraftaten verfolgt werden oder verfolgt werden sollen, die nach ihrer Begehungsweise oder wegen des Umfangs des durch sie verursachten Schadens geeignet sind, die wirtschaftliche Ordnung erheblich zu stören oder das Vertrauen der Allgemeinheit auf die Redlichkeit des geschäftlichen Verkehrs oder auf die ordnungsgemäße Arbeit der Behörden und der öffentlichen Einrichtungen erheblich zu erschüttern, oderc)die Offenbarung erforderlich ist zur Richtigstellung in der Öffentlichkeit verbreiteter unwahrer Tatsachen, die geeignet sind, das Vertrauen in die Verwaltung erheblich zu erschüttern; die Entscheidung trifft die zuständige oberste Finanzbehörde im Einvernehmen mit dem Bundesministerium der Finanzen; vor der Richtigstellung soll der Steuerpflichtige gehört werden."
+                              "md": "für sie ein zwingendes öffentliches Interesse besteht; ein zwingendes öffentliches Interesse ist namentlich gegeben, wenn"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Offenbarung erforderlich ist zur Abwehr erheblicher Nachteile für das Gemeinwohl oder einer Gefahr für die öffentliche Sicherheit, die Verteidigung oder die nationale Sicherheit oder zur Verhütung oder Verfolgung von Verbrechen und vorsätzlichen schweren Vergehen gegen Leib und Leben oder gegen den Staat und seine Einrichtungen,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Wirtschaftsstraftaten verfolgt werden oder verfolgt werden sollen, die nach ihrer Begehungsweise oder wegen des Umfangs des durch sie verursachten Schadens geeignet sind, die wirtschaftliche Ordnung erheblich zu stören oder das Vertrauen der Allgemeinheit auf die Redlichkeit des geschäftlichen Verkehrs oder auf die ordnungsgemäße Arbeit der Behörden und der öffentlichen Einrichtungen erheblich zu erschüttern, oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Offenbarung erforderlich ist zur Richtigstellung in der Öffentlichkeit verbreiteter unwahrer Tatsachen, die geeignet sind, das Vertrauen in die Verwaltung erheblich zu erschüttern; die Entscheidung trifft die zuständige oberste Finanzbehörde im Einvernehmen mit dem Bundesministerium der Finanzen; vor der Richtigstellung soll der Steuerpflichtige gehört werden."
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -2711,7 +2943,59 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "für die Durchführung eines Strafverfahrens, eines Bußgeldverfahrens oder eines anderen gerichtlichen oder Verwaltungsverfahrens mit dem Ziel a)der Bekämpfung von illegaler Beschäftigung oder Schwarzarbeit oderb)der Entscheidung aa)über Erteilung, Rücknahme oder Widerruf einer Erlaubnis nach dem Arbeitnehmerüberlassungsgesetz oderbb)über Bewilligung, Gewährung, Rückforderung, Erstattung, Weitergewährung oder Belassen einer Leistung aus öffentlichen Mitteln,"
+                              "md": "für die Durchführung eines Strafverfahrens, eines Bußgeldverfahrens oder eines anderen gerichtlichen oder Verwaltungsverfahrens mit dem Ziel"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Bekämpfung von illegaler Beschäftigung oder Schwarzarbeit oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Entscheidung"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "über Erteilung, Rücknahme oder Widerruf einer Erlaubnis nach dem Arbeitnehmerüberlassungsgesetz oder"
+                                            }
+                                          ],
+                                          "label": "aa)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "über Bewilligung, Gewährung, Rückforderung, Erstattung, Weitergewährung oder Belassen einer Leistung aus öffentlichen Mitteln,"
+                                            }
+                                          ],
+                                          "label": "bb)"
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -3194,7 +3478,43 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die betroffene Person oder Dritte in die Lage versetzen könnte, a)steuerlich bedeutsame Sachverhalte zu verschleiern,b)steuerlich bedeutsame Spuren zu verwischen oderc)Art und Umfang der Erfüllung steuerlicher Mitwirkungspflichten auf den Kenntnisstand der Finanzbehörden einzustellen,"
+                              "md": "die betroffene Person oder Dritte in die Lage versetzen könnte,"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "steuerlich bedeutsame Sachverhalte zu verschleiern,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "steuerlich bedeutsame Spuren zu verwischen oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Art und Umfang der Erfüllung steuerlicher Mitwirkungspflichten auf den Kenntnisstand der Finanzbehörden einzustellen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -3289,7 +3609,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "soweit die Erteilung der Information a)die ordnungsgemäße Erfüllung der in der Zuständigkeit der Finanzbehörden oder anderer öffentlicher Stellen liegenden Aufgaben im Sinne des Artikel 23 Absatz 1 Buchstabe d bis h der Verordnung (EU) 2016/679 gefährden würde oderb)die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde"
+                              "md": "soweit die Erteilung der Information"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die ordnungsgemäße Erfüllung der in der Zuständigkeit der Finanzbehörden oder anderer öffentlicher Stellen liegenden Aufgaben im Sinne des Artikel 23 Absatz 1 Buchstabe d bis h der Verordnung (EU) 2016/679 gefährden würde oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die öffentliche Sicherheit oder Ordnung gefährden oder sonst dem Wohl des Bundes oder eines Landes Nachteile bereiten würde"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -3401,7 +3747,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "die personenbezogenen Daten a)nur deshalb gespeichert sind, weil sie auf Grund gesetzlicher Aufbewahrungsvorschriften nicht gelöscht werden dürfen, oderb)ausschließlich Zwecken der Datensicherung oder der Datenschutzkontrolle dienenund die Auskunftserteilung einen unverhältnismäßigen Aufwand erfordern würde sowie eine Verarbeitung zu anderen Zwecken durch geeignete technische und organisatorische Maßnahmen ausgeschlossen ist."
+                              "md": "die personenbezogenen Daten"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "nur deshalb gespeichert sind, weil sie auf Grund gesetzlicher Aufbewahrungsvorschriften nicht gelöscht werden dürfen, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ausschließlich Zwecken der Datensicherung oder der Datenschutzkontrolle dienen"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "und die Auskunftserteilung einen unverhältnismäßigen Aufwand erfordern würde sowie eine Verarbeitung zu anderen Zwecken durch geeignete technische und organisatorische Maßnahmen ausgeschlossen ist."
                             }
                           ],
                           "label": "3.",
@@ -5027,7 +5403,37 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "deren Bezüge nicht höher sind als das Vierfache des Regelsatzes der Sozialhilfe im Sinne des § 28 des Zwölften Buches Sozialgesetzbuch; beim Alleinstehenden oder Alleinerziehenden tritt an die Stelle des Vierfachen das Fünffache des Regelsatzes. Dies gilt nicht für Personen, deren Vermögen zur nachhaltigen Verbesserung ihres Unterhalts ausreicht und denen zugemutet werden kann, es dafür zu verwenden. Bezüge im Sinne dieser Vorschrift sind a)Einkünfte im Sinne des § 2 Absatz 1 des Einkommensteuergesetzes undb)andere zur Bestreitung des Unterhalts bestimmte oder geeignete Bezüge,aller Haushaltsangehörigen. Zu berücksichtigen sind auch gezahlte und empfangene Unterhaltsleistungen. Die wirtschaftliche Hilfebedürftigkeit im vorstehenden Sinne ist bei Empfängern von Leistungen nach dem Zweiten oder Zwölften Buch Sozialgesetzbuch, des Wohngeldgesetzes, bei Empfängern von Leistungen nach § 27a des Bundesversorgungsgesetzes oder nach § 6a des Bundeskindergeldgesetzes als nachgewiesen anzusehen. Die Körperschaft kann den Nachweis mit Hilfe des jeweiligen Leistungsbescheids, der für den Unterstützungszeitraum maßgeblich ist, oder mit Hilfe der Bestätigung des Sozialleistungsträgers führen. Auf Antrag der Körperschaft kann auf einen Nachweis der wirtschaftlichen Hilfebedürftigkeit verzichtet werden, wenn auf Grund der besonderen Art der gewährten Unterstützungsleistung sichergestellt ist, dass nur wirtschaftlich hilfebedürftige Personen im vorstehenden Sinne unterstützt werden; für den Bescheid über den Nachweisverzicht gilt § 60a Absatz 3 bis 5 entsprechend oder"
+                              "md": "deren Bezüge nicht höher sind als das Vierfache des Regelsatzes der Sozialhilfe im Sinne des § 28 des Zwölften Buches Sozialgesetzbuch; beim Alleinstehenden oder Alleinerziehenden tritt an die Stelle des Vierfachen das Fünffache des Regelsatzes. Dies gilt nicht für Personen, deren Vermögen zur nachhaltigen Verbesserung ihres Unterhalts ausreicht und denen zugemutet werden kann, es dafür zu verwenden. Bezüge im Sinne dieser Vorschrift sind"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einkünfte im Sinne des § 2 Absatz 1 des Einkommensteuergesetzes und"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "andere zur Bestreitung des Unterhalts bestimmte oder geeignete Bezüge,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "aller Haushaltsangehörigen. Zu berücksichtigen sind auch gezahlte und empfangene Unterhaltsleistungen. Die wirtschaftliche Hilfebedürftigkeit im vorstehenden Sinne ist bei Empfängern von Leistungen nach dem Zweiten oder Zwölften Buch Sozialgesetzbuch, des Wohngeldgesetzes, bei Empfängern von Leistungen nach § 27a des Bundesversorgungsgesetzes oder nach § 6a des Bundeskindergeldgesetzes als nachgewiesen anzusehen. Die Körperschaft kann den Nachweis mit Hilfe des jeweiligen Leistungsbescheids, der für den Unterstützungszeitraum maßgeblich ist, oder mit Hilfe der Bestätigung des Sozialleistungsträgers führen. Auf Antrag der Körperschaft kann auf einen Nachweis der wirtschaftlichen Hilfebedürftigkeit verzichtet werden, wenn auf Grund der besonderen Art der gewährten Unterstützungsleistung sichergestellt ist, dass nur wirtschaftlich hilfebedürftige Personen im vorstehenden Sinne unterstützt werden; für den Bescheid über den Nachweisverzicht gilt § 60a Absatz 3 bis 5 entsprechend oder"
                             }
                           ],
                           "label": "2.",
@@ -6574,8 +6980,40 @@
                           "type": "li",
                           "children": [
                             {
-                              "type": "md",
-                              "md": "a)Alten-, Altenwohn- und Pflegeheime, Erholungsheime, Mahlzeitendienste, wenn sie in besonderem Maß den in § 53 genannten Personen dienen (§ 66 Absatz 3),b)Kindergärten, Kinder-, Jugend- und Studentenheime, Schullandheime und Jugendherbergen,c)Einrichtungen zur Versorgung, Verpflegung und Betreuung von Flüchtlingen. Die Voraussetzungen des § 66 Absatz 2 sind zu berücksichtigen,"
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Alten-, Altenwohn- und Pflegeheime, Erholungsheime, Mahlzeitendienste, wenn sie in besonderem Maß den in § 53 genannten Personen dienen (§ 66 Absatz 3),"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Kindergärten, Kinder-, Jugend- und Studentenheime, Schullandheime und Jugendherbergen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einrichtungen zur Versorgung, Verpflegung und Betreuung von Flüchtlingen. Die Voraussetzungen des § 66 Absatz 2 sind zu berücksichtigen,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -6585,8 +7023,34 @@
                           "type": "li",
                           "children": [
                             {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "landwirtschaftliche Betriebe und Gärtnereien, die der Selbstversorgung von Körperschaften dienen und dadurch die sachgemäße Ernährung und ausreichende Versorgung von Anstaltsangehörigen sichern,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "andere Einrichtungen, die für die Selbstversorgung von Körperschaften erforderlich sind, wie Tischlereien, Schlossereien,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
+                            },
+                            {
                               "type": "md",
-                              "md": "a)landwirtschaftliche Betriebe und Gärtnereien, die der Selbstversorgung von Körperschaften dienen und dadurch die sachgemäße Ernährung und ausreichende Versorgung von Anstaltsangehörigen sichern,b)andere Einrichtungen, die für die Selbstversorgung von Körperschaften erforderlich sind, wie Tischlereien, Schlossereien,wenn die Lieferungen und sonstigen Leistungen dieser Einrichtungen an Außenstehende dem Wert nach 20 Prozent der gesamten Lieferungen und sonstigen Leistungen des Betriebs – einschließlich der an die Körperschaften selbst bewirkten – nicht übersteigen,"
+                              "md": "wenn die Lieferungen und sonstigen Leistungen dieser Einrichtungen an Außenstehende dem Wert nach 20 Prozent der gesamten Lieferungen und sonstigen Leistungen des Betriebs – einschließlich der an die Körperschaften selbst bewirkten – nicht übersteigen,"
                             }
                           ],
                           "label": "2.",
@@ -6596,8 +7060,40 @@
                           "type": "li",
                           "children": [
                             {
-                              "type": "md",
-                              "md": "a)Werkstätten für behinderte Menschen, die nach den Vorschriften des Dritten Buches Sozialgesetzbuch förderungsfähig sind und Personen Arbeitsplätze bieten, die wegen ihrer Behinderung nicht auf dem allgemeinen Arbeitsmarkt tätig sein können,b)Einrichtungen für Beschäftigungs- und Arbeitstherapie, in denen behinderte Menschen aufgrund ärztlicher Indikationen außerhalb eines Beschäftigungsverhältnisses zum Träger der Therapieeinrichtung mit dem Ziel behandelt werden, körperliche oder psychische Grundfunktionen zum Zwecke der Wiedereingliederung in das Alltagsleben wiederherzustellen oder die besonderen Fähigkeiten und Fertigkeiten auszubilden, zu fördern und zu trainieren, die für eine Teilnahme am Arbeitsleben erforderlich sind, undc)Inklusionsbetriebe im Sinne des § 215 Absatz 1 des Neunten Buches Sozialgesetzbuch, wenn mindestens 40 Prozent der Beschäftigten besonders betroffene schwerbehinderte Menschen im Sinne des § 215 Absatz 1 des Neunten Buches Sozialgesetzbuch sind; auf die Quote werden psychisch kranke Menschen im Sinne des § 215 Absatz 4 des Neunten Buches Sozialgesetzbuch angerechnet,"
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Werkstätten für behinderte Menschen, die nach den Vorschriften des Dritten Buches Sozialgesetzbuch förderungsfähig sind und Personen Arbeitsplätze bieten, die wegen ihrer Behinderung nicht auf dem allgemeinen Arbeitsmarkt tätig sein können,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Einrichtungen für Beschäftigungs- und Arbeitstherapie, in denen behinderte Menschen aufgrund ärztlicher Indikationen außerhalb eines Beschäftigungsverhältnisses zum Träger der Therapieeinrichtung mit dem Ziel behandelt werden, körperliche oder psychische Grundfunktionen zum Zwecke der Wiedereingliederung in das Alltagsleben wiederherzustellen oder die besonderen Fähigkeiten und Fertigkeiten auszubilden, zu fördern und zu trainieren, die für eine Teilnahme am Arbeitsleben erforderlich sind, und"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "Inklusionsbetriebe im Sinne des § 215 Absatz 1 des Neunten Buches Sozialgesetzbuch, wenn mindestens 40 Prozent der Beschäftigten besonders betroffene schwerbehinderte Menschen im Sinne des § 215 Absatz 1 des Neunten Buches Sozialgesetzbuch sind; auf die Quote werden psychisch kranke Menschen im Sinne des § 215 Absatz 4 des Neunten Buches Sozialgesetzbuch angerechnet,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                }
+                              ]
                             }
                           ],
                           "label": "3.",
@@ -7556,7 +8052,47 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "für einen Beteiligten ohne Aufenthalt a)im Inland,b)in einem anderen Mitgliedstaat der Europäischen Union oderc)in einem anderen Staat, auf den das Abkommen über den Europäischen Wirtschaftsraum anzuwenden ist,wenn er der Aufforderung der Finanzbehörde, einen Vertreter zu bestellen, innerhalb der ihm gesetzten Frist nicht nachgekommen ist,"
+                                  "md": "für einen Beteiligten ohne Aufenthalt"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "im Inland,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in einem anderen Mitgliedstaat der Europäischen Union oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in einem anderen Staat, auf den das Abkommen über den Europäischen Wirtschaftsraum anzuwenden ist,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "wenn er der Aufforderung der Finanzbehörde, einen Vertreter zu bestellen, innerhalb der ihm gesetzten Frist nicht nachgekommen ist,"
                                 }
                               ],
                               "label": "3.",
@@ -8782,7 +9318,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "es wahrscheinlich ist, a)die Doppelbesteuerung durch das Vorabverständigungsverfahren zu vermeiden undb)eine übereinstimmende Abkommensauslegung mit der zuständigen Behörde des anderen Vertragsstaates zu erreichen."
+                                      "md": "es wahrscheinlich ist,"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Doppelbesteuerung durch das Vorabverständigungsverfahren zu vermeiden und"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "eine übereinstimmende Abkommensauslegung mit der zuständigen Behörde des anderen Vertragsstaates zu erreichen."
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -9902,7 +10464,87 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "den für die Verwaltung a)der Grundsicherung für Arbeitsuchende nach dem Zweiten Buch Sozialgesetzbuch,b)der Sozialhilfe nach dem Zwölften Buch Sozialgesetzbuch,c)der Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz,d)der Aufstiegsfortbildungsförderung nach dem Aufstiegsfortbildungsförderungsgesetz,e)des Wohngeldes nach dem Wohngeldgesetz,f)der Leistungen nach dem Asylbewerberleistungsgesetz undg)des Zuschlags an Entgeltpunkten für langjährige Versicherung nach dem Sechsten Buch Sozialgesetzbuchzuständigen Behörden, soweit dies zur Überprüfung des Vorliegens der Anspruchsvoraussetzungen erforderlich ist und ein vorheriges Auskunftsersuchen an die betroffene Person nicht zum Ziel geführt hat oder keinen Erfolg verspricht;"
+                                      "md": "den für die Verwaltung"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der Grundsicherung für Arbeitsuchende nach dem Zweiten Buch Sozialgesetzbuch,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der Sozialhilfe nach dem Zwölften Buch Sozialgesetzbuch,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz,"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der Aufstiegsfortbildungsförderung nach dem Aufstiegsfortbildungsförderungsgesetz,"
+                                            }
+                                          ],
+                                          "label": "d)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "des Wohngeldes nach dem Wohngeldgesetz,"
+                                            }
+                                          ],
+                                          "label": "e)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "der Leistungen nach dem Asylbewerberleistungsgesetz und"
+                                            }
+                                          ],
+                                          "label": "f)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "des Zuschlags an Entgeltpunkten für langjährige Versicherung nach dem Sechsten Buch Sozialgesetzbuch"
+                                            }
+                                          ],
+                                          "label": "g)"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "md",
+                                      "md": "zuständigen Behörden, soweit dies zur Überprüfung des Vorliegens der Anspruchsvoraussetzungen erforderlich ist und ein vorheriges Auskunftsersuchen an die betroffene Person nicht zum Ziel geführt hat oder keinen Erfolg verspricht;"
                                     }
                                   ],
                                   "label": "1.",
@@ -9945,7 +10587,43 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "die Ladung zu dem Termin zur Abgabe der Vermögensauskunft an den Vollstreckungsschuldner nicht zustellbar ist und a)die Anschrift, unter der die Zustellung ausgeführt werden sollte, mit der Anschrift übereinstimmt, die von einer der in § 755 Absatz 1 und 2 der Zivilprozessordnung genannten Stellen innerhalb von drei Monaten vor oder nach dem Zustellungsversuch mitgeteilt wurde, oderb)die Meldebehörde nach dem Zustellungsversuch die Auskunft erteilt, dass ihr keine derzeitige Anschrift des Vollstreckungsschuldners bekannt ist, oderc)die Meldebehörde innerhalb von drei Monaten vor Erlass der Vollstreckungsanordnung die Auskunft erteilt hat, dass ihr keine derzeitige Anschrift des Vollstreckungsschuldners bekannt ist;"
+                                      "md": "die Ladung zu dem Termin zur Abgabe der Vermögensauskunft an den Vollstreckungsschuldner nicht zustellbar ist und"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Anschrift, unter der die Zustellung ausgeführt werden sollte, mit der Anschrift übereinstimmt, die von einer der in § 755 Absatz 1 und 2 der Zivilprozessordnung genannten Stellen innerhalb von drei Monaten vor oder nach dem Zustellungsversuch mitgeteilt wurde, oder"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Meldebehörde nach dem Zustellungsversuch die Auskunft erteilt, dass ihr keine derzeitige Anschrift des Vollstreckungsschuldners bekannt ist, oder"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Meldebehörde innerhalb von drei Monaten vor Erlass der Vollstreckungsanordnung die Auskunft erteilt hat, dass ihr keine derzeitige Anschrift des Vollstreckungsschuldners bekannt ist;"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -10091,7 +10769,63 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "den Finanzbehörden Folgendes mitzuteilen: a)den Empfänger gewährter Leistungen sowie den Rechtsgrund, die Höhe, den Zeitpunkt dieser Leistungen und bei unbarer Auszahlung die Bankverbindung, auf die die Leistung erbracht wurdeb)Verwaltungsakte und öffentlich-rechtliche Verträge, die für die betroffene Person die Versagung oder Einschränkung einer steuerlichen Vergünstigung zur Folge haben oder die der betroffenen Person steuerpflichtige Einnahmen ermöglichen,c)vergebene Subventionen und ähnliche Förderungsmaßnahmen sowied)Anhaltspunkte für Schwarzarbeit, unerlaubte Arbeitnehmerüberlassung oder unerlaubte Ausländerbeschäftigung,e)die Adressaten und die Höhe von im Verfahren nach § 335 des Handelsgesetzbuchs festgesetzten Ordnungsgeldern;"
+                                      "md": "den Finanzbehörden Folgendes mitzuteilen:"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "den Empfänger gewährter Leistungen sowie den Rechtsgrund, die Höhe, den Zeitpunkt dieser Leistungen und bei unbarer Auszahlung die Bankverbindung, auf die die Leistung erbracht wurde"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "Verwaltungsakte und öffentlich-rechtliche Verträge, die für die betroffene Person die Versagung oder Einschränkung einer steuerlichen Vergünstigung zur Folge haben oder die der betroffenen Person steuerpflichtige Einnahmen ermöglichen,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "vergebene Subventionen und ähnliche Förderungsmaßnahmen sowie"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "Anhaltspunkte für Schwarzarbeit, unerlaubte Arbeitnehmerüberlassung oder unerlaubte Ausländerbeschäftigung,"
+                                            }
+                                          ],
+                                          "label": "d)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die Adressaten und die Höhe von im Verfahren nach § 335 des Handelsgesetzbuchs festgesetzten Ordnungsgeldern;"
+                                            }
+                                          ],
+                                          "label": "e)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -10321,7 +11055,63 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Der Datensatz muss folgende Angaben enthalten: a)den Namen, die Anschrift, das Ordnungsmerkmal und die Kontaktdaten der mitteilungspflichtigen Stelle sowie ihr Identifikationsmerkmal nach den §§ 139a bis 139c oder, soweit dieses nicht vergeben wurde, ihre Steuernummer;b)hat die mitteilungspflichtige Stelle einen Auftragnehmer im Sinne des § 87d mit der Datenübermittlung beauftragt, so sind zusätzlich zu den Angaben nach Buchstabe a der Name, die Anschrift und die Kontaktdaten des Auftragnehmers sowie dessen Identifikationsmerkmal nach den §§ 139a bis 139c oder, wenn dieses nicht vergeben wurde, dessen Steuernummer anzugeben;c)den Familiennamen, den Vornamen, den Tag der Geburt, die Anschrift des Steuerpflichtigen und dessen Identifikationsnummer nach § 139b;d)handelt es sich bei dem Steuerpflichtigen nicht um eine natürliche Person, so sind dessen Firma oder Name, Anschrift und Wirtschafts-Identifikationsnummer nach § 139c oder, wenn diese noch nicht vergeben wurde, dessen Steuernummer anzugeben;e)den Zeitpunkt der Erstellung des Datensatzes oder eines anderen Ereignisses, anhand dessen die Daten in der zeitlichen Reihenfolge geordnet werden können, die Art der Mitteilung, den betroffenen Besteuerungszeitraum oder Besteuerungszeitpunkt und die Angabe, ob es sich um eine erstmalige, korrigierte oder stornierende Mitteilung handelt."
+                                      "md": "Der Datensatz muss folgende Angaben enthalten:"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "den Namen, die Anschrift, das Ordnungsmerkmal und die Kontaktdaten der mitteilungspflichtigen Stelle sowie ihr Identifikationsmerkmal nach den §§ 139a bis 139c oder, soweit dieses nicht vergeben wurde, ihre Steuernummer;"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "hat die mitteilungspflichtige Stelle einen Auftragnehmer im Sinne des § 87d mit der Datenübermittlung beauftragt, so sind zusätzlich zu den Angaben nach Buchstabe a der Name, die Anschrift und die Kontaktdaten des Auftragnehmers sowie dessen Identifikationsmerkmal nach den §§ 139a bis 139c oder, wenn dieses nicht vergeben wurde, dessen Steuernummer anzugeben;"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "den Familiennamen, den Vornamen, den Tag der Geburt, die Anschrift des Steuerpflichtigen und dessen Identifikationsnummer nach § 139b;"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "handelt es sich bei dem Steuerpflichtigen nicht um eine natürliche Person, so sind dessen Firma oder Name, Anschrift und Wirtschafts-Identifikationsnummer nach § 139c oder, wenn diese noch nicht vergeben wurde, dessen Steuernummer anzugeben;"
+                                            }
+                                          ],
+                                          "label": "d)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "den Zeitpunkt der Erstellung des Datensatzes oder eines anderen Ereignisses, anhand dessen die Daten in der zeitlichen Reihenfolge geordnet werden können, die Art der Mitteilung, den betroffenen Besteuerungszeitraum oder Besteuerungszeitpunkt und die Angabe, ob es sich um eine erstmalige, korrigierte oder stornierende Mitteilung handelt."
+                                            }
+                                          ],
+                                          "label": "e)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -11011,8 +11801,44 @@
                                   "type": "li",
                                   "children": [
                                     {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "Verteidiger,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "Rechtsanwälte, Patentanwälte, Notare, Steuerberater, Wirtschaftsprüfer, Steuerbevollmächtigte, vereidigte Buchprüfer,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "Ärzte, Zahnärzte, Psychotherapeuten, Psychologische Psychotherapeuten, Kinder- und Jugendlichenpsychotherapeuten, Apotheker und Hebammen,"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        }
+                                      ]
+                                    },
+                                    {
                                       "type": "md",
-                                      "md": "a)Verteidiger,b)Rechtsanwälte, Patentanwälte, Notare, Steuerberater, Wirtschaftsprüfer, Steuerbevollmächtigte, vereidigte Buchprüfer,c)Ärzte, Zahnärzte, Psychotherapeuten, Psychologische Psychotherapeuten, Kinder- und Jugendlichenpsychotherapeuten, Apotheker und Hebammen,über das, was ihnen in dieser Eigenschaft anvertraut worden oder bekannt geworden ist,"
+                                      "md": "über das, was ihnen in dieser Eigenschaft anvertraut worden oder bekannt geworden ist,"
                                     }
                                   ],
                                   "label": "3.",
@@ -13889,7 +14715,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "den Erwerb oder die Veräußerung von Beteiligungen an einer Körperschaft, Personenvereinigung oder Vermögensmasse mit Sitz und Geschäftsleitung außerhalb des Geltungsbereichs dieses Gesetzes, wenn a)damit eine Beteiligung von mindestens 10 Prozent am Kapital oder am Vermögen der Körperschaft, Personenvereinigung oder Vermögensmasse erreicht wird oderb)die Summe der Anschaffungskosten aller Beteiligungen mehr als 150 000 Euro beträgt. Dies gilt nicht für den Erwerb und die Veräußerung von Beteiligungen von weniger als 1 Prozent am Kapital oder am Vermögen der Körperschaft, Personenvereinigung oder Vermögensmasse, wenn mit der Hauptgattung der Aktien der ausländischen Gesellschaft ein wesentlicher und regelmäßiger Handel an einer Börse in einem Mitgliedstaat der Europäischen Union oder in einem Vertragsstaat des EWR-Abkommens stattfindet oder an einer Börse, die in einem anderen Staat nach § 193 Absatz 1 Satz 1 Nummer 2 und 4 des Kapitalanlagegesetzbuchs von der Bundesanstalt für Finanzdienstleistungsaufsicht zugelassen ist. Für die Ermittlung der Beteiligungshöhe im Sinne des Satzes 2 sind alle gehaltenen Beteiligungen zu berücksichtigen. Nicht mitteilungspflichtige Erwerbe und nicht mitteilungspflichtige Veräußerungen im Sinne des Satzes 2 sind bei der Ermittlung der Summe der Anschaffungskosten im Sinne des Satzes 1 außer Betracht zu lassen;"
+                                  "md": "den Erwerb oder die Veräußerung von Beteiligungen an einer Körperschaft, Personenvereinigung oder Vermögensmasse mit Sitz und Geschäftsleitung außerhalb des Geltungsbereichs dieses Gesetzes, wenn"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "damit eine Beteiligung von mindestens 10 Prozent am Kapital oder am Vermögen der Körperschaft, Personenvereinigung oder Vermögensmasse erreicht wird oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Summe der Anschaffungskosten aller Beteiligungen mehr als 150 000 Euro beträgt. Dies gilt nicht für den Erwerb und die Veräußerung von Beteiligungen von weniger als 1 Prozent am Kapital oder am Vermögen der Körperschaft, Personenvereinigung oder Vermögensmasse, wenn mit der Hauptgattung der Aktien der ausländischen Gesellschaft ein wesentlicher und regelmäßiger Handel an einer Börse in einem Mitgliedstaat der Europäischen Union oder in einem Vertragsstaat des EWR-Abkommens stattfindet oder an einer Börse, die in einem anderen Staat nach § 193 Absatz 1 Satz 1 Nummer 2 und 4 des Kapitalanlagegesetzbuchs von der Bundesanstalt für Finanzdienstleistungsaufsicht zugelassen ist. Für die Ermittlung der Beteiligungshöhe im Sinne des Satzes 2 sind alle gehaltenen Beteiligungen zu berücksichtigen. Nicht mitteilungspflichtige Erwerbe und nicht mitteilungspflichtige Veräußerungen im Sinne des Satzes 2 sind bei der Ermittlung der Summe der Anschaffungskosten im Sinne des Satzes 1 außer Betracht zu lassen;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -14026,7 +14878,113 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "eine nach Steuerhoheitsgebieten gegliederte Übersicht, wie sich die Geschäftstätigkeit des Konzerns auf die Steuerhoheitsgebiete verteilt, in denen der Konzern durch Unternehmen oder Betriebsstätten tätig ist; zu diesem Zweck sind in der Übersicht folgende Positionen auszuweisen: a)die Umsatzerlöse und sonstigen Erträge aus Geschäftsvorfällen mit nahestehenden Unternehmen,b)die Umsatzerlöse und sonstigen Erträge aus Geschäftsvorfällen mit fremden Unternehmen,c)die Summe aus den Umsatzerlösen und sonstigen Erträgen gemäß den Buchstaben a und b,d)die im Wirtschaftsjahr gezahlten Ertragsteuern,e)die im Wirtschaftsjahr für dieses Wirtschaftsjahr gezahlten und zurückgestellten Ertragsteuern,f)das Jahresergebnis vor Ertragsteuern,g)das Eigenkapital,h)der einbehaltene Gewinn,i)die Zahl der Beschäftigten undj)die materiellen Vermögenswerte;"
+                                  "md": "eine nach Steuerhoheitsgebieten gegliederte Übersicht, wie sich die Geschäftstätigkeit des Konzerns auf die Steuerhoheitsgebiete verteilt, in denen der Konzern durch Unternehmen oder Betriebsstätten tätig ist; zu diesem Zweck sind in der Übersicht folgende Positionen auszuweisen:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Umsatzerlöse und sonstigen Erträge aus Geschäftsvorfällen mit nahestehenden Unternehmen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Umsatzerlöse und sonstigen Erträge aus Geschäftsvorfällen mit fremden Unternehmen,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Summe aus den Umsatzerlösen und sonstigen Erträgen gemäß den Buchstaben a und b,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die im Wirtschaftsjahr gezahlten Ertragsteuern,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die im Wirtschaftsjahr für dieses Wirtschaftsjahr gezahlten und zurückgestellten Ertragsteuern,"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Jahresergebnis vor Ertragsteuern,"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Eigenkapital,"
+                                        }
+                                      ],
+                                      "label": "g)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der einbehaltene Gewinn,"
+                                        }
+                                      ],
+                                      "label": "h)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Zahl der Beschäftigten und"
+                                        }
+                                      ],
+                                      "label": "i)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die materiellen Vermögenswerte;"
+                                        }
+                                      ],
+                                      "label": "j)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -14417,7 +15375,63 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die entweder mehr als einen Mitgliedstaat der Europäischen Union oder mindestens einen Mitgliedstaat der Europäischen Union und einen oder mehrere Drittstaaten betrifft, wobei mindestens eine der folgenden Bedingungen erfüllt ist: a)nicht alle an der Gestaltung Beteiligten sind im selben Steuerhoheitsgebiet ansässig;b)einer oder mehrere der an der Gestaltung Beteiligten sind gleichzeitig in mehreren Steuerhoheitsgebieten ansässig;c)einer oder mehrere der an der Gestaltung Beteiligten gehen in einem anderen Steuerhoheitsgebiet über eine dort gelegene Betriebstätte einer Geschäftstätigkeit nach und die Gestaltung ist Teil der Geschäftstätigkeit der Betriebstätte oder macht deren gesamte Geschäftstätigkeit aus;d)einer oder mehrere der an der Gestaltung Beteiligten gehen in einem anderen Steuerhoheitsgebiet einer Tätigkeit nach, ohne dort ansässig zu sein oder eine Betriebstätte zu begründen;e)die Gestaltung ist geeignet, Auswirkungen auf den automatischen Informationsaustausch oder die Identifizierung des wirtschaftlichen Eigentümers zu haben, und"
+                                  "md": "die entweder mehr als einen Mitgliedstaat der Europäischen Union oder mindestens einen Mitgliedstaat der Europäischen Union und einen oder mehrere Drittstaaten betrifft, wobei mindestens eine der folgenden Bedingungen erfüllt ist:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "nicht alle an der Gestaltung Beteiligten sind im selben Steuerhoheitsgebiet ansässig;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer oder mehrere der an der Gestaltung Beteiligten sind gleichzeitig in mehreren Steuerhoheitsgebieten ansässig;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer oder mehrere der an der Gestaltung Beteiligten gehen in einem anderen Steuerhoheitsgebiet über eine dort gelegene Betriebstätte einer Geschäftstätigkeit nach und die Gestaltung ist Teil der Geschäftstätigkeit der Betriebstätte oder macht deren gesamte Geschäftstätigkeit aus;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer oder mehrere der an der Gestaltung Beteiligten gehen in einem anderen Steuerhoheitsgebiet einer Tätigkeit nach, ohne dort ansässig zu sein oder eine Betriebstätte zu begründen;"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Gestaltung ist geeignet, Auswirkungen auf den automatischen Informationsaustausch oder die Identifizierung des wirtschaftlichen Eigentümers zu haben, und"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -14428,7 +15442,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die mindestens a)ein Kennzeichen im Sinne des § 138e Absatz 1 aufweist und von der ein verständiger Dritter unter Berücksichtigung aller wesentlichen Fakten und Umstände vernünftigerweise erwarten kann, dass der Hauptvorteil oder einer der Hauptvorteile die Erlangung eines steuerlichen Vorteils im Sinne des Absatzes 3 ist, oderb)ein Kennzeichen im Sinne des § 138e Absatz 2 aufweist."
+                                  "md": "die mindestens"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "ein Kennzeichen im Sinne des § 138e Absatz 1 aufweist und von der ein verständiger Dritter unter Berücksichtigung aller wesentlichen Fakten und Umstände vernünftigerweise erwarten kann, dass der Hauptvorteil oder einer der Hauptvorteile die Erlangung eines steuerlichen Vorteils im Sinne des Absatzes 3 ist, oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "ein Kennzeichen im Sinne des § 138e Absatz 2 aufweist."
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -14615,7 +15655,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Vereinbarung a)einer Vertraulichkeitsklausel, die dem Nutzer oder einem anderen an der Steuergestaltung Beteiligten eine Offenlegung, auf welche Weise aufgrund der Gestaltung ein steuerlicher Vorteil erlangt wird, gegenüber anderen Intermediären oder den Finanzbehörden verbietet, oderb)einer Vergütung, die in Bezug auf den steuerlichen Vorteil der Steuergestaltung festgesetzt wird; dies gilt, wenn die Vergütung von der Höhe des steuerlichen Vorteils abhängt oder wenn die Vereinbarung die Abrede enthält, die Vergütung ganz oder teilweise zurückzuerstatten, falls der mit der Gestaltung zu erwartende steuerliche Vorteil ganz oder teilweise nicht erzielt wird,"
+                                  "md": "die Vereinbarung"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer Vertraulichkeitsklausel, die dem Nutzer oder einem anderen an der Steuergestaltung Beteiligten eine Offenlegung, auf welche Weise aufgrund der Gestaltung ein steuerlicher Vorteil erlangt wird, gegenüber anderen Intermediären oder den Finanzbehörden verbietet, oder"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer Vergütung, die in Bezug auf den steuerlichen Vorteil der Steuergestaltung festgesetzt wird; dies gilt, wenn die Vergütung von der Höhe des steuerlichen Vorteils abhängt oder wenn die Vereinbarung die Abrede enthält, die Vergütung ganz oder teilweise zurückzuerstatten, falls der mit der Gestaltung zu erwartende steuerliche Vorteil ganz oder teilweise nicht erzielt wird,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -14637,7 +15703,89 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Gestaltungen, die zum Gegenstand haben, dass a)ein an der Gestaltung Beteiligter unangemessene rechtliche Schritte unternimmt, um ein verlustbringendes Unternehmen unmittelbar oder mittelbar zu erwerben, die Haupttätigkeit dieses Unternehmens zu beenden und dessen Verluste dafür zu nutzen, seine Steuerbelastung zu verringern, einschließlich der Übertragung der Verluste in ein anderes Steuerhoheitsgebiet oder der zeitlich näheren Nutzung dieser Verluste,b)Einkünfte in Vermögen, Schenkungen oder andere nicht oder niedriger besteuerte Einnahmen oder nicht steuerbare Einkünfte umgewandelt werden,c)Transaktionen durch die Einbeziehung zwischengeschalteter Unternehmen, die keine wesentliche wirtschaftliche Tätigkeit ausüben, oder Transaktionen, die sich gegenseitig aufheben oder ausgleichen, für zirkuläre Vermögensverschiebungen genutzt werden,d)der Empfänger grenzüberschreitender, beim Zahlenden als Betriebsausgaben abzugsfähiger Zahlungen zwischen zwei oder mehr verbundenen Unternehmen in einem Steuerhoheitsgebiet ansässig ist, das keine Körperschaftsteuer erhebt oder einen Körperschaftsteuersatz von 0 Prozent oder nahe 0 Prozent hat, odere)die grenzüberschreitende, beim Zahlenden als Betriebsausgaben abzugsfähige Zahlung zwischen zwei oder mehr verbundenen Unternehmen in ein Steuerhoheitsgebiet erfolgt, in dem der Empfänger ansässig ist, soweit dieses Steuerhoheitsgebiet die Zahlung aa)vollständig von der Steuer befreit oderbb)einer steuerlichen Präferenzregelung unterwirft."
+                                  "md": "Gestaltungen, die zum Gegenstand haben, dass"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "ein an der Gestaltung Beteiligter unangemessene rechtliche Schritte unternimmt, um ein verlustbringendes Unternehmen unmittelbar oder mittelbar zu erwerben, die Haupttätigkeit dieses Unternehmens zu beenden und dessen Verluste dafür zu nutzen, seine Steuerbelastung zu verringern, einschließlich der Übertragung der Verluste in ein anderes Steuerhoheitsgebiet oder der zeitlich näheren Nutzung dieser Verluste,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Einkünfte in Vermögen, Schenkungen oder andere nicht oder niedriger besteuerte Einnahmen oder nicht steuerbare Einkünfte umgewandelt werden,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Transaktionen durch die Einbeziehung zwischengeschalteter Unternehmen, die keine wesentliche wirtschaftliche Tätigkeit ausüben, oder Transaktionen, die sich gegenseitig aufheben oder ausgleichen, für zirkuläre Vermögensverschiebungen genutzt werden,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Empfänger grenzüberschreitender, beim Zahlenden als Betriebsausgaben abzugsfähiger Zahlungen zwischen zwei oder mehr verbundenen Unternehmen in einem Steuerhoheitsgebiet ansässig ist, das keine Körperschaftsteuer erhebt oder einen Körperschaftsteuersatz von 0 Prozent oder nahe 0 Prozent hat, oder"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die grenzüberschreitende, beim Zahlenden als Betriebsausgaben abzugsfähige Zahlung zwischen zwei oder mehr verbundenen Unternehmen in ein Steuerhoheitsgebiet erfolgt, in dem der Empfänger ansässig ist, soweit dieses Steuerhoheitsgebiet die Zahlung"
+                                        },
+                                        {
+                                          "type": "list",
+                                          "listType": "arabic",
+                                          "children": [
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "vollständig von der Steuer befreit oder"
+                                                }
+                                              ],
+                                              "label": "aa)"
+                                            },
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "einer steuerlichen Präferenzregelung unterwirft."
+                                                }
+                                              ],
+                                              "label": "bb)"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -14665,7 +15813,105 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Gestaltungen, die zum Gegenstand haben, dass a)der Empfänger grenzüberschreitender Zahlungen, die zwischen zwei oder mehr verbundenen Unternehmen erfolgen und beim Zahlenden als Betriebsausgabe abzugsfähig sind, aa)in keinem Steuerhoheitsgebiet ansässig ist oderbb)in einem Steuerhoheitsgebiet ansässig ist, das in der Liste der Drittstaaten aufgeführt wird, die von den Mitgliedstaaten der Europäischen Union oder von der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung als nicht kooperierende Jurisdiktion eingestuft wurde,b)in mehr als einem Steuerhoheitsgebiet aa)Absetzungen für Abnutzung desselben Vermögenswertes in Anspruch genommen werden oderbb)eine Befreiung von der Doppelbesteuerung für dieselben Einkünfte oder dasselbe Vermögen vorgenommen wird und die Einkünfte oder das Vermögen deshalb ganz oder teilweise unversteuert bleiben oder c)die Gestaltung eine Übertragung oder Überführung von Vermögensgegenständen vorsieht, soweit sich die steuerliche Bewertung des Vermögensgegenstandes in den beteiligten Steuerhoheitsgebieten wesentlich unterscheidet;"
+                                  "md": "Gestaltungen, die zum Gegenstand haben, dass"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "der Empfänger grenzüberschreitender Zahlungen, die zwischen zwei oder mehr verbundenen Unternehmen erfolgen und beim Zahlenden als Betriebsausgabe abzugsfähig sind,"
+                                        },
+                                        {
+                                          "type": "list",
+                                          "listType": "arabic",
+                                          "children": [
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "in keinem Steuerhoheitsgebiet ansässig ist oder"
+                                                }
+                                              ],
+                                              "label": "aa)"
+                                            },
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "in einem Steuerhoheitsgebiet ansässig ist, das in der Liste der Drittstaaten aufgeführt wird, die von den Mitgliedstaaten der Europäischen Union oder von der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung als nicht kooperierende Jurisdiktion eingestuft wurde,"
+                                                }
+                                              ],
+                                              "label": "bb)"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in mehr als einem Steuerhoheitsgebiet"
+                                        },
+                                        {
+                                          "type": "list",
+                                          "listType": "arabic",
+                                          "children": [
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "Absetzungen für Abnutzung desselben Vermögenswertes in Anspruch genommen werden oder"
+                                                }
+                                              ],
+                                              "label": "aa)"
+                                            },
+                                            {
+                                              "type": "li",
+                                              "children": [
+                                                {
+                                                  "type": "md",
+                                                  "md": "eine Befreiung von der Doppelbesteuerung für dieselben Einkünfte oder dasselbe Vermögen vorgenommen wird und die Einkünfte oder das Vermögen deshalb ganz oder teilweise unversteuert bleiben"
+                                                }
+                                              ],
+                                              "label": "bb)"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "oder"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Gestaltung eine Übertragung oder Überführung von Vermögensgegenständen vorsieht, soweit sich die steuerliche Bewertung des Vermögensgegenstandes in den beteiligten Steuerhoheitsgebieten wesentlich unterscheidet;"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -14676,7 +15922,73 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Gestaltungen, die zu einer Aushöhlung der Mitteilungspflicht gemäß den Rechtsvorschriften zur Umsetzung des Standards für den automatischen Austausch von Informationen über Finanzkonten in Steuersachen (gemeinsamer Meldestandard) führen können oder die sich das Fehlen derartiger Rechtsvorschriften zu Nutze machen; derartige Gestaltungen umfassen insbesondere a)die Nutzung eines Kontos, eines Produkts oder einer Anlage, welches oder welche kein Finanzkonto im Sinne des § 19 Nummer 18 des Finanzkonten-Informationsaustauschgesetzes (Finanzkonto) ist oder vorgeblich kein Finanzkonto ist, jedoch Merkmale aufweist, die denen eines Finanzkontos entsprechen,b)die Übertragung eines Finanzkontos oder von Vermögenswerten in ein Steuerhoheitsgebiet, das nicht an den automatischen Informationsaustausch über Finanzkonten nach dem gemeinsamen Meldestandard mit dem Steuerhoheitsgebiet, in dem der Nutzer ansässig ist, gebunden ist, oder die Einbeziehung solcher Steuerhoheitsgebiete,c)die Neueinstufung von Einkünften und Vermögen als Produkte oder Zahlungen, die nicht dem automatischen Informationsaustausch über Finanzkonten nach dem gemeinsamen Meldestandard unterliegen,d)die Übertragung oder Umwandlung eines Finanzinstituts im Sinne des § 19 Nummer 3 des Finanzkonten-Informationsaustauschgesetzes (Finanzinstitut) oder eines Finanzkontos oder der darin enthaltenen Vermögenswerte in Finanzinstitute, Finanzkonten oder Vermögenswerte, die nicht der Meldepflicht im Rahmen des automatischen Informationsaustauschs über Finanzkonten nach dem gemeinsamen Meldestandard unterliegen,e)die Einbeziehung von Rechtsträgern, Steuergestaltungen oder Strukturen, die die Meldung eines Kontoinhabers im Sinne des § 20 Nummer 1 des Finanzkonten-Informationsaustauschgesetzes (Kontoinhaber) oder mehrerer Kontoinhaber oder einer beherrschenden Person im Sinne des § 19 Nummer 39 des Finanzkonten-Informationsaustauschgesetzes (beherrschende Person) oder mehrerer beherrschender Personen im Rahmen des automatischen Informationsaustauschs über Finanzkonten nach dem gemeinsamen Meldestandard ausschließen oder auszuschließen vorgeben, oderf)die Aushöhlung von Verfahren zur Erfüllung der Sorgfaltspflichten, die Finanzinstitute zur Erfüllung ihrer Meldepflichten bezüglich Informationen zu Finanzkonten nach dem gemeinsamen Meldestandard anwenden, oder die Ausnutzung von Schwächen in diesen Verfahren, einschließlich der Einbeziehung von Staaten oder Territorien mit ungeeigneten oder schwachen Regelungen für die Durchsetzung von Vorschriften gegen Geldwäsche oder mit schwachen Transparenzanforderungen für juristische Personen oder Rechtsvereinbarungen;"
+                                  "md": "Gestaltungen, die zu einer Aushöhlung der Mitteilungspflicht gemäß den Rechtsvorschriften zur Umsetzung des Standards für den automatischen Austausch von Informationen über Finanzkonten in Steuersachen (gemeinsamer Meldestandard) führen können oder die sich das Fehlen derartiger Rechtsvorschriften zu Nutze machen; derartige Gestaltungen umfassen insbesondere"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Nutzung eines Kontos, eines Produkts oder einer Anlage, welches oder welche kein Finanzkonto im Sinne des § 19 Nummer 18 des Finanzkonten-Informationsaustauschgesetzes (Finanzkonto) ist oder vorgeblich kein Finanzkonto ist, jedoch Merkmale aufweist, die denen eines Finanzkontos entsprechen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Übertragung eines Finanzkontos oder von Vermögenswerten in ein Steuerhoheitsgebiet, das nicht an den automatischen Informationsaustausch über Finanzkonten nach dem gemeinsamen Meldestandard mit dem Steuerhoheitsgebiet, in dem der Nutzer ansässig ist, gebunden ist, oder die Einbeziehung solcher Steuerhoheitsgebiete,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Neueinstufung von Einkünften und Vermögen als Produkte oder Zahlungen, die nicht dem automatischen Informationsaustausch über Finanzkonten nach dem gemeinsamen Meldestandard unterliegen,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Übertragung oder Umwandlung eines Finanzinstituts im Sinne des § 19 Nummer 3 des Finanzkonten-Informationsaustauschgesetzes (Finanzinstitut) oder eines Finanzkontos oder der darin enthaltenen Vermögenswerte in Finanzinstitute, Finanzkonten oder Vermögenswerte, die nicht der Meldepflicht im Rahmen des automatischen Informationsaustauschs über Finanzkonten nach dem gemeinsamen Meldestandard unterliegen,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Einbeziehung von Rechtsträgern, Steuergestaltungen oder Strukturen, die die Meldung eines Kontoinhabers im Sinne des § 20 Nummer 1 des Finanzkonten-Informationsaustauschgesetzes (Kontoinhaber) oder mehrerer Kontoinhaber oder einer beherrschenden Person im Sinne des § 19 Nummer 39 des Finanzkonten-Informationsaustauschgesetzes (beherrschende Person) oder mehrerer beherrschender Personen im Rahmen des automatischen Informationsaustauschs über Finanzkonten nach dem gemeinsamen Meldestandard ausschließen oder auszuschließen vorgeben, oder"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Aushöhlung von Verfahren zur Erfüllung der Sorgfaltspflichten, die Finanzinstitute zur Erfüllung ihrer Meldepflichten bezüglich Informationen zu Finanzkonten nach dem gemeinsamen Meldestandard anwenden, oder die Ausnutzung von Schwächen in diesen Verfahren, einschließlich der Einbeziehung von Staaten oder Territorien mit ungeeigneten oder schwachen Regelungen für die Durchsetzung von Vorschriften gegen Geldwäsche oder mit schwachen Transparenzanforderungen für juristische Personen oder Rechtsvereinbarungen;"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -14687,7 +15999,37 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Gestaltungen mit rechtlichen Eigentümern oder wirtschaftlich Berechtigten unter Einbeziehung von Personen, Rechtsvereinbarungen oder Strukturen, a)die keine wesentliche wirtschaftliche Tätigkeit ausüben, die mit angemessener Ausstattung, angemessenen personellen Ressourcen, angemessenen Vermögenswerten und angemessenen Räumlichkeiten einhergeht, undb)die in anderen Steuerhoheitsgebieten eingetragen, ansässig oder niedergelassen sind oder verwaltet oder kontrolliert werden als dem Steuerhoheitsgebiet, in dem ein oder mehrere der wirtschaftlich Berechtigten der von diesen Personen, Rechtsvereinbarungen oder Strukturen gehaltenen Vermögenswerte ansässig sind,sofern die wirtschaftlich Berechtigten dieser Personen, Rechtsvereinbarungen oder Strukturen im Sinne des § 3 des Geldwäschegesetzes nicht identifizierbar gemacht werden (intransparente Kette);"
+                                  "md": "Gestaltungen mit rechtlichen Eigentümern oder wirtschaftlich Berechtigten unter Einbeziehung von Personen, Rechtsvereinbarungen oder Strukturen,"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die keine wesentliche wirtschaftliche Tätigkeit ausüben, die mit angemessener Ausstattung, angemessenen personellen Ressourcen, angemessenen Vermögenswerten und angemessenen Räumlichkeiten einhergeht, und"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die in anderen Steuerhoheitsgebieten eingetragen, ansässig oder niedergelassen sind oder verwaltet oder kontrolliert werden als dem Steuerhoheitsgebiet, in dem ein oder mehrere der wirtschaftlich Berechtigten der von diesen Personen, Rechtsvereinbarungen oder Strukturen gehaltenen Vermögenswerte ansässig sind,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "sofern die wirtschaftlich Berechtigten dieser Personen, Rechtsvereinbarungen oder Strukturen im Sinne des § 3 des Geldwäschegesetzes nicht identifizierbar gemacht werden (intransparente Kette);"
                                 }
                               ],
                               "label": "3.",
@@ -14698,7 +16040,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "Verrechnungspreisgestaltungen, bei denen a)eine unilaterale Regelung genutzt wird, die für eine festgelegte Kategorie von Nutzern oder Geschäftsvorfällen gilt und die dafür in Betracht kommende Nutzer von bestimmten Verpflichtungen befreit, die aufgrund der allgemeinen Verrechnungspreisvorschriften eines Steuerhoheitsgebiets sonst zu erfüllen wären,b)immaterielle Werte oder Rechte an immateriellen Werten an ein verbundenes Unternehmen übertragen oder zwischen dem Unternehmen und seiner ausländischen Betriebstätte überführt werden, für die zum Zeitpunkt ihrer Übertragung oder Überführung keine ausreichenden Vergleichswerte vorliegen und zum Zeitpunkt der Transaktion die Prognosen voraussichtlicher Cashflows oder die vom übertragenen oder überführten immateriellen Wert erwarteten abzuleitenden Einkünfte oder die der Bewertung des immateriellen Wertes oder Rechts an immateriellen Werten zugrunde gelegten Annahmen höchst unsicher sind, weshalb der Totalerfolg zum Zeitpunkt der Übertragung oder Überführung nur schwer absehbar ist (schwer zu bewertende immaterielle Werte), oderc)innerhalb von verbundenen Unternehmen eine grenzüberschreitende Übertragung oder Verlagerung von Funktionen, Risiken, Wirtschaftsgütern oder sonstigen Vorteilen stattfindet und der erwartete jährliche Gewinn vor Zinsen und Steuern des übertragenden Unternehmens über einen Zeitraum von drei Jahren nach der Übertragung weniger als 50 Prozent des jährlichen Gewinns vor Zinsen und Steuern des übertragenden Unternehmens beträgt, der erwartet worden wäre, wenn die Übertragung nicht stattgefunden hätte; bei dieser Erwartung ist davon auszugehen, dass die verbundenen Unternehmen nach den Grundsätzen ordentlicher und gewissenhafter Geschäftsleiter handeln; diese Regelungen gelten sinngemäß auch für Betriebstätten."
+                                  "md": "Verrechnungspreisgestaltungen, bei denen"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "eine unilaterale Regelung genutzt wird, die für eine festgelegte Kategorie von Nutzern oder Geschäftsvorfällen gilt und die dafür in Betracht kommende Nutzer von bestimmten Verpflichtungen befreit, die aufgrund der allgemeinen Verrechnungspreisvorschriften eines Steuerhoheitsgebiets sonst zu erfüllen wären,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "immaterielle Werte oder Rechte an immateriellen Werten an ein verbundenes Unternehmen übertragen oder zwischen dem Unternehmen und seiner ausländischen Betriebstätte überführt werden, für die zum Zeitpunkt ihrer Übertragung oder Überführung keine ausreichenden Vergleichswerte vorliegen und zum Zeitpunkt der Transaktion die Prognosen voraussichtlicher Cashflows oder die vom übertragenen oder überführten immateriellen Wert erwarteten abzuleitenden Einkünfte oder die der Bewertung des immateriellen Wertes oder Rechts an immateriellen Werten zugrunde gelegten Annahmen höchst unsicher sind, weshalb der Totalerfolg zum Zeitpunkt der Übertragung oder Überführung nur schwer absehbar ist (schwer zu bewertende immaterielle Werte), oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "innerhalb von verbundenen Unternehmen eine grenzüberschreitende Übertragung oder Verlagerung von Funktionen, Risiken, Wirtschaftsgütern oder sonstigen Vorteilen stattfindet und der erwartete jährliche Gewinn vor Zinsen und Steuern des übertragenden Unternehmens über einen Zeitraum von drei Jahren nach der Übertragung weniger als 50 Prozent des jährlichen Gewinns vor Zinsen und Steuern des übertragenden Unternehmens beträgt, der erwartet worden wäre, wenn die Übertragung nicht stattgefunden hätte; bei dieser Erwartung ist davon auszugehen, dass die verbundenen Unternehmen nach den Grundsätzen ordentlicher und gewissenhafter Geschäftsleiter handeln; diese Regelungen gelten sinngemäß auch für Betriebstätten."
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "4.",
@@ -14870,7 +16248,63 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "zum Intermediär: a)den Familiennamen und den Vornamen sowie den Tag und Ort der Geburt, wenn der Intermediär eine natürliche Person ist,b)die Firma oder den Namen, wenn der Intermediär keine natürliche Person ist,c)die Anschrift,d)den Staat, in dem der Intermediär ansässig ist, unde)das Steueridentifikationsmerkmal oder die Steuernummer,"
+                                  "md": "zum Intermediär:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Familiennamen und den Vornamen sowie den Tag und Ort der Geburt, wenn der Intermediär eine natürliche Person ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Firma oder den Namen, wenn der Intermediär keine natürliche Person ist,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Anschrift,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Staat, in dem der Intermediär ansässig ist, und"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Steueridentifikationsmerkmal oder die Steuernummer,"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -14881,7 +16315,63 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "zum Nutzer: a)den Familiennamen und den Vornamen sowie den Tag und Ort der Geburt, wenn der Nutzer eine natürliche Person ist,b)die Firma oder den Namen, wenn der Nutzer keine natürliche Person ist,c)die Anschrift,d)den Staat, in dem der Nutzer ansässig ist, unde)das Steueridentifikationsmerkmal oder die Steuernummer des Nutzers, soweit dem Intermediär dies bekannt ist,"
+                                  "md": "zum Nutzer:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Familiennamen und den Vornamen sowie den Tag und Ort der Geburt, wenn der Nutzer eine natürliche Person ist,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Firma oder den Namen, wenn der Nutzer keine natürliche Person ist,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Anschrift,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Staat, in dem der Nutzer ansässig ist, und"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Steueridentifikationsmerkmal oder die Steuernummer des Nutzers, soweit dem Intermediär dies bekannt ist,"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -14892,7 +16382,53 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "wenn an der grenzüberschreitenden Steuergestaltung Personen beteiligt sind, die im Sinne des § 138e Absatz 3 als verbundene Unternehmen des Nutzers gelten, zu dem verbundenen Unternehmen: a)die Firma oder den Namen,b)die Anschrift,c)den Staat, in dem das Unternehmen ansässig ist, undd)das Steueridentifikationsmerkmal oder die Steuernummer, soweit dem Intermediär dies bekannt ist,"
+                                  "md": "wenn an der grenzüberschreitenden Steuergestaltung Personen beteiligt sind, die im Sinne des § 138e Absatz 3 als verbundene Unternehmen des Nutzers gelten, zu dem verbundenen Unternehmen:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Firma oder den Namen,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Anschrift,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Staat, in dem das Unternehmen ansässig ist, und"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Steueridentifikationsmerkmal oder die Steuernummer, soweit dem Intermediär dies bekannt ist,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "3.",
@@ -14914,7 +16450,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "eine Zusammenfassung des Inhalts der grenzüberschreitenden Steuergestaltung einschließlich a)soweit vorhanden, eines Verweises auf die Bezeichnung, unter der die Steuergestaltung allgemein bekannt ist, undb)einer abstrakt gehaltenen Beschreibung der relevanten Geschäftstätigkeit oder Gestaltung des Nutzers, soweit dies nicht zur Offenlegung eines Handels-, Gewerbe- oder Berufsgeheimnisses oder eines Geschäftsverfahrens oder von Informationen führt, deren Offenlegung die öffentliche Ordnung verletzen würde,"
+                                  "md": "eine Zusammenfassung des Inhalts der grenzüberschreitenden Steuergestaltung einschließlich"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "soweit vorhanden, eines Verweises auf die Bezeichnung, unter der die Steuergestaltung allgemein bekannt ist, und"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "einer abstrakt gehaltenen Beschreibung der relevanten Geschäftstätigkeit oder Gestaltung des Nutzers, soweit dies nicht zur Offenlegung eines Handels-, Gewerbe- oder Berufsgeheimnisses oder eines Geschäftsverfahrens oder von Informationen führt, deren Offenlegung die öffentliche Ordnung verletzen würde,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "5.",
@@ -15109,7 +16671,43 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "nicht in einem Mitgliedstaat der Europäischen Union hat, er aber im Geltungsbereich dieses Gesetzes a)eine Betriebstätte hat, durch die die Dienstleistungen im Zusammenhang mit der grenzüberschreitenden Steuergestaltung erbracht werden,b)in das Handelsregister oder in ein öffentliches berufsrechtliches Register eingetragen ist oderc)bei einem Berufsverband für juristische, steuerliche oder beratende Dienstleistungen registriert ist."
+                                  "md": "nicht in einem Mitgliedstaat der Europäischen Union hat, er aber im Geltungsbereich dieses Gesetzes"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "eine Betriebstätte hat, durch die die Dienstleistungen im Zusammenhang mit der grenzüberschreitenden Steuergestaltung erbracht werden,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "in das Handelsregister oder in ein öffentliches berufsrechtliches Register eingetragen ist oder"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "bei einem Berufsverband für juristische, steuerliche oder beratende Dienstleistungen registriert ist."
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -15257,7 +16855,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "nicht in einem Mitgliedstaat der Europäischen Union haben, aber im Geltungsbereich dieses Gesetzes a)eine Betriebstätte im Sinne des § 138d Absatz 4 haben, in der durch die grenzüberschreitende Steuergestaltung ein steuerlicher Vorteil entsteht,b)Einkünfte erzielen oder eine wirtschaftliche Tätigkeit ausüben, sofern diese für eine Steuer von Bedeutung sind, auf die das EU-Amtshilfegesetz anzuwenden ist."
+                                  "md": "nicht in einem Mitgliedstaat der Europäischen Union haben, aber im Geltungsbereich dieses Gesetzes"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "eine Betriebstätte im Sinne des § 138d Absatz 4 haben, in der durch die grenzüberschreitende Steuergestaltung ein steuerlicher Vorteil entsteht,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Einkünfte erzielen oder eine wirtschaftliche Tätigkeit ausüben, sofern diese für eine Steuer von Bedeutung sind, auf die das EU-Amtshilfegesetz anzuwenden ist."
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -17986,7 +19610,83 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "die Anforderungen an a)das Sicherheitsmodul,b)das Speichermedium,c)die einheitliche digitale Schnittstelle,d)die elektronische Aufbewahrung der Aufzeichnungen,e)die Protokollierung von digitalen Grundaufzeichnungen zur Sicherstellung der Integrität und Authentizität sowie der Vollständigkeit der elektronischen Aufzeichnung,f)den Beleg undg)die Zertifizierung der technischen Sicherheitseinrichtung."
+                                  "md": "die Anforderungen an"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Sicherheitsmodul,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "das Speichermedium,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die einheitliche digitale Schnittstelle,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die elektronische Aufbewahrung der Aufzeichnungen,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Protokollierung von digitalen Grundaufzeichnungen zur Sicherstellung der Integrität und Authentizität sowie der Vollständigkeit der elektronischen Aufzeichnung,"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "den Beleg und"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Zertifizierung der technischen Sicherheitseinrichtung."
+                                        }
+                                      ],
+                                      "label": "g)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -18696,7 +20396,73 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "für den betroffenen Steuerpflichtigen a)für den vorangegangenen Besteuerungszeitraum Erklärungen nicht oder verspätet abgegeben wurden,b)für den vorangegangenen Besteuerungszeitraum innerhalb von drei Monaten vor Abgabe der Steuererklärung oder innerhalb von drei Monaten vor dem Beginn des Zinslaufs im Sinne des § 233a Absatz 2 Satz 1 und 2 nachträgliche Vorauszahlungen festgesetzt wurden,c)Vorauszahlungen für den Besteuerungszeitraum außerhalb einer Veranlagung herabgesetzt wurden,d)die Veranlagung für den vorangegangenen Veranlagungszeitraum zu einer Abschlusszahlung von mindestens 25 Prozent der festgesetzten Steuer oder mehr als 10 000 Euro geführt hat,e)die Steuerfestsetzung auf Grund einer Steuererklärung im Sinne des Absatzes 3 Nummer 1, 2 oder 4 voraussichtlich zu einer Abschlusszahlung von mehr als 10 000 Euro führen wird oderf)eine Außenprüfung vorgesehen ist,"
+                                  "md": "für den betroffenen Steuerpflichtigen"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "für den vorangegangenen Besteuerungszeitraum Erklärungen nicht oder verspätet abgegeben wurden,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "für den vorangegangenen Besteuerungszeitraum innerhalb von drei Monaten vor Abgabe der Steuererklärung oder innerhalb von drei Monaten vor dem Beginn des Zinslaufs im Sinne des § 233a Absatz 2 Satz 1 und 2 nachträgliche Vorauszahlungen festgesetzt wurden,"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "Vorauszahlungen für den Besteuerungszeitraum außerhalb einer Veranlagung herabgesetzt wurden,"
+                                        }
+                                      ],
+                                      "label": "c)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Veranlagung für den vorangegangenen Veranlagungszeitraum zu einer Abschlusszahlung von mindestens 25 Prozent der festgesetzten Steuer oder mehr als 10 000 Euro geführt hat,"
+                                        }
+                                      ],
+                                      "label": "d)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "die Steuerfestsetzung auf Grund einer Steuererklärung im Sinne des Absatzes 3 Nummer 1, 2 oder 4 voraussichtlich zu einer Abschlusszahlung von mehr als 10 000 Euro führen wird oder"
+                                        }
+                                      ],
+                                      "label": "e)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "eine Außenprüfung vorgesehen ist,"
+                                        }
+                                      ],
+                                      "label": "f)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "1.",
@@ -20959,7 +22725,53 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "wenn er andere Steuern als Einfuhr- oder Ausfuhrabgaben nach Artikel 5 Nummer 20 und 21 des Zollkodex der Union oder Verbrauchsteuern betrifft, a)soweit der Steuerpflichtige zustimmt oder seinem Antrag der Sache nach entsprochen wird; dies gilt jedoch zugunsten des Steuerpflichtigen nur, soweit er vor Ablauf der Einspruchsfrist zugestimmt oder den Antrag gestellt hat oder soweit die Finanzbehörde einem Einspruch oder einer Klage abhilft,b)soweit er von einer sachlich unzuständigen Behörde erlassen worden ist,c)soweit er durch unlautere Mittel, wie arglistige Täuschung, Drohung oder Bestechung erwirkt worden ist,d)soweit dies sonst gesetzlich zugelassen ist; die §§ 130 und 131 gelten nicht."
+                                      "md": "wenn er andere Steuern als Einfuhr- oder Ausfuhrabgaben nach Artikel 5 Nummer 20 und 21 des Zollkodex der Union oder Verbrauchsteuern betrifft,"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "soweit der Steuerpflichtige zustimmt oder seinem Antrag der Sache nach entsprochen wird; dies gilt jedoch zugunsten des Steuerpflichtigen nur, soweit er vor Ablauf der Einspruchsfrist zugestimmt oder den Antrag gestellt hat oder soweit die Finanzbehörde einem Einspruch oder einer Klage abhilft,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "soweit er von einer sachlich unzuständigen Behörde erlassen worden ist,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "soweit er durch unlautere Mittel, wie arglistige Täuschung, Drohung oder Bestechung erwirkt worden ist,"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "soweit dies sonst gesetzlich zugelassen ist; die §§ 130 und 131 gelten nicht."
+                                            }
+                                          ],
+                                          "label": "d)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -21537,7 +23349,43 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "Untersuchungen von Waren, wenn a)sie durch einen Antrag auf Erteilung einer verbindlichen Zolltarifauskunft, Gewährung einer Steuervergütung oder sonstigen Vergünstigungen veranlasst sind oderb)bei Untersuchungen von Amts wegen Angaben oder Einwendungen des Verfügungsberechtigten sich als unrichtig oder unbegründet erweisen oderc)die untersuchten Waren den an sie gestellten Anforderungen nicht entsprechen,"
+                                      "md": "Untersuchungen von Waren, wenn"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "sie durch einen Antrag auf Erteilung einer verbindlichen Zolltarifauskunft, Gewährung einer Steuervergütung oder sonstigen Vergünstigungen veranlasst sind oder"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "bei Untersuchungen von Amts wegen Angaben oder Einwendungen des Verfügungsberechtigten sich als unrichtig oder unbegründet erweisen oder"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die untersuchten Waren den an sie gestellten Anforderungen nicht entsprechen,"
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "3.",
@@ -21719,8 +23567,30 @@
                                   "type": "li",
                                   "children": [
                                     {
-                                      "type": "md",
-                                      "md": "a)die einkommensteuerpflichtigen und körperschaftsteuerpflichtigen Einkünfte und mit ihnen im Zusammenhang stehende andere Besteuerungsgrundlagen, wenn an den Einkünften mehrere Personen beteiligt sind und die Einkünfte diesen Personen steuerlich zuzurechnen sind,b)in anderen als den in Buchstabe a genannten Fällen die Einkünfte aus Land- und Forstwirtschaft, Gewerbebetrieb oder einer freiberuflichen Tätigkeit, wenn nach den Verhältnissen zum Schluss des Gewinnermittlungszeitraums das für die gesonderte Feststellung zuständige Finanzamt nicht auch für die Steuern vom Einkommen zuständig ist,"
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "die einkommensteuerpflichtigen und körperschaftsteuerpflichtigen Einkünfte und mit ihnen im Zusammenhang stehende andere Besteuerungsgrundlagen, wenn an den Einkünften mehrere Personen beteiligt sind und die Einkünfte diesen Personen steuerlich zuzurechnen sind,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "in anderen als den in Buchstabe a genannten Fällen die Einkünfte aus Land- und Forstwirtschaft, Gewerbebetrieb oder einer freiberuflichen Tätigkeit, wenn nach den Verhältnissen zum Schluss des Gewinnermittlungszeitraums das für die gesonderte Feststellung zuständige Finanzamt nicht auch für die Steuern vom Einkommen zuständig ist,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
@@ -21981,7 +23851,33 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "in den Fällen des § 180 Absatz 1 Satz 1 Nummer 2 Buchstabe a a)bei rechtsfähigen Personenvereinigungen vorrangig die Personenvereinigung und nachrangig jeder Feststellungsbeteiligte, dem ein Anteil an den einkommensteuerpflichtigen oder körperschaftsteuerpflichtigen Einkünften zuzurechnen ist,b)bei nicht rechtsfähigen Personenvereinigungen und in sonstigen Fällen jeder Feststellungsbeteiligte, dem ein Anteil an den einkommensteuerpflichtigen oder körperschaftsteuerpflichtigen Einkünften zuzurechnen ist;"
+                                      "md": "in den Fällen des § 180 Absatz 1 Satz 1 Nummer 2 Buchstabe a"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "bei rechtsfähigen Personenvereinigungen vorrangig die Personenvereinigung und nachrangig jeder Feststellungsbeteiligte, dem ein Anteil an den einkommensteuerpflichtigen oder körperschaftsteuerpflichtigen Einkünften zuzurechnen ist,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "bei nicht rechtsfähigen Personenvereinigungen und in sonstigen Fällen jeder Feststellungsbeteiligte, dem ein Anteil an den einkommensteuerpflichtigen oder körperschaftsteuerpflichtigen Einkünften zuzurechnen ist;"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "1.",
@@ -24291,7 +26187,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "verbrauchsteuerpflichtige Waren, die ein Amtsträger vorfindet a)in Herstellungsbetrieben oder anderen anmeldepflichtigen Räumen, die der Finanzbehörde nicht angemeldet sind,b)im Handel ohne eine den Steuergesetzen entsprechende Verpackung, Bezeichnung, Kennzeichnung oder ohne vorschriftsmäßige Steuerzeichen,"
+                              "md": "verbrauchsteuerpflichtige Waren, die ein Amtsträger vorfindet"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "in Herstellungsbetrieben oder anderen anmeldepflichtigen Räumen, die der Finanzbehörde nicht angemeldet sind,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "im Handel ohne eine den Steuergesetzen entsprechende Verpackung, Bezeichnung, Kennzeichnung oder ohne vorschriftsmäßige Steuerzeichen,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -25537,7 +27459,33 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "wurde die hinterzogene Vorauszahlung nicht vor Festsetzung der Steuer entrichtet, auf die diese Vorauszahlung anzurechnen ist oder wäre, gilt Folgendes: a)wurde diese Steuer nicht hinterzogen, endet der Zinslauf für die Vorauszahlung mit Zahlung dieser Steuer, spätestens aber mit der Fälligkeit dieser Steuer;b)wurde diese Steuer ebenfalls hinterzogen, endet der Zinslauf für die Vorauszahlung mit Beginn des Zinslaufs für die hinterzogene Steuer;"
+                                  "md": "wurde die hinterzogene Vorauszahlung nicht vor Festsetzung der Steuer entrichtet, auf die diese Vorauszahlung anzurechnen ist oder wäre, gilt Folgendes:"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "wurde diese Steuer nicht hinterzogen, endet der Zinslauf für die Vorauszahlung mit Zahlung dieser Steuer, spätestens aber mit der Fälligkeit dieser Steuer;"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "wurde diese Steuer ebenfalls hinterzogen, endet der Zinslauf für die Vorauszahlung mit Beginn des Zinslaufs für die hinterzogene Steuer;"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
                                 }
                               ],
                               "label": "2.",
@@ -25616,7 +27564,37 @@
                               "children": [
                                 {
                                   "type": "md",
-                                  "md": "eine rechtskräftige gerichtliche Entscheidung oder ein unanfechtbarer Verwaltungsakt, durch den sich der Rechtsstreit erledigt hat, a)zur Herabsetzung der in einem Folgebescheid festgesetzten Steuer,b)zur Herabsetzung der Gewerbesteuer nach Änderung des Gewerbesteuermessbetragsführt."
+                                  "md": "eine rechtskräftige gerichtliche Entscheidung oder ein unanfechtbarer Verwaltungsakt, durch den sich der Rechtsstreit erledigt hat,"
+                                },
+                                {
+                                  "type": "list",
+                                  "listType": "arabic",
+                                  "children": [
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "zur Herabsetzung der in einem Folgebescheid festgesetzten Steuer,"
+                                        }
+                                      ],
+                                      "label": "a)"
+                                    },
+                                    {
+                                      "type": "li",
+                                      "children": [
+                                        {
+                                          "type": "md",
+                                          "md": "zur Herabsetzung der Gewerbesteuer nach Änderung des Gewerbesteuermessbetrags"
+                                        }
+                                      ],
+                                      "label": "b)"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "md",
+                                  "md": "führt."
                                 }
                               ],
                               "label": "2.",
@@ -26162,7 +28140,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "durch Bestellung von a)erstrangigen Hypotheken, Grund- oder Rentenschulden an Grundstücken oder Erbbaurechten, die im Geltungsbereich dieses Gesetzes belegen sind,b)erstrangigen Schiffshypotheken an Schiffen, Schiffsbauwerken oder Schwimmdocks, die in einem im Geltungsbereich dieses Gesetzes geführten Schiffsregister oder Schiffsbauregister eingetragen sind,"
+                              "md": "durch Bestellung von"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "erstrangigen Hypotheken, Grund- oder Rentenschulden an Grundstücken oder Erbbaurechten, die im Geltungsbereich dieses Gesetzes belegen sind,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "erstrangigen Schiffshypotheken an Schiffen, Schiffsbauwerken oder Schwimmdocks, die in einem im Geltungsbereich dieses Gesetzes geführten Schiffsregister oder Schiffsbauregister eingetragen sind,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "5.",
@@ -30460,7 +32464,57 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "Schreibauslagen für nicht von Amts wegen zu erteilende oder per Telefax übermittelte Abschriften; die Schreibauslagen betragen unabhängig von der Art der Herstellung a)für die ersten 50 Seiten je Seite 0,50 Euro,b)für jede weitere Seite 0,15 Euro,c)für die ersten 50 Seiten in Farbe je Seite 1,00 Euro,d)für jede weitere Seite in Farbe 0,30 Euro.Werden anstelle von Abschriften elektronisch gespeicherte Dateien überlassen, betragen die Auslagen 1,50 Euro je Datei. Für die in einem Arbeitsgang überlassenen oder in einem Arbeitsgang auf einen Datenträger übertragenen Dokumente werden insgesamt höchstens 5 Euro erhoben. Werden zum Zweck der Überlassung von elektronisch gespeicherten Dateien Dokumente zuvor auf Antrag von der Papierform in die elektronische Form übertragen, beträgt die Pauschale für Schreibauslagen nach Satz 2 nicht weniger, als die Pauschale im Fall von Satz 1 betragen würde,"
+                              "md": "Schreibauslagen für nicht von Amts wegen zu erteilende oder per Telefax übermittelte Abschriften; die Schreibauslagen betragen unabhängig von der Art der Herstellung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die ersten 50 Seiten je Seite 0,50 Euro,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für jede weitere Seite 0,15 Euro,"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für die ersten 50 Seiten in Farbe je Seite 1,00 Euro,"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "für jede weitere Seite in Farbe 0,30 Euro."
+                                    }
+                                  ],
+                                  "label": "d)"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "md",
+                              "md": "Werden anstelle von Abschriften elektronisch gespeicherte Dateien überlassen, betragen die Auslagen 1,50 Euro je Datei. Für die in einem Arbeitsgang überlassenen oder in einem Arbeitsgang auf einen Datenträger übertragenen Dokumente werden insgesamt höchstens 5 Euro erhoben. Werden zum Zweck der Überlassung von elektronisch gespeicherten Dateien Dokumente zuvor auf Antrag von der Papierform in die elektronische Form übertragen, beträgt die Pauschale für Schreibauslagen nach Satz 2 nicht weniger, als die Pauschale im Fall von Satz 1 betragen würde,"
                             }
                           ],
                           "label": "1.",
@@ -30931,7 +32985,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei rechtsfähigen Personenvereinigungen: a)die Personenvereinigung,b)wenn die rechtsfähige Personenvereinigung nicht mehr besteht, jeder Gesellschafter oder Gemeinschafter, gegen den der Feststellungsbescheid ergangen ist oder zu ergehen hätte;"
+                              "md": "bei rechtsfähigen Personenvereinigungen:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "die Personenvereinigung,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "wenn die rechtsfähige Personenvereinigung nicht mehr besteht, jeder Gesellschafter oder Gemeinschafter, gegen den der Feststellungsbescheid ergangen ist oder zu ergehen hätte;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -30942,7 +33022,33 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei nicht rechtsfähigen Personenvereinigungen und in sonstigen Fällen: a)der Einspruchsbefugte im Sinne des Absatzes 2,b)wenn Personen nach Buchstabe a nicht vorhanden sind, jeder Gesellschafter, Gemeinschafter oder Mitberechtigte, gegen den der Feststellungsbescheid ergangen ist oder zu ergehen hätte;"
+                              "md": "bei nicht rechtsfähigen Personenvereinigungen und in sonstigen Fällen:"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "der Einspruchsbefugte im Sinne des Absatzes 2,"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "wenn Personen nach Buchstabe a nicht vorhanden sind, jeder Gesellschafter, Gemeinschafter oder Mitberechtigte, gegen den der Feststellungsbescheid ergangen ist oder zu ergehen hätte;"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                }
+                              ]
                             }
                           ],
                           "label": "2.",
@@ -32143,7 +34249,63 @@
                           "children": [
                             {
                               "type": "md",
-                              "md": "bei einer der zur Selbstanzeige gebrachten unverjährten Steuerstraftaten vor der Berichtigung, Ergänzung oder Nachholung a)dem an der Tat Beteiligten, seinem Vertreter, dem Begünstigten im Sinne des § 370 Absatz 1 oder dessen Vertreter eine Prüfungsanordnung nach § 196 bekannt gegeben worden ist, beschränkt auf den sachlichen und zeitlichen Umfang der angekündigten Außenprüfung, oderb)dem an der Tat Beteiligten oder seinem Vertreter die Einleitung des Straf- oder Bußgeldverfahrens bekannt gegeben worden ist oderc)ein Amtsträger der Finanzbehörde zur steuerlichen Prüfung erschienen ist, beschränkt auf den sachlichen und zeitlichen Umfang der Außenprüfung, oderd)ein Amtsträger zur Ermittlung einer Steuerstraftat oder einer Steuerordnungswidrigkeit erschienen ist odere)ein Amtsträger der Finanzbehörde zu einer Umsatzsteuer-Nachschau nach § 27b des Umsatzsteuergesetzes, einer Lohnsteuer-Nachschau nach § 42g des Einkommensteuergesetzes oder einer Nachschau nach anderen steuerrechtlichen Vorschriften erschienen ist und sich ausgewiesen hat oder"
+                              "md": "bei einer der zur Selbstanzeige gebrachten unverjährten Steuerstraftaten vor der Berichtigung, Ergänzung oder Nachholung"
+                            },
+                            {
+                              "type": "list",
+                              "listType": "arabic",
+                              "children": [
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem an der Tat Beteiligten, seinem Vertreter, dem Begünstigten im Sinne des § 370 Absatz 1 oder dessen Vertreter eine Prüfungsanordnung nach § 196 bekannt gegeben worden ist, beschränkt auf den sachlichen und zeitlichen Umfang der angekündigten Außenprüfung, oder"
+                                    }
+                                  ],
+                                  "label": "a)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "dem an der Tat Beteiligten oder seinem Vertreter die Einleitung des Straf- oder Bußgeldverfahrens bekannt gegeben worden ist oder"
+                                    }
+                                  ],
+                                  "label": "b)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Amtsträger der Finanzbehörde zur steuerlichen Prüfung erschienen ist, beschränkt auf den sachlichen und zeitlichen Umfang der Außenprüfung, oder"
+                                    }
+                                  ],
+                                  "label": "c)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Amtsträger zur Ermittlung einer Steuerstraftat oder einer Steuerordnungswidrigkeit erschienen ist oder"
+                                    }
+                                  ],
+                                  "label": "d)"
+                                },
+                                {
+                                  "type": "li",
+                                  "children": [
+                                    {
+                                      "type": "md",
+                                      "md": "ein Amtsträger der Finanzbehörde zu einer Umsatzsteuer-Nachschau nach § 27b des Umsatzsteuergesetzes, einer Lohnsteuer-Nachschau nach § 42g des Einkommensteuergesetzes oder einer Nachschau nach anderen steuerrechtlichen Vorschriften erschienen ist und sich ausgewiesen hat oder"
+                                    }
+                                  ],
+                                  "label": "e)"
+                                }
+                              ]
                             }
                           ],
                           "label": "1.",
@@ -33983,7 +36145,43 @@
                                   "children": [
                                     {
                                       "type": "md",
-                                      "md": "einen Geldbetrag in folgender Höhe zugunsten der Staatskasse zahlt: a)10 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 100 000 Euro nicht übersteigt,b)15 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 100 000 Euro übersteigt und 1 000 000 Euro nicht übersteigt,c)20 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 1 000 000 Euro übersteigt."
+                                      "md": "einen Geldbetrag in folgender Höhe zugunsten der Staatskasse zahlt:"
+                                    },
+                                    {
+                                      "type": "list",
+                                      "listType": "arabic",
+                                      "children": [
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "10 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 100 000 Euro nicht übersteigt,"
+                                            }
+                                          ],
+                                          "label": "a)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "15 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 100 000 Euro übersteigt und 1 000 000 Euro nicht übersteigt,"
+                                            }
+                                          ],
+                                          "label": "b)"
+                                        },
+                                        {
+                                          "type": "li",
+                                          "children": [
+                                            {
+                                              "type": "md",
+                                              "md": "20 Prozent der hinterzogenen Steuer, wenn der Hinterziehungsbetrag 1 000 000 Euro übersteigt."
+                                            }
+                                          ],
+                                          "label": "c)"
+                                        }
+                                      ]
                                     }
                                   ],
                                   "label": "2.",
