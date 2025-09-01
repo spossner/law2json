@@ -10575,11 +10575,17 @@
                   "rows": [
                     [
                       "**Abschnitt 1**",
-                      ""
+                      {
+                        "content": "",
+                        "colspan": 2
+                      }
                     ],
                     [
                       "**Bereiche zur Prüfung bei kollisionsgefährdeten Brutvogelarten**",
-                      ""
+                      {
+                        "content": "",
+                        "colspan": 2
+                      }
                     ]
                   ]
                 },
@@ -10687,10 +10693,16 @@
                       "2 500"
                     ],
                     [
-                      "* Abstände in Metern, gemessen vom Mastfußmittelpunkt"
+                      {
+                        "content": "* Abstände in Metern, gemessen vom Mastfußmittelpunkt",
+                        "colspan": 4
+                      }
                     ],
                     [
-                      "<sup>1</sup>  Rohrweihe, Wiesenweihe und Uhu sind nur dann kollisionsgefährdet, wenn die Höhe der Rotorunterkante in Küstennähe (bis 100 Kilometer) weniger als 30 m, im weiteren Flachland weniger als 50 m oder in hügeligem Gelände weniger als 80 m beträgt. Dies gilt, mit Ausnahme der Rohrweihe, nicht für den Nahbereich."
+                      {
+                        "content": "<sup>1</sup>  Rohrweihe, Wiesenweihe und Uhu sind nur dann kollisionsgefährdet, wenn die Höhe der Rotorunterkante in Küstennähe (bis 100 Kilometer) weniger als 30 m, im weiteren Flachland weniger als 50 m oder in hügeligem Gelände weniger als 80 m beträgt. Dies gilt, mit Ausnahme der Rohrweihe, nicht für den Nahbereich.",
+                        "colspan": 4
+                      }
                     ]
                   ]
                 },
@@ -10704,7 +10716,10 @@
               "type": "table",
               "rows": [
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "**Schutzmaßnahmen**"
@@ -10800,7 +10815,10 @@
               "rows": [
                 [
                   "Zumutbarkeit und Höhe der Zahlung in Artenhilfsprogramme",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ]
               ]
             },

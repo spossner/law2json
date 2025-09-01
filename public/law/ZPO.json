@@ -14,22 +14,40 @@
               "type": "table",
               "rows": [
                 [
-                  "**Buch 1**"
+                  {
+                    "content": "**Buch 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Allgemeine Vorschriften**"
+                  {
+                    "content": "**Allgemeine Vorschriften**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 1**"
+                  {
+                    "content": "**Abschnitt 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Gerichte**"
+                  {
+                    "content": "**Gerichte**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -84,7 +102,10 @@
                   "Bindende Entscheidung über Unzuständigkeit"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -231,7 +252,10 @@
                   "Verfahren bei gerichtlicher Bestimmung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -254,7 +278,10 @@
                   "Unwirksame und unzulässige Gerichtsstandsvereinbarung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -301,16 +328,28 @@
                   "Urkundsbeamte"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Parteien**"
+                  {
+                    "content": "**Parteien**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -357,7 +396,10 @@
                   "Prozesspfleger bei herrenlosem Grundstück oder Schiff"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -388,7 +430,10 @@
                   "Prozessbetrieb; Ladungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -455,7 +500,10 @@
                   "Urheberbenennung bei Eigentumsbeeinträchtigung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -530,7 +578,10 @@
                   "Beistand"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -621,7 +672,10 @@
                   "Änderung nach Streitwertfestsetzung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -656,7 +710,10 @@
                   "Fristbestimmung für Prozesskostensicherheit"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -727,16 +784,28 @@
                   "Entscheidungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 3**"
+                  {
+                    "content": "**Abschnitt 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Verfahren**"
+                  {
+                    "content": "**Verfahren**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -931,7 +1000,10 @@
                   "Beweiskraft des Protokolls"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -942,7 +1014,10 @@
                   "Verfahren bei Zustellungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1057,7 +1132,10 @@
                   "Einheitliche Zustellungsformulare"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1096,7 +1174,10 @@
                   "(weggefallen)"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1171,7 +1252,10 @@
                   "Beauftragter oder ersuchter Richter"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1218,7 +1302,10 @@
                   "Verfahren bei Wiedereinsetzung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1289,25 +1376,46 @@
                   "Rechtsmittel bei Aussetzung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 2**"
+                  {
+                    "content": "**Buch 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Verfahren im ersten Rechtszug**"
+                  {
+                    "content": "**Verfahren im ersten Rechtszug**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 1**"
+                  {
+                    "content": "**Abschnitt 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Verfahren vor den Landgerichten**"
+                  {
+                    "content": "**Verfahren vor den Landgerichten**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1534,7 +1642,10 @@
                   "Datenträgerarchiv"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1701,7 +1812,10 @@
                   "Beschlüsse und Verfügungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1796,7 +1910,10 @@
                   "Verfahren bei Widerklage und Zwischenstreit"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1827,7 +1944,10 @@
                   "(weggefallen)"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1910,7 +2030,10 @@
                   "Fortsetzung der mündlichen Verhandlung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1941,7 +2064,10 @@
                   "Untersuchungen zur Feststellung der Abstammung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2068,7 +2194,10 @@
                   "Zeugenentschädigung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2143,7 +2272,10 @@
                   "Sachverständige Zeugen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2278,7 +2410,10 @@
                   "Folgen der Beseitigung einer Urkunde"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2337,7 +2472,10 @@
                   "(weggefallen)"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2376,7 +2514,10 @@
                   "Eidesgleiche Bekräftigung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2427,13 +2568,22 @@
                   "Frist zur Klageerhebung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Verfahren vor den Amtsgerichten**"
+                  {
+                    "content": "**Verfahren vor den Amtsgerichten**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 495",
@@ -2496,22 +2646,40 @@
                   "(weggefallen)"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 3**"
+                  {
+                    "content": "**Buch 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Rechtsmittel**"
+                  {
+                    "content": "**Rechtsmittel**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 1**"
+                  {
+                    "content": "**Abschnitt 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Berufung**"
+                  {
+                    "content": "**Berufung**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 511",
@@ -2638,13 +2806,22 @@
                   "Prozessakten"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Revision**"
+                  {
+                    "content": "**Revision**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 542",
@@ -2755,16 +2932,28 @@
                   "Sprungrevision"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 3**"
+                  {
+                    "content": "**Abschnitt 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Beschwerde**"
+                  {
+                    "content": "**Beschwerde**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2803,7 +2992,10 @@
                   "Erinnerung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2830,13 +3022,22 @@
                   "Prüfung und Entscheidung der Rechtsbeschwerde"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 4**"
+                  {
+                    "content": "**Buch 4**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Wiederaufnahme des Verfahrens**"
+                  {
+                    "content": "**Wiederaufnahme des Verfahrens**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 578",
@@ -2895,13 +3096,22 @@
                   "Rechtsmittel"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 5**"
+                  {
+                    "content": "**Buch 5**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Urkunden- und Wechselprozess**"
+                  {
+                    "content": "**Urkunden- und Wechselprozess**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 592",
@@ -2964,13 +3174,22 @@
                   "Scheckprozess"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 6**"
+                  {
+                    "content": "**Buch 6**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Weitere besondere Verfahren**"
+                  {
+                    "content": "**Weitere besondere Verfahren**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3009,7 +3228,10 @@
                   ""
                 ],
                 [
-                  "**Verfahren vor den Commercial Courts und den Commercial Chambers**"
+                  {
+                    "content": "**Verfahren vor den Commercial Courts und den Commercial Chambers**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 610",
@@ -3040,10 +3262,16 @@
                   ""
                 ],
                 [
-                  "**Buch 7**"
+                  {
+                    "content": "**Buch 7**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Mahnverfahren**"
+                  {
+                    "content": "**Mahnverfahren**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 688",
@@ -3126,16 +3354,28 @@
                   "Antragsgegner ohne allgemeinen inländischen Gerichtsstand"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 8**"
+                  {
+                    "content": "**Buch 8**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Zwangsvollstreckung**"
+                  {
+                    "content": "**Zwangsvollstreckung**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3614,16 +3854,28 @@
                   "Ausschließlichkeit der Gerichtsstände"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Zwangsvollstreckung wegen Geldforderungen**"
+                  {
+                    "content": "**Zwangsvollstreckung wegen Geldforderungen**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3634,7 +3886,10 @@
                   "Allgemeine Vorschriften"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 802a",
@@ -3685,7 +3940,10 @@
                   "Auskunftsrechte des Gerichtsvollziehers"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3696,7 +3954,10 @@
                   "Zwangsvollstreckung in des bewegliche Vermögen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3735,7 +3996,10 @@
                   "Abnahme der Vermögensauskunft nach Pfändungsversuch"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3850,7 +4114,10 @@
                   "Verfahren bei mehrfacher Pfändung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4085,7 +4352,10 @@
                   "Pfändungsbeschränkungen bei Erbschaftsnutzungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4132,7 +4402,10 @@
                   "Landesrechtlicher Vorbehalt bei Eisenbahnen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4187,7 +4460,10 @@
                   "Verfahren nach dem Urteil"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4202,7 +4478,10 @@
                   "Zwangsvollstreckung wegen einer Geldforderung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4213,7 +4492,10 @@
                   "Schuldnerverzeichnis"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 882b",
@@ -4248,10 +4530,16 @@
                   "Rechte der Betroffenen"
                 ],
                 [
-                  "**Abschnitt 3**"
+                  {
+                    "content": "**Abschnitt 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Zwangsvollstreckung zur Erwirkung der Herausgabe von Sachen und zur Erwirkung von Handlungen oder Unterlassungen**"
+                  {
+                    "content": "**Zwangsvollstreckung zur Erwirkung der Herausgabe von Sachen und zur Erwirkung von Handlungen oder Unterlassungen**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 883",
@@ -4326,10 +4614,16 @@
                   "Gutgläubiger Erwerb"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 4**"
+                  {
+                    "content": "**Abschnitt 4**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "**Wirkungen des Pfändungsschutzkontos**",
@@ -4388,13 +4682,22 @@
                   "(weggefallen)"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 5**"
+                  {
+                    "content": "**Abschnitt 5**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Arrest und einstweilige Verfügung**"
+                  {
+                    "content": "**Arrest und einstweilige Verfügung**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 916",
@@ -4533,10 +4836,16 @@
                   ""
                 ],
                 [
-                  "** Abschnitt 6**"
+                  {
+                    "content": "** Abschnitt 6**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "** Grenzüberschreitende vorläufige Kontenpfändung**"
+                  {
+                    "content": "** Grenzüberschreitende vorläufige Kontenpfändung**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -4551,7 +4860,10 @@
                   "Erlass des Beschlusses zur vorläufigen Kontenpfändung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 946",
@@ -4658,31 +4970,58 @@
                   "Verordnungsermächtigung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 9**"
+                  {
+                    "content": "**Buch 9**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**(weggefallen)**"
+                  {
+                    "content": "**(weggefallen)**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 10**"
+                  {
+                    "content": "**Buch 10**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Schiedsrichterliches Verfahren**"
+                  {
+                    "content": "**Schiedsrichterliches Verfahren**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 1**"
+                  {
+                    "content": "**Abschnitt 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Allgemeine Vorschriften**"
+                  {
+                    "content": "**Allgemeine Vorschriften**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1025",
@@ -4701,13 +5040,22 @@
                   "Empfang schriftlicher Mitteilungen bei unbekanntem Aufenthalt"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Schiedsvereinbarung**"
+                  {
+                    "content": "**Schiedsvereinbarung**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1029",
@@ -4730,13 +5078,22 @@
                   "Schiedsvereinbarung und einstweilige gerichtliche Maßnahmen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 3**"
+                  {
+                    "content": "**Abschnitt 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Bildung des Schiedsgerichts**"
+                  {
+                    "content": "**Bildung des Schiedsgerichts**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1034",
@@ -4763,13 +5120,22 @@
                   "Bestellung eines Ersatzschiedsrichters"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 4**"
+                  {
+                    "content": "**Abschnitt 4**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Zuständigkeit des Schiedsgerichts**"
+                  {
+                    "content": "**Zuständigkeit des Schiedsgerichts**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1040",
@@ -4780,13 +5146,22 @@
                   "Maßnahmen des einstweiligen Rechtsschutzes"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 5**"
+                  {
+                    "content": "**Abschnitt 5**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Durchführung des schiedsrichterlichen Verfahrens**"
+                  {
+                    "content": "**Durchführung des schiedsrichterlichen Verfahrens**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1042",
@@ -4825,13 +5200,22 @@
                   "Gerichtliche Unterstützung bei der Beweisaufnahme und sonstige richterliche Handlungen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 6**"
+                  {
+                    "content": "**Abschnitt 6**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Schiedsspruch und Beendigung des Verfahrens**"
+                  {
+                    "content": "**Schiedsspruch und Beendigung des Verfahrens**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1051",
@@ -4866,26 +5250,44 @@
                   "Berichtigung, Auslegung und Ergänzung des Schiedsspruchs"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 7**"
+                  {
+                    "content": "**Abschnitt 7**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Rechtsbehelf gegen den Schiedsspruch**"
+                  {
+                    "content": "**Rechtsbehelf gegen den Schiedsspruch**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1059",
                   "Aufhebungsantrag"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 8**"
+                  {
+                    "content": "**Abschnitt 8**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Voraussetzungen der Anerkennung und Vollstreckung von Schiedssprüchen**"
+                  {
+                    "content": "**Voraussetzungen der Anerkennung und Vollstreckung von Schiedssprüchen**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1060",
@@ -4896,13 +5298,22 @@
                   "Ausländische Schiedssprüche"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 9**"
+                  {
+                    "content": "**Abschnitt 9**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Gerichtliches Verfahren**"
+                  {
+                    "content": "**Gerichtliches Verfahren**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1062",
@@ -4921,35 +5332,62 @@
                   "Rechtsmittel"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 10**"
+                  {
+                    "content": "**Abschnitt 10**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Außervertragliche Schiedsgerichte**"
+                  {
+                    "content": "**Außervertragliche Schiedsgerichte**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1066",
                   "Entsprechende Anwendung der Vorschriften des Buches 10"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Buch 11**"
+                  {
+                    "content": "**Buch 11**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Justizielle Zusammenarbeit in der Europäischen Union**"
+                  {
+                    "content": "**Justizielle Zusammenarbeit in der Europäischen Union**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 1**"
+                  {
+                    "content": "**Abschnitt 1**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Zustellung nach der Verordnung (EU) 2020/1784**"
+                  {
+                    "content": "**Zustellung nach der Verordnung (EU) 2020/1784**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1067",
@@ -4972,13 +5410,22 @@
                   "Zustellung nach dem Abkommen zwischen der Europäischen Gemeinschaft und dem Königreich Dänemark vom 19. Oktober 2005 über die Zustellung gerichtlicher und außergerichtlicher Schriftstücke in Zivil- oder Handelssachen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 2**"
+                  {
+                    "content": "**Abschnitt 2**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Beweisaufnahme nach der Verordnung (EU) 2020/1783**"
+                  {
+                    "content": "**Beweisaufnahme nach der Verordnung (EU) 2020/1783**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1072",
@@ -4997,13 +5444,22 @@
                   "Sprache eingehender Ersuchen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 3**"
+                  {
+                    "content": "**Abschnitt 3**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Prozesskostenhilfe nach der Richtlinie 2003/8/EG**"
+                  {
+                    "content": "**Prozesskostenhilfe nach der Richtlinie 2003/8/EG**",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1076",
@@ -5018,16 +5474,28 @@
                   "Eingehende Ersuchen"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 4**"
+                  {
+                    "content": "**Abschnitt 4**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Europäische Vollstreckungstitel nach der Verordnung (EG) Nr. 805/2004**"
+                  {
+                    "content": "**Europäische Vollstreckungstitel nach der Verordnung (EG) Nr. 805/2004**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5050,7 +5518,10 @@
                   "Berichtigung und Widerruf"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5081,16 +5552,28 @@
                   "Vollstreckungsabwehrklage"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 5**"
+                  {
+                    "content": "**Abschnitt 5**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Europäisches Mahnverfahren nach der Verordnung (EG) Nr. 1896/2006**"
+                  {
+                    "content": "**Europäisches Mahnverfahren nach der Verordnung (EG) Nr. 1896/2006**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5113,7 +5596,10 @@
                   "Zustellung"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5132,7 +5618,10 @@
                   "Einleitung des Streitverfahrens"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5151,7 +5640,10 @@
                   "Rechtsbehelf bei Nichtzustellung oder bei nicht ordnungsgemäßer Zustellung des Europäischen Zahlungsbefehls"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5178,16 +5670,28 @@
                   "Anträge nach den Artikeln 22 und 23 der Verordnung (EG) Nr. 1896/2006; Vollstreckungsabwehrklage"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 6**"
+                  {
+                    "content": "**Abschnitt 6**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Europäisches Verfahren für geringfügige Forderungen nach der Verordnung (EG) Nr. 861/2007**"
+                  {
+                    "content": "**Europäisches Verfahren für geringfügige Forderungen nach der Verordnung (EG) Nr. 861/2007**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5234,7 +5738,10 @@
                   "Gemeinsame Gerichte"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5265,16 +5772,28 @@
                   "Anträge nach den Artikeln 22 und 23 der Verordnung (EG) Nr. 861/2007; Vollstreckungsabwehrklage"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 7**"
+                  {
+                    "content": "**Abschnitt 7**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Anerkennung und Vollstreckung nach der Verordnung (EU) Nr. 1215/2012**"
+                  {
+                    "content": "**Anerkennung und Vollstreckung nach der Verordnung (EU) Nr. 1215/2012**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5293,7 +5812,10 @@
                   "Verfahren"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -5328,16 +5850,28 @@
                   "Vollstreckungsabwehrklage"
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Abschnitt 8**"
+                  {
+                    "content": "**Abschnitt 8**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "**Beweis der Echtheit ausländischer öffentlicher Urkunden nach der Verordnung (EU) 2016/1191**"
+                  {
+                    "content": "**Beweis der Echtheit ausländischer öffentlicher Urkunden nach der Verordnung (EU) 2016/1191**",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "§ 1118",

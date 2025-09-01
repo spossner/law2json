@@ -1,4 +1,4 @@
-import type { TextRun, ListNode, TableNode, ParagraphNode, SelectableElement } from '../../types';
+import type { TextRun, ListNode, TableNode, TableCell, ParagraphNode, SelectableElement } from '../../types';
 import { cn } from '../../lib/utils';
 import { highlightText } from '../../lib/highlightText';
 import { Children } from 'react';
@@ -133,6 +133,20 @@ export function ContentRenderer({
     // Handle TableNode
     case 'table':
       const tableElement = element as TableNode;
+      
+      // Helper function to render a cell (string or TableCell)
+      const renderCell = (cell: string | TableCell, searchTerm?: string) => {
+        if (typeof cell === 'string') {
+          return searchTerm ? highlightText(cell, searchTerm) : cell;
+        }
+        return searchTerm ? highlightText(cell.content, searchTerm) : cell.content;
+      };
+
+      // Helper function to get colspan value
+      const getColspan = (cell: string | TableCell): number => {
+        return typeof cell === 'string' ? 1 : (cell.colspan || 1);
+      };
+
       return (
         <div
           className={cn('overflow-x-auto my-4', baseStyles, hoverStyles, selectedStyles, className)}
@@ -145,11 +159,12 @@ export function ContentRenderer({
                   {tableElement.headers.map((header, headerIndex) => (
                     <th 
                       key={headerIndex} 
+                      colSpan={getColspan(header)}
                       className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900"
                     >
                       <div
                         dangerouslySetInnerHTML={{
-                          __html: searchTerm ? highlightText(header, searchTerm) : header,
+                          __html: renderCell(header, searchTerm),
                         }}
                       />
                     </th>
@@ -161,10 +176,14 @@ export function ContentRenderer({
               {tableElement.rows.map((row, rowIndex) => (
                 <tr key={rowIndex} className="hover:bg-gray-50">
                   {row.map((cell, cellIndex) => (
-                    <td key={cellIndex} className="border border-gray-300 px-4 py-2">
+                    <td 
+                      key={cellIndex} 
+                      colSpan={getColspan(cell)}
+                      className="border border-gray-300 px-4 py-2"
+                    >
                       <div
                         dangerouslySetInnerHTML={{
-                          __html: searchTerm ? highlightText(cell, searchTerm) : cell,
+                          __html: renderCell(cell, searchTerm),
                         }}
                       />
                     </td>

@@ -14,11 +14,17 @@
               "type": "table",
               "rows": [
                 [
-                  "TEIL I"
+                  {
+                    "content": "TEIL I",
+                    "colspan": 5
+                  }
                 ],
                 [
                   "",
-                  "**Gerichtsverfassung**"
+                  {
+                    "content": "**Gerichtsverfassung**",
+                    "colspan": 4
+                  }
                 ],
                 [
                   "",
@@ -52,11 +58,17 @@
                   "§§ 40 bis 53"
                 ],
                 [
-                  "TEIL II"
+                  {
+                    "content": "TEIL II",
+                    "colspan": 5
+                  }
                 ],
                 [
                   "",
-                  "**Verfahren**"
+                  {
+                    "content": "**Verfahren**",
+                    "colspan": 4
+                  }
                 ],
                 [
                   "",
@@ -85,11 +97,17 @@
                   "§ 123"
                 ],
                 [
-                  "TEIL III"
+                  {
+                    "content": "TEIL III",
+                    "colspan": 5
+                  }
                 ],
                 [
                   "",
-                  "**Rechtsmittel und Wiederaufnahme des Verfahrens**"
+                  {
+                    "content": "**Rechtsmittel und Wiederaufnahme des Verfahrens**",
+                    "colspan": 4
+                  }
                 ],
                 [
                   "",
@@ -113,11 +131,17 @@
                   "§ 153"
                 ],
                 [
-                  "TEIL IV"
+                  {
+                    "content": "TEIL IV",
+                    "colspan": 5
+                  }
                 ],
                 [
                   "",
-                  "**Kosten und Vollstreckung**"
+                  {
+                    "content": "**Kosten und Vollstreckung**",
+                    "colspan": 4
+                  }
                 ],
                 [
                   "",
@@ -131,11 +155,17 @@
                   "§§ 167 bis 172"
                 ],
                 [
-                  "TEIL V"
+                  {
+                    "content": "TEIL V",
+                    "colspan": 5
+                  }
                 ],
                 [
                   "",
-                  "**Schluß- und Übergangsbestimmungen**",
+                  {
+                    "content": "**Schluß- und Übergangsbestimmungen**",
+                    "colspan": 3
+                  },
                   "§§ 173 bis 195"
                 ]
               ]

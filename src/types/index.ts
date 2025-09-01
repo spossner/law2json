@@ -22,10 +22,15 @@ export interface ListNode {
   children: ListItemNode[];
 }
 
+export interface TableCell {
+  content: string;
+  colspan?: number; // optional colspan, defaults to 1
+}
+
 export interface TableNode {
   type: 'table';
-  headers?: string[]; // optional header row
-  rows: string[][]; // body rows of Markdown cells
+  headers?: Array<string | TableCell>; // header cells can have colspan
+  rows: Array<Array<string | TableCell>>; // body rows can have cells with colspan
 }
 
 export interface Footnote {

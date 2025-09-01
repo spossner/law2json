@@ -14,33 +14,57 @@
               "type": "table",
               "rows": [
                 [
-                  "**Allgemeiner Teil**"
+                  {
+                    "content": "**Allgemeiner Teil**",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Erster Abschnitt"
-                ],
-                [
-                  "",
-                  "Das Strafgesetz"
-                ],
-                [
-                  "",
-                  ""
-                ],
-                [
-                  "Erster Titel"
+                  {
+                    "content": "Erster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Geltungsbereich"
+                  {
+                    "content": "Das Strafgesetz",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  {
+                    "content": "Erster Titel",
+                    "colspan": 3
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "Geltungsbereich",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -94,18 +118,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Titel"
+                  {
+                    "content": "Zweiter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Sprachgebrauch"
+                  {
+                    "content": "Sprachgebrauch",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -119,29 +155,50 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Abschnitt"
-                ],
-                [
-                  "",
-                  "Die Tat"
-                ],
-                [
-                  "",
-                  ""
-                ],
-                [
-                  "Erster Titel"
+                  {
+                    "content": "Zweiter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Grundlagen der Strafbarkeit"
+                  {
+                    "content": "Die Tat",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  {
+                    "content": "Erster Titel",
+                    "colspan": 3
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "Grundlagen der Strafbarkeit",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -190,18 +247,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Titel"
+                  {
+                    "content": "Zweiter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Versuch"
+                  {
+                    "content": "Versuch",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -220,18 +289,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dritter Titel"
+                  {
+                    "content": "Dritter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Täterschaft und Teilnahme"
+                  {
+                    "content": "Täterschaft und Teilnahme",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -270,18 +351,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierter Titel"
+                  {
+                    "content": "Vierter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Notwehr und Notstand"
+                  {
+                    "content": "Notwehr und Notstand",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -305,18 +398,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfter Titel"
+                  {
+                    "content": "Fünfter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straflosigkeit parlamentarischer Äußerungen und Berichte"
+                  {
+                    "content": "Straflosigkeit parlamentarischer Äußerungen und Berichte",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -330,29 +435,50 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dritter Abschnitt"
-                ],
-                [
-                  "",
-                  "Rechtsfolgen der Tat"
-                ],
-                [
-                  "",
-                  ""
-                ],
-                [
-                  "Erster Titel"
+                  {
+                    "content": "Dritter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafen"
+                  {
+                    "content": "Rechtsfolgen der Tat",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  {
+                    "content": "Erster Titel",
+                    "colspan": 3
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "Strafen",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -361,7 +487,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -375,7 +504,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -384,7 +516,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -408,7 +543,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -417,7 +555,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -426,7 +567,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -435,7 +579,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -444,7 +591,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -453,7 +603,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -472,18 +625,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Titel"
+                  {
+                    "content": "Zweiter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafbemessung"
+                  {
+                    "content": "Strafbemessung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -527,18 +692,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dritter Titel"
+                  {
+                    "content": "Dritter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafbemessung bei mehreren Gesetzesverletzungen"
+                  {
+                    "content": "Strafbemessung bei mehreren Gesetzesverletzungen",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -562,18 +739,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierter Titel"
+                  {
+                    "content": "Vierter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafaussetzung zur Bewährung"
+                  {
+                    "content": "Strafaussetzung zur Bewährung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -637,18 +826,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfter Titel"
+                  {
+                    "content": "Fünfter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Verwarnung mit Strafvorbehalt; Absehen von Strafe"
+                  {
+                    "content": "Verwarnung mit Strafvorbehalt; Absehen von Strafe",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -677,18 +878,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Sechster Titel"
+                  {
+                    "content": "Sechster Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Maßregeln der Besserung und Sicherung"
+                  {
+                    "content": "Maßregeln der Besserung und Sicherung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -702,7 +915,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -711,7 +927,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -795,7 +1014,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -804,7 +1026,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -848,7 +1073,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -877,7 +1105,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -886,7 +1117,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -905,7 +1139,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -914,7 +1151,10 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -928,18 +1168,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Siebenter Titel"
+                  {
+                    "content": "Siebenter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Einziehung"
+                  {
+                    "content": "Einziehung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1028,18 +1280,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierter Abschnitt"
+                  {
+                    "content": "Vierter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafantrag, Ermächtigung, Strafverlangen"
+                  {
+                    "content": "Strafantrag, Ermächtigung, Strafverlangen",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1073,29 +1337,50 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfter Abschnitt"
-                ],
-                [
-                  "",
-                  "Verjährung"
-                ],
-                [
-                  "",
-                  ""
-                ],
-                [
-                  "Erster Titel"
+                  {
+                    "content": "Fünfter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Verfolgungsverjährung"
+                  {
+                    "content": "Verjährung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  {
+                    "content": "Erster Titel",
+                    "colspan": 3
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "Verfolgungsverjährung",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1119,18 +1404,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Titel"
+                  {
+                    "content": "Zweiter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Vollstreckungsverjährung"
+                  {
+                    "content": "Vollstreckungsverjährung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1153,33 +1450,57 @@
               "type": "table",
               "rows": [
                 [
-                  "**Besonderer Teil**"
+                  {
+                    "content": "**Besonderer Teil**",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Erster Abschnitt"
-                ],
-                [
-                  "",
-                  "Friedensverrat, Hochverrat und Gefährdung des demokratischen Rechtsstaates"
-                ],
-                [
-                  "",
-                  ""
-                ],
-                [
-                  "Erster Titel"
+                  {
+                    "content": "Erster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Friedensverrat"
+                  {
+                    "content": "Friedensverrat, Hochverrat und Gefährdung des demokratischen Rechtsstaates",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  {
+                    "content": "Erster Titel",
+                    "colspan": 3
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "Friedensverrat",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1193,18 +1514,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Titel"
+                  {
+                    "content": "Zweiter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Hochverrat"
+                  {
+                    "content": "Hochverrat",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1228,18 +1561,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dritter Titel"
+                  {
+                    "content": "Dritter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Gefährdung des demokratischen Rechtsstaates"
+                  {
+                    "content": "Gefährdung des demokratischen Rechtsstaates",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1323,18 +1668,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierter Titel"
+                  {
+                    "content": "Vierter Titel",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Gemeinsame Vorschriften"
+                  {
+                    "content": "Gemeinsame Vorschriften",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1353,18 +1710,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiter Abschnitt"
+                  {
+                    "content": "Zweiter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Landesverrat und Gefährdung der äußeren Sicherheit"
+                  {
+                    "content": "Landesverrat und Gefährdung der äußeren Sicherheit",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1433,18 +1802,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dritter Abschnitt"
+                  {
+                    "content": "Dritter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen ausländische Staaten"
+                  {
+                    "content": "Straftaten gegen ausländische Staaten",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1468,18 +1849,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierter Abschnitt"
+                  {
+                    "content": "Vierter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen Verfassungsorgane sowie bei Wahlen und Abstimmungen; Bestechlichkeit und Bestechung von Mandatsträgern"
+                  {
+                    "content": "Straftaten gegen Verfassungsorgane sowie bei Wahlen und Abstimmungen; Bestechlichkeit und Bestechung von Mandatsträgern",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1558,18 +1951,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfter Abschnitt"
+                  {
+                    "content": "Fünfter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die Landesverteidigung"
+                  {
+                    "content": "Straftaten gegen die Landesverteidigung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1623,18 +2028,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Sechster Abschnitt"
+                  {
+                    "content": "Sechster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Widerstand gegen die Staatsgewalt"
+                  {
+                    "content": "Widerstand gegen die Staatsgewalt",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1688,18 +2105,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Siebenter Abschnitt"
+                  {
+                    "content": "Siebenter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die öffentliche Ordnung"
+                  {
+                    "content": "Straftaten gegen die öffentliche Ordnung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1868,18 +2297,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Achter Abschnitt"
+                  {
+                    "content": "Achter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Geld- und Wertzeichenfälschung"
+                  {
+                    "content": "Geld- und Wertzeichenfälschung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -1933,18 +2374,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Neunter Abschnitt"
+                  {
+                    "content": "Neunter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Falsche uneidliche Aussage und Meineid"
+                  {
+                    "content": "Falsche uneidliche Aussage und Meineid",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2003,18 +2456,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zehnter Abschnitt"
+                  {
+                    "content": "Zehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Falsche Verdächtigung"
+                  {
+                    "content": "Falsche Verdächtigung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2028,18 +2493,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Elfter Abschnitt"
+                  {
+                    "content": "Elfter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten, welche sich auf Religion und Weltanschauung beziehen"
+                  {
+                    "content": "Straftaten, welche sich auf Religion und Weltanschauung beziehen",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2063,18 +2540,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zwölfter Abschnitt"
+                  {
+                    "content": "Zwölfter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen den Personenstand, die Ehe und die Familie"
+                  {
+                    "content": "Straftaten gegen den Personenstand, die Ehe und die Familie",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2103,18 +2592,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dreizehnter Abschnitt"
+                  {
+                    "content": "Dreizehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die sexuelle Selbstbestimmung"
+                  {
+                    "content": "Straftaten gegen die sexuelle Selbstbestimmung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2293,18 +2794,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierzehnter Abschnitt"
+                  {
+                    "content": "Vierzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Beleidigung"
+                  {
+                    "content": "Beleidigung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2378,18 +2891,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfzehnter Abschnitt"
+                  {
+                    "content": "Fünfzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Verletzung des persönlichen Lebens- und Geheimbereichs"
+                  {
+                    "content": "Verletzung des persönlichen Lebens- und Geheimbereichs",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2453,18 +2978,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Sechzehnter Abschnitt"
+                  {
+                    "content": "Sechzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen das Leben"
+                  {
+                    "content": "Straftaten gegen das Leben",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2548,18 +3085,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Siebzehnter Abschnitt"
+                  {
+                    "content": "Siebzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die körperliche Unversehrtheit"
+                  {
+                    "content": "Straftaten gegen die körperliche Unversehrtheit",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2613,18 +3162,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Achtzehnter Abschnitt"
+                  {
+                    "content": "Achtzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die persönliche Freiheit"
+                  {
+                    "content": "Straftaten gegen die persönliche Freiheit",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2728,18 +3289,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Neunzehnter Abschnitt"
+                  {
+                    "content": "Neunzehnter Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Diebstahl und Unterschlagung"
+                  {
+                    "content": "Diebstahl und Unterschlagung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2798,18 +3371,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zwanzigster Abschnitt"
+                  {
+                    "content": "Zwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Raub und Erpressung"
+                  {
+                    "content": "Raub und Erpressung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2853,18 +3438,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Einundzwanzigster Abschnitt"
+                  {
+                    "content": "Einundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Begünstigung und Hehlerei"
+                  {
+                    "content": "Begünstigung und Hehlerei",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2908,18 +3505,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Zweiundzwanzigster Abschnitt"
+                  {
+                    "content": "Zweiundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Betrug und Untreue"
+                  {
+                    "content": "Betrug und Untreue",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -2988,18 +3597,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dreiundzwanzigster Abschnitt"
+                  {
+                    "content": "Dreiundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Urkundenfälschung"
+                  {
+                    "content": "Urkundenfälschung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3088,18 +3709,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Vierundzwanzigster Abschnitt"
+                  {
+                    "content": "Vierundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Insolvenzstraftaten"
+                  {
+                    "content": "Insolvenzstraftaten",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3128,18 +3761,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Fünfundzwanzigster Abschnitt"
+                  {
+                    "content": "Fünfundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Strafbarer Eigennutz"
+                  {
+                    "content": "Strafbarer Eigennutz",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3213,18 +3858,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Sechsundzwanzigster Abschnitt"
+                  {
+                    "content": "Sechsundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen den Wettbewerb"
+                  {
+                    "content": "Straftaten gegen den Wettbewerb",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3263,18 +3920,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Siebenundzwanzigster Abschnitt"
+                  {
+                    "content": "Siebenundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Sachbeschädigung"
+                  {
+                    "content": "Sachbeschädigung",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3313,18 +3982,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Achtundzwanzigster Abschnitt"
+                  {
+                    "content": "Achtundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Gemeingefährliche Straftaten"
+                  {
+                    "content": "Gemeingefährliche Straftaten",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3513,18 +4194,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Neunundzwanzigster Abschnitt"
+                  {
+                    "content": "Neunundzwanzigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten gegen die Umwelt"
+                  {
+                    "content": "Straftaten gegen die Umwelt",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
@@ -3593,18 +4286,30 @@
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
-                  "Dreißigster Abschnitt"
+                  {
+                    "content": "Dreißigster Abschnitt",
+                    "colspan": 3
+                  }
                 ],
                 [
                   "",
-                  "Straftaten im Amt"
+                  {
+                    "content": "Straftaten im Amt",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
-                  ""
+                  {
+                    "content": "",
+                    "colspan": 2
+                  }
                 ],
                 [
                   "",
