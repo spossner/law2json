@@ -2,8 +2,9 @@
   "type": "document",
   "children": [
     {
-      "type": "section",
-      "title": "Inhaltsübersicht",
+      "type": "element",
+      "id": "Inhaltsübersicht",
+      "label": "Inhaltsübersicht",
       "doknr": "BJNR012530976BJNE001912125",
       "children": [
         {
@@ -77,21 +78,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "010",
       "label": "Teil I",
       "title": "Anwendungsbereich, örtliche Zuständigkeit, elektronische Kommunikation, Amtshilfe, europäische Verwaltungszusammenarbeit",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010010",
           "label": "Abschnitt 1",
           "title": "Anwendungsbereich, örtliche Zuständigkeit, elektronische Kommunikation",
           "children": [
             {
-              "type": "article",
-              "label": "§ 1",
+              "type": "element",
               "id": "1",
+              "label": "§ 1",
               "title": "Anwendungsbereich",
               "doknr": "BJNR012530976BJNE002102301",
               "children": [
@@ -175,9 +176,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 2",
+              "type": "element",
               "id": "2",
+              "label": "§ 2",
               "title": "Ausnahmen vom Anwendungsbereich",
               "doknr": "BJNR012530976BJNE002207310",
               "children": [
@@ -330,9 +331,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 3",
+              "type": "element",
               "id": "3",
+              "label": "§ 3",
               "title": "Örtliche Zuständigkeit",
               "doknr": "BJNR012530976BJNE002302301",
               "children": [
@@ -434,9 +435,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 3a",
+              "type": "element",
               "id": "3a",
+              "label": "§ 3a",
               "title": "Elektronische Kommunikation",
               "doknr": "BJNR012530976BJNE013107125",
               "children": [
@@ -549,15 +550,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010020",
           "label": "Abschnitt 2",
           "title": "Amtshilfe",
           "children": [
             {
-              "type": "article",
-              "label": "§ 4",
+              "type": "element",
               "id": "4",
+              "label": "§ 4",
               "title": "Amtshilfepflicht",
               "doknr": "BJNR012530976BJNE002402301",
               "children": [
@@ -615,9 +616,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 5",
+              "type": "element",
               "id": "5",
+              "label": "§ 5",
               "title": "Voraussetzungen und Grenzen der Amtshilfe",
               "doknr": "BJNR012530976BJNE002502301",
               "children": [
@@ -814,9 +815,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 6",
+              "type": "element",
               "id": "6",
+              "label": "§ 6",
               "title": "Auswahl der Behörde",
               "doknr": "BJNR012530976BJNE002602301",
               "children": [
@@ -832,9 +833,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 7",
+              "type": "element",
               "id": "7",
+              "label": "§ 7",
               "title": "Durchführung der Amtshilfe",
               "doknr": "BJNR012530976BJNE002702301",
               "children": [
@@ -863,9 +864,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 8",
+              "type": "element",
               "id": "8",
+              "label": "§ 8",
               "title": "Kosten der Amtshilfe",
               "doknr": "BJNR012530976BJNE002803301",
               "children": [
@@ -896,15 +897,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010030",
           "label": "Abschnitt 3",
           "title": "Europäische Verwaltungszusammenarbeit",
           "children": [
             {
-              "type": "article",
-              "label": "§ 8a",
+              "type": "element",
               "id": "8a",
+              "label": "§ 8a",
               "title": "Grundsätze der Hilfeleistung",
               "doknr": "BJNR012530976BJNE013300310",
               "children": [
@@ -953,9 +954,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 8b",
+              "type": "element",
               "id": "8b",
+              "label": "§ 8b",
               "title": "Form und Behandlung der Ersuchen",
               "doknr": "BJNR012530976BJNE013400310",
               "children": [
@@ -1015,9 +1016,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 8c",
+              "type": "element",
               "id": "8c",
+              "label": "§ 8c",
               "title": "Kosten der Hilfeleistung",
               "doknr": "BJNR012530976BJNE013500310",
               "children": [
@@ -1042,9 +1043,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 8d",
+              "type": "element",
               "id": "8d",
+              "label": "§ 8d",
               "title": "Mitteilungen von Amts wegen",
               "doknr": "BJNR012530976BJNE013600310",
               "children": [
@@ -1082,9 +1083,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 8e",
+              "type": "element",
               "id": "8e",
+              "label": "§ 8e",
               "title": "Anwendbarkeit",
               "doknr": "BJNR012530976BJNE013700310",
               "children": [
@@ -1113,21 +1114,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "020",
       "label": "Teil II",
       "title": "Allgemeine Vorschriften über das\nVerwaltungsverfahren",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020010",
           "label": "Abschnitt 1",
           "title": "Verfahrensgrundsätze",
           "children": [
             {
-              "type": "article",
-              "label": "§ 9",
+              "type": "element",
               "id": "9",
+              "label": "§ 9",
               "title": "Begriff des Verwaltungsverfahrens",
               "doknr": "BJNR012530976BJNE002902301",
               "children": [
@@ -1143,9 +1144,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 10",
+              "type": "element",
               "id": "10",
+              "label": "§ 10",
               "title": "Nichtförmlichkeit des Verwaltungsverfahrens",
               "doknr": "BJNR012530976BJNE003003301",
               "children": [
@@ -1161,9 +1162,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 11",
+              "type": "element",
               "id": "11",
+              "label": "§ 11",
               "title": "Beteiligungsfähigkeit",
               "doknr": "BJNR012530976BJNE003102301",
               "children": [
@@ -1219,9 +1220,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 12",
+              "type": "element",
               "id": "12",
+              "label": "§ 12",
               "title": "Handlungsfähigkeit",
               "doknr": "BJNR012530976BJNE003204311",
               "children": [
@@ -1312,9 +1313,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 13",
+              "type": "element",
               "id": "13",
+              "label": "§ 13",
               "title": "Beteiligte",
               "doknr": "BJNR012530976BJNE003302301",
               "children": [
@@ -1405,9 +1406,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 14",
+              "type": "element",
               "id": "14",
+              "label": "§ 14",
               "title": "Bevollmächtigte und Beistände",
               "doknr": "BJNR012530976BJNE003404310",
               "children": [
@@ -1491,9 +1492,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 15",
+              "type": "element",
               "id": "15",
+              "label": "§ 15",
               "title": "Bestellung eines Empfangsbevollmächtigten",
               "doknr": "BJNR012530976BJNE003505130",
               "children": [
@@ -1509,9 +1510,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 16",
+              "type": "element",
               "id": "16",
+              "label": "§ 16",
               "title": "Bestellung eines Vertreters von Amts wegen",
               "doknr": "BJNR012530976BJNE003605377",
               "children": [
@@ -1624,9 +1625,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 17",
+              "type": "element",
               "id": "17",
+              "label": "§ 17",
               "title": "Vertreter bei gleichförmigen Eingaben",
               "doknr": "BJNR012530976BJNE003703301",
               "children": [
@@ -1677,9 +1678,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 18",
+              "type": "element",
               "id": "18",
+              "label": "§ 18",
               "title": "Vertreter für Beteiligte bei gleichem Interesse",
               "doknr": "BJNR012530976BJNE003802301",
               "children": [
@@ -1708,9 +1709,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 19",
+              "type": "element",
               "id": "19",
+              "label": "§ 19",
               "title": "Gemeinsame Vorschriften für Vertreter bei gleichförmigen\nEingaben und bei gleichem Interesse",
               "doknr": "BJNR012530976BJNE003902301",
               "children": [
@@ -1750,9 +1751,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 20",
+              "type": "element",
               "id": "20",
+              "label": "§ 20",
               "title": "Ausgeschlossene Personen",
               "doknr": "BJNR012530976BJNE004005116",
               "children": [
@@ -2063,9 +2064,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 21",
+              "type": "element",
               "id": "21",
+              "label": "§ 21",
               "title": "Besorgnis der Befangenheit",
               "doknr": "BJNR012530976BJNE004102301",
               "children": [
@@ -2094,9 +2095,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 22",
+              "type": "element",
               "id": "22",
+              "label": "§ 22",
               "title": "Beginn des Verfahrens",
               "doknr": "BJNR012530976BJNE004202301",
               "children": [
@@ -2141,9 +2142,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 23",
+              "type": "element",
               "id": "23",
+              "label": "§ 23",
               "title": "Amtssprache",
               "doknr": "BJNR012530976BJNE004304310",
               "children": [
@@ -2194,9 +2195,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 24",
+              "type": "element",
               "id": "24",
+              "label": "§ 24",
               "title": "Untersuchungsgrundsatz",
               "doknr": "BJNR012530976BJNE004403116",
               "children": [
@@ -2236,9 +2237,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 25",
+              "type": "element",
               "id": "25",
+              "label": "§ 25",
               "title": "Beratung, Auskunft, frühe Öffentlichkeitsbeteiligung",
               "doknr": "BJNR012530976BJNE004504311",
               "children": [
@@ -2278,9 +2279,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 26",
+              "type": "element",
               "id": "26",
+              "label": "§ 26",
               "title": "Beweismittel",
               "doknr": "BJNR012530976BJNE004604310",
               "children": [
@@ -2371,9 +2372,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 27",
+              "type": "element",
               "id": "27",
+              "label": "§ 27",
               "title": "Versicherung an Eides statt",
               "doknr": "BJNR012530976BJNE004703116",
               "children": [
@@ -2435,9 +2436,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 27a",
+              "type": "element",
               "id": "27a",
+              "label": "§ 27a",
               "title": "Bekanntmachung im Internet",
               "doknr": "BJNR012530976BJNE013801125",
               "children": [
@@ -2466,9 +2467,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 27b",
+              "type": "element",
               "id": "27b",
+              "label": "§ 27b",
               "title": "Zugänglichmachung auszulegender Dokumente",
               "doknr": "BJNR012530976BJNE014000125",
               "children": [
@@ -2621,9 +2622,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 27c",
+              "type": "element",
               "id": "27c",
+              "label": "§ 27c",
               "title": "Erörterung mit Verfahrensbeteiligten oder der Öffentlichkeit",
               "doknr": "BJNR012530976BJNE014100125",
               "children": [
@@ -2692,9 +2693,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 28",
+              "type": "element",
               "id": "28",
+              "label": "§ 28",
               "title": "Anhörung Beteiligter",
               "doknr": "BJNR012530976BJNE004802301",
               "children": [
@@ -2796,9 +2797,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 29",
+              "type": "element",
               "id": "29",
+              "label": "§ 29",
               "title": "Akteneinsicht durch Beteiligte",
               "doknr": "BJNR012530976BJNE004902301",
               "children": [
@@ -2838,9 +2839,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 30",
+              "type": "element",
               "id": "30",
+              "label": "§ 30",
               "title": "Geheimhaltung",
               "doknr": "BJNR012530976BJNE005002301",
               "children": [
@@ -2858,15 +2859,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020020",
           "label": "Abschnitt 2",
           "title": "Fristen, Termine, Wiedereinsetzung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 31",
+              "type": "element",
               "id": "31",
+              "label": "§ 31",
               "title": "Fristen und Termine",
               "doknr": "BJNR012530976BJNE005102301",
               "children": [
@@ -2950,9 +2951,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 32",
+              "type": "element",
               "id": "32",
+              "label": "§ 32",
               "title": "Wiedereinsetzung in den vorigen Stand",
               "doknr": "BJNR012530976BJNE005202301",
               "children": [
@@ -3016,15 +3017,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020030",
           "label": "Abschnitt 3",
           "title": "Amtliche Beglaubigung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 33",
+              "type": "element",
               "id": "33",
+              "label": "§ 33",
               "title": "Beglaubigung von Dokumenten",
               "doknr": "BJNR012530976BJNE005306125",
               "children": [
@@ -3243,9 +3244,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 34",
+              "type": "element",
               "id": "34",
+              "label": "§ 34",
               "title": "Beglaubigung von Unterschriften",
               "doknr": "BJNR012530976BJNE005402301",
               "children": [
@@ -3391,21 +3392,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "030",
       "label": "Teil III",
       "title": "Verwaltungsakt",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030010",
           "label": "Abschnitt 1",
           "title": "Zustandekommen des Verwaltungsaktes",
           "children": [
             {
-              "type": "article",
-              "label": "§ 35",
+              "type": "element",
               "id": "35",
+              "label": "§ 35",
               "title": "Begriff des Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE005502301",
               "children": [
@@ -3421,9 +3422,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 35a",
+              "type": "element",
               "id": "35a",
+              "label": "§ 35a",
               "title": "Vollständig automatisierter Erlass eines Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE013900116",
               "children": [
@@ -3439,9 +3440,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 36",
+              "type": "element",
               "id": "36",
+              "label": "§ 36",
               "title": "Nebenbestimmungen zum Verwaltungsakt",
               "doknr": "BJNR012530976BJNE005602301",
               "children": [
@@ -3554,9 +3555,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 37",
+              "type": "element",
               "id": "37",
+              "label": "§ 37",
               "title": "Bestimmtheit und Form des Verwaltungsaktes; Rechtsbehelfsbelehrung",
               "doknr": "BJNR012530976BJNE005706125",
               "children": [
@@ -3638,9 +3639,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 38",
+              "type": "element",
               "id": "38",
+              "label": "§ 38",
               "title": "Zusicherung",
               "doknr": "BJNR012530976BJNE005802301",
               "children": [
@@ -3680,9 +3681,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 39",
+              "type": "element",
               "id": "39",
+              "label": "§ 39",
               "title": "Begründung des Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE005903301",
               "children": [
@@ -3773,9 +3774,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 40",
+              "type": "element",
               "id": "40",
+              "label": "§ 40",
               "title": "Ermessen",
               "doknr": "BJNR012530976BJNE006002301",
               "children": [
@@ -3791,9 +3792,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 41",
+              "type": "element",
               "id": "41",
+              "label": "§ 41",
               "title": "Bekanntgabe des Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006107130",
               "children": [
@@ -3864,9 +3865,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 42",
+              "type": "element",
               "id": "42",
+              "label": "§ 42",
               "title": "Offenbare Unrichtigkeiten im Verwaltungsakt",
               "doknr": "BJNR012530976BJNE006203301",
               "children": [
@@ -3882,9 +3883,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 42a",
+              "type": "element",
               "id": "42a",
+              "label": "§ 42a",
               "title": "Genehmigungsfiktion",
               "doknr": "BJNR012530976BJNE013200310",
               "children": [
@@ -3935,15 +3936,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030020",
           "label": "Abschnitt 2",
           "title": "Bestandskraft des Verwaltungsaktes",
           "children": [
             {
-              "type": "article",
-              "label": "§ 43",
+              "type": "element",
               "id": "43",
+              "label": "§ 43",
               "title": "Wirksamkeit des Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006302301",
               "children": [
@@ -3983,9 +3984,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 44",
+              "type": "element",
               "id": "44",
+              "label": "§ 44",
               "title": "Nichtigkeit des Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006404301",
               "children": [
@@ -4171,9 +4172,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 45",
+              "type": "element",
               "id": "45",
+              "label": "§ 45",
               "title": "Heilung von Verfahrens- und Formfehlern",
               "doknr": "BJNR012530976BJNE006504301",
               "children": [
@@ -4275,9 +4276,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 46",
+              "type": "element",
               "id": "46",
+              "label": "§ 46",
               "title": "Folgen von Verfahrens- und Formfehlern",
               "doknr": "BJNR012530976BJNE006603301",
               "children": [
@@ -4293,9 +4294,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 47",
+              "type": "element",
               "id": "47",
+              "label": "§ 47",
               "title": "Umdeutung eines fehlerhaften Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006702301",
               "children": [
@@ -4346,9 +4347,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 48",
+              "type": "element",
               "id": "48",
+              "label": "§ 48",
               "title": "Rücknahme eines rechtswidrigen Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006803301",
               "children": [
@@ -4454,9 +4455,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 49",
+              "type": "element",
               "id": "49",
+              "label": "§ 49",
               "title": "Widerruf eines rechtmäßigen Verwaltungsaktes",
               "doknr": "BJNR012530976BJNE006903301",
               "children": [
@@ -4628,9 +4629,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 49a",
+              "type": "element",
               "id": "49a",
+              "label": "§ 49a",
               "title": "Erstattung, Verzinsung",
               "doknr": "BJNR012530976BJNE012503301",
               "children": [
@@ -4681,9 +4682,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 50",
+              "type": "element",
               "id": "50",
+              "label": "§ 50",
               "title": "Rücknahme und Widerruf im Rechtsbehelfsverfahren",
               "doknr": "BJNR012530976BJNE007004301",
               "children": [
@@ -4699,9 +4700,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 51",
+              "type": "element",
               "id": "51",
+              "label": "§ 51",
               "title": "Wiederaufgreifen des Verfahrens",
               "doknr": "BJNR012530976BJNE007102301",
               "children": [
@@ -4803,9 +4804,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 52",
+              "type": "element",
               "id": "52",
+              "label": "§ 52",
               "title": "Rückgabe von Urkunden und Sachen",
               "doknr": "BJNR012530976BJNE007202301",
               "children": [
@@ -4823,15 +4824,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030030",
           "label": "Abschnitt 3",
           "title": "Verjährungsrechtliche Wirkungen\ndes Verwaltungsaktes",
           "children": [
             {
-              "type": "article",
-              "label": "§ 53",
+              "type": "element",
               "id": "53",
+              "label": "§ 53",
               "title": "Hemmung der Verjährung durch Verwaltungsakt",
               "doknr": "BJNR012530976BJNE007303301",
               "children": [
@@ -4864,15 +4865,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "040",
       "label": "Teil IV",
       "title": "Öffentlich-rechtlicher Vertrag",
       "children": [
         {
-          "type": "article",
-          "label": "§ 54",
+          "type": "element",
           "id": "54",
+          "label": "§ 54",
           "title": "Zulässigkeit des öffentlich-rechtlichen Vertrags",
           "doknr": "BJNR012530976BJNE007402301",
           "children": [
@@ -4888,9 +4889,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 55",
+          "type": "element",
           "id": "55",
+          "label": "§ 55",
           "title": "Vergleichsvertrag",
           "doknr": "BJNR012530976BJNE007502301",
           "children": [
@@ -4906,9 +4907,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 56",
+          "type": "element",
           "id": "56",
+          "label": "§ 56",
           "title": "Austauschvertrag",
           "doknr": "BJNR012530976BJNE007602301",
           "children": [
@@ -4937,9 +4938,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 57",
+          "type": "element",
           "id": "57",
+          "label": "§ 57",
           "title": "Schriftform",
           "doknr": "BJNR012530976BJNE007702301",
           "children": [
@@ -4955,9 +4956,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 58",
+          "type": "element",
           "id": "58",
+          "label": "§ 58",
           "title": "Zustimmung von Dritten und Behörden",
           "doknr": "BJNR012530976BJNE007802301",
           "children": [
@@ -4986,9 +4987,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 59",
+          "type": "element",
           "id": "59",
+          "label": "§ 59",
           "title": "Nichtigkeit des öffentlich-rechtlichen Vertrags",
           "doknr": "BJNR012530976BJNE007902301",
           "children": [
@@ -5079,9 +5080,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 60",
+          "type": "element",
           "id": "60",
+          "label": "§ 60",
           "title": "Anpassung und Kündigung in besonderen Fällen",
           "doknr": "BJNR012530976BJNE008002301",
           "children": [
@@ -5110,9 +5111,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 61",
+          "type": "element",
           "id": "61",
+          "label": "§ 61",
           "title": "Unterwerfung unter die sofortige Vollstreckung",
           "doknr": "BJNR012530976BJNE008105116",
           "children": [
@@ -5141,9 +5142,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 62",
+          "type": "element",
           "id": "62",
+          "label": "§ 62",
           "title": "Ergänzende Anwendung von Vorschriften",
           "doknr": "BJNR012530976BJNE008202301",
           "children": [
@@ -5161,21 +5162,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "050",
       "label": "Teil V",
       "title": "Besondere Verfahrensarten",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "050010",
           "label": "Abschnitt 1",
           "title": "Förmliches Verwaltungsverfahren",
           "children": [
             {
-              "type": "article",
-              "label": "§ 63",
+              "type": "element",
               "id": "63",
+              "label": "§ 63",
               "title": "Anwendung der Vorschriften über das förmliche\nVerwaltungsverfahren",
               "doknr": "BJNR012530976BJNE008302301",
               "children": [
@@ -5215,9 +5216,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 64",
+              "type": "element",
               "id": "64",
+              "label": "§ 64",
               "title": "Form des Antrags",
               "doknr": "BJNR012530976BJNE008402301",
               "children": [
@@ -5233,9 +5234,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 65",
+              "type": "element",
               "id": "65",
+              "label": "§ 65",
               "title": "Mitwirkung von Zeugen und Sachverständigen",
               "doknr": "BJNR012530976BJNE008503116",
               "children": [
@@ -5297,9 +5298,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 66",
+              "type": "element",
               "id": "66",
+              "label": "§ 66",
               "title": "Verpflichtung zur Anhörung von Beteiligten",
               "doknr": "BJNR012530976BJNE008603301",
               "children": [
@@ -5328,9 +5329,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 67",
+              "type": "element",
               "id": "67",
+              "label": "§ 67",
               "title": "Erfordernis der mündlichen Verhandlung",
               "doknr": "BJNR012530976BJNE008703301",
               "children": [
@@ -5432,9 +5433,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 68",
+              "type": "element",
               "id": "68",
+              "label": "§ 68",
               "title": "Verlauf der mündlichen Verhandlung",
               "doknr": "BJNR012530976BJNE008802301",
               "children": [
@@ -5551,9 +5552,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 69",
+              "type": "element",
               "id": "69",
+              "label": "§ 69",
               "title": "Entscheidung",
               "doknr": "BJNR012530976BJNE008905310",
               "children": [
@@ -5593,9 +5594,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 70",
+              "type": "element",
               "id": "70",
+              "label": "§ 70",
               "title": "Anfechtung der Entscheidung",
               "doknr": "BJNR012530976BJNE009002301",
               "children": [
@@ -5611,9 +5612,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71",
+              "type": "element",
               "id": "71",
+              "label": "§ 71",
               "title": "Besondere Vorschriften für das förmliche Verfahren vor\nAusschüssen",
               "doknr": "BJNR012530976BJNE009102301",
               "children": [
@@ -5655,15 +5656,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "050011",
           "label": "Abschnitt 1a",
           "title": "Verfahren über eine einheitliche Stelle",
           "children": [
             {
-              "type": "article",
-              "label": "§ 71a",
+              "type": "element",
               "id": "71a",
+              "label": "§ 71a",
               "title": "Anwendbarkeit",
               "doknr": "BJNR012530976BJNE012603310",
               "children": [
@@ -5692,9 +5693,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71b",
+              "type": "element",
               "id": "71b",
+              "label": "§ 71b",
               "title": "Verfahren",
               "doknr": "BJNR012530976BJNE012703310",
               "children": [
@@ -5767,9 +5768,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71c",
+              "type": "element",
               "id": "71c",
+              "label": "§ 71c",
               "title": "Informationspflichten",
               "doknr": "BJNR012530976BJNE012804310",
               "children": [
@@ -5798,9 +5799,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71d",
+              "type": "element",
               "id": "71d",
+              "label": "§ 71d",
               "title": "Gegenseitige Unterstützung",
               "doknr": "BJNR012530976BJNE012903310",
               "children": [
@@ -5816,9 +5817,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71e",
+              "type": "element",
               "id": "71e",
+              "label": "§ 71e",
               "title": "Elektronisches Verfahren",
               "doknr": "BJNR012530976BJNE013003310",
               "children": [
@@ -5836,15 +5837,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "050020",
           "label": "Abschnitt 2",
           "title": "Planfeststellungsverfahren",
           "children": [
             {
-              "type": "article",
-              "label": "§ 72",
+              "type": "element",
               "id": "72",
+              "label": "§ 72",
               "title": "Anwendung der Vorschriften über das Planfeststellungsverfahren",
               "doknr": "BJNR012530976BJNE009203301",
               "children": [
@@ -5873,9 +5874,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 73",
+              "type": "element",
               "id": "73",
+              "label": "§ 73",
               "title": "Anhörungsverfahren",
               "doknr": "BJNR012530976BJNE009305125",
               "children": [
@@ -6054,9 +6055,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 74",
+              "type": "element",
               "id": "74",
+              "label": "§ 74",
               "title": "Planfeststellungsbeschluss, Plangenehmigung",
               "doknr": "BJNR012530976BJNE009406125",
               "children": [
@@ -6224,9 +6225,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 75",
+              "type": "element",
               "id": "75",
+              "label": "§ 75",
               "title": "Rechtswirkungen der Planfeststellung",
               "doknr": "BJNR012530976BJNE009504311",
               "children": [
@@ -6286,9 +6287,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 76",
+              "type": "element",
               "id": "76",
+              "label": "§ 76",
               "title": "Planänderungen vor Fertigstellung des Vorhabens",
               "doknr": "BJNR012530976BJNE009602301",
               "children": [
@@ -6328,9 +6329,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 77",
+              "type": "element",
               "id": "77",
+              "label": "§ 77",
               "title": "Aufhebung des Planfeststellungsbeschlusses",
               "doknr": "BJNR012530976BJNE009702301",
               "children": [
@@ -6346,9 +6347,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 78",
+              "type": "element",
               "id": "78",
+              "label": "§ 78",
               "title": "Zusammentreffen mehrerer Vorhaben",
               "doknr": "BJNR012530976BJNE009802301",
               "children": [
@@ -6381,15 +6382,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "060",
       "label": "Teil VI",
       "title": "Rechtsbehelfsverfahren",
       "children": [
         {
-          "type": "article",
-          "label": "§ 79",
+          "type": "element",
           "id": "79",
+          "label": "§ 79",
           "title": "Rechtsbehelfe gegen Verwaltungsakte",
           "doknr": "BJNR012530976BJNE009902301",
           "children": [
@@ -6405,9 +6406,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 80",
+          "type": "element",
           "id": "80",
+          "label": "§ 80",
           "title": "Erstattung von Kosten im Vorverfahren",
           "doknr": "BJNR012530976BJNE010002301",
           "children": [
@@ -6493,21 +6494,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "070",
       "label": "Teil VII",
       "title": "Ehrenamtliche Tätigkeit, Ausschüsse",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "070010",
           "label": "Abschnitt 1",
           "title": "Ehrenamtliche Tätigkeit",
           "children": [
             {
-              "type": "article",
-              "label": "§ 81",
+              "type": "element",
               "id": "81",
+              "label": "§ 81",
               "title": "Anwendung der Vorschriften über die ehrenamtliche Tätigkeit",
               "doknr": "BJNR012530976BJNE010102301",
               "children": [
@@ -6523,9 +6524,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 82",
+              "type": "element",
               "id": "82",
+              "label": "§ 82",
               "title": "Pflicht zu ehrenamtlicher Tätigkeit",
               "doknr": "BJNR012530976BJNE010202301",
               "children": [
@@ -6541,9 +6542,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 83",
+              "type": "element",
               "id": "83",
+              "label": "§ 83",
               "title": "Ausübung ehrenamtlicher Tätigkeit",
               "doknr": "BJNR012530976BJNE010302301",
               "children": [
@@ -6572,9 +6573,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 84",
+              "type": "element",
               "id": "84",
+              "label": "§ 84",
               "title": "Verschwiegenheitspflicht",
               "doknr": "BJNR012530976BJNE010402301",
               "children": [
@@ -6636,9 +6637,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 85",
+              "type": "element",
               "id": "85",
+              "label": "§ 85",
               "title": "Entschädigung",
               "doknr": "BJNR012530976BJNE010502301",
               "children": [
@@ -6654,9 +6655,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 86",
+              "type": "element",
               "id": "86",
+              "label": "§ 86",
               "title": "Abberufung",
               "doknr": "BJNR012530976BJNE010602301",
               "children": [
@@ -6701,9 +6702,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 87",
+              "type": "element",
               "id": "87",
+              "label": "§ 87",
               "title": "Ordnungswidrigkeiten",
               "doknr": "BJNR012530976BJNE010702301",
               "children": [
@@ -6763,15 +6764,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "070020",
           "label": "Abschnitt 2",
           "title": "Ausschüsse",
           "children": [
             {
-              "type": "article",
-              "label": "§ 88",
+              "type": "element",
               "id": "88",
+              "label": "§ 88",
               "title": "Anwendung der Vorschriften über Ausschüsse",
               "doknr": "BJNR012530976BJNE010802301",
               "children": [
@@ -6787,9 +6788,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 89",
+              "type": "element",
               "id": "89",
+              "label": "§ 89",
               "title": "Ordnung in den Sitzungen",
               "doknr": "BJNR012530976BJNE010902301",
               "children": [
@@ -6805,9 +6806,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 90",
+              "type": "element",
               "id": "90",
+              "label": "§ 90",
               "title": "Beschlussfähigkeit",
               "doknr": "BJNR012530976BJNE011002301",
               "children": [
@@ -6836,9 +6837,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 91",
+              "type": "element",
               "id": "91",
+              "label": "§ 91",
               "title": "Beschlussfassung",
               "doknr": "BJNR012530976BJNE011102301",
               "children": [
@@ -6854,9 +6855,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 92",
+              "type": "element",
               "id": "92",
+              "label": "§ 92",
               "title": "Wahlen durch Ausschüsse",
               "doknr": "BJNR012530976BJNE011202301",
               "children": [
@@ -6896,9 +6897,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 93",
+              "type": "element",
               "id": "93",
+              "label": "§ 93",
               "title": "Niederschrift",
               "doknr": "BJNR012530976BJNE011302301",
               "children": [
@@ -6984,15 +6985,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "080",
       "label": "Teil VIII",
       "title": "Schlussvorschriften",
       "children": [
         {
-          "type": "article",
-          "label": "§ 94",
+          "type": "element",
           "id": "94",
+          "label": "§ 94",
           "title": "Übertragung gemeindlicher Aufgaben",
           "doknr": "BJNR012530976BJNE011402301",
           "children": [
@@ -7008,9 +7009,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 95",
+          "type": "element",
           "id": "95",
+          "label": "§ 95",
           "title": "Sonderregelung für Verteidigungsangelegenheiten",
           "doknr": "BJNR012530976BJNE011503301",
           "children": [
@@ -7026,9 +7027,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 96",
+          "type": "element",
           "id": "96",
+          "label": "§ 96",
           "title": "Überleitung von Verfahren",
           "doknr": "BJNR012530976BJNE011602301",
           "children": [
@@ -7079,9 +7080,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 97",
+          "type": "element",
           "id": "97",
+          "label": "§ 97",
           "doknr": "BJNR012530976BJNE011703301",
           "children": [
             {
@@ -7096,9 +7097,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 98",
+          "type": "element",
           "id": "98",
+          "label": "§ 98",
           "doknr": "BJNR012530976BJNE011803301",
           "children": [
             {
@@ -7113,9 +7114,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 99",
+          "type": "element",
           "id": "99",
+          "label": "§ 99",
           "doknr": "BJNR012530976BJNE011903301",
           "children": [
             {
@@ -7130,9 +7131,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 100",
+          "type": "element",
           "id": "100",
+          "label": "§ 100",
           "title": "Landesgesetzliche Regelungen",
           "doknr": "BJNR012530976BJNE012002301",
           "children": [
@@ -7177,9 +7178,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 101",
+          "type": "element",
           "id": "101",
+          "label": "§ 101",
           "title": "Stadtstaatenklausel",
           "doknr": "BJNR012530976BJNE012103301",
           "children": [
@@ -7195,9 +7196,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 102",
+          "type": "element",
           "id": "102",
+          "label": "§ 102",
           "title": "Übergangsvorschrift zu § 53",
           "doknr": "BJNR012530976BJNE012204301",
           "children": [
@@ -7213,9 +7214,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 102a",
+          "type": "element",
           "id": "102a",
+          "label": "§ 102a",
           "title": "Übergangsregelung für die Durchführung von Verwaltungsverfahren",
           "doknr": "BJNR012530976BJNE014200125",
           "children": [
@@ -7231,9 +7232,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 103",
+          "type": "element",
           "id": "103",
+          "label": "§ 103",
           "doknr": "BJNR012530976BJNE012302301",
           "children": [
             {

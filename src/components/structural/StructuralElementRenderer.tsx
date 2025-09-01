@@ -21,11 +21,11 @@ export function StructuralElementRenderer({
 
   const handleToggle = () => {
     // Container elements that should expand/collapse
-    if (element.type === 'outline') {
+    if (element.type === 'structure') {
       setIsExpanded(!isExpanded);
     }
     // Selectable leaf elements that should be selected
-    else if (element.type === 'article' || element.type === 'section' || element.type === 'p') {
+    else if (element.type === 'element' || element.type === 'p') {
       onSelect?.(element);
     }
   };
@@ -50,28 +50,16 @@ export function StructuralElementRenderer({
       'cursor-pointer transition-colors duration-150 border-l-4 border-transparent hover:border-blue-300 hover:bg-blue-50';
 
     switch (element.type) {
-      case 'outline':
+      case 'structure':
         return cn(
           baseStyles,
           'text-lg font-bold py-3 px-4 bg-gray-50 border-b border-gray-200',
           isSelected && 'bg-blue-100 border-l-blue-500'
         );
-      case 'section':
-        return cn(
-          baseStyles,
-          'text-base font-semibold py-2 px-6 bg-gray-25',
-          isSelected && 'bg-blue-100 border-l-blue-500'
-        );
-      case 'article':
+      case 'element':
         return cn(
           baseStyles,
           'text-sm py-2 px-8 font-medium',
-          isSelected && 'bg-blue-100 border-l-blue-500'
-        );
-      case 'p':
-        return cn(
-          baseStyles,
-          'text-sm py-1 px-10 text-gray-700',
           isSelected && 'bg-blue-100 border-l-blue-500'
         );
       default:
@@ -80,8 +68,8 @@ export function StructuralElementRenderer({
   };
 
   const renderExpandIcon = () => {
-    // Only show expand arrows for outline containers, not leaf elements
-    if (element.type !== 'outline') {
+    // Only show expand arrows for structure containers, not leaf elements
+    if (element.type !== 'structure') {
       return <span className="w-4" />;
     }
 
@@ -124,8 +112,6 @@ export function StructuralElementRenderer({
           ))}
         </div>
       )}
-
-      {/* No content rendering in sidebar - content shown in main area */}
     </div>
   );
 }

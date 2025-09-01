@@ -2,8 +2,9 @@
   "type": "document",
   "children": [
     {
-      "type": "section",
-      "title": "Eingangsformel",
+      "type": "element",
+      "id": "Eingangsformel",
+      "label": "Eingangsformel",
       "doknr": "BJNR000010949BJNE001500314",
       "children": [
         {
@@ -18,8 +19,9 @@
       ]
     },
     {
-      "type": "section",
-      "title": "Präambel",
+      "type": "element",
+      "id": "Präambel",
+      "label": "Präambel",
       "doknr": "BJNR000010949BJNE001601305",
       "children": [
         {
@@ -34,15 +36,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "010",
       "label": "I.",
       "title": "Die Grundrechte",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 1",
+          "type": "element",
           "id": "1",
+          "label": "Art. 1",
           "doknr": "BJNR000010949BJNE001700314",
           "children": [
             {
@@ -81,9 +83,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 2",
+          "type": "element",
           "id": "2",
+          "label": "Art. 2",
           "doknr": "BJNR000010949BJNE001800314",
           "children": [
             {
@@ -111,9 +113,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 3",
+          "type": "element",
           "id": "3",
+          "label": "Art. 3",
           "doknr": "BJNR000010949BJNE001901307",
           "children": [
             {
@@ -152,9 +154,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 4",
+          "type": "element",
           "id": "4",
+          "label": "Art. 4",
           "doknr": "BJNR000010949BJNE002000314",
           "children": [
             {
@@ -193,9 +195,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 5",
+          "type": "element",
           "id": "5",
+          "label": "Art. 5",
           "doknr": "BJNR000010949BJNE002100314",
           "children": [
             {
@@ -234,9 +236,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 6",
+          "type": "element",
           "id": "6",
+          "label": "Art. 6",
           "doknr": "BJNR000010949BJNE002200314",
           "children": [
             {
@@ -297,9 +299,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 7",
+          "type": "element",
           "id": "7",
+          "label": "Art. 7",
           "doknr": "BJNR000010949BJNE002300314",
           "children": [
             {
@@ -371,9 +373,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 8",
+          "type": "element",
           "id": "8",
+          "label": "Art. 8",
           "doknr": "BJNR000010949BJNE002400314",
           "children": [
             {
@@ -401,9 +403,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 9",
+          "type": "element",
           "id": "9",
+          "label": "Art. 9",
           "doknr": "BJNR000010949BJNE002500314",
           "children": [
             {
@@ -442,9 +444,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 10",
+          "type": "element",
           "id": "10",
+          "label": "Art. 10",
           "doknr": "BJNR000010949BJNE002600314",
           "children": [
             {
@@ -472,9 +474,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 11",
+          "type": "element",
           "id": "11",
+          "label": "Art. 11",
           "doknr": "BJNR000010949BJNE002700314",
           "children": [
             {
@@ -502,9 +504,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 12",
+          "type": "element",
           "id": "12",
+          "label": "Art. 12",
           "doknr": "BJNR000010949BJNE002800314",
           "children": [
             {
@@ -543,9 +545,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 12a",
+          "type": "element",
           "id": "12a",
+          "label": "Art. 12a",
           "doknr": "BJNR000010949BJNE002901311",
           "children": [
             {
@@ -617,9 +619,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 13",
+          "type": "element",
           "id": "13",
+          "label": "Art. 13",
           "doknr": "BJNR000010949BJNE003001301",
           "children": [
             {
@@ -711,9 +713,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 14",
+          "type": "element",
           "id": "14",
+          "label": "Art. 14",
           "doknr": "BJNR000010949BJNE003100314",
           "children": [
             {
@@ -752,9 +754,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 15",
+          "type": "element",
           "id": "15",
+          "label": "Art. 15",
           "doknr": "BJNR000010949BJNE003200314",
           "children": [
             {
@@ -769,9 +771,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 16",
+          "type": "element",
           "id": "16",
+          "label": "Art. 16",
           "doknr": "BJNR000010949BJNE003302301",
           "children": [
             {
@@ -799,9 +801,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 16a",
+          "type": "element",
           "id": "16a",
+          "label": "Art. 16a",
           "doknr": "BJNR000010949BJNE019500305",
           "children": [
             {
@@ -871,9 +873,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 17",
+          "type": "element",
           "id": "17",
+          "label": "Art. 17",
           "doknr": "BJNR000010949BJNE003400314",
           "children": [
             {
@@ -888,9 +890,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 17a",
+          "type": "element",
           "id": "17a",
+          "label": "Art. 17a",
           "doknr": "BJNR000010949BJNE003500314",
           "children": [
             {
@@ -918,9 +920,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 18",
+          "type": "element",
           "id": "18",
+          "label": "Art. 18",
           "doknr": "BJNR000010949BJNE003601305",
           "children": [
             {
@@ -935,9 +937,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 19",
+          "type": "element",
           "id": "19",
+          "label": "Art. 19",
           "doknr": "BJNR000010949BJNE003700314",
           "children": [
             {
@@ -989,15 +991,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "020",
       "label": "II.",
       "title": "Der Bund und die Länder",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 20",
+          "type": "element",
           "id": "20",
+          "label": "Art. 20",
           "doknr": "BJNR000010949BJNE003800314",
           "children": [
             {
@@ -1047,9 +1049,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 20a",
+          "type": "element",
           "id": "20a",
+          "label": "Art. 20a",
           "doknr": "BJNR000010949BJNE020101377",
           "children": [
             {
@@ -1064,9 +1066,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 21",
+          "type": "element",
           "id": "21",
+          "label": "Art. 21",
           "doknr": "BJNR000010949BJNE003902311",
           "children": [
             {
@@ -1127,9 +1129,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 22",
+          "type": "element",
           "id": "22",
+          "label": "Art. 22",
           "doknr": "BJNR000010949BJNE004001377",
           "children": [
             {
@@ -1157,9 +1159,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 23",
+          "type": "element",
           "id": "23",
+          "label": "Art. 23",
           "doknr": "BJNR000010949BJNE004104160",
           "children": [
             {
@@ -1251,9 +1253,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 24",
+          "type": "element",
           "id": "24",
+          "label": "Art. 24",
           "doknr": "BJNR000010949BJNE004201333",
           "children": [
             {
@@ -1301,9 +1303,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 25",
+          "type": "element",
           "id": "25",
+          "label": "Art. 25",
           "doknr": "BJNR000010949BJNE004300314",
           "children": [
             {
@@ -1318,9 +1320,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 26",
+          "type": "element",
           "id": "26",
+          "label": "Art. 26",
           "doknr": "BJNR000010949BJNE004400314",
           "children": [
             {
@@ -1348,9 +1350,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 27",
+          "type": "element",
           "id": "27",
+          "label": "Art. 27",
           "doknr": "BJNR000010949BJNE004500314",
           "children": [
             {
@@ -1365,9 +1367,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 28",
+          "type": "element",
           "id": "28",
+          "label": "Art. 28",
           "doknr": "BJNR000010949BJNE004603307",
           "children": [
             {
@@ -1406,9 +1408,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 29",
+          "type": "element",
           "id": "29",
+          "label": "Art. 29",
           "doknr": "BJNR000010949BJNE004701307",
           "children": [
             {
@@ -1502,9 +1504,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 30",
+          "type": "element",
           "id": "30",
+          "label": "Art. 30",
           "doknr": "BJNR000010949BJNE004800314",
           "children": [
             {
@@ -1519,9 +1521,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 31",
+          "type": "element",
           "id": "31",
+          "label": "Art. 31",
           "doknr": "BJNR000010949BJNE004900314",
           "children": [
             {
@@ -1536,9 +1538,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 32",
+          "type": "element",
           "id": "32",
+          "label": "Art. 32",
           "doknr": "BJNR000010949BJNE005000314",
           "children": [
             {
@@ -1577,9 +1579,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 33",
+          "type": "element",
           "id": "33",
+          "label": "Art. 33",
           "doknr": "BJNR000010949BJNE005101377",
           "children": [
             {
@@ -1640,9 +1642,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 34",
+          "type": "element",
           "id": "34",
+          "label": "Art. 34",
           "doknr": "BJNR000010949BJNE005200314",
           "children": [
             {
@@ -1657,9 +1659,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 35",
+          "type": "element",
           "id": "35",
+          "label": "Art. 35",
           "doknr": "BJNR000010949BJNE005300314",
           "children": [
             {
@@ -1698,9 +1700,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 36",
+          "type": "element",
           "id": "36",
+          "label": "Art. 36",
           "doknr": "BJNR000010949BJNE005400314",
           "children": [
             {
@@ -1728,9 +1730,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 37",
+          "type": "element",
           "id": "37",
+          "label": "Art. 37",
           "doknr": "BJNR000010949BJNE005500314",
           "children": [
             {
@@ -1760,15 +1762,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "030",
       "label": "III.",
       "title": "Der Bundestag",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 38",
+          "type": "element",
           "id": "38",
+          "label": "Art. 38",
           "doknr": "BJNR000010949BJNE005600314",
           "children": [
             {
@@ -1807,9 +1809,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 39",
+          "type": "element",
           "id": "39",
+          "label": "Art. 39",
           "doknr": "BJNR000010949BJNE005701307",
           "children": [
             {
@@ -1848,9 +1850,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 40",
+          "type": "element",
           "id": "40",
+          "label": "Art. 40",
           "doknr": "BJNR000010949BJNE005800314",
           "children": [
             {
@@ -1878,9 +1880,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 41",
+          "type": "element",
           "id": "41",
+          "label": "Art. 41",
           "doknr": "BJNR000010949BJNE005900314",
           "children": [
             {
@@ -1919,9 +1921,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 42",
+          "type": "element",
           "id": "42",
+          "label": "Art. 42",
           "doknr": "BJNR000010949BJNE006000314",
           "children": [
             {
@@ -1960,9 +1962,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 43",
+          "type": "element",
           "id": "43",
+          "label": "Art. 43",
           "doknr": "BJNR000010949BJNE006100314",
           "children": [
             {
@@ -1990,9 +1992,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 44",
+          "type": "element",
           "id": "44",
+          "label": "Art. 44",
           "doknr": "BJNR000010949BJNE006200314",
           "children": [
             {
@@ -2042,9 +2044,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 45",
+          "type": "element",
           "id": "45",
+          "label": "Art. 45",
           "doknr": "BJNR000010949BJNE006302160",
           "children": [
             {
@@ -2059,9 +2061,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 45a",
+          "type": "element",
           "id": "45a",
+          "label": "Art. 45a",
           "doknr": "BJNR000010949BJNE006400314",
           "children": [
             {
@@ -2100,9 +2102,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 45b",
+          "type": "element",
           "id": "45b",
+          "label": "Art. 45b",
           "doknr": "BJNR000010949BJNE006500314",
           "children": [
             {
@@ -2117,9 +2119,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 45c",
+          "type": "element",
           "id": "45c",
+          "label": "Art. 45c",
           "doknr": "BJNR000010949BJNE006600314",
           "children": [
             {
@@ -2147,9 +2149,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 45d",
+          "type": "element",
           "id": "45d",
+          "label": "Art. 45d",
           "title": "Parlamentarisches Kontrollgremium",
           "doknr": "BJNR000010949BJNE020800160",
           "children": [
@@ -2178,9 +2180,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 46",
+          "type": "element",
           "id": "46",
+          "label": "Art. 46",
           "doknr": "BJNR000010949BJNE006700314",
           "children": [
             {
@@ -2230,9 +2232,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 47",
+          "type": "element",
           "id": "47",
+          "label": "Art. 47",
           "doknr": "BJNR000010949BJNE006800314",
           "children": [
             {
@@ -2247,9 +2249,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 48",
+          "type": "element",
           "id": "48",
+          "label": "Art. 48",
           "doknr": "BJNR000010949BJNE006900314",
           "children": [
             {
@@ -2288,9 +2290,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 49",
+          "type": "element",
           "id": "49",
+          "label": "Art. 49",
           "title": "(weggefallen)",
           "doknr": "BJNR000010949BJNE007000314",
           "children": [
@@ -2303,15 +2305,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "040",
       "label": "IV.",
       "title": "Der Bundesrat",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 50",
+          "type": "element",
           "id": "50",
+          "label": "Art. 50",
           "doknr": "BJNR000010949BJNE007101333",
           "children": [
             {
@@ -2326,9 +2328,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 51",
+          "type": "element",
           "id": "51",
+          "label": "Art. 51",
           "doknr": "BJNR000010949BJNE007201305",
           "children": [
             {
@@ -2367,9 +2369,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 52",
+          "type": "element",
           "id": "52",
+          "label": "Art. 52",
           "doknr": "BJNR000010949BJNE007302377",
           "children": [
             {
@@ -2428,9 +2430,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 53",
+          "type": "element",
           "id": "53",
+          "label": "Art. 53",
           "doknr": "BJNR000010949BJNE007400314",
           "children": [
             {
@@ -2447,15 +2449,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "041",
       "label": "IV a.",
       "title": "Gemeinsamer Ausschuß",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 53a",
+          "type": "element",
           "id": "53a",
+          "label": "Art. 53a",
           "doknr": "BJNR000010949BJNE007500314",
           "children": [
             {
@@ -2485,15 +2487,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "050",
       "label": "V.",
       "title": "Der Bundespräsident",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 54",
+          "type": "element",
           "id": "54",
+          "label": "Art. 54",
           "doknr": "BJNR000010949BJNE007600314",
           "children": [
             {
@@ -2576,9 +2578,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 55",
+          "type": "element",
           "id": "55",
+          "label": "Art. 55",
           "doknr": "BJNR000010949BJNE007700314",
           "children": [
             {
@@ -2606,9 +2608,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 56",
+          "type": "element",
           "id": "56",
+          "label": "Art. 56",
           "doknr": "BJNR000010949BJNE007800314",
           "children": [
             {
@@ -2643,9 +2645,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 57",
+          "type": "element",
           "id": "57",
+          "label": "Art. 57",
           "doknr": "BJNR000010949BJNE007900314",
           "children": [
             {
@@ -2660,9 +2662,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 58",
+          "type": "element",
           "id": "58",
+          "label": "Art. 58",
           "doknr": "BJNR000010949BJNE008000314",
           "children": [
             {
@@ -2677,9 +2679,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 59",
+          "type": "element",
           "id": "59",
+          "label": "Art. 59",
           "doknr": "BJNR000010949BJNE008100314",
           "children": [
             {
@@ -2707,9 +2709,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 59a",
+          "type": "element",
           "id": "59a",
+          "label": "Art. 59a",
           "title": "(weggefallen)",
           "doknr": "BJNR000010949BJNE008200314",
           "children": [
@@ -2720,9 +2722,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 60",
+          "type": "element",
           "id": "60",
+          "label": "Art. 60",
           "doknr": "BJNR000010949BJNE008300314",
           "children": [
             {
@@ -2772,9 +2774,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 61",
+          "type": "element",
           "id": "61",
+          "label": "Art. 61",
           "doknr": "BJNR000010949BJNE008400314",
           "children": [
             {
@@ -2804,15 +2806,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "060",
       "label": "VI.",
       "title": "Die Bundesregierung",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 62",
+          "type": "element",
           "id": "62",
+          "label": "Art. 62",
           "doknr": "BJNR000010949BJNE008500314",
           "children": [
             {
@@ -2827,9 +2829,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 63",
+          "type": "element",
           "id": "63",
+          "label": "Art. 63",
           "doknr": "BJNR000010949BJNE008600314",
           "children": [
             {
@@ -2879,9 +2881,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 64",
+          "type": "element",
           "id": "64",
+          "label": "Art. 64",
           "doknr": "BJNR000010949BJNE008700314",
           "children": [
             {
@@ -2909,9 +2911,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 65",
+          "type": "element",
           "id": "65",
+          "label": "Art. 65",
           "doknr": "BJNR000010949BJNE008800314",
           "children": [
             {
@@ -2926,9 +2928,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 65a",
+          "type": "element",
           "id": "65a",
+          "label": "Art. 65a",
           "doknr": "BJNR000010949BJNE019300314",
           "children": [
             {
@@ -2956,9 +2958,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 66",
+          "type": "element",
           "id": "66",
+          "label": "Art. 66",
           "doknr": "BJNR000010949BJNE008900314",
           "children": [
             {
@@ -2973,9 +2975,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 67",
+          "type": "element",
           "id": "67",
+          "label": "Art. 67",
           "doknr": "BJNR000010949BJNE009000314",
           "children": [
             {
@@ -3003,9 +3005,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 68",
+          "type": "element",
           "id": "68",
+          "label": "Art. 68",
           "doknr": "BJNR000010949BJNE009100314",
           "children": [
             {
@@ -3033,9 +3035,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 69",
+          "type": "element",
           "id": "69",
+          "label": "Art. 69",
           "doknr": "BJNR000010949BJNE009200314",
           "children": [
             {
@@ -3076,15 +3078,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "070",
       "label": "VII.",
       "title": "Die Gesetzgebung des Bundes",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 70",
+          "type": "element",
           "id": "70",
+          "label": "Art. 70",
           "doknr": "BJNR000010949BJNE009300314",
           "children": [
             {
@@ -3112,9 +3114,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 71",
+          "type": "element",
           "id": "71",
+          "label": "Art. 71",
           "doknr": "BJNR000010949BJNE009400314",
           "children": [
             {
@@ -3129,9 +3131,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 72",
+          "type": "element",
           "id": "72",
+          "label": "Art. 72",
           "doknr": "BJNR000010949BJNE009503377",
           "children": [
             {
@@ -3269,9 +3271,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 73",
+          "type": "element",
           "id": "73",
+          "label": "Art. 73",
           "doknr": "BJNR000010949BJNE009603377",
           "children": [
             {
@@ -3500,9 +3502,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 74",
+          "type": "element",
           "id": "74",
+          "label": "Art. 74",
           "doknr": "BJNR000010949BJNE009703377",
           "children": [
             {
@@ -3911,8 +3913,10 @@
           ]
         },
         {
-          "type": "section",
-          "title": "(XXXX) Art 74a und 75",
+          "type": "element",
+          "id": "(XXXX) Art 74a und 75",
+          "label": "(XXXX) Art 74a und 75",
+          "title": "(weggefallen)",
           "doknr": "BJNR000010949BJNE009801377",
           "children": [
             {
@@ -3922,9 +3926,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 76",
+          "type": "element",
           "id": "76",
+          "label": "Art. 76",
           "doknr": "BJNR000010949BJNE010001307",
           "children": [
             {
@@ -3963,9 +3967,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 77",
+          "type": "element",
           "id": "77",
+          "label": "Art. 77",
           "doknr": "BJNR000010949BJNE010101307",
           "children": [
             {
@@ -4024,9 +4028,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 78",
+          "type": "element",
           "id": "78",
+          "label": "Art. 78",
           "doknr": "BJNR000010949BJNE010200314",
           "children": [
             {
@@ -4041,9 +4045,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 79",
+          "type": "element",
           "id": "79",
+          "label": "Art. 79",
           "doknr": "BJNR000010949BJNE010300314",
           "children": [
             {
@@ -4082,9 +4086,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 80",
+          "type": "element",
           "id": "80",
+          "label": "Art. 80",
           "doknr": "BJNR000010949BJNE010403307",
           "children": [
             {
@@ -4134,9 +4138,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 80a",
+          "type": "element",
           "id": "80a",
+          "label": "Art. 80a",
           "doknr": "BJNR000010949BJNE010500314",
           "children": [
             {
@@ -4175,9 +4179,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 81",
+          "type": "element",
           "id": "81",
+          "label": "Art. 81",
           "doknr": "BJNR000010949BJNE010600314",
           "children": [
             {
@@ -4227,9 +4231,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 82",
+          "type": "element",
           "id": "82",
+          "label": "Art. 82",
           "doknr": "BJNR000010949BJNE010701377",
           "children": [
             {
@@ -4268,15 +4272,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "080",
       "label": "VIII.",
       "title": "Die Ausführung der Bundesgesetze und die Bundesverwaltung",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 83",
+          "type": "element",
           "id": "83",
+          "label": "Art. 83",
           "doknr": "BJNR000010949BJNE010800314",
           "children": [
             {
@@ -4291,9 +4295,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 84",
+          "type": "element",
           "id": "84",
+          "label": "Art. 84",
           "doknr": "BJNR000010949BJNE010901377",
           "children": [
             {
@@ -4354,9 +4358,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 85",
+          "type": "element",
           "id": "85",
+          "label": "Art. 85",
           "doknr": "BJNR000010949BJNE011001377",
           "children": [
             {
@@ -4406,9 +4410,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 86",
+          "type": "element",
           "id": "86",
+          "label": "Art. 86",
           "doknr": "BJNR000010949BJNE011100314",
           "children": [
             {
@@ -4423,9 +4427,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87",
+          "type": "element",
           "id": "87",
+          "label": "Art. 87",
           "doknr": "BJNR000010949BJNE011203307",
           "children": [
             {
@@ -4464,9 +4468,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87a",
+          "type": "element",
           "id": "87a",
+          "label": "Art. 87a",
           "doknr": "BJNR000010949BJNE011301377",
           "children": [
             {
@@ -4525,9 +4529,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87b",
+          "type": "element",
           "id": "87b",
+          "label": "Art. 87b",
           "doknr": "BJNR000010949BJNE011400314",
           "children": [
             {
@@ -4555,9 +4559,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87c",
+          "type": "element",
           "id": "87c",
+          "label": "Art. 87c",
           "doknr": "BJNR000010949BJNE011501377",
           "children": [
             {
@@ -4572,9 +4576,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87d",
+          "type": "element",
           "id": "87d",
+          "label": "Art. 87d",
           "doknr": "BJNR000010949BJNE011602160",
           "children": [
             {
@@ -4602,9 +4606,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87e",
+          "type": "element",
           "id": "87e",
+          "label": "Art. 87e",
           "doknr": "BJNR000010949BJNE019600307",
           "children": [
             {
@@ -4665,9 +4669,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 87f",
+          "type": "element",
           "id": "87f",
+          "label": "Art. 87f",
           "doknr": "BJNR000010949BJNE019900307",
           "children": [
             {
@@ -4706,9 +4710,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 88",
+          "type": "element",
           "id": "88",
+          "label": "Art. 88",
           "doknr": "BJNR000010949BJNE011701333",
           "children": [
             {
@@ -4723,9 +4727,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 89",
+          "type": "element",
           "id": "89",
+          "label": "Art. 89",
           "doknr": "BJNR000010949BJNE011800314",
           "children": [
             {
@@ -4764,9 +4768,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 90",
+          "type": "element",
           "id": "90",
+          "label": "Art. 90",
           "doknr": "BJNR000010949BJNE011901311",
           "children": [
             {
@@ -4816,9 +4820,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 91",
+          "type": "element",
           "id": "91",
+          "label": "Art. 91",
           "doknr": "BJNR000010949BJNE012000314",
           "children": [
             {
@@ -4848,15 +4852,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "081",
       "label": "VIIIa.",
       "title": "Gemeinschaftsaufgaben, Verwaltungszusammenarbeit",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 91a",
+          "type": "element",
           "id": "91a",
+          "label": "Art. 91a",
           "doknr": "BJNR000010949BJNE012101377",
           "children": [
             {
@@ -4924,9 +4928,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 91b",
+          "type": "element",
           "id": "91b",
+          "label": "Art. 91b",
           "doknr": "BJNR000010949BJNE012202377",
           "children": [
             {
@@ -4965,9 +4969,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 91c",
+          "type": "element",
           "id": "91c",
+          "label": "Art. 91c",
           "doknr": "BJNR000010949BJNE020901311",
           "children": [
             {
@@ -5028,9 +5032,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 91d",
+          "type": "element",
           "id": "91d",
+          "label": "Art. 91d",
           "doknr": "BJNR000010949BJNE021000160",
           "children": [
             {
@@ -5045,9 +5049,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 91e",
+          "type": "element",
           "id": "91e",
+          "label": "Art. 91e",
           "doknr": "BJNR000010949BJNE021300140",
           "children": [
             {
@@ -5088,15 +5092,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "090",
       "label": "IX.",
       "title": "Die Rechtsprechung",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 92",
+          "type": "element",
           "id": "92",
+          "label": "Art. 92",
           "doknr": "BJNR000010949BJNE012300314",
           "children": [
             {
@@ -5111,9 +5115,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 93",
+          "type": "element",
           "id": "93",
+          "label": "Art. 93",
           "doknr": "BJNR000010949BJNE012405377",
           "children": [
             {
@@ -5174,9 +5178,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 94",
+          "type": "element",
           "id": "94",
+          "label": "Art. 94",
           "doknr": "BJNR000010949BJNE012501377",
           "children": [
             {
@@ -5332,9 +5336,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 95",
+          "type": "element",
           "id": "95",
+          "label": "Art. 95",
           "doknr": "BJNR000010949BJNE012600314",
           "children": [
             {
@@ -5373,9 +5377,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 96",
+          "type": "element",
           "id": "96",
+          "label": "Art. 96",
           "doknr": "BJNR000010949BJNE012701377",
           "children": [
             {
@@ -5498,9 +5502,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 97",
+          "type": "element",
           "id": "97",
+          "label": "Art. 97",
           "doknr": "BJNR000010949BJNE012800314",
           "children": [
             {
@@ -5528,9 +5532,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 98",
+          "type": "element",
           "id": "98",
+          "label": "Art. 98",
           "doknr": "BJNR000010949BJNE012901377",
           "children": [
             {
@@ -5591,9 +5595,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 99",
+          "type": "element",
           "id": "99",
+          "label": "Art. 99",
           "doknr": "BJNR000010949BJNE013000314",
           "children": [
             {
@@ -5608,9 +5612,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 100",
+          "type": "element",
           "id": "100",
+          "label": "Art. 100",
           "doknr": "BJNR000010949BJNE013100314",
           "children": [
             {
@@ -5658,9 +5662,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 101",
+          "type": "element",
           "id": "101",
+          "label": "Art. 101",
           "doknr": "BJNR000010949BJNE013200314",
           "children": [
             {
@@ -5688,9 +5692,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 102",
+          "type": "element",
           "id": "102",
+          "label": "Art. 102",
           "doknr": "BJNR000010949BJNE013300314",
           "children": [
             {
@@ -5705,9 +5709,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 103",
+          "type": "element",
           "id": "103",
+          "label": "Art. 103",
           "doknr": "BJNR000010949BJNE013400314",
           "children": [
             {
@@ -5746,9 +5750,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 104",
+          "type": "element",
           "id": "104",
+          "label": "Art. 104",
           "doknr": "BJNR000010949BJNE013500314",
           "children": [
             {
@@ -5800,15 +5804,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "100",
       "label": "X.",
       "title": "Das Finanzwesen",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 104a",
+          "type": "element",
           "id": "104a",
+          "label": "Art. 104a",
           "doknr": "BJNR000010949BJNE013602377",
           "children": [
             {
@@ -5880,9 +5884,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 104b",
+          "type": "element",
           "id": "104b",
+          "label": "Art. 104b",
           "doknr": "BJNR000010949BJNE020403311",
           "children": [
             {
@@ -5965,9 +5969,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 104c",
+          "type": "element",
           "id": "104c",
+          "label": "Art. 104c",
           "doknr": "BJNR000010949BJNE021401311",
           "children": [
             {
@@ -5982,9 +5986,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 104d",
+          "type": "element",
           "id": "104d",
+          "label": "Art. 104d",
           "doknr": "BJNR000010949BJNE021800311",
           "children": [
             {
@@ -5999,9 +6003,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 105",
+          "type": "element",
           "id": "105",
+          "label": "Art. 105",
           "doknr": "BJNR000010949BJNE013702377",
           "children": [
             {
@@ -6049,9 +6053,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 106",
+          "type": "element",
           "id": "106",
+          "label": "Art. 106",
           "doknr": "BJNR000010949BJNE013803160",
           "children": [
             {
@@ -6344,9 +6348,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 106a",
+          "type": "element",
           "id": "106a",
+          "label": "Art. 106a",
           "doknr": "BJNR000010949BJNE019700307",
           "children": [
             {
@@ -6361,9 +6365,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 106b",
+          "type": "element",
           "id": "106b",
+          "label": "Art. 106b",
           "doknr": "BJNR000010949BJNE020801160",
           "children": [
             {
@@ -6378,9 +6382,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 107",
+          "type": "element",
           "id": "107",
+          "label": "Art. 107",
           "doknr": "BJNR000010949BJNE013903311",
           "children": [
             {
@@ -6417,9 +6421,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 108",
+          "type": "element",
           "id": "108",
+          "label": "Art. 108",
           "doknr": "BJNR000010949BJNE014003311",
           "children": [
             {
@@ -6511,9 +6515,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 109",
+          "type": "element",
           "id": "109",
+          "label": "Art. 109",
           "doknr": "BJNR000010949BJNE014103126",
           "children": [
             {
@@ -6574,9 +6578,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 109a",
+          "type": "element",
           "id": "109a",
+          "label": "Art. 109a",
           "doknr": "BJNR000010949BJNE021101311",
           "children": [
             {
@@ -6655,9 +6659,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 110",
+          "type": "element",
           "id": "110",
+          "label": "Art. 110",
           "doknr": "BJNR000010949BJNE014200314",
           "children": [
             {
@@ -6707,9 +6711,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 111",
+          "type": "element",
           "id": "111",
+          "label": "Art. 111",
           "doknr": "BJNR000010949BJNE014300314",
           "children": [
             {
@@ -6774,9 +6778,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 112",
+          "type": "element",
           "id": "112",
+          "label": "Art. 112",
           "doknr": "BJNR000010949BJNE014400314",
           "children": [
             {
@@ -6791,9 +6795,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 113",
+          "type": "element",
           "id": "113",
+          "label": "Art. 113",
           "doknr": "BJNR000010949BJNE014500314",
           "children": [
             {
@@ -6832,9 +6836,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 114",
+          "type": "element",
           "id": "114",
+          "label": "Art. 114",
           "doknr": "BJNR000010949BJNE014601311",
           "children": [
             {
@@ -6862,9 +6866,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115",
+          "type": "element",
           "id": "115",
+          "label": "Art. 115",
           "doknr": "BJNR000010949BJNE014702126",
           "children": [
             {
@@ -6894,15 +6898,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "101",
       "label": "X a.",
       "title": "Verteidigungsfall",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 115a",
+          "type": "element",
           "id": "115a",
+          "label": "Art. 115a",
           "doknr": "BJNR000010949BJNE014800314",
           "children": [
             {
@@ -6963,9 +6967,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115b",
+          "type": "element",
           "id": "115b",
+          "label": "Art. 115b",
           "doknr": "BJNR000010949BJNE014900314",
           "children": [
             {
@@ -6980,9 +6984,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115c",
+          "type": "element",
           "id": "115c",
+          "label": "Art. 115c",
           "doknr": "BJNR000010949BJNE015000314",
           "children": [
             {
@@ -7061,9 +7065,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115d",
+          "type": "element",
           "id": "115d",
+          "label": "Art. 115d",
           "doknr": "BJNR000010949BJNE015100314",
           "children": [
             {
@@ -7102,9 +7106,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115e",
+          "type": "element",
           "id": "115e",
+          "label": "Art. 115e",
           "doknr": "BJNR000010949BJNE015201333",
           "children": [
             {
@@ -7132,9 +7136,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115f",
+          "type": "element",
           "id": "115f",
+          "label": "Art. 115f",
           "doknr": "BJNR000010949BJNE015300314",
           "children": [
             {
@@ -7191,9 +7195,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115g",
+          "type": "element",
           "id": "115g",
+          "label": "Art. 115g",
           "doknr": "BJNR000010949BJNE015400314",
           "children": [
             {
@@ -7208,9 +7212,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115h",
+          "type": "element",
           "id": "115h",
+          "label": "Art. 115h",
           "doknr": "BJNR000010949BJNE015500314",
           "children": [
             {
@@ -7249,9 +7253,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115i",
+          "type": "element",
           "id": "115i",
+          "label": "Art. 115i",
           "doknr": "BJNR000010949BJNE015600314",
           "children": [
             {
@@ -7279,9 +7283,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115k",
+          "type": "element",
           "id": "115k",
+          "label": "Art. 115k",
           "doknr": "BJNR000010949BJNE015700314",
           "children": [
             {
@@ -7320,9 +7324,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 115l",
+          "type": "element",
           "id": "115l",
+          "label": "Art. 115l",
           "doknr": "BJNR000010949BJNE015800314",
           "children": [
             {
@@ -7363,15 +7367,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "110",
       "label": "XI.",
       "title": "Übergangs- und Schlußbestimmungen",
       "children": [
         {
-          "type": "article",
-          "label": "Art. 116",
+          "type": "element",
           "id": "116",
+          "label": "Art. 116",
           "doknr": "BJNR000010949BJNE015900314",
           "children": [
             {
@@ -7399,9 +7403,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 117",
+          "type": "element",
           "id": "117",
+          "label": "Art. 117",
           "doknr": "BJNR000010949BJNE016000314",
           "children": [
             {
@@ -7438,9 +7442,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 118",
+          "type": "element",
           "id": "118",
+          "label": "Art. 118",
           "doknr": "BJNR000010949BJNE016100314",
           "children": [
             {
@@ -7455,9 +7459,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 118a",
+          "type": "element",
           "id": "118a",
+          "label": "Art. 118a",
           "doknr": "BJNR000010949BJNE020200307",
           "children": [
             {
@@ -7472,9 +7476,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 119",
+          "type": "element",
           "id": "119",
+          "label": "Art. 119",
           "doknr": "BJNR000010949BJNE016200314",
           "children": [
             {
@@ -7489,9 +7493,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 120",
+          "type": "element",
           "id": "120",
+          "label": "Art. 120",
           "doknr": "BJNR000010949BJNE016300314",
           "children": [
             {
@@ -7519,9 +7523,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 120a",
+          "type": "element",
           "id": "120a",
+          "label": "Art. 120a",
           "doknr": "BJNR000010949BJNE016400314",
           "children": [
             {
@@ -7549,9 +7553,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 121",
+          "type": "element",
           "id": "121",
+          "label": "Art. 121",
           "doknr": "BJNR000010949BJNE016500314",
           "children": [
             {
@@ -7566,9 +7570,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 122",
+          "type": "element",
           "id": "122",
+          "label": "Art. 122",
           "doknr": "BJNR000010949BJNE016600314",
           "children": [
             {
@@ -7596,9 +7600,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 123",
+          "type": "element",
           "id": "123",
+          "label": "Art. 123",
           "doknr": "BJNR000010949BJNE016700314",
           "children": [
             {
@@ -7626,9 +7630,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 124",
+          "type": "element",
           "id": "124",
+          "label": "Art. 124",
           "doknr": "BJNR000010949BJNE016800314",
           "children": [
             {
@@ -7643,9 +7647,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 125",
+          "type": "element",
           "id": "125",
+          "label": "Art. 125",
           "doknr": "BJNR000010949BJNE016900314",
           "children": [
             {
@@ -7689,9 +7693,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 125a",
+          "type": "element",
           "id": "125a",
+          "label": "Art. 125a",
           "doknr": "BJNR000010949BJNE020301377",
           "children": [
             {
@@ -7730,9 +7734,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 125b",
+          "type": "element",
           "id": "125b",
+          "label": "Art. 125b",
           "doknr": "BJNR000010949BJNE020501377",
           "children": [
             {
@@ -7771,9 +7775,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 125c",
+          "type": "element",
           "id": "125c",
+          "label": "Art. 125c",
           "doknr": "BJNR000010949BJNE020602311",
           "children": [
             {
@@ -7812,9 +7816,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 126",
+          "type": "element",
           "id": "126",
+          "label": "Art. 126",
           "doknr": "BJNR000010949BJNE017000314",
           "children": [
             {
@@ -7829,9 +7833,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 127",
+          "type": "element",
           "id": "127",
+          "label": "Art. 127",
           "doknr": "BJNR000010949BJNE017100314",
           "children": [
             {
@@ -7846,9 +7850,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 128",
+          "type": "element",
           "id": "128",
+          "label": "Art. 128",
           "doknr": "BJNR000010949BJNE017200314",
           "children": [
             {
@@ -7863,9 +7867,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 129",
+          "type": "element",
           "id": "129",
+          "label": "Art. 129",
           "doknr": "BJNR000010949BJNE017300314",
           "children": [
             {
@@ -7915,9 +7919,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 130",
+          "type": "element",
           "id": "130",
+          "label": "Art. 130",
           "doknr": "BJNR000010949BJNE017400314",
           "children": [
             {
@@ -7956,9 +7960,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 131",
+          "type": "element",
           "id": "131",
+          "label": "Art. 131",
           "doknr": "BJNR000010949BJNE017500314",
           "children": [
             {
@@ -7973,9 +7977,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 132",
+          "type": "element",
           "id": "132",
+          "label": "Art. 132",
           "doknr": "BJNR000010949BJNE017600314",
           "children": [
             {
@@ -8025,9 +8029,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 133",
+          "type": "element",
           "id": "133",
+          "label": "Art. 133",
           "doknr": "BJNR000010949BJNE017700314",
           "children": [
             {
@@ -8042,9 +8046,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 134",
+          "type": "element",
           "id": "134",
+          "label": "Art. 134",
           "doknr": "BJNR000010949BJNE017800314",
           "children": [
             {
@@ -8094,9 +8098,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 135",
+          "type": "element",
           "id": "135",
+          "label": "Art. 135",
           "doknr": "BJNR000010949BJNE017900314",
           "children": [
             {
@@ -8179,9 +8183,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 135a",
+          "type": "element",
           "id": "135a",
+          "label": "Art. 135a",
           "doknr": "BJNR000010949BJNE018001305",
           "children": [
             {
@@ -8249,9 +8253,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 136",
+          "type": "element",
           "id": "136",
+          "label": "Art. 136",
           "doknr": "BJNR000010949BJNE018100314",
           "children": [
             {
@@ -8279,9 +8283,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 137",
+          "type": "element",
           "id": "137",
+          "label": "Art. 137",
           "doknr": "BJNR000010949BJNE018200314",
           "children": [
             {
@@ -8320,9 +8324,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 138",
+          "type": "element",
           "id": "138",
+          "label": "Art. 138",
           "doknr": "BJNR000010949BJNE018300314",
           "children": [
             {
@@ -8337,9 +8341,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 139",
+          "type": "element",
           "id": "139",
+          "label": "Art. 139",
           "doknr": "BJNR000010949BJNE018400314",
           "children": [
             {
@@ -8354,9 +8358,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 140",
+          "type": "element",
           "id": "140",
+          "label": "Art. 140",
           "doknr": "BJNR000010949BJNE018500314",
           "children": [
             {
@@ -8552,9 +8556,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 141",
+          "type": "element",
           "id": "141",
+          "label": "Art. 141",
           "doknr": "BJNR000010949BJNE018600314",
           "children": [
             {
@@ -8569,9 +8573,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 142",
+          "type": "element",
           "id": "142",
+          "label": "Art. 142",
           "doknr": "BJNR000010949BJNE018700314",
           "children": [
             {
@@ -8586,9 +8590,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 142a",
+          "type": "element",
           "id": "142a",
+          "label": "Art. 142a",
           "title": "(weggefallen)",
           "doknr": "BJNR000010949BJNE018800314",
           "children": [
@@ -8599,9 +8603,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143",
+          "type": "element",
           "id": "143",
+          "label": "Art. 143",
           "doknr": "BJNR000010949BJNE018901305",
           "children": [
             {
@@ -8640,9 +8644,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143a",
+          "type": "element",
           "id": "143a",
+          "label": "Art. 143a",
           "doknr": "BJNR000010949BJNE019800307",
           "children": [
             {
@@ -8681,9 +8685,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143b",
+          "type": "element",
           "id": "143b",
+          "label": "Art. 143b",
           "doknr": "BJNR000010949BJNE020000307",
           "children": [
             {
@@ -8722,9 +8726,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143c",
+          "type": "element",
           "id": "143c",
+          "label": "Art. 143c",
           "doknr": "BJNR000010949BJNE020700377",
           "children": [
             {
@@ -8803,9 +8807,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143d",
+          "type": "element",
           "id": "143d",
+          "label": "Art. 143d",
           "doknr": "BJNR000010949BJNE021201311",
           "children": [
             {
@@ -8855,9 +8859,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143e",
+          "type": "element",
           "id": "143e",
+          "label": "Art. 143e",
           "doknr": "BJNR000010949BJNE021501311",
           "children": [
             {
@@ -8896,9 +8900,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143f",
+          "type": "element",
           "id": "143f",
+          "label": "Art. 143f",
           "doknr": "BJNR000010949BJNE021600311",
           "children": [
             {
@@ -8913,9 +8917,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143g",
+          "type": "element",
           "id": "143g",
+          "label": "Art. 143g",
           "doknr": "BJNR000010949BJNE021700311",
           "children": [
             {
@@ -8930,9 +8934,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 143h",
+          "type": "element",
           "id": "143h",
+          "label": "Art. 143h",
           "doknr": "BJNR000010949BJNE021902126",
           "children": [
             {
@@ -8960,9 +8964,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 144",
+          "type": "element",
           "id": "144",
+          "label": "Art. 144",
           "doknr": "BJNR000010949BJNE019000314",
           "children": [
             {
@@ -8990,9 +8994,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 145",
+          "type": "element",
           "id": "145",
+          "label": "Art. 145",
           "doknr": "BJNR000010949BJNE019100314",
           "children": [
             {
@@ -9031,9 +9035,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "Art. 146",
+          "type": "element",
           "id": "146",
+          "label": "Art. 146",
           "doknr": "BJNR000010949BJNE019201305",
           "children": [
             {
@@ -9048,8 +9052,9 @@
           ]
         },
         {
-          "type": "section",
-          "title": "Anhang EV",
+          "type": "element",
+          "id": "Anhang EV",
+          "label": "Anhang EV",
           "doknr": "BJNR000010949BJNE019400305",
           "children": [
             {

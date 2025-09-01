@@ -2,27 +2,28 @@
   "type": "document",
   "children": [
     {
-      "type": "section",
-      "title": "Inhaltsübersicht",
+      "type": "element",
+      "id": "Inhaltsübersicht",
+      "label": "Inhaltsübersicht",
       "doknr": "BJNR209710017BJNE000101116",
       "children": []
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "010",
       "label": "Teil 1",
       "title": "Gemeinsame Bestimmungen",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010010",
           "label": "Kapitel 1",
           "title": "Anwendungsbereich und Begriffsbestimmungen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 1",
+              "type": "element",
               "id": "1",
+              "label": "§ 1",
               "title": "Anwendungsbereich des Gesetzes",
               "doknr": "BJNR209710017BJNE000201116",
               "children": [
@@ -194,9 +195,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 2",
+              "type": "element",
               "id": "2",
+              "label": "§ 2",
               "title": "Begriffsbestimmungen",
               "doknr": "BJNR209710017BJNE000300000",
               "children": [
@@ -293,15 +294,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010020",
           "label": "Kapitel 2",
           "title": "Rechtsgrundlagen der Verarbeitung personenbezogener Daten",
           "children": [
             {
-              "type": "article",
-              "label": "§ 3",
+              "type": "element",
               "id": "3",
+              "label": "§ 3",
               "title": "Verarbeitung personenbezogener Daten durch öffentliche Stellen",
               "doknr": "BJNR209710017BJNE000400000",
               "children": [
@@ -317,9 +318,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 4",
+              "type": "element",
               "id": "4",
+              "label": "§ 4",
               "title": "Videoüberwachung öffentlich zugänglicher Räume",
               "doknr": "BJNR209710017BJNE000501116",
               "children": [
@@ -460,15 +461,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010030",
           "label": "Kapitel 3",
           "title": "Datenschutzbeauftragte öffentlicher Stellen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 5",
+              "type": "element",
               "id": "5",
+              "label": "§ 5",
               "title": "Benennung",
               "doknr": "BJNR209710017BJNE000600000",
               "children": [
@@ -530,9 +531,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 6",
+              "type": "element",
               "id": "6",
+              "label": "§ 6",
               "title": "Stellung",
               "doknr": "BJNR209710017BJNE000700000",
               "children": [
@@ -614,9 +615,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 7",
+              "type": "element",
               "id": "7",
+              "label": "§ 7",
               "title": "Aufgaben",
               "doknr": "BJNR209710017BJNE000800000",
               "children": [
@@ -724,15 +725,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010040",
           "label": "Kapitel 4",
           "title": "Die oder der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
           "children": [
             {
-              "type": "article",
-              "label": "§ 8",
+              "type": "element",
               "id": "8",
+              "label": "§ 8",
               "title": "Errichtung",
               "doknr": "BJNR209710017BJNE000900000",
               "children": [
@@ -772,9 +773,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 9",
+              "type": "element",
               "id": "9",
+              "label": "§ 9",
               "title": "Zuständigkeit",
               "doknr": "BJNR209710017BJNE001003130",
               "children": [
@@ -803,9 +804,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 10",
+              "type": "element",
               "id": "10",
+              "label": "§ 10",
               "title": "Unabhängigkeit",
               "doknr": "BJNR209710017BJNE001100000",
               "children": [
@@ -843,9 +844,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 11",
+              "type": "element",
               "id": "11",
+              "label": "§ 11",
               "title": "Ernennung und Amtszeit",
               "doknr": "BJNR209710017BJNE001200000",
               "children": [
@@ -885,9 +886,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 12",
+              "type": "element",
               "id": "12",
+              "label": "§ 12",
               "title": "Amtsverhältnis",
               "doknr": "BJNR209710017BJNE001302119",
               "children": [
@@ -938,9 +939,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 13",
+              "type": "element",
               "id": "13",
+              "label": "§ 13",
               "title": "Rechte und Pflichten",
               "doknr": "BJNR209710017BJNE001400000",
               "children": [
@@ -1055,9 +1056,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 14",
+              "type": "element",
               "id": "14",
+              "label": "§ 14",
               "title": "Aufgaben",
               "doknr": "BJNR209710017BJNE001500000",
               "children": [
@@ -1240,9 +1241,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 15",
+              "type": "element",
               "id": "15",
+              "label": "§ 15",
               "title": "Tätigkeitsbericht",
               "doknr": "BJNR209710017BJNE001600000",
               "children": [
@@ -1258,9 +1259,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 16",
+              "type": "element",
               "id": "16",
+              "label": "§ 16",
               "title": "Befugnisse",
               "doknr": "BJNR209710017BJNE001701116",
               "children": [
@@ -1399,15 +1400,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010050",
           "label": "Kapitel 5",
           "title": "Vertretung im Europäischen Datenschutzausschuss, zentrale Anlaufstelle, Zusammenarbeit der Aufsichtsbehörden des Bundes und der Länder in Angelegenheiten der Europäischen Union",
           "children": [
             {
-              "type": "article",
-              "label": "§ 17",
+              "type": "element",
               "id": "17",
+              "label": "§ 17",
               "title": "Vertretung im Europäischen Datenschutzausschuss, zentrale Anlaufstelle",
               "doknr": "BJNR209710017BJNE001800000",
               "children": [
@@ -1436,9 +1437,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 18",
+              "type": "element",
               "id": "18",
+              "label": "§ 18",
               "title": "Verfahren der Zusammenarbeit der Aufsichtsbehörden des Bundes und der Länder",
               "doknr": "BJNR209710017BJNE001900000",
               "children": [
@@ -1478,9 +1479,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 19",
+              "type": "element",
               "id": "19",
+              "label": "§ 19",
               "title": "Zuständigkeiten",
               "doknr": "BJNR209710017BJNE002001116",
               "children": [
@@ -1511,15 +1512,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010060",
           "label": "Kapitel 6",
           "title": "Rechtsbehelfe",
           "children": [
             {
-              "type": "article",
-              "label": "§ 20",
+              "type": "element",
               "id": "20",
+              "label": "§ 20",
               "title": "Gerichtlicher Rechtsschutz",
               "doknr": "BJNR209710017BJNE002100000",
               "children": [
@@ -1636,9 +1637,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 21",
+              "type": "element",
               "id": "21",
+              "label": "§ 21",
               "title": "Antrag der Aufsichtsbehörde auf gerichtliche Entscheidung bei angenommener Rechtswidrigkeit eines Beschlusses der Europäischen Kommission",
               "doknr": "BJNR209710017BJNE002200000",
               "children": [
@@ -1715,27 +1716,27 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "020",
       "label": "Teil 2",
       "title": "Durchführungsbestimmungen für Verarbeitungen zu Zwecken gemäß Artikel 2 der Verordnung (EU) 2016/679",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020010",
           "label": "Kapitel 1",
           "title": "Rechtsgrundlagen der Verarbeitung personenbezogener Daten",
           "children": [
             {
-              "type": "outline",
+              "type": "structure",
               "id": "020010010",
               "label": "Abschnitt 1",
               "title": "Verarbeitung besonderer Kategorien personenbezogener Daten und Verarbeitung zu anderen Zwecken",
               "children": [
                 {
-                  "type": "article",
-                  "label": "§ 22",
+                  "type": "element",
                   "id": "22",
+                  "label": "§ 22",
                   "title": "Verarbeitung besonderer Kategorien personenbezogener Daten",
                   "doknr": "BJNR209710017BJNE002301116",
                   "children": [
@@ -1923,9 +1924,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 23",
+                  "type": "element",
                   "id": "23",
+                  "label": "§ 23",
                   "title": "Verarbeitung zu anderen Zwecken durch öffentliche Stellen",
                   "doknr": "BJNR209710017BJNE002400000",
                   "children": [
@@ -2027,9 +2028,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 24",
+                  "type": "element",
                   "id": "24",
+                  "label": "§ 24",
                   "title": "Verarbeitung zu anderen Zwecken durch nichtöffentliche Stellen",
                   "doknr": "BJNR209710017BJNE002500000",
                   "children": [
@@ -2091,9 +2092,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 25",
+                  "type": "element",
                   "id": "25",
+                  "label": "§ 25",
                   "title": "Datenübermittlungen durch öffentliche Stellen",
                   "doknr": "BJNR209710017BJNE002600000",
                   "children": [
@@ -2179,15 +2180,15 @@
               ]
             },
             {
-              "type": "outline",
+              "type": "structure",
               "id": "020010020",
               "label": "Abschnitt 2",
               "title": "Besondere Verarbeitungssituationen",
               "children": [
                 {
-                  "type": "article",
-                  "label": "§ 26",
+                  "type": "element",
                   "id": "26",
+                  "label": "§ 26",
                   "title": "Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses",
                   "doknr": "BJNR209710017BJNE002701116",
                   "children": [
@@ -2370,9 +2371,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 27",
+                  "type": "element",
                   "id": "27",
+                  "label": "§ 27",
                   "title": "Datenverarbeitung zu wissenschaftlichen oder historischen Forschungszwecken und zu statistischen Zwecken",
                   "doknr": "BJNR209710017BJNE002800000",
                   "children": [
@@ -2423,9 +2424,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 28",
+                  "type": "element",
                   "id": "28",
+                  "label": "§ 28",
                   "title": "Datenverarbeitung zu im öffentlichen Interesse liegenden Archivzwecken",
                   "doknr": "BJNR209710017BJNE002900000",
                   "children": [
@@ -2476,9 +2477,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 29",
+                  "type": "element",
                   "id": "29",
+                  "label": "§ 29",
                   "title": "Rechte der betroffenen Person und aufsichtsbehördliche Befugnisse im Fall von Geheimhaltungspflichten",
                   "doknr": "BJNR209710017BJNE003000000",
                   "children": [
@@ -2518,9 +2519,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 30",
+                  "type": "element",
                   "id": "30",
+                  "label": "§ 30",
                   "title": "Verbraucherkredite",
                   "doknr": "BJNR209710017BJNE003100000",
                   "children": [
@@ -2549,9 +2550,9 @@
                   ]
                 },
                 {
-                  "type": "article",
-                  "label": "§ 31",
+                  "type": "element",
                   "id": "31",
+                  "label": "§ 31",
                   "title": "Schutz des Wirtschaftsverkehrs bei Scoring und Bonitätsauskünften",
                   "doknr": "BJNR209710017BJNE003200000",
                   "children": [
@@ -2701,15 +2702,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020020",
           "label": "Kapitel 2",
           "title": "Rechte der betroffenen Person",
           "children": [
             {
-              "type": "article",
-              "label": "§ 32",
+              "type": "element",
               "id": "32",
+              "label": "§ 32",
               "title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
               "doknr": "BJNR209710017BJNE003300000",
               "children": [
@@ -2820,9 +2821,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 33",
+              "type": "element",
               "id": "33",
+              "label": "§ 33",
               "title": "Informationspflicht, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben wurden",
               "doknr": "BJNR209710017BJNE003400000",
               "children": [
@@ -2911,9 +2912,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 34",
+              "type": "element",
               "id": "34",
+              "label": "§ 34",
               "title": "Auskunftsrecht der betroffenen Person",
               "doknr": "BJNR209710017BJNE003500000",
               "children": [
@@ -2993,9 +2994,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 35",
+              "type": "element",
               "id": "35",
+              "label": "§ 35",
               "title": "Recht auf Löschung",
               "doknr": "BJNR209710017BJNE003600000",
               "children": [
@@ -3035,9 +3036,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 36",
+              "type": "element",
               "id": "36",
+              "label": "§ 36",
               "title": "Widerspruchsrecht",
               "doknr": "BJNR209710017BJNE003700000",
               "children": [
@@ -3053,9 +3054,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 37",
+              "type": "element",
               "id": "37",
+              "label": "§ 37",
               "title": "Automatisierte Entscheidungen im Einzelfall einschließlich Profiling",
               "doknr": "BJNR209710017BJNE003800000",
               "children": [
@@ -3115,15 +3116,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020030",
           "label": "Kapitel 3",
           "title": "Pflichten der Verantwortlichen und Auftragsverarbeiter",
           "children": [
             {
-              "type": "article",
-              "label": "§ 38",
+              "type": "element",
               "id": "38",
+              "label": "§ 38",
               "title": "Datenschutzbeauftragte nichtöffentlicher Stellen",
               "doknr": "BJNR209710017BJNE003901116",
               "children": [
@@ -3152,9 +3153,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 39",
+              "type": "element",
               "id": "39",
+              "label": "§ 39",
               "title": "Akkreditierung",
               "doknr": "BJNR209710017BJNE004000000",
               "children": [
@@ -3172,15 +3173,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020040",
           "label": "Kapitel 4",
           "title": "Aufsichtsbehörde für die Datenverarbeitung durch nichtöffentliche Stellen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 40",
+              "type": "element",
               "id": "40",
+              "label": "§ 40",
               "title": "Aufsichtsbehörden der Länder",
               "doknr": "BJNR209710017BJNE004100000",
               "children": [
@@ -3319,15 +3320,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020050",
           "label": "Kapitel 5",
           "title": "Sanktionen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 41",
+              "type": "element",
               "id": "41",
+              "label": "§ 41",
               "title": "Anwendung der Vorschriften über das Bußgeld- und Strafverfahren",
               "doknr": "BJNR209710017BJNE004200000",
               "children": [
@@ -3356,9 +3357,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 42",
+              "type": "element",
               "id": "42",
+              "label": "§ 42",
               "title": "Strafvorschriften",
               "doknr": "BJNR209710017BJNE004300000",
               "children": [
@@ -3484,9 +3485,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 43",
+              "type": "element",
               "id": "43",
+              "label": "§ 43",
               "title": "Bußgeldvorschriften",
               "doknr": "BJNR209710017BJNE004400000",
               "children": [
@@ -3568,15 +3569,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020060",
           "label": "Kapitel 6",
           "title": "Rechtsbehelfe",
           "children": [
             {
-              "type": "article",
-              "label": "§ 44",
+              "type": "element",
               "id": "44",
+              "label": "§ 44",
               "title": "Klagen gegen den Verantwortlichen oder Auftragsverarbeiter",
               "doknr": "BJNR209710017BJNE004500000",
               "children": [
@@ -3620,21 +3621,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "030",
       "label": "Teil 3",
       "title": "Bestimmungen für Verarbeitungen zu Zwecken gemäß Artikel 1 Absatz 1 der Richtlinie (EU) 2016/680",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030010",
           "label": "Kapitel 1",
           "title": "Anwendungsbereich, Begriffsbestimmungen und allgemeine Grundsätze für die Verarbeitung personenbezogener Daten",
           "children": [
             {
-              "type": "article",
-              "label": "§ 45",
+              "type": "element",
               "id": "45",
+              "label": "§ 45",
               "title": "Anwendungsbereich",
               "doknr": "BJNR209710017BJNE004600000",
               "children": [
@@ -3650,9 +3651,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 46",
+              "type": "element",
               "id": "46",
+              "label": "§ 46",
               "title": "Begriffsbestimmungen",
               "doknr": "BJNR209710017BJNE004700000",
               "children": [
@@ -3862,9 +3863,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 47",
+              "type": "element",
               "id": "47",
+              "label": "§ 47",
               "title": "Allgemeine Grundsätze für die Verarbeitung personenbezogener Daten",
               "doknr": "BJNR209710017BJNE004800000",
               "children": [
@@ -3955,15 +3956,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030020",
           "label": "Kapitel 2",
           "title": "Rechtsgrundlagen der Verarbeitung personenbezogener Daten",
           "children": [
             {
-              "type": "article",
-              "label": "§ 48",
+              "type": "element",
               "id": "48",
+              "label": "§ 48",
               "title": "Verarbeitung besonderer Kategorien personenbezogener Daten",
               "doknr": "BJNR209710017BJNE004900000",
               "children": [
@@ -4087,9 +4088,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 49",
+              "type": "element",
               "id": "49",
+              "label": "§ 49",
               "title": "Verarbeitung zu anderen Zwecken",
               "doknr": "BJNR209710017BJNE005000000",
               "children": [
@@ -4105,9 +4106,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 50",
+              "type": "element",
               "id": "50",
+              "label": "§ 50",
               "title": "Verarbeitung zu archivarischen, wissenschaftlichen und statistischen Zwecken",
               "doknr": "BJNR209710017BJNE005100000",
               "children": [
@@ -4123,9 +4124,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 51",
+              "type": "element",
               "id": "51",
+              "label": "§ 51",
               "title": "Einwilligung",
               "doknr": "BJNR209710017BJNE005200000",
               "children": [
@@ -4187,9 +4188,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 52",
+              "type": "element",
               "id": "52",
+              "label": "§ 52",
               "title": "Verarbeitung auf Weisung des Verantwortlichen",
               "doknr": "BJNR209710017BJNE005300000",
               "children": [
@@ -4205,9 +4206,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 53",
+              "type": "element",
               "id": "53",
+              "label": "§ 53",
               "title": "Datengeheimnis",
               "doknr": "BJNR209710017BJNE005400000",
               "children": [
@@ -4223,9 +4224,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 54",
+              "type": "element",
               "id": "54",
+              "label": "§ 54",
               "title": "Automatisierte Einzelentscheidung",
               "doknr": "BJNR209710017BJNE005500000",
               "children": [
@@ -4267,15 +4268,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030030",
           "label": "Kapitel 3",
           "title": "Rechte der betroffenen Person",
           "children": [
             {
-              "type": "article",
-              "label": "§ 55",
+              "type": "element",
               "id": "55",
+              "label": "§ 55",
               "title": "Allgemeine Informationen zu Datenverarbeitungen",
               "doknr": "BJNR209710017BJNE005600000",
               "children": [
@@ -4353,9 +4354,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 56",
+              "type": "element",
               "id": "56",
+              "label": "§ 56",
               "title": "Benachrichtigung betroffener Personen",
               "doknr": "BJNR209710017BJNE005700000",
               "children": [
@@ -4512,9 +4513,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 57",
+              "type": "element",
               "id": "57",
+              "label": "§ 57",
               "title": "Auskunftsrecht",
               "doknr": "BJNR209710017BJNE005800000",
               "children": [
@@ -4713,9 +4714,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 58",
+              "type": "element",
               "id": "58",
+              "label": "§ 58",
               "title": "Rechte auf Berichtigung und Löschung sowie Einschränkung der Verarbeitung",
               "doknr": "BJNR209710017BJNE005900000",
               "children": [
@@ -4852,9 +4853,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 59",
+              "type": "element",
               "id": "59",
+              "label": "§ 59",
               "title": "Verfahren für die Ausübung der Rechte der betroffenen Person",
               "doknr": "BJNR209710017BJNE006000000",
               "children": [
@@ -4905,9 +4906,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 60",
+              "type": "element",
               "id": "60",
+              "label": "§ 60",
               "title": "Anrufung der oder des Bundesbeauftragten",
               "doknr": "BJNR209710017BJNE006100000",
               "children": [
@@ -4936,9 +4937,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 61",
+              "type": "element",
               "id": "61",
+              "label": "§ 61",
               "title": "Rechtsschutz gegen Entscheidungen der oder des Bundesbeauftragten oder bei deren oder dessen Untätigkeit",
               "doknr": "BJNR209710017BJNE006200000",
               "children": [
@@ -4969,15 +4970,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030040",
           "label": "Kapitel 4",
           "title": "Pflichten der Verantwortlichen und Auftragsverarbeiter",
           "children": [
             {
-              "type": "article",
-              "label": "§ 62",
+              "type": "element",
               "id": "62",
+              "label": "§ 62",
               "title": "Auftragsverarbeitung",
               "doknr": "BJNR209710017BJNE006300000",
               "children": [
@@ -5167,9 +5168,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 63",
+              "type": "element",
               "id": "63",
+              "label": "§ 63",
               "title": "Gemeinsam Verantwortliche",
               "doknr": "BJNR209710017BJNE006400000",
               "children": [
@@ -5185,9 +5186,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 64",
+              "type": "element",
               "id": "64",
+              "label": "§ 64",
               "title": "Anforderungen an die Sicherheit der Datenverarbeitung",
               "doknr": "BJNR209710017BJNE006500000",
               "children": [
@@ -5421,9 +5422,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 65",
+              "type": "element",
               "id": "65",
+              "label": "§ 65",
               "title": "Meldung von Verletzungen des Schutzes personenbezogener Daten an die oder den Bundesbeauftragten",
               "doknr": "BJNR209710017BJNE006600000",
               "children": [
@@ -5569,9 +5570,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 66",
+              "type": "element",
               "id": "66",
+              "label": "§ 66",
               "title": "Benachrichtigung betroffener Personen bei Verletzungen des Schutzes personenbezogener Daten",
               "doknr": "BJNR209710017BJNE006700000",
               "children": [
@@ -5684,9 +5685,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 67",
+              "type": "element",
               "id": "67",
+              "label": "§ 67",
               "title": "Durchführung einer Datenschutz-Folgenabschätzung",
               "doknr": "BJNR209710017BJNE006800000",
               "children": [
@@ -5799,9 +5800,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 68",
+              "type": "element",
               "id": "68",
+              "label": "§ 68",
               "title": "Zusammenarbeit mit der oder dem Bundesbeauftragten",
               "doknr": "BJNR209710017BJNE006900000",
               "children": [
@@ -5817,9 +5818,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 69",
+              "type": "element",
               "id": "69",
+              "label": "§ 69",
               "title": "Anhörung der oder des Bundesbeauftragten",
               "doknr": "BJNR209710017BJNE007000000",
               "children": [
@@ -5969,9 +5970,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 70",
+              "type": "element",
               "id": "70",
+              "label": "§ 70",
               "title": "Verzeichnis von Verarbeitungstätigkeiten",
               "doknr": "BJNR209710017BJNE007100000",
               "children": [
@@ -6168,9 +6169,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71",
+              "type": "element",
               "id": "71",
+              "label": "§ 71",
               "title": "Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen",
               "doknr": "BJNR209710017BJNE007200000",
               "children": [
@@ -6199,9 +6200,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 72",
+              "type": "element",
               "id": "72",
+              "label": "§ 72",
               "title": "Unterscheidung zwischen verschiedenen Kategorien betroffener Personen",
               "doknr": "BJNR209710017BJNE007300000",
               "children": [
@@ -6279,9 +6280,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 73",
+              "type": "element",
               "id": "73",
+              "label": "§ 73",
               "title": "Unterscheidung zwischen Tatsachen und persönlichen Einschätzungen",
               "doknr": "BJNR209710017BJNE007400000",
               "children": [
@@ -6297,9 +6298,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 74",
+              "type": "element",
               "id": "74",
+              "label": "§ 74",
               "title": "Verfahren bei Übermittlungen",
               "doknr": "BJNR209710017BJNE007500000",
               "children": [
@@ -6339,9 +6340,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 75",
+              "type": "element",
               "id": "75",
+              "label": "§ 75",
               "title": "Berichtigung und Löschung personenbezogener Daten sowie Einschränkung der Verarbeitung",
               "doknr": "BJNR209710017BJNE007600000",
               "children": [
@@ -6392,9 +6393,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 76",
+              "type": "element",
               "id": "76",
+              "label": "§ 76",
               "title": "Protokollierung",
               "doknr": "BJNR209710017BJNE007700000",
               "children": [
@@ -6529,9 +6530,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 77",
+              "type": "element",
               "id": "77",
+              "label": "§ 77",
               "title": "Vertrauliche Meldung von Verstößen",
               "doknr": "BJNR209710017BJNE007800000",
               "children": [
@@ -6549,15 +6550,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030050",
           "label": "Kapitel 5",
           "title": "Datenübermittlungen an Drittstaaten und an internationale Organisationen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 78",
+              "type": "element",
               "id": "78",
+              "label": "§ 78",
               "title": "Allgemeine Voraussetzungen",
               "doknr": "BJNR209710017BJNE007900000",
               "children": [
@@ -6637,9 +6638,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 79",
+              "type": "element",
               "id": "79",
+              "label": "§ 79",
               "title": "Datenübermittlung bei geeigneten Garantien",
               "doknr": "BJNR209710017BJNE008000000",
               "children": [
@@ -6717,9 +6718,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 80",
+              "type": "element",
               "id": "80",
+              "label": "§ 80",
               "title": "Datenübermittlung ohne geeignete Garantien",
               "doknr": "BJNR209710017BJNE008100000",
               "children": [
@@ -6821,9 +6822,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 81",
+              "type": "element",
               "id": "81",
+              "label": "§ 81",
               "title": "Sonstige Datenübermittlung an Empfänger in Drittstaaten",
               "doknr": "BJNR209710017BJNE008200000",
               "children": [
@@ -6927,15 +6928,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030060",
           "label": "Kapitel 6",
           "title": "Zusammenarbeit der Aufsichtsbehörden",
           "children": [
             {
-              "type": "article",
-              "label": "§ 82",
+              "type": "element",
               "id": "82",
+              "label": "§ 82",
               "title": "Gegenseitige Amtshilfe",
               "doknr": "BJNR209710017BJNE008300000",
               "children": [
@@ -7050,15 +7051,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030070",
           "label": "Kapitel 7",
           "title": "Haftung und Sanktionen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 83",
+              "type": "element",
               "id": "83",
+              "label": "§ 83",
               "title": "Schadensersatz und Entschädigung",
               "doknr": "BJNR209710017BJNE008400000",
               "children": [
@@ -7120,9 +7121,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 84",
+              "type": "element",
               "id": "84",
+              "label": "§ 84",
               "title": "Strafvorschriften",
               "doknr": "BJNR209710017BJNE008500000",
               "children": [
@@ -7142,15 +7143,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "040",
       "label": "Teil 4",
       "title": "Besondere Bestimmungen für Verarbeitungen im Rahmen von nicht in die Anwendungsbereiche der Verordnung (EU) 2016/679 und der Richtlinie (EU) 2016/680 fallenden Tätigkeiten",
       "children": [
         {
-          "type": "article",
-          "label": "§ 85",
+          "type": "element",
           "id": "85",
+          "label": "§ 85",
           "title": "Verarbeitung personenbezogener Daten im Rahmen von nicht in die Anwendungs- bereiche der Verordnung (EU) 2016/679 und der Richtlinie (EU) 2016/680 fallenden Tätigkeiten",
           "doknr": "BJNR209710017BJNE008600000",
           "children": [
@@ -7223,9 +7224,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 86",
+          "type": "element",
           "id": "86",
+          "label": "§ 86",
           "title": "Verarbeitung personenbezogener Daten für Zwecke staatlicher Auszeichnungen und Ehrungen",
           "doknr": "BJNR209710017BJNE008700116",
           "children": [

@@ -2,8 +2,9 @@
   "type": "document",
   "children": [
     {
-      "type": "section",
-      "title": "Inhaltsübersicht",
+      "type": "element",
+      "id": "Inhaltsübersicht",
+      "label": "Inhaltsübersicht",
       "doknr": "BJNR000170960BJNE002305360",
       "children": [
         {
@@ -18,21 +19,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "010",
       "label": "Teil I",
       "title": "Gerichtsverfassung",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010010",
           "label": "1. Abschnitt",
           "title": "Gerichte",
           "children": [
             {
-              "type": "article",
-              "label": "§ 1",
+              "type": "element",
               "id": "1",
+              "label": "§ 1",
               "doknr": "BJNR000170960BJNE002401308",
               "children": [
                 {
@@ -47,9 +48,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 2",
+              "type": "element",
               "id": "2",
+              "label": "§ 2",
               "doknr": "BJNR000170960BJNE002502307",
               "children": [
                 {
@@ -64,9 +65,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 3",
+              "type": "element",
               "id": "3",
+              "label": "§ 3",
               "doknr": "BJNR000170960BJNE002603311",
               "children": [
                 {
@@ -178,9 +179,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 4",
+              "type": "element",
               "id": "4",
+              "label": "§ 4",
               "doknr": "BJNR000170960BJNE002702310",
               "children": [
                 {
@@ -195,9 +196,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 5",
+              "type": "element",
               "id": "5",
+              "label": "§ 5",
               "doknr": "BJNR000170960BJNE002803305",
               "children": [
                 {
@@ -236,9 +237,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 6",
+              "type": "element",
               "id": "6",
+              "label": "§ 6",
               "doknr": "BJNR000170960BJNE022500305",
               "children": [
                 {
@@ -321,8 +322,10 @@
               ]
             },
             {
-              "type": "section",
-              "title": "(XXXX) §§ 7 bis 8",
+              "type": "element",
+              "id": "(XXXX) §§ 7 bis 8",
+              "label": "(XXXX) §§ 7 bis 8",
+              "title": "(weggefallen)",
               "doknr": "BJNR000170960BJNE002902305",
               "children": [
                 {
@@ -332,9 +335,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 9",
+              "type": "element",
               "id": "9",
+              "label": "§ 9",
               "doknr": "BJNR000170960BJNE003005360",
               "children": [
                 {
@@ -417,9 +420,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 10",
+              "type": "element",
               "id": "10",
+              "label": "§ 10",
               "doknr": "BJNR000170960BJNE003102360",
               "children": [
                 {
@@ -502,9 +505,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 11",
+              "type": "element",
               "id": "11",
+              "label": "§ 11",
               "doknr": "BJNR000170960BJNE003202308",
               "children": [
                 {
@@ -587,9 +590,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 12",
+              "type": "element",
               "id": "12",
+              "label": "§ 12",
               "doknr": "BJNR000170960BJNE003303308",
               "children": [
                 {
@@ -628,9 +631,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 13",
+              "type": "element",
               "id": "13",
+              "label": "§ 13",
               "doknr": "BJNR000170960BJNE003401308",
               "children": [
                 {
@@ -645,9 +648,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 14",
+              "type": "element",
               "id": "14",
+              "label": "§ 14",
               "doknr": "BJNR000170960BJNE003501308",
               "children": [
                 {
@@ -664,15 +667,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010020",
           "label": "2. Abschnitt",
           "title": "Richter",
           "children": [
             {
-              "type": "article",
-              "label": "§ 15",
+              "type": "element",
               "id": "15",
+              "label": "§ 15",
               "doknr": "BJNR000170960BJNE003601308",
               "children": [
                 {
@@ -711,9 +714,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 16",
+              "type": "element",
               "id": "16",
+              "label": "§ 16",
               "doknr": "BJNR000170960BJNE003701308",
               "children": [
                 {
@@ -728,9 +731,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 17",
+              "type": "element",
               "id": "17",
+              "label": "§ 17",
               "doknr": "BJNR000170960BJNE003802311",
               "children": [
                 {
@@ -794,9 +797,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 18",
+              "type": "element",
               "id": "18",
+              "label": "§ 18",
               "doknr": "BJNR000170960BJNE003903311",
               "children": [
                 {
@@ -822,15 +825,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010030",
           "label": "3. Abschnitt",
           "title": "Ehrenamtliche Richter",
           "children": [
             {
-              "type": "article",
-              "label": "§ 19",
+              "type": "element",
               "id": "19",
+              "label": "§ 19",
               "doknr": "BJNR000170960BJNE004001308",
               "children": [
                 {
@@ -845,9 +848,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 20",
+              "type": "element",
               "id": "20",
+              "label": "§ 20",
               "doknr": "BJNR000170960BJNE004102301",
               "children": [
                 {
@@ -862,9 +865,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 21",
+              "type": "element",
               "id": "21",
+              "label": "§ 21",
               "doknr": "BJNR000170960BJNE004202307",
               "children": [
                 {
@@ -932,9 +935,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 22",
+              "type": "element",
               "id": "22",
+              "label": "§ 22",
               "doknr": "BJNR000170960BJNE004303307",
               "children": [
                 {
@@ -1022,9 +1025,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 23",
+              "type": "element",
               "id": "23",
+              "label": "§ 23",
               "doknr": "BJNR000170960BJNE004404160",
               "children": [
                 {
@@ -1125,9 +1128,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 24",
+              "type": "element",
               "id": "24",
+              "label": "§ 24",
               "doknr": "BJNR000170960BJNE004501308",
               "children": [
                 {
@@ -1250,9 +1253,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 25",
+              "type": "element",
               "id": "25",
+              "label": "§ 25",
               "doknr": "BJNR000170960BJNE004602301",
               "children": [
                 {
@@ -1267,9 +1270,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 26",
+              "type": "element",
               "id": "26",
+              "label": "§ 26",
               "doknr": "BJNR000170960BJNE004702301",
               "children": [
                 {
@@ -1308,9 +1311,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 27",
+              "type": "element",
               "id": "27",
+              "label": "§ 27",
               "doknr": "BJNR000170960BJNE004801308",
               "children": [
                 {
@@ -1325,9 +1328,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 28",
+              "type": "element",
               "id": "28",
+              "label": "§ 28",
               "doknr": "BJNR000170960BJNE004903310",
               "children": [
                 {
@@ -1342,9 +1345,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 29",
+              "type": "element",
               "id": "29",
+              "label": "§ 29",
               "doknr": "BJNR000170960BJNE005001308",
               "children": [
                 {
@@ -1372,9 +1375,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 30",
+              "type": "element",
               "id": "30",
+              "label": "§ 30",
               "doknr": "BJNR000170960BJNE005102301",
               "children": [
                 {
@@ -1402,9 +1405,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 31",
+              "type": "element",
               "id": "31",
+              "label": "§ 31",
               "doknr": "BJNR000170960BJNE005201308",
               "children": [
                 {
@@ -1419,9 +1422,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 32",
+              "type": "element",
               "id": "32",
+              "label": "§ 32",
               "doknr": "BJNR000170960BJNE005302301",
               "children": [
                 {
@@ -1436,9 +1439,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 33",
+              "type": "element",
               "id": "33",
+              "label": "§ 33",
               "doknr": "BJNR000170960BJNE005401308",
               "children": [
                 {
@@ -1466,9 +1469,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 34",
+              "type": "element",
               "id": "34",
+              "label": "§ 34",
               "doknr": "BJNR000170960BJNE005501308",
               "children": [
                 {
@@ -1485,15 +1488,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010040",
           "label": "4. Abschnitt",
           "title": "Vertreter des öffentlichen Interesses",
           "children": [
             {
-              "type": "article",
-              "label": "§ 35",
+              "type": "element",
               "id": "35",
+              "label": "§ 35",
               "doknr": "BJNR000170960BJNE005603125",
               "children": [
                 {
@@ -1521,9 +1524,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 36",
+              "type": "element",
               "id": "36",
+              "label": "§ 36",
               "doknr": "BJNR000170960BJNE005701308",
               "children": [
                 {
@@ -1551,9 +1554,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 37",
+              "type": "element",
               "id": "37",
+              "label": "§ 37",
               "doknr": "BJNR000170960BJNE005803125",
               "children": [
                 {
@@ -1583,15 +1586,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010050",
           "label": "5. Abschnitt",
           "title": "Gerichtsverwaltung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 38",
+              "type": "element",
               "id": "38",
+              "label": "§ 38",
               "doknr": "BJNR000170960BJNE005901308",
               "children": [
                 {
@@ -1619,9 +1622,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 39",
+              "type": "element",
               "id": "39",
+              "label": "§ 39",
               "doknr": "BJNR000170960BJNE006001308",
               "children": [
                 {
@@ -1638,15 +1641,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "010060",
           "label": "6. Abschnitt",
           "title": "Verwaltungsrechtsweg und Zuständigkeit",
           "children": [
             {
-              "type": "article",
-              "label": "§ 40",
+              "type": "element",
               "id": "40",
+              "label": "§ 40",
               "doknr": "BJNR000170960BJNE006102310",
               "children": [
                 {
@@ -1674,9 +1677,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 41",
+              "type": "element",
               "id": "41",
+              "label": "§ 41",
               "doknr": "BJNR000170960BJNE006202308",
               "children": [
                 {
@@ -1691,9 +1694,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 42",
+              "type": "element",
               "id": "42",
+              "label": "§ 42",
               "doknr": "BJNR000170960BJNE006301308",
               "children": [
                 {
@@ -1721,9 +1724,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 43",
+              "type": "element",
               "id": "43",
+              "label": "§ 43",
               "doknr": "BJNR000170960BJNE006401308",
               "children": [
                 {
@@ -1751,9 +1754,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 44",
+              "type": "element",
               "id": "44",
+              "label": "§ 44",
               "doknr": "BJNR000170960BJNE006501308",
               "children": [
                 {
@@ -1768,9 +1771,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 44a",
+              "type": "element",
               "id": "44a",
+              "label": "§ 44a",
               "doknr": "BJNR000170960BJNE006601308",
               "children": [
                 {
@@ -1785,9 +1788,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 45",
+              "type": "element",
               "id": "45",
+              "label": "§ 45",
               "doknr": "BJNR000170960BJNE006701308",
               "children": [
                 {
@@ -1802,9 +1805,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 46",
+              "type": "element",
               "id": "46",
+              "label": "§ 46",
               "doknr": "BJNR000170960BJNE006803311",
               "children": [
                 {
@@ -1859,9 +1862,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 47",
+              "type": "element",
               "id": "47",
+              "label": "§ 47",
               "doknr": "BJNR000170960BJNE006910311",
               "children": [
                 {
@@ -1971,9 +1974,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 48",
+              "type": "element",
               "id": "48",
+              "label": "§ 48",
               "doknr": "BJNR000170960BJNE007026360",
               "children": [
                 {
@@ -2263,9 +2266,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 49",
+              "type": "element",
               "id": "49",
+              "label": "§ 49",
               "doknr": "BJNR000170960BJNE007103307",
               "children": [
                 {
@@ -2320,9 +2323,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 50",
+              "type": "element",
               "id": "50",
+              "label": "§ 50",
               "doknr": "BJNR000170960BJNE007218125",
               "children": [
                 {
@@ -2445,9 +2448,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 51",
+              "type": "element",
               "id": "51",
+              "label": "§ 51",
               "doknr": "BJNR000170960BJNE007303307",
               "children": [
                 {
@@ -2486,9 +2489,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 52",
+              "type": "element",
               "id": "52",
+              "label": "§ 52",
               "doknr": "BJNR000170960BJNE007409125",
               "children": [
                 {
@@ -2565,9 +2568,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 53",
+              "type": "element",
               "id": "53",
+              "label": "§ 53",
               "doknr": "BJNR000170960BJNE007501308",
               "children": [
                 {
@@ -2672,21 +2675,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "020",
       "label": "Teil II",
       "title": "Verfahren",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020070",
           "label": "7. Abschnitt",
           "title": "Allgemeine Verfahrensvorschriften",
           "children": [
             {
-              "type": "article",
-              "label": "§ 54",
+              "type": "element",
               "id": "54",
+              "label": "§ 54",
               "doknr": "BJNR000170960BJNE007601308",
               "children": [
                 {
@@ -2725,9 +2728,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 55",
+              "type": "element",
               "id": "55",
+              "label": "§ 55",
               "doknr": "BJNR000170960BJNE007701308",
               "children": [
                 {
@@ -2742,9 +2745,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 55a",
+              "type": "element",
               "id": "55a",
+              "label": "§ 55a",
               "doknr": "BJNR000170960BJNE023209125",
               "children": [
                 {
@@ -2904,9 +2907,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 55b",
+              "type": "element",
               "id": "55b",
+              "label": "§ 55b",
               "doknr": "BJNR000170960BJNE023306125",
               "children": [
                 {
@@ -3047,9 +3050,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 55c",
+              "type": "element",
               "id": "55c",
+              "label": "§ 55c",
               "title": "Formulare; Verordnungsermächtigung",
               "doknr": "BJNR000170960BJNE023502125",
               "children": [
@@ -3074,9 +3077,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 55d",
+              "type": "element",
               "id": "55d",
+              "label": "§ 55d",
               "title": "Nutzungspflicht für Rechtsanwälte, Behörden und vertretungsberechtigte Personen",
               "doknr": "BJNR000170960BJNE023601125",
               "children": [
@@ -3092,9 +3095,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 56",
+              "type": "element",
               "id": "56",
+              "label": "§ 56",
               "doknr": "BJNR000170960BJNE007802301",
               "children": [
                 {
@@ -3133,9 +3136,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 56a",
+              "type": "element",
               "id": "56a",
+              "label": "§ 56a",
               "doknr": "BJNR000170960BJNE021604125",
               "children": [
                 {
@@ -3174,9 +3177,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 57",
+              "type": "element",
               "id": "57",
+              "label": "§ 57",
               "doknr": "BJNR000170960BJNE007901308",
               "children": [
                 {
@@ -3204,9 +3207,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 58",
+              "type": "element",
               "id": "58",
+              "label": "§ 58",
               "doknr": "BJNR000170960BJNE008002310",
               "children": [
                 {
@@ -3234,9 +3237,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 59",
+              "type": "element",
               "id": "59",
+              "label": "§ 59",
               "title": "(weggefallen)",
               "doknr": "BJNR000170960BJNE008103311",
               "children": [
@@ -3247,9 +3250,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 60",
+              "type": "element",
               "id": "60",
+              "label": "§ 60",
               "doknr": "BJNR000170960BJNE008202301",
               "children": [
                 {
@@ -3310,9 +3313,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 61",
+              "type": "element",
               "id": "61",
+              "label": "§ 61",
               "doknr": "BJNR000170960BJNE008301308",
               "children": [
                 {
@@ -3367,9 +3370,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 62",
+              "type": "element",
               "id": "62",
+              "label": "§ 62",
               "doknr": "BJNR000170960BJNE008404125",
               "children": [
                 {
@@ -3448,9 +3451,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 63",
+              "type": "element",
               "id": "63",
+              "label": "§ 63",
               "doknr": "BJNR000170960BJNE008502301",
               "children": [
                 {
@@ -3516,9 +3519,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 64",
+              "type": "element",
               "id": "64",
+              "label": "§ 64",
               "doknr": "BJNR000170960BJNE008601308",
               "children": [
                 {
@@ -3533,9 +3536,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 65",
+              "type": "element",
               "id": "65",
+              "label": "§ 65",
               "doknr": "BJNR000170960BJNE008704140",
               "children": [
                 {
@@ -3585,9 +3588,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 66",
+              "type": "element",
               "id": "66",
+              "label": "§ 66",
               "doknr": "BJNR000170960BJNE008801308",
               "children": [
                 {
@@ -3602,9 +3605,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 67",
+              "type": "element",
               "id": "67",
+              "label": "§ 67",
               "doknr": "BJNR000170960BJNE008915125",
               "children": [
                 {
@@ -3786,9 +3789,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 67a",
+              "type": "element",
               "id": "67a",
+              "label": "§ 67a",
               "doknr": "BJNR000170960BJNE021703311",
               "children": [
                 {
@@ -3818,15 +3821,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020080",
           "label": "8. Abschnitt",
           "title": "Besondere Vorschriften für Anfechtungs- und Verpflichtungsklagen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 68",
+              "type": "element",
               "id": "68",
+              "label": "§ 68",
               "doknr": "BJNR000170960BJNE009002307",
               "children": [
                 {
@@ -3883,9 +3886,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 69",
+              "type": "element",
               "id": "69",
+              "label": "§ 69",
               "doknr": "BJNR000170960BJNE009101308",
               "children": [
                 {
@@ -3900,9 +3903,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 70",
+              "type": "element",
               "id": "70",
+              "label": "§ 70",
               "doknr": "BJNR000170960BJNE009203125",
               "children": [
                 {
@@ -3930,9 +3933,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 71",
+              "type": "element",
               "id": "71",
+              "label": "§ 71",
               "title": "Anhörung",
               "doknr": "BJNR000170960BJNE009302307",
               "children": [
@@ -3948,9 +3951,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 72",
+              "type": "element",
               "id": "72",
+              "label": "§ 72",
               "doknr": "BJNR000170960BJNE009401308",
               "children": [
                 {
@@ -3965,9 +3968,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 73",
+              "type": "element",
               "id": "73",
+              "label": "§ 73",
               "doknr": "BJNR000170960BJNE009503301",
               "children": [
                 {
@@ -4050,9 +4053,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 74",
+              "type": "element",
               "id": "74",
+              "label": "§ 74",
               "doknr": "BJNR000170960BJNE009601308",
               "children": [
                 {
@@ -4080,9 +4083,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 75",
+              "type": "element",
               "id": "75",
+              "label": "§ 75",
               "doknr": "BJNR000170960BJNE009701308",
               "children": [
                 {
@@ -4097,9 +4100,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 76",
+              "type": "element",
               "id": "76",
+              "label": "§ 76",
               "doknr": "BJNR000170960BJNE009801308",
               "children": [
                 {
@@ -4114,9 +4117,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 77",
+              "type": "element",
               "id": "77",
+              "label": "§ 77",
               "doknr": "BJNR000170960BJNE009901308",
               "children": [
                 {
@@ -4144,9 +4147,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 78",
+              "type": "element",
               "id": "78",
+              "label": "§ 78",
               "doknr": "BJNR000170960BJNE010002307",
               "children": [
                 {
@@ -4203,9 +4206,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 79",
+              "type": "element",
               "id": "79",
+              "label": "§ 79",
               "doknr": "BJNR000170960BJNE010102307",
               "children": [
                 {
@@ -4262,9 +4265,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 80",
+              "type": "element",
               "id": "80",
+              "label": "§ 80",
               "doknr": "BJNR000170960BJNE010206125",
               "children": [
                 {
@@ -4453,9 +4456,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 80a",
+              "type": "element",
               "id": "80a",
+              "label": "§ 80a",
               "doknr": "BJNR000170960BJNE021802125",
               "children": [
                 {
@@ -4523,9 +4526,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 80b",
+              "type": "element",
               "id": "80b",
+              "label": "§ 80b",
               "doknr": "BJNR000170960BJNE022602360",
               "children": [
                 {
@@ -4564,9 +4567,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 80c",
+              "type": "element",
               "id": "80c",
+              "label": "§ 80c",
               "doknr": "BJNR000170960BJNE024000360",
               "children": [
                 {
@@ -4651,15 +4654,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020090",
           "label": "9. Abschnitt",
           "title": "Verfahren im ersten Rechtszug",
           "children": [
             {
-              "type": "article",
-              "label": "§ 81",
+              "type": "element",
               "id": "81",
+              "label": "§ 81",
               "doknr": "BJNR000170960BJNE010305125",
               "children": [
                 {
@@ -4687,9 +4690,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 82",
+              "type": "element",
               "id": "82",
+              "label": "§ 82",
               "doknr": "BJNR000170960BJNE010404311",
               "children": [
                 {
@@ -4717,9 +4720,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 83",
+              "type": "element",
               "id": "83",
+              "label": "§ 83",
               "doknr": "BJNR000170960BJNE010502308",
               "children": [
                 {
@@ -4734,9 +4737,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 84",
+              "type": "element",
               "id": "84",
+              "label": "§ 84",
               "doknr": "BJNR000170960BJNE010604310",
               "children": [
                 {
@@ -4848,9 +4851,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 85",
+              "type": "element",
               "id": "85",
+              "label": "§ 85",
               "doknr": "BJNR000170960BJNE010701308",
               "children": [
                 {
@@ -4865,9 +4868,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 86",
+              "type": "element",
               "id": "86",
+              "label": "§ 86",
               "doknr": "BJNR000170960BJNE010805311",
               "children": [
                 {
@@ -4928,9 +4931,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 86a",
+              "type": "element",
               "id": "86a",
+              "label": "§ 86a",
               "doknr": "BJNR000170960BJNE022801310",
               "children": [
                 {
@@ -4945,9 +4948,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 87",
+              "type": "element",
               "id": "87",
+              "label": "§ 87",
               "doknr": "BJNR000170960BJNE010905310",
               "children": [
                 {
@@ -5070,9 +5073,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 87a",
+              "type": "element",
               "id": "87a",
+              "label": "§ 87a",
               "doknr": "BJNR000170960BJNE021902301",
               "children": [
                 {
@@ -5184,9 +5187,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 87b",
+              "type": "element",
               "id": "87b",
+              "label": "§ 87b",
               "doknr": "BJNR000170960BJNE022003360",
               "children": [
                 {
@@ -5342,9 +5345,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 87c",
+              "type": "element",
               "id": "87c",
+              "label": "§ 87c",
               "doknr": "BJNR000170960BJNE024100360",
               "children": [
                 {
@@ -5405,9 +5408,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 88",
+              "type": "element",
               "id": "88",
+              "label": "§ 88",
               "doknr": "BJNR000170960BJNE011001308",
               "children": [
                 {
@@ -5422,9 +5425,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 89",
+              "type": "element",
               "id": "89",
+              "label": "§ 89",
               "doknr": "BJNR000170960BJNE011101308",
               "children": [
                 {
@@ -5452,9 +5455,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 90",
+              "type": "element",
               "id": "90",
+              "label": "§ 90",
               "doknr": "BJNR000170960BJNE011203311",
               "children": [
                 {
@@ -5469,9 +5472,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 91",
+              "type": "element",
               "id": "91",
+              "label": "§ 91",
               "doknr": "BJNR000170960BJNE011301308",
               "children": [
                 {
@@ -5510,9 +5513,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 92",
+              "type": "element",
               "id": "92",
+              "label": "§ 92",
               "doknr": "BJNR000170960BJNE011404301",
               "children": [
                 {
@@ -5551,9 +5554,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 93",
+              "type": "element",
               "id": "93",
+              "label": "§ 93",
               "doknr": "BJNR000170960BJNE011501308",
               "children": [
                 {
@@ -5568,9 +5571,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 93a",
+              "type": "element",
               "id": "93a",
+              "label": "§ 93a",
               "doknr": "BJNR000170960BJNE022102307",
               "children": [
                 {
@@ -5598,9 +5601,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 94",
+              "type": "element",
               "id": "94",
+              "label": "§ 94",
               "doknr": "BJNR000170960BJNE011603310",
               "children": [
                 {
@@ -5615,9 +5618,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 95",
+              "type": "element",
               "id": "95",
+              "label": "§ 95",
               "doknr": "BJNR000170960BJNE011702125",
               "children": [
                 {
@@ -5656,9 +5659,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 96",
+              "type": "element",
               "id": "96",
+              "label": "§ 96",
               "doknr": "BJNR000170960BJNE011801308",
               "children": [
                 {
@@ -5686,9 +5689,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 97",
+              "type": "element",
               "id": "97",
+              "label": "§ 97",
               "doknr": "BJNR000170960BJNE011901308",
               "children": [
                 {
@@ -5703,9 +5706,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 98",
+              "type": "element",
               "id": "98",
+              "label": "§ 98",
               "doknr": "BJNR000170960BJNE012001308",
               "children": [
                 {
@@ -5720,9 +5723,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 99",
+              "type": "element",
               "id": "99",
+              "label": "§ 99",
               "doknr": "BJNR000170960BJNE012104360",
               "children": [
                 {
@@ -5750,9 +5753,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 100",
+              "type": "element",
               "id": "100",
+              "label": "§ 100",
               "doknr": "BJNR000170960BJNE012207125",
               "children": [
                 {
@@ -5802,9 +5805,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 101",
+              "type": "element",
               "id": "101",
+              "label": "§ 101",
               "doknr": "BJNR000170960BJNE012302125",
               "children": [
                 {
@@ -5843,9 +5846,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 102",
+              "type": "element",
               "id": "102",
+              "label": "§ 102",
               "doknr": "BJNR000170960BJNE012402307",
               "children": [
                 {
@@ -5895,9 +5898,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 102a",
+              "type": "element",
               "id": "102a",
+              "label": "§ 102a",
               "doknr": "BJNR000170960BJNE023402125",
               "children": [
                 {
@@ -5969,9 +5972,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 103",
+              "type": "element",
               "id": "103",
+              "label": "§ 103",
               "doknr": "BJNR000170960BJNE012501308",
               "children": [
                 {
@@ -6010,9 +6013,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 104",
+              "type": "element",
               "id": "104",
+              "label": "§ 104",
               "doknr": "BJNR000170960BJNE012601308",
               "children": [
                 {
@@ -6051,9 +6054,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 105",
+              "type": "element",
               "id": "105",
+              "label": "§ 105",
               "doknr": "BJNR000170960BJNE012702311",
               "children": [
                 {
@@ -6068,9 +6071,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 106",
+              "type": "element",
               "id": "106",
+              "label": "§ 106",
               "doknr": "BJNR000170960BJNE012804125",
               "children": [
                 {
@@ -6087,15 +6090,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020100",
           "label": "10. Abschnitt",
           "title": "Urteile und andere Entscheidungen",
           "children": [
             {
-              "type": "article",
-              "label": "§ 107",
+              "type": "element",
               "id": "107",
+              "label": "§ 107",
               "doknr": "BJNR000170960BJNE012901308",
               "children": [
                 {
@@ -6110,9 +6113,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 108",
+              "type": "element",
               "id": "108",
+              "label": "§ 108",
               "doknr": "BJNR000170960BJNE013001308",
               "children": [
                 {
@@ -6140,9 +6143,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 109",
+              "type": "element",
               "id": "109",
+              "label": "§ 109",
               "doknr": "BJNR000170960BJNE013101308",
               "children": [
                 {
@@ -6157,9 +6160,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 110",
+              "type": "element",
               "id": "110",
+              "label": "§ 110",
               "doknr": "BJNR000170960BJNE013201308",
               "children": [
                 {
@@ -6174,9 +6177,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 111",
+              "type": "element",
               "id": "111",
+              "label": "§ 111",
               "doknr": "BJNR000170960BJNE013301308",
               "children": [
                 {
@@ -6191,9 +6194,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 112",
+              "type": "element",
               "id": "112",
+              "label": "§ 112",
               "doknr": "BJNR000170960BJNE013401308",
               "children": [
                 {
@@ -6208,9 +6211,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 113",
+              "type": "element",
               "id": "113",
+              "label": "§ 113",
               "doknr": "BJNR000170960BJNE013502308",
               "children": [
                 {
@@ -6271,9 +6274,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 114",
+              "type": "element",
               "id": "114",
+              "label": "§ 114",
               "doknr": "BJNR000170960BJNE013602307",
               "children": [
                 {
@@ -6288,9 +6291,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 115",
+              "type": "element",
               "id": "115",
+              "label": "§ 115",
               "doknr": "BJNR000170960BJNE013701308",
               "children": [
                 {
@@ -6305,9 +6308,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 116",
+              "type": "element",
               "id": "116",
+              "label": "§ 116",
               "doknr": "BJNR000170960BJNE013803125",
               "children": [
                 {
@@ -6346,9 +6349,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 117",
+              "type": "element",
               "id": "117",
+              "label": "§ 117",
               "doknr": "BJNR000170960BJNE013903310",
               "children": [
                 {
@@ -6493,9 +6496,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 118",
+              "type": "element",
               "id": "118",
+              "label": "§ 118",
               "doknr": "BJNR000170960BJNE014002310",
               "children": [
                 {
@@ -6523,9 +6526,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 119",
+              "type": "element",
               "id": "119",
+              "label": "§ 119",
               "doknr": "BJNR000170960BJNE014102310",
               "children": [
                 {
@@ -6553,9 +6556,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 120",
+              "type": "element",
               "id": "120",
+              "label": "§ 120",
               "doknr": "BJNR000170960BJNE014202125",
               "children": [
                 {
@@ -6594,9 +6597,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 121",
+              "type": "element",
               "id": "121",
+              "label": "§ 121",
               "doknr": "BJNR000170960BJNE014302308",
               "children": [
                 {
@@ -6640,9 +6643,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 122",
+              "type": "element",
               "id": "122",
+              "label": "§ 122",
               "doknr": "BJNR000170960BJNE014402308",
               "children": [
                 {
@@ -6672,15 +6675,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "020110",
           "label": "11. Abschnitt",
           "title": "Einstweilige Anordnung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 123",
+              "type": "element",
               "id": "123",
+              "label": "§ 123",
               "doknr": "BJNR000170960BJNE014502308",
               "children": [
                 {
@@ -6745,21 +6748,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "030",
       "label": "Teil III",
       "title": "Rechtsmittel und Wiederaufnahme des Verfahrens",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030120",
           "label": "12. Abschnitt",
           "title": "Berufung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 124",
+              "type": "element",
               "id": "124",
+              "label": "§ 124",
               "doknr": "BJNR000170960BJNE014604311",
               "children": [
                 {
@@ -6849,9 +6852,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 124a",
+              "type": "element",
               "id": "124a",
+              "label": "§ 124a",
               "doknr": "BJNR000170960BJNE022702301",
               "children": [
                 {
@@ -6923,9 +6926,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 125",
+              "type": "element",
               "id": "125",
+              "label": "§ 125",
               "doknr": "BJNR000170960BJNE014702308",
               "children": [
                 {
@@ -6953,9 +6956,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 126",
+              "type": "element",
               "id": "126",
+              "label": "§ 126",
               "doknr": "BJNR000170960BJNE014802307",
               "children": [
                 {
@@ -6994,9 +6997,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 127",
+              "type": "element",
               "id": "127",
+              "label": "§ 127",
               "doknr": "BJNR000170960BJNE014902310",
               "children": [
                 {
@@ -7057,9 +7060,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 128",
+              "type": "element",
               "id": "128",
+              "label": "§ 128",
               "doknr": "BJNR000170960BJNE015001308",
               "children": [
                 {
@@ -7074,9 +7077,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 128a",
+              "type": "element",
               "id": "128a",
+              "label": "§ 128a",
               "doknr": "BJNR000170960BJNE022201308",
               "children": [
                 {
@@ -7104,9 +7107,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 129",
+              "type": "element",
               "id": "129",
+              "label": "§ 129",
               "doknr": "BJNR000170960BJNE015101308",
               "children": [
                 {
@@ -7121,9 +7124,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 130",
+              "type": "element",
               "id": "130",
+              "label": "§ 130",
               "doknr": "BJNR000170960BJNE015202310",
               "children": [
                 {
@@ -7195,9 +7198,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 130a",
+              "type": "element",
               "id": "130a",
+              "label": "§ 130a",
               "doknr": "BJNR000170960BJNE022302307",
               "children": [
                 {
@@ -7212,9 +7215,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 130b",
+              "type": "element",
               "id": "130b",
+              "label": "§ 130b",
               "doknr": "BJNR000170960BJNE022402307",
               "children": [
                 {
@@ -7229,9 +7232,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 131",
+              "type": "element",
               "id": "131",
+              "label": "§ 131",
               "doknr": "BJNR000170960BJNE015304307",
               "children": [
                 {
@@ -7248,15 +7251,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030130",
           "label": "13. Abschnitt",
           "title": "Revision",
           "children": [
             {
-              "type": "article",
-              "label": "§ 132",
+              "type": "element",
               "id": "132",
+              "label": "§ 132",
               "doknr": "BJNR000170960BJNE015404307",
               "children": [
                 {
@@ -7335,9 +7338,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 133",
+              "type": "element",
               "id": "133",
+              "label": "§ 133",
               "doknr": "BJNR000170960BJNE015502308",
               "children": [
                 {
@@ -7409,9 +7412,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 134",
+              "type": "element",
               "id": "134",
+              "label": "§ 134",
               "doknr": "BJNR000170960BJNE015604310",
               "children": [
                 {
@@ -7472,9 +7475,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 135",
+              "type": "element",
               "id": "135",
+              "label": "§ 135",
               "doknr": "BJNR000170960BJNE015702308",
               "children": [
                 {
@@ -7489,9 +7492,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 136",
+              "type": "element",
               "id": "136",
+              "label": "§ 136",
               "doknr": "BJNR000170960BJNE015803307",
               "children": [
                 {
@@ -7506,9 +7509,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 137",
+              "type": "element",
               "id": "137",
+              "label": "§ 137",
               "doknr": "BJNR000170960BJNE015901308",
               "children": [
                 {
@@ -7580,9 +7583,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 138",
+              "type": "element",
               "id": "138",
+              "label": "§ 138",
               "doknr": "BJNR000170960BJNE016001308",
               "children": [
                 {
@@ -7670,9 +7673,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 139",
+              "type": "element",
               "id": "139",
+              "label": "§ 139",
               "doknr": "BJNR000170960BJNE016102308",
               "children": [
                 {
@@ -7711,9 +7714,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 140",
+              "type": "element",
               "id": "140",
+              "label": "§ 140",
               "doknr": "BJNR000170960BJNE016202301",
               "children": [
                 {
@@ -7741,9 +7744,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 141",
+              "type": "element",
               "id": "141",
+              "label": "§ 141",
               "doknr": "BJNR000170960BJNE016302308",
               "children": [
                 {
@@ -7758,9 +7761,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 142",
+              "type": "element",
               "id": "142",
+              "label": "§ 142",
               "doknr": "BJNR000170960BJNE016402308",
               "children": [
                 {
@@ -7788,9 +7791,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 143",
+              "type": "element",
               "id": "143",
+              "label": "§ 143",
               "doknr": "BJNR000170960BJNE016501308",
               "children": [
                 {
@@ -7805,9 +7808,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 144",
+              "type": "element",
               "id": "144",
+              "label": "§ 144",
               "doknr": "BJNR000170960BJNE016602308",
               "children": [
                 {
@@ -7923,9 +7926,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 145",
+              "type": "element",
               "id": "145",
+              "label": "§ 145",
               "doknr": "BJNR000170960BJNE016702307",
               "children": [
                 {
@@ -7942,15 +7945,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030140",
           "label": "14. Abschnitt",
           "title": "Beschwerde, Erinnerung, Anhörungsrüge",
           "children": [
             {
-              "type": "article",
-              "label": "§ 146",
+              "type": "element",
               "id": "146",
+              "label": "§ 146",
               "doknr": "BJNR000170960BJNE016807311",
               "children": [
                 {
@@ -8011,9 +8014,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 147",
+              "type": "element",
               "id": "147",
+              "label": "§ 147",
               "doknr": "BJNR000170960BJNE016904311",
               "children": [
                 {
@@ -8041,9 +8044,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 148",
+              "type": "element",
               "id": "148",
+              "label": "§ 148",
               "doknr": "BJNR000170960BJNE017002308",
               "children": [
                 {
@@ -8071,9 +8074,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 149",
+              "type": "element",
               "id": "149",
+              "label": "§ 149",
               "doknr": "BJNR000170960BJNE017102308",
               "children": [
                 {
@@ -8101,9 +8104,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 150",
+              "type": "element",
               "id": "150",
+              "label": "§ 150",
               "doknr": "BJNR000170960BJNE017201308",
               "children": [
                 {
@@ -8118,9 +8121,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 151",
+              "type": "element",
               "id": "151",
+              "label": "§ 151",
               "doknr": "BJNR000170960BJNE017302311",
               "children": [
                 {
@@ -8135,9 +8138,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 152",
+              "type": "element",
               "id": "152",
+              "label": "§ 152",
               "doknr": "BJNR000170960BJNE017403307",
               "children": [
                 {
@@ -8165,9 +8168,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 152a",
+              "type": "element",
               "id": "152a",
+              "label": "§ 152a",
               "doknr": "BJNR000170960BJNE023103125",
               "children": [
                 {
@@ -8274,15 +8277,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "030150",
           "label": "15. Abschnitt",
           "title": "Wiederaufnahme des Verfahrens",
           "children": [
             {
-              "type": "article",
-              "label": "§ 153",
+              "type": "element",
               "id": "153",
+              "label": "§ 153",
               "doknr": "BJNR000170960BJNE017502301",
               "children": [
                 {
@@ -8314,21 +8317,21 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "040",
       "label": "Teil IV",
       "title": "Kosten und Vollstreckung",
       "children": [
         {
-          "type": "outline",
+          "type": "structure",
           "id": "040160",
           "label": "16. Abschnitt",
           "title": "Kosten",
           "children": [
             {
-              "type": "article",
-              "label": "§ 154",
+              "type": "element",
               "id": "154",
+              "label": "§ 154",
               "doknr": "BJNR000170960BJNE017603360",
               "children": [
                 {
@@ -8389,9 +8392,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 155",
+              "type": "element",
               "id": "155",
+              "label": "§ 155",
               "doknr": "BJNR000170960BJNE017703310",
               "children": [
                 {
@@ -8441,9 +8444,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 156",
+              "type": "element",
               "id": "156",
+              "label": "§ 156",
               "doknr": "BJNR000170960BJNE017801308",
               "children": [
                 {
@@ -8458,9 +8461,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 157",
+              "type": "element",
               "id": "157",
+              "label": "§ 157",
               "doknr": "BJNR000170960BJNE017901308",
               "children": [
                 {
@@ -8475,9 +8478,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 158",
+              "type": "element",
               "id": "158",
+              "label": "§ 158",
               "doknr": "BJNR000170960BJNE018002308",
               "children": [
                 {
@@ -8505,9 +8508,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 159",
+              "type": "element",
               "id": "159",
+              "label": "§ 159",
               "doknr": "BJNR000170960BJNE018101308",
               "children": [
                 {
@@ -8522,9 +8525,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 160",
+              "type": "element",
               "id": "160",
+              "label": "§ 160",
               "doknr": "BJNR000170960BJNE018201308",
               "children": [
                 {
@@ -8539,9 +8542,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 161",
+              "type": "element",
               "id": "161",
+              "label": "§ 161",
               "doknr": "BJNR000170960BJNE018302301",
               "children": [
                 {
@@ -8580,9 +8583,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 162",
+              "type": "element",
               "id": "162",
+              "label": "§ 162",
               "doknr": "BJNR000170960BJNE018406125",
               "children": [
                 {
@@ -8621,9 +8624,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 163",
+              "type": "element",
               "id": "163",
+              "label": "§ 163",
               "doknr": "BJNR000170960BJNE018501308",
               "children": [
                 {
@@ -8638,9 +8641,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 164",
+              "type": "element",
               "id": "164",
+              "label": "§ 164",
               "doknr": "BJNR000170960BJNE018601308",
               "children": [
                 {
@@ -8655,9 +8658,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 165",
+              "type": "element",
               "id": "165",
+              "label": "§ 165",
               "doknr": "BJNR000170960BJNE018701308",
               "children": [
                 {
@@ -8672,9 +8675,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 165a",
+              "type": "element",
               "id": "165a",
+              "label": "§ 165a",
               "doknr": "BJNR000170960BJNE023000310",
               "children": [
                 {
@@ -8689,9 +8692,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 166",
+              "type": "element",
               "id": "166",
+              "label": "§ 166",
               "doknr": "BJNR000170960BJNE018804311",
               "children": [
                 {
@@ -8776,15 +8779,15 @@
           ]
         },
         {
-          "type": "outline",
+          "type": "structure",
           "id": "040170",
           "label": "17. Abschnitt",
           "title": "Vollstreckung",
           "children": [
             {
-              "type": "article",
-              "label": "§ 167",
+              "type": "element",
               "id": "167",
+              "label": "§ 167",
               "doknr": "BJNR000170960BJNE018901308",
               "children": [
                 {
@@ -8812,9 +8815,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 168",
+              "type": "element",
               "id": "168",
+              "label": "§ 168",
               "doknr": "BJNR000170960BJNE019002307",
               "children": [
                 {
@@ -8904,9 +8907,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 169",
+              "type": "element",
               "id": "169",
+              "label": "§ 169",
               "doknr": "BJNR000170960BJNE019101308",
               "children": [
                 {
@@ -8934,9 +8937,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 170",
+              "type": "element",
               "id": "170",
+              "label": "§ 170",
               "doknr": "BJNR000170960BJNE019201308",
               "children": [
                 {
@@ -8997,9 +9000,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 171",
+              "type": "element",
               "id": "171",
+              "label": "§ 171",
               "doknr": "BJNR000170960BJNE019301308",
               "children": [
                 {
@@ -9014,9 +9017,9 @@
               ]
             },
             {
-              "type": "article",
-              "label": "§ 172",
+              "type": "element",
               "id": "172",
+              "label": "§ 172",
               "doknr": "BJNR000170960BJNE019403310",
               "children": [
                 {
@@ -9035,15 +9038,15 @@
       ]
     },
     {
-      "type": "outline",
+      "type": "structure",
       "id": "050",
       "label": "Teil V",
       "title": "Schluß- und Übergangsbestimmungen",
       "children": [
         {
-          "type": "article",
-          "label": "§ 173",
+          "type": "element",
           "id": "173",
+          "label": "§ 173",
           "doknr": "BJNR000170960BJNE019507125",
           "children": [
             {
@@ -9058,9 +9061,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 174",
+          "type": "element",
           "id": "174",
+          "label": "§ 174",
           "doknr": "BJNR000170960BJNE019601308",
           "children": [
             {
@@ -9088,9 +9091,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 175",
+          "type": "element",
           "id": "175",
+          "label": "§ 175",
           "doknr": "BJNR000170960BJNE023700311",
           "children": [
             {
@@ -9105,9 +9108,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 176",
+          "type": "element",
           "id": "176",
+          "label": "§ 176",
           "doknr": "BJNR000170960BJNE019802125",
           "children": [
             {
@@ -9151,9 +9154,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 177",
+          "type": "element",
           "id": "177",
+          "label": "§ 177",
           "doknr": "BJNR000170960BJNE019705125",
           "children": [
             {
@@ -9181,8 +9184,9 @@
           ]
         },
         {
-          "type": "section",
-          "title": "(XXXX) §§ 178 und 179",
+          "type": "element",
+          "id": "(XXXX) §§ 178 und 179",
+          "label": "(XXXX) §§ 178 und 179",
           "doknr": "BJNR000170960BJNE020001308",
           "children": [
             {
@@ -9197,9 +9201,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 180",
+          "type": "element",
           "id": "180",
+          "label": "§ 180",
           "doknr": "BJNR000170960BJNE020101308",
           "children": [
             {
@@ -9214,8 +9218,9 @@
           ]
         },
         {
-          "type": "section",
-          "title": "(XXXX) §§ 181 und 182",
+          "type": "element",
+          "id": "(XXXX) §§ 181 und 182",
+          "label": "(XXXX) §§ 181 und 182",
           "doknr": "BJNR000170960BJNE020201308",
           "children": [
             {
@@ -9230,9 +9235,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 183",
+          "type": "element",
           "id": "183",
+          "label": "§ 183",
           "doknr": "BJNR000170960BJNE020301308",
           "children": [
             {
@@ -9247,9 +9252,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 184",
+          "type": "element",
           "id": "184",
+          "label": "§ 184",
           "doknr": "BJNR000170960BJNE020401308",
           "children": [
             {
@@ -9264,9 +9269,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 185",
+          "type": "element",
           "id": "185",
+          "label": "§ 185",
           "doknr": "BJNR000170960BJNE020503125",
           "children": [
             {
@@ -9305,9 +9310,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 186",
+          "type": "element",
           "id": "186",
+          "label": "§ 186",
           "doknr": "BJNR000170960BJNE020602301",
           "children": [
             {
@@ -9322,9 +9327,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 187",
+          "type": "element",
           "id": "187",
+          "label": "§ 187",
           "doknr": "BJNR000170960BJNE020702307",
           "children": [
             {
@@ -9363,9 +9368,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 188",
+          "type": "element",
           "id": "188",
+          "label": "§ 188",
           "doknr": "BJNR000170960BJNE020806125",
           "children": [
             {
@@ -9380,9 +9385,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 188a",
+          "type": "element",
           "id": "188a",
+          "label": "§ 188a",
           "doknr": "BJNR000170960BJNE023800125",
           "children": [
             {
@@ -9397,9 +9402,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 188b",
+          "type": "element",
           "id": "188b",
+          "label": "§ 188b",
           "doknr": "BJNR000170960BJNE023901360",
           "children": [
             {
@@ -9414,9 +9419,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 189",
+          "type": "element",
           "id": "189",
+          "label": "§ 189",
           "doknr": "BJNR000170960BJNE020902310",
           "children": [
             {
@@ -9431,9 +9436,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 190",
+          "type": "element",
           "id": "190",
+          "label": "§ 190",
           "doknr": "BJNR000170960BJNE021003308",
           "children": [
             {
@@ -9567,9 +9572,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 191",
+          "type": "element",
           "id": "191",
+          "label": "§ 191",
           "doknr": "BJNR000170960BJNE021102160",
           "children": [
             {
@@ -9597,9 +9602,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 192",
+          "type": "element",
           "id": "192",
+          "label": "§ 192",
           "doknr": "BJNR000170960BJNE021201308",
           "children": [
             {
@@ -9614,9 +9619,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 193",
+          "type": "element",
           "id": "193",
+          "label": "§ 193",
           "doknr": "BJNR000170960BJNE021301308",
           "children": [
             {
@@ -9631,9 +9636,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 194",
+          "type": "element",
           "id": "194",
+          "label": "§ 194",
           "doknr": "BJNR000170960BJNE021403125",
           "children": [
             {
@@ -9734,9 +9739,9 @@
           ]
         },
         {
-          "type": "article",
-          "label": "§ 195",
+          "type": "element",
           "id": "195",
+          "label": "§ 195",
           "doknr": "BJNR000170960BJNE021502301",
           "children": [
             {

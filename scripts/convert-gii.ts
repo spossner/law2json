@@ -13,29 +13,22 @@ export interface DocumentNode {
   children: Node[];
 }
 
-export interface OutlineNode {
-  type: 'outline';
+export interface StructureNode {
+  type: 'structure';
   id: string; // gliederungskennzahl
   label: string; // gliederungsbez
   title?: string; // gliederungstitel
-  children: Node[]; // nested outlines/articles/sections
+  children: Node[]; // nested structures/articles/sections
 }
 
-export interface ArticleNode {
-  type: 'article';
-  id: string; // pure number (e.g., "14")
-  label: string; // display label (e.g., "§ 14", "Art. 5")
-  title?: string;
+export interface ElementNode {
+  type: 'element';
+  id: string; // from enbez (e.g., "14", "Anlage 1", "Inhaltsübersicht")
+  label: string; // display label (e.g., "§ 14", "Art. 5", "Anlage 1")
+  title?: string; // from titel element
   doknr?: string;
   footnotes?: Footnote[];
   children: Node[];
-}
-
-export interface SectionNode {
-  type: 'section'; // e.g., Inhaltsübersicht, Vorbemerkung, …
-  title?: string; // usually from enbez
-  doknr?: string;
-  children: Node[]; // paragraphs, lists, tables
 }
 
 export interface ParagraphNode {
@@ -87,9 +80,8 @@ export interface Footnote {
 }
 
 export type Node =
-  | OutlineNode
-  | ArticleNode
-  | SectionNode
+  | StructureNode
+  | ElementNode
   | ParagraphNode
   | ListNode
   | ListItemNode
@@ -450,49 +442,7 @@ function collectFootnotes(norm: PONode): Footnote[] {
   return out;
 }
 
-function parseArticle(norm: PONode): ArticleNode | null {
-  const meta = firstChild(norm, 'metadaten');
-  if (!meta) return null;
-
-  const enbezN = firstChild(meta, 'enbez');
-  if (!enbezN) return null;
-
-  const enbez = textDeep(enbezN);
-  const parsed = parseArticleEnbez(enbez);
-  if (!parsed) return null; // only accept § / Art.
-
-  const titleN = firstChild(meta, 'titel');
-  const title = titleN ? textDeep(titleN) : undefined;
-
-  const doknr = attrsOf(norm).doknr;
-
-  const article: ArticleNode = {
-    type: 'article',
-    label: parsed.label,
-    id: parsed.id,
-    title,
-    ...(doknr ? { doknr } : {}),
-    children: [],
-  };
-
-  const contents = allDesc(norm, 'content');
-  for (const content of contents) {
-    for (const child of childrenOf(content)) {
-      const t = lname(child);
-      if (!t) continue;
-      if (t === 'p') article.children.push(parseParagraph(child, parsed.id));
-      else if (t === 'dl') article.children.push(parseList(child, parsed.id));
-      else if (t === 'table') article.children.push(parseTable(child));
-    }
-  }
-
-  const fnotes = collectFootnotes(norm);
-  if (fnotes.length) article.footnotes = fnotes;
-
-  return article;
-}
-
-function parseSection(norm: PONode): SectionNode | null {
+function parseElement(norm: PONode): ElementNode | null {
   const meta = firstChild(norm, 'metadaten');
   if (!meta) return null;
 
@@ -500,35 +450,46 @@ function parseSection(norm: PONode): SectionNode | null {
   if (!enbezN) return null;
 
   const enbez = textDeep(enbezN).trim();
-  if (parseArticleEnbez(enbez)) return null; // already handled as article
-
+  const titleN = firstChild(meta, 'titel');
+  const title = titleN ? textDeep(titleN) : undefined;
   const doknr = attrsOf(norm).doknr;
 
-  const section: SectionNode = {
-    type: 'section',
-    title: enbez || undefined,
+  // Check if this is a traditional article (§ or Art.) for label formatting
+  const articleParsed = parseArticleEnbez(enbez);
+  const label = articleParsed ? articleParsed.label : enbez;
+  const id = articleParsed ? articleParsed.id : enbez;
+
+  const element: ElementNode = {
+    type: 'element',
+    id,
+    label,
+    title,
     ...(doknr ? { doknr } : {}),
     children: [],
   };
 
   const contents = allDesc(norm, 'content');
-  for (const content of contents) {
-    for (const child of childrenOf(content)) {
+  for (const contentEl of contents) {
+    for (const child of childrenOf(contentEl)) {
       const t = lname(child);
       if (!t) continue;
-      if (t === 'p') section.children.push(parseParagraph(child));
-      else if (t === 'dl') section.children.push(parseList(child));
-      else if (t === 'table') section.children.push(parseTable(child));
+      if (t === 'p') element.children.push(parseParagraph(child, id));
+      else if (t === 'dl') element.children.push(parseList(child, id));
+      else if (t === 'table') element.children.push(parseTable(child));
     }
   }
-  return section;
+
+  const fnotes = collectFootnotes(norm);
+  if (fnotes.length) element.footnotes = fnotes;
+
+  return element;
 }
 
-/* ===================== Outline nodes ===================== */
+/* ===================== Structure nodes ===================== */
 
-type OutlineParse = { node: OutlineNode; level: number };
+type StructureParse = { node: StructureNode; level: number };
 
-function parseOutline(norm: PONode): OutlineParse | null {
+function parseStructure(norm: PONode): StructureParse | null {
   const meta = firstChild(norm, 'metadaten');
   if (!meta) return null;
   const gl = firstChild(meta, 'gliederungseinheit');
@@ -545,8 +506,8 @@ function parseOutline(norm: PONode): OutlineParse | null {
   if (!id || !label) return null;
 
   const level = levelFromCode(id);
-  const node: OutlineNode = {
-    type: 'outline',
+  const node: StructureNode = {
+    type: 'structure',
     id,
     label,
     ...(title ? { title } : {}),
@@ -610,7 +571,7 @@ function convert(xml: string): DocumentNode {
   const norms = collectNorms(po);
 
   const doc: DocumentNode = { type: 'document', children: [] };
-  const stack: OutlineNode[] = [];
+  const stack: StructureNode[] = [];
 
   // Extract law metadata early from the first applicable norm
   for (const norm of norms) {
@@ -618,15 +579,15 @@ function convert(xml: string): DocumentNode {
     if (doc.jurabk && doc.title) break; // Stop once we have both
   }
 
-  const pushInto = (node: OutlineNode | ArticleNode | SectionNode) => {
+  const pushInto = (node: StructureNode | ElementNode) => {
     if (stack.length) stack[stack.length - 1].children.push(node as any);
     else doc.children.push(node as any);
   };
 
   for (const norm of norms) {
-    const parsedOutline = parseOutline(norm);
-    if (parsedOutline) {
-      const { node, level } = parsedOutline;
+    const parsedStructure = parseStructure(norm);
+    if (parsedStructure) {
+      const { node, level } = parsedStructure;
       while (stack.length >= level) stack.pop();
       if (stack.length) stack[stack.length - 1].children.push(node);
       else doc.children.push(node);
@@ -637,17 +598,10 @@ function convert(xml: string): DocumentNode {
       continue;
     }
 
-    const article = parseArticle(norm);
-    if (article) {
+    const element = parseElement(norm);
+    if (element) {
       extractLawMetadata(norm, doc);
-      pushInto(article);
-      continue;
-    }
-
-    const section = parseSection(norm);
-    if (section) {
-      extractLawMetadata(norm, doc);
-      pushInto(section);
+      pushInto(element);
       continue;
     }
 

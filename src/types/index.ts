@@ -53,42 +53,33 @@ export interface ParagraphNode {
   children: Array<TextRun | ListNode>;
 }
 
-export interface ArticleNode {
-  type: 'article';
-  id: string; // pure number (e.g., "14")
-  label: string; // display label (e.g., "§ 14", "Art. 5")
-  title?: string;
+export interface ElementNode {
+  type: 'element';
+  id: string; // from enbez (e.g., "14", "Anlage 1", "Inhaltsübersicht")
+  label: string; // display label (e.g., "§ 14", "Art. 5", "Anlage 1")
+  title?: string; // from titel element
   doknr?: string;
   footnotes?: Footnote[];
   children: Array<ParagraphNode | ListNode | TableNode>;
 }
 
-export interface SectionNode {
-  type: 'section'; // e.g., Inhaltsübersicht, Vorbemerkung, …
-  id?: string; // unique identifier
-  label?: string; // display label
-  title?: string; // usually from enbez
-  doknr?: string;
-  children: Array<ParagraphNode>;
-}
-
-export interface OutlineNode {
-  type: 'outline';
+export interface StructureNode {
+  type: 'structure'; // hierarchical structure like chapters, sections
   id: string; // gliederungskennzahl
   label: string; // gliederungsbez
   title?: string; // gliederungstitel
-  children: Array<OutlineNode | ArticleNode | SectionNode>;
+  children: Array<StructureNode | ElementNode>;
 }
 
 export interface DocumentNode {
   type: 'document';
   jurabk?: string; // law abbreviation
   title?: string; // law title
-  children: Array<SectionNode | OutlineNode>;
+  children: Array<ElementNode | StructureNode>;
 }
 
 // Union types for navigation
-export type NavigableNode = DocumentNode | OutlineNode | ArticleNode | SectionNode | ParagraphNode;
+export type NavigableNode = DocumentNode | StructureNode | ElementNode | ParagraphNode;
 export type ContentNode = TextRun | ListNode | TableNode;
 export type LawNode = NavigableNode | ContentNode | ListItemNode;
 
@@ -96,7 +87,7 @@ export type LawNode = NavigableNode | ContentNode | ListItemNode;
 export interface LawDocument extends DocumentNode {}
 
 // Helper type for elements that can be selected in navigation (all hierarchical levels)
-export type SelectableElement = OutlineNode | ArticleNode | SectionNode | ParagraphNode;
+export type SelectableElement = StructureNode | ElementNode | ParagraphNode;
 
 // Export aliases for backward compatibility
 export type StructuralElement = SelectableElement;
