@@ -63,25 +63,37 @@ export function ContentRenderer({
     // Handle ListNode
     case 'list':
       const listElement = element as ListNode;
+      
+      // Determine if it's an ordered list based on DTD listType
+      const isOrderedList = ['arabic', 'alpha', 'Alpha', 'a-alpha', 'a3-alpha', 'roman', 'Roman'].includes(listElement.listType);
+      
+      // console.log('List rendering:', { 
+      //   listType: listElement.listType, 
+      //   isOrderedList, 
+      //   element: listElement 
+      // });
+      
       return (
         <div className={cn('my-4', baseStyles, className)} onClick={handleClick}>
-          {listElement.kind === 'ordered' ? (
+          {isOrderedList ? (
             <ol className="list-none list-inside space-y-2">
               {listElement.children.map((listItem, index) => (
                 <li key={index} className="text-gray-900 flex gap-2">
-                  {listItem.label && <span>{listItem.label}</span>}
-                  {listItem.children.map((child, childIndex) => (
-                    <ContentRenderer
-                      key={childIndex}
-                      element={child}
-                      searchTerm={searchTerm}
-                      parentPath={`${listItem.id}`}
-                      simpleId={true}
-                      contentIndex={childIndex}
-                      onContentSelect={onContentSelect}
-                      selectedContentId={selectedContentId}
-                    />
-                  ))}
+                  {listItem.label && <span className="font-medium min-w-fit">{listItem.label}</span>}
+                  <div className="flex-1">
+                    {listItem.children.map((child, childIndex) => (
+                      <ContentRenderer
+                        key={childIndex}
+                        element={child}
+                        searchTerm={searchTerm}
+                        parentPath={`${listItem.id}`}
+                        simpleId={true}
+                        contentIndex={childIndex}
+                        onContentSelect={onContentSelect}
+                        selectedContentId={selectedContentId}
+                      />
+                    ))}
+                  </div>
                 </li>
               ))}
             </ol>
@@ -89,16 +101,16 @@ export function ContentRenderer({
             <ul
               className={cn(
                 'space-y-2 ml-4',
-                listElement.style === 'bullet'
+                listElement.listType === 'Bullet'
                   ? 'list-disc list-inside'
-                  : listElement.style === 'dash'
+                  : listElement.listType === 'Dash'
                     ? 'list-none'
                     : 'list-disc list-inside'
               )}
             >
               {listElement.children.map((listItem, index) => (
                 <li key={index} className="text-gray-900">
-                  {listElement.style === 'dash' && '– '}
+                  {listElement.listType === 'Dash' && '– '}
                   {listItem.children.map((child, childIndex) => (
                     <ContentRenderer
                       key={childIndex}

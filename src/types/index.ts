@@ -3,18 +3,7 @@
  * Matches the interfaces from convert-gii.ts
  */
 
-// Basic content and list types
-export type ListKind = 'ordered' | 'unordered';
-export type ListStyle =
-  | 'arabic'
-  | 'alpha-lower'
-  | 'alpha-upper'
-  | 'roman-lower'
-  | 'roman-upper'
-  | 'bullet'
-  | 'dash'
-  | 'custom';
-
+// Basic content types
 export interface TextRun {
   type: 'md';
   md: string; // Markdown (+ tiny HTML: u/small/sup/sub/br)
@@ -29,9 +18,7 @@ export interface ListItemNode {
 
 export interface ListNode {
   type: 'list';
-  kind: ListKind;
-  style: ListStyle;
-  symbol?: string; // for custom style
+  listType: string; // DTD value: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None'
   children: ListItemNode[];
 }
 

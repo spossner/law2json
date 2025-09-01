@@ -1,8 +1,6 @@
 import type { 
   ListNode, 
   ListItemNode, 
-  ListKind, 
-  ListStyle, 
   TextRun, 
   ParagraphNode 
 } from '../../types/index.ts';
@@ -13,22 +11,9 @@ import {
   lname, 
   isTextNode, 
   textOf, 
-  renderInlineToMd 
+  renderInlineToMd,
+  attrsOf 
 } from '../converter-utils.ts';
-
-type MarkerClass = { kind: ListKind; style: ListStyle; label?: string; symbol?: string };
-
-function classifyMarker(raw: string): MarkerClass {
-  const m = raw.trim();
-  if (/^\(?\d+\)?[.)]?$/.test(m)) return { kind: 'ordered', style: 'arabic', label: m };
-  if (/^[a-z]\)$/.test(m)) return { kind: 'ordered', style: 'alpha-lower', label: m };
-  if (/^[A-Z]\)$/.test(m)) return { kind: 'ordered', style: 'alpha-upper', label: m };
-  if (/^[ivxlcdm]+\)$/.test(m)) return { kind: 'ordered', style: 'roman-lower', label: m };
-  if (/^[IVXLCDM]+\)$/.test(m)) return { kind: 'ordered', style: 'roman-upper', label: m };
-  if (m === '•') return { kind: 'unordered', style: 'bullet' };
-  if (m === '-' || m === '–' || m === '—') return { kind: 'unordered', style: 'dash' };
-  return { kind: 'unordered', style: 'custom', symbol: m };
-}
 
 /**
  * Parser for definition list elements ('<dl>' tags)
@@ -40,10 +25,11 @@ export class ListParser implements Parser<ListNode> {
     const kids = childrenOf(dl);
     const items: ListItemNode[] = [];
     let pendingMarker: string | undefined;
-    let listKind: ListKind = 'unordered';
-    let listStyle: ListStyle = 'custom';
-    let listSymbol: string | undefined;
     let buf: Array<TextRun | ParagraphNode | ListNode> = [];
+
+    // Get the exact DTD Type value from XML attributes
+    const attrs = attrsOf(dl);
+    const listType = attrs.Type || attrs.type || 'arabic'; // Default to 'arabic' for legal docs
 
     const flush = () => {
       if (pendingMarker == null && buf.length === 0) return;
@@ -71,12 +57,6 @@ export class ListParser implements Parser<ListNode> {
       if (t === 'dt') {
         flush();
         const markerText = renderInlineToMd(childrenOf(node)).trim();
-        if (items.length === 0) {
-          const c = classifyMarker(markerText);
-          listKind = c.kind;
-          listStyle = c.style;
-          listSymbol = c.symbol;
-        }
         pendingMarker = markerText;
       } else if (t === 'dd' || t === 'la') {
         const parts = childrenOf(node);
@@ -118,15 +98,9 @@ export class ListParser implements Parser<ListNode> {
     }
     flush();
 
-    if (listKind === 'unordered') for (const it of items) delete it.label;
-
     return {
       type: 'list',
-      kind: listKind,
-      style: listStyle,
-      ...(listKind === 'unordered' && listStyle === 'custom' && listSymbol
-        ? { symbol: listSymbol }
-        : {}),
+      listType,
       children: items,
     };
   }

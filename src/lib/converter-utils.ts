@@ -19,7 +19,6 @@ export const parser = new XMLParser({
   trimValues: false,
   parseAttributeValue: false,
   parseTagValue: false,
-  parseTrueNumberOnly: false,
 });
 
 /* ===================== XML Node Helpers ===================== */

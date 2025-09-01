@@ -2622,8 +2622,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "unordered",
-                  "style": "custom",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -3169,8 +3168,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -3287,8 +3285,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -3437,8 +3434,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -3518,8 +3514,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -4874,8 +4869,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -5194,8 +5188,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -5437,8 +5430,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -5900,8 +5892,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -6069,8 +6060,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -6164,8 +6154,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -6237,8 +6226,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -6594,8 +6582,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -6727,8 +6714,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "alpha-lower",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -7011,8 +6997,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -7152,8 +7137,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -7661,8 +7645,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -8199,8 +8182,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
@@ -8753,8 +8735,7 @@
                 },
                 {
                   "type": "list",
-                  "kind": "ordered",
-                  "style": "arabic",
+                  "listType": "arabic",
                   "children": [
                     {
                       "type": "li",
