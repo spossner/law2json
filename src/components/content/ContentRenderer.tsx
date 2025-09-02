@@ -5,7 +5,7 @@ import type {
 import { cn } from '../../lib/utils';
 import OrderedList from './OrderedList';
 import { FormattedTextRenderer } from './FormattedTextRenderer';
-import { isOrderedListType } from './utils';
+import { getColspan, isOrderedListType, renderCell } from './utils';
 import UnorderedList from './UnorderedList';
 
 interface Props {
