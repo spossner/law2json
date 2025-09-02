@@ -1,7 +1,7 @@
 import type { ParagraphNode, TextRun, ListNode, TableNode, ImageNode } from '../../types/index.ts';
 import type { Parser } from './types.ts';
 import type { PONode } from '../converter-utils.ts';
-import { childrenOf, lname, isTextNode, textOf, renderInlineToMd } from '../converter-utils.ts';
+import { childrenOf, lname, isTextNode, textOf, renderInlineToMd, assignAutomaticIds } from '../converter-utils.ts';
 
 /**
  * Parser for paragraph elements ('<p>' tags)
@@ -64,6 +64,10 @@ export class ParagraphParser implements Parser<ParagraphNode> {
     }
     flushText();
 
+    // Assign automatic IDs to children that don't have explicit IDs
+    const finalId = paragraphNumber ? paragraphId : idPrefix || 'p';
+    assignAutomaticIds(outChildren, finalId);
+
     if (outChildren.length && outChildren[0].type === 'md' && paragraphNumber) {
       const m = outChildren[0].md.match(/^\s*\((\d+)\)\s*/);
       if (m) {
@@ -76,7 +80,10 @@ export class ParagraphParser implements Parser<ParagraphNode> {
         };
       }
     }
-    return { type: 'p', children: outChildren };
+    
+    const result: ParagraphNode = { type: 'p', children: outChildren };
+    if (finalId !== 'p') result.id = finalId;
+    return result;
   }
 
   // Temporary solution for nested parsing - will be resolved with dependency injection

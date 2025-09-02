@@ -12,6 +12,7 @@ import {
   levelFromCode,
   parseArticleEnbez,
   collectFootnotes,
+  assignAutomaticIds,
 } from './converter-utils.ts';
 
 import { defaultParserRegistry } from './parsers/index.ts';
@@ -60,6 +61,9 @@ function parseElement(norm: PONode): ElementNode | null {
 
   const fnotes = collectFootnotes(norm);
   if (fnotes.length) element.footnotes = fnotes;
+
+  // Assign automatic IDs to children that don't have explicit IDs
+  assignAutomaticIds(element.children, id);
 
   return element;
 }
@@ -161,8 +165,15 @@ function convert(xml: string): DocumentNode {
   }
 
   const pushInto = (node: StructureNode | ElementNode) => {
-    if (stack.length) stack[stack.length - 1].children.push(node as any);
-    else doc.children.push(node as any);
+    if (stack.length) {
+      stack[stack.length - 1].children.push(node as any);
+      // Assign automatic IDs to parent's children
+      assignAutomaticIds(stack[stack.length - 1].children, stack[stack.length - 1].id);
+    } else {
+      doc.children.push(node as any);
+      // Assign automatic IDs to document's children
+      assignAutomaticIds(doc.children, 'doc');
+    }
   };
 
   for (const norm of norms) {
@@ -170,8 +181,15 @@ function convert(xml: string): DocumentNode {
     if (parsedStructure) {
       const { node, level } = parsedStructure;
       while (stack.length >= level) stack.pop();
-      if (stack.length) stack[stack.length - 1].children.push(node);
-      else doc.children.push(node);
+      if (stack.length) {
+        stack[stack.length - 1].children.push(node);
+        // Assign automatic IDs to parent's children
+        assignAutomaticIds(stack[stack.length - 1].children, stack[stack.length - 1].id);
+      } else {
+        doc.children.push(node);
+        // Assign automatic IDs to document's children
+        assignAutomaticIds(doc.children, 'doc');
+      }
       stack.push(node);
 
       // set doc.jurabk/title once (best-effort)

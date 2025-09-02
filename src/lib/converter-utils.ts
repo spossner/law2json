@@ -185,3 +185,30 @@ export function collectFootnotes(norm: PONode): Footnote[] {
   }
   return out;
 }
+
+/* ===================== Automatic ID Generation ===================== */
+
+/**
+ * Assigns automatic IDs to child nodes that don't have explicit IDs.
+ * Uses the pattern: 
+ * - If only one child: uses the parent ID directly
+ * - If multiple children: uses parentId#<index> for child nodes without IDs.
+ */
+export function assignAutomaticIds<T extends { id?: string; type: string }>(
+  children: T[],
+  parentId: string
+): void {
+  const childrenWithoutIds = children.filter(child => !child.id);
+  
+  if (childrenWithoutIds.length === 1 && children.length === 1) {
+    // Single child case: use parent ID directly
+    childrenWithoutIds[0].id = parentId;
+  } else {
+    // Multiple children case: use parent#index pattern
+    children.forEach((child, index) => {
+      if (!child.id) {
+        child.id = `${parentId}#${index}`;
+      }
+    });
+  }
+}

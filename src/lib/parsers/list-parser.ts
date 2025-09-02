@@ -8,6 +8,7 @@ import {
   textOf,
   renderInlineToMd,
   attrsOf,
+  assignAutomaticIds,
 } from '../converter-utils.ts';
 
 /**
@@ -36,10 +37,21 @@ export class ListParser implements Parser<ListNode> {
 
       // Generate hierarchical ID for list item
       if (idPrefix && pendingMarker) {
-        // Extract number from marker (e.g., "1." -> "1", "(2)" -> "2")
-        const markerNum = pendingMarker.match(/\d+/)?.[0];
-        if (markerNum) {
-          (li as any).id = `${idPrefix}.${markerNum}`;
+        // Extract identifier from marker based on list type
+        let markerId: string | undefined;
+        
+        // Handle different marker formats: "1.", "(2)", "a)", etc.
+        const numMatch = pendingMarker.match(/\d+/);
+        const alphaMatch = pendingMarker.match(/[a-z]/i);
+        
+        if (numMatch) {
+          markerId = numMatch[0];
+        } else if (alphaMatch) {
+          markerId = alphaMatch[0].toLowerCase();
+        }
+        
+        if (markerId) {
+          (li as any).id = `${idPrefix}.${markerId}`;
         }
       }
 
@@ -72,20 +84,47 @@ export class ListParser implements Parser<ListNode> {
 
           if (elementType === 'dl') {
             flushText();
-            // Generate nested list ID prefix
-            const nestedPrefix =
-              idPrefix && pendingMarker
-                ? `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || '1'}`
-                : idPrefix;
+            // Generate nested list ID prefix using the current item's full ID
+            let nestedPrefix = idPrefix;
+            if (idPrefix && pendingMarker) {
+              // Extract identifier from pending marker
+              let markerId: string | undefined;
+              const numMatch = pendingMarker.match(/\d+/);
+              const alphaMatch = pendingMarker.match(/[a-z]/i);
+              
+              if (numMatch) {
+                markerId = numMatch[0];
+              } else if (alphaMatch) {
+                markerId = alphaMatch[0].toLowerCase();
+              }
+              
+              if (markerId) {
+                nestedPrefix = `${idPrefix}.${markerId}`;
+              }
+            }
             // Recursive call for nested lists
             const nestedList = this.parse(element, nestedPrefix);
             if (nestedList) buf.push(nestedList);
           } else if (elementType === 'p') {
             flushText();
-            const nestedPrefix =
-              idPrefix && pendingMarker
-                ? `${idPrefix}.${pendingMarker.match(/\d+/)?.[0] || '1'}`
-                : idPrefix;
+            // Generate nested paragraph ID prefix using the current item's full ID
+            let nestedPrefix = idPrefix;
+            if (idPrefix && pendingMarker) {
+              // Extract identifier from pending marker
+              let markerId: string | undefined;
+              const numMatch = pendingMarker.match(/\d+/);
+              const alphaMatch = pendingMarker.match(/[a-z]/i);
+              
+              if (numMatch) {
+                markerId = numMatch[0];
+              } else if (alphaMatch) {
+                markerId = alphaMatch[0].toLowerCase();
+              }
+              
+              if (markerId) {
+                nestedPrefix = `${idPrefix}.${markerId}`;
+              }
+            }
             const paragraphResult = this.parseNestedParagraph?.(element, nestedPrefix);
             if (paragraphResult) buf.push(paragraphResult);
           } else if (elementType === 'la') {
@@ -130,11 +169,24 @@ export class ListParser implements Parser<ListNode> {
     }
     flush();
 
-    return {
+    // Assign automatic IDs to list items that don't have explicit IDs
+    assignAutomaticIds(items, idPrefix || 'list');
+
+    // Also assign automatic IDs to children of each list item
+    items.forEach((item) => {
+      if (item.id) {
+        assignAutomaticIds(item.children, item.id);
+      }
+    });
+
+    const result: ListNode = {
       type: 'list',
       listType,
       children: items,
     };
+
+    if (idPrefix) result.id = idPrefix;
+    return result;
   }
 
   // Temporary solution for nested paragraph parsing - will be resolved with dependency injection
