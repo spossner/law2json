@@ -6,6 +6,7 @@
 // Basic content types
 export interface TextRun {
   type: 'md';
+  id?: string;
   md: string; // Markdown (+ tiny HTML: u/small/sup/sub/br)
 }
 
@@ -13,12 +14,13 @@ export interface ListItemNode {
   type: 'li';
   label?: string; // display label like "1.", "2.", etc.
   id?: string; // hierarchical like "4.1.2"
-  children: Array<TextRun | ParagraphNode | ListNode>;
+  children: Array<ContentNode>;
 }
 
 export interface ListNode {
   type: 'list';
-  listType: string; // DTD value: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None'
+  id?: string;
+  listType: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None';
   children: ListItemNode[];
 }
 
@@ -27,8 +29,20 @@ export interface TableCell {
   colspan?: number; // optional colspan, defaults to 1
 }
 
+export interface ImageNode {
+  type: 'image';
+  id?: string;
+  src: string; // image filename
+  alt?: string; // alt text
+  width?: number; // width in pixels or units
+  height?: number; // height in pixels or units
+  align?: string; // alignment: 'left' | 'center' | 'right'
+  position?: 'block' | 'inline'; // display position
+}
+
 export interface TableNode {
   type: 'table';
+  id?: string;
   headers?: Array<string | TableCell>; // header cells can have colspan
   rows: Array<Array<string | TableCell>>; // body rows can have cells with colspan
 }
@@ -43,7 +57,8 @@ export interface ParagraphNode {
   type: 'p';
   label?: string; // e.g., "(1)", "(2)" for numbered paragraphs
   id?: string; // hierarchical like "4.1" (Article 4, Abs. 1)
-  children: Array<TextRun | ListNode | TableNode>;
+  title?: string; // from titel element
+  children: Array<ContentNode>;
 }
 
 export interface ElementNode {
@@ -53,7 +68,7 @@ export interface ElementNode {
   title?: string; // from titel element
   doknr?: string;
   footnotes?: Footnote[];
-  children: Array<ParagraphNode | ListNode | TableNode>;
+  children: Array<ContentNode>;
 }
 
 export interface StructureNode {
@@ -68,19 +83,17 @@ export interface DocumentNode {
   type: 'document';
   jurabk?: string; // law abbreviation
   title?: string; // law title
-  children: Array<ElementNode | StructureNode>;
+  children: Array<StructureNode | ElementNode>;
 }
 
 // Union types for navigation
 export type NavigableNode = DocumentNode | StructureNode | ElementNode | ParagraphNode;
-export type ContentNode = TextRun | ListNode | TableNode;
+export type ContentNode = TextRun | ListNode | TableNode | ImageNode;
 export type LawNode = NavigableNode | ContentNode | ListItemNode;
-
-// Legacy compatibility - keeping old interface name but with new structure
-export interface LawDocument extends DocumentNode {}
 
 // Helper type for elements that can be selected in navigation (all hierarchical levels)
 export type SelectableElement = StructureNode | ElementNode | ParagraphNode;
+export type RenderableElement = SelectableElement | ContentNode;
 
 // Export aliases for backward compatibility
 export type StructuralElement = SelectableElement;

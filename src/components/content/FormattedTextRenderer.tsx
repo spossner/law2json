@@ -1,30 +1,22 @@
 import React from 'react';
-import type { FormattedTextElement } from '../../types';
 import { cn } from '../../lib/utils';
 import { highlightText } from '../../lib/highlightText';
+import type { TextRun } from '../../types';
 
 interface Props {
-  element: FormattedTextElement;
+  textElement: TextRun;
   className?: string;
   searchTerm?: string;
+  handleClick?: (e: React.MouseEvent) => void;
 }
 
-export function FormattedTextRenderer({ element, className, searchTerm }: Props) {
-  const styleClasses = {
-    bold: 'font-bold',
-    italic: 'italic',
-    underline: 'underline',
-    subscript: 'align-sub text-sm',
-    superscript: 'align-super text-sm',
-    spacing: 'font-mono',
-  } as const;
-
-  const displayText = searchTerm ? highlightText(element.text, searchTerm) : element.text;
-
+export function FormattedTextRenderer({ textElement, className, searchTerm, handleClick }: Props) {
+  const highlightedText = searchTerm ? highlightText(textElement.md, searchTerm) : textElement.md;
   return (
-    <span
-      className={cn(styleClasses[element.style], className)}
-      dangerouslySetInnerHTML={{ __html: displayText }}
+    <div
+      className={cn('prose prose-lg max-w-none leading-relaxed', className)}
+      onClick={handleClick}
+      dangerouslySetInnerHTML={{ __html: highlightedText }}
     />
   );
 }

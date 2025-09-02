@@ -1,21 +1,21 @@
-import React from 'react';
-import type { ImageElement } from '../../types';
+import type { ImageNode } from '../../types';
 import { cn } from '../../lib/utils';
 
 interface Props {
-  element: ImageElement;
+  element: ImageNode;
   className?: string;
 }
 
-export function ImageRenderer({ element, className }: Props) {
-  const alignClasses = {
-    left: 'text-left',
-    center: 'text-center',
-    right: 'text-right',
-  } as const;
+type Align = 'left' | 'center' | 'right';
+const ALIGN_CLASSES: Record<Align, string> = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
+} as const;
 
+export function ImageRenderer({ element, className }: Props) {
   return (
-    <div className={cn('my-4', element.align && alignClasses[element.align], className)}>
+    <div className={cn('my-4', element.align && ALIGN_CLASSES[element.align as Align], className)}>
       <img
         src={element.src}
         alt={element.alt || ''}

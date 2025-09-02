@@ -9,10 +9,10 @@ import { allChildren, childrenOf, renderInlineToMd, attrsOf } from '../converter
 export class TableParser implements Parser<TableNode> {
   readonly elementName = 'table';
 
-  parse(tbl: PONode, _idPrefix?: string): TableNode | null {
+  parse(tbl: PONode): TableNode | null {
     let headers: Array<string | TableCell> | undefined;
     const rows: Array<Array<string | TableCell>> = [];
-    
+
     // Handle DTD structure: <table> → <tgroup> → <thead>/<tbody> → <row> → <entry>
     for (const tgroup of allChildren(tbl, 'tgroup')) {
       // Extract column specifications to build name-to-index mapping
@@ -25,14 +25,14 @@ export class TableParser implements Parser<TableNode> {
           colNameToIndex.set(colname, index);
         }
       });
-      
+
       // Helper function to parse a row and handle colspan
       const parseRow = (row: PONode): Array<string | TableCell> => {
         const cells: Array<string | TableCell> = [];
         for (const entry of allChildren(row, 'entry')) {
           const attrs = attrsOf(entry);
           const content = renderInlineToMd(childrenOf(entry)).trim();
-          
+
           // Calculate colspan from namest/nameend
           let colspan = 1;
           if (attrs.namest && attrs.nameend) {
@@ -42,7 +42,7 @@ export class TableParser implements Parser<TableNode> {
               colspan = endIndex - startIndex + 1;
             }
           }
-          
+
           // Create cell object if colspan > 1, otherwise use simple string
           if (colspan > 1) {
             cells.push({ content, colspan });
@@ -52,7 +52,7 @@ export class TableParser implements Parser<TableNode> {
         }
         return cells;
       };
-      
+
       // Process thead section first to extract headers
       const theadSections = allChildren(tgroup, 'thead');
       if (theadSections.length > 0 && !headers) {
@@ -65,7 +65,7 @@ export class TableParser implements Parser<TableNode> {
           }
         }
       }
-      
+
       // Process tbody sections for data rows
       const tbodySections = allChildren(tgroup, 'tbody');
       for (const tbody of tbodySections) {
@@ -75,11 +75,11 @@ export class TableParser implements Parser<TableNode> {
         }
       }
     }
-    
-    return { 
-      type: 'table', 
+
+    return {
+      type: 'table',
       ...(headers ? { headers } : {}),
-      rows 
+      rows,
     };
   }
 }

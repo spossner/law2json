@@ -1061,7 +1061,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -1118,7 +1118,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -1245,7 +1245,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -1325,7 +1325,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -1346,7 +1346,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "a-alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -1398,7 +1398,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -1729,7 +1729,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -5016,7 +5016,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -5148,7 +5148,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -5730,7 +5730,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -6147,7 +6147,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -6305,7 +6305,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -6834,7 +6834,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7248,7 +7248,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7393,7 +7393,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7430,7 +7430,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7903,7 +7903,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -8162,7 +8162,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -8463,7 +8463,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -9147,7 +9147,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -9184,7 +9184,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -10168,7 +10168,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -10227,7 +10227,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -10264,7 +10264,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -10674,7 +10674,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -10891,7 +10891,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -11174,7 +11174,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "alpha",
                           "children": [
                             {
                               "type": "li",
@@ -11678,7 +11678,10 @@
                   }
                 ],
                 [
-                  "**Schutzmaßnahmen**"
+                  {
+                    "content": "**Schutzmaßnahmen**",
+                    "colspan": 2
+                  }
                 ]
               ]
             },
@@ -11794,7 +11797,7 @@
                         },
                         {
                           "type": "list",
-                          "listType": "arabic",
+                          "listType": "Dash",
                           "children": [
                             {
                               "type": "li",
@@ -12180,7 +12183,16 @@
             },
             {
               "type": "p",
-              "children": []
+              "children": [
+                {
+                  "type": "image",
+                  "src": "bgbl1_2022_j2240-1_0010.jpg",
+                  "width": 470,
+                  "height": 25,
+                  "align": "center",
+                  "position": "block"
+                }
+              ]
             },
             {
               "type": "p",
@@ -12257,7 +12269,16 @@
             },
             {
               "type": "p",
-              "children": []
+              "children": [
+                {
+                  "type": "image",
+                  "src": "bgbl1_2022_j2240-1_0020.jpg",
+                  "width": 470,
+                  "height": 25,
+                  "align": "center",
+                  "position": "block"
+                }
+              ]
             },
             {
               "type": "p",

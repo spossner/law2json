@@ -1,8 +1,4 @@
-import type {
-  DocumentNode,
-  StructureNode,
-  ElementNode,
-} from '../types/index.ts';
+import type { DocumentNode, StructureNode, ElementNode } from '../types/index.ts';
 
 import {
   parser,
@@ -15,7 +11,7 @@ import {
   lname,
   levelFromCode,
   parseArticleEnbez,
-  collectFootnotes
+  collectFootnotes,
 } from './converter-utils.ts';
 
 import { defaultParserRegistry } from './parsers/index.ts';
@@ -53,7 +49,7 @@ function parseElement(norm: PONode): ElementNode | null {
     for (const child of childrenOf(contentEl)) {
       const t = lname(child);
       if (!t) continue;
-      
+
       // Use parser registry to handle different element types
       const parsedChild = defaultParserRegistry.parse(t, child, id);
       if (parsedChild) {

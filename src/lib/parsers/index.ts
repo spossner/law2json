@@ -2,28 +2,32 @@ import { ParserRegistry } from './types.ts';
 import { ParagraphParser } from './paragraph-parser.ts';
 import { ListParser } from './list-parser.ts';
 import { TableParser } from './table-parser.ts';
+import { ImageParser } from './image-parser.ts';
 
 /**
  * Create and configure the default parser registry with all built-in parsers
  */
 export function createParserRegistry(): ParserRegistry {
   const registry = new ParserRegistry();
-  
+
   // Create parser instances
   const paragraphParser = new ParagraphParser();
   const listParser = new ListParser();
   const tableParser = new TableParser();
-  
+  const imageParser = new ImageParser();
+
   // Resolve circular dependencies by providing cross-references
   paragraphParser.setNestedListParser((node, idPrefix) => listParser.parse(node, idPrefix));
   paragraphParser.setNestedTableParser((node, idPrefix) => tableParser.parse(node, idPrefix));
+  paragraphParser.setNestedImageParser((node, idPrefix) => imageParser.parse(node, idPrefix));
   listParser.setNestedParagraphParser((node, idPrefix) => paragraphParser.parse(node, idPrefix));
-  
+
   // Register all parsers
   registry.register(paragraphParser);
   registry.register(listParser);
   registry.register(tableParser);
-  
+  registry.register(imageParser);
+
   return registry;
 }
 

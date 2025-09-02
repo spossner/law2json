@@ -1,7 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
-import type {
-  Footnote
-} from '../types/index.ts';
+import type { Footnote } from '../types/index.ts';
 
 /* ===================== XML Parser Configuration ===================== */
 
@@ -48,8 +46,6 @@ export function childrenOf(n: PONode): PONode[] {
 }
 
 export function attrsOf(n: PONode): Record<string, any> {
-  const kids = childrenOf(n);
-  for (const c of kids) if (ATTR_KEY in (c as any)) return (c as any)[ATTR_KEY];
   if (ATTR_KEY in (n as any)) return (n as any)[ATTR_KEY];
   return {};
 }

@@ -5,11 +5,11 @@ import type { PONode } from '../converter-utils.ts';
  * Common interface for all XML content parsers
  */
 export interface Parser<T extends LawNode = LawNode> {
-  /** 
+  /**
    * The XML element name this parser handles (e.g., 'p', 'dl', 'table')
    */
   readonly elementName: string;
-  
+
   /**
    * Parse a PONode into a typed law node
    * @param node - The XML node to parse

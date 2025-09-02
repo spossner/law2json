@@ -1008,7 +1008,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -1583,7 +1583,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2261,7 +2261,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2302,7 +2302,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2406,7 +2406,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2666,7 +2666,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2703,7 +2703,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2947,7 +2947,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -2968,7 +2968,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "a-alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -3482,7 +3482,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -3613,7 +3613,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -3751,7 +3751,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -5407,7 +5407,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -6981,7 +6981,7 @@
                           "children": [
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7024,7 +7024,7 @@
                           "children": [
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -7061,7 +7061,7 @@
                           "children": [
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -8056,7 +8056,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -9322,7 +9322,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -10468,7 +10468,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -10591,7 +10591,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -10773,7 +10773,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -11059,7 +11059,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -11802,7 +11802,7 @@
                                   "children": [
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -13876,6 +13876,12 @@
                     }
                   ]
                 }
+              ],
+              "footnotes": [
+                {
+                  "id": "F832391_3_BJNR006130976BJNE055004123",
+                  "md": "§ 122a gilt gemäß Artikel 3 Nummer 3 in Verbindung mit Artikel 74 Absatz 10 des Gesetzes vom 23. Oktober 2024 (BGBl. 2024 I Nr. 323) ab 1. Januar 2026 in folgender Fassung: „§ 122a<br /> Bekanntgabe von Verwaltungsakten durch Bereitstellung zum Datenabruf(1) Verwaltungsakte können dem Beteiligten oder der von ihm bevollmächtigten Person bekannt gegeben werden, indem sie nach § 87a Absatz 8 zum Datenabruf bereitgestellt werden. Mittels Bereitstellung soll insbesondere bekannt gegeben werden, wenn ein Steuerbescheid, Steuermessbescheid oder Feststellungsbescheid auf einer nach § 87a Absatz 6 elektronisch übermittelten Steuererklärung oder Feststellungserklärung beruht und sie 1.vom Beteiligten selbst über ein von der Finanzverwaltung bereitgestelltes Nutzerkonto übermittelt wurde oder2.durch eine Person im Sinne des § 80 Absatz 2 übermittelt wurde, der gegenüber der Bescheid nach § 122 Absatz 1 Satz 4 bekanntzugeben ist.Die abrufberechtigte Person ist am Tag der Bereitstellung elektronisch über die Abrufmöglichkeit und ihre Rechtswirkungen zu benachrichtigen.(2) Absatz 1 ist nicht anzuwenden, wenn der Beteiligte eine einmalige oder dauerhafte postalische Bekanntgabe nach § 122 Absatz 2 beantragt hat. Der Antrag wirkt, ebenso wie dessen Widerruf, nur für die Zukunft; sie werden der Finanzbehörde gegenüber erst wirksam, wenn sie ihr zugehen.(3) Für den Datenabruf hat sich die abrufberechtigte Person nach Maßgabe des § 87a Absatz 8 zu authentisieren.(4) Ein zum Abruf bereitgestellter Verwaltungsakt gilt am vierten Tag nach der Bereitstellung zum Abruf als bekannt gegeben. Im Zweifel hat die Behörde den Zeitpunkt der Bereitstellung zum Abruf nachzuweisen.(5) Die Absätze 1 bis 4 sind auch dann anzuwenden, wenn die Finanzbehörde den Verwaltungsakt im Postfach des Nutzerkontos nach dem Onlinezugangsgesetz zum Abruf bereitstellen will.“"
+                }
               ]
             },
             {
@@ -14719,7 +14725,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -14882,7 +14888,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15379,7 +15385,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15446,7 +15452,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15659,7 +15665,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15707,7 +15713,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15758,7 +15764,7 @@
                                         },
                                         {
                                           "type": "list",
-                                          "listType": "arabic",
+                                          "listType": "a-alpha",
                                           "children": [
                                             {
                                               "type": "li",
@@ -15817,7 +15823,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15828,7 +15834,7 @@
                                         },
                                         {
                                           "type": "list",
-                                          "listType": "arabic",
+                                          "listType": "a-alpha",
                                           "children": [
                                             {
                                               "type": "li",
@@ -15864,7 +15870,7 @@
                                         },
                                         {
                                           "type": "list",
-                                          "listType": "arabic",
+                                          "listType": "a-alpha",
                                           "children": [
                                             {
                                               "type": "li",
@@ -15899,7 +15905,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -15926,7 +15932,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16003,7 +16009,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16044,7 +16050,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16252,7 +16258,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16319,7 +16325,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16386,7 +16392,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16454,7 +16460,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16675,7 +16681,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -16859,7 +16865,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -19614,7 +19620,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -20400,7 +20406,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -22280,6 +22286,12 @@
                             }
                           ]
                         }
+                      ],
+                      "footnotes": [
+                        {
+                          "id": "F832391_5_BJNR006130976BJNE026307123",
+                          "md": "Nummer 1 gilt gemäß Artikel 3 Nummer 6 in Verbindung mit Artikel 74 Absatz 10 des Gesetzes vom 23. Oktober 2024 (BGBl. 2024 I Nr. 323) ab 1. Januar 2026 in folgender Fassung: „1.der Steuerbescheid a)im Fall des § 122 Absatz 2, 2a oder Absatz 5 den Bereich der für die Steuerfestsetzung zuständigen Finanzbehörde verlassen hat oderb)im Fall des § 122a zum Abruf bereitgestellt worden ist oder“."
+                        }
                       ]
                     },
                     {
@@ -22729,7 +22741,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -23353,7 +23365,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -23568,7 +23580,7 @@
                                   "children": [
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -23855,7 +23867,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",
@@ -26191,7 +26203,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -27463,7 +27475,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -27568,7 +27580,7 @@
                                 },
                                 {
                                   "type": "list",
-                                  "listType": "arabic",
+                                  "listType": "alpha",
                                   "children": [
                                     {
                                       "type": "li",
@@ -28144,7 +28156,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -32468,7 +32480,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -32989,7 +33001,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -33026,7 +33038,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -34253,7 +34265,7 @@
                             },
                             {
                               "type": "list",
-                              "listType": "arabic",
+                              "listType": "alpha",
                               "children": [
                                 {
                                   "type": "li",
@@ -36149,7 +36161,7 @@
                                     },
                                     {
                                       "type": "list",
-                                      "listType": "arabic",
+                                      "listType": "alpha",
                                       "children": [
                                         {
                                           "type": "li",

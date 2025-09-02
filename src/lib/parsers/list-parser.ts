@@ -1,18 +1,13 @@
-import type { 
-  ListNode, 
-  ListItemNode, 
-  TextRun, 
-  ParagraphNode 
-} from '../../types/index.ts';
+import type { ListNode, ListItemNode, TextRun, ParagraphNode } from '../../types/index.ts';
 import type { Parser } from './types.ts';
 import type { PONode } from '../converter-utils.ts';
-import { 
-  childrenOf, 
-  lname, 
-  isTextNode, 
-  textOf, 
+import {
+  childrenOf,
+  lname,
+  isTextNode,
+  textOf,
   renderInlineToMd,
-  attrsOf 
+  attrsOf,
 } from '../converter-utils.ts';
 
 /**
@@ -29,6 +24,7 @@ export class ListParser implements Parser<ListNode> {
 
     // Get the exact DTD Type value from XML attributes
     const attrs = attrsOf(dl);
+
     const listType = attrs.Type || attrs.type || 'arabic'; // Default to 'arabic' for legal docs
 
     const flush = () => {
@@ -73,7 +69,7 @@ export class ListParser implements Parser<ListNode> {
             if (isTextNode(element)) textBuf += textOf(element);
             return;
           }
-          
+
           if (elementType === 'dl') {
             flushText();
             // Generate nested list ID prefix
@@ -118,7 +114,7 @@ export class ListParser implements Parser<ListNode> {
                 }
               }
             }
-            
+
             // If no nested structures found, render as inline markdown
             if (!foundNestedStructures) {
               textBuf += renderInlineToMd([element]);
