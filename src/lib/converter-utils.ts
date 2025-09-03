@@ -169,6 +169,8 @@ export function parseArticleEnbez(raw: string): { label: string; id: string } | 
   if (m) return { label: `§ ${m[1]}`, id: m[1] };
   m = s.match(/^Art(?:\.|ikel)?\s*([\d]+[a-zA-Z]?)$/i);
   if (m) return { label: `Art. ${m[1]}`, id: m[1] };
+  m = s.match(/^Anlage\s+(\d+)$/);
+  if (m) return { label: `Anlage ${m[1]}`, id: `Anl${m[1]}` };
   return null;
 }
 
@@ -194,7 +196,7 @@ export function collectFootnotes(norm: PONode): Footnote[] {
  * - If only one child: uses the parent ID directly
  * - If multiple children: uses parentId#<index> for child nodes without IDs.
  */
-export function assignAutomaticIds<T extends { id?: string; type: string }>(
+export function assignAutomaticIds<T extends { id?: string; type: string; children?: any[] }>(
   children: T[],
   parentId: string
 ): void {
@@ -211,4 +213,11 @@ export function assignAutomaticIds<T extends { id?: string; type: string }>(
       }
     });
   }
+
+  // Recursively assign IDs to grandchildren after parent IDs are set
+  children.forEach((child) => {
+    if (child.children && child.children.length > 0 && child.id) {
+      assignAutomaticIds(child.children, child.id);
+    }
+  });
 }

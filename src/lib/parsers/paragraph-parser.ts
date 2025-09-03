@@ -20,17 +20,31 @@ export class ParagraphParser implements Parser<ParagraphNode> {
       textBuf = '';
     };
 
-    // Extract paragraph number first to build proper ID context
+    // Extract paragraph number or Anlage identifier first to build proper ID context
     let paragraphId = idPrefix;
     let paragraphNumber: string | undefined;
+    let paragraphLabel: string | undefined;
 
-    // Check if first text starts with paragraph number
+    // Check if first text starts with paragraph number or Anlage
     for (const k of kids) {
       if (isTextNode(k)) {
         const text = textOf(k).trim();
-        const m = text.match(/^\s*\((\d+)\)\s*/);
-        if (m) {
-          paragraphNumber = m[1];
+        
+        // Check for numbered paragraphs like "(1)", "(2)"
+        const numMatch = text.match(/^\s*\((\d+)\)\s*/);
+        if (numMatch) {
+          paragraphNumber = numMatch[1];
+          paragraphLabel = `(${paragraphNumber})`;
+          paragraphId = idPrefix ? `${idPrefix}.${paragraphNumber}` : paragraphNumber;
+          break;
+        }
+        
+        // Check for Anlage paragraphs like "Anlage 1", "Anlage 2"
+        const anlageMatch = text.match(/^Anlage\s+(\d+)/);
+        if (anlageMatch) {
+          const anlageNumber = anlageMatch[1];
+          paragraphNumber = `Anl${anlageNumber}`;
+          paragraphLabel = `Anlage ${anlageNumber}`;
           paragraphId = idPrefix ? `${idPrefix}.${paragraphNumber}` : paragraphNumber;
           break;
         }
@@ -64,17 +78,33 @@ export class ParagraphParser implements Parser<ParagraphNode> {
     }
     flushText();
 
-    // Assign automatic IDs to children that don't have explicit IDs
+    // For paragraphs with specific identifiers, assign IDs to children
+    // For generic paragraphs, let parent handle both paragraph and child IDs
     const finalId = paragraphNumber ? paragraphId : idPrefix || 'p';
-    assignAutomaticIds(outChildren, finalId);
+    if (paragraphNumber) {
+      assignAutomaticIds(outChildren, finalId);
+    }
 
-    if (outChildren.length && outChildren[0].type === 'md' && paragraphNumber) {
-      const m = outChildren[0].md.match(/^\s*\((\d+)\)\s*/);
-      if (m) {
-        outChildren[0].md = outChildren[0].md.slice(m[0].length);
+    if (outChildren.length && outChildren[0].type === 'md' && paragraphNumber && paragraphLabel) {
+      // Handle numbered paragraphs like "(1)", "(2)"
+      const numMatch = outChildren[0].md.match(/^\s*\((\d+)\)\s*/);
+      if (numMatch) {
+        outChildren[0].md = outChildren[0].md.slice(numMatch[0].length);
         return {
           type: 'p',
-          label: `(${paragraphNumber})`,
+          label: paragraphLabel,
+          id: paragraphId,
+          children: outChildren,
+        };
+      }
+      
+      // Handle Anlage paragraphs like "Anlage 1", "Anlage 2"
+      const anlageMatch = outChildren[0].md.match(/^Anlage\s+\d+/);
+      if (anlageMatch) {
+        // Don't remove the Anlage text since it's the main content
+        return {
+          type: 'p',
+          label: paragraphLabel,
           id: paragraphId,
           children: outChildren,
         };
@@ -82,7 +112,9 @@ export class ParagraphParser implements Parser<ParagraphNode> {
     }
     
     const result: ParagraphNode = { type: 'p', children: outChildren };
-    if (finalId !== 'p') result.id = finalId;
+    // Only assign ID if we found a specific paragraph identifier (like paragraph number or Anlage label)
+    // Don't assign idPrefix as ID to let parent handle automatic indexing
+    if (paragraphNumber && finalId !== 'p') result.id = finalId;
     return result;
   }
 
