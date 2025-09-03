@@ -133,20 +133,6 @@ export interface FootnoteNode {
   children: ContentNode[];
 }
 
-export interface DefinitionListNode extends BaseNode {
-  type: 'definitionList';
-  children: (DefinitionTermNode | DefinitionDescriptionNode)[];
-}
-
-export interface DefinitionTermNode extends BaseNode {
-  type: 'definitionTerm';
-  children: ContentNode[];
-}
-
-export interface DefinitionDescriptionNode extends BaseNode {
-  type: 'definitionDescription';
-  children: ContentNode[];
-}
 
 // Union types
 export type ContentNode = 
@@ -154,8 +140,7 @@ export type ContentNode =
   | ListNode 
   | TableNode 
   | ImageNode 
-  | FootnoteNode 
-  | DefinitionListNode;
+  | FootnoteNode;
 
 export type Node = 
   | DocumentNode 
@@ -168,9 +153,7 @@ export type Node =
   | TableHeaderNode
   | TableBodyNode
   | TableRowNode
-  | TableCellNode
-  | DefinitionTermNode
-  | DefinitionDescriptionNode;
+  | TableCellNode;
 
 // Helper types for navigation
 export type NavigableNode = DocumentNode | StructureNode | SectionNode;

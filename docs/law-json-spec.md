@@ -237,35 +237,6 @@ Footnote references and content:
 }
 ```
 
-### Definition Lists
-Term-definition pairs common in legal documents:
-
-```json
-{
-  "type": "definitionList",
-  "children": [
-    {
-      "type": "definitionTerm",
-      "children": [
-        {
-          "type": "text",
-          "content": "besonders geschützte Art"
-        }
-      ]
-    },
-    {
-      "type": "definitionDescription", 
-      "children": [
-        {
-          "type": "text",
-          "content": "Art, die in Anhang A oder B der Verordnung (EG) Nr. 338/97 aufgeführt ist"
-        }
-      ]
-    }
-  ]
-}
-```
-
 ## Field Mappings
 
 ### XML to JSON Field Renaming

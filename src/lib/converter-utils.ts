@@ -14,7 +14,7 @@ export const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '',
   processEntities: true,
-  trimValues: false,
+  trimValues: true,
   parseAttributeValue: false,
   parseTagValue: false,
 });
