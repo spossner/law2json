@@ -13,7 +13,8 @@ import type {
   TableHeaderNode,
   TableBodyNode,
   TableRowNode,
-  TableCellNode
+  TableCellNode,
+  ImageNode
 } from '../types/law-spec.ts';
 
 import {
@@ -22,7 +23,6 @@ import {
   firstChild,
   textDeep,
   attrsOf,
-  allDesc,
   childrenOf,
   lname,
   levelFromCode,
@@ -128,12 +128,53 @@ function extractListItemLabel(itemNode: PONode): string {
   return match ? match[1] : '';
 }
 
+/* ===================== ID Generation Helpers ===================== */
+
+/**
+ * Generate ID for text nodes based on content
+ * If text starts with "(n) ..." returns "<parentId>.n"
+ * Otherwise returns "<parentId>#index" (or just parentId if only child)
+ */
+function generateTextId(parentId: string, index: number, isOnlyChild: boolean): string {
+  // For non-paragraph text, use index-based ID
+  if (isOnlyChild) {
+    return parentId;
+  }
+  return `${parentId}#${index}`;
+}
+
+/**
+ * Generate ID for list items based on label
+ * Extracts alphanumeric part from label: "a)" → "a", "1." → "1"
+ * Returns "<parentId>.extracted"
+ */
+function generateListItemId(label: string, parentId?: string): string {
+  // Extract alphanumeric characters from label
+  const cleanLabel = label.replace(/[^a-zA-Z0-9]/g, '');
+  if (cleanLabel) {
+    return parentId ? `${parentId}.${cleanLabel}` : cleanLabel;
+  }
+  // Fallback for labels without alphanumeric content
+  return parentId ? `${parentId}.item` : 'item';
+}
+
+/**
+ * Generate ID for image nodes
+ * Returns "<parentId>#index" (or just parentId if only child)
+ */
+function generateImageId(parentId: string, index: number, isOnlyChild: boolean): string {
+  if (isOnlyChild) {
+    return parentId;
+  }
+  return `${parentId}#${index}`;
+}
+
 /* ===================== Content Parsing ===================== */
 
 /**
  * Parse mixed content within blocks, handling text, lists, tables, etc.
  */
-function parseContentNodes(nodes: PONode[]): ContentNode[] {
+function parseContentNodes(nodes: PONode[], parentId?: string): ContentNode[] {
   const result: ContentNode[] = [];
   let textBuffer: PONode[] = [];
   
@@ -141,11 +182,20 @@ function parseContentNodes(nodes: PONode[]): ContentNode[] {
     if (textBuffer.length > 0) {
       const content = extractTextContent(textBuffer);
       if (content.trim()) {
-        result.push({
+        const textNode: TextNode = {
           type: 'text',
           content: content.trim(),
           children: []
-        });
+        };
+        
+        // Add ID if parentId is provided
+        if (parentId) {
+          const currentIndex = result.length;
+          const willBeOnlyChild = currentIndex === 0 && nodes.filter(n => !isTextNode(n) || textDeep(n).trim()).length === 1;
+          textNode.id = generateTextId(parentId, currentIndex, willBeOnlyChild);
+        }
+        
+        result.push(textNode);
       }
       textBuffer = [];
     }
@@ -165,7 +215,7 @@ function parseContentNodes(nodes: PONode[]): ContentNode[] {
       case 'ol':
       case 'ul': {
         flushTextBuffer();
-        result.push(parseList(node));
+        result.push(parseList(node, parentId));
         break;
       }
       
@@ -179,12 +229,21 @@ function parseContentNodes(nodes: PONode[]): ContentNode[] {
       case 'img': {
         flushTextBuffer();
         const attrs = attrsOf(node);
-        result.push({
+        const imageNode: ImageNode = {
           type: 'image',
           src: attrs.src || '',
           alt: attrs.alt,
           children: []
-        });
+        };
+        
+        // Add ID if parentId is provided
+        if (parentId) {
+          const currentIndex = result.length;
+          const willBeOnlyChild = currentIndex === 0 && nodes.length === 1;
+          imageNode.id = generateImageId(parentId, currentIndex, willBeOnlyChild);
+        }
+        
+        result.push(imageNode);
         break;
       }
       
@@ -192,7 +251,7 @@ function parseContentNodes(nodes: PONode[]): ContentNode[] {
       case 'la': {
         flushTextBuffer();
         // Parse LA content which may contain nested lists and text
-        const laContent = parseContentNodes(childrenOf(node));
+        const laContent = parseContentNodes(childrenOf(node), parentId);
         result.push(...laContent);
         break;
       }
@@ -222,7 +281,7 @@ function parseContentNodes(nodes: PONode[]): ContentNode[] {
 /**
  * Parse lists with proper nesting support
  */
-function parseList(listNode: PONode): ListNode {
+function parseList(listNode: PONode, parentId?: string): ListNode {
   const listType = determineListType(listNode);
   const children: ListItemNode[] = [];
   const nodeChildren = childrenOf(listNode);
@@ -233,7 +292,7 @@ function parseList(listNode: PONode): ListNode {
     
     if (tagName === 'li' || tagName === 'la') {
       const label = extractListItemLabel(child);
-      const itemChildren = parseContentNodes(childrenOf(child));
+      const itemChildren = parseContentNodes(childrenOf(child), parentId);
       
       children.push({
         type: 'listItem',
@@ -248,16 +307,19 @@ function parseList(listNode: PONode): ListNode {
       // Look for the next DD element
       if (i + 1 < nodeChildren.length && lname(nodeChildren[i + 1]) === 'dd') {
         const ddNode = nodeChildren[i + 1];
+
         // Parse DD content which may contain nested lists
-        itemChildren = parseContentNodes(childrenOf(ddNode));
+        itemChildren = parseContentNodes(childrenOf(ddNode), generateListItemId(label, parentId));
         i++; // Skip the DD node since we processed it
       }
       
-      children.push({
+      const listItemNode : ListItemNode = {
         type: 'listItem',
         label,
         children: itemChildren
-      });
+      };
+
+      children.push(listItemNode);
     }
   }
   
@@ -424,14 +486,14 @@ function parseSection(norm: PONode): SectionNode | null {
     const textEl = firstChild(textdatenEl, 'text');
     if (textEl) {
       for (const contentEl of allChildren(textEl, 'content')) {
-        for (const child of childrenOf(contentEl)) {
+        for (const [i, child] of childrenOf(contentEl).entries()) {
           const tagName = lname(child);
           
           if (tagName === 'p') {
             // Each P element becomes a block
             const block: BlockNode = {
               type: 'block',
-              children: parseContentNodes(childrenOf(child))
+              children: parseContentNodes(childrenOf(child), `${normalizedId}.${i+1}`),
             };
             section.children.push(block);
           }

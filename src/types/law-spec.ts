@@ -67,6 +67,7 @@ export interface BlockNode extends BaseNode {
 export interface TextNode {
   type: 'text';
   content: string;
+  id?: string;                     // optional ID based on content or position
   children: never[];
 }
 
@@ -79,6 +80,7 @@ export interface ListNode extends BaseNode {
 export interface ListItemNode extends BaseNode {
   type: 'listItem';
   label: string;               // numbering/bullet marker (e.g., "1.", "a)")
+  id?: string;                 // optional ID based on label
   children: ContentNode[];     // mixed content - text, nested lists, etc.
 }
 
@@ -124,6 +126,7 @@ export interface ImageNode {
   type: 'image';
   src: string;
   alt?: string;
+  id?: string;                     // optional ID based on position
   children: never[];
 }
 
