@@ -2,8 +2,7 @@
   {
     "type": "section",
     "id": "§1",
-    "label": "§ 1",
-    "title": "Beginn der Rechtsfähigkeit",
+    "text": "§ 1 Beginn der Rechtsfähigkeit",
     "meta": {
       "documentId": "BJNR001950896BJNE000102377"
     },
@@ -12,8 +11,7 @@
   {
     "type": "structure",
     "id": "010",
-    "label": "Buch 1",
-    "title": "Allgemeiner Teil",
+    "text": "Buch 1 - Allgemeiner Teil",
     "children": []
   },
   {
@@ -29,7 +27,7 @@
   },
   {
     "type": "text",
-    "content": "Tiere und Pflanzen der besonders geschützten Arten in Besitz oder Gewahrsam zu nehmen, in Besitz oder Gewahrsam zu haben oder zu be- oder verarbeiten",
+    "text": "Tiere und Pflanzen der besonders geschützten Arten in Besitz oder Gewahrsam zu nehmen, in Besitz oder Gewahrsam zu haben oder zu be- oder verarbeiten",
     "children": [],
     "id": "§44.2.1"
   },
@@ -40,10 +38,13 @@
   },
   {
     "type": "image",
-    "id": "Anlage2.6",
-    "src": "",
+    "id": "Anlage2.6#0",
     "meta": {
-      "alt": ""
+      "src": "bgbl1_2022_j2240-1_0010.jpg",
+      "height": "25",
+      "width": "470",
+      "align": "center",
+      "type": "jpg"
     },
     "children": []
   }

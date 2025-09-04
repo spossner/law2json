@@ -96,7 +96,7 @@ export function textDeep(n: PONode): string {
 /* ===================== Level Detection ===================== */
 
 export function levelFromCode(code: string): number {
-  const s = String(code).trim();
+  const s = code.trim();
   const digits = s.replace(/\D/g, '');
   if (!digits) return 1;
   return Math.ceil(digits.length / 3);
@@ -192,7 +192,7 @@ export function collectFootnotes(norm: PONode): Footnote[] {
 
 /**
  * Assigns automatic IDs to child nodes that don't have explicit IDs.
- * Uses the pattern: 
+ * Uses the pattern:
  * - If only one child: uses the parent ID directly
  * - If multiple children: uses parentId#<index> for child nodes without IDs.
  */
@@ -201,7 +201,7 @@ export function assignAutomaticIds<T extends { id?: string; type: string; childr
   parentId: string
 ): void {
   const childrenWithoutIds = children.filter(child => !child.id);
-  
+
   if (childrenWithoutIds.length === 1 && children.length === 1) {
     // Single child case: use parent ID directly
     childrenWithoutIds[0].id = parentId;
@@ -215,7 +215,7 @@ export function assignAutomaticIds<T extends { id?: string; type: string; childr
   }
 
   // Recursively assign IDs to grandchildren after parent IDs are set
-  children.forEach((child) => {
+  children.forEach(child => {
     if (child.children && child.children.length > 0 && child.id) {
       assignAutomaticIds(child.children, child.id);
     }
