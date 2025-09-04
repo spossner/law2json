@@ -8,13 +8,13 @@ import type {
   ListItemNode,
   TableNode,
   ContentNode,
-  DocumentMeta,
   TableGroupNode,
   TableHeaderNode,
   TableBodyNode,
   TableRowNode,
   TableCellNode,
-  ImageNode
+  ImageNode,
+  BaseNode
 } from '../types/law-spec.ts';
 
 import {
@@ -90,12 +90,12 @@ function extractTextContent(nodes: PONode[]): string {
 /**
  * Determine list type based on XML attributes and content
  */
-function determineListType(listNode: PONode): ListNode['listType'] {
+function determineListType(listNode: PONode): ListNode['meta']['listType'] {
   const attrs = attrsOf(listNode);
   const type = attrs.type || attrs.listType;
   
   if (type) {
-    const typeMap: Record<string, ListNode['listType']> = {
+    const typeMap: Record<string, ListNode['meta']['listType']> = {
       'arabic': 'arabic',
       'alpha': 'alpha', 
       'Alpha': 'Alpha',
@@ -231,8 +231,10 @@ function parseContentNodes(nodes: PONode[], parentId?: string): ContentNode[] {
         const attrs = attrsOf(node);
         const imageNode: ImageNode = {
           type: 'image',
-          src: attrs.src || '',
-          alt: attrs.alt,
+          meta: {
+            src: attrs.src || '',
+            ...(attrs.alt && { alt: attrs.alt })
+          },
           children: []
         };
         
@@ -325,7 +327,9 @@ function parseList(listNode: PONode, parentId?: string): ListNode {
   
   return {
     type: 'list',
-    listType,
+    meta: {
+      listType
+    },
     children
   };
 }
@@ -340,7 +344,7 @@ function parseTable(tableNode: PONode): TableNode {
     ...(attrs.pgwide && { pgwide: attrs.pgwide })
   };
   
-  const children: TableGroupNode[] = [];
+  const children: BaseNode[] = [];
   
   // Look for tgroup elements
   for (const child of childrenOf(tableNode)) {
@@ -370,7 +374,9 @@ function parseTable(tableNode: PONode): TableNode {
       
       children.push({
         type: 'tableGroup',
-        cols,
+        meta: {
+          cols
+        },
         children: tgroupChildren
       });
     }
@@ -398,7 +404,11 @@ function parseTableRows(nodes: PONode[]): TableRowNode[] {
           const cellAttrs = attrsOf(cellNode);
           cells.push({
             type: 'tableCell',
-            colname: cellAttrs.colname,
+            ...(cellAttrs.colname && {
+              meta: {
+                colname: cellAttrs.colname
+              }
+            }),
             children: parseContentNodes(childrenOf(cellNode))
           });
         }
@@ -441,11 +451,9 @@ function parseStructure(norm: PONode): { node: StructureNode; level: number } | 
   return {
     node: {
       type: 'structure',
-      meta: {
-        id,
-        label,
-        title
-      },
+      id,
+      label,
+      title,
       children: []
     },
     level
@@ -471,10 +479,10 @@ function parseSection(norm: PONode): SectionNode | null {
   
   const section: SectionNode = {
     type: 'section',
+    id: normalizedId,
+    label: enbez,
+    title,
     meta: {
-      id: normalizedId,
-      label: enbez,
-      title,
       ...(doknr && { documentId: doknr })
     },
     children: []
@@ -508,8 +516,8 @@ function parseSection(norm: PONode): SectionNode | null {
 /**
  * Extract document metadata from norm elements
  */
-function extractDocumentMetadata(norms: PONode[]): DocumentMeta {
-  const meta: Partial<DocumentMeta> = {
+function extractDocumentMetadata(norms: PONode[]): DocumentNode['meta'] {
+  const meta: Partial<DocumentNode['meta']> = {
     notes: []
   };
   
@@ -590,7 +598,7 @@ function extractDocumentMetadata(norms: PONode[]): DocumentMeta {
     }
   }
   
-  return meta as DocumentMeta;
+  return meta as DocumentNode['meta'];
 }
 
 /* ===================== Main Conversion Function ===================== */

@@ -1,141 +1,127 @@
 /**
  * TypeScript types for German Legal Document JSON structure
- * Following the specification in docs/law-json-spec.md
+ * Simplified unified structure with type, id, label, title, content, meta, and children
  */
 
-// Base node interface
+// Base node interface - all nodes share this structure
 export interface BaseNode {
   type: string;
-  children: Node[];
+  id?: string;
+  label?: string;
+  title?: string;
+  content?: string;
+  meta?: Record<string, any>;
+  children: BaseNode[];
 }
 
-// Document metadata
-export interface DocumentMeta {
-  legalAbbr: string;           // from jurabk (e.g., "BNatSchG 2009")
-  officialAbbr: string;        // from amtabk (e.g., "BNatSchG")
-  date: string;                // from ausfertigung-datum (ISO format)
-  citation: {
-    publication: string;       // from periodikum (e.g., "BGBl I")
-    reference: string;         // from zitstelle (e.g., "2009, 2542")
+// Specific node types
+export interface SectionNode extends BaseNode {
+  type: 'section';
+  id: string;                      // normalized from enbez (e.g., "§1")
+  label: string;                   // original enbez (e.g., "§ 1")
+  title: string;                   // from titel
+  meta: {
+    documentId?: string;           // optional document reference
   };
-  shortTitle: string;          // from kurzue
-  longTitle: string;           // from langue
-  notes: string[];             // from standkommentar (array)
-  documentId: string;          // from doknr
-}
-
-// Structure node metadata
-export interface StructureMeta {
-  id: string;                  // from gliederungskennzahl
-  label: string;               // from gliederungsbez (e.g., "Kapitel 5")
-  title: string;               // from gliederungstitel
-}
-
-// Section node metadata  
-export interface SectionMeta {
-  id: string;                  // normalized from enbez (e.g., "§44")
-  label: string;               // original enbez (e.g., "§ 44")
-  title: string;               // from titel
-  documentId?: string;         // optional document reference
-}
-
-// Node types
-export interface DocumentNode extends BaseNode {
-  type: 'document';
-  meta: DocumentMeta;
-  children: (StructureNode | SectionNode)[];
 }
 
 export interface StructureNode extends BaseNode {
   type: 'structure';
-  meta: StructureMeta;
-  children: (StructureNode | SectionNode)[];
-}
-
-export interface SectionNode extends BaseNode {
-  type: 'section';
-  meta: SectionMeta;
-  children: BlockNode[];
+  id: string;                      // from gliederungskennzahl (e.g., "010")
+  label: string;                   // from gliederungsbez (e.g., "Buch 1")
+  title: string;                   // from gliederungstitel
 }
 
 export interface BlockNode extends BaseNode {
   type: 'block';
-  children: ContentNode[];
 }
 
-// Content types within blocks
-export interface TextNode {
+export interface ListNode extends BaseNode {
+  type: 'list';
+  meta: {
+    listType: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None';
+  };
+}
+
+export interface TextNode extends BaseNode {
   type: 'text';
   content: string;
   id?: string;                     // optional ID based on content or position
   children: never[];
 }
 
-export interface ListNode extends BaseNode {
-  type: 'list';
-  listType: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None';
-  children: ListItemNode[];
-}
-
 export interface ListItemNode extends BaseNode {
   type: 'listItem';
-  label: string;               // numbering/bullet marker (e.g., "1.", "a)")
-  id?: string;                 // optional ID based on label
-  children: ContentNode[];     // mixed content - text, nested lists, etc.
+  label: string;                   // numbering/bullet marker (e.g., "1.", "a)")
 }
 
-// Table structures
+export interface ImageNode extends BaseNode {
+  type: 'image';
+  id?: string;                     // optional ID based on position
+  meta: {
+    src: string;
+    alt?: string;
+  };
+  children: never[];
+}
+
+// Table structures remain complex but follow base pattern
 export interface TableNode extends BaseNode {
   type: 'table';
   meta?: {
     frame?: string;
     pgwide?: string;
   };
-  children: TableGroupNode[];
 }
 
 export interface TableGroupNode extends BaseNode {
   type: 'tableGroup';
-  cols: number;
-  children: (TableHeaderNode | TableBodyNode)[];
+  meta: {
+    cols: number;
+  };
 }
 
 export interface TableHeaderNode extends BaseNode {
   type: 'tableHeader';
-  children: TableRowNode[];
 }
 
 export interface TableBodyNode extends BaseNode {
   type: 'tableBody';
-  children: TableRowNode[];
 }
 
 export interface TableRowNode extends BaseNode {
   type: 'tableRow';
-  children: TableCellNode[];
 }
 
 export interface TableCellNode extends BaseNode {
   type: 'tableCell';
-  colname?: string;
-  children: ContentNode[];
+  meta?: {
+    colname?: string;
+  };
 }
 
-// Other content types
-export interface ImageNode {
-  type: 'image';
-  src: string;
-  alt?: string;
-  id?: string;                     // optional ID based on position
-  children: never[];
-}
-
-export interface FootnoteNode {
+export interface FootnoteNode extends BaseNode {
   type: 'footnote';
   id: string;
-  children: ContentNode[];
 }
 
+// Document root with metadata
+export interface DocumentNode extends BaseNode {
+  type: 'document';
+  meta: {
+    legalAbbr: string;             // from jurabk (e.g., "BNatSchG 2009")
+    officialAbbr: string;          // from amtabk (e.g., "BNatSchG")
+    date: string;                  // from ausfertigung-datum (ISO format)
+    citation: {
+      publication: string;         // from periodikum (e.g., "BGBl I")
+      reference: string;           // from zitstelle (e.g., "2009, 2542")
+    };
+    shortTitle: string;            // from kurzue
+    longTitle: string;             // from langue
+    notes: string[];               // from standkommentar (array)
+    documentId: string;            // from doknr
+  };
+}
 
 // Union types
 export type ContentNode = 
