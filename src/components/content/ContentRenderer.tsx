@@ -1,15 +1,12 @@
-import type {
-  TableCell,
-  RenderableElement,
-} from '../../types';
+import type { Node, TextNode } from '../../types';
 import { cn } from '../../lib/utils';
 import OrderedList from './OrderedList';
 import { FormattedTextRenderer } from './FormattedTextRenderer';
-import { getColspan, isOrderedListType, renderCell } from './utils';
+import { alignmentClass, isOrderedListType } from './utils';
 import UnorderedList from './UnorderedList';
 
 interface Props {
-  element: RenderableElement;
+  element: Node;
   className?: string;
   searchTerm?: string;
   parentPath: string; // Hierarchical path like "K4_A1_P20_S2"
@@ -45,11 +42,11 @@ export function ContentRenderer({
   const selectedStyles = isSelected ? 'bg-blue-100 ring-1 ring-blue-300' : '';
 
   switch (element.type) {
-    // Handle TextRun (markdown content)
-    case 'md':
+    // Handle TextNode (text content)
+    case 'text':
       return (
         <FormattedTextRenderer
-          textElement={element}
+          textElement={element as TextNode}
           className={cn(baseStyles, hoverStyles, selectedStyles, className)}
           searchTerm={searchTerm}
           handleClick={handleClick}
@@ -60,7 +57,7 @@ export function ContentRenderer({
     case 'list':
       return (
         <div className={cn('my-4', baseStyles, className)} onClick={handleClick}>
-          {isOrderedListType(element.listType) ? (
+          {isOrderedListType(element.meta.listType) ? (
             <OrderedList
               listElement={element}
               searchTerm={searchTerm}
@@ -80,68 +77,41 @@ export function ContentRenderer({
 
     // Handle TableNode
     case 'table':
-      
-
       return (
         <div
           className={cn('overflow-x-auto my-4', baseStyles, hoverStyles, selectedStyles, className)}
           onClick={handleClick}
         >
           <table className="min-w-full border-collapse border border-gray-300">
-            {element.headers && (
-              <thead className="bg-gray-50">
-                <tr>
-                  {element.headers.map((header, headerIndex) => (
-                    <th
-                      key={headerIndex}
-                      colSpan={getColspan(header)}
-                      className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900"
-                    >
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: renderCell(header, searchTerm),
-                        }}
-                      />
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-            )}
+            {/* Table headers will be handled through table structure */}
             <tbody>
-              {element.rows.map((row, rowIndex) => (
-                <tr key={rowIndex} className="hover:bg-gray-50">
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      colSpan={getColspan(cell)}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: renderCell(cell, searchTerm),
-                        }}
-                      />
-                    </td>
-                  ))}
-                </tr>
+              {/* Table rows will be handled through table structure */}
+              {element.children.map((child, index) => (
+                <ContentRenderer
+                  key={index}
+                  element={child as Node}
+                  searchTerm={searchTerm}
+                  parentPath={contentId}
+                  contentIndex={index}
+                  simpleId={false}
+                  onContentSelect={onContentSelect}
+                  selectedContentId={selectedContentId}
+                />
               ))}
             </tbody>
           </table>
         </div>
       );
 
-    // Handle ParagraphNode
-    case 'p':
+    // Handle BlockNode
+    case 'block':
       return (
-        <div className={cn('my-3 flex gap-2', baseStyles, className)} onClick={handleClick}>
-          {element.label && (
-            <span className="text-gray-900">{element.label}</span>
-          )}
+        <div className={cn('my-3', baseStyles, className)} onClick={handleClick}>
           <div className="space-y-2">
             {element.children.map((child, index) => (
               <ContentRenderer
                 key={index}
-                element={child}
+                element={child as Node}
                 searchTerm={searchTerm}
                 parentPath={contentId}
                 contentIndex={index}
@@ -156,22 +126,11 @@ export function ContentRenderer({
 
     // Handle ImageNode
     case 'image':
-      const isInline = element.position === 'inline';
-      const alignmentClass =
-        element.align === 'center'
-          ? 'mx-auto'
-          : element.align === 'right'
-            ? 'ml-auto'
-            : element.align === 'left'
-              ? 'mr-auto'
-              : 'mx-auto'; // default to center
-
       return (
         <div
           className={cn(
             'my-2',
-            isInline ? 'inline-block' : 'block',
-            alignmentClass,
+            alignmentClass(element.meta.align),
             baseStyles,
             hoverStyles,
             selectedStyles,
@@ -180,11 +139,11 @@ export function ContentRenderer({
           onClick={handleClick}
         >
           <img
-            src={`/law/${element.src}`} // Adjust path as needed
-            alt={element.alt || 'Mathematical formula'}
-            width={element.width}
-            height={element.height}
-            className={cn('max-w-full h-auto', isInline ? 'inline' : 'block', alignmentClass)}
+            src={`/law/${element.meta?.src}`} // Adjust path as needed
+            alt={element.meta?.alt || 'Mathematical formula'}
+            width={element.meta?.width}
+            height={element.meta?.height}
+            className={cn('max-w-full h-auto', alignmentClass(element.meta.align))}
           />
         </div>
       );

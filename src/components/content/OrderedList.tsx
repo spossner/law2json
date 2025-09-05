@@ -18,7 +18,7 @@ const OrderedList = ({
     <ol className="list-none list-inside space-y-2">
       {listElement.children.map((listItem, index) => (
         <li key={index} className="text-gray-900 flex gap-2">
-          {listItem.label && <span className="font-medium min-w-fit">{listItem.label}</span>}
+          {listItem.text && <span className="font-medium min-w-fit">{listItem.text}</span>}
           <div className="flex-1">
             {listItem.children.map((child, childIndex) => (
               <ContentRenderer

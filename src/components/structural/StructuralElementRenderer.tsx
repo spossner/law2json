@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import type { SelectableElement } from '../../types';
+import type { SelectableNode } from '../../types';
 import { cn } from '../../lib/utils';
 
 interface Props {
-  element: SelectableElement;
+  element: SelectableNode;
   level?: number;
-  onSelect?: (element: SelectableElement) => void;
+  onSelect?: (element: SelectableNode) => void;
   isSelected?: boolean;
   selectedElementId?: string; // Pass selected element ID for nested comparison
 }
@@ -25,7 +25,7 @@ export function StructuralElementRenderer({
       setIsExpanded(!isExpanded);
     }
     // Selectable leaf elements that should be selected
-    else if (element.type === 'element' || element.type === 'p') {
+    else if (element.type === 'section' || element.type === 'block') {
       onSelect?.(element);
     }
   };
@@ -34,13 +34,11 @@ export function StructuralElementRenderer({
   const hasNavigableChildren =
     'children' in element &&
     element.children &&
-    element.children.some(child => 'id' in child && (child as any).id !== undefined);
+    element.children.some(child => child.id !== undefined);
 
   const navigableChildren =
     'children' in element && element.children
-      ? (element.children.filter(
-          child => 'id' in child && (child as any).id !== undefined
-        ) as SelectableElement[])
+      ? (element.children.filter(child => child.id !== undefined) as SelectableNode[])
       : [];
 
   // Remove contentChildren as it's not used
@@ -56,7 +54,8 @@ export function StructuralElementRenderer({
           'text-lg font-bold py-3 px-4 bg-gray-50 border-b border-gray-200',
           isSelected && 'bg-blue-100 border-l-blue-500'
         );
-      case 'element':
+      case 'section':
+      case 'block':
         return cn(
           baseStyles,
           'text-sm py-2 px-8 font-medium',
@@ -92,8 +91,7 @@ export function StructuralElementRenderer({
       <div className={getElementStyles()} onClick={handleToggle}>
         <div className="flex items-center gap-2">
           {renderExpandIcon()}
-          <span className="font-mono text-blue-600 min-w-fit">{(element as any).label}</span>
-          <span className="flex-1 truncate ml-1">{(element as any).title}</span>
+          <span className="flex-1 truncate">{element.text}</span>
         </div>
       </div>
 
@@ -102,11 +100,11 @@ export function StructuralElementRenderer({
         <div className="ml-0">
           {navigableChildren.map(child => (
             <StructuralElementRenderer
-              key={(child as any).id}
+              key={child.id}
               element={child}
               level={level + 1}
               onSelect={onSelect}
-              isSelected={selectedElementId === (child as any).id}
+              isSelected={selectedElementId === child.id}
               selectedElementId={selectedElementId}
             />
           ))}

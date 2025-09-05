@@ -1,17 +1,19 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
 import { highlightText } from '../../lib/highlightText';
-import type { TextRun } from '../../types';
+import type { TextNode } from '../../types';
 
 interface Props {
-  textElement: TextRun;
+  textElement: TextNode;
   className?: string;
   searchTerm?: string;
   handleClick?: (e: React.MouseEvent) => void;
 }
 
 export function FormattedTextRenderer({ textElement, className, searchTerm, handleClick }: Props) {
-  const highlightedText = searchTerm ? highlightText(textElement.md, searchTerm) : textElement.md;
+  const highlightedText = searchTerm
+    ? highlightText(textElement.text, searchTerm)
+    : textElement.text;
   return (
     <div
       className={cn('prose prose-lg max-w-none leading-relaxed', className)}

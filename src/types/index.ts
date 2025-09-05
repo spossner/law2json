@@ -1,100 +1,175 @@
 /**
- * TypeScript types for German Legal Document JSON structure (new parser)
- * Matches the interfaces from convert-gii.ts
+ * TypeScript types for German Legal Document JSON structure
+ * Simplified unified structure with type, id, label, title, content, meta, and children
  */
 
-// Basic content types
-export interface TextRun {
-  type: 'md';
+// Base node interface - all nodes share this structure
+export interface BaseNode {
+  type?:
+    | 'document'
+    | 'structure'
+    | 'section'
+    | 'block'
+    | 'list'
+    | 'text'
+    | 'listItem'
+    | 'image'
+    | 'table'
+    | 'tableGroup'
+    | 'tableHeader'
+    | 'tableBody'
+    | 'tableRow'
+    | 'tableCell'
+    | 'footnote';
   id?: string;
-  md: string; // Markdown (+ tiny HTML: u/small/sup/sub/br)
+  text?: string;
+  meta?: unknown;
+  children: BaseNode[];
 }
 
-export interface ListItemNode {
-  type: 'li';
-  label?: string; // display label like "1.", "2.", etc.
-  id?: string; // hierarchical like "4.1.2"
-  children: Array<ContentNode>;
+// Specific node types
+export interface SectionNode extends BaseNode {
+  type: 'section';
+  id: string; // normalized from enbez (e.g., "§1")
+  text: string; // combined as "<label> <title>"
+  meta: {
+    documentId?: string; // optional document reference
+  };
+  children: BlockNode[];
 }
 
-export interface ListNode {
+export interface StructureNode extends BaseNode {
+  type: 'structure';
+  id: string; // from gliederungskennzahl (e.g., "010")
+  text: string; // combined as "<label> - <title>"
+  children: SelectableNode[];
+}
+
+export interface BlockNode extends BaseNode {
+  type: 'block';
+  children: ContentNode[];
+}
+
+export interface ListNode extends BaseNode {
   type: 'list';
-  id?: string;
-  listType: 'arabic' | 'alpha' | 'Alpha' | 'a-alpha' | 'a3-alpha' | 'roman' | 'Roman' | 'Dash' | 'Bullet' | 'Symbol' | 'None';
+  meta: {
+    listType:
+      | 'arabic'
+      | 'alpha'
+      | 'Alpha'
+      | 'a-alpha'
+      | 'a3-alpha'
+      | 'roman'
+      | 'Roman'
+      | 'Dash'
+      | 'Bullet'
+      | 'Symbol'
+      | 'None';
+  };
   children: ListItemNode[];
 }
 
-export interface TableCell {
-  content: string;
-  colspan?: number; // optional colspan, defaults to 1
+export interface TextNode extends BaseNode {
+  type: 'text';
+  text: string; // content text
+  id?: string; // optional ID based on content or position
+  children: never[];
 }
 
-export interface ImageNode {
+export interface ListItemNode extends BaseNode {
+  type: 'listItem';
+  text: string; // numbering/bullet marker (e.g., "1.", "a)")
+  children: ContentNode[];
+}
+
+export interface ImageNode extends BaseNode {
   type: 'image';
-  id?: string;
-  src: string; // image filename
-  alt?: string; // alt text
-  width?: number; // width in pixels or units
-  height?: number; // height in pixels or units
-  align?: string; // alignment: 'left' | 'center' | 'right'
-  position?: 'block' | 'inline'; // display position
+  id?: string; // optional ID based on position
+  meta: {
+    src: string;
+    alt?: string;
+    height?: string;
+    width?: string;
+    align?: 'left' | 'center' | 'right';
+    type?: string;
+  };
+  children: never[];
 }
 
-export interface TableNode {
+// Table structures remain complex but follow base pattern
+export interface TableNode extends BaseNode {
   type: 'table';
-  id?: string;
-  headers?: Array<string | TableCell>; // header cells can have colspan
-  rows: Array<Array<string | TableCell>>; // body rows can have cells with colspan
+  meta?: {
+    frame?: string;
+    pgwide?: string;
+  };
 }
 
-export interface Footnote {
-  id: string; // referenced by [^id]
-  md: string; // Markdown + tiny HTML
+export interface TableGroupNode extends BaseNode {
+  type: 'tableGroup';
+  meta: {
+    cols: number;
+  };
 }
 
-// Hierarchical structure types
-export interface ParagraphNode {
-  type: 'p';
-  label?: string; // e.g., "(1)", "(2)" for numbered paragraphs
-  id?: string; // hierarchical like "4.1" (Article 4, Abs. 1)
-  title?: string; // from titel element
-  children: Array<ContentNode>;
+export interface TableHeaderNode extends BaseNode {
+  type: 'tableHeader';
 }
 
-export interface ElementNode {
-  type: 'element';
-  id: string; // from enbez (e.g., "14", "Anlage 1", "Inhaltsübersicht")
-  label: string; // display label (e.g., "§ 14", "Art. 5", "Anlage 1")
-  title?: string; // from titel element
-  doknr?: string;
-  footnotes?: Footnote[];
-  children: Array<ContentNode>;
+export interface TableBodyNode extends BaseNode {
+  type: 'tableBody';
 }
 
-export interface StructureNode {
-  type: 'structure'; // hierarchical structure like chapters, sections
-  id: string; // gliederungskennzahl
-  label: string; // gliederungsbez
-  title?: string; // gliederungstitel
-  children: Array<StructureNode | ElementNode>;
+export interface TableRowNode extends BaseNode {
+  type: 'tableRow';
 }
 
-export interface DocumentNode {
+export interface TableCellNode extends BaseNode {
+  type: 'tableCell';
+  meta?: {
+    colname?: string;
+  };
+}
+
+export interface FootnoteNode extends BaseNode {
+  type: 'footnote';
+  id: string;
+}
+
+// Document root with metadata
+export interface DocumentNode extends BaseNode {
   type: 'document';
-  jurabk?: string; // law abbreviation
-  title?: string; // law title
-  children: Array<StructureNode | ElementNode>;
+  meta: {
+    legalAbbr: string; // from jurabk (e.g., "BNatSchG 2009")
+    officialAbbr: string; // from amtabk (e.g., "BNatSchG")
+    date: string; // from ausfertigung-datum (ISO format)
+    citation: {
+      publication: string; // from periodikum (e.g., "BGBl I")
+      reference: string; // from zitstelle (e.g., "2009, 2542")
+    };
+    shortTitle: string; // from kurzue
+    longTitle: string; // from langue
+    notes: string[]; // from standkommentar (array)
+    documentId: string; // from doknr
+  };
 }
 
-// Union types for navigation
-export type NavigableNode = DocumentNode | StructureNode | ElementNode | ParagraphNode;
-export type ContentNode = TextRun | ListNode | TableNode | ImageNode;
-export type LawNode = NavigableNode | ContentNode | ListItemNode;
+// Union types
+export type ContentNode = TextNode | ListNode | TableNode | ImageNode | FootnoteNode;
 
-// Helper type for elements that can be selected in navigation (all hierarchical levels)
-export type SelectableElement = StructureNode | ElementNode | ParagraphNode;
-export type RenderableElement = SelectableElement | ContentNode;
+export type Node =
+  | DocumentNode
+  | StructureNode
+  | SectionNode
+  | BlockNode
+  | ContentNode
+  | ListItemNode
+  | TableGroupNode
+  | TableHeaderNode
+  | TableBodyNode
+  | TableRowNode
+  | TableCellNode;
 
-// Export aliases for backward compatibility
-export type StructuralElement = SelectableElement;
-export type ContentElement = ContentNode;
+// Helper types for navigation
+export type NavigableNode = DocumentNode | StructureNode | SectionNode;
+export type SelectableNode = StructureNode | SectionNode | BlockNode;

@@ -1,5 +1,4 @@
 import { XMLParser } from 'fast-xml-parser';
-import type { Footnote } from '../types/index.ts';
 
 /* ===================== XML Parser Configuration ===================== */
 
@@ -25,7 +24,7 @@ const ATTR_KEY = ':@';
 const SKIP_KEYS = new Set([ATTR_KEY, '#text', ':text', '?xml']);
 const lnameOf = (raw: string) => raw.replace(/^[^:]*:/, '').toLowerCase();
 
-export function tagKey(n: PONode): string | null {
+function tagKey(n: PONode): string | null {
   if (typeof n !== 'object' || n === null) return null;
   for (const k of Object.keys(n)) {
     if (!SKIP_KEYS.has(k)) return k;
@@ -69,17 +68,6 @@ export function allChildren(n: PONode, name: string): PONode[] {
   return childrenOf(n).filter(c => lname(c) === target);
 }
 
-export function allDesc(n: PONode, name: string): PONode[] {
-  const target = name.toLowerCase();
-  const out: PONode[] = [];
-  const walk = (x: PONode) => {
-    if (lname(x) === target) out.push(x);
-    for (const c of childrenOf(x)) walk(c);
-  };
-  walk(n);
-  return out;
-}
-
 export function textDeep(n: PONode): string {
   let out = '';
   const walk = (x: PONode) => {
@@ -100,124 +88,4 @@ export function levelFromCode(code: string): number {
   const digits = s.replace(/\D/g, '');
   if (!digits) return 1;
   return Math.ceil(digits.length / 3);
-}
-
-/* ===================== Inline → Markdown ===================== */
-
-export function renderInlineToMd(nodes: PONode[]): string {
-  let out = '';
-
-  const renderChildren = (arr: PONode[]) => {
-    const start = out.length;
-    for (const c of arr) walk(c);
-    return out.slice(start);
-  };
-
-  const walk = (n: PONode) => {
-    const t = lname(n);
-    if (!t) {
-      if (isTextNode(n)) out += textOf(n);
-      return;
-    }
-    const kids = childrenOf(n);
-
-    switch (t) {
-      case 'b':
-        out += '**' + renderChildren(kids) + '**';
-        break;
-      case 'i':
-        out += '*' + renderChildren(kids) + '*';
-        break;
-      case 'u':
-        out += '<u>' + renderChildren(kids) + '</u>';
-        break;
-      case 'sup':
-        out += '<sup>' + renderChildren(kids) + '</sup>';
-        break;
-      case 'sub':
-        out += '<sub>' + renderChildren(kids) + '</sub>';
-        break;
-      case 'small':
-        out += '<small>' + renderChildren(kids) + '</small>';
-        break;
-      case 'br':
-        out += '<br />';
-        break;
-      case 'noindex':
-        out += renderChildren(kids);
-        break;
-      case 'fnr': {
-        const at = attrsOf(n);
-        const id = at.ID ?? at.Id ?? at.id ?? renderChildren(kids);
-        if (id) out += `[^${String(id).trim()}]`;
-        break;
-      }
-      default:
-        out += renderChildren(kids);
-    }
-  };
-
-  for (const n of nodes) walk(n);
-  return out;
-}
-
-/* ===================== Article/Element Parsing Helpers ===================== */
-
-export function parseArticleEnbez(raw: string): { label: string; id: string } | null {
-  const s = raw.trim();
-  let m = s.match(/^§+\s*([\d]+[a-zA-Z]?)$/);
-  if (m) return { label: `§ ${m[1]}`, id: m[1] };
-  m = s.match(/^Art(?:\.|ikel)?\s*([\d]+[a-zA-Z]?)$/i);
-  if (m) return { label: `Art. ${m[1]}`, id: m[1] };
-  m = s.match(/^Anlage\s+(\d+)$/);
-  if (m) return { label: `Anlage ${m[1]}`, id: `Anl${m[1]}` };
-  return null;
-}
-
-export function collectFootnotes(norm: PONode): Footnote[] {
-  const out: Footnote[] = [];
-  const fns = allDesc(norm, 'footnote');
-  for (const fn of fns) {
-    const at = attrsOf(fn);
-    const rawId = at.ID ?? at.Id ?? at.id ?? '';
-    const id = String(rawId).trim();
-    if (!id) continue;
-    const md = renderInlineToMd(childrenOf(fn)).trim();
-    out.push({ id, md });
-  }
-  return out;
-}
-
-/* ===================== Automatic ID Generation ===================== */
-
-/**
- * Assigns automatic IDs to child nodes that don't have explicit IDs.
- * Uses the pattern:
- * - If only one child: uses the parent ID directly
- * - If multiple children: uses parentId#<index> for child nodes without IDs.
- */
-export function assignAutomaticIds<T extends { id?: string; type: string; children?: any[] }>(
-  children: T[],
-  parentId: string
-): void {
-  const childrenWithoutIds = children.filter(child => !child.id);
-
-  if (childrenWithoutIds.length === 1 && children.length === 1) {
-    // Single child case: use parent ID directly
-    childrenWithoutIds[0].id = parentId;
-  } else {
-    // Multiple children case: use parent#index pattern
-    children.forEach((child, index) => {
-      if (!child.id) {
-        child.id = `${parentId}#${index}`;
-      }
-    });
-  }
-
-  // Recursively assign IDs to grandchildren after parent IDs are set
-  children.forEach(child => {
-    if (child.children && child.children.length > 0 && child.id) {
-      assignAutomaticIds(child.children, child.id);
-    }
-  });
 }

@@ -15,12 +15,18 @@ const ALIGN_CLASSES: Record<Align, string> = {
 
 export function ImageRenderer({ element, className }: Props) {
   return (
-    <div className={cn('my-4', element.align && ALIGN_CLASSES[element.align as Align], className)}>
+    <div
+      className={cn(
+        'my-4',
+        element.meta?.align && ALIGN_CLASSES[element.meta.align as Align],
+        className
+      )}
+    >
       <img
-        src={element.src}
-        alt={element.alt || ''}
-        width={element.width}
-        height={element.height}
+        src={element.meta?.src || ''}
+        alt={element.meta?.alt || ''}
+        width={element.meta?.width}
+        height={element.meta?.height}
         className="max-w-full h-auto border border-gray-200 rounded"
       />
     </div>

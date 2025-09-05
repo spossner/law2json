@@ -14,7 +14,7 @@ import type {
   TableCellNode,
   ImageNode,
   BaseNode,
-} from '../types/law-spec.ts';
+} from '../types/index.ts';
 
 import {
   parser,

@@ -21,16 +21,16 @@ const UnorderedList = ({
     <ul
       className={cn(
         'space-y-2 ml-4',
-        listElement.listType === 'Bullet'
+        listElement.meta?.listType === 'Bullet'
           ? 'list-disc list-inside'
-          : listElement.listType === 'Dash'
+          : listElement.meta?.listType === 'Dash'
             ? 'list-none'
             : 'list-disc list-inside'
       )}
     >
       {listElement.children.map((listItem, index) => (
         <li key={index} className="text-gray-900">
-          {listElement.listType === 'Dash' && '– '}
+          {listElement.meta?.listType === 'Dash' && '– '}
           {listItem.children.map((child, childIndex) => (
             <ContentRenderer
               key={childIndex}
