@@ -11,6 +11,8 @@ export type PONode =
 export const parser = new XMLParser({
   preserveOrder: true,
   ignoreAttributes: false,
+  ignoreDeclaration: true,
+  ignorePiTags: true,
   attributeNamePrefix: '',
   processEntities: true,
   trimValues: true,
@@ -88,4 +90,15 @@ export function levelFromCode(code: string): number {
   const digits = s.replace(/\D/g, '');
   if (!digits) return 1;
   return Math.ceil(digits.length / 3);
+}
+
+/* ====================== Random numbers =================== */
+export function generateUID(): string {
+  const uuid = crypto.randomUUID()
+  const [part1] = uuid.split('-')
+
+  if (part1 === undefined) {
+    throw Error('could not generate uid')
+  }
+  return part1
 }

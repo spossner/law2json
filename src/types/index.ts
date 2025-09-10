@@ -3,55 +3,36 @@
  * Simplified unified structure with type, id, label, title, content, meta, and children
  */
 
-// Base node interface - all nodes share this structure
-export interface BaseNode {
-  type?:
-    | 'document'
-    | 'structure'
-    | 'section'
-    | 'block'
-    | 'list'
-    | 'text'
-    | 'listItem'
-    | 'image'
-    | 'table'
-    | 'tableGroup'
-    | 'tableHeader'
-    | 'tableBody'
-    | 'tableRow'
-    | 'tableCell'
-    | 'footnote';
-  id?: string;
-  text?: string;
-  meta?: unknown;
-  children: BaseNode[];
-}
-
-// Specific node types
-export interface SectionNode extends BaseNode {
-  type: 'section';
-  id: string; // normalized from enbez (e.g., "§1")
-  text: string; // combined as "<label> <title>"
+/**
+ * 1st Level Nodes
+ * Structure or Section
+ */
+export interface SectionNode {
+  type: 'section'
+  id: string // normalized from enbez (e.g., "§1")
+  text: string // combined as "<label> <title>"
   meta: {
-    documentId?: string; // optional document reference
-  };
-  children: BlockNode[];
+    documentId?: string // optional document reference
+  }
+  children: BlockNode[]
 }
 
-export interface StructureNode extends BaseNode {
-  type: 'structure';
-  id: string; // from gliederungskennzahl (e.g., "010")
-  text: string; // combined as "<label> - <title>"
-  children: SelectableNode[];
+export interface StructureNode {
+  type: 'structure'
+  id: string // from gliederungskennzahl (e.g., "010")
+  text: string // combined as "<label> - <title>"
+  children: SelectableNode[]
 }
 
-export interface BlockNode extends BaseNode {
-  type: 'block';
-  children: ContentNode[];
+export interface BlockNode {
+  type: 'block'
+  id: string
+  children: ContentNode[]
 }
 
-export interface ListNode extends BaseNode {
-  type: 'list';
+export interface ListNode {
+  type: 'list'
+  id: string
   meta: {
     listType:
       | 'arabic'
@@ -64,98 +45,97 @@ export interface ListNode extends BaseNode {
       | 'Dash'
       | 'Bullet'
       | 'Symbol'
-      | 'None';
-  };
-  children: ListItemNode[];
+      | 'None'
+  }
+  children: ListItemNode[]
 }
 
-export interface TextNode extends BaseNode {
-  type: 'text';
-  text: string; // content text
-  id?: string; // optional ID based on content or position
-  children: never[];
+export interface TextNode {
+  type: 'text'
+  text: string // content text
+  id?: string // optional ID based on content or position
+  children: never[]
 }
 
-export interface ListItemNode extends BaseNode {
-  type: 'listItem';
-  text: string; // numbering/bullet marker (e.g., "1.", "a)")
-  children: ContentNode[];
+export interface ListItemNode {
+  type: 'listItem'
+  id: string
+  text: string // numbering/bullet marker (e.g., "1.", "a)")
+  children: ContentNode[]
 }
 
-export interface ImageNode extends BaseNode {
-  type: 'image';
-  id?: string; // optional ID based on position
+export interface ImageNode {
+  type: 'image'
+  id?: string // optional ID based on position
   meta: {
-    src: string;
-    alt?: string;
-    height?: string;
-    width?: string;
-    align?: 'left' | 'center' | 'right';
-    type?: string;
-  };
-  children: never[];
+    src: string
+    alt?: string
+    height?: string
+    width?: string
+    align?: 'left' | 'center' | 'right'
+    type?: string
+  }
+  children: never[]
 }
 
-// Table structures remain complex but follow base pattern
-export interface TableNode extends BaseNode {
-  type: 'table';
-  meta?: {
-    frame?: string;
-    pgwide?: string;
-  };
+export interface TableNode {
+  type: 'table'
+  id?: string
+  columnNames: string[]; // Array of column names in order
+  head?: TableHead;
+  body?: TableBody;
 }
 
-export interface TableGroupNode extends BaseNode {
-  type: 'tableGroup';
-  meta: {
-    cols: number;
-  };
+export interface TableHead {
+  rows: TableRow[];
 }
 
-export interface TableHeaderNode extends BaseNode {
-  type: 'tableHeader';
+export interface TableBody {
+  rows: TableRow[];
 }
 
-export interface TableBodyNode extends BaseNode {
-  type: 'tableBody';
+export interface TableRow {
+  valign?: 'top' | 'bottom' | 'middle';
+  cells: TableCell[];
 }
 
-export interface TableRowNode extends BaseNode {
-  type: 'tableRow';
+export interface TableCell {
+  colspan?: number;
+  content: ContentNode[];
 }
 
-export interface TableCellNode extends BaseNode {
-  type: 'tableCell';
-  meta?: {
-    colname?: string;
-  };
-}
-
-export interface FootnoteNode extends BaseNode {
-  type: 'footnote';
-  id: string;
+export interface FootnoteNode {
+  type: 'footnote'
+  id: string
 }
 
 // Document root with metadata
-export interface DocumentNode extends BaseNode {
-  type: 'document';
+export interface DocumentNode {
+  type: 'document'
   meta: {
-    legalAbbr: string; // from jurabk (e.g., "BNatSchG 2009")
-    officialAbbr: string; // from amtabk (e.g., "BNatSchG")
-    date: string; // from ausfertigung-datum (ISO format)
-    citation: {
-      publication: string; // from periodikum (e.g., "BGBl I")
-      reference: string; // from zitstelle (e.g., "2009, 2542")
-    };
-    shortTitle: string; // from kurzue
-    longTitle: string; // from langue
-    notes: string[]; // from standkommentar (array)
-    documentId: string; // from doknr
-  };
+    jurabk: string // e.g., "BNatSchG 2009"
+    amtabk: string // e.g., "BNatSchG"
+    'ausfertigung-datum': string // ISO format
+    fundstelle: {
+      periodikum: string // e.g., "BGBl I"
+      zitstelle: string // e.g., "2009, 2542"
+    }
+    kurzue: string
+    langue: string
+    standkommentar: string[]
+    doknr: string
+  }
+  children: (SectionNode | StructureNode)[]
 }
 
 // Union types
-export type ContentNode = TextNode | ListNode | TableNode | ImageNode | FootnoteNode;
+export type ContentNode =
+  | TextNode
+  | ListNode
+  | TableNode
+  | ImageNode
+  | FootnoteNode
+  | ListItemNode
 
 export type Node =
   | DocumentNode
@@ -163,13 +143,10 @@ export type Node =
   | SectionNode
   | BlockNode
   | ContentNode
-  | ListItemNode
-  | TableGroupNode
-  | TableHeaderNode
-  | TableBodyNode
-  | TableRowNode
-  | TableCellNode;
+  | TableHead
+  | TableBody
+  | TableRow
+  | TableCell
 
 // Helper types for navigation
-export type NavigableNode = DocumentNode | StructureNode | SectionNode;
-export type SelectableNode = StructureNode | SectionNode | BlockNode;
+export type SelectableNode = StructureNode | SectionNode

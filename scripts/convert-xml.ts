@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 
-import fs from 'node:fs';
-import { convert } from '../src/lib/converter.ts';
+import * as fs from 'fs';
+import { convert } from '../src/lib/converter';
 
 function main(): void {
   const args = process.argv.slice(2);
