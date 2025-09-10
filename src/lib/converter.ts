@@ -39,6 +39,20 @@ function normalizeId(enbez: string): string {
 }
 
 /**
+ * Normalize whitespace characters by replacing non-breaking spaces and other special spaces with regular spaces
+ */
+function normalizeWhitespace(text: string): string {
+    return text
+        .replace(/\u00A0/g, ' ')  // Non-breaking space (NBSP)
+        .replace(/\u2007/g, ' ')  // Figure space
+        .replace(/\u2009/g, ' ')  // Thin space
+        .replace(/\u200A/g, ' ')  // Hair space
+        .replace(/\u202F/g, ' ')  // Narrow no-break space
+        .replace(/\u3000/g, ' ')  // Ideographic space
+        .replace(/\s+/g, ' ')     // Collapse multiple spaces into one
+}
+
+/**
  * Extract text content with basic formatting preserved
  */
 function extractTextContent(nodes: PONode[]): string {
@@ -46,7 +60,7 @@ function extractTextContent(nodes: PONode[]): string {
 
     const processNode = (node: PONode): void => {
         if (isTextNode(node)) {
-            result += textOf(node)
+            result += normalizeWhitespace(textOf(node))
             return
         }
 
@@ -115,7 +129,7 @@ function calculateColspan(namest?: string, nameend?: string, columnNames: string
  * @TODO check if not the pure text content is alays good to use (-> custom symbols?)
  */
 function extractListItemLabel(itemNode: PONode): string {
-    const text = textDeep(itemNode)
+    const text = normalizeWhitespace(textDeep(itemNode))
     const match = text.match(/^(\d+\.|[a-zA-Z]+\)|[ivxIVX]+\)|-|\*)/)
     return match ? match[1] : ''
 }
@@ -182,7 +196,7 @@ function parseContentNodes(nodes: PONode[], parentId?: string): ContentNode[] {
 
             case 'table': {
                 flushTextBuffer()
-                result.push(parseTable(node, parentId));
+                result.push(parseTable(node, buildId(parentId, result.length)));
                 break
             }
 
@@ -243,11 +257,12 @@ function parseContentNodes(nodes: PONode[], parentId?: string): ContentNode[] {
 function parseTable(tableNode: PONode, parentId?: string): TableNode {
     const children = childrenOf(tableNode)
     const tgroup = children.find(child => lname(child) === 'tgroup')
+    const tableId = buildId(parentId, 't');
     
     if (!tgroup) {
         return {
             type: 'table',
-            id: buildId(parentId, 'table'),
+            id: tableId,
             columnNames: [],
         }
     }
@@ -267,7 +282,7 @@ function parseTable(tableNode: PONode, parentId?: string): TableNode {
     if (theadEl) {
         const theadRows = childrenOf(theadEl).filter(child => lname(child) === 'row')
         head = {
-            rows: theadRows.map(rowNode => parseTableRow(rowNode, columnNames))
+            rows: theadRows.map((rowNode, rowNo) => parseTableRow(rowNode, columnNames, buildId(tableId, "h", rowNo)))
         }
     }
 
@@ -277,13 +292,13 @@ function parseTable(tableNode: PONode, parentId?: string): TableNode {
     if (tbodyEl) {
         const tbodyRows = childrenOf(tbodyEl).filter(child => lname(child) === 'row')
         body = {
-            rows: tbodyRows.map(rowNode => parseTableRow(rowNode, columnNames))
+            rows: tbodyRows.map((rowNode, rowNo) => parseTableRow(rowNode, columnNames, buildId(tableId, "b", rowNo)))
         }
     }
 
     return {
         type: 'table',
-        id: buildId(parentId, 'table'),
+        id: tableId,
         columnNames,
         head,
         body,
@@ -293,11 +308,11 @@ function parseTable(tableNode: PONode, parentId?: string): TableNode {
 /**
  * Parse table row
  */
-function parseTableRow(rowNode: PONode, columnNames?: string[]): TableRow {
+function parseTableRow(rowNode: PONode, columnNames: string[], parentId: string): TableRow {
     const attrs = attrsOf(rowNode)
     const entries = childrenOf(rowNode).filter(child => lname(child) === 'entry')
     
-    const cells = entries.map(entryNode => parseTableCell(entryNode, columnNames))
+    const cells = entries.map((entryNode, colNo) => parseTableCell(entryNode, columnNames, buildId(parentId,colNo)))
     
     return {
         ...(attrs.valign && { valign: attrs.valign as 'top' | 'bottom' | 'middle' }),
@@ -308,7 +323,7 @@ function parseTableRow(rowNode: PONode, columnNames?: string[]): TableRow {
 /**
  * Parse table cell
  */
-function parseTableCell(entryNode: PONode, columnNames?: string[]): TableCell {
+function parseTableCell(entryNode: PONode, columnNames: string[], parentId: string): TableCell {
     const attrs = attrsOf(entryNode)
     const entryChildren = childrenOf(entryNode)
     
@@ -316,7 +331,7 @@ function parseTableCell(entryNode: PONode, columnNames?: string[]): TableCell {
     const colspan = calculateColspan(attrs.namest, attrs.nameend, columnNames)
     
     // Parse cell content
-    const content = parseContentNodes(entryChildren)
+    const content = parseContentNodes(entryChildren, parentId)
     
     return {
         ...(colspan > 1 && { colspan }),
@@ -405,9 +420,9 @@ function parseStructure(
     const labelN = firstChild(gl, 'gliederungsbez')
     const titleN = firstChild(gl, 'gliederungstitel')
 
-    const id = codeN ? textDeep(codeN) : ''
-    const label = labelN ? textDeep(labelN) : ''
-    const title = titleN ? textDeep(titleN) : ''
+    const id = codeN ? normalizeWhitespace(textDeep(codeN)) : ''
+    const label = labelN ? normalizeWhitespace(textDeep(labelN)) : ''
+    const title = titleN ? normalizeWhitespace(textDeep(titleN)) : ''
 
     if (!id || !label) return null
 
@@ -441,9 +456,9 @@ function parseSection(norm: PONode, prefix?: string): SectionNode | null {
     const enbezN = firstChild(meta, 'enbez')
     if (!enbezN) return null
 
-    const enbez = textDeep(enbezN)
+    const enbez = normalizeWhitespace(textDeep(enbezN))
     const titleN = firstChild(meta, 'titel')
-    const title = titleN ? textDeep(titleN) : ''
+    const title = titleN ? normalizeWhitespace(textDeep(titleN)) : ''
     const doknr = attrsOf(norm).doknr
 
     const normalizedId = normalizeId(enbez)
