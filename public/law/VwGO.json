@@ -24,7 +24,788 @@
         {
           "type": "block",
           "id": "Inhaltsübersicht/1",
-          "children": []
+          "children": [
+            {
+              "type": "table",
+              "id": "Inhaltsübersicht/1/table",
+              "columnNames": [
+                "col1",
+                "col2",
+                "col3",
+                "col4",
+                "col5"
+              ],
+              "body": {
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "colspan": 5,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "TEIL I",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "colspan": 4,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "**Gerichtsverfassung**",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "1. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Gerichte",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 1 bis 14",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "2. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Richter",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 15 bis 18",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "3. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Ehrenamtliche Richter",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 19 bis 34",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "4. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Vertreter des öffentlichen Interesses",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 35 bis 37",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "5. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Gerichtsverwaltung",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 38 und 39",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "6. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Verwaltungsrechtsweg und Zuständigkeit",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 40 bis 53",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "colspan": 5,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "TEIL II",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "colspan": 4,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "**Verfahren**",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "7. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Allgemeine Verfahrensvorschriften",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 54 bis 67a",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "8. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Besondere Vorschriften für Anfechtungs- und Verpflichtungsklagen",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 68 bis 80c",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "9. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Verfahren im ersten Rechtszug",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 81 bis 106",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "10. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Urteile und andere Entscheidungen",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 107 bis 122",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "11. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Einstweilige Anordnung",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§ 123",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "colspan": 5,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "TEIL III",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "colspan": 4,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "**Rechtsmittel und Wiederaufnahme des Verfahrens**",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "12. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Berufung",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 124 bis 131",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "13. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Revision",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 132 bis 145",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "14. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Beschwerde, Erinnerung, Anhörungsrüge",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 146 bis 152a",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "15. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Wiederaufnahme des Verfahrens",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§ 153",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "colspan": 5,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "TEIL IV",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "colspan": 4,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "**Kosten und Vollstreckung**",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "16. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Kosten",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 154 bis 166",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "17. Abschnitt:",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "Vollstreckung",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 167 bis 172",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "colspan": 5,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "TEIL V",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "content": []
+                      },
+                      {
+                        "colspan": 3,
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "**Schluß- und Übergangsbestimmungen**",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "content": [
+                          {
+                            "type": "text",
+                            "id": "0",
+                            "text": "§§ 173 bis 195",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     },

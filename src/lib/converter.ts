@@ -8,6 +8,8 @@ import type {
   SectionNode,
   StructureNode,
   TableNode,
+  TableRow,
+  TableCell,
   TextNode,
 } from '../types';
 
@@ -88,6 +90,24 @@ function extractTextContent(nodes: PONode[]): string {
 function determineListType(listNode: PONode): ListNode['meta']['listType'] {
     const attrs = attrsOf(listNode)
     return attrs.Type || 'arabic'
+}
+
+/**
+ * Calculate colspan based on namest/nameend attributes and column names
+ */
+function calculateColspan(namest?: string, nameend?: string, columnNames: string[] = []): number {
+  if (!namest || !nameend) {
+    return 1;
+  }
+  
+  const startIndex = columnNames.indexOf(namest);
+  const endIndex = columnNames.indexOf(nameend);
+  
+  if (startIndex === -1 || endIndex === -1) {
+    return 1;
+  }
+  
+  return endIndex - startIndex + 1;
 }
 
 /**
@@ -215,6 +235,93 @@ function parseContentNodes(nodes: PONode[], parentId?: string): ContentNode[] {
 
     flushTextBuffer()
     return result
+}
+
+/**
+ * Parse table with head and body support
+ */
+function parseTable(tableNode: PONode, parentId?: string): TableNode {
+    const children = childrenOf(tableNode)
+    const tgroup = children.find(child => lname(child) === 'tgroup')
+    
+    if (!tgroup) {
+        return {
+            type: 'table',
+            id: buildId(parentId, 'table'),
+            columnNames: [],
+        }
+    }
+
+    const tgroupChildren = childrenOf(tgroup)
+    
+    // Extract column names from colspec elements
+    const colspecs = tgroupChildren.filter(child => lname(child) === 'colspec')
+    const columnNames = colspecs.map(colspec => {
+        const attrs = attrsOf(colspec)
+        return attrs.colname || `col${attrs.colnum || ''}`
+    })
+
+    // Parse thead
+    const theadEl = tgroupChildren.find(child => lname(child) === 'thead')
+    let head: TableNode['head']
+    if (theadEl) {
+        const theadRows = childrenOf(theadEl).filter(child => lname(child) === 'row')
+        head = {
+            rows: theadRows.map(rowNode => parseTableRow(rowNode, columnNames))
+        }
+    }
+
+    // Parse tbody
+    const tbodyEl = tgroupChildren.find(child => lname(child) === 'tbody')
+    let body: TableNode['body']
+    if (tbodyEl) {
+        const tbodyRows = childrenOf(tbodyEl).filter(child => lname(child) === 'row')
+        body = {
+            rows: tbodyRows.map(rowNode => parseTableRow(rowNode, columnNames))
+        }
+    }
+
+    return {
+        type: 'table',
+        id: buildId(parentId, 'table'),
+        columnNames,
+        head,
+        body,
+    }
+}
+
+/**
+ * Parse table row
+ */
+function parseTableRow(rowNode: PONode, columnNames?: string[]): TableRow {
+    const attrs = attrsOf(rowNode)
+    const entries = childrenOf(rowNode).filter(child => lname(child) === 'entry')
+    
+    const cells = entries.map(entryNode => parseTableCell(entryNode, columnNames))
+    
+    return {
+        ...(attrs.valign && { valign: attrs.valign as 'top' | 'bottom' | 'middle' }),
+        cells,
+    }
+}
+
+/**
+ * Parse table cell
+ */
+function parseTableCell(entryNode: PONode, columnNames?: string[]): TableCell {
+    const attrs = attrsOf(entryNode)
+    const entryChildren = childrenOf(entryNode)
+    
+    // Calculate colspan based on namest/nameend attributes
+    const colspan = calculateColspan(attrs.namest, attrs.nameend, columnNames)
+    
+    // Parse cell content
+    const content = parseContentNodes(entryChildren)
+    
+    return {
+        ...(colspan > 1 && { colspan }),
+        content,
+    }
 }
 
 /**
@@ -357,11 +464,14 @@ function parseSection(norm: PONode, prefix?: string): SectionNode | null {
         const textEl = firstChild(textdatenEl, 'text')
         if (textEl) {
             for (const contentEl of allChildren(textEl, 'content')) {
-                for (const [i, child] of childrenOf(contentEl).entries()) {
+                const contentChildren = childrenOf(contentEl)
+                let blockIndex = 1
+                
+                for (const child of contentChildren) {
                     const tagName = lname(child)
 
                     if (tagName === 'p') {
-                        const blockId = buildId(prefix, normalizedId, i + 1)
+                        const blockId = buildId(prefix, normalizedId, blockIndex)
                         // Each P element becomes a block
                         const block: BlockNode = {
                             type: 'block',
@@ -372,7 +482,19 @@ function parseSection(norm: PONode, prefix?: string): SectionNode | null {
                             ),
                         }
                         section.children.push(block)
+                        blockIndex++
+                    } else if (tagName === 'table') {
+                        const blockId = buildId(prefix, normalizedId, blockIndex)
+                        // Table becomes a block containing the table
+                        const block: BlockNode = {
+                            type: 'block',
+                            id: blockId,
+                            children: [parseTable(child, blockId)],
+                        }
+                        section.children.push(block)
+                        blockIndex++
                     }
+                    // Skip other elements like BR for now
                 }
             }
         }

@@ -41252,12 +41252,24 @@
           "children": [
             {
               "type": "block",
+              "id": "090/Anlage1/1",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "090/Anlage1/1/0",
+                  "text": "Der – Die – … (Körperschaft) mit Sitz in … verfolgt ausschließlich und unmittelbar – gemeinnützige – mildtätige – kirchliche – Zwecke (nicht verfolgte Zwecke streichen) im Sinne des Abschnitts „Steuerbegünstigte Zwecke“ der Abgabenordnung.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "block",
               "id": "090/Anlage1/2",
               "children": [
                 {
                   "type": "text",
                   "id": "090/Anlage1/2/0",
-                  "text": "Der – Die – … (Körperschaft) mit Sitz in … verfolgt ausschließlich und unmittelbar – gemeinnützige – mildtätige – kirchliche – Zwecke (nicht verfolgte Zwecke streichen) im Sinne des Abschnitts „Steuerbegünstigte Zwecke“ der Abgabenordnung.",
+                  "text": "Zweck der Körperschaft ist … (z. B. die Förderung von Wissenschaft und Forschung, Jugend- und Altenhilfe, Erziehung, Volks- und Berufsbildung, Kunst und Kultur, Landschaftspflege, Umweltschutz, des öffentlichen Gesundheitswesens, des Sports, Unterstützung hilfsbedürftiger Personen).",
                   "children": []
                 }
               ]
@@ -41269,7 +41281,7 @@
                 {
                   "type": "text",
                   "id": "090/Anlage1/3/0",
-                  "text": "Zweck der Körperschaft ist … (z. B. die Förderung von Wissenschaft und Forschung, Jugend- und Altenhilfe, Erziehung, Volks- und Berufsbildung, Kunst und Kultur, Landschaftspflege, Umweltschutz, des öffentlichen Gesundheitswesens, des Sports, Unterstützung hilfsbedürftiger Personen).",
+                  "text": "Der Satzungszweck wird verwirklicht insbesondere durch … (z. B. Durchführung wissenschaftlicher Veranstaltungen und Forschungsvorhaben, Vergabe von Forschungsaufträgen, Unterhaltung einer Schule, einer Erziehungsberatungsstelle, Pflege von Kunstsammlungen, Pflege des Liedgutes und des Chorgesanges, Errichtung von Naturschutzgebieten, Unterhaltung eines Kindergartens, Kinder-, Jugendheimes, Unterhaltung eines Altenheimes, eines Erholungsheimes, Bekämpfung des Drogenmissbrauchs, des Lärms, Förderung sportlicher Übungen und Leistungen).",
                   "children": []
                 }
               ]
@@ -41281,18 +41293,6 @@
                 {
                   "type": "text",
                   "id": "090/Anlage1/4/0",
-                  "text": "Der Satzungszweck wird verwirklicht insbesondere durch … (z. B. Durchführung wissenschaftlicher Veranstaltungen und Forschungsvorhaben, Vergabe von Forschungsaufträgen, Unterhaltung einer Schule, einer Erziehungsberatungsstelle, Pflege von Kunstsammlungen, Pflege des Liedgutes und des Chorgesanges, Errichtung von Naturschutzgebieten, Unterhaltung eines Kindergartens, Kinder-, Jugendheimes, Unterhaltung eines Altenheimes, eines Erholungsheimes, Bekämpfung des Drogenmissbrauchs, des Lärms, Förderung sportlicher Übungen und Leistungen).",
-                  "children": []
-                }
-              ]
-            },
-            {
-              "type": "block",
-              "id": "090/Anlage1/8",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "090/Anlage1/8/0",
                   "text": "Die Körperschaft ist selbstlos tätig; sie verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.",
                   "children": []
                 }
@@ -41300,11 +41300,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/12",
+              "id": "090/Anlage1/5",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/12/0",
+                  "id": "090/Anlage1/5/0",
                   "text": "Mittel der Körperschaft dürfen nur für die satzungsmäßigen Zwecke verwendet werden. Die Mitglieder erhalten keine Zuwendungen aus Mitteln der Körperschaft.",
                   "children": []
                 }
@@ -41312,11 +41312,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/16",
+              "id": "090/Anlage1/6",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/16/0",
+                  "id": "090/Anlage1/6/0",
                   "text": "Es darf keine Person durch Ausgaben, die dem Zweck der Körperschaft fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.",
                   "children": []
                 }
@@ -41324,35 +41324,35 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/20",
+              "id": "090/Anlage1/7",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/20/0",
+                  "id": "090/Anlage1/7/0",
                   "text": "Bei Auflösung oder Aufhebung der Körperschaft oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen der Körperschaft",
                   "children": []
                 },
                 {
                   "type": "list",
-                  "id": "090/Anlage1/20",
+                  "id": "090/Anlage1/7",
                   "meta": {
                     "listType": "arabic"
                   },
                   "children": [
                     {
                       "type": "listItem",
-                      "id": "090/Anlage1/20/1",
+                      "id": "090/Anlage1/7/1",
                       "text": "1.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "090/Anlage1/20/1/0",
+                          "id": "090/Anlage1/7/1/0",
                           "text": "an – den – die – das – … (Bezeichnung einer juristischen Person des öffentlichen Rechts oder einer anderen steuerbegünstigten Körperschaft), – der – die – das – es unmittelbar und ausschließlich für gemeinnützige, mildtätige oder kirchliche Zwecke zu verwenden hat.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "090/Anlage1/20/1/0",
+                          "id": "090/Anlage1/7/1/0",
                           "text": "oder",
                           "children": []
                         }
@@ -41360,12 +41360,12 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "090/Anlage1/20/3",
+                      "id": "090/Anlage1/7/3",
                       "text": "2.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "090/Anlage1/20/2/0",
+                          "id": "090/Anlage1/7/2/0",
                           "text": "an eine juristische Person des öffentlichen Rechts oder eine andere steuerbegünstigte Körperschaft zwecks Verwendung für … (Angabe eines bestimmten gemeinnützigen, mildtätigen oder kirchlichen Zwecks, z. B. Förderung von Wissenschaft und Forschung, Erziehung, Volks- und Berufsbildung, der Unterstützung von Personen, die im Sinne von § 53 der Abgabenordnung wegen … bedürftig sind, Unterhaltung des Gotteshauses in …).",
                           "children": []
                         }
@@ -41377,11 +41377,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/21",
+              "id": "090/Anlage1/8",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/21/0",
+                  "id": "090/Anlage1/8/0",
                   "text": "**Weitere Hinweise**",
                   "children": []
                 }
@@ -41389,11 +41389,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/22",
+              "id": "090/Anlage1/9",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/22/0",
+                  "id": "090/Anlage1/9/0",
                   "text": "Bei**Betrieben gewerblicher Art von juristischen Personen des öffentlichen Rechts, bei den von einer juristischen Person des öffentlichen Rechts verwalteten unselbständigen Stiftungen und bei geistlichen Genossenschaften**(Orden, Kongregationen) ist folgende Bestimmung aufzunehmen:",
                   "children": []
                 }
@@ -41401,11 +41401,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/23",
+              "id": "090/Anlage1/10",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/23/0",
+                  "id": "090/Anlage1/10/0",
                   "text": "§ 3 Absatz 2:",
                   "children": []
                 }
@@ -41413,11 +41413,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/24",
+              "id": "090/Anlage1/11",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/24/0",
+                  "id": "090/Anlage1/11/0",
                   "text": "„Der – die – das … erhält bei Auflösung oder Aufhebung der Körperschaft oder bei Wegfall steuerbegünstigter Zwecke nicht mehr als – seine – ihre – eingezahlten Kapitalanteile und den gemeinen Wert seiner – ihrer – geleisteten Sacheinlagen zurück.“",
                   "children": []
                 }
@@ -41425,11 +41425,11 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/25",
+              "id": "090/Anlage1/12",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/25/0",
+                  "id": "090/Anlage1/12/0",
                   "text": "Bei**Stiftungen**ist diese Bestimmung nur erforderlich, wenn die Satzung dem Stifter einen Anspruch auf Rückgewähr von Vermögen einräumt. Fehlt die Regelung, wird das eingebrachte Vermögen wie das übrige Vermögen behandelt.",
                   "children": []
                 }
@@ -41437,35 +41437,35 @@
             },
             {
               "type": "block",
-              "id": "090/Anlage1/26",
+              "id": "090/Anlage1/13",
               "children": [
                 {
                   "type": "text",
-                  "id": "090/Anlage1/26/0",
+                  "id": "090/Anlage1/13/0",
                   "text": "Bei**Kapitalgesellschaften**sind folgende ergänzende Bestimmungen in die Satzung aufzunehmen:",
                   "children": []
                 },
                 {
                   "type": "list",
-                  "id": "090/Anlage1/26",
+                  "id": "090/Anlage1/13",
                   "meta": {
                     "listType": "arabic"
                   },
                   "children": [
                     {
                       "type": "listItem",
-                      "id": "090/Anlage1/26/1",
+                      "id": "090/Anlage1/13/1",
                       "text": "1.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/1/0",
+                          "id": "090/Anlage1/13/1/0",
                           "text": "§ 3 Absatz 1 Satz 2:",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/1/0",
+                          "id": "090/Anlage1/13/1/0",
                           "text": "„Die Gesellschafter dürfen keine Gewinnanteile und auch keine sonstigen Zuwendungen aus Mitteln der Körperschaft erhalten.”",
                           "children": []
                         }
@@ -41473,18 +41473,18 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "090/Anlage1/26/3",
+                      "id": "090/Anlage1/13/3",
                       "text": "2.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/2/0",
+                          "id": "090/Anlage1/13/2/0",
                           "text": "§ 3 Absatz 2:",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/2/0",
+                          "id": "090/Anlage1/13/2/0",
                           "text": "„Sie erhalten bei ihrem Ausscheiden oder bei Auflösung der Körperschaft oder bei Wegfall steuerbegünstigter Zwecke nicht mehr als ihre eingezahlten Kapitalanteile und den gemeinen Wert ihrer geleisteten Sacheinlagen zurück.”",
                           "children": []
                         }
@@ -41492,18 +41492,18 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "090/Anlage1/26/5",
+                      "id": "090/Anlage1/13/5",
                       "text": "3.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/3/0",
+                          "id": "090/Anlage1/13/3/0",
                           "text": "§ 5:",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "090/Anlage1/26/3/0",
+                          "id": "090/Anlage1/13/3/0",
                           "text": "„Bei Auflösung der Körperschaft oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen der Körperschaft, soweit es die eingezahlten Kapitalanteile der Gesellschafter und den gemeinen Wert der von den Gesellschaftern geleisteten Sacheinlagen übersteigt, ...”.",
                           "children": []
                         }
@@ -41513,7 +41513,7 @@
                 },
                 {
                   "type": "text",
-                  "id": "090/Anlage1/26/2",
+                  "id": "090/Anlage1/13/2",
                   "text": "§ 3 Absatz 2 und der Satzteil „soweit es die eingezahlten Kapitalanteile der Gesellschafter und den gemeinen Wert der von den Gesellschaftern geleisteten Sacheinlagen übersteigt,“ in § 5 sind nur erforderlich, wenn die Satzung einen Anspruch auf Rückgewähr von Vermögen einräumt.",
                   "children": []
                 }

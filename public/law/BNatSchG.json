@@ -13419,18 +13419,1150 @@
             },
             {
               "type": "block",
-              "id": "110/Anlage1/4",
-              "children": []
+              "id": "110/Anlage1/2",
+              "children": [
+                {
+                  "type": "table",
+                  "id": "110/Anlage1/2/table",
+                  "columnNames": [
+                    "COLSPEC0",
+                    "col1",
+                    "col2"
+                  ],
+                  "body": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Abschnitt 1**",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "colspan": 2,
+                            "content": []
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Bereiche zur Prüfung bei kollisionsgefährdeten Brutvogelarten**",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "colspan": 2,
+                            "content": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "table",
+                  "id": "110/Anlage1/2/table",
+                  "columnNames": [
+                    "col1",
+                    "col2",
+                    "col3",
+                    "col4"
+                  ],
+                  "head": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Brutvogelarten",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Nahbereich*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Zentraler\nPrüfbereich*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Erweiterter\nPrüfbereich*",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "body": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Seeadler\n*Haliaeetus albicilla*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "5 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Fischadler\n*Pandion haliaetus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "3 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Schreiadler\n*Clanga pomarina*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "3 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "5 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Steinadler\n*Aquila chrysaetos*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "3 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "5 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Wiesenweihe<sup>1</sup>\n*Circus pygargus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "400",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Kornweihe\n*Circus cyaneus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "400",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Rohrweihe<sup>1</sup>\n*Circus aeruginosus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "400",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Rotmilan\n*Milvus milvus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 200",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "3 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Schwarzmilan\n*Milvus migrans*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Wanderfalke\n*Falco peregrinus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Baumfalke\n*Falco subbuteo*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "350",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "450",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Wespenbussard\n*Pernis apivorus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Weißstorch\n*Ciconia ciconia*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 000",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Sumpfohreule\n*Asio flammeus*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Uhu<sup>1</sup>\n*Bubo bubo*",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "500",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "1 000",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "2 500",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "colspan": 4,
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "* Abstände in Metern, gemessen vom Mastfußmittelpunkt",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "colspan": 4,
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "<sup>1</sup>Rohrweihe, Wiesenweihe und Uhu sind nur dann kollisionsgefährdet, wenn die Höhe der Rotorunterkante in Küstennähe (bis 100 Kilometer) weniger als 30 m, im weiteren Flachland weniger als 50 m oder in hügeligem Gelände weniger als 80 m beträgt. Dies gilt, mit Ausnahme der Rohrweihe, nicht für den Nahbereich.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
               "type": "block",
-              "id": "110/Anlage1/6",
+              "id": "110/Anlage1/3",
+              "children": [
+                {
+                  "type": "table",
+                  "id": "110/Anlage1/3/table",
+                  "columnNames": [
+                    "col1",
+                    "col2"
+                  ],
+                  "body": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "colspan": 2,
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Abschnitt 2**",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "colspan": 2,
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Schutzmaßnahmen**",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "block",
+              "id": "110/Anlage1/4",
               "children": [
                 {
                   "type": "text",
-                  "id": "110/Anlage1/6/0",
+                  "id": "110/Anlage1/4/0",
                   "text": "Zur Vermeidung der Tötung oder Verletzung von Exemplaren europäischer Vogelarten nach Abschnitt 1 durch Windenergieanlagen sind insbesondere nachfolgend aufgeführte Schutzmaßnahmen fachlich anerkannt:",
                   "children": []
+                },
+                {
+                  "type": "table",
+                  "id": "110/Anlage1/4/table",
+                  "columnNames": [
+                    "col1",
+                    "col2"
+                  ],
+                  "body": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Schutzmaßnahme",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Beschreibung/Wirksamkeit",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Kleinräumige Standortwahl\n(Micro-Siting)",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Im Einzelfall kann durch die Verlagerung von Windenergieanlagen die Konfliktintensität verringert werden, beispielsweise durch ein Herausrücken der Windenergieanlagen aus besonders kritischen Bereichen einer Vogelart oder durch das Freihalten von Flugrouten zu essentiellen Nahrungshabitaten.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Vermeidung bzw. Verminderung des Eintritts von Verbotstatbeständen oder des Umfangs von Schutzmaßnahmen. Für alle Arten der Tabelle in Abschnitt 1 wirksam.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Antikollisionssystem",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Auf Basis automatisierter kamera- und/oder radarbasierter Detektion der Zielart muss das System in der Lage sein, bei Annäherung der Zielart rechtzeitig bei Unterschreitung einer vorab artspezifisch festgelegten Entfernung zur Windenergieanlage per Signal die Rotordrehgeschwindigkeit bis zum „Trudelbetrieb“ zu verringern.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Nach dem derzeitigen Stand der Wissenschaft und Technik kommt die Maßnahme in Deutschland derzeit nur für den Rotmilan in Frage, für den ein nachweislich wirksames, kamerabasiertes System zur Verfügung steht. Grundsätzlich erscheint es möglich, die Anwendung von Antikollisionssystemen zukünftig auch für weitere kollisionsgefährdete Großvögel, wie Seeadler, Fischadler, Schreiadler, Schwarzmilan und Weißstorch, einzusetzen. Antikollisionssysteme, deren Wirksamkeit noch nicht belegt ist, können im Einzelfall im Testbetrieb angeordnet werden, wenn begleitende Maßnahmen zur Erfolgskontrolle angeordnet werden.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Abschaltung bei landwirtschaftlichen Bewirtschaftungsereignissen",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Vorübergehende Abschaltung im Falle der Grünlandmahd und Ernte von Feldfrüchten sowie des Pflügens zwischen 1. April und 31. August auf Flächen, die in weniger als 250 Metern Entfernung vom Mastfußmittelpunkt einer Windenergieanlage gelegen sind. Bei Windparks sind in Bezug auf die Ausgestaltung der Maßnahme gegebenenfalls die diesbezüglichen Besonderheiten zu berücksichtigen. Die Abschaltmaßnahmen erfolgen von Beginn des Bewirtschaftungsereignisses bis mindestens 24 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang. Bei für den Artenschutz besonders konfliktträchtigen Standorten mit drei Brutvorkommen oder, bei besonders gefährdeten Vogelarten, mit zwei Brutvorkommen ist für mindestens 48 Stunden nach Beendigung des Bewirtschaftungsereignisses jeweils von Sonnenaufgang bis Sonnenuntergang abzuschalten. Die Maßnahme ist unter Berücksichtigung von artspezifischen Verhaltensmustern anzuordnen, insbesondere des von der Windgeschwindigkeit abhängigen Flugverhaltens beim Rotmilan.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Die Abschaltung bei Bewirtschaftungsereignissen trägt regelmäßig zur Senkung des Kollisionsrisikos bei und bringt eine übergreifende Vorteilswirkung mit sich. Durch die Abschaltung der Windenergieanlage während und kurz nach dem Bewirtschaftungsereignis wird eine wirksame Reduktion des temporär deutlich erhöhten Kollisionsrisikos erreicht. Die Maßnahme ist insbesondere für Rotmilan und Schwarzmilan, Rohrweihe, Schreiadler sowie den Weißstorch wirksam.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Anlage von attraktiven\nAusweichnahrungshabitaten",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Die Anlage von attraktiven Ausweichnahrungshabitaten wie zum Beispiel Feuchtland oder Nahrungsgewässern oder die Umstellung auf langfristig extensiv bewirtschaftete Ablenkflächen ist artspezifisch in ausreichend großem Umfang vorzunehmen. Über die Eignung und die Ausgestaltung der Fläche durch artspezifische Maßnahmen muss im Einzelfall entschieden werden. Eine vertragliche Sicherung zu Nutzungsbeschränkungen und/oder Bearbeitungsauflagen ist nachzuweisen. Die Umsetzung der Maßnahmen ist für die gesamte Betriebsdauer der Windenergieanlage durch vertragliche Vereinbarungen zwischen dem Vorhabenträger und den Flächenbewirtschaftern und -eigentümern sicherzustellen. Die Möglichkeit und Umsetzbarkeit solcher vertraglichen Regelungen ist der Genehmigungsbehörde vorab darzulegen.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Weißstorch, Baumfalke, Fischadler, Schreiadler, Weihen, Uhu, Sumpfohreule und Wespenbussard wirksam. Die Wirksamkeit der Schutzmaßnahme ergibt sich aus dem dauerhaften Weglocken der kollisionsgefährdeten Arten bzw. der Verlagerung der Flugaktivität aus dem Vorhabenbereich heraus. Eine Wirksamkeit ist, je nach Konstellation und Art auch nur ergänzend zu weiteren Maßnahmen anzunehmen.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Senkung der Attraktivität von\nHabitaten im Mastfußbereich",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Die Minimierung und unattraktive Gestaltung des Mastfußbereiches (entspricht der vom Rotor überstrichenen Fläche zuzüglich eines Puffers von 50 Metern) sowie der Kranstellfläche kann dazu dienen, die Anlockwirkung von Flächen im direkten Umfeld der Windenergieanlage für kollisionsgefährdete Arten zu verringern. Hierfür ist die Schutzmaßnahme regelmäßig durchzuführen. Auf Kurzrasenvegetation, Brachen sowie auf zu mähendes Grünland ist in jedem Fall zu verzichten. Je nach Standort, der umgebenden Flächennutzung sowie dem betroffenen Artenspektrum kann es geboten sein, die Schutzmaßnahme einzelfallspezifisch anzupassen.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Die Schutzmaßnahme ist insbesondere für Rotmilan, Schwarzmilan, Schreiadler, Weißstorch und Wespenbussard wirksam. Die Maßnahme ist als alleinige Schutzmaßnahme nicht ausreichend.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Phänologiebedingte Abschaltung",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Beschreibung:**Die phänologiebedingte Abschaltung von Windenergieanlagen umfasst bestimmte, abgrenzbare Entwicklungs-/Lebenszyklen mit erhöhter Nutzungsintensität des Brutplatzes (z. B. Balzzeit oder Zeit flügger Jungvögel). Sie beträgt in der Regel bis zu 4 oder bis zu 6 Wochen innerhalb des Zeitraums vom 1. März bis zum 31. August von Sonnenaufgang bis Sonnenuntergang. Die Zeiträume können bei bestimmten Witterungsbedingungen wie Starkregen oder hohen Windgeschwindigkeiten artspezifisch im Einzelfall beschränkt werden, sofern hinreichend belegt ist, dass auf Grund bestimmter artspezifischer Verhaltensmuster während dieser Zeiten keine regelmäßigen Flüge stattfinden, die zu einer signifikanten Erhöhung des Tötungs- und Verletzungsrisikos führen.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "cells": [
+                          {
+                            "content": []
+                          },
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "**Wirksamkeit:**Die Maßnahme ist grundsätzlich für alle Arten wirksam. Da sie mit erheblichen Energieverlusten verbunden ist, soll sie aber nur angeordnet werden, wenn keine andere Maßnahme zur Verfügung steht.",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -13458,6 +14590,616 @@
             },
             {
               "type": "block",
+              "id": "110/Anlage2/2",
+              "children": [
+                {
+                  "type": "table",
+                  "id": "110/Anlage2/2/table",
+                  "columnNames": [
+                    "COLSPEC0",
+                    "col1",
+                    "col2"
+                  ],
+                  "body": {
+                    "rows": [
+                      {
+                        "cells": [
+                          {
+                            "content": [
+                              {
+                                "type": "text",
+                                "id": "0",
+                                "text": "Zumutbarkeit und Höhe der Zahlung in Artenhilfsprogramme",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "colspan": 2,
+                            "content": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "block",
+              "id": "110/Anlage2/3",
+              "children": [
+                {
+                  "type": "list",
+                  "id": "110/Anlage2/3",
+                  "meta": {
+                    "listType": "arabic"
+                  },
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/3/1",
+                      "text": "1.",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/1/0",
+                          "text": "Begriffsbestimmungen",
+                          "children": []
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/1/0",
+                          "text": "Im Sinne dieser Anlage ist",
+                          "children": []
+                        },
+                        {
+                          "type": "list",
+                          "id": "110/Anlage2/3/1",
+                          "meta": {
+                            "listType": "Dash"
+                          },
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/1",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*A<sub>AHP</sub>*der prozentuale Anteil des Jahresertrages der Windenergieanlage, der mindestens im Rahmen des jährlich zu leistenden Beitrags in ein Artenhilfsprogramm zu leisten ist und der mit 2 Prozent festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/3",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*A<sub>KSa</sub>*die anzunehmende Abschaltung bei Verwendung eines Antikollisionssystems je Jahr, die mit 3 Prozent festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/5",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*AW*der anzulegende Wert in Euro je Megawattstunde, auf Grundlage der durchschnittlichen, mengengewichteten Zuschlagswerte der vergangenen drei Ausschreibungen von Windenergieanlagen an Land, veröffentlicht durch die Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahnen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/7",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*B<sub>Abs</sub>*der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen im Basisschutz; der Basisschutz umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/9",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*B<sub>MK</sub>*die monetären Kosten in Euro aller individuellen fachlich anerkannten Schutzmaßnahmen im Basisschutz,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/11",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*B<sub>MV</sub>*der maximal zumutbare monetäre Verlust in Euro im Basisschutz über 20 Jahre,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/13",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*B<sub>S</sub>*der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert für die Verringerung des Jahresertrages infolge von als Basisschutz erfolgenden Anordnungen von Schutzmaßnahmen, der in der artenschutzrechtlichen Ausnahme nicht überschritten werden darf, und der mit 4 Prozent für einen Regelfall-Standort oder mit 6 Prozent für einen windreichen Standort festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/15",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*d*die prognostizierte Mindestnutzungsdauer einer Windenergieanlage an Land in Höhe von 20 Jahren,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/17",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*E<sub>r</sub>*der reale Energieertrag der Windenergieanlage in Megawattstunden des vergangenen Kalenderjahres,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/19",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*E<sub>rnte</sub>*die durchschnittliche Häufigkeit je Jahr eines Erntevorgangs je Flurstück, die mit 1 festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/21",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Flm<sub>a</sub>*die anzunehmende Abschaltung zum Schutz von Fledermäusen, die mit 2,5 Prozent festgelegt oder auf Grundlage eines Gutachtens oder einer Untersuchung der Fledermausaktivitäten ermittelt wird; sollte der Antragsteller ein Gutachten oder eine Untersuchung der Fledermausaktivitäten beauftragen, ist der Prozentwert der Abschaltung im Verhältnis zum Jahresertrag aus dem Gutachten oder der Untersuchung anzusetzen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/23",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Flst<sub>Ausn</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage, auf denen drei Brutvorkommen oder zwei Brutvorkommen bei besonders gefährdeten Vogelarten betroffen sind,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/25",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Flst<sub>Ernte</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Feldfrüchten, auf denen Erntevorgänge erfolgen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/27",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Flst<sub>Mahd</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Grünland, auf denen Mahdvorgänge erfolgen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/29",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Flst<sub>Pflügen</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Ackerland, auf denen Pflugvorgänge erfolgen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/31",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*h*die anzunehmende Stundenanzahl bezogen auf die Abschaltung bei einem landwirtschaftlichen Bewirtschaftungsereignis (Ernte, Mahd, Pflügen), die mit 14 festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/33",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*h<sub>a</sub>*die Anzahl der Stunden eines Jahres, die mit 8 760 festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/35",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*IK*die Summe der Investitionskosten in Euro aller Schutzmaßnahmen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/37",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*K<sub>AS</sub>*der Selbstbehalt von den Investitionskosten für den Antragsteller in Höhe von 17 000 Euro je Megawatt zu installierender Leistung,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/39",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*M<sub>ahd</sub>*die durchschnittliche Häufigkeit je Jahr eines Mahdvorgangs je Flurstück, die mit 4 festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/41",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*M<sub>r</sub>*der reale monetäre Ertrag der Windenergieanlage in Euro im vergangenen Kalenderjahr,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/43",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*P*die zu installierende Leistung der geplanten Windenergieanlage an Land in Megawatt, das heißt, die elektrische Wirkleistung, die eine Anlage bei bestimmungsgemäßem Betrieb ohne zeitliche Einschränkungen unbeschadet kurzfristiger geringfügiger Abweichungen technisch erbringen kann,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/45",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*P<sub>flügen</sub>*die durchschnittliche Häufigkeit je Jahr eines Pflugvorgangs je Flurstück, die mit 0,5 festgelegt wird,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/47",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*P<sub>häno</sub>*die Anzahl der Tage mit phänologischen Abschaltungen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/49",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "Regelfall-Standort ein Standort mit einem Gütefaktor≤90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/51",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*VBH*die Anzahl der Vollbenutzungsstunden der Windenergieanlage, die aus den Ertragsgutachten zu entnehmen ist,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/53",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*VBH<sub>r</sub>*die Anzahl der realen Vollbenutzungsstunden der Windenergieanlage des vergangenen Kalenderjahres,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/55",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "windreicher Standort ein Standort mit einem Gütefaktor>90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/57",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Z<sub>Abs</sub>*der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/59",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Z<sub>AHPa</sub>*die Höhe des jährlich zu leistenden Beitrags in Euro in ein Artenhilfsprogramm,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/61",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Z<sub>Mo</sub>*die monetären Kosten in Euro der individuellen, fachlich anerkannten Schutzmaßnahmen in der Zumutbarkeit,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/63",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Z<sub>MV</sub>*der maximal zumutbare monetäre Verlust in Euro über 20 Jahre,",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "id": "110/Anlage2/3/1/65",
+                              "text": "–",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "110/Anlage2/3/1/–/0",
+                                  "text": "*Z<sub>um</sub>*der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert, oberhalb dessen Verringerungen des Jahresertrages infolge der Anordnung von Schutzmaßnahmen als nicht mehr zumutbar gelten, und der mit 6 Prozent für einen Regelfall-Standort oder mit 8 Prozent für einen windreichen Standort festgelegt wird; die Zumutbarkeitsschwelle umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen.",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/3/3",
+                      "text": "2.",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/2/0",
+                          "text": "Berechnung der Zumutbarkeitsschwelle",
+                          "children": []
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/2/0",
+                          "text": "Die Zumutbarkeitsschwelle für die Anordnung von Schutzmaßnahmen für Windenergieanlagen an Land nach § 45b Absatz 6 wird nach folgenden Formeln bestimmt, bei deren Berechnung auf zwei Nachkommastellen zu runden ist:",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/3/5",
+                      "text": "2.1",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/21/0",
+                          "text": "Maximal zumutbarer monetärer Verlust",
+                          "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/3/21/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*Z<sub>MV</sub>= P · VBH · Z<sub>um</sub>· AW · d*",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/3/7",
+                      "text": "2.2",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/22/0",
+                          "text": "Prozentualer Anteil der Abschaltungen",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/3/9",
+                      "text": "",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/3/0",
+                          "text": "Die Formel*Z**<sub>Abs</sub>*wird wie folgt gefasst:",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "block",
+              "id": "110/Anlage2/4",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "110/Anlage2/4/0",
+                  "meta": {
+                    "src": "bgbl1_2022_j2240-1_0010.jpg",
+                    "height": "25",
+                    "width": "470",
+                    "align": "center",
+                    "type": "jpg"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "block",
               "id": "110/Anlage2/5",
               "children": [
                 {
@@ -13470,475 +15212,92 @@
                     {
                       "type": "listItem",
                       "id": "110/Anlage2/5/1",
-                      "text": "1.",
+                      "text": "",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/1/0",
-                          "text": "Begriffsbestimmungen",
+                          "id": "110/Anlage2/5/0",
+                          "text": "Werden keine Abschaltungen auf Grund landwirtschaftlicher Bewirtschaftungsereignisse angeordnet, ist*((Flst<sub>Mahd</sub>· M<sub>ahd</sub>) + (Flst<sub>Ernte</sub>· E<sub>rnte</sub>) + (Flst<sub>Pflügen</sub>· P<sub>flügen</sub>)) · h + (Flst<sub>Ausn</sub>· h)*bei der Berechnung aus der Formel zu streichen.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/1/0",
-                          "text": "Im Sinne dieser Anlage ist",
+                          "id": "110/Anlage2/5/0",
+                          "text": "Werden nur einzelne Abschaltungen auf Grund landwirtschaftlicher Bewirtschaftungsereignisse (nur Mahd, nur Ernte oder nur Pflügen oder eine andere Kombination dieser drei Ereignisse) angeordnet, ist das nicht angeordnete Ereignis aus der Formel zu streichen, das heißt (*Flst<sub>Mahd</sub>· M<sub>ahd</sub>*) oder (*Flst<sub>Ernte</sub>· E<sub>rnte</sub>*) oder (*Flst<sub>Pflügen</sub>· P<sub>flügen</sub>*).",
                           "children": []
                         },
                         {
-                          "type": "list",
-                          "id": "110/Anlage2/5/1",
-                          "meta": {
-                            "listType": "Dash"
-                          },
-                          "children": [
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/1",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*A<sub>AHP</sub>*der prozentuale Anteil des Jahresertrages der Windenergieanlage, der mindestens im Rahmen des jährlich zu leistenden Beitrags in ein Artenhilfsprogramm zu leisten ist und der mit 2 Prozent festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/3",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*A<sub>KSa</sub>*die anzunehmende Abschaltung bei Verwendung eines Antikollisionssystems je Jahr, die mit 3 Prozent festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/5",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*AW*der anzulegende Wert in Euro je Megawattstunde, auf Grundlage der durchschnittlichen, mengengewichteten Zuschlagswerte der vergangenen drei Ausschreibungen von Windenergieanlagen an Land, veröffentlicht durch die Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahnen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/7",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*B<sub>Abs</sub>*der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen im Basisschutz; der Basisschutz umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/9",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*B<sub>MK</sub>*die monetären Kosten in Euro aller individuellen fachlich anerkannten Schutzmaßnahmen im Basisschutz,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/11",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*B<sub>MV</sub>*der maximal zumutbare monetäre Verlust in Euro im Basisschutz über 20 Jahre,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/13",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*B<sub>S</sub>*der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert für die Verringerung des Jahresertrages infolge von als Basisschutz erfolgenden Anordnungen von Schutzmaßnahmen, der in der artenschutzrechtlichen Ausnahme nicht überschritten werden darf, und der mit 4 Prozent für einen Regelfall-Standort oder mit 6 Prozent für einen windreichen Standort festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/15",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*d*die prognostizierte Mindestnutzungsdauer einer Windenergieanlage an Land in Höhe von 20 Jahren,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/17",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*E<sub>r</sub>*der reale Energieertrag der Windenergieanlage in Megawattstunden des vergangenen Kalenderjahres,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/19",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*E<sub>rnte</sub>*die durchschnittliche Häufigkeit je Jahr eines Erntevorgangs je Flurstück, die mit 1 festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/21",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Flm<sub>a</sub>*die anzunehmende Abschaltung zum Schutz von Fledermäusen, die mit 2,5 Prozent festgelegt oder auf Grundlage eines Gutachtens oder einer Untersuchung der Fledermausaktivitäten ermittelt wird; sollte der Antragsteller ein Gutachten oder eine Untersuchung der Fledermausaktivitäten beauftragen, ist der Prozentwert der Abschaltung im Verhältnis zum Jahresertrag aus dem Gutachten oder der Untersuchung anzusetzen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/23",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Flst<sub>Ausn</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage, auf denen drei Brutvorkommen oder zwei Brutvorkommen bei besonders gefährdeten Vogelarten betroffen sind,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/25",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Flst<sub>Ernte</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Feldfrüchten, auf denen Erntevorgänge erfolgen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/27",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Flst<sub>Mahd</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Grünland, auf denen Mahdvorgänge erfolgen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/29",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Flst<sub>Pflügen</sub>*die Anzahl der Flurstücke in einem Umkreis von 250 Metern um den Mastfußmittelpunkt der Windenergieanlage mit Ackerland, auf denen Pflugvorgänge erfolgen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/31",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*h*die anzunehmende Stundenanzahl bezogen auf die Abschaltung bei einem landwirtschaftlichen Bewirtschaftungsereignis (Ernte, Mahd, Pflügen), die mit 14 festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/33",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*h<sub>a</sub>*die Anzahl der Stunden eines Jahres, die mit 8 760 festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/35",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*IK*die Summe der Investitionskosten in Euro aller Schutzmaßnahmen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/37",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*K<sub>AS</sub>*der Selbstbehalt von den Investitionskosten für den Antragsteller in Höhe von 17 000 Euro je Megawatt zu installierender Leistung,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/39",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*M<sub>ahd</sub>*die durchschnittliche Häufigkeit je Jahr eines Mahdvorgangs je Flurstück, die mit 4 festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/41",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*M<sub>r</sub>*der reale monetäre Ertrag der Windenergieanlage in Euro im vergangenen Kalenderjahr,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/43",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*P*die zu installierende Leistung der geplanten Windenergieanlage an Land in Megawatt, das heißt, die elektrische Wirkleistung, die eine Anlage bei bestimmungsgemäßem Betrieb ohne zeitliche Einschränkungen unbeschadet kurzfristiger geringfügiger Abweichungen technisch erbringen kann,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/45",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*P<sub>flügen</sub>*die durchschnittliche Häufigkeit je Jahr eines Pflugvorgangs je Flurstück, die mit 0,5 festgelegt wird,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/47",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*P<sub>häno</sub>*die Anzahl der Tage mit phänologischen Abschaltungen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/49",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "Regelfall-Standort ein Standort mit einem Gütefaktor≤90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/51",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*VBH*die Anzahl der Vollbenutzungsstunden der Windenergieanlage, die aus den Ertragsgutachten zu entnehmen ist,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/53",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*VBH<sub>r</sub>*die Anzahl der realen Vollbenutzungsstunden der Windenergieanlage des vergangenen Kalenderjahres,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/55",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "windreicher Standort ein Standort mit einem Gütefaktor>90 Prozent; die Prognose des Gütefaktors ist aus dem Ertragsgutachten zu entnehmen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/57",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Z<sub>Abs</sub>*der prozentuale Anteil der Abschaltungen auf Grund individueller fachlich anerkannter Schutzmaßnahmen,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/59",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Z<sub>AHPa</sub>*die Höhe des jährlich zu leistenden Beitrags in Euro in ein Artenhilfsprogramm,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/61",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Z<sub>Mo</sub>*die monetären Kosten in Euro der individuellen, fachlich anerkannten Schutzmaßnahmen in der Zumutbarkeit,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/63",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Z<sub>MV</sub>*der maximal zumutbare monetäre Verlust in Euro über 20 Jahre,",
-                                  "children": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "listItem",
-                              "id": "110/Anlage2/5/1/65",
-                              "text": "–",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "110/Anlage2/5/1/–/0",
-                                  "text": "*Z<sub>um</sub>*der als Prozentwert im Verhältnis zum Jahresertrag ausgedrückte Schwellenwert, oberhalb dessen Verringerungen des Jahresertrages infolge der Anordnung von Schutzmaßnahmen als nicht mehr zumutbar gelten, und der mit 6 Prozent für einen Regelfall-Standort oder mit 8 Prozent für einen windreichen Standort festgelegt wird; die Zumutbarkeitsschwelle umfasst alle fachlich anerkannten Schutzmaßnahmen inklusive Fledermausabschaltungen.",
-                                  "children": []
-                                }
-                              ]
-                            }
-                          ]
+                          "type": "text",
+                          "id": "110/Anlage2/5/0",
+                          "text": "Werden keine phänologischen Abschaltungen angeordnet, ist (*P<sub>häno</sub>· h*) bei der Berechnung aus der Formel zu streichen.",
+                          "children": []
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/5/0",
+                          "text": "Ist*Z<sub>Abs</sub>*≤*Z<sub>um</sub>*können die Abschaltungen zumutbar sein, sofern sie auch monetär zumutbar sind (Berechnung durch Nummer 2.3).",
+                          "children": []
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/5/0",
+                          "text": "Ist*Z<sub>Abs</sub>*>*Z<sub>um</sub>*gelten die Abschaltungen als unzumutbar und die Berechnungen ab Nummer 3 sind durchzuführen.",
+                          "children": []
                         }
                       ]
                     },
                     {
                       "type": "listItem",
                       "id": "110/Anlage2/5/3",
-                      "text": "2.",
+                      "text": "2.3",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/2/0",
-                          "text": "Berechnung der Zumutbarkeitsschwelle",
+                          "id": "110/Anlage2/5/23/0",
+                          "text": "Monetäre Zumutbarkeit der Maßnahmen",
+                          "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/5/23/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*Z<sub>Mo</sub>= P · VBH · Z<sub>Abs</sub>· AW · d +*(*IK – K<sub>AS</sub>*)",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/5/23/0",
+                          "text": "Ergibt sich bei der Berechnung von (*IK*–*K**<sub>AS</sub>*) ein Wert kleiner null, wird das Ergebnis der Subtraktion von (*IK*–*K**<sub>AS</sub>*) mit null festgesetzt.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/2/0",
-                          "text": "Die Zumutbarkeitsschwelle für die Anordnung von Schutzmaßnahmen für Windenergieanlagen an Land nach § 45b Absatz 6 wird nach folgenden Formeln bestimmt, bei deren Berechnung auf zwei Nachkommastellen zu runden ist:",
+                          "id": "110/Anlage2/5/23/0",
+                          "text": "Ist*Z<sub>Mo</sub>*≤*Z<sub>MV</sub>*sind die Schutzmaßnahmen zumutbar und es erfolgt keine Zahlung in Artenhilfsprogramme.",
+                          "children": []
+                        },
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/5/23/0",
+                          "text": "Ist*Z<sub>Mo</sub>*>*Z<sub>MV</sub>*gelten die Schutzmaßnahmen als unzumutbar und die Berechnungen ab Nummer 3 sind durchzuführen.",
                           "children": []
                         }
                       ]
@@ -13946,12 +15305,12 @@
                     {
                       "type": "listItem",
                       "id": "110/Anlage2/5/5",
-                      "text": "2.1",
+                      "text": "3.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/21/0",
-                          "text": "Maximal zumutbarer monetärer Verlust",
+                          "id": "110/Anlage2/5/3/0",
+                          "text": "Berechnung des Basisschutzes in der artenschutzrechtlichen Ausnahme",
                           "children": []
                         }
                       ]
@@ -13959,25 +15318,63 @@
                     {
                       "type": "listItem",
                       "id": "110/Anlage2/5/7",
-                      "text": "2.2",
+                      "text": "3.1",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/5/22/0",
-                          "text": "Prozentualer Anteil der Abschaltungen",
+                          "id": "110/Anlage2/5/31/0",
+                          "text": "Maximal zulässiger monetärer Verlust im Basisschutz",
                           "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/5/31/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*B<sub>MV</sub>= P · VBH · B<sub>S</sub>· d · AW*",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         }
                       ]
                     },
                     {
                       "type": "listItem",
                       "id": "110/Anlage2/5/9",
+                      "text": "3.2",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "110/Anlage2/5/32/0",
+                          "text": "Prozentualer Anteil der Abschaltungen im Basisschutz",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "id": "110/Anlage2/5/11",
                       "text": "",
                       "children": [
                         {
                           "type": "text",
                           "id": "110/Anlage2/5/0",
-                          "text": "Die Formel*Z**<sub>Abs</sub>*wird wie folgt gefasst:",
+                          "text": "Die Formel*B**<sub>Abs</sub>*wird wie folgt gefasst:",
                           "children": []
                         }
                       ]
@@ -13994,7 +15391,7 @@
                   "type": "image",
                   "id": "110/Anlage2/6/0",
                   "meta": {
-                    "src": "bgbl1_2022_j2240-1_0010.jpg",
+                    "src": "bgbl1_2022_j2240-1_0020.jpg",
                     "height": "25",
                     "width": "470",
                     "align": "center",
@@ -14041,165 +15438,12 @@
                         {
                           "type": "text",
                           "id": "110/Anlage2/7/0",
-                          "text": "Ist*Z<sub>Abs</sub>*≤*Z<sub>um</sub>*können die Abschaltungen zumutbar sein, sofern sie auch monetär zumutbar sind (Berechnung durch Nummer 2.3).",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/0",
-                          "text": "Ist*Z<sub>Abs</sub>*>*Z<sub>um</sub>*gelten die Abschaltungen als unzumutbar und die Berechnungen ab Nummer 3 sind durchzuführen.",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/7/3",
-                      "text": "2.3",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/23/0",
-                          "text": "Monetäre Zumutbarkeit der Maßnahmen",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/23/0",
-                          "text": "Ergibt sich bei der Berechnung von (*IK*–*K**<sub>AS</sub>*) ein Wert kleiner null, wird das Ergebnis der Subtraktion von (*IK*–*K**<sub>AS</sub>*) mit null festgesetzt.",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/23/0",
-                          "text": "Ist*Z<sub>Mo</sub>*≤*Z<sub>MV</sub>*sind die Schutzmaßnahmen zumutbar und es erfolgt keine Zahlung in Artenhilfsprogramme.",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/23/0",
-                          "text": "Ist*Z<sub>Mo</sub>*>*Z<sub>MV</sub>*gelten die Schutzmaßnahmen als unzumutbar und die Berechnungen ab Nummer 3 sind durchzuführen.",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/7/5",
-                      "text": "3.",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/3/0",
-                          "text": "Berechnung des Basisschutzes in der artenschutzrechtlichen Ausnahme",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/7/7",
-                      "text": "3.1",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/31/0",
-                          "text": "Maximal zulässiger monetärer Verlust im Basisschutz",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/7/9",
-                      "text": "3.2",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/32/0",
-                          "text": "Prozentualer Anteil der Abschaltungen im Basisschutz",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/7/11",
-                      "text": "",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/7/0",
-                          "text": "Die Formel*B**<sub>Abs</sub>*wird wie folgt gefasst:",
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "block",
-              "id": "110/Anlage2/8",
-              "children": [
-                {
-                  "type": "image",
-                  "id": "110/Anlage2/8/0",
-                  "meta": {
-                    "src": "bgbl1_2022_j2240-1_0020.jpg",
-                    "height": "25",
-                    "width": "470",
-                    "align": "center",
-                    "type": "jpg"
-                  },
-                  "children": []
-                }
-              ]
-            },
-            {
-              "type": "block",
-              "id": "110/Anlage2/9",
-              "children": [
-                {
-                  "type": "list",
-                  "id": "110/Anlage2/9",
-                  "meta": {
-                    "listType": "arabic"
-                  },
-                  "children": [
-                    {
-                      "type": "listItem",
-                      "id": "110/Anlage2/9/1",
-                      "text": "",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/9/0",
-                          "text": "Werden keine Abschaltungen auf Grund landwirtschaftlicher Bewirtschaftungsereignisse angeordnet, ist*((Flst<sub>Mahd</sub>· M<sub>ahd</sub>) + (Flst<sub>Ernte</sub>· E<sub>rnte</sub>) + (Flst<sub>Pflügen</sub>· P<sub>flügen</sub>)) · h + (Flst<sub>Ausn</sub>· h)*bei der Berechnung aus der Formel zu streichen.",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/9/0",
-                          "text": "Werden nur einzelne Abschaltungen auf Grund landwirtschaftlicher Bewirtschaftungsereignisse (nur Mahd, nur Ernte oder nur Pflügen oder eine andere Kombination dieser drei Ereignisse) angeordnet, ist das nicht angeordnete Ereignis aus der Formel zu streichen, das heißt (*Flst<sub>Mahd</sub>· M<sub>ahd</sub>*) oder (*Flst<sub>Ernte</sub>· E<sub>rnte</sub>*) oder (*Flst<sub>Pflügen</sub>· P<sub>flügen</sub>*).",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/9/0",
-                          "text": "Werden keine phänologischen Abschaltungen angeordnet, ist (*P<sub>häno</sub>· h*) bei der Berechnung aus der Formel zu streichen.",
-                          "children": []
-                        },
-                        {
-                          "type": "text",
-                          "id": "110/Anlage2/9/0",
                           "text": "Ist*B<sub>Abs</sub>*>*B<sub>S</sub>*, sind die Maßnahmen unzulässig und müssen reduziert werden, bis*B<sub>Abs</sub>*≤*B<sub>S</sub>*.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/0",
+                          "id": "110/Anlage2/7/0",
                           "text": "Ist*B<sub>Abs</sub>*≤*B<sub>S</sub>*, sind die Maßnahmen zulässig und werden bei der Berechnung der Zahlung in Artenhilfsprogramme (Nummer 4) berücksichtigt.",
                           "children": []
                         }
@@ -14207,30 +15451,55 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "110/Anlage2/9/3",
+                      "id": "110/Anlage2/7/3",
                       "text": "3.3",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/33/0",
+                          "id": "110/Anlage2/7/33/0",
                           "text": "Monetäre Kosten der Maßnahmen im Basisschutz",
                           "children": []
                         },
                         {
+                          "type": "table",
+                          "id": "110/Anlage2/7/33/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*B<sub>MK</sub>= B<sub>Abs</sub>· P · VBH · AW · d*+ (*IK – K<sub>AS</sub>*)",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
                           "type": "text",
-                          "id": "110/Anlage2/9/33/0",
+                          "id": "110/Anlage2/7/33/0",
                           "text": "Ergibt sich bei der Berechnung von (*IK – K<sub>AS</sub>*) ein Wert kleiner null, wird das Ergebnis der Subtraktion von*IK – K<sub>AS</sub>*mit null festgesetzt.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/33/0",
+                          "id": "110/Anlage2/7/33/0",
                           "text": "Ist*B**<sub>MK</sub>*>*B**<sub>MV</sub>*sind die Maßnahmen unzulässig und müssen reduziert werden, bis*B<sub>MK</sub>***≤*B<sub>MV</sub>*.",
                           "children": []
                         },
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/33/0",
+                          "id": "110/Anlage2/7/33/0",
                           "text": "Ist*B<sub>MK</sub>***≤*B<sub>MV</sub>*sind die Maßnahmen zulässig und werden bei der Berechnung der Zahlung in Artenhilfsprogramme (Nummer 4) berücksichtigt.",
                           "children": []
                         }
@@ -14238,12 +15507,12 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "110/Anlage2/9/5",
+                      "id": "110/Anlage2/7/5",
                       "text": "4.",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/4/0",
+                          "id": "110/Anlage2/7/4/0",
                           "text": "Berechnung der Zahlungen in Artenhilfsprogramme",
                           "children": []
                         }
@@ -14251,40 +15520,121 @@
                     },
                     {
                       "type": "listItem",
-                      "id": "110/Anlage2/9/7",
+                      "id": "110/Anlage2/7/7",
                       "text": "4.1",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/41/0",
+                          "id": "110/Anlage2/7/41/0",
                           "text": "Berechnung des realen Energieertrags im vergangenen Kalenderjahr",
                           "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/7/41/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*E<sub>r</sub>= P · VBH<sub>r</sub>*",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         }
                       ]
                     },
                     {
                       "type": "listItem",
-                      "id": "110/Anlage2/9/9",
+                      "id": "110/Anlage2/7/9",
                       "text": "4.2",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/42/0",
+                          "id": "110/Anlage2/7/42/0",
                           "text": "Berechnung des realen monetären Ertrags im vergangenen Kalenderjahr",
                           "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/7/42/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "text",
+                                        "id": "0",
+                                        "text": "*M<sub>r</sub>= E<sub>r</sub>· AW*",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         }
                       ]
                     },
                     {
                       "type": "listItem",
-                      "id": "110/Anlage2/9/11",
+                      "id": "110/Anlage2/7/11",
                       "text": "4.3",
                       "children": [
                         {
                           "type": "text",
-                          "id": "110/Anlage2/9/43/0",
+                          "id": "110/Anlage2/7/43/0",
                           "text": "Berechnung der Höhe des zu zahlenden Beitrags in das Artenhilfsprogramm für das vergangene Kalenderjahr",
                           "children": []
+                        },
+                        {
+                          "type": "table",
+                          "id": "110/Anlage2/7/43/table",
+                          "columnNames": [
+                            "col1"
+                          ],
+                          "body": {
+                            "rows": [
+                              {
+                                "cells": [
+                                  {
+                                    "content": [
+                                      {
+                                        "type": "image",
+                                        "id": "0",
+                                        "meta": {
+                                          "src": "bgbl1_2022_j1362-1_0030.jpg",
+                                          "height": "20",
+                                          "width": "134",
+                                          "align": "center",
+                                          "type": "jpg"
+                                        },
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         }
                       ]
                     }
